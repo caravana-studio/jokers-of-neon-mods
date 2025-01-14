@@ -7,7 +7,7 @@ pub mod registrator_system {
     use starknet::{ContractAddress, contract_address_const};
 
     pub fn JOKERS_OF_NEON_CORE_REGISTRATOR_ADDRESS() -> ContractAddress {
-        contract_address_const::<0x04722b045d9e446fc7e6f9b7769900a8b2f0117a67442e347a4da6e17b6ed59b>()
+        contract_address_const::<0x00913782f78b18404e546d76a7ef2729bed489b1b5a63259304c431cd4c717b2>()
     }
 
     #[abi(embed_v0)]

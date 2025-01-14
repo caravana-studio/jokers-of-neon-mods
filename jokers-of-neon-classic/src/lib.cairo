@@ -99,3 +99,5 @@ mod utils {
     mod registrator_system;
     mod configurator_system;
 }
+
+mod loot_box;
