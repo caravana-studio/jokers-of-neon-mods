@@ -1,6 +1,28 @@
 // const SPECIAL_DEADLINE_ID: u32 = 319; // TODO: falta implementar
 // const SPECIAL_SECOND_CHANCE_ID: u32 = 323; // TODO: falta implementar
 // const SPECIAL_LEVEL_UP_FIRST_DISCARDED_HAND_ID: u32 = 341; // TODO: falta implementar
+
+mod rage {
+    mod rages_ids;
+    mod debuff {}
+    mod game {
+        mod diminished_hold;
+        mod strategic_quarted;
+    }
+    mod round {
+        mod hand_leech;
+        mod zero_waste;
+    }
+    mod silence {
+        mod clubs;
+        mod diamonds;
+        mod figures;
+        mod hearts;
+        mod jokers;
+        mod spades;
+    }
+}
+
 mod specials {
     mod specials;
     mod special_discard_specific {
