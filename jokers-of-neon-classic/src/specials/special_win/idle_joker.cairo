@@ -2,9 +2,9 @@
 pub mod special_idle_joker {
     use jokers_of_neon_classic::specials::specials::SPECIAL_IDLE_JOKER_ID;
     use jokers_of_neon_lib::interfaces::win::ISpecialWinType;
-    use jokers_of_neon_lib::models::card::{Card, Suit};
-    use jokers_of_neon_lib::models::game::Game;
+    use jokers_of_neon_lib::models::data::card::{Card, Suit};
     use jokers_of_neon_lib::models::special_type::SpecialType;
+    use jokers_of_neon_lib::models::status::game::game::Game;
 
     #[abi(embed_v0)]
     impl SpecialIdleJokerImpl of ISpecialWinType<ContractState> {

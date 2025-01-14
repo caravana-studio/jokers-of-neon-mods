@@ -2,7 +2,7 @@
 pub mod special_all_cards_to_hearts {
     use jokers_of_neon_classic::specials::specials::SPECIAL_ALL_CARDS_TO_HEARTS_ID;
     use jokers_of_neon_lib::interfaces::pre_calculate_hand::ISpecialPreCalculateHand;
-    use jokers_of_neon_lib::models::card::{Card, Suit};
+    use jokers_of_neon_lib::models::data::card::{Card, Suit};
     use jokers_of_neon_lib::models::special_type::SpecialType;
 
     #[abi(embed_v0)]

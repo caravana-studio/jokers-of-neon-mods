@@ -2,7 +2,7 @@
 pub mod special_retired_joker {
     use jokers_of_neon_classic::specials::specials::SPECIAL_RETIRED_JOKER_ID;
     use jokers_of_neon_lib::interfaces::discards::ISpecialDiscardSpecificType;
-    use jokers_of_neon_lib::models::card::{Card, Suit};
+    use jokers_of_neon_lib::models::data::card::{Card, Suit};
     use jokers_of_neon_lib::models::play_info::PlayInfo;
     use jokers_of_neon_lib::models::special_type::SpecialType;
 

@@ -2,7 +2,7 @@
 pub mod special_points_for_figures {
     use jokers_of_neon_classic::specials::specials::SPECIAL_POINTS_FOR_FIGURES_ID;
     use jokers_of_neon_lib::interfaces::individual::ISpecialIndividual;
-    use jokers_of_neon_lib::models::card::{Card, Value};
+    use jokers_of_neon_lib::models::data::card::{Card, Value};
     use jokers_of_neon_lib::models::special_type::SpecialType;
 
     #[abi(embed_v0)]

@@ -2,7 +2,7 @@
 pub mod special_increase_level_double_pair {
     use jokers_of_neon_classic::specials::specials::SPECIAL_INCREASE_LEVEL_DOUBLE_PAIR_ID;
     use jokers_of_neon_lib::interfaces::play_levels::ISpecialLevelUpPlaysType;
-    use jokers_of_neon_lib::models::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
     use jokers_of_neon_lib::models::special_type::SpecialType;
 
     #[abi(embed_v0)]

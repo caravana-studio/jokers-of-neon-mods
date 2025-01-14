@@ -2,7 +2,7 @@
 pub mod special_plus_plays {
     use jokers_of_neon_classic::specials::specials::SPECIAL_PLUS_PLAYS_ID;
     use jokers_of_neon_lib::interfaces::game::ISpecialGameTypeSpecificType;
-    use jokers_of_neon_lib::models::game::Game;
+    use jokers_of_neon_lib::models::status::game::game::Game;
 
     #[abi(embed_v0)]
     impl SpecialPlusPlaysImpl of ISpecialGameTypeSpecificType<ContractState> {

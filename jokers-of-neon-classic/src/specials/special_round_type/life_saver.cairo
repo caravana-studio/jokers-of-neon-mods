@@ -2,8 +2,8 @@
 pub mod special_life_saver {
     use jokers_of_neon_classic::specials::specials::SPECIAL_LIFE_SAVER_ID;
     use jokers_of_neon_lib::interfaces::round::ISpecialRoundType;
-    use jokers_of_neon_lib::models::round::Round;
     use jokers_of_neon_lib::models::special_type::SpecialType;
+    use jokers_of_neon_lib::models::status::round::round::Round;
 
     #[abi(embed_v0)]
     impl SpecialShortcutImpl of ISpecialRoundType<ContractState> {

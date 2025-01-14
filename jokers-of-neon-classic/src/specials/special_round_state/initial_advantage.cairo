@@ -2,9 +2,9 @@
 pub mod special_initial_advantage {
     use jokers_of_neon_classic::specials::specials::SPECIAL_INITIAL_ADVANTAGE_ID;
     use jokers_of_neon_lib::interfaces::round_state::ISpecialRoundState;
-    use jokers_of_neon_lib::models::game::Game;
-    use jokers_of_neon_lib::models::round::Round;
     use jokers_of_neon_lib::models::special_type::SpecialType;
+    use jokers_of_neon_lib::models::status::game::game::Game;
+    use jokers_of_neon_lib::models::status::round::round::Round;
 
     #[abi(embed_v0)]
     impl SpecialInitialAdvantageImpl of ISpecialRoundState<ContractState> {

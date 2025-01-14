@@ -1,11 +1,14 @@
 #[dojo::contract]
 pub mod registrator_system {
     use dojo::world::Resource::Contract;
-    use jokers_of_neon_lib::constants::JOKERS_OF_NEON_CORE_REGISTRATOR_ADDRESS;
     use jokers_of_neon_lib::interfaces::registrator::{
         IRegistrator, IRegistratorDispatcher, IRegistratorDispatcherTrait
     };
     use starknet::{ContractAddress, contract_address_const};
+
+    pub fn JOKERS_OF_NEON_CORE_REGISTRATOR_ADDRESS() -> ContractAddress {
+        contract_address_const::<0x0087164c592550aeb940d28ec92dc82b99b8c97393bae507d7826faf3a823a36>()
+    }
 
     #[abi(embed_v0)]
     impl RegistratorBaseImpl of IRegistrator<ContractState> {

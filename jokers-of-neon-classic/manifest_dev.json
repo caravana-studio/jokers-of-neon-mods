@@ -1253,7 +1253,7 @@
   "contracts": [
     {
       "address": "0x57909d0bc4bdfdcbf0b776f96f5ac11694cdaa616f8d947f0503d6a3958a7e6",
-      "class_hash": "0x3ff1f2a91d4b9112a58bd492e677489ea78fd39188b80975301bdcc21c8cf2a",
+      "class_hash": "0x16642a994db39cc941454727cbb41655dcc6f96b84d0e7542e88df77618f1d9",
       "abi": [
         {
           "type": "impl",
@@ -1518,8 +1518,8 @@
       ]
     },
     {
-      "address": "0x2d64f4616c7b6f4e97952b18881aa7e06b94ed5d54958a791edfe23410f99ad",
-      "class_hash": "0x3ba147b6bf90cb8acb24b564b33e0d2836ea6f4374e24805c78869da164886c",
+      "address": "0x3e03b6caeffce76a7235d56808509c8edaa8472790e71a0066d67112ef6aea2",
+      "class_hash": "0x7ffebc7dbfe38615fd88e4aad47f4ca57789c6a6b5a9df22f462baeeda4c1d",
       "abi": [
         {
           "type": "impl",
@@ -1578,7 +1578,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -1612,7 +1612,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -1686,7 +1686,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -1694,11 +1694,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -1782,12 +1782,12 @@
               "inputs": [
                 {
                   "name": "cards",
-                  "type": "core::array::Array::<jokers_of_neon_lib::models::card::Card>"
+                  "type": "core::array::Array::<jokers_of_neon_lib::models::data::card::Card>"
                 }
               ],
               "outputs": [
                 {
-                  "type": "core::array::Array::<jokers_of_neon_lib::models::card::Card>"
+                  "type": "core::array::Array::<jokers_of_neon_lib::models::data::card::Card>"
                 }
               ],
               "state_mutability": "external"
@@ -1940,8 +1940,8 @@
       ]
     },
     {
-      "address": "0x5595cfe4811be952382cf8bef05e8e831a130d604efa86c9d2538071620253b",
-      "class_hash": "0x4069b02c16022696633f77e7d3d997009f2bad1e9c315e1b9d35790b3e9d60e",
+      "address": "0x6eadcb1c4e003db188f9830c1dacd3492829e5470207d988c7cefc396b35b06",
+      "class_hash": "0x7fe04237037ac3dfa79103a93ae5d49152a700dee1da62b99f34a82149591a8",
       "abi": [
         {
           "type": "impl",
@@ -2000,7 +2000,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::game::GameState",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
             {
               "name": "IN_GAME",
@@ -2022,7 +2022,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::game::Game",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
             {
               "name": "id",
@@ -2082,7 +2082,7 @@
             },
             {
               "name": "state",
-              "type": "jokers_of_neon_lib::models::game::GameState"
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
             },
             {
               "name": "cash",
@@ -2092,7 +2092,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::round::Round",
+          "name": "jokers_of_neon_lib::models::status::round::round::Round",
           "members": [
             {
               "name": "game_id",
@@ -2188,11 +2188,11 @@
               "inputs": [
                 {
                   "name": "game",
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 },
                 {
                   "name": "round",
-                  "type": "jokers_of_neon_lib::models::round::Round"
+                  "type": "jokers_of_neon_lib::models::status::round::round::Round"
                 }
               ],
               "outputs": [
@@ -2352,8 +2352,8 @@
       ]
     },
     {
-      "address": "0x7c0a6b5380ead939894d3a74e57dde45135152526bee50cd5c50ec755e24599",
-      "class_hash": "0x1713865738a0b0fb229b21e59c621fae46672f386f13bc365384e56190d88c9",
+      "address": "0x24072ea0ab948c9fb0a3e3a5e8d6054b1965a3214ddced8590bb887623ac14f",
+      "class_hash": "0x4f808672f2ef8152b3fe8a6c479fd11d846e00f5159bfb99addfdfd44debb56",
       "abi": [
         {
           "type": "impl",
@@ -2412,7 +2412,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::game::GameState",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
             {
               "name": "IN_GAME",
@@ -2434,7 +2434,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::game::Game",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
             {
               "name": "id",
@@ -2494,7 +2494,7 @@
             },
             {
               "name": "state",
-              "type": "jokers_of_neon_lib::models::game::GameState"
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
             },
             {
               "name": "cash",
@@ -2512,12 +2512,12 @@
               "inputs": [
                 {
                   "name": "game",
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "state_mutability": "external"
@@ -2528,12 +2528,12 @@
               "inputs": [
                 {
                   "name": "game",
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "state_mutability": "external"
@@ -2677,8 +2677,8 @@
       ]
     },
     {
-      "address": "0x75c4ebdd2314b0897c25fac91fd2448f5be9ec38b725de1bbddb749096f2642",
-      "class_hash": "0xe0f6d6a261e7929e06678e8450b02e10aeef4003166a054f78b11bbbb7a138",
+      "address": "0x6f192d7f3273162b5a04ac33c34f76d0a73bdc3afa51922f5063f708d35dfea",
+      "class_hash": "0x55996217f9becdc49735fc71dc7b9c36185614e3589a3fe94b779bbf2f92beb",
       "abi": [
         {
           "type": "impl",
@@ -2737,7 +2737,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -2861,7 +2861,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)"
+                  "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
                 }
               ],
               "state_mutability": "external"
@@ -3014,8 +3014,8 @@
       ]
     },
     {
-      "address": "0x1d1eb76644f1b14560b045dc1a694fa4d446329baf4cb64c1a4be0c7f2886ba",
-      "class_hash": "0x649bed5d7c38a19f6f119011e218edbbd7878e8cbd8b55b7d989e4bc5d0c341",
+      "address": "0x7896b0c938e59dff3a302e140bfd1c3bb97b17a01442e3ad49acf0d63f97a5e",
+      "class_hash": "0x74ed37f1feb5d2f24da1300d413485c10e01f599b000267cad131d87bf76533",
       "abi": [
         {
           "type": "impl",
@@ -3074,7 +3074,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::game::GameState",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
             {
               "name": "IN_GAME",
@@ -3096,7 +3096,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::game::Game",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
             {
               "name": "id",
@@ -3156,7 +3156,7 @@
             },
             {
               "name": "state",
-              "type": "jokers_of_neon_lib::models::game::GameState"
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
             },
             {
               "name": "cash",
@@ -3174,12 +3174,12 @@
               "inputs": [
                 {
                   "name": "game",
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "state_mutability": "external"
@@ -3190,12 +3190,12 @@
               "inputs": [
                 {
                   "name": "game",
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "state_mutability": "external"
@@ -3339,8 +3339,8 @@
       ]
     },
     {
-      "address": "0x7dcd17049d0f751f650718ba760168a6d73edfa055293765b61d58f2f6ce541",
-      "class_hash": "0x6403705c0245d8bf8177d24fc25bb71d7c721ca2878f6860f6f1d7391aaa423",
+      "address": "0xde9466c43867dba32fece2073736487c5f1f358ccb8955a24c49fae11572d2",
+      "class_hash": "0x2fb6c6fae039acb990fdcdb428d51c87f95781144125ec257509861b58674e6",
       "abi": [
         {
           "type": "impl",
@@ -3399,7 +3399,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::game::GameState",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
             {
               "name": "IN_GAME",
@@ -3421,7 +3421,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::game::Game",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
             {
               "name": "id",
@@ -3481,7 +3481,7 @@
             },
             {
               "name": "state",
-              "type": "jokers_of_neon_lib::models::game::GameState"
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
             },
             {
               "name": "cash",
@@ -3491,7 +3491,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -3525,7 +3525,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -3599,7 +3599,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -3607,11 +3607,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -3625,11 +3625,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<jokers_of_neon_lib::models::card::Card>",
+          "name": "core::array::Span::<jokers_of_neon_lib::models::data::card::Card>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<jokers_of_neon_lib::models::card::Card>"
+              "type": "@core::array::Array::<jokers_of_neon_lib::models::data::card::Card>"
             }
           ]
         },
@@ -3705,16 +3705,16 @@
               "inputs": [
                 {
                   "name": "game",
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 },
                 {
                   "name": "current_hand",
-                  "type": "core::array::Span::<jokers_of_neon_lib::models::card::Card>"
+                  "type": "core::array::Span::<jokers_of_neon_lib::models::data::card::Card>"
                 }
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "state_mutability": "external"
@@ -3867,8 +3867,8 @@
       ]
     },
     {
-      "address": "0x77cf5bd3ed7b272ee0decfe4fe97983a8f1ee4eee9ebeadb39551f55a0cf7b8",
-      "class_hash": "0x3109d3e55bd551f834b6b4e738f782b9c025a85819a10f5c09dd45e4cddd9d6",
+      "address": "0x66c260ee2197f50748fc2be17050264f908e3dd21e4b7bef8070f589985744f",
+      "class_hash": "0xe387dc6dc16b8b7caeb5ac6fe9206441cec593339bd547872c63c9876597e3",
       "abi": [
         {
           "type": "impl",
@@ -3927,7 +3927,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -4051,7 +4051,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -4062,7 +4062,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -4218,8 +4218,8 @@
       ]
     },
     {
-      "address": "0x3707422cca149770a26f61db74a35eb4a70b6ea00501519f5d8a40bfe177db5",
-      "class_hash": "0x1a48f1e0b8657f8e445c6dbd11175386c4972cc6ee8b98a2d59a5a7fcefc072",
+      "address": "0x3622d9d06b08aa379d610589b92f8ba75998aa3ec21b3f2268096ea5c5ed817",
+      "class_hash": "0x779c50bb61df902048221c6bcb29b009685a24d3d4fd8f26535633cf4c7134a",
       "abi": [
         {
           "type": "impl",
@@ -4278,7 +4278,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -4402,7 +4402,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -4413,7 +4413,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -4569,8 +4569,8 @@
       ]
     },
     {
-      "address": "0x6ceed6cd66999c9dbcb49fa87da38788d43eefeaaa0f01e596a812659e1e961",
-      "class_hash": "0x3346347fdf317414e065c9275a5b30271a0570f0e6f3d18ed17ef896501a3b5",
+      "address": "0x4cf13a785ff9650d578a6d28fbd3d8461a501ba3b8b6830c7f5aa64b0d65a92",
+      "class_hash": "0x477c6a82aec3ecfa5093e6e4b3ebbdefac507159cccdcbadd6d70d946e5baf5",
       "abi": [
         {
           "type": "impl",
@@ -4629,7 +4629,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -4753,7 +4753,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -4764,7 +4764,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -4920,8 +4920,8 @@
       ]
     },
     {
-      "address": "0x1d7efef78f80db5aebf31c293c6f6c31441ce99b5423b9077d21dcaf95daa40",
-      "class_hash": "0x213b84b7b8780abe8491b22b394d67220454fb051764aca193e87b76e7286ed",
+      "address": "0x4ab62b8f775ae442837471ef2331e48f9ecffb61a778b73c025b479bc64e170",
+      "class_hash": "0x1e7b7cf32c8b693bdebafe23ab920f68c6b28252aa3a33805a4cc23ce6f0fde",
       "abi": [
         {
           "type": "impl",
@@ -4980,7 +4980,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -5104,7 +5104,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -5115,7 +5115,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -5271,8 +5271,8 @@
       ]
     },
     {
-      "address": "0x6f67d3ae86f9b6900d0661853599dc4341bba2a02004f3e0f1f812004de303a",
-      "class_hash": "0x7ad3b4863da7dfd87977af9f2b61b2fb7365d0c69165acde0eca445a3c5510f",
+      "address": "0x2da350ae159168a3154573aa63815b2f3a86c4ef6da226897b61d2b59844c32",
+      "class_hash": "0x3ccc2f09ea568aa6b2c1dfd789a82137d1445726e3240994f7dfb10bbacc3be",
       "abi": [
         {
           "type": "impl",
@@ -5331,7 +5331,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -5455,7 +5455,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -5466,7 +5466,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -5622,8 +5622,8 @@
       ]
     },
     {
-      "address": "0x309197cfaebe78c5dd533b10edeebd0f2acda7dbad2c3582aa8397649f08d84",
-      "class_hash": "0x17d9699a8a9b80574df19a84076c37f2950ed3e4e7d3815b78495f79ed7b98e",
+      "address": "0x284d2f7e4213a39fd7465e51e4f28d019f318e191f6697f0a4e4d7058aa78de",
+      "class_hash": "0x6a5fa8025c57774797a9b8abf93ed70de3ada37d182c8c764bb3ba9e6d51a1f",
       "abi": [
         {
           "type": "impl",
@@ -5682,7 +5682,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -5806,7 +5806,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -5817,7 +5817,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -5973,8 +5973,8 @@
       ]
     },
     {
-      "address": "0x73b416d6370ab2248681988dd9ab20c722735257475ef633c112973f7271e32",
-      "class_hash": "0x216ed23d6a8700bfe387cf8b22ede8d36feb0b3998e3a5db3ab095de8e113da",
+      "address": "0x72e80f7e8d2c4fd02e5e714512f273b94a5b634bcd595efd7bb60f8fb11a3ac",
+      "class_hash": "0x22c52d7b8aa4597ffb4cf265b84c5b0b756ab15b899fb28f10294b1d70b03eb",
       "abi": [
         {
           "type": "impl",
@@ -6033,7 +6033,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -6157,7 +6157,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -6168,7 +6168,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -6324,8 +6324,8 @@
       ]
     },
     {
-      "address": "0x53566ac55b55c06fd44b4ebd39a59903b34e3cfa1b2b602cbeb4440a284d358",
-      "class_hash": "0x18a1eafdfdebfbb7b2b283c2d3f590b32f969f6e5c5f4f2c13df9f8a1e3958f",
+      "address": "0x4506ce1c733296c51aff6cdabfc7cc34c0c1f0821758d9b66cdaf154bed1679",
+      "class_hash": "0x237d892b1cdc67685ffa4e90ff5206ce36632592fe72bf6089bc36a38b34d11",
       "abi": [
         {
           "type": "impl",
@@ -6384,7 +6384,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -6508,7 +6508,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -6519,7 +6519,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -6675,8 +6675,8 @@
       ]
     },
     {
-      "address": "0x7a68a722f1fcfa3db4fd41c5f8daed7e2e384239ad77574a2e5a1128a8ec0dd",
-      "class_hash": "0x772ba803b56df4bf29cf4170dece4daeeadf92dcd171d6ad4c81e9d2507eada",
+      "address": "0x1fe6514f709bc916e0a665ab27a10dac08020024cdae8d0e6598cacda00e0ce",
+      "class_hash": "0x2fad3b99f55569ea50e67cf35b9709a4649de91347ddf9256edd8755804ed3",
       "abi": [
         {
           "type": "impl",
@@ -6735,7 +6735,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::game::GameState",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
             {
               "name": "IN_GAME",
@@ -6757,7 +6757,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::game::Game",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
             {
               "name": "id",
@@ -6817,7 +6817,7 @@
             },
             {
               "name": "state",
-              "type": "jokers_of_neon_lib::models::game::GameState"
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
             },
             {
               "name": "cash",
@@ -6827,7 +6827,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::round::Round",
+          "name": "jokers_of_neon_lib::models::status::round::round::Round",
           "members": [
             {
               "name": "game_id",
@@ -6923,11 +6923,11 @@
               "inputs": [
                 {
                   "name": "game",
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 },
                 {
                   "name": "round",
-                  "type": "jokers_of_neon_lib::models::round::Round"
+                  "type": "jokers_of_neon_lib::models::status::round::round::Round"
                 }
               ],
               "outputs": [
@@ -7087,8 +7087,8 @@
       ]
     },
     {
-      "address": "0x15585e0b1da456dbb86376df7e8bc135f53738f00e5a642781047c0caa39896",
-      "class_hash": "0x539cb02327742ecdcefa2bc97376cf270bc8dbc2aa3125092ef557d8ba52f10",
+      "address": "0x3fff95f14d314e7ea56133f08d165a3b7bcd32777ffbc9e42eebcb47e81da23",
+      "class_hash": "0x720f463adc40a423971a7f77d62c12b19851d14981da99c8d909114ae073f5c",
       "abi": [
         {
           "type": "impl",
@@ -7147,7 +7147,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -7181,7 +7181,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -7255,7 +7255,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -7263,11 +7263,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -7365,7 +7365,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -7537,8 +7537,8 @@
       ]
     },
     {
-      "address": "0x25e0fa9b6d558818ac55b6ee7cc2b912f722a8cfafd9489a6fbb806054dc0a",
-      "class_hash": "0x7cb6a31303b4cfc86e9a230d95b95ea21b51c452157769f3b14ad8dedb8a6f1",
+      "address": "0x6c08ea08a359bc879ba01061ede60b52e2bb61e61731b99ed3edc3f996b8afd",
+      "class_hash": "0x7e9d7e9152cd96b63cb8bcebff5099c90472c7db4fb4260a26a15c3139f9ed",
       "abi": [
         {
           "type": "impl",
@@ -7597,7 +7597,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::round::Round",
+          "name": "jokers_of_neon_lib::models::status::round::round::Round",
           "members": [
             {
               "name": "game_id",
@@ -7693,12 +7693,12 @@
               "inputs": [
                 {
                   "name": "round",
-                  "type": "jokers_of_neon_lib::models::round::Round"
+                  "type": "jokers_of_neon_lib::models::status::round::round::Round"
                 }
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_lib::models::round::Round"
+                  "type": "jokers_of_neon_lib::models::status::round::round::Round"
                 }
               ],
               "state_mutability": "external"
@@ -7851,8 +7851,8 @@
       ]
     },
     {
-      "address": "0x63dc40e09893c33a630d207ba1ff78cc828a72f6a91836f78b0a23a3499db4f",
-      "class_hash": "0x6e6b0ec15e3442d4408621ec0d251776783b997bc24e7b736856ad2ad7a226d",
+      "address": "0x56c3c4e55a362d9a2f94c799e0e9310f31b98ad93ed92283e2fe09ec89821ac",
+      "class_hash": "0x5f1ae0ba5b6584c2e2325c7badbc9d27086fe9a91a83efb0e0516b4d80c7d2a",
       "abi": [
         {
           "type": "impl",
@@ -7911,7 +7911,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -7945,7 +7945,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -8019,7 +8019,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -8027,11 +8027,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -8129,7 +8129,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -8301,8 +8301,8 @@
       ]
     },
     {
-      "address": "0x31afeb038ff747b3fe79c42776c6e2ad9ea95658c24c2d94e6ab29afc4d62ad",
-      "class_hash": "0x454529d885739e505164512b517d580d1fc78b04a8cabe5956169eb6ec8f5e",
+      "address": "0x2e6b217c3f9eef15b558859693ca303408326a15d50a357b8e8e6c3bfb1947",
+      "class_hash": "0x24cd3aaeb07c2c5e5bfdccee55ccd0a9dfbb55374505cc94b94c703ebcf7097",
       "abi": [
         {
           "type": "impl",
@@ -8361,7 +8361,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -8395,7 +8395,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -8469,7 +8469,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -8477,11 +8477,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -8579,7 +8579,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -8751,8 +8751,8 @@
       ]
     },
     {
-      "address": "0x213d262812952a3fb9737f92cdea50b356f84c566f8c4f48a6bb84abcf0b28d",
-      "class_hash": "0x39cf7e827882cb2746830dde9b69861f22217e480d45f7b416a284b076ae008",
+      "address": "0x12a750e6a6c86b664f6ea88e469a37538b77bb2e544d04d02ce5278bd20dbd9",
+      "class_hash": "0x7d90f0f8651d068c71e33a84752dac726852b1b6c1a1c259d2eb907e7d90f2b",
       "abi": [
         {
           "type": "impl",
@@ -8811,7 +8811,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -8845,7 +8845,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -8919,7 +8919,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -8927,11 +8927,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -9029,7 +9029,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -9201,8 +9201,8 @@
       ]
     },
     {
-      "address": "0x670d3714e67f145b8e46077458bc555573bc3c0b5c1ec89dfbefb188132816b",
-      "class_hash": "0x248b542c04a430501b8a1012a86268ae4d58944fce00dfe843720b5f0ac45fc",
+      "address": "0xeb6e40d1c0847a4f1561d00514703d813b50abbfc4b9d984dd47dc9d865332",
+      "class_hash": "0x745b9aef4f99ca9fa5d8094fa642dc570ced21175e9d614f92199c016a1f89a",
       "abi": [
         {
           "type": "impl",
@@ -9261,7 +9261,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -9295,7 +9295,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -9369,7 +9369,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -9377,11 +9377,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -9479,7 +9479,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -9651,8 +9651,8 @@
       ]
     },
     {
-      "address": "0x27da35ecfa2a7e37646211fe0e68bde108cba509323ca0a262b77890fd5f3df",
-      "class_hash": "0x7ec454f6e8036ad1d7c1c3569a5f90ca890c3daeb53e940955d2fb1ff1e39ad",
+      "address": "0x402c3fe99c5ea7e5ac0d79a873c5d3c17f742e5e1ff76f48a7fc3117332c24b",
+      "class_hash": "0x6f24ef94bf8b714d467fdca212bda968b44c22bd1a0b61cf23c750eec9a6185",
       "abi": [
         {
           "type": "impl",
@@ -9711,7 +9711,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -9745,7 +9745,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -9819,7 +9819,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -9827,11 +9827,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -9929,7 +9929,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -10101,8 +10101,8 @@
       ]
     },
     {
-      "address": "0x2cd3779b553fa5f0bfec332a3e51b3b1b098669eb9c15ab3bd93d3db20abc96",
-      "class_hash": "0x1bffe5a3517db3efc81d67b7cf489cddb72214531137d2421be377c69b63469",
+      "address": "0x74c2e446a27f9f752a4cf7052102aac30024d881d2a65a817eb6b097e0d1ce8",
+      "class_hash": "0x3bcbdb48c0d93593317d5c9cb3836092ff8db7986994a0d33a12906f6230eb8",
       "abi": [
         {
           "type": "impl",
@@ -10161,7 +10161,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -10195,7 +10195,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -10269,7 +10269,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -10277,11 +10277,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -10379,7 +10379,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -10551,8 +10551,8 @@
       ]
     },
     {
-      "address": "0x70fc433334ad382270fc002e53b26dbb0ad29cffcef0f53214ad83a20a611d",
-      "class_hash": "0x3fe9ee044771debd4c634e9b43e9fb902b08144970f96a7ce3a2dd1a32c3046",
+      "address": "0x262e8c079e64362e57205aa6dfc897cb360ed5f352e1237bf3ea8be42df26a9",
+      "class_hash": "0x66c7984487b96c9f401c864d1b39fb45da1e6c5143efe7e32ca03d35ba06ac4",
       "abi": [
         {
           "type": "impl",
@@ -10611,7 +10611,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -10645,7 +10645,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -10719,7 +10719,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -10727,11 +10727,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -10829,7 +10829,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -11001,8 +11001,8 @@
       ]
     },
     {
-      "address": "0x1c260b28f0a53233d5bfbaf79ca6c9c1a900b00afbafe965d95cbc6d978ce04",
-      "class_hash": "0x2cc5fe12e7ae08c1e978dbc912beb62bec67d20ac0ea5cdc6c366b279dac02d",
+      "address": "0x5ae2b2aa8bfda8ff29628aa2bc793f08209d0fb4d3f9d96c00c672740059d04",
+      "class_hash": "0x2e49a6a8991f218e423acf6f71b88b30b779cc9bd695436c8b53dc37589d17",
       "abi": [
         {
           "type": "impl",
@@ -11061,7 +11061,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -11095,7 +11095,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -11169,7 +11169,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -11177,11 +11177,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -11279,7 +11279,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -11451,8 +11451,8 @@
       ]
     },
     {
-      "address": "0x5f778921f4cb2ac431d3c2bb2d04d1b88bee855049cf7d01a246df2e7d6ee50",
-      "class_hash": "0x7cb386f7e43a55f21042b9d6f4978e0c5bf2521d56a2aa3080b3833e334c3f8",
+      "address": "0x284ad539ba9906c13312fa76c202603cdc584d7e4a9de8fce45f156616931a2",
+      "class_hash": "0x65e823dbb14fdbab82ae990efd4407233e554c39343043bfa86b5f3258d62bd",
       "abi": [
         {
           "type": "impl",
@@ -11511,7 +11511,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -11565,7 +11565,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -11599,7 +11599,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -11673,7 +11673,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -11681,11 +11681,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -11699,11 +11699,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::card::Card)>"
+              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -11727,11 +11727,11 @@
           "members": [
             {
               "name": "hand",
-              "type": "jokers_of_neon_lib::models::poker_hand::PokerHand"
+              "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
@@ -11971,8 +11971,8 @@
       ]
     },
     {
-      "address": "0x75f82835824d0063c783891a00d1948cd9b606d1fbb7b9d9dd0e48471e16d4b",
-      "class_hash": "0x48d83feaec37a66002b89c30f4b8eed352d85067289233a00e83a056b22412d",
+      "address": "0x715e71ccc05e66e16eeb66d09126c586fabc041d0c706dd1043cdd15ae6c4ad",
+      "class_hash": "0x2c2da4a1f32dc65698574b8d6849e8d3ffac4531a07c9336b0802aee911c493",
       "abi": [
         {
           "type": "impl",
@@ -12031,7 +12031,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::discount_section::DiscountSection",
+          "name": "jokers_of_neon_lib::models::status::shop::shop::DiscountSection",
           "variants": [
             {
               "name": "Traditionals",
@@ -12143,7 +12143,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::discount_section::DiscountSection, core::integer::u32)>"
+                  "type": "core::array::Array::<(jokers_of_neon_lib::models::status::shop::shop::DiscountSection, core::integer::u32)>"
                 }
               ],
               "state_mutability": "external"
@@ -12296,8 +12296,8 @@
       ]
     },
     {
-      "address": "0x3cd0ec8b079281343ea38a9ca449daecebf922a235c30b75b0908b7a5896ba",
-      "class_hash": "0x3235ea12438acfcb55bc6cc065ae880ce5027a2fba39e98939b17c78680a8ff",
+      "address": "0x672a279bca0542752c6c766ba29693c9dbc60fbb9742dbb65f02676fce8c4cc",
+      "class_hash": "0x5141214281e5de622f73a8ca22b9c5535bd18c0999213e3791b473dc6d4d477",
       "abi": [
         {
           "type": "impl",
@@ -12356,7 +12356,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::game::GameState",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
             {
               "name": "IN_GAME",
@@ -12378,7 +12378,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::game::Game",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
             {
               "name": "id",
@@ -12438,7 +12438,7 @@
             },
             {
               "name": "state",
-              "type": "jokers_of_neon_lib::models::game::GameState"
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
             },
             {
               "name": "cash",
@@ -12456,12 +12456,12 @@
               "inputs": [
                 {
                   "name": "game",
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "state_mutability": "external"
@@ -12472,12 +12472,12 @@
               "inputs": [
                 {
                   "name": "game",
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "state_mutability": "external"
@@ -12621,8 +12621,8 @@
       ]
     },
     {
-      "address": "0x230b2c93df82a3369b6c4b6a8a44c794d3cd86f5ac0595eb5c33215e8260b1",
-      "class_hash": "0x3e1592e51fefd88318ae20d0d124908cef4041123dc2c7ee436d8a690d75cf0",
+      "address": "0x3ee1eb0a15f0c70c5bb43252b24063184ab4b029f2d4abca847301bb4fbe734",
+      "class_hash": "0x7d1aedc339fcb800c2628670582d699d446755ce4938968ec36468da1a8767e",
       "abi": [
         {
           "type": "impl",
@@ -12681,7 +12681,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::game::GameState",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
             {
               "name": "IN_GAME",
@@ -12703,7 +12703,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::game::Game",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
             {
               "name": "id",
@@ -12763,7 +12763,7 @@
             },
             {
               "name": "state",
-              "type": "jokers_of_neon_lib::models::game::GameState"
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
             },
             {
               "name": "cash",
@@ -12781,12 +12781,12 @@
               "inputs": [
                 {
                   "name": "game",
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "state_mutability": "external"
@@ -12797,12 +12797,12 @@
               "inputs": [
                 {
                   "name": "game",
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_lib::models::game::Game"
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
                 }
               ],
               "state_mutability": "external"
@@ -12946,8 +12946,8 @@
       ]
     },
     {
-      "address": "0x3aca340ed107cc26a0159e6be041e5916e001d4e4ba27b99aa410af6ec5879a",
-      "class_hash": "0x5101c558dacb6b6a2e69430f8f12ee32fdd4a4e44e9ce7f03854f1bcb19ad4e",
+      "address": "0x1375d1baf5f6772475aeff2d7f49ef37bacaf15f46025d219faa0ee8150cfdd",
+      "class_hash": "0x1ba498e8c5fb9150ee2dbf530377f8c8fa224652268d9f1c135a4c503c9be34",
       "abi": [
         {
           "type": "impl",
@@ -13006,7 +13006,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -13040,7 +13040,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -13114,7 +13114,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -13122,11 +13122,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -13224,7 +13224,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -13396,8 +13396,8 @@
       ]
     },
     {
-      "address": "0x11f0cd7511ff69cda5bb0a757ed8f157328e2d0100ede355b81c7670da4384d",
-      "class_hash": "0x28cb780997ea53e4b825570951818eadaf9014a261af7ab3441a75f0eeb397d",
+      "address": "0x783275e781441f21dfe5c058bce5c6205589fc35d242043f9d902178013337c",
+      "class_hash": "0xda89a22fab63bb4c288c23674511ce55b612252d429d6d87887983928c7f67",
       "abi": [
         {
           "type": "impl",
@@ -13456,7 +13456,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::power_up::PowerUp",
+          "name": "jokers_of_neon_lib::models::data::power_up::PowerUp",
           "members": [
             {
               "name": "id",
@@ -13544,7 +13544,7 @@
               "inputs": [
                 {
                   "name": "power_up",
-                  "type": "jokers_of_neon_lib::models::power_up::PowerUp"
+                  "type": "jokers_of_neon_lib::models::data::power_up::PowerUp"
                 }
               ],
               "outputs": [
@@ -13702,8 +13702,8 @@
       ]
     },
     {
-      "address": "0x4fd8ea8f7a3f4264cb9aa6f33a52e61a5b5960dd941e61ae3cb9a45e2bd0242",
-      "class_hash": "0x76c7e9ff753dd7846a8eda87ae9a1b7ff7a00d50c73f0e0ba3c3b6c94e5f974",
+      "address": "0x188fc6c53427876ccf2cf6c40bc902d8cbfe4580c3a78c288082b3cb19c77a0",
+      "class_hash": "0x1387ef6ee4f42a3a2bd99980b36b0ee663df7707f08b6ce88698baddd0cc90f",
       "abi": [
         {
           "type": "impl",
@@ -13762,7 +13762,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -13796,7 +13796,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -13870,7 +13870,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -13878,11 +13878,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -13980,7 +13980,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -14152,8 +14152,8 @@
       ]
     },
     {
-      "address": "0x3b1c4bceb41c25589b3b441c0bccf3eb4e66420fdf21279c7989115ce81a5d",
-      "class_hash": "0x2721cfec4bb7a529faa6169e549aa6230bbdbea878d8295f0013e3a41962f7a",
+      "address": "0x8df4b2226f8f15b8d55cf7ae393d9e06b218bfc8fe1ea3fae7d4d032d9176c",
+      "class_hash": "0x3b7d2e6396b3440273eaa0d63f7735309466ddbf50cb842ce81684468df2501",
       "abi": [
         {
           "type": "impl",
@@ -14212,7 +14212,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -14246,7 +14246,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -14320,7 +14320,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -14328,11 +14328,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -14430,7 +14430,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -14602,8 +14602,8 @@
       ]
     },
     {
-      "address": "0x46a0c4a60bc74dd3774c82922a17228382d7269a7c1bbcede389c4e84efa7ca",
-      "class_hash": "0x573b9ba7db4dd820393a1bcef28f3be800f57e1ad78367772c873b0e4734970",
+      "address": "0x26f9e133f597ba90deff018826a03453cc14b2aae75092199d2c67de7d5e78b",
+      "class_hash": "0x2f9e4e981fbe83cea7d48c1bb73ee7d22ef3b615627117aaf4e3d257a66c19b",
       "abi": [
         {
           "type": "impl",
@@ -14662,7 +14662,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -14696,7 +14696,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -14770,7 +14770,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -14778,11 +14778,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -14880,7 +14880,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -15052,8 +15052,8 @@
       ]
     },
     {
-      "address": "0x3894fc702d81aa67df17e922daa8064772ca99f6b7154d3b8650cf0c1a9e4f",
-      "class_hash": "0x46c9708a304959ea500d4c8bdd2c1035aaf51b498e4c2d8d33ea5f1b625d3c6",
+      "address": "0x1289283d1d78b7aa2e0f10efc9c9a676621a9d02ee843aa25b760bf1ece8b89",
+      "class_hash": "0xa2b81d9f0926e7ff3568f9de415439388eb58ed8100c071484fdfe8fb6951a",
       "abi": [
         {
           "type": "impl",
@@ -15112,7 +15112,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -15146,7 +15146,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -15220,7 +15220,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -15228,11 +15228,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -15330,7 +15330,7 @@
               "inputs": [
                 {
                   "name": "card",
-                  "type": "jokers_of_neon_lib::models::card::Card"
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
                 }
               ],
               "outputs": [
@@ -15502,8 +15502,8 @@
       ]
     },
     {
-      "address": "0x4f91014c7b030e508ef91340938542fa20bbdf8e4e1d4b6dd06fb4f572ac04b",
-      "class_hash": "0x3d7c91fe5a73052eb1277d14e503eb46b813578afd0b523f6177bdf288db4e7",
+      "address": "0x6a8ea3aac5ef1276f010808cbd025832c8bbe57080630d1a78227eb6d2b084a",
+      "class_hash": "0x4fc489d4c628277ae112a35463b5b1fc8e0b21c2bfb53773f969023ef17f61e",
       "abi": [
         {
           "type": "impl",
@@ -15562,7 +15562,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -15616,7 +15616,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Suit",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
               "name": "None",
@@ -15650,7 +15650,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::card::Value",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
           "variants": [
             {
               "name": "None",
@@ -15724,7 +15724,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_lib::models::card::Card",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
           "members": [
             {
               "name": "id",
@@ -15732,11 +15732,11 @@
             },
             {
               "name": "suit",
-              "type": "jokers_of_neon_lib::models::card::Suit"
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
             },
             {
               "name": "value",
-              "type": "jokers_of_neon_lib::models::card::Value"
+              "type": "jokers_of_neon_lib::models::data::card::Value"
             },
             {
               "name": "points",
@@ -15750,11 +15750,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::card::Card)>"
+              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -15778,11 +15778,11 @@
           "members": [
             {
               "name": "hand",
-              "type": "jokers_of_neon_lib::models::poker_hand::PokerHand"
+              "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
@@ -16022,8 +16022,8 @@
       ]
     },
     {
-      "address": "0x2ba903855084370de9037e91794da7251d9c4758b641bdc99fb5554d8dd6e3f",
-      "class_hash": "0x537ae1bd96ce2f64547dc93626dcdaec72eadd1efd2c8d73f659f782a83f1f7",
+      "address": "0x4ca051c32dc04d5684c7e54a3c4b67e42ca46f9405cbe2d5162714266ee0b8e",
+      "class_hash": "0x6ecc2c8eadeb9bfe6098b5f352f54bd8f933f3051a4f2271f04c8a3c611c161",
       "abi": [
         {
           "type": "impl",
@@ -16082,7 +16082,7 @@
         },
         {
           "type": "enum",
-          "name": "jokers_of_neon_lib::models::poker_hand::PokerHand",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
           "variants": [
             {
               "name": "None",
@@ -16206,7 +16206,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "(jokers_of_neon_lib::models::poker_hand::PokerHand, core::integer::u32)"
+                  "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
                 }
               ],
               "state_mutability": "external"

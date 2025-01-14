@@ -2,8 +2,8 @@
 pub mod special_pack_discount {
     use jokers_of_neon_classic::specials::specials::SPECIAL_PACK_DISCOUNT_ID;
     use jokers_of_neon_lib::interfaces::shop::ISpecialShopType;
-    use jokers_of_neon_lib::models::discount_section::DiscountSection;
     use jokers_of_neon_lib::models::special_type::SpecialType;
+    use jokers_of_neon_lib::models::status::shop::shop::DiscountSection;
 
     #[abi(embed_v0)]
     impl SpecialPackDiscountImpl of ISpecialShopType<ContractState> {

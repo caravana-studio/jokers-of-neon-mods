@@ -2,7 +2,7 @@
 mod special_power_up_booster {
     use jokers_of_neon_classic::specials::specials::SPECIAL_POWER_UP_BOOSTER_ID;
     use jokers_of_neon_lib::interfaces::power_up::ISpecialPowerUp;
-    use jokers_of_neon_lib::models::power_up::PowerUp;
+    use jokers_of_neon_lib::models::data::power_up::PowerUp;
     use jokers_of_neon_lib::models::special_type::SpecialType;
 
     #[abi(embed_v0)]

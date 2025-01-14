@@ -2,7 +2,7 @@
 pub mod special_random_multi_for_spade {
     use jokers_of_neon_classic::specials::specials::SPECIAL_RANDOM_MULTI_FOR_SPADE_ID;
     use jokers_of_neon_lib::interfaces::individual::ISpecialIndividual;
-    use jokers_of_neon_lib::models::card::{Card, Suit};
+    use jokers_of_neon_lib::models::data::card::{Card, Suit};
     use jokers_of_neon_lib::models::special_type::SpecialType;
 
     #[abi(embed_v0)]

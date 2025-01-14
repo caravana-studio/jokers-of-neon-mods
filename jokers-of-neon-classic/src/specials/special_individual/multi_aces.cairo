@@ -2,7 +2,7 @@
 pub mod special_multi_aces {
     use jokers_of_neon_classic::specials::specials::SPECIAL_MULTI_ACES_ID;
     use jokers_of_neon_lib::interfaces::individual::ISpecialIndividual;
-    use jokers_of_neon_lib::models::card::{Card, Value};
+    use jokers_of_neon_lib::models::data::card::{Card, Value};
     use jokers_of_neon_lib::models::special_type::SpecialType;
 
     #[abi(embed_v0)]

@@ -2,7 +2,7 @@
 pub mod special_multi_for_diamond {
     use jokers_of_neon_classic::specials::specials::SPECIAL_MULTI_FOR_DIAMOND_ID;
     use jokers_of_neon_lib::interfaces::individual::ISpecialIndividual;
-    use jokers_of_neon_lib::models::card::{Card, Suit};
+    use jokers_of_neon_lib::models::data::card::{Card, Suit};
     use jokers_of_neon_lib::models::special_type::SpecialType;
 
     #[abi(embed_v0)]

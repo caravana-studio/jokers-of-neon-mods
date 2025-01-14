@@ -2,7 +2,7 @@
 pub mod special_straight_with_four_cards {
     use jokers_of_neon_classic::specials::specials::SPECIAL_STRAIGHT_WITH_FOUR_CARDS_ID;
     use jokers_of_neon_lib::interfaces::plays_rules::ISpecialPlaysRulesType;
-    use jokers_of_neon_lib::models::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
     use jokers_of_neon_lib::models::special_type::SpecialType;
 
     #[abi(embed_v0)]
