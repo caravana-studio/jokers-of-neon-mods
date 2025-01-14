@@ -285,3 +285,29 @@ fn loot_boxes_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         array![C_LOOT_BOX_COST, B_LOOT_BOX_COST, A_LOOT_BOX_COST].span()
     )
 }
+
+fn get_loot_box(loot_box_id: u32) -> LootBox {
+    if loot_box_id == BASIC_LOOT_BOX_ID {
+        BASIC_LOOT_BOX()
+    } else if loot_box_id == ADVANCED_LOOT_BOX_ID {
+        ADVANCED_LOOT_BOX()
+    } else if loot_box_id == JOKER_LOOT_BOX_ID {
+        JOKER_LOOT_BOX()
+    } else if loot_box_id == SPECIALS_LOOT_BOX_ID {
+        SPECIALS_LOOT_BOX()
+    } else if loot_box_id == MODIFIER_LOOT_BOX_ID {
+        MODIFIER_LOOT_BOX()
+    } else if loot_box_id == FIGURES_LOOT_BOX_ID {
+        FIGURES_LOOT_BOX()
+    } else if loot_box_id == DECEITFUL_JOKER_LOOT_BOX_ID {
+        DECEITFUL_JOKER_LOOT_BOX()
+    } else if loot_box_id == LOVERS_LOOT_BOX_ID {
+        LOVERS_LOOT_BOX()
+    } else if loot_box_id == SPECIAL_BET_LOOT_BOX_ID {
+        SPECIAL_BET_LOOT_BOX()
+    } else if loot_box_id == NEON_LOOT_BOX_ID {
+        NEON_LOOT_BOX()
+    } else {
+        EMPTY_LOOT_BOX()
+    }
+}
