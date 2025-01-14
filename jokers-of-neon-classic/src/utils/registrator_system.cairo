@@ -12,9 +12,9 @@ pub mod registrator_system {
 
     #[abi(embed_v0)]
     impl RegistratorBaseImpl of IRegistrator<ContractState> {
-        fn register_game_mod(ref self: ContractState, mod_name: felt252) -> u32 {
+        fn register_game_mod(ref self: ContractState, mod_name: felt252, configurator_system_address: ContractAddress) -> u32 {
             IRegistratorDispatcher { contract_address: JOKERS_OF_NEON_CORE_REGISTRATOR_ADDRESS() }
-                .register_game_mod(mod_name)
+                .register_game_mod(mod_name, configurator_system_address)
         }
 
         fn register_special(ref self: ContractState, mod_id: u32, special_id: u32, contract_address: ContractAddress) {
