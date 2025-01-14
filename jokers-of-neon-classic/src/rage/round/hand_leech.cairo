@@ -7,8 +7,8 @@ pub mod rage_hand_leech {
 
     #[abi(embed_v0)]
     impl RageHandLeechImpl of IRageRound<ContractState> {
-        fn apply(self: @ContractState, round: @Round) -> Round {
-            let mut round = *round;
+        fn apply(self: @ContractState, round: Round) -> Round {
+            let mut round = round;
             round.hands -= 2;
             round
         }

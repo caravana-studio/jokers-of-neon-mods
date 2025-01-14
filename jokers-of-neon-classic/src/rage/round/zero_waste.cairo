@@ -7,8 +7,8 @@ pub mod rage_zero_waste {
 
     #[abi(embed_v0)]
     impl RageZeroWasteImpl of IRageRound<ContractState> {
-        fn apply(self: @ContractState, round: @Round) -> Round {
-            let mut round = *round;
+        fn apply(self: @ContractState, round: Round) -> Round {
+            let mut round = round;
             round.discard = 0;
             round
         }
