@@ -2,10 +2,17 @@
 
 set -e
 
-world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
+# Store sozo inspect result once
+inspect_result=$(sozo inspect)
+
+# Extract addresses from the stored result
+world_address=$(echo "$inspect_result" | awk '/World/ {getline; getline; print $3}')
 echo "World address: $world_address"
 
-sozo execute registrator_system register_game_mod -c 11 --wait --world $world_address
+configurator_address=$(echo "$inspect_result" | grep "jokers_of_neon_classic-configurator_system" | awk '{print $NF}')
+echo "Configurator address: $configurator_address"
+
+sozo execute registrator_system register_game_mod -c 11,$configurator_address --wait --world $world_address
 
 mod_id=$(curl -s -X POST -H "Content-Type: application/json" \
     -d '{"query":"{jokersOfNeonGameModModels(first: 500) {totalCount}}"}' \
