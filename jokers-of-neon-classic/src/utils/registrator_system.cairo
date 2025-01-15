@@ -12,9 +12,15 @@ pub mod registrator_system {
 
     #[abi(embed_v0)]
     impl RegistratorBaseImpl of IRegistrator<ContractState> {
-        fn register_game_mod(ref self: ContractState, mod_name: felt252, loot_boxes_info_system_address: ContractAddress, specials_info_system_address: ContractAddress) -> u32 {
+        fn register_game_mod(ref self: ContractState, 
+            mod_name: felt252, 
+            card_info_address: ContractAddress,
+            specials_info_address: ContractAddress,
+            rages_info_address: ContractAddress,
+            loot_boxes_info_address: ContractAddress
+        ) -> u32 {
             IRegistratorDispatcher { contract_address: JOKERS_OF_NEON_CORE_REGISTRATOR_ADDRESS() }
-                .register_game_mod(mod_name, loot_boxes_info_system_address, specials_info_system_address)
+                .register_game_mod(mod_name, card_info_address, specials_info_address, rages_info_address, loot_boxes_info_address)
         }
 
         fn register_special(ref self: ContractState, mod_id: u32, special_id: u32, contract_address: ContractAddress) {

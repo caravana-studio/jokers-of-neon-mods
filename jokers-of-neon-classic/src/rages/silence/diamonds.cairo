@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod rage_silent_diamonds {
-    use jokers_of_neon_classic::rage::rages_ids::RAGE_CARD_SILENT_DIAMONDS;
+    use jokers_of_neon_classic::rages::rages::RAGE_CARD_SILENT_DIAMONDS;
     use jokers_of_neon_lib::interfaces::rage::{base::IRageBase, silence::IRageSilence};
     use jokers_of_neon_lib::models::data::card::{Suit, Value};
     use jokers_of_neon_lib::models::rage_type::RageType;

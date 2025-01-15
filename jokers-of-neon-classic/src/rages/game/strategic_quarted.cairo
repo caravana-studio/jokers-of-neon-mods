@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod rage_strategic_quarted {
-    use jokers_of_neon_classic::rage::rages_ids::RAGE_CARD_STRATEGIC_QUARTED;
+    use jokers_of_neon_classic::rages::rages::RAGE_CARD_STRATEGIC_QUARTED;
     use jokers_of_neon_lib::interfaces::rage::{base::IRageBase, game::IRageGame};
     use jokers_of_neon_lib::models::data::card::Suit;
     use jokers_of_neon_lib::models::rage_type::RageType;

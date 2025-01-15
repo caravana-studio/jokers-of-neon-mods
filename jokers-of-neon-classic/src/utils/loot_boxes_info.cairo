@@ -1,7 +1,7 @@
 #[dojo::contract]
 pub mod loot_boxes_info {
     use dojo::world::Resource::Contract;
-    use jokers_of_neon_lib::interfaces::loot_boxes_info::{
+    use jokers_of_neon_lib::interfaces::info::loot_boxes_info::{
         ILootBoxesInfo, ILootBoxesInfoDispatcher, ILootBoxesInfoDispatcherTrait
     };
     use jokers_of_neon_classic::loot_box::{
