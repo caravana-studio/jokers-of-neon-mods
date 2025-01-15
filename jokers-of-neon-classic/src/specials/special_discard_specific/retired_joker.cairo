@@ -8,7 +8,7 @@ pub mod special_retired_joker {
 
     #[abi(embed_v0)]
     impl SpecialRetiredJokerImpl of ISpecialDiscardSpecificType<ContractState> {
-        fn execute(ref self: ContractState, play_info: PlayInfo) -> (u32, u32, u32) {
+        fn execute(ref self: ContractState, play_info: PlayInfo) -> (i32, i32, i32) {
             let mut cash = 0;
             let mut cards = play_info.cards;
             loop {

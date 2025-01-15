@@ -11,7 +11,7 @@ pub mod special_multi_aces {
             card.value == Value::Ace
         }
 
-        fn execute(ref self: ContractState) -> (u32, u32, u32) {
+        fn execute(ref self: ContractState) -> (i32, i32, i32) {
             (0, 5, 0)
         }
 

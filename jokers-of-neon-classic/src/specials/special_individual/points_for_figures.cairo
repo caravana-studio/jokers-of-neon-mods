@@ -11,7 +11,7 @@ pub mod special_points_for_figures {
             card.value == Value::Jack || card.value == Value::Queen || card.value == Value::King
         }
 
-        fn execute(ref self: ContractState) -> (u32, u32, u32) {
+        fn execute(ref self: ContractState) -> (i32, i32, i32) {
             (50, 0, 0)
         }
 

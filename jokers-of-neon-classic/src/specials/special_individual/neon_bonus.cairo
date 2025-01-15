@@ -14,7 +14,7 @@ pub mod special_neon_bonus {
             true
         }
 
-        fn execute(ref self: ContractState) -> (u32, u32, u32) {
+        fn execute(ref self: ContractState) -> (i32, i32, i32) {
             (20, 0, 0)
         }
 

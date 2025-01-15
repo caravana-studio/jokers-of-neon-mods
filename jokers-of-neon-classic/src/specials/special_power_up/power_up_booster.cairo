@@ -7,8 +7,8 @@ mod special_power_up_booster {
 
     #[abi(embed_v0)]
     impl SpecialPowerUpBooster of ISpecialPowerUp<ContractState> {
-        fn execute(ref self: ContractState, power_up: PowerUp) -> (u32, u32, u32) {
-            (power_up.points * 2, power_up.multi * 2, 0)
+        fn execute(ref self: ContractState, power_up: PowerUp) -> (i32, i32, i32) {
+            (power_up.points.try_into().unwrap() * 2, power_up.multi.try_into().unwrap() * 2, 0)
         }
 
         fn get_id(self: @ContractState) -> u32 {

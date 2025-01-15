@@ -11,7 +11,7 @@ pub mod special_lucky_hand {
             card.suit == Suit::Diamonds
         }
 
-        fn execute(ref self: ContractState) -> (u32, u32, u32) {
+        fn execute(ref self: ContractState) -> (i32, i32, i32) {
             (0, 0, 50)
         }
 

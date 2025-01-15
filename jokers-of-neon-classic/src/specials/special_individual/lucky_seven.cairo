@@ -11,7 +11,7 @@ pub mod special_lucky_seven {
             card.value == Value::Seven
         }
 
-        fn execute(ref self: ContractState) -> (u32, u32, u32) {
+        fn execute(ref self: ContractState) -> (i32, i32, i32) {
             (77, 0, 0)
         }
 

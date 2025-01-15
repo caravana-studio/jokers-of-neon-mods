@@ -11,7 +11,7 @@ pub mod special_multi_for_club {
             card.suit == Suit::Clubs
         }
 
-        fn execute(ref self: ContractState) -> (u32, u32, u32) {
+        fn execute(ref self: ContractState) -> (i32, i32, i32) {
             (0, 2, 0)
         }
 

@@ -8,7 +8,7 @@ pub mod special_initial_advantage {
 
     #[abi(embed_v0)]
     impl SpecialInitialAdvantageImpl of ISpecialRoundState<ContractState> {
-        fn execute(ref self: ContractState, game: Game, round: Round) -> (u32, u32, u32) {
+        fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
             // first hand
             if game.max_hands == round.hands {
                 return (100, 10, 0);

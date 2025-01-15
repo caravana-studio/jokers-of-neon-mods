@@ -28,5 +28,15 @@ pub mod registrator_system {
             IRegistratorDispatcher { contract_address: JOKERS_OF_NEON_CORE_REGISTRATOR_ADDRESS() }
                 .register_specials(mod_id, special_ids, contract_addresses);
         }
+
+        fn register_rage(ref self: ContractState, mod_id: u32, rage_id: u32, contract_address: ContractAddress) {
+            
+        }
+
+        fn register_rages(
+            ref self: ContractState, mod_id: u32, rage_ids: Span<u32>, contract_addresses: Span<ContractAddress>
+        ) {
+            
+        }
     }
 }

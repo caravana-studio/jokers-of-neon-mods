@@ -12,7 +12,7 @@ pub mod special_joker_booster {
         }
 
         // TODO: Deberia dar el doble de puntos y el doble de multi
-        fn execute(ref self: ContractState) -> (u32, u32, u32) {
+        fn execute(ref self: ContractState) -> (i32, i32, i32) {
             (100, 1, 0)
         }
 
