@@ -98,4 +98,7 @@ mod specials {
 mod utils {
     mod registrator_system;
     mod specials_info;
+    mod loot_boxes_info;
 }
+
+mod loot_box;

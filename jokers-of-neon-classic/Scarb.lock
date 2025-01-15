@@ -34,7 +34,7 @@ dependencies = [
 [[package]]
 name = "jokers_of_neon_lib"
 version = "0.0.1"
-source = "git+https://github.com/caravana-studio/jokers-of-neon-lib#17191b629e4bf512ecbd05f6c4545c8162e257d2"
+source = "git+https://github.com/caravana-studio/jokers-of-neon-lib#ba57d3c99eb0fdd9938eac5a38706c6c763a4823"
 dependencies = [
  "dojo",
 ]
