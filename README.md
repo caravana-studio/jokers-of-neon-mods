@@ -5,14 +5,19 @@
 make setup
 ```
 
-1. Crear el mod en el mundo
+2. Crear el mod en el mundo
 ```
 make create-mod
 ```
 <!-- 3. Registrar el configurator_system en el mundo -->
-1. Registrar los especiales en el mod
+3. Registrar los especiales en el mod
 ```
 make register-specials MOD_ID=1
+```
+
+4. Registrar los rages en el mod
+```
+make register-rages MOD_ID=1
 ```
 
 ready to play! ✅

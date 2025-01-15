@@ -10,6 +10,9 @@ create-mod:
 register-specials:
 	@./scripts/register_specials.sh $(MOD_ID)
 
+register-rages:
+	@./scripts/register_rages.sh $(MOD_ID)
+
 deploy-slot:
 	@./scripts/deploy_slot.sh $(PROFILE) $(ACTION)
 

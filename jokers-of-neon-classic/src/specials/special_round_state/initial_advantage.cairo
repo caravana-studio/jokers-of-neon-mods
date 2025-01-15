@@ -33,7 +33,7 @@ pub mod special_initial_advantage {
         }
 
         fn get_type(ref self: ContractState) -> SpecialType {
-            SpecialType::Individual
+            SpecialType::RoundState
         }
     }
 }

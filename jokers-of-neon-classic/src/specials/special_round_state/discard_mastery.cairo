@@ -32,7 +32,7 @@ pub mod special_discard_mastery {
         }
 
         fn get_type(ref self: ContractState) -> SpecialType {
-            SpecialType::Individual
+            SpecialType::RoundState
         }
     }
 }
