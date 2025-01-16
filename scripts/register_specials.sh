@@ -1,9 +1,7 @@
 #!/bin/bash
 
-mod_id="$1"
-
-# Change to the project root directory (where the script is located)
-cd "$(dirname "$0")/.." || exit 1
+mod_name="$1"
+mod_id="$2"
 
 # Check if specials.cairo exists
 if [ ! -f "src/specials/specials.cairo" ]; then
@@ -11,15 +9,14 @@ if [ ! -f "src/specials/specials.cairo" ]; then
     exit 1
 fi
 
-# Get project name from Scarb.toml
-project_name=$(grep '^name = ' Scarb.toml | cut -d'"' -f2)
+world_address=0x065ce175b71709c8353b8575f190785b2b123590e9e90be4c4399257ce3ab709 # TODO: get from env
 
 # Run sozo inspect and store output directly in a variable
 inspect_output=$(sozo inspect)
 
 # Create arrays directly
-special_names=($(echo "$inspect_output" | grep "${project_name}-special_" | sed "s/${project_name}-special_\([^ ]*\).*/\1/"))
-contract_addresses=($(echo "$inspect_output" | grep "${project_name}-special_" | awk '{print $NF}'))
+special_names=($(echo "$inspect_output" | grep "${mod_name}-special_" | sed "s/${mod_name}-special_\([^ ]*\).*/\1/"))
+contract_addresses=($(echo "$inspect_output" | grep "${mod_name}-special_" | awk '{print $NF}'))
 
 # Create array for special IDs
 declare -a special_ids
@@ -45,5 +42,5 @@ world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
 
 # Execute sozo command
 echo -e "\nExecuting sozo command..."
-sozo execute registrator_system register_specials -c $mod_id,$len_special_ids,$special_ids_str,$len_contract_addresses,$contract_addresses_str --wait --world $world_address
+sozo execute special_manager register_specials -c $mod_id,$len_special_ids,$special_ids_str,$len_contract_addresses,$contract_addresses_str --wait --world $world_address
 echo -e "\n✅ Register specials finish!"

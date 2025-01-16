@@ -26,7 +26,7 @@ impl StoreImpl of StoreTrait {
     }
 
     fn get_mod_config(ref self: Store, mod_id: u32) -> ModConfig {
-        self.get_game_mod(mod_id).config
+        self.world.read_model(mod_id)
     }
 
     fn set_mod_config(ref self: Store, config: ModConfig) {
