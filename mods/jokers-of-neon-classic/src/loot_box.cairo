@@ -1,9 +1,11 @@
-use jokers_of_neon_lib::constants::card::{JOKER_CARD, NEON_JOKER_CARD, neon_cards_all, neon_hearts_cards, all_hearts_cards};
-use jokers_of_neon_lib::constants::modifiers::{modifiers_ids_all, modifiers_shop_info, SUIT_HEARTS_MODIFIER_ID};
-use jokers_of_neon_lib::constants::card::traditional_cards_all;
-use jokers_of_neon_lib::models::data::loot_box::LootBox;
-use jokers_of_neon_lib::models::data::card::{Card, CardTrait, Suit, Value, ValueEnumerableImpl};
 use jokers_of_neon_classic::specials::specials::{specials_ids_all, specials_shop_info, SPECIAL_ALL_CARDS_TO_HEARTS_ID};
+use jokers_of_neon_lib::constants::card::traditional_cards_all;
+use jokers_of_neon_lib::constants::card::{
+    JOKER_CARD, NEON_JOKER_CARD, neon_cards_all, neon_hearts_cards, all_hearts_cards
+};
+use jokers_of_neon_lib::constants::modifiers::{modifiers_ids_all, modifiers_shop_info, SUIT_HEARTS_MODIFIER_ID};
+use jokers_of_neon_lib::models::data::card::{Card, CardTrait, Suit, Value, ValueEnumerableImpl};
+use jokers_of_neon_lib::models::data::loot_box::LootBox;
 const BASIC_LOOT_BOX_ID: u32 = 1;
 const ADVANCED_LOOT_BOX_ID: u32 = 2;
 const JOKER_LOOT_BOX_ID: u32 = 3;
@@ -219,7 +221,9 @@ fn SPECIAL_BET_LOOT_BOX() -> LootBox {
         name: 'special_bet_loot_box',
         probability: 50,
         size: 3,
-        cards: array![array![].span(), specials_ids_all().span(), modifiers_ids_all().span(), traditional_cards_all().span()]
+        cards: array![
+            array![].span(), specials_ids_all().span(), modifiers_ids_all().span(), traditional_cards_all().span()
+        ]
             .span(),
         probs: array![100, 5, 10, 85].span(),
     }
@@ -245,10 +249,7 @@ fn loot_boxes_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // C-Grade Group
     let C_LOOT_BOX_PROBABILITY = 50;
     let C_LOOT_BOX_COST = 750;
-    let C_LOOT_BOX = array![
-        BASIC_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, LOVERS_LOOT_BOX_ID, SPECIAL_BET_LOOT_BOX_ID
-    ]
-        .span();
+    let C_LOOT_BOX = array![BASIC_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, LOVERS_LOOT_BOX_ID, SPECIAL_BET_LOOT_BOX_ID].span();
     // B-Grade Group
     let B_LOOT_BOX_PROBABILITY = 30;
     let B_LOOT_BOX_COST = 1500;

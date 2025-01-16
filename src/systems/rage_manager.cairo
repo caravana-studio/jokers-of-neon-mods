@@ -4,6 +4,7 @@ use starknet::ContractAddress;
 trait IRageManager<T> {
     fn register_rage(ref self: T, mod_id: u32, rage_id: u32, contract_address: ContractAddress);
     fn register_rages(ref self: T, mod_id: u32, rage_ids: Span<u32>, contract_addresses: Span<ContractAddress>);
+    fn get_rage_address(self: @T, mod_id: u32, rage_id: u32) -> ContractAddress;
 }
 
 #[dojo::contract]
@@ -41,5 +42,14 @@ pub mod rage_manager {
                 };
             }
         }
+
+        fn get_rage_address(self: @ContractState, mod_id: u32, rage_id: u32) -> ContractAddress {
+            let mut world = self.world(@"jokers_of_neon");
+            let mut store = StoreTrait::new(ref world);
+            let special_data = store.get_rage_data(mod_id, rage_id);
+
+            assert(!special_data.contract_address.is_zero(), 'Special card not registered');
+            special_data.contract_address
+        } 
     }
 }

@@ -2,6 +2,7 @@
 // const SPECIAL_SECOND_CHANCE_ID: u32 = 323; // TODO: falta implementar
 // const SPECIAL_LEVEL_UP_FIRST_DISCARDED_HAND_ID: u32 = 341; // TODO: falta implementar
 
+mod loot_box;
 mod rages {
     mod rages;
     mod debuff {}
@@ -96,10 +97,8 @@ mod specials {
 }
 
 mod utils {
-    mod specials_info;
+    mod card_info;
     mod loot_boxes_info;
     mod rages_info;
-    mod card_info;
+    mod specials_info;
 }
-
-mod loot_box;

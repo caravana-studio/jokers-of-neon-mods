@@ -4,6 +4,7 @@ use starknet::ContractAddress;
 trait ISpecialManager<T> {
     fn register_special(ref self: T, mod_id: u32, special_id: u32, contract_address: ContractAddress);
     fn register_specials(ref self: T, mod_id: u32, special_ids: Span<u32>, contract_addresses: Span<ContractAddress>);
+    fn get_special_address(self: @T, mod_id: u32, special_id: u32) -> ContractAddress;
 }
 
 #[dojo::contract]
@@ -41,5 +42,14 @@ pub mod special_manager {
                 };
             }
         }
+
+        fn get_special_address(self: @ContractState, mod_id: u32, special_id: u32) -> ContractAddress {
+            let mut world = self.world(@"jokers_of_neon");
+            let mut store = StoreTrait::new(ref world);
+            let special_data = store.get_special_data(mod_id, special_id);
+
+            assert(!special_data.contract_address.is_zero(), 'Special card not registered');
+            special_data.contract_address
+        } 
     }
 }
