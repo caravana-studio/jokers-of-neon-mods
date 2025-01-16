@@ -23,7 +23,6 @@ pub mod mod_manager {
 
     #[abi(embed_v0)]
     impl ModManagerImpl of super::IModManager<ContractState> {
-        
         fn create_mod(ref self: ContractState, owner: ContractAddress, name: felt252, config: ModConfig) -> u32 {
             self.assert_configs_are_non_zero(config);
             let mut world = self.world(@"jokers_of_neon_mods");

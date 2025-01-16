@@ -55,6 +55,6 @@ pub mod special_manager {
 
             assert(!special_data.contract_address.is_zero(), 'Special card not registered');
             special_data.contract_address
-        } 
+        }
     }
 }
