@@ -13,6 +13,8 @@ fi
 # Change to mod directory
 cd "mods/$mod_name"
 
+bash ../../scripts/replace_env.sh $mod_name
+
 if [ -d "target" ]; then
     rm -rf "target"
 fi
