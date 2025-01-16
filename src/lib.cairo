@@ -1,4 +1,5 @@
 mod store;
+
 mod models {
     mod game_mod;
     mod mod_config;

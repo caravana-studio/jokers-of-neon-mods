@@ -1,8 +1,9 @@
-// const SPECIAL_DEADLINE_ID: u32 = 319; // TODO: falta implementar
-// const SPECIAL_SECOND_CHANCE_ID: u32 = 323; // TODO: falta implementar
-// const SPECIAL_LEVEL_UP_FIRST_DISCARDED_HAND_ID: u32 = 341; // TODO: falta implementar
-
 mod loot_box;
+mod configs {
+    mod game;
+    mod play_rules;
+    mod shop;
+}
 mod rages {
     mod rages;
     mod debuff {}
