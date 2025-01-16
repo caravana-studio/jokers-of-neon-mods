@@ -31,8 +31,12 @@ bash ../../scripts/replace_manifest.sh $mod_name
 # Create mod and store the mod_id
 echo -e "\nCreating mod..."
 bash ../../scripts/create_mod.sh $mod_name
-mod_id=1
-echo "Mod created with ID: $mod_id"
+
+mod_id=$(curl -s -X POST -H "Content-Type: application/json" \
+    -d '{"query":"{jokersOfNeonModsGameModModels(first: 500) {totalCount}}"}' \
+    http://localhost:8080/graphql | jq -r '.data.jokersOfNeonModsGameModModels.totalCount')
+
+echo "Mod ID registered: $mod_id"
 
 echo -e "\nRegistering specials..."
 bash ../../scripts/register_specials.sh $mod_name $mod_id

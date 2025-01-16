@@ -26,9 +26,3 @@ specials_info_address=$(echo "$inspect_result" | grep "${mod_name}-specials_info
 echo "Specials Info address: $specials_info_address"
 
 sozo execute mod_manager create_mod -c $owner,1,0,$card_info_address,$specials_info_address,$rages_info_address,$loot_boxes_info_address,0x1,0x1 --wait --world $world_address
-
-mod_id=$(curl -s -X POST -H "Content-Type: application/json" \
-    -d '{"query":"{jokersOfNeonModsGameModModels(first: 500) {totalCount}}"}' \
-    http://localhost:8080/graphql | jq -r '.data.jokersOfNeonModsGameModModels.totalCount')
-
-echo "Mod ID registered: $mod_id"
