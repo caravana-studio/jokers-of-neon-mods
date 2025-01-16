@@ -5,9 +5,7 @@ pub mod play_rules_config {
     #[abi(embed_v0)]
     impl ClassicPlayRulesConfig of IPlayRulesConfig<ContractState> {
         fn get_play_rules_config(self: @ContractState) -> PlayRulesConfig {
-            PlayRulesConfig {
-                current_hand_len: 8, card_play_quantity: 5, flush_cards_needed: 5, straight_cards_needed: 5
-            }
+            PlayRulesConfig { card_play_quantity: 5, flush_cards_needed: 5, straight_cards_needed: 5 }
         }
     }
 }

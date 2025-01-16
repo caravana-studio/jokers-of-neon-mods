@@ -7,13 +7,13 @@ pub mod special_extra_help {
     impl SpecialExtraHelpImpl of ISpecialGameTypeSpecificType<ContractState> {
         fn equip(ref self: ContractState, game: Game) -> Game {
             let mut game = game;
-            game.len_hand += 2;
+            game.hand_len += 2;
             game
         }
 
         fn unequip(ref self: ContractState, game: Game) -> Game {
             let mut game = game;
-            game.len_hand -= 2;
+            game.hand_len -= 2;
             game
         }
 

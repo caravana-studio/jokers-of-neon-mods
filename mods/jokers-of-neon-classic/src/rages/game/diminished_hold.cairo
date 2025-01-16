@@ -10,13 +10,13 @@ pub mod rage_diminished_hold {
     impl RageDiminishedHoldImpl of IRageGame<ContractState> {
         fn equip(self: @ContractState, game: Game) -> Game {
             let mut game = game;
-            game.len_hand -= 2;
+            game.hand_len -= 2;
             game
         }
 
         fn unequip(self: @ContractState, game: Game) -> Game {
             let mut game = game;
-            game.len_hand += 2;
+            game.hand_len += 2;
             game
         }
     }
