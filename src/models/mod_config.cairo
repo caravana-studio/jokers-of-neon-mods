@@ -2,7 +2,7 @@ use starknet::ContractAddress;
 
 #[derive(Copy, Drop, IntrospectPacked, Serde)]
 #[dojo::model]
-struct ModConfig {
+pub struct ModConfig {
     #[key]
     pub mod_id: u32,
     pub deck_address: ContractAddress,
