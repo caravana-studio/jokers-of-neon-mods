@@ -9,7 +9,7 @@ pub mod rage_hand_leech {
     impl RageHandLeechImpl of IRageRound<ContractState> {
         fn apply(self: @ContractState, round: Round) -> Round {
             let mut round = round;
-            round.current_plays -= 2;
+            round.remaining_plays -= 2;
             round
         }
     }

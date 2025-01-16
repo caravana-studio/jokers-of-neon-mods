@@ -9,7 +9,7 @@ pub mod rage_zero_waste {
     impl RageZeroWasteImpl of IRageRound<ContractState> {
         fn apply(self: @ContractState, round: Round) -> Round {
             let mut round = round;
-            round.current_discards = 0;
+            round.remaining_discards = 0;
             round
         }
     }

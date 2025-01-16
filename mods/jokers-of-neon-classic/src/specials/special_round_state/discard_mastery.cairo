@@ -9,7 +9,7 @@ pub mod special_discard_mastery {
     #[abi(embed_v0)]
     impl SpecialDiscardMasteryImpl of ISpecialRoundState<ContractState> {
         fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
-            if round.current_discards.is_zero() {
+            if round.remaining_discards.is_zero() {
                 return (0, 10, 0);
                 // world
             //     .emit_event(

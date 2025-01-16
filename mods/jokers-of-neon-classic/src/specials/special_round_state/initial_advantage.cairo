@@ -10,7 +10,7 @@ pub mod special_initial_advantage {
     impl SpecialInitialAdvantageImpl of ISpecialRoundState<ContractState> {
         fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
             // first hand
-            if round.current_plays.into() == game.plays {
+            if round.remaining_plays.into() == game.plays {
                 return (100, 10, 0);
                 // world
             //     .emit_event(
