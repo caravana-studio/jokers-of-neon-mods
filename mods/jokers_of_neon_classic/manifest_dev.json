@@ -1450,8 +1450,8 @@
       ]
     },
     {
-      "address": "0x6066044cce208dff847c384b9b2245c281cc04468b49cd3e559224ca159c996",
-      "class_hash": "0x15c5d42ebfc5124b486633bba08120745644bb6248ff36a4a92de31e27391fe",
+      "address": "0x4d7add1b1ab1c2a3bf63a11dd55ed54cee424f49d1e2263be64050f10fe1934",
+      "class_hash": "0x1954c23f4209bb681c1cca3d24664ba22777c11d5e8ded9439fcd3d5e8ca18f",
       "abi": [
         {
           "type": "impl",
@@ -1514,35 +1514,39 @@
           "members": [
             {
               "name": "plays",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
             },
             {
               "name": "discards",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
             },
             {
               "name": "specials_slots",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
             },
             {
               "name": "max_special_slots",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
             },
             {
               "name": "power_up_slots",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
             },
             {
               "name": "max_power_up_slots",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
             },
             {
               "name": "hand_len",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
             },
             {
               "name": "start_cash",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "start_special_slots",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -2181,8 +2185,8 @@
       ]
     },
     {
-      "address": "0x48023516d87c9d681f25b0308529c8388bc7bb14a4ec12b4cd018448b2c2e7b",
-      "class_hash": "0x2786645485557b4641bd2411145b0f7c8efdc675a1ab0ed6c386076e953f257",
+      "address": "0x72438589e3f78978b414f07cd4995c2e660e51a6699ad4c91278073015f3a89",
+      "class_hash": "0x79db9f48b655508ae76c94e7a1b886bed746ff4a5fc0fcbd250f45f97ecdd87",
       "abi": [
         {
           "type": "impl",
@@ -2290,7 +2294,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "round",
+              "name": "level",
               "type": "core::integer::u32"
             },
             {
@@ -2307,6 +2311,10 @@
             },
             {
               "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
               "type": "core::integer::u32"
             },
             {
@@ -5293,8 +5301,8 @@
       ]
     },
     {
-      "address": "0x60dd3c69011cca458ada023250b10be308a7ce99ce9146a5b244c2141d85efe",
-      "class_hash": "0xb349b8b6beaa6ee88e33c05b8b709474475bb76a4b706a47dfa2a02be2321f",
+      "address": "0x3836ff5bc31351ce4716acab5e99428b1c3a4c9803514095d144a62572339ac",
+      "class_hash": "0x3b218198063e649a6c89de04b3016928c702d46796b0c1d0f04e70b86563547",
       "abi": [
         {
           "type": "impl",
@@ -5402,7 +5410,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "round",
+              "name": "level",
               "type": "core::integer::u32"
             },
             {
@@ -5419,6 +5427,10 @@
             },
             {
               "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
               "type": "core::integer::u32"
             },
             {
@@ -6125,8 +6137,8 @@
       ]
     },
     {
-      "address": "0x490581a6162db00665a92555dbd803c04fb104612f61bd261d9df0fee0f90de",
-      "class_hash": "0x27bbb802cc35aad0c49bffe5c98e78972cc365b88d346934f66fa64306d9400",
+      "address": "0x23676dbe25b5da1d158ba489bbec6e2c64411ed52a5da8e3c3c5272c400df0f",
+      "class_hash": "0x4fe9c11c9edef7cc1dd1a4a84434c7693547b1c817654e7b3cb0164cb99d533",
       "abi": [
         {
           "type": "impl",
@@ -6189,23 +6201,27 @@
           "members": [
             {
               "name": "traditional_cards_quantity",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
             },
             {
               "name": "modifiers_cards_quantity",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
             },
             {
               "name": "specials_cards_quantity",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
             },
             {
               "name": "loot_boxes_quantity",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
             },
             {
               "name": "power_ups_quantity",
-              "type": "core::integer::u16"
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "poker_hands_quantity",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -6771,8 +6787,8 @@
       ]
     },
     {
-      "address": "0x660ea1f2918293d6376817c76c2976e3eb48d6e0d63ddb2d0cb7aca0c6f0756",
-      "class_hash": "0x409506574758ba33ff5e72649f0ad6f6a9678b0e5cee2b0f2a186e8ab30e3ac",
+      "address": "0x5ec358445d851e9e4ac16cfdd785e9cc4dcb989ea70fa7815bd254f58c9808e",
+      "class_hash": "0x92b7ed7b63d60076f3d5e09c2efa4fde59bfc51453909d5fc938acf1b09b8c",
       "abi": [
         {
           "type": "impl",
@@ -6880,7 +6896,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "round",
+              "name": "level",
               "type": "core::integer::u32"
             },
             {
@@ -6897,6 +6913,10 @@
             },
             {
               "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
               "type": "core::integer::u32"
             },
             {
@@ -7167,8 +7187,8 @@
       ]
     },
     {
-      "address": "0x390e1202bdf1d5140e9bba55b191140eda833d87c8f05d57ffae0b2ce1fb7b8",
-      "class_hash": "0x350f8fdf5bce27ff6dcd35d5aca2121e158e9c252497731905603978030597a",
+      "address": "0xbcdd19183f07ccdd8a4ae54bcdb4e9494be84511096f9c51ff20562622a99",
+      "class_hash": "0x4cfab23a1f911b904eed818f6cdc6818a58fe4172d888f37ec20fdc11606f50",
       "abi": [
         {
           "type": "impl",
@@ -7276,7 +7296,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "round",
+              "name": "level",
               "type": "core::integer::u32"
             },
             {
@@ -7293,6 +7313,10 @@
             },
             {
               "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
               "type": "core::integer::u32"
             },
             {
@@ -7813,8 +7837,8 @@
       ]
     },
     {
-      "address": "0x334340a0d389945f12c50d676a99d6619926d43f7156667a0c3e3749fe2bc5b",
-      "class_hash": "0x12daf3e75f5b77113076f4d7345c1c574e93a6da1e05efe94985ab87ed2c3ac",
+      "address": "0x1f8427966558f671c86b0e700ae0afab582d834a4f18fe32b6030b037255af7",
+      "class_hash": "0x73caa15897fafc85af282f8863794967d8833cdcfeff16aad432c866cd31dd6",
       "abi": [
         {
           "type": "impl",
@@ -7922,7 +7946,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "round",
+              "name": "level",
               "type": "core::integer::u32"
             },
             {
@@ -7939,6 +7963,10 @@
             },
             {
               "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
               "type": "core::integer::u32"
             },
             {
@@ -8122,8 +8150,8 @@
       ]
     },
     {
-      "address": "0x4c13c433372da8b5fc00c1fa7a3ed39bbdc7913484b397f4959a2592d4220d4",
-      "class_hash": "0x27b814658aaa44a1d65b43c310a36ef33289b4afdfc64e91a588c94cf72bf7e",
+      "address": "0x3e28630d315607b918548bb366c0ffa766f7434e82d3e9b0c440f6e4357175",
+      "class_hash": "0x5052ae3ef66cae892356313baa4dc33a4149e147560345500d02893b5493b78",
       "abi": [
         {
           "type": "impl",
@@ -8231,7 +8259,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "round",
+              "name": "level",
               "type": "core::integer::u32"
             },
             {
@@ -8248,6 +8276,10 @@
             },
             {
               "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
               "type": "core::integer::u32"
             },
             {
@@ -11442,8 +11474,8 @@
       ]
     },
     {
-      "address": "0x1b2f413080baffb0dfcee838ba3dd93ed6ca6c740b1e26c567e65666f2c31e",
-      "class_hash": "0x64f83f593fa6dc0fffe78abe40449ee3d06269742f005fe5d70cc32a61f3156",
+      "address": "0x3a35611c43e2d14f93bc58361c2f6cc6f73e4de63a497c56cd2e291382893b3",
+      "class_hash": "0x6653e2394b922d8a7ed322c67fd4b2984933daf62f76a3eef833964268f1ded",
       "abi": [
         {
           "type": "impl",
@@ -11551,7 +11583,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "round",
+              "name": "level",
               "type": "core::integer::u32"
             },
             {
@@ -11568,6 +11600,10 @@
             },
             {
               "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
               "type": "core::integer::u32"
             },
             {
@@ -17047,8 +17083,8 @@
       ]
     },
     {
-      "address": "0x6ba20b7287849666b0f8bbe79bc41ceb0f056a919dea007d6a0c0b3a9dc0f9e",
-      "class_hash": "0x7a2a4d3619e7f846ba1efe9236fc4d590eb4285951bffcc25759acb78c77df",
+      "address": "0x60897574acb18510eef2e41976c8dc377f7c0dadea7f7fb2c34bb332381243c",
+      "class_hash": "0x70182446044ed3b5f498deb1350b567299d1f4a38319a00ec401bb02d7d2630",
       "abi": [
         {
           "type": "impl",
@@ -17156,7 +17192,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "round",
+              "name": "level",
               "type": "core::integer::u32"
             },
             {
@@ -17173,6 +17209,10 @@
             },
             {
               "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
               "type": "core::integer::u32"
             },
             {
@@ -17356,8 +17396,8 @@
       ]
     },
     {
-      "address": "0x58d70662df49c4bba0473694cbdd64c9248530cd16a2428bde35fc66a38ba98",
-      "class_hash": "0x76b646ad6e01e61458e1d4d7a26a3ae690bfa716a56ee130602777a5410c5f1",
+      "address": "0x514ebe81e93baad642df1ea4ce15f0950ec871025c2ef9cc708d5bc21ad0beb",
+      "class_hash": "0x43910f76dd3e54988358753c16d1da28c81c5f2a7a6de536d2aed12acaf9646",
       "abi": [
         {
           "type": "impl",
@@ -17465,7 +17505,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "round",
+              "name": "level",
               "type": "core::integer::u32"
             },
             {
@@ -17482,6 +17522,10 @@
             },
             {
               "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
               "type": "core::integer::u32"
             },
             {

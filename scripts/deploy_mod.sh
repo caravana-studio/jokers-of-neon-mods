@@ -39,6 +39,7 @@ mod_id=$(curl -s -X POST -H "Content-Type: application/json" \
     http://localhost:8080/graphql | jq -r '.data.jokersOfNeonModsGameModModels.totalCount')
 
 echo "Mod ID registered: $mod_id"
+mod_id=1
 
 echo -e "\nRegistering specials..."
 bash ../../scripts/register_specials.sh $mod_name $mod_id
