@@ -10,7 +10,8 @@ pub mod shop_config {
                 modifiers_cards_quantity: 3,
                 specials_cards_quantity: 3,
                 loot_boxes_quantity: 2,
-                power_ups_quantity: 2
+                power_ups_quantity: 2,
+                poker_hands_quantity: 3,
             }
         }
     }
