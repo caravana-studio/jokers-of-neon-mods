@@ -2,14 +2,12 @@
 
 mod_name="$1"
 mod_id="$2"
-
+world_address="$3"
 # Check if rages.cairo exists
 if [ ! -f "src/rages/rages.cairo" ]; then
     echo "Error: src/rages/rages.cairo not found"
     exit 1
 fi
-
-world_address=0x065ce175b71709c8353b8575f190785b2b123590e9e90be4c4399257ce3ab709 # TODO: get from env
 
 # Run sozo inspect and store output directly in a variable
 inspect_output=$(sozo inspect)

@@ -3,15 +3,14 @@
 set -e
 
 mod_name=$1
+owner=$2
+world_address=$3
 
 # Store sozo inspect result once
 inspect_result=$(sozo inspect)
 
 echo "mod_name: $mod_name"
 echo "inspect_result: $inspect_result"
-
-owner=0x127fd5f1fe78a71f8bcd1fec63e3fe2f0486b6ecd5c86a0466c3a21fa5cfcec # TODO: get from env
-world_address=0x065ce175b71709c8353b8575f190785b2b123590e9e90be4c4399257ce3ab709 # TODO: get from env
 
 card_info_address=$(echo "$inspect_result" | grep "${mod_name}-card_info" | awk '{print $NF}')
 echo "Card Info address: $card_info_address"
