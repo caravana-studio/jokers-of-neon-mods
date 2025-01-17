@@ -10,7 +10,7 @@ pub mod special_increase_level_flush {
     impl SpecialIncreaseLevelFlushImpl of ISpecialPokerHand<ContractState> {
         fn execute(ref self: ContractState, play_info: PlayInfo) -> (i32, i32, i32) {
             if play_info.hand == PokerHand::Flush {
-                (20, 0, 0)
+                (20, 4, 0)
             } else {
                 (0, 0, 0)
             }
