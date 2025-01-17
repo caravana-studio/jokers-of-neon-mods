@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod rage_zero_waste {
-    use jokers_of_neon_classic::rages::rages::RAGE_CARD_HAND_LEECH;
+    use jokers_of_neon_classic::rages::rages::RAGE_CARD_ZERO_WASTE;
     use jokers_of_neon_lib::interfaces::rage::{base::IRageBase, round::IRageRound};
     use jokers_of_neon_lib::models::rage_type::RageType;
     use jokers_of_neon_lib::models::status::round::round::Round;
@@ -17,7 +17,7 @@ pub mod rage_zero_waste {
     #[abi(embed_v0)]
     impl RageZeroWasteBase of IRageBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            RAGE_CARD_HAND_LEECH
+            RAGE_CARD_ZERO_WASTE
         }
 
         fn get_type(self: @ContractState) -> RageType {
