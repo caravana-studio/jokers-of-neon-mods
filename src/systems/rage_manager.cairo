@@ -46,10 +46,10 @@ pub mod rage_manager {
         fn get_rage_address(self: @ContractState, mod_id: u32, rage_id: u32) -> ContractAddress {
             let mut world = self.world(@"jokers_of_neon_mods");
             let mut store = StoreTrait::new(ref world);
-            let special_data = store.get_rage_data(mod_id, rage_id);
+            let rage_data = store.get_rage_data(mod_id, rage_id);
 
-            assert(!special_data.contract_address.is_zero(), 'Special card not registered');
-            special_data.contract_address
+            assert(!rage_data.contract_address.is_zero(), 'Rage card not registered');
+            rage_data.contract_address
         }
     }
 }
