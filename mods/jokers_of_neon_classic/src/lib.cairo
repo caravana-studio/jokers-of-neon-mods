@@ -52,7 +52,17 @@ mod specials {
         mod random_multi_for_heart;
         mod random_multi_for_spade;
     }
-    mod special_level_up_plays {
+    // mod special_level_up_plays {
+    //     mod increase_level_double_pair;
+    //     mod increase_level_five_of_a_kind;
+    //     mod increase_level_flush;
+    //     mod increase_level_four_of_a_kind;
+    //     mod increase_level_full_house;
+    //     mod increase_level_pair;
+    //     mod increase_level_straight;
+    //     mod increase_level_three_of_a_kind;
+    // }
+    mod special_poker_hand {
         mod increase_level_double_pair;
         mod increase_level_five_of_a_kind;
         mod increase_level_flush;
