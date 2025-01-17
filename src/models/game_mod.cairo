@@ -8,7 +8,6 @@ pub struct GameMod {
     pub id: u32,
     pub name: felt252,
     pub owner: ContractAddress,
-    pub config: ModConfig,
     pub total_games: u32,
     pub created_date: u64,
     pub last_update_date: u64,

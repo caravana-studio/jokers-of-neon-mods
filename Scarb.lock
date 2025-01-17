@@ -25,7 +25,7 @@ source = "git+https://github.com/dojoengine/dojo?tag=v1.0.10#80ac6d1cdf35a855aeb
 [[package]]
 name = "jokers_of_neon_lib"
 version = "0.0.1"
-source = "git+https://github.com/caravana-studio/jokers-of-neon-lib#aaad0380e7f981441893ccc120ecb90df63a0854"
+source = "git+https://github.com/caravana-studio/jokers-of-neon-lib#061f16cf25ad12272a5d509f6e9df4a8dd30b2c1"
 dependencies = [
  "dojo",
 ]

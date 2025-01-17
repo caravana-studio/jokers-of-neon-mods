@@ -14,7 +14,7 @@ pub mod game_config {
                 max_power_up_slots: 4,
                 hand_len: 8,
                 start_cash: 500,
-                start_specials_slots: 1
+                start_special_slots: 1,
             }
         }
     }
