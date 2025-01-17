@@ -38,6 +38,7 @@ ACCOUNT_ADDRESS=$(get_env_var "ACCOUNT_ADDRESS")
 PRIVATE_KEY=$(get_env_var "PRIVATE_KEY")
 RPC_URL=$(get_env_var "RPC_URL")
 WORLD_ADDRESS=$(get_env_var "WORLD_ADDRESS")
+TORII_URL=$(get_env_var "TORII_URL")
 
 # Print the stored variables
 echo "Variables loaded:"
@@ -45,7 +46,7 @@ echo "ACCOUNT_ADDRESS=$ACCOUNT_ADDRESS"
 echo "PRIVATE_KEY=$PRIVATE_KEY"
 echo "RPC_URL=$RPC_URL"
 echo "WORLD_ADDRESS=$WORLD_ADDRESS"
-
+echo "TORII_URL=$TORII_URL"
 bash ../../scripts/replace_env.sh $mod_name $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
 
 if [ -d "target" ]; then
@@ -69,10 +70,10 @@ bash ../../scripts/create_mod.sh $mod_name $ACCOUNT_ADDRESS $WORLD_ADDRESS
 
 mod_id=$(curl -s -X POST -H "Content-Type: application/json" \
     -d '{"query":"{jokersOfNeonModsGameModModels(first: 500) {totalCount}}"}' \
-    http://localhost:8080/graphql | jq -r '.data.jokersOfNeonModsGameModModels.totalCount')
+    $TORII_URL/graphql | jq -r '.data.jokersOfNeonModsGameModModels.totalCount')
 
 echo "Mod ID registered: $mod_id"
-mod_id=1
+mod_id=1 # TODO: get from curl
 
 echo -e "\nRegistering specials..."
 bash ../../scripts/register_specials.sh $mod_name $mod_id $WORLD_ADDRESS
