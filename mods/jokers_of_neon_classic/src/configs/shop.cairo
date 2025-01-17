@@ -5,7 +5,6 @@ pub mod shop_config {
     #[abi(embed_v0)]
     impl ClassicShopConfig of IShopConfig<ContractState> {
         fn get_shop_config(self: @ContractState) -> ShopConfig {
-            println!("ClassicShopConfig::get_shop_config");
             ShopConfig {
                 traditional_cards_quantity: 5,
                 modifiers_cards_quantity: 3,
