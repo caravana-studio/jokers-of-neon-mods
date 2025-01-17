@@ -18,4 +18,4 @@ echo -e "\n✅ Setup finish!"
 world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
 
 echo -e "\n✅ Init Torii!"
-torii --world $world_address --http.cors_origins "*"
+# torii --world $world_address --http.cors_origins "*"
