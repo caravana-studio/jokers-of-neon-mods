@@ -49,6 +49,8 @@ echo "WORLD_ADDRESS=$WORLD_ADDRESS"
 echo "TORII_URL=$TORII_URL"
 bash ../../scripts/replace_env.sh $mod_name $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
 
+rm Scarb.lock
+
 if [ -d "target" ]; then
     rm -rf "target"
 fi
@@ -64,16 +66,16 @@ sozo build && sozo inspect && sozo migrate
 
 bash ../../scripts/replace_manifest.sh $mod_name
 
+
+hex_value=$(echo -n "$mod_name" | xxd -p | tr -d '\n')
+mod_id=$(python3 -c "print(int('$hex_value', 16))")
+
+echo "String original: $mod_name"
+echo "Valor hexadecimal: 0x$hex_value"
+echo "Valor decimal (felt252): $mod_id"
 # Create mod and store the mod_id
 echo -e "\nCreating mod..."
-bash ../../scripts/create_mod.sh $mod_name $ACCOUNT_ADDRESS $WORLD_ADDRESS
-
-mod_id=$(curl -s -X POST -H "Content-Type: application/json" \
-    -d '{"query":"{jokersOfNeonModsGameModModels(first: 500) {totalCount}}"}' \
-    $TORII_URL/graphql | jq -r '.data.jokersOfNeonModsGameModModels.totalCount')
-
-echo "Mod ID registered: $mod_id"
-mod_id=1 # TODO: get from curl
+bash ../../scripts/create_mod.sh $mod_name $ACCOUNT_ADDRESS $WORLD_ADDRESS $mod_id
 
 echo -e "\nRegistering specials..."
 bash ../../scripts/register_specials.sh $mod_name $mod_id $WORLD_ADDRESS
@@ -84,3 +86,5 @@ bash ../../scripts/register_rages.sh $mod_name $mod_id $WORLD_ADDRESS
 echo -e "\n✅ All registrations completed!"
 
 bash ../../scripts/restore_manifest.sh
+
+echo "Mod ID registered: $mod_name"
