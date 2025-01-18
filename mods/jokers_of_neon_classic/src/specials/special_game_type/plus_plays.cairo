@@ -9,13 +9,13 @@ pub mod special_plus_plays {
     impl SpecialPlusPlaysImpl of ISpecialGameTypeSpecificType<ContractState> {
         fn equip(ref self: ContractState, game: Game) -> Game {
             let mut game = game;
-            game.plays += 1;
+            game.plays += 2;
             game
         }
 
         fn unequip(ref self: ContractState, game: Game) -> Game {
             let mut game = game;
-            game.plays -= 1;
+            game.plays -= 2;
             game
         }
 

@@ -9,13 +9,13 @@ pub mod special_plus_discards {
     impl SpecialPlusDiscardImpl of ISpecialGameTypeSpecificType<ContractState> {
         fn equip(ref self: ContractState, game: Game) -> Game {
             let mut game = game;
-            game.discards += 1;
+            game.discards += 2;
             game
         }
 
         fn unequip(ref self: ContractState, game: Game) -> Game {
             let mut game = game;
-            game.discards -= 1;
+            game.discards -= 2;
             game
         }
 
