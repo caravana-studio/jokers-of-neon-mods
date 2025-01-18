@@ -23,18 +23,18 @@ version = "2.8.4"
 source = "git+https://github.com/dojoengine/dojo?tag=v1.0.10#80ac6d1cdf35a855aeb550463e50546dc24a09cc"
 
 [[package]]
-name = "jokers_of_neon_classic"
-version = "0.0.1"
-dependencies = [
- "dojo",
- "dojo_cairo_test",
- "jokers_of_neon_lib",
-]
-
-[[package]]
 name = "jokers_of_neon_lib"
 version = "0.0.1"
 source = "git+https://github.com/caravana-studio/jokers-of-neon-lib#6f2f133a9550fb048223566fdc8894456b799c8c"
 dependencies = [
  "dojo",
+]
+
+[[package]]
+name = "jokers_of_neon_mods"
+version = "0.0.1"
+dependencies = [
+ "dojo",
+ "dojo_cairo_test",
+ "jokers_of_neon_lib",
 ]
