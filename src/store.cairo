@@ -1,6 +1,7 @@
 use dojo::{model::{ModelStorage, ModelValueStorage}, world::WorldStorage};
 use jokers_of_neon_mods::models::{
-    special_data::SpecialData, rage_data::RageData, game_mod::GameMod, mod_config::ModConfig, mod_tracker::ModTracker
+    special_data::SpecialData, rage_data::RageData, game_mod::{GameMod, GameModMap}, mod_config::ModConfig,
+    mod_tracker::ModTracker
 };
 use starknet::ContractAddress;
 const MOD_TRACKER_KEY: felt252 = 'MOD_TRACKER_KEY';
@@ -17,7 +18,7 @@ impl StoreImpl of StoreTrait {
         Store { world: world }
     }
 
-    fn get_game_mod(ref self: Store, mod_id: u32) -> GameMod {
+    fn get_game_mod(ref self: Store, mod_id: felt252) -> GameMod {
         self.world.read_model(mod_id)
     }
 
@@ -25,7 +26,7 @@ impl StoreImpl of StoreTrait {
         self.world.write_model(@game_mod)
     }
 
-    fn get_mod_config(ref self: Store, mod_id: u32) -> ModConfig {
+    fn get_mod_config(ref self: Store, mod_id: felt252) -> ModConfig {
         self.world.read_model(mod_id)
     }
 
@@ -41,7 +42,15 @@ impl StoreImpl of StoreTrait {
         self.world.write_model(@tracker)
     }
 
-    fn get_special_data(ref self: Store, mod_id: u32, special_id: u32) -> SpecialData {
+    fn get_mod_map(ref self: Store, idx: u32) -> GameModMap {
+        self.world.read_model(idx)
+    }
+
+    fn set_mod_map(ref self: Store, mapper: GameModMap) {
+        self.world.write_model(@mapper)
+    }
+
+    fn get_special_data(ref self: Store, mod_id: felt252, special_id: u32) -> SpecialData {
         self.world.read_model((mod_id, special_id))
     }
 
@@ -49,7 +58,7 @@ impl StoreImpl of StoreTrait {
         self.world.write_model(@data)
     }
 
-    fn get_rage_data(ref self: Store, mod_id: u32, rage_id: u32) -> RageData {
+    fn get_rage_data(ref self: Store, mod_id: felt252, rage_id: u32) -> RageData {
         self.world.read_model((mod_id, rage_id))
     }
 

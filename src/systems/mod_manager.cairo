@@ -3,19 +3,19 @@ use starknet::ContractAddress;
 
 #[starknet::interface]
 trait IModManager<T> {
-    fn create_mod(ref self: T, owner: ContractAddress, name: felt252, config: ModConfig) -> u32;
-    fn update_mod(ref self: T, mod_id: u32, config: ModConfig);
-    fn delete_mod(ref self: T, mod_id: u32);
-    fn get_mod_config(self: @T, mod_id: u32) -> ModConfig;
+    fn create_mod(ref self: T, owner: ContractAddress, name: felt252, config: ModConfig) -> felt252;
+    fn update_mod(ref self: T, mod_id: felt252, config: ModConfig);
+    fn delete_mod(ref self: T, mod_id: felt252);
+    fn get_mod_config(self: @T, mod_id: felt252) -> ModConfig;
     fn get_mod_tracker(self: @T) -> ModTracker;
-    fn get_mod(self: @T, mod_id: u32) -> GameMod;
+    fn get_mod(self: @T, mod_id: felt252) -> GameMod;
 }
 
 #[dojo::contract]
 pub mod mod_manager {
     use dojo::world::{IWorldDispatcher, IWorldDispatcherTrait};
     use dojo::{model::{ModelStorage, ModelValueStorage}, world::{WorldStorage, WorldStorageTrait}};
-    use jokers_of_neon_mods::models::{game_mod::ModConfig, mod_tracker::ModTracker, game_mod::GameMod};
+    use jokers_of_neon_mods::models::{game_mod::ModConfig, mod_tracker::ModTracker, game_mod::{GameMod, GameModMap}};
     use jokers_of_neon_mods::store::{StoreTrait, StoreImpl};
     use starknet::ContractAddress;
 
@@ -23,20 +23,22 @@ pub mod mod_manager {
 
     #[abi(embed_v0)]
     impl ModManagerImpl of super::IModManager<ContractState> {
-        fn create_mod(ref self: ContractState, owner: ContractAddress, name: felt252, config: ModConfig) -> u32 {
+        fn create_mod(ref self: ContractState, owner: ContractAddress, name: felt252, config: ModConfig) -> felt252 {
             self.assert_configs_are_non_zero(config);
             let mut world = self.world(@"jokers_of_neon_mods");
             let mut store = StoreTrait::new(ref world);
 
+            let game_mod = store.get_game_mod(name);
+            assert(game_mod.created_date == 0, 'Mod already exists');
+
             let mut mod_tracker = store.get_mod_tracker();
             mod_tracker.total_mods = mod_tracker.total_mods + 1;
-            let mod_id = mod_tracker.total_mods;
+            store.set_mod_map(GameModMap { idx: mod_tracker.total_mods, name });
 
             store
                 .set_game_mod(
                     GameMod {
-                        id: mod_id,
-                        name,
+                        id: name,
                         owner,
                         total_games: 0,
                         created_date: starknet::get_block_timestamp(),
@@ -45,12 +47,14 @@ pub mod mod_manager {
                 );
 
             let mut mod_config = config;
-            mod_config.mod_id = mod_id;
+            mod_config.mod_id = name;
+
+            store.set_mod_tracker(mod_tracker);
             store.set_mod_config(mod_config);
-            mod_id
+            name
         }
 
-        fn update_mod(ref self: ContractState, mod_id: u32, config: ModConfig) {
+        fn update_mod(ref self: ContractState, mod_id: felt252, config: ModConfig) {
             self.assert_configs_are_non_zero(config);
 
             // Check that mod exists and caller is the owner
@@ -73,7 +77,7 @@ pub mod mod_manager {
             store.set_mod_config(mod_config);
         }
 
-        fn delete_mod(ref self: ContractState, mod_id: u32) {
+        fn delete_mod(ref self: ContractState, mod_id: felt252) {
             // Check that mod exists and caller is the owner
             let mut world = self.world(@"jokers_of_neon_mods");
             let mut store = StoreTrait::new(ref world);
@@ -87,7 +91,7 @@ pub mod mod_manager {
             store.set_game_mod(_mod);
         }
 
-        fn get_mod_config(self: @ContractState, mod_id: u32) -> ModConfig {
+        fn get_mod_config(self: @ContractState, mod_id: felt252) -> ModConfig {
             let mut world = self.world(@"jokers_of_neon_mods");
             let mut store = StoreTrait::new(ref world);
             store.get_mod_config(mod_id)
@@ -99,7 +103,7 @@ pub mod mod_manager {
             store.get_mod_tracker()
         }
 
-        fn get_mod(self: @ContractState, mod_id: u32) -> GameMod {
+        fn get_mod(self: @ContractState, mod_id: felt252) -> GameMod {
             let mut world = self.world(@"jokers_of_neon_mods");
             let mut store = StoreTrait::new(ref world);
             store.get_game_mod(mod_id)

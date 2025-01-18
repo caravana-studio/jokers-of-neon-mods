@@ -2,9 +2,11 @@ use starknet::ContractAddress;
 
 #[starknet::interface]
 trait ISpecialManager<T> {
-    fn register_special(ref self: T, mod_id: u32, special_id: u32, contract_address: ContractAddress);
-    fn register_specials(ref self: T, mod_id: u32, special_ids: Span<u32>, contract_addresses: Span<ContractAddress>);
-    fn get_special_address(self: @T, mod_id: u32, special_id: u32) -> ContractAddress;
+    fn register_special(ref self: T, mod_id: felt252, special_id: u32, contract_address: ContractAddress);
+    fn register_specials(
+        ref self: T, mod_id: felt252, special_ids: Span<u32>, contract_addresses: Span<ContractAddress>
+    );
+    fn get_special_address(self: @T, mod_id: felt252, special_id: u32) -> ContractAddress;
 }
 
 #[dojo::contract]
@@ -15,25 +17,22 @@ pub mod special_manager {
 
     #[abi(embed_v0)]
     impl SpecialManagerImpl of super::ISpecialManager<ContractState> {
-        fn register_special(ref self: ContractState, mod_id: u32, special_id: u32, contract_address: ContractAddress) {
+        fn register_special(
+            ref self: ContractState, mod_id: felt252, special_id: u32, contract_address: ContractAddress
+        ) {
             let mut world = self.world(@"jokers_of_neon_mods");
             let mut store = StoreTrait::new(ref world);
-            println!("HOLA");
-            println!("mod_id: {}", mod_id);
             let game_mod = store.get_game_mod(mod_id);
-            println!("HOLA1");
+
             assert(game_mod.owner == get_caller_address(), 'Caller is not owner of the mod');
-            println!("HOLA2");
             let special_data = store.get_special_data(mod_id, special_id);
-            println!("HOLA3");
+
             assert(special_data.contract_address.is_zero(), 'Special card already registered');
-            println!("HOLA4");
             store.set_special_data(SpecialData { mod_id, special_id, contract_address });
-            println!("HOLA5");
         }
 
         fn register_specials(
-            ref self: ContractState, mod_id: u32, special_ids: Span<u32>, contract_addresses: Span<ContractAddress>
+            ref self: ContractState, mod_id: felt252, special_ids: Span<u32>, contract_addresses: Span<ContractAddress>
         ) {
             assert(special_ids.len() == contract_addresses.len(), 'Invalid length of special cards');
             let mut special_ids = special_ids;
@@ -48,7 +47,7 @@ pub mod special_manager {
             }
         }
 
-        fn get_special_address(self: @ContractState, mod_id: u32, special_id: u32) -> ContractAddress {
+        fn get_special_address(self: @ContractState, mod_id: felt252, special_id: u32) -> ContractAddress {
             let mut world = self.world(@"jokers_of_neon_mods");
             let mut store = StoreTrait::new(ref world);
             let special_data = store.get_special_data(mod_id, special_id);

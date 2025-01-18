@@ -4,7 +4,7 @@ use starknet::ContractAddress;
 #[dojo::model]
 pub struct ModConfig {
     #[key]
-    pub mod_id: u32,
+    pub mod_id: felt252,
     pub deck_address: ContractAddress,
     pub specials_address: ContractAddress,
     pub rages_address: ContractAddress,
