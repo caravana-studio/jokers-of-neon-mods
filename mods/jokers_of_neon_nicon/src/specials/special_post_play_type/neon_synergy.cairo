@@ -18,7 +18,7 @@ pub mod special_neon_synergy {
                 if play_info.cards.len() == i {
                     break;
                 }
-                let (index, _) = play_info.cards.at(i);
+                let (index, _, _) = play_info.cards.at(i);
                 // let (index, card) = play_info.cards.at(i);
                 // if is_neon_card(card.id) { TODO
                 if true {

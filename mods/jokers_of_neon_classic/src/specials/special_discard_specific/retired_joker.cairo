@@ -13,7 +13,7 @@ pub mod special_retired_joker {
             let mut cards = play_info.cards;
             loop {
                 match cards.pop_front() {
-                    Option::Some((_, card)) => { if *card.suit == Suit::Joker {
+                    Option::Some((_, _, card)) => { if *card.suit == Suit::Joker {
                         cash += 500;
                     } },
                     Option::None => { break; }

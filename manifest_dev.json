@@ -1252,8 +1252,8 @@
   },
   "contracts": [
     {
-      "address": "0xafd03699d365cb4a8effdddd78338e43dd5ab408d0637d268f5d9637bfa0f4",
-      "class_hash": "0x2483df7388b8f69ad0ed25f28adecc8f60f085a0fe56c6e3dd2f38af834664f",
+      "address": "0x528f567ea8837da4c900c1b107ab76f86b462059f065fb287d445c9a1af6a5e",
+      "class_hash": "0x2b85ea3bba9db76fc83a9a8f4964553c6bd9fe47c647b08cb92972e20531b7e",
       "abi": [
         {
           "type": "impl",
@@ -1316,7 +1316,7 @@
           "members": [
             {
               "name": "mod_id",
-              "type": "core::integer::u32"
+              "type": "core::felt252"
             },
             {
               "name": "deck_address",
@@ -1364,10 +1364,6 @@
           "members": [
             {
               "name": "id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "name",
               "type": "core::felt252"
             },
             {
@@ -1385,6 +1381,20 @@
             {
               "name": "last_update_date",
               "type": "core::integer::u64"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_mods::models::game_mod::GameModMap",
+          "members": [
+            {
+              "name": "idx",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "mod_id",
+              "type": "core::felt252"
             }
           ]
         },
@@ -1411,7 +1421,7 @@
               ],
               "outputs": [
                 {
-                  "type": "core::integer::u32"
+                  "type": "core::felt252"
                 }
               ],
               "state_mutability": "external"
@@ -1422,7 +1432,7 @@
               "inputs": [
                 {
                   "name": "mod_id",
-                  "type": "core::integer::u32"
+                  "type": "core::felt252"
                 },
                 {
                   "name": "config",
@@ -1438,7 +1448,7 @@
               "inputs": [
                 {
                   "name": "mod_id",
-                  "type": "core::integer::u32"
+                  "type": "core::felt252"
                 }
               ],
               "outputs": [],
@@ -1450,7 +1460,7 @@
               "inputs": [
                 {
                   "name": "mod_id",
-                  "type": "core::integer::u32"
+                  "type": "core::felt252"
                 }
               ],
               "outputs": [
@@ -1463,12 +1473,7 @@
             {
               "type": "function",
               "name": "get_mod_tracker",
-              "inputs": [
-                {
-                  "name": "mod_id",
-                  "type": "core::integer::u32"
-                }
-              ],
+              "inputs": [],
               "outputs": [
                 {
                   "type": "jokers_of_neon_mods::models::mod_tracker::ModTracker"
@@ -1482,12 +1487,28 @@
               "inputs": [
                 {
                   "name": "mod_id",
-                  "type": "core::integer::u32"
+                  "type": "core::felt252"
                 }
               ],
               "outputs": [
                 {
                   "type": "jokers_of_neon_mods::models::game_mod::GameMod"
+                }
+              ],
+              "state_mutability": "view"
+            },
+            {
+              "type": "function",
+              "name": "get_mod_map",
+              "inputs": [
+                {
+                  "name": "idx",
+                  "type": "core::integer::u32"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "jokers_of_neon_mods::models::game_mod::GameModMap"
                 }
               ],
               "state_mutability": "view"
@@ -1620,8 +1641,8 @@
       ]
     },
     {
-      "address": "0x203646bc2fbb15b9d2cd4dc7e04f16f2e0bd34482b6e757c05d989f33c33ac7",
-      "class_hash": "0x496e576940cf19cb98696f663b941596fd2c5f79444e74d681415be733dd027",
+      "address": "0x5c2ff54d592ec53219e5408fdefea3498af3dfedee2ebdf875d132698015bea",
+      "class_hash": "0x6711dfc25b42c6ebc4a40182afefc3c06e8480493cd4b8963cc535fb2844f4e",
       "abi": [
         {
           "type": "impl",
@@ -1708,7 +1729,7 @@
               "inputs": [
                 {
                   "name": "mod_id",
-                  "type": "core::integer::u32"
+                  "type": "core::felt252"
                 },
                 {
                   "name": "rage_id",
@@ -1728,7 +1749,7 @@
               "inputs": [
                 {
                   "name": "mod_id",
-                  "type": "core::integer::u32"
+                  "type": "core::felt252"
                 },
                 {
                   "name": "rage_ids",
@@ -1748,7 +1769,7 @@
               "inputs": [
                 {
                   "name": "mod_id",
-                  "type": "core::integer::u32"
+                  "type": "core::felt252"
                 },
                 {
                   "name": "rage_id",
@@ -1889,8 +1910,8 @@
       ]
     },
     {
-      "address": "0x21c4aecfefc2147593d93595bd8b23fcd58af5eeb52b29c0e21c9a5f3ced012",
-      "class_hash": "0x6e78c96544d5031800debb1c8f44de095e50bd57ddd77dc45e2b017f1e61dc8",
+      "address": "0x1348ae411faee5ddc2824232b1a39ce172c2e09fd02261bbca0c03c8d704414",
+      "class_hash": "0x7b85133a8247f69c2e812360f9ace6966bfc0b3ebd41c063126815b6730a3c9",
       "abi": [
         {
           "type": "impl",
@@ -1977,7 +1998,7 @@
               "inputs": [
                 {
                   "name": "mod_id",
-                  "type": "core::integer::u32"
+                  "type": "core::felt252"
                 },
                 {
                   "name": "special_id",
@@ -1997,7 +2018,7 @@
               "inputs": [
                 {
                   "name": "mod_id",
-                  "type": "core::integer::u32"
+                  "type": "core::felt252"
                 },
                 {
                   "name": "special_ids",
@@ -2017,7 +2038,7 @@
               "inputs": [
                 {
                   "name": "mod_id",
-                  "type": "core::integer::u32"
+                  "type": "core::felt252"
                 },
                 {
                   "name": "special_id",
@@ -2161,13 +2182,19 @@
   "models": [
     {
       "members": [],
-      "class_hash": "0x177e22ced4b402b51d90093b4c6493804be89e0c280c5d7fcc7044ff3f2f581",
+      "class_hash": "0x34824faac2b5581244e2e446dbeca115feefdc5ce76eb9e823bdd0123bd7863",
       "tag": "jokers_of_neon_mods-GameMod",
       "selector": "0x7780c0a617454aeb11cb482af68ba50b9068cdaf0a23506b244d0dc512356d"
     },
     {
       "members": [],
-      "class_hash": "0x4a86047e51bbd94180b838584dca8fb46536fbe88bdc21e8c9b0fda2e6c66e3",
+      "class_hash": "0x4a713887b9d441c821e48215b3bea80694060e3045ffe23ca2beb0e351622a5",
+      "tag": "jokers_of_neon_mods-GameModMap",
+      "selector": "0x4b76cecaa093842952c655e77cce012a5f9b9005f22eb447945487f742ec6ba"
+    },
+    {
+      "members": [],
+      "class_hash": "0x5402582bf7381ad73cf7eba911a00c91e0d96a55616a8141b33126197888991",
       "tag": "jokers_of_neon_mods-ModConfig",
       "selector": "0x26a71fa368dab860d69ad69d90cdde591bf7d51c87d0d2853986e2b6ada2d50"
     },
@@ -2179,13 +2206,13 @@
     },
     {
       "members": [],
-      "class_hash": "0x58677559ffb94e863594522e628dd2bc68d18eeae515712affb71c7641ce993",
+      "class_hash": "0x46e27d796f0fd1f6ff011feaef1bd5eb915da68e214af72c4f9f3134b59855e",
       "tag": "jokers_of_neon_mods-RageData",
       "selector": "0x6b98e85ad8505173f160f50dac5af659d54b516c909a5d5f5194396581f3ce4"
     },
     {
       "members": [],
-      "class_hash": "0x4ed16d2a9378437acf524ccc83b883e3e15475667c15df9c234ac5bceb7630b",
+      "class_hash": "0x1220eab46c20b83472611c8295be655967465885447bf7a902828eb747ac20a",
       "tag": "jokers_of_neon_mods-SpecialData",
       "selector": "0x16d80dd61ca87e82de4ffbe91d73bbdcf2a58ec785cf870a07d1570dc82f1c9"
     }
