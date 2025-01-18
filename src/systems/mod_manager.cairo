@@ -33,7 +33,6 @@ pub mod mod_manager {
             assert(game_mod.created_date == 0, 'Mod already exists');
 
             let mut mod_tracker = store.get_mod_tracker();
-            mod_tracker.total_mods = mod_tracker.total_mods + 1;
             store.set_mod_map(GameModMap { idx: mod_tracker.total_mods, mod_id: name });
 
             store
@@ -49,7 +48,8 @@ pub mod mod_manager {
 
             let mut mod_config = config;
             mod_config.mod_id = name;
-
+            
+            mod_tracker.total_mods = mod_tracker.total_mods + 1;
             store.set_mod_tracker(mod_tracker);
             store.set_mod_config(mod_config);
             name
