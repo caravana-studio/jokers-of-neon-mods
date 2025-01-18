@@ -7,7 +7,7 @@ trait IModManager<T> {
     fn update_mod(ref self: T, mod_id: u32, config: ModConfig);
     fn delete_mod(ref self: T, mod_id: u32);
     fn get_mod_config(self: @T, mod_id: u32) -> ModConfig;
-    fn get_mod_tracker(self: @T, mod_id: u32) -> ModTracker;
+    fn get_mod_tracker(self: @T) -> ModTracker;
     fn get_mod(self: @T, mod_id: u32) -> GameMod;
 }
 
@@ -93,7 +93,7 @@ pub mod mod_manager {
             store.get_mod_config(mod_id)
         }
 
-        fn get_mod_tracker(self: @ContractState, mod_id: u32) -> ModTracker {
+        fn get_mod_tracker(self: @ContractState) -> ModTracker {
             let mut world = self.world(@"jokers_of_neon_mods");
             let mut store = StoreTrait::new(ref world);
             store.get_mod_tracker()
