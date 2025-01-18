@@ -1,4 +1,4 @@
-use jokers_of_neon_mods::models::{game_mod::ModConfig, mod_tracker::ModTracker, game_mod::GameMod};
+use jokers_of_neon_mods::models::{game_mod::ModConfig, mod_tracker::ModTracker, game_mod::{GameMod, GameModMap}};
 use starknet::ContractAddress;
 
 #[starknet::interface]
@@ -9,6 +9,7 @@ trait IModManager<T> {
     fn get_mod_config(self: @T, mod_id: felt252) -> ModConfig;
     fn get_mod_tracker(self: @T) -> ModTracker;
     fn get_mod(self: @T, mod_id: felt252) -> GameMod;
+    fn get_mod_map(self: @T, idx: u32) -> GameModMap;
 }
 
 #[dojo::contract]
@@ -107,6 +108,12 @@ pub mod mod_manager {
             let mut world = self.world(@"jokers_of_neon_mods");
             let mut store = StoreTrait::new(ref world);
             store.get_game_mod(mod_id)
+        }
+
+        fn get_mod_map(self: @ContractState, idx: u32) -> GameModMap {
+            let mut world = self.world(@"jokers_of_neon_mods");
+            let mut store = StoreTrait::new(ref world);
+            store.get_mod_map(idx)
         }
     }
 
