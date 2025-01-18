@@ -17,6 +17,6 @@ pub struct GameMod {
 pub struct GameModMap {
     #[key]
     pub idx: u32,
-    pub name: felt252,
+    pub mod_id: felt252,
 }
 

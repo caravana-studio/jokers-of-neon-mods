@@ -34,7 +34,7 @@ pub mod mod_manager {
 
             let mut mod_tracker = store.get_mod_tracker();
             mod_tracker.total_mods = mod_tracker.total_mods + 1;
-            store.set_mod_map(GameModMap { idx: mod_tracker.total_mods, name });
+            store.set_mod_map(GameModMap { idx: mod_tracker.total_mods, mod_id: name });
 
             store
                 .set_game_mod(
