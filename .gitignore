@@ -3,3 +3,4 @@ manifests/dev/base
 manifests/dev/deployment/abis
 .env
 node_modules/
+.next/
