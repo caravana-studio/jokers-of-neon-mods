@@ -49,7 +49,7 @@ echo "WORLD_ADDRESS=$WORLD_ADDRESS"
 echo "TORII_URL=$TORII_URL"
 bash ../../scripts/replace_env.sh $mod_name $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
 
-rm Scarb.lock
+rm -f Scarb.lock
 
 if [ -d "target" ]; then
     rm -rf "target"
