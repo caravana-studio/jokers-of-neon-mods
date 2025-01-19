@@ -1,3 +1,4 @@
 target
 manifests/dev/base
 manifests/dev/deployment/abis
+Scarb.lock
