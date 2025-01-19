@@ -1,35 +1,42 @@
-Vamos a crear nuestro mod de jokers of neon.
-La documentacion la pueden encontrar aca. 
-Nos vamos a basar en template que hay.
+# Creating Your Mod for Jokers of Neon
 
-Vamos a la carpeta mods y copiamos la carpeta jokers_of_neon_template.
-En este caso vamos a crear un mod que se llama "jokers_of_neon_dami".
-Es clave que el nombre de la carpeta este separado por guiones bajos.
-ahora tenemos nuestra carpeta con la siguiente estructura:
+In this guide, we’ll walk through creating a mod for Jokers of Neon.
 
-configs
-    game
-    shop
+## Documentation and Starting Template
 
-specials
-    special_game_type
-    special_individual
-    special_poker_hand
-    special_power_up
-    special_round_state
-    specials
+1. Access the Documentation: You can find the documentation [here](https://github.com/caravana-studio/jokers-of-neon-mods/blob/main/docs.md).
+2. Using the Template: Navigate to the `mods` folder and copy the `jokers_of_neon_template` folder.
+   Rename the copied folder to the name of your mod, e.g., `jokers_of_neon_dami`.
+> [!IMPORTANT]
+> Use underscores to separate words in the folder name.
 
-rages
-    game
-    round
-    silence
-    rages
+After copying, your folder structure should look like this:
 
-loot_box
-
-Vamos a empezar con la config game
-Cuando se crea un juego se llama la configuracion que definamos. por default tenemos esta pero la podemos modificar.
+```bash
+configs/
+    game/
+    shop/
+specials/
+    special_game_type/
+    special_individual/
+    special_poker_hand/
+    special_power_up/
+    special_round_state/
+    specials/
+rages/
+    game/
+    round/
+    silence/
+    rages/
+loot_box/
 ```
+
+## Step 1: Editing Game Configuration
+
+The `configs/game` folder contains the game's configuration. This is called when a game starts.
+Here’s the default configuration (modifiable to your needs):
+
+```rust
 GameConfig {
     plays: 5,
     discards: 5,
@@ -38,48 +45,59 @@ GameConfig {
     power_up_slots: 4,
     max_power_up_slots: 4,
     hand_len: 8,
-    start_cash: 99999, // TODO: change config
+    start_cash: 99999,
     start_special_slots: 1,
 }
 ```
 
-Continuamos con la config shop
-Esta es la configuracion por default del shop pero la podemos modificar. cantidad de items que van a aparecer en el shop.
-```
+## Step 2: Editing Shop Configuration
+
+The `configs/shop` folder contains the shop configuration. This defines the number of items appearing in the shop.
+Default configuration (modifiable):
+
+```rust
 ShopConfig {
     traditional_cards_quantity: 5,
     modifiers_cards_quantity: 3,
     specials_cards_quantity: 3,
     loot_boxes_quantity: 2,
     power_ups_quantity: 2,
-    poker_hands_quantity: 3
+    poker_hands_quantity: 3,
 }
 ```
 
-Ahora vamos a agregar una carta especial
-Si vamos al archivo specials/specials vemos unas constantes que definen las cartas especiales. Su id debe empezar en 300 y se usa de forma incremental.
+## Step 3: Adding a Special Card
 
-vamos a agregar nuestra carta especial.
+Special cards are defined in `specials/specials.cairo`. Each card needs a unique ID starting at `300`, incrementing sequentially.
+
+- Add your special card ID:
+
+```rust
 const SPECIAL_HIGH_CARD_BOOSTER_ID: u32 = 309;
-
-Ahora debemos definir la implementacion de nuestra carta especial.
-
-Nuestra carta es del tipo PokerHand, queremos dar puntos, multi y cash dependiendo de la mano.
-Vamos a la carpeta /special_poker_hand/ y creamos un archivo llamado `high_card_booster.cairo`
-
-Ahora debemos ir al archivo lib.cairo y agregar nuestra implementacion.
-mod high_card_booster;
-
-Ahora volvemos al archivo que hemos creado y agregamos la implementacion.
-
-Es necesario que el nombre del modulo empiece con specials_nombre de la especial. 
-En este caso seria special__high_card_booster.
-
-Importamos la constante que creamos 
-    use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_CARD_BOOSTER_ID;
-
-nuestro archivo deberia tener el siguiente aspecto:
 ```
+
+- Define the card’s implementation: Go to `specials/special_poker_hand/` and create a file named `high_card_booster.cairo`.
+
+  Update the `lib.cairo` file to include your module:
+
+  ```rust
+  mod high_card_booster;
+  ```
+
+## Step 4: Implementing the Special Card
+
+### File Structure and Module Name
+
+The module name must follow this format: `specials_<card_name>`.
+
+> [!TIP]
+> For example: `special_high_card_booster`.
+
+### Example Implementation
+
+Here’s the full implementation for a special card that rewards points, multiplier, and cash when the player has a HighCard:
+
+```rust
 #[dojo::contract]
 pub mod special_high_card_booster {
     use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_CARD_BOOSTER_ID;
@@ -109,24 +127,24 @@ pub mod special_high_card_booster {
 }
 ```
 
-la funcion get_id es la que se usa para identificar la especial.
+### Key Methods Explained
 
-la funcion get_type es la que se usa para identificar el tipo de especial.
+- `get_id()`: Returns the unique ID of the card.
+- `get_type()`: Defines the card as a PokerHand type.
+- `execute()`: Implements the card’s effect. In this case:
+  - _HighCard Hand_: Rewards 100 points, 20 multiplier, and 500 cash.
+  - _Other Hands_: Rewards 0 points, 0 multiplier, and 0 cash.
 
-Ahora nosotros vamos a modificar la implementacion de la especial en el metodo execute.
+## Step 5: Adding Special the Card to the Game
 
-Dentro del modelo PlayInfo tenemos la hand.
-Para el caso de nuestra especial, con la mano que nos llega, queremos que nos devuelva puntos, multi y cash dependiendo de la mano.
+1. Add to the List of Special Cards: Open `specials/specials.cairo` and add the new card to the `*specials_ids_all*` function.
+2. Assign to a Group: To make the card _purchasable_ in the shop, associate it with a group.
+> [!IMPORTANT]
+> For example, assign it to the `SS group`:
+>
+>  - `Chance to appear`: 5%
+>  - `Cost`: 7000
 
-En este caso, si la mano es HighCard, nos devuelve 100 puntos, 20 multi y 500 cash.
-Si no es HighCard, nos devuelve 0 puntos, 0 multi y 0 cash.
+## Congratulations!
 
-Ya tenemos nuestra especial implementada.
-Lo unico que nos falta es agregarla a la lista de cartas especiales y asociarla a un grupo para que se pueda comprar en el shop.
-
-Volvemos al archivo specials/specials.cairo y agregamos nuestra especial a la lista de la funcion `specials_ids_all`.
-
-Solo nos queda agregarla a un grupo. Como nuestra especial es poderosa la voy a agregar al grupo SS. Que tiene 5% de chance de aparecer y el costo es 7000.
-
-Nuestra especial ya esta lista.
-
+Your special card is now implemented, added to the game, and available for purchase in the shop. Test it to ensure it works as intended! 🎉
