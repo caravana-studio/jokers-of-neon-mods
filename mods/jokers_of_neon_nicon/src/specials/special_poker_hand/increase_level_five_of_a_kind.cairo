@@ -8,11 +8,11 @@ pub mod special_increase_level_five_of_a_kind {
 
     #[abi(embed_v0)]
     impl SpecialIncreaseLevelFiveOfAKindImpl of ISpecialPokerHand<ContractState> {
-        fn execute(ref self: ContractState, play_info: PlayInfo) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
             if play_info.hand == PokerHand::FiveOfAKind {
-                (20, 4, 0)
+                ((20, array![].span()), (4, array![].span()), (0, array![].span()))
             } else {
-                (0, 0, 0)
+                ((0, array![].span()), (0, array![].span()), (0, array![].span()))
             }
         }
 
