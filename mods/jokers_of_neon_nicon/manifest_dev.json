@@ -8838,8 +8838,8 @@
       ]
     },
     {
-      "address": "0x791ad96f93f598d3ba5316503a1fc5dbc468b11445cef06d9f7a82f40078670",
-      "class_hash": "0x65497ddcc4ef9eb80440198c21171943ae7bd04e37357a5c56a8304a2bf60ff",
+      "address": "0x9f267fd35efb1395d7cb35a077712ca0d22cd02d67858a81ad2d2897405957",
+      "class_hash": "0x6974a667af0b99ae760518a1d706e2e4cfcaaf0c7da6fd76038da8c32524c56",
       "abi": [
         {
           "type": "impl",
@@ -8946,6 +8946,20 @@
             },
             {
               "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -9086,25 +9100,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
+              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -9118,11 +9118,21 @@
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
               "type": "core::bool"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, core::integer::i32)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, core::integer::i32)>"
             }
           ]
         },
@@ -9207,7 +9217,7 @@
               ],
               "outputs": [
                 {
-                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -9362,8 +9372,8 @@
       ]
     },
     {
-      "address": "0x6f197051529e34351a511d5964059542b0df93489e237ee3680d23f2cc1b5c1",
-      "class_hash": "0x2c8b66a5ef6f64fa9ccb166787f35f41be532e5a0633014454f26e8fed631e9",
+      "address": "0x1480fc9adaade48bcf440574d796fcd3811548b4f2c8bb65644ff05ee30cd07",
+      "class_hash": "0x178c68763d9588f5225852b3f6e911f29dd62b7f092a375bae091c2444c5a46",
       "abi": [
         {
           "type": "impl",
@@ -9470,6 +9480,20 @@
             },
             {
               "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -9610,25 +9634,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
+              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -9642,11 +9652,21 @@
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
               "type": "core::bool"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, core::integer::i32)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, core::integer::i32)>"
             }
           ]
         },
@@ -9731,7 +9751,7 @@
               ],
               "outputs": [
                 {
-                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -9886,8 +9906,8 @@
       ]
     },
     {
-      "address": "0x233e410701761a2ebbb8184f69675eff99b4e34bf2495b1416b4d4867f1b267",
-      "class_hash": "0x1cac066ae6f4843babcacdc365c2a10a31a09d4f6cca776b39a1258ab816ab6",
+      "address": "0x2ad445681cb6981888f763fc7d06e6953961568d6ba67221bdf84eb89427de4",
+      "class_hash": "0x4fa700511093c8a114de08e74fbb5dc496d62dfc875aa3ad65ae0f170c976e",
       "abi": [
         {
           "type": "impl",
@@ -9994,6 +10014,20 @@
             },
             {
               "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -10134,25 +10168,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
+              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -10166,11 +10186,21 @@
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
               "type": "core::bool"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, core::integer::i32)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, core::integer::i32)>"
             }
           ]
         },
@@ -10255,7 +10285,7 @@
               ],
               "outputs": [
                 {
-                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -10410,8 +10440,8 @@
       ]
     },
     {
-      "address": "0x79c1b3949ecab3cb63afcf5463cac33d7eb62adca3fa2d124a37b6b77c0982c",
-      "class_hash": "0x607bcfde88392de0aed7365801d986d518ee23160538df52381da722e6eaa33",
+      "address": "0x1ff2f8de72ae1aa6c8e09ae22d31cf619d7ddbf2b552812f9c48c8b2ca9c35",
+      "class_hash": "0xbf51aa9286062a00db338dea75f78836cd028caedf8da14cc628d0334abae9",
       "abi": [
         {
           "type": "impl",
@@ -10518,6 +10548,20 @@
             },
             {
               "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -10658,25 +10702,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
+              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -10690,11 +10720,21 @@
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
               "type": "core::bool"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, core::integer::i32)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, core::integer::i32)>"
             }
           ]
         },
@@ -10779,7 +10819,7 @@
               ],
               "outputs": [
                 {
-                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -10934,8 +10974,8 @@
       ]
     },
     {
-      "address": "0x73440ad555b979c0d60464c120c99900d46eacafc4e2427e3b7a6ffe81e8398",
-      "class_hash": "0x575dd759e69cd8510343861f07c75a38650573051a3d4fcd25fe53d748077eb",
+      "address": "0x3b23842b9d77bb2092f2ccaee5c5dac5ba7d0e6e01f92e458d9c32f9d9656c8",
+      "class_hash": "0x5e7d9a389c05bab3b8afbf4b9edb9e49dedfaff138055fd6c3a96c954a4e9f3",
       "abi": [
         {
           "type": "impl",
@@ -11042,6 +11082,20 @@
             },
             {
               "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -11182,25 +11236,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
+              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -11214,11 +11254,21 @@
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
               "type": "core::bool"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, core::integer::i32)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, core::integer::i32)>"
             }
           ]
         },
@@ -11303,7 +11353,7 @@
               ],
               "outputs": [
                 {
-                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -11458,8 +11508,8 @@
       ]
     },
     {
-      "address": "0x6099103a796089693be29cda480673074d5cb64c126778c141b4e8ee64f28de",
-      "class_hash": "0x52905c871b4366b3c156c9f86235f70117b9b3fcdca36a787e9fb4e26210799",
+      "address": "0x2607f576f87948bdf2ffd583c934372fca715a98293e7684371f3f607ef9000",
+      "class_hash": "0x1f2b6b41379696064165666fa94bb23ebd68a41dd9ac861ada493eb9de64995",
       "abi": [
         {
           "type": "impl",
@@ -11566,6 +11616,20 @@
             },
             {
               "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -11706,25 +11770,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
+              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -11738,11 +11788,21 @@
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
               "type": "core::bool"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, core::integer::i32)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, core::integer::i32)>"
             }
           ]
         },
@@ -11827,7 +11887,7 @@
               ],
               "outputs": [
                 {
-                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -11982,8 +12042,8 @@
       ]
     },
     {
-      "address": "0x4fd385962d07fe20bc21176a1a9bfa80a0ec8885450e965a628aeae55e7bd87",
-      "class_hash": "0x4aabd9fb809b219c39aab25e15209a87dbfb000a1441a2f8026b95b62dd588c",
+      "address": "0x7f28d0ff1c78571a4a336bf39fde8c9b6fada7a427c64b1f95f83ca81257e0",
+      "class_hash": "0x77a93fa32cb9496c5e4b6a37ee95504b6bd9b7648714d87562dfbe87cde06ad",
       "abi": [
         {
           "type": "impl",
@@ -12090,6 +12150,20 @@
             },
             {
               "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -12230,25 +12304,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
+              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -12262,11 +12322,21 @@
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
               "type": "core::bool"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, core::integer::i32)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, core::integer::i32)>"
             }
           ]
         },
@@ -12351,7 +12421,7 @@
               ],
               "outputs": [
                 {
-                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -12506,8 +12576,8 @@
       ]
     },
     {
-      "address": "0x304fb25db33542742c3d9dcf85b3fd68e67bacc5ea10a22e1f84cf39f07f728",
-      "class_hash": "0x18fa3e6dbf445d5d065f730ccb64b991a984f8b8320ea2e203997552d7bef2c",
+      "address": "0x4fcabc8ebd34a44a818eb6a55d4fbd896717f3b68f7d5c619b38f7525598a45",
+      "class_hash": "0x5703bf8def42bd13db0913dc712f06439e2d4644bda2fdf10b3b222deba4932",
       "abi": [
         {
           "type": "impl",
@@ -12614,6 +12684,20 @@
             },
             {
               "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -12754,25 +12838,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
+              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -12786,11 +12856,21 @@
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
               "type": "core::bool"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, core::integer::i32)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, core::integer::i32)>"
             }
           ]
         },
@@ -12875,7 +12955,7 @@
               ],
               "outputs": [
                 {
-                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -17838,8 +17918,8 @@
       ]
     },
     {
-      "address": "0x59ed7386e7616ba2029b84b4aa2f24be52f7536cdfcfef0dfd6c41d23bdb9ba",
-      "class_hash": "0x55d887ceed8376bca5f967025c729df74f8973699f8433c376c71f0efa0bfa6",
+      "address": "0x58334da0db8405ab7c9d77697589849071b6970655a7a25094950ae6bcd56b4",
+      "class_hash": "0x399ca3944d2cc085858aa75036fe02d948a7462522e0f88dbaeadf8876f27f4",
       "abi": [
         {
           "type": "impl",
@@ -17946,6 +18026,20 @@
             },
             {
               "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -18086,25 +18180,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
+              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -18118,7 +18198,7 @@
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
@@ -22053,8 +22133,8 @@
       ]
     },
     {
-      "address": "0xc217b49857c1217f0aae82145a9f54ec1c39902d058a79fe96f61d6c46737d",
-      "class_hash": "0x55f599e38d4b54978d6a97dad23f098e1ff9ea9650fe93c35d60d4ff3d7ed18",
+      "address": "0x35ec5e8fe44a21e416e245aabe296ea1c26b8fc04dcdfbd22b72264bbbf563",
+      "class_hash": "0x1c1cbe2977b2092607bf92db5b6e74a34fbed83c4471259973a4f477c3e1b86",
       "abi": [
         {
           "type": "impl",
@@ -22161,6 +22241,20 @@
             },
             {
               "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -22301,25 +22395,11 @@
         },
         {
           "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
           "members": [
             {
               "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
+              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             }
           ]
         },
@@ -22333,7 +22413,7 @@
             },
             {
               "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
             },
             {
               "name": "is_neon",
