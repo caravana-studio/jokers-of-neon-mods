@@ -39,6 +39,6 @@ contract_addresses_str=$(IFS=,; echo "${contract_addresses[*]}" | tr -d '"')
 world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
 
 # Execute sozo command
-echo -e "\nExecuting sozo command..."
+# echo -e "\nExecuting sozo command..."
 sozo execute special_manager register_specials -c $mod_id,$len_special_ids,$special_ids_str,$len_contract_addresses,$contract_addresses_str --wait --world $world_address
 echo -e "\n✅ Register specials finish!"
