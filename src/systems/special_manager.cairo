@@ -25,9 +25,6 @@ pub mod special_manager {
             let game_mod = store.get_game_mod(mod_id);
 
             assert(game_mod.owner == get_caller_address(), 'Caller is not owner of the mod');
-            let special_data = store.get_special_data(mod_id, special_id);
-
-            assert(special_data.contract_address.is_zero(), 'Special card already registered');
             store.set_special_data(SpecialData { mod_id, special_id, contract_address });
         }
 
