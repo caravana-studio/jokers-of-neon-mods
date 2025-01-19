@@ -1,4 +1,8 @@
 {
+  "349": {
+    "name": "Random Diamond Joker",
+    "description": "Adds a number between -2 and 6 to the multi for each played Diamonds suited card."
+  },
   "355": {
     "name": "Extra",
     "description": "Demo"
