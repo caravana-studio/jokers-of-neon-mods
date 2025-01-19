@@ -12,7 +12,7 @@ pub mod special_random_multi_for_diamond {
         }
 
         fn execute(ref self: ContractState) -> (i32, i32, i32) {
-            let random = 5; // TODO: Implementar la logica de la carta
+            let random = 5; // TODO:
             (0, random, 0)
         }
 
