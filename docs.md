@@ -19,11 +19,11 @@ In Jokers of Neon, players can create custom special cards to enhance their game
 
 Special cards fall into the following categories:
 
-1. **SpecialType::Individual**
-2. **SpecialType::PowerUp**
-3. **SpecialType::RoundState**
-4. **SpecialType::PokerHand**
-5. **SpecialType::Game**
+1. `SpecialType::Individual`
+2. `SpecialType::PowerUp`
+3. `SpecialType::RoundState`
+4. `SpecialType::PokerHand`
+5. `SpecialType::Game`
 
 Special cards can grant or subtract points, multipliers (multi), and cash. These values can be negative, e.g., `(100, 1, 0)`.
 
@@ -31,9 +31,9 @@ Special cards can grant or subtract points, multipliers (multi), and cash. These
 
 ## 1. SpecialType::Individual
 
-This card type executes for every card in your play. It uses the **Suit** and **Value** properties to determine its effects.
+This card type executes for every card in your play. It uses the `Suit` and `Value` properties to determine its effects.
 
-**Example:** Grant 100 points and 1 multiplier for every Joker in the play.
+_Example: Grant 100 points and 1 multiplier for every Joker in the play._
 
 ```rust
 fn condition(ref self: ContractState, card: Card) -> bool {
@@ -51,9 +51,9 @@ fn execute(ref self: ContractState) -> (i32, i32, i32) {
 
 ## 2. SpecialType::PowerUp
 
-This card type executes for each activated **PowerUp** and accesses the PowerUp’s **points** and **multi** properties.
+This card type executes for each activated `PowerUp` and accesses the PowerUp’s `points` and `multi` properties.
 
-**Example:** Double the points and multipliers of each activated PowerUp.
+_Example: Double the points and multipliers of each activated PowerUp._
 
 ```rust
 fn execute(ref self: ContractState, power_up: PowerUp) -> (i32, i32, i32) {
@@ -67,9 +67,9 @@ fn execute(ref self: ContractState, power_up: PowerUp) -> (i32, i32, i32) {
 
 ## 3. SpecialType::RoundState
 
-This card type executes once per round and accesses information such as **player_score**, **level_score**, **remaining_plays**, and **remaining_discards**.
+This card type executes once per round and accesses information such as `player_score`, `level_score`, `remaining_plays`, and `remaining_discards`.
 
-**Example:** Grant 100 points and 10 multiplier during the first play of the round.
+_Example: Grant 100 points and 10 multiplier during the first play of the round._
 
 ```rust
 fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
@@ -88,7 +88,7 @@ fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32)
 
 This card type executes once per round, evaluating the poker hand formed during the play.
 
-**Example:** Grant 20 points and 4 multiplier for a "Two Pairs" poker hand.
+_Example: Grant 20 points and 4 multiplier for a "Two Pairs" poker hand._
 
 ```rust
 fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
@@ -106,9 +106,9 @@ fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i3
 
 ### SpecialType::Game
 
-This card type executes when the card is equipped and modifies global game properties such as **hand_len**, **plays**, and **discards**.
+This card type executes when the card is equipped and modifies global game properties such as `hand_len`, `plays`, and `discards`.
 
-**Example:** Add 2 cards to the hand size when the card is equipped.
+_Example: Add 2 cards to the hand size when the card is equipped._
 
 ```rust
 fn equip(ref self: ContractState, game: Game) -> Game {
