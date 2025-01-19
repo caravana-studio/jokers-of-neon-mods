@@ -90,8 +90,7 @@ const SPECIAL_HIGH_CARD_BOOSTER_ID: u32 = 309;
 
 The module name must follow this format: `specials_<card_name>`.
 
-> [!TIP]
-> For example: `special_high_card_booster`.
+*For example: `special_high_card_booster`.*
 
 ### Example Implementation
 
