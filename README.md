@@ -157,6 +157,10 @@ Modify the game’s borders by replacing these files:
 - `top.png`
 - `top-rage.png`
 
+### Deck Background  
+
+You can also customize the deck background by replacing the file `/Cards/Backs/back.png`  
+
 # Result example
 ![image](https://github.com/user-attachments/assets/387dc72c-974d-4cc3-b230-45f62db79a66)
 
