@@ -9,21 +9,8 @@ pub mod special_initial_advantage {
     #[abi(embed_v0)]
     impl SpecialInitialAdvantageImpl of ISpecialRoundState<ContractState> {
         fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
-            // first hand
             if round.remaining_plays.into() == game.plays {
                 return (100, 10, 0);
-                // world
-            //     .emit_event(
-            //         @SpecialGlobalEvent {
-            //             player: get_caller_address(),
-            //             game_id: *game.id,
-            //             current_special_card_idx: current_special_cards_index
-            //                 .get(SPECIAL_INITIAL_ADVANTAGE_ID.into())
-            //                 .deref(),
-            //             multi: effect.multi_add,
-            //             points: effect.points
-            //         }
-            //     );
             }
             (0, 0, 0)
         }

@@ -11,18 +11,6 @@ pub mod special_discard_mastery {
         fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
             if round.remaining_discards.is_zero() {
                 return (0, 10, 0);
-                // world
-            //     .emit_event(
-            //         @SpecialGlobalEvent {
-            //             player: get_caller_address(),
-            //             game_id: *game.id,
-            //             current_special_card_idx: current_special_cards_index
-            //                 .get(SPECIAL_DISCARD_MASTERY_ID.into())
-            //                 .deref(),
-            //             multi: effect.multi_add,
-            //             points: Zeroable::zero()
-            //         }
-            //     );
             }
             (0, 0, 0)
         }

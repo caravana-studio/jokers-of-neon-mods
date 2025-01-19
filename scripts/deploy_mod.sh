@@ -38,7 +38,6 @@ ACCOUNT_ADDRESS=$(get_env_var "ACCOUNT_ADDRESS")
 PRIVATE_KEY=$(get_env_var "PRIVATE_KEY")
 RPC_URL=$(get_env_var "RPC_URL")
 WORLD_ADDRESS=$(get_env_var "WORLD_ADDRESS")
-TORII_URL=$(get_env_var "TORII_URL")
 
 # Print the stored variables
 echo "Variables loaded:"
@@ -46,7 +45,6 @@ echo "ACCOUNT_ADDRESS=$ACCOUNT_ADDRESS"
 echo "PRIVATE_KEY=$PRIVATE_KEY"
 echo "RPC_URL=$RPC_URL"
 echo "WORLD_ADDRESS=$WORLD_ADDRESS"
-echo "TORII_URL=$TORII_URL"
 bash ../../scripts/replace_env.sh $mod_name $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
 
 rm -f Scarb.lock
