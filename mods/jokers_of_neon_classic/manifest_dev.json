@@ -1252,8 +1252,8 @@
   },
   "contracts": [
     {
-      "address": "0x32e716687155b6abee9ab6f6514c834c6257d4a9d134c635cd915e3ca76fe61",
-      "class_hash": "0x53d0f73ba3115857d4d3c2187609e9899dbdb713fb6be702ba1fae9b6c597c4",
+      "address": "0x62284443d090395a3a37482a2f8d9cb1fedf73e74b265506643b3f2ce025e2a",
+      "class_hash": "0x4cc3bb29c03e3f162d1584f1df991e67b8060498ae8573549e3fdef8e8fe7d7",
       "abi": [
         {
           "type": "impl",
@@ -1443,15 +1443,15 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-card_info",
-      "selector": "0x3cae1eea44d5ab11ddf9f0506e72d1f845a230a3fe62e2546db8f47b90e1ab6",
+      "tag": "jokers_of_neon_classic-card_info",
+      "selector": "0x47aac911f3cbefe024abd5976abfafe7a750c2bea4c1cd436525d772bec81ef",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x16ff08eaae1d097df1056ca76f07671380bf5427588674ae4c6767ee9ed47f9",
-      "class_hash": "0xba7c4b54de4f85d8ce75dd44bb4ef1bad0be9481d2770a3b85f7789401026c",
+      "address": "0x24a67d80c815a743e619d9acb6ba79eb16accd3ce234a60ca090dd7e860fc39",
+      "class_hash": "0x2587800253906f1b51a9d1a25dfce77c681c624384d6329ef63ca2810f91431",
       "abi": [
         {
           "type": "impl",
@@ -1683,15 +1683,15 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-game_config",
-      "selector": "0x19c101a3155050669e9f260ff54821d2bff769ecaba1f637bd1302859a19716",
+      "tag": "jokers_of_neon_classic-game_config",
+      "selector": "0x4ced4ea116bc7edd29dcd5387f683c4672f5099d326a13288a2d27e7896ec04",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x5abea5734477c44ed81d321fb706f4b7185d94214340186ffe169709f586fc2",
-      "class_hash": "0x75dd4350e13f83d61b84be63209f819f516fc8bdc82f360a42a74e52aa2ec00",
+      "address": "0x31ced50f3847c570b593fc2ef85d5e0954fe078d539986f1150b8c608fd8af3",
+      "class_hash": "0x2b07e75d9c9d96d6d1ea9b3cab5d7731d7ba9b3c09394bae3909de152295bf2",
       "abi": [
         {
           "type": "impl",
@@ -1962,14 +1962,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-loot_boxes_info",
-      "selector": "0x788d548de27bbba12afabceff30b0fe47d30eb8e124554eb2ce753af66cf723",
+      "tag": "jokers_of_neon_classic-loot_boxes_info",
+      "selector": "0x2634e0fd32b7d5f7de96fbe208a2cefecc75064dcbe911f6b4fb60f6cfb4b8a",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x571114580597c587ed02faaee91303f7ef4bba784d83d273ec939f0e8e84c09",
+      "address": "0x7d2f083e23a460168d7277e66c5353df9a9fdf21e76254c51111f71295c14cc",
       "class_hash": "0x4ba4ff9733cfdc535968f373468a02b96cfc8c16e7d9cbc06e1cfba1a268e20",
       "abi": [
         {
@@ -2178,14 +2178,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-play_rules_config",
-      "selector": "0x65a0ec59aa61d88a1200809c1729dcdd872205be7fcb383a6c768258b2d7dd5",
+      "tag": "jokers_of_neon_classic-play_rules_config",
+      "selector": "0x5020ebe5e3ec8c97f9b86250245a53ad12f5d19fa5bc8973a96cf26bd40de4d",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x81451cd7b89f32c8b79c5bbc6b7341151d3917d43bbbe9c34eea1e3d5d233e",
+      "address": "0x3f87bc870f8ab5be5cc374d4012d586b8bfd4d052e00ba3b031d0de96ca79bb",
       "class_hash": "0xcdf9517d655f4dd51899995dac99e47a787c571fb25c0e579ebe55a5624e89",
       "abi": [
         {
@@ -2532,14 +2532,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-rage_diminished_hold",
-      "selector": "0x55ad05f16794170641d890272e74a0973e035f18bd409bea67cfa2cfa9cef43",
+      "tag": "jokers_of_neon_classic-rage_diminished_hold",
+      "selector": "0xa7b7c1b739017a94729c997ac27c799f8cd3e5c6967697afdc14ae0ef3a071",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x7d83e726a894a90bf1c238b1287588efcd08b7c68050f2c2c356aad35b39d90",
+      "address": "0x4c03bfb7a618f59e07c2116c3a08c2a0c8994cbfa84ca1f4349eddc22674d4b",
       "class_hash": "0x43488fbf16c7a3532c09e6c0ca902a3dcc9e891e21130be5c0a1c55ac434d46",
       "abi": [
         {
@@ -2816,14 +2816,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-rage_hand_leech",
-      "selector": "0x14e12a76ce5a95235d22c9fbb101a64cf287b9830021b3adc419341de6a412",
+      "tag": "jokers_of_neon_classic-rage_hand_leech",
+      "selector": "0xa1dbd96af8b94ff3e6147ebb893755e8466b67debc833c14fb970d3d982e4",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x27607a51e210cae69e0342427da4a66d2b4ac1596c30c59ba78c148878e5aac",
+      "address": "0x3e3375fffae1a7ac619607ae5cf1da4b62f6969ded1bdbc70bfba8c1b8f097f",
       "class_hash": "0x94b616b37c352d8a36d48371ac9eb262d20a8c7066a0079cb52f3f6ca49df3",
       "abi": [
         {
@@ -3229,14 +3229,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-rage_silent_clubs",
-      "selector": "0x35d220c8ad1d3b1514484758f6f57fc2730a5ef4f7edb988168aaffad12a4a7",
+      "tag": "jokers_of_neon_classic-rage_silent_clubs",
+      "selector": "0x1035d1022a1bd2f0728fd27005da8425dcc84784893975f8719881ebbdf6007",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x357ba2a5ce6bddad9215fd76ca136cbeaf24e5007c93b2b654bac6fbbce4ed8",
+      "address": "0x7131d291f206ec572091b88ee43663706c6be6e765da3fddf47b88d1657ef2d",
       "class_hash": "0xed46e66bee2b1df028c9bf77265cf300c32e3893d3edcde92dc433d5c249fd",
       "abi": [
         {
@@ -3642,14 +3642,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-rage_silent_diamonds",
-      "selector": "0x22da4282d477d65917b0062b79f189831c46865bdae9f98439a7177f68b25d6",
+      "tag": "jokers_of_neon_classic-rage_silent_diamonds",
+      "selector": "0x211d22a6bd8f7fd106c11e8204ed00e175a2518a6a3198262ff85ba44c4391d",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x529031f520f26976342b6b5b0375a525970fbbcd2a0d4d814dd433e8abafeb4",
+      "address": "0x50b36284bc7cb22e9f1664c0ca9e31264744160122563f8a9dc0c3cc7e152ae",
       "class_hash": "0x7dce2533e83b303beb34d340582e8e6715c804b7df95ed0c6832ec4f1b7405b",
       "abi": [
         {
@@ -4055,14 +4055,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-rage_silent_figures",
-      "selector": "0x494d44b91ce9b45ce740e2794549f09be35c70a25ab3d65cd64a4bbc7858880",
+      "tag": "jokers_of_neon_classic-rage_silent_figures",
+      "selector": "0x49af9fd304a7b9aa746a717c364d3a83946577a71ce2a4ecac6224805e4770a",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x656e164b15a19220062ed5ec855ea13b645bdb3b267234b72c488d9a0cdf692",
+      "address": "0x54b91c101424872110dcf2fd8587f834e5dbf6391f486386e83ff60dc98e9a2",
       "class_hash": "0x3e2441d3024e7f9bdd3841aee7d1d8c55d95803a16f51557bf68341fa3e65e9",
       "abi": [
         {
@@ -4468,14 +4468,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-rage_silent_hearts",
-      "selector": "0x686785d34f3a148f00a6156d6563eca73d2e92eec662fce0808e69ea8517926",
+      "tag": "jokers_of_neon_classic-rage_silent_hearts",
+      "selector": "0x625d2522a4404787ccce0319a6ecb8c26321515b7586599159fbb215ea1b6cd",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x37cd0f668fdd47f9b2bd2ce2e304dd78725c4650a2717e9ade72556747fcf96",
+      "address": "0x2c9b83b70c8f91157317f24a935e780d5a6448829ff8461abf43eb7fc3bd77",
       "class_hash": "0x38903aeda8a2b2622c669c604b11e6ab8ab3676db34527d7549309d4e8cf269",
       "abi": [
         {
@@ -4881,14 +4881,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-rage_silent_jokers",
-      "selector": "0x4c6087f413c80b8705329c6c37303a5112e112a227e9e69225aca022ae4914b",
+      "tag": "jokers_of_neon_classic-rage_silent_jokers",
+      "selector": "0x68881ab12795c19bf43ef8da52a88680cc7c2c3381f2d250a193cc02f8e7c7b",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x6e9a78b7e1791fa5f6150ac85d5474bcc885c7f8ee8d277362d60717ede4666",
+      "address": "0x109d2d97140f5cf359a293f0ac5a522221d5e4e7719ec58093c068d003c027b",
       "class_hash": "0x4ade226002dfa4fde18ea377009028fd5bb9cd419c47335f005801938070736",
       "abi": [
         {
@@ -5294,14 +5294,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-rage_silent_spades",
-      "selector": "0x61772e8c13b8356693cda1a3940af3d24844e9f528438d15f7460e856b12465",
+      "tag": "jokers_of_neon_classic-rage_silent_spades",
+      "selector": "0x5e23110d2d1ce0a2bc3425d393bb1e4eb363a076497dc32f67add862a09542",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x4f673330eec93c7b2adb34ed370ec81b902098e813097a450c0091c632683ac",
+      "address": "0x7f807e9665aea83004c70fdaeb4c5b9911f0af8aa3637c6670c1e497f32e900",
       "class_hash": "0x5f082c0addd2d4935b54fb2b83fb72c3566f744bb1a2849ff180b000d77cb42",
       "abi": [
         {
@@ -5648,14 +5648,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-rage_strategic_quarted",
-      "selector": "0x7511b2128510607411eddb128aced9ae343be45839822f902c6e81e4bc809a3",
+      "tag": "jokers_of_neon_classic-rage_strategic_quarted",
+      "selector": "0x57daf900f37ed31749528b0d609886995a36fa8c50d6991d90ce7571f5da810",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x38d356c1b01a10d885c6e69071fbbae2e58723737dcc3b1d2dd30c17a08d6a6",
+      "address": "0x63ad3f35fec07bc206fdb27f8309bae859fc5822a99e7291561f261b6f0872b",
       "class_hash": "0x45cf6156f2619d76703d9d8d5af073c1931103b64d116fc2f789b6861034ab4",
       "abi": [
         {
@@ -5932,14 +5932,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-rage_zero_waste",
-      "selector": "0x1df1338f4a18fc672d12756ed125074e6f233015435f2308cb70357c2606170",
+      "tag": "jokers_of_neon_classic-rage_zero_waste",
+      "selector": "0x6bbba285c0543d139e481d3fc3ee085249fd310cc85b2d1421965f4d8fc5968",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0xd0e99b99a16045ca5d55ed612b87f5e4f60f1cdd28fcccc8d68de300a845e9",
+      "address": "0x71cc18c300e0e615ea63fd1b7e94aacaec9cb33982087dcd5f7ea04951a3c12",
       "class_hash": "0x224632282c88360c500fadc5e22ba44846d1b3ca33ca7d39844889388d91de2",
       "abi": [
         {
@@ -6130,14 +6130,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-rages_info",
-      "selector": "0x141d9cac0acabb6366b076ac158a317f31c9519201825e16b3ae89cf2106c80",
+      "tag": "jokers_of_neon_classic-rages_info",
+      "selector": "0xf3a3b6b482e4142708c08118683156b9e290a98e20698f751bce2a15b1d6d9",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x4892a613eb7e92031ecc1a7f4fd0744e171463a993b4464e094daed96c79e60",
+      "address": "0x1e26f4f9a8cb7e5d69ba39a198acdabc6707ad21fd90ac2232ac67213e8e271",
       "class_hash": "0x363f704d92c079f7e4865a82cfd12b064390e38a02e6300c530ebec9c6c5102",
       "abi": [
         {
@@ -6358,440 +6358,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-shop_config",
-      "selector": "0x5646473686d370f85a2d97e4499864c43a253d36badc81c89b9488f1a4f2c9e",
+      "tag": "jokers_of_neon_classic-shop_config",
+      "selector": "0x3f1e66e3be7840da3d2846dacbb087ac476aa474bd1afcb23d4b104dbe4776",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x68d9b8fdf6b818646e997313787577ce698f2a50847e394b653a18e3de5d66d",
-      "class_hash": "0x4c2e16aa967e321e01acfcab11bcc2f9cf5f825b2ba519d0fb42a10a5e658fb",
-      "abi": [
-        {
-          "type": "impl",
-          "name": "special_all_cards_to_hearts__ContractImpl",
-          "interface_name": "dojo::contract::interface::IContract"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::interface::IContract",
-          "items": []
-        },
-        {
-          "type": "impl",
-          "name": "special_all_cards_to_hearts__DeployedContractImpl",
-          "interface_name": "dojo::meta::interface::IDeployedResource"
-        },
-        {
-          "type": "struct",
-          "name": "core::byte_array::ByteArray",
-          "members": [
-            {
-              "name": "data",
-              "type": "core::array::Array::<core::bytes_31::bytes31>"
-            },
-            {
-              "name": "pending_word",
-              "type": "core::felt252"
-            },
-            {
-              "name": "pending_word_len",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::meta::interface::IDeployedResource",
-          "items": [
-            {
-              "type": "function",
-              "name": "dojo_name",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::byte_array::ByteArray"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "SpecialAllCardsToHeartsImpl",
-          "interface_name": "jokers_of_neon_lib::interfaces::pre_calculate_hand::ISpecialPreCalculateHand"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Suit",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Clubs",
-              "type": "()"
-            },
-            {
-              "name": "Diamonds",
-              "type": "()"
-            },
-            {
-              "name": "Hearts",
-              "type": "()"
-            },
-            {
-              "name": "Spades",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Value",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Two",
-              "type": "()"
-            },
-            {
-              "name": "Three",
-              "type": "()"
-            },
-            {
-              "name": "Four",
-              "type": "()"
-            },
-            {
-              "name": "Five",
-              "type": "()"
-            },
-            {
-              "name": "Six",
-              "type": "()"
-            },
-            {
-              "name": "Seven",
-              "type": "()"
-            },
-            {
-              "name": "Eight",
-              "type": "()"
-            },
-            {
-              "name": "Nine",
-              "type": "()"
-            },
-            {
-              "name": "Ten",
-              "type": "()"
-            },
-            {
-              "name": "Jack",
-              "type": "()"
-            },
-            {
-              "name": "Queen",
-              "type": "()"
-            },
-            {
-              "name": "King",
-              "type": "()"
-            },
-            {
-              "name": "Ace",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "NeonJoker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::data::card::Card",
-          "members": [
-            {
-              "name": "id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "suit",
-              "type": "jokers_of_neon_lib::models::data::card::Suit"
-            },
-            {
-              "name": "value",
-              "type": "jokers_of_neon_lib::models::data::card::Value"
-            },
-            {
-              "name": "points",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "multi_add",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::special_type::SpecialType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Individual",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::pre_calculate_hand::ISpecialPreCalculateHand",
-          "items": [
-            {
-              "type": "function",
-              "name": "apply",
-              "inputs": [
-                {
-                  "name": "cards",
-                  "type": "core::array::Array::<jokers_of_neon_lib::models::data::card::Card>"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::array::Array::<jokers_of_neon_lib::models::data::card::Card>"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_id",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::integer::u32"
-                }
-              ],
-              "state_mutability": "view"
-            },
-            {
-              "type": "function",
-              "name": "get_type",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::special_type::SpecialType"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "function",
-          "name": "dojo_init",
-          "inputs": [],
-          "outputs": [],
-          "state_mutability": "view"
-        },
-        {
-          "type": "impl",
-          "name": "WorldProviderImpl",
-          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
-        },
-        {
-          "type": "struct",
-          "name": "dojo::world::iworld::IWorldDispatcher",
-          "members": [
-            {
-              "name": "contract_address",
-              "type": "core::starknet::contract_address::ContractAddress"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::world_provider::IWorldProvider",
-          "items": [
-            {
-              "type": "function",
-              "name": "world_dispatcher",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "dojo::world::iworld::IWorldDispatcher"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "UpgradeableImpl",
-          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::upgradeable::IUpgradeable",
-          "items": [
-            {
-              "type": "function",
-              "name": "upgrade",
-              "inputs": [
-                {
-                  "name": "new_class_hash",
-                  "type": "core::starknet::class_hash::ClassHash"
-                }
-              ],
-              "outputs": [],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "constructor",
-          "name": "constructor",
-          "inputs": []
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-          "kind": "struct",
-          "members": [
-            {
-              "name": "class_hash",
-              "type": "core::starknet::class_hash::ClassHash",
-              "kind": "data"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "Upgraded",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-              "kind": "nested"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-          "kind": "enum",
-          "variants": []
-        },
-        {
-          "type": "event",
-          "name": "jokers_of_neon_classic::specials::special_pre_calculate_hand::all_cards_to_hearts::special_all_cards_to_hearts::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "UpgradeableEvent",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-              "kind": "nested"
-            },
-            {
-              "name": "WorldProviderEvent",
-              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-              "kind": "nested"
-            }
-          ]
-        }
-      ],
-      "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_all_cards_to_hearts",
-      "selector": "0x6bd603144ca7ffe31478b5393f707c44b63dd8a1e534973e4e3d8a3beda8f70",
-      "systems": [
-        "apply",
-        "upgrade"
-      ]
-    },
-    {
-      "address": "0x7f9103876d8ac4e97a893d2882fafa7f97681c788732f6d5c6957362872c6c3",
+      "address": "0x287cd305202319d11d9740c136591d87808e6c1ed92fb5cf0f9f190c602424d",
       "class_hash": "0x29584cd51199883f116875a8068b50ce2c46d34689d3907c0f400db2de5afe1",
       "abi": [
         {
@@ -7185,8 +6759,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_discard_mastery",
-      "selector": "0x1c473c01a5b77ce5ca5e76ce0c4c4340885c27f87efd002f6d5fe5d02f8e7b2",
+      "tag": "jokers_of_neon_classic-special_discard_mastery",
+      "selector": "0x1f2ce757e6b5377214d2926e1018038a31f65063c8ba28023345f00aa2b97bc",
       "systems": [
         "execute",
         "get_id",
@@ -7195,7 +6769,7 @@
       ]
     },
     {
-      "address": "0x1e3a660bc1f64ef792f4a29080fec9008d7897e61a556027747c8aba3b5c920",
+      "address": "0x820cc3088dc9579c1e25f2e645561dd32628af7770e162ac9493e3740d4403",
       "class_hash": "0x74fd003d76aca25f1fc2d9393725a93a5778de83734c6f56fa918faa64166de",
       "abi": [
         {
@@ -7575,8 +7149,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_extra_help",
-      "selector": "0x4891a95e3477fb910ea7709b442ba25a87cf1483113a6b53f9f9c4ddfde860",
+      "tag": "jokers_of_neon_classic-special_extra_help",
+      "selector": "0x54612c6a725a34b5c76f48093ea693c3363f9784550fb27abc0b9207de680d3",
       "systems": [
         "equip",
         "unequip",
@@ -7586,348 +7160,7 @@
       ]
     },
     {
-      "address": "0x2ec3ff3c3a6bfd1da74c3abd143d6494752053697cf7460da2bc3ead569940c",
-      "class_hash": "0x3fbac8cf1de1c8c9ebf51edc95237f9ce9331a2944f44c495234197f6f53381",
-      "abi": [
-        {
-          "type": "impl",
-          "name": "special_flush_with_four_cards__ContractImpl",
-          "interface_name": "dojo::contract::interface::IContract"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::interface::IContract",
-          "items": []
-        },
-        {
-          "type": "impl",
-          "name": "special_flush_with_four_cards__DeployedContractImpl",
-          "interface_name": "dojo::meta::interface::IDeployedResource"
-        },
-        {
-          "type": "struct",
-          "name": "core::byte_array::ByteArray",
-          "members": [
-            {
-              "name": "data",
-              "type": "core::array::Array::<core::bytes_31::bytes31>"
-            },
-            {
-              "name": "pending_word",
-              "type": "core::felt252"
-            },
-            {
-              "name": "pending_word_len",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::meta::interface::IDeployedResource",
-          "items": [
-            {
-              "type": "function",
-              "name": "dojo_name",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::byte_array::ByteArray"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "SpecialFlushWithFourCardsImpl",
-          "interface_name": "jokers_of_neon_lib::interfaces::plays_rules::ISpecialPlaysRulesType"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "RoyalFlush",
-              "type": "()"
-            },
-            {
-              "name": "StraightFlush",
-              "type": "()"
-            },
-            {
-              "name": "FiveOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "FourOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "FullHouse",
-              "type": "()"
-            },
-            {
-              "name": "Straight",
-              "type": "()"
-            },
-            {
-              "name": "Flush",
-              "type": "()"
-            },
-            {
-              "name": "ThreeOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "TwoPair",
-              "type": "()"
-            },
-            {
-              "name": "OnePair",
-              "type": "()"
-            },
-            {
-              "name": "HighCard",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::special_type::SpecialType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Individual",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::plays_rules::ISpecialPlaysRulesType",
-          "items": [
-            {
-              "type": "function",
-              "name": "apply",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_id",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::integer::u32"
-                }
-              ],
-              "state_mutability": "view"
-            },
-            {
-              "type": "function",
-              "name": "get_type",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::special_type::SpecialType"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "function",
-          "name": "dojo_init",
-          "inputs": [],
-          "outputs": [],
-          "state_mutability": "view"
-        },
-        {
-          "type": "impl",
-          "name": "WorldProviderImpl",
-          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
-        },
-        {
-          "type": "struct",
-          "name": "dojo::world::iworld::IWorldDispatcher",
-          "members": [
-            {
-              "name": "contract_address",
-              "type": "core::starknet::contract_address::ContractAddress"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::world_provider::IWorldProvider",
-          "items": [
-            {
-              "type": "function",
-              "name": "world_dispatcher",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "dojo::world::iworld::IWorldDispatcher"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "UpgradeableImpl",
-          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::upgradeable::IUpgradeable",
-          "items": [
-            {
-              "type": "function",
-              "name": "upgrade",
-              "inputs": [
-                {
-                  "name": "new_class_hash",
-                  "type": "core::starknet::class_hash::ClassHash"
-                }
-              ],
-              "outputs": [],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "constructor",
-          "name": "constructor",
-          "inputs": []
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-          "kind": "struct",
-          "members": [
-            {
-              "name": "class_hash",
-              "type": "core::starknet::class_hash::ClassHash",
-              "kind": "data"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "Upgraded",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-              "kind": "nested"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-          "kind": "enum",
-          "variants": []
-        },
-        {
-          "type": "event",
-          "name": "jokers_of_neon_classic::specials::special_plays_rules::flush_with_four_cards::special_flush_with_four_cards::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "UpgradeableEvent",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-              "kind": "nested"
-            },
-            {
-              "name": "WorldProviderEvent",
-              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-              "kind": "nested"
-            }
-          ]
-        }
-      ],
-      "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_flush_with_four_cards",
-      "selector": "0x7689ac07f11e77900df064e3e8cece8eec898487ba4e57ccfdf3fdf39bd1d17",
-      "systems": [
-        "apply",
-        "upgrade"
-      ]
-    },
-    {
-      "address": "0x400ddbb97e7e13be5618ddf34c8415da3111b63bf33b5d292fbb01d2f43caf7",
+      "address": "0x5da5eeef9319ca86f61a06dfceb6219bd9bdb9400394bb11a05989e410654ee",
       "class_hash": "0x5a187e3baf0015eb2e9bbb26b2894b984823743057dd16e8365583c8a535358",
       "abi": [
         {
@@ -8307,8 +7540,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_hand_thief",
-      "selector": "0x58fe1657aa9f8bea46cfe073edfa796a9c6ea6cbf2d8f3e9c77355e9d062255",
+      "tag": "jokers_of_neon_classic-special_hand_thief",
+      "selector": "0x461f549bebe734444f33b6ebe20359b9d01753a4d308fa61a160b91ce6f778b",
       "systems": [
         "equip",
         "unequip",
@@ -8318,528 +7551,8 @@
       ]
     },
     {
-      "address": "0x37012cd50379a2dc5d9c83f4363488a8b4d12cc95424c77a5cd56bdf4d0d887",
-      "class_hash": "0x574b7a6af5aaf5cef82f94df9825808cf60dabcaaeca842c6609b35e5f51fa5",
-      "abi": [
-        {
-          "type": "impl",
-          "name": "special_idle_joker__ContractImpl",
-          "interface_name": "dojo::contract::interface::IContract"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::interface::IContract",
-          "items": []
-        },
-        {
-          "type": "impl",
-          "name": "special_idle_joker__DeployedContractImpl",
-          "interface_name": "dojo::meta::interface::IDeployedResource"
-        },
-        {
-          "type": "struct",
-          "name": "core::byte_array::ByteArray",
-          "members": [
-            {
-              "name": "data",
-              "type": "core::array::Array::<core::bytes_31::bytes31>"
-            },
-            {
-              "name": "pending_word",
-              "type": "core::felt252"
-            },
-            {
-              "name": "pending_word_len",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::meta::interface::IDeployedResource",
-          "items": [
-            {
-              "type": "function",
-              "name": "dojo_name",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::byte_array::ByteArray"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "SpecialIdleJokerImpl",
-          "interface_name": "jokers_of_neon_lib::interfaces::win::ISpecialWinType"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
-          "variants": [
-            {
-              "name": "IN_GAME",
-              "type": "()"
-            },
-            {
-              "name": "AT_SHOP",
-              "type": "()"
-            },
-            {
-              "name": "FINISHED",
-              "type": "()"
-            },
-            {
-              "name": "OPEN_BLISTER_PACK",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::status::game::game::Game",
-          "members": [
-            {
-              "name": "id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "mod_id",
-              "type": "core::felt252"
-            },
-            {
-              "name": "state",
-              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
-            },
-            {
-              "name": "owner",
-              "type": "core::starknet::contract_address::ContractAddress"
-            },
-            {
-              "name": "player_name",
-              "type": "core::felt252"
-            },
-            {
-              "name": "player_score",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "level",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "hand_len",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "plays",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "discards",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "current_specials_len",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "special_slots",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "cash",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Suit",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Clubs",
-              "type": "()"
-            },
-            {
-              "name": "Diamonds",
-              "type": "()"
-            },
-            {
-              "name": "Hearts",
-              "type": "()"
-            },
-            {
-              "name": "Spades",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Value",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Two",
-              "type": "()"
-            },
-            {
-              "name": "Three",
-              "type": "()"
-            },
-            {
-              "name": "Four",
-              "type": "()"
-            },
-            {
-              "name": "Five",
-              "type": "()"
-            },
-            {
-              "name": "Six",
-              "type": "()"
-            },
-            {
-              "name": "Seven",
-              "type": "()"
-            },
-            {
-              "name": "Eight",
-              "type": "()"
-            },
-            {
-              "name": "Nine",
-              "type": "()"
-            },
-            {
-              "name": "Ten",
-              "type": "()"
-            },
-            {
-              "name": "Jack",
-              "type": "()"
-            },
-            {
-              "name": "Queen",
-              "type": "()"
-            },
-            {
-              "name": "King",
-              "type": "()"
-            },
-            {
-              "name": "Ace",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "NeonJoker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::data::card::Card",
-          "members": [
-            {
-              "name": "id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "suit",
-              "type": "jokers_of_neon_lib::models::data::card::Suit"
-            },
-            {
-              "name": "value",
-              "type": "jokers_of_neon_lib::models::data::card::Value"
-            },
-            {
-              "name": "points",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "multi_add",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "core::array::Span::<jokers_of_neon_lib::models::data::card::Card>",
-          "members": [
-            {
-              "name": "snapshot",
-              "type": "@core::array::Array::<jokers_of_neon_lib::models::data::card::Card>"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::special_type::SpecialType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Individual",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::win::ISpecialWinType",
-          "items": [
-            {
-              "type": "function",
-              "name": "execute",
-              "inputs": [
-                {
-                  "name": "game",
-                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
-                },
-                {
-                  "name": "current_hand",
-                  "type": "core::array::Span::<jokers_of_neon_lib::models::data::card::Card>"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_id",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::integer::u32"
-                }
-              ],
-              "state_mutability": "view"
-            },
-            {
-              "type": "function",
-              "name": "get_type",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::special_type::SpecialType"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "function",
-          "name": "dojo_init",
-          "inputs": [],
-          "outputs": [],
-          "state_mutability": "view"
-        },
-        {
-          "type": "impl",
-          "name": "WorldProviderImpl",
-          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
-        },
-        {
-          "type": "struct",
-          "name": "dojo::world::iworld::IWorldDispatcher",
-          "members": [
-            {
-              "name": "contract_address",
-              "type": "core::starknet::contract_address::ContractAddress"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::world_provider::IWorldProvider",
-          "items": [
-            {
-              "type": "function",
-              "name": "world_dispatcher",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "dojo::world::iworld::IWorldDispatcher"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "UpgradeableImpl",
-          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::upgradeable::IUpgradeable",
-          "items": [
-            {
-              "type": "function",
-              "name": "upgrade",
-              "inputs": [
-                {
-                  "name": "new_class_hash",
-                  "type": "core::starknet::class_hash::ClassHash"
-                }
-              ],
-              "outputs": [],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "constructor",
-          "name": "constructor",
-          "inputs": []
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-          "kind": "struct",
-          "members": [
-            {
-              "name": "class_hash",
-              "type": "core::starknet::class_hash::ClassHash",
-              "kind": "data"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "Upgraded",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-              "kind": "nested"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-          "kind": "enum",
-          "variants": []
-        },
-        {
-          "type": "event",
-          "name": "jokers_of_neon_classic::specials::special_win::idle_joker::special_idle_joker::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "UpgradeableEvent",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-              "kind": "nested"
-            },
-            {
-              "name": "WorldProviderEvent",
-              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-              "kind": "nested"
-            }
-          ]
-        }
-      ],
-      "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_idle_joker",
-      "selector": "0x78876c85aa45237bc84164cf0b6a292515f7addc54a1bd30e96bbbf6035ed5f",
-      "systems": [
-        "execute",
-        "upgrade"
-      ]
-    },
-    {
-      "address": "0x9f267fd35efb1395d7cb35a077712ca0d22cd02d67858a81ad2d2897405957",
-      "class_hash": "0x6974a667af0b99ae760518a1d706e2e4cfcaaf0c7da6fd76038da8c32524c56",
+      "address": "0x449d96d7b5c284715e574093be69dfa9ad077eb9b0d6546b96b6a79f2ca4979",
+      "class_hash": "0x7bd7727c049b2b1be5d01adc8bd39ba41f083356e1b5ba562e9a10ba2bd6adc",
       "abi": [
         {
           "type": "impl",
@@ -9217,7 +7930,7 @@
               ],
               "outputs": [
                 {
-                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
+                  "type": "((core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -9362,8 +8075,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_increase_level_double_pair",
-      "selector": "0x4a112bc0ce0b99f1ed12f7a60d9346ba95dda021ce372d605818ab71a3f02f7",
+      "tag": "jokers_of_neon_classic-special_increase_level_double_pair",
+      "selector": "0x4b6820266483a165c9549f3ae69c85f377fcaa007fd1868469dae788f2a1182",
       "systems": [
         "execute",
         "get_id",
@@ -9372,8 +8085,8 @@
       ]
     },
     {
-      "address": "0x1480fc9adaade48bcf440574d796fcd3811548b4f2c8bb65644ff05ee30cd07",
-      "class_hash": "0x178c68763d9588f5225852b3f6e911f29dd62b7f092a375bae091c2444c5a46",
+      "address": "0x2280497cc951eda9b9152093cd0902686a250cbed6781af3cc152211c5cc643",
+      "class_hash": "0x6578765947ee2e88a38c26cebc523fdd711d96069d56018000436e21ea14cc7",
       "abi": [
         {
           "type": "impl",
@@ -9751,7 +8464,7 @@
               ],
               "outputs": [
                 {
-                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
+                  "type": "((core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -9896,8 +8609,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_increase_level_five_of_a_kind",
-      "selector": "0x3d082028887256c2bda3886d4baa7fcbd89fc834dee4d6dbf874937c72b18c",
+      "tag": "jokers_of_neon_classic-special_increase_level_five_of_a_kind",
+      "selector": "0xff141612a4632b36706661d039ecd25c79397df71366bd56191f7abce9b176",
       "systems": [
         "execute",
         "get_id",
@@ -9906,8 +8619,8 @@
       ]
     },
     {
-      "address": "0x2ad445681cb6981888f763fc7d06e6953961568d6ba67221bdf84eb89427de4",
-      "class_hash": "0x4fa700511093c8a114de08e74fbb5dc496d62dfc875aa3ad65ae0f170c976e",
+      "address": "0x65dd33e7778511ee978fb68de2c1b745b6c4c8cf89feb0b1fe3af58edae5155",
+      "class_hash": "0x3e32bfbe68b732a4e5bc78b7caea2f0e5a760eecb74181c8c290c84fdc2d1db",
       "abi": [
         {
           "type": "impl",
@@ -10285,7 +8998,7 @@
               ],
               "outputs": [
                 {
-                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
+                  "type": "((core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -10430,8 +9143,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_increase_level_flush",
-      "selector": "0x52ab5d57ba7b6484426a5875c5217b91ce5b8834aacf9a4fa4b736a9a85fb40",
+      "tag": "jokers_of_neon_classic-special_increase_level_flush",
+      "selector": "0x42b41965d1b0f933930b88ccfaebd4981ba2b3f933077a6b213f19682baedf",
       "systems": [
         "execute",
         "get_id",
@@ -10440,8 +9153,8 @@
       ]
     },
     {
-      "address": "0x1ff2f8de72ae1aa6c8e09ae22d31cf619d7ddbf2b552812f9c48c8b2ca9c35",
-      "class_hash": "0xbf51aa9286062a00db338dea75f78836cd028caedf8da14cc628d0334abae9",
+      "address": "0x41866ae50c339fdb010947a0219c1546ef40cfefe325eba7980d7a7e5b423e8",
+      "class_hash": "0x25988761a59c8407635d0ac57537a89ed383733d2aed31379fa3f598a3d2e5d",
       "abi": [
         {
           "type": "impl",
@@ -10819,7 +9532,7 @@
               ],
               "outputs": [
                 {
-                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
+                  "type": "((core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -10964,8 +9677,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_increase_level_four_of_a_kind",
-      "selector": "0x4dfeb938eb6783877f7f1fbcb89dec89cf8114d6e904402729c4cfbbc8af1c6",
+      "tag": "jokers_of_neon_classic-special_increase_level_four_of_a_kind",
+      "selector": "0x6721ab05bf7f2c8dbf2cedbc13eed785fb69c096a267d16529733a427002c7c",
       "systems": [
         "execute",
         "get_id",
@@ -10974,8 +9687,8 @@
       ]
     },
     {
-      "address": "0x3b23842b9d77bb2092f2ccaee5c5dac5ba7d0e6e01f92e458d9c32f9d9656c8",
-      "class_hash": "0x5e7d9a389c05bab3b8afbf4b9edb9e49dedfaff138055fd6c3a96c954a4e9f3",
+      "address": "0x29ff608088f6246db0714318213a61bb820f94fdfd31fbbc44b10c0a45b550d",
+      "class_hash": "0x29af6ef3802c5c643762d39039b33851f14573170b49cbdc24cebaf6725c5a8",
       "abi": [
         {
           "type": "impl",
@@ -11353,7 +10066,7 @@
               ],
               "outputs": [
                 {
-                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
+                  "type": "((core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -11498,8 +10211,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_increase_level_full_house",
-      "selector": "0x7c4a7d64a38ab547287d504dee6196e65c8960bba64fb6e21f46d961297d1b5",
+      "tag": "jokers_of_neon_classic-special_increase_level_full_house",
+      "selector": "0x6ccb8e17b458ac994c999163de0527843a96e0345fdf35ed50e0c9a302c811b",
       "systems": [
         "execute",
         "get_id",
@@ -11508,8 +10221,8 @@
       ]
     },
     {
-      "address": "0x2607f576f87948bdf2ffd583c934372fca715a98293e7684371f3f607ef9000",
-      "class_hash": "0x1f2b6b41379696064165666fa94bb23ebd68a41dd9ac861ada493eb9de64995",
+      "address": "0x2d71b30f06894d0662f6dfe79bf285036351064350c376773f1004f75429a3d",
+      "class_hash": "0x31a2db31928a67bccaead40dd5d693f1a73494b86b8240f39740cc1cdf22645",
       "abi": [
         {
           "type": "impl",
@@ -11887,7 +10600,7 @@
               ],
               "outputs": [
                 {
-                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
+                  "type": "((core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -12032,8 +10745,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_increase_level_pair",
-      "selector": "0x149ae04d4df329db69f350cde4327970cf793e7df7f4a41c465946d1d941fcd",
+      "tag": "jokers_of_neon_classic-special_increase_level_pair",
+      "selector": "0x62d317e4e7d098d1451e7c4e8d0b3e9689e41e0e99bf1e504f78229d5e2d04",
       "systems": [
         "execute",
         "get_id",
@@ -12042,8 +10755,8 @@
       ]
     },
     {
-      "address": "0x7f28d0ff1c78571a4a336bf39fde8c9b6fada7a427c64b1f95f83ca81257e0",
-      "class_hash": "0x77a93fa32cb9496c5e4b6a37ee95504b6bd9b7648714d87562dfbe87cde06ad",
+      "address": "0x34dcabdd534b1b2a39a4fcda06e1124b07fc2d337e00226a892420df0e7b153",
+      "class_hash": "0x6f3e63a6cac3493967c7a92752057cc0bbe6fe989cbffdfeab60970405ccfa1",
       "abi": [
         {
           "type": "impl",
@@ -12421,7 +11134,7 @@
               ],
               "outputs": [
                 {
-                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
+                  "type": "((core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -12566,8 +11279,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_increase_level_straight",
-      "selector": "0xcd58e81a12b770c9619b2240fb315e9d1dfad48ed46e3e5f72807ed67f1c2f",
+      "tag": "jokers_of_neon_classic-special_increase_level_straight",
+      "selector": "0x539573943ae86b89ce0cdeee54fa91ca1c36a3ec9f7561e3fb99dd67ef6150a",
       "systems": [
         "execute",
         "get_id",
@@ -12576,8 +11289,8 @@
       ]
     },
     {
-      "address": "0x4fcabc8ebd34a44a818eb6a55d4fbd896717f3b68f7d5c619b38f7525598a45",
-      "class_hash": "0x5703bf8def42bd13db0913dc712f06439e2d4644bda2fdf10b3b222deba4932",
+      "address": "0x5fd7b2af54f409805df3fa76f6edc662afe23e6c416d6884912c968d4ecdf95",
+      "class_hash": "0x72c42eb43d49fd287572f66c608ea27a8b61fe84d8a4b21f1bf31e966d2af02",
       "abi": [
         {
           "type": "impl",
@@ -12955,7 +11668,7 @@
               ],
               "outputs": [
                 {
-                  "type": "((core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
+                  "type": "((core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>), (core::integer::i32, core::integer::i32, core::array::Span::<(core::integer::u32, core::integer::i32)>))"
                 }
               ],
               "state_mutability": "external"
@@ -13100,8 +11813,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_increase_level_three_of_a_kind",
-      "selector": "0x7ce0764a91e09b197079c50a3dac5cba12951e0ed74c4c7d0d1333c968a9552",
+      "tag": "jokers_of_neon_classic-special_increase_level_three_of_a_kind",
+      "selector": "0x45ac5a9f94d3e807fda12029357dec32e7beb50cd940bb6f8070739c9ee3750",
       "systems": [
         "execute",
         "get_id",
@@ -13110,7 +11823,7 @@
       ]
     },
     {
-      "address": "0x2e2b775bcca3d2f8a2bd5b11de33203a081ebeeeaba2aaed93b5032c978cf27",
+      "address": "0x5cb51c637fccd02292d353038dfe5383012272ade0e23ae09eebfe552ac4a21",
       "class_hash": "0x75f217cfcf10fe2a58dff7d0f4481a5c20ca4a1e15557116aa0af60fa9e9f9d",
       "abi": [
         {
@@ -13504,8 +12217,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_initial_advantage",
-      "selector": "0x49df8076145ce254ed35c0a5ddd31dbd3b2e69c97328b02997755e8efa30c7c",
+      "tag": "jokers_of_neon_classic-special_initial_advantage",
+      "selector": "0x277d589bc4479e7cfd1319ab766dcb53b2dad9c371b270712fe55dae90e96a4",
       "systems": [
         "execute",
         "get_id",
@@ -13514,7 +12227,7 @@
       ]
     },
     {
-      "address": "0x2f1fd72f2eb326ff59aea6bc1f7ade41797b0eed977e1e9f5ed5128cec6f3f1",
+      "address": "0x5c0517903e271b181ef922e7e5d523485840b39eaa60c8a1b23767cfb0b0e36",
       "class_hash": "0x659f5c4e986ed13cd0eb05fc812e621c11fe9a79f52f8374e0589711e3b8acb",
       "abi": [
         {
@@ -13957,8 +12670,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_joker_booster",
-      "selector": "0x3655e5ebcf0f9349e9db8e4b5617d41ac3f8420111250cbcc434915773d2a25",
+      "tag": "jokers_of_neon_classic-special_joker_booster",
+      "selector": "0xf0ebb696ef64b7a6045030a866ff9e0b398a4143a142b1ceaf1559ba45335e",
       "systems": [
         "condition",
         "execute",
@@ -13968,325 +12681,7 @@
       ]
     },
     {
-      "address": "0x2762cbffc850a1a8076f19c0a397f711e13dc5aead71f66b08999df24efbd9d",
-      "class_hash": "0x74f35742d0f196261787a2bc334552512b7c94ef1788f1e584d53374c11e6ba",
-      "abi": [
-        {
-          "type": "impl",
-          "name": "special_life_saver__ContractImpl",
-          "interface_name": "dojo::contract::interface::IContract"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::interface::IContract",
-          "items": []
-        },
-        {
-          "type": "impl",
-          "name": "special_life_saver__DeployedContractImpl",
-          "interface_name": "dojo::meta::interface::IDeployedResource"
-        },
-        {
-          "type": "struct",
-          "name": "core::byte_array::ByteArray",
-          "members": [
-            {
-              "name": "data",
-              "type": "core::array::Array::<core::bytes_31::bytes31>"
-            },
-            {
-              "name": "pending_word",
-              "type": "core::felt252"
-            },
-            {
-              "name": "pending_word_len",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::meta::interface::IDeployedResource",
-          "items": [
-            {
-              "type": "function",
-              "name": "dojo_name",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::byte_array::ByteArray"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "SpecialShortcutImpl",
-          "interface_name": "jokers_of_neon_lib::interfaces::round::ISpecialRoundType"
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::status::round::round::Round",
-          "members": [
-            {
-              "name": "game_id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "player_score",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "level_score",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "remaining_plays",
-              "type": "core::integer::u16"
-            },
-            {
-              "name": "remaining_discards",
-              "type": "core::integer::u16"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::special_type::SpecialType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Individual",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::round::ISpecialRoundType",
-          "items": [
-            {
-              "type": "function",
-              "name": "apply",
-              "inputs": [
-                {
-                  "name": "round",
-                  "type": "jokers_of_neon_lib::models::status::round::round::Round"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::status::round::round::Round"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_id",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::integer::u32"
-                }
-              ],
-              "state_mutability": "view"
-            },
-            {
-              "type": "function",
-              "name": "get_type",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::special_type::SpecialType"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "function",
-          "name": "dojo_init",
-          "inputs": [],
-          "outputs": [],
-          "state_mutability": "view"
-        },
-        {
-          "type": "impl",
-          "name": "WorldProviderImpl",
-          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
-        },
-        {
-          "type": "struct",
-          "name": "dojo::world::iworld::IWorldDispatcher",
-          "members": [
-            {
-              "name": "contract_address",
-              "type": "core::starknet::contract_address::ContractAddress"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::world_provider::IWorldProvider",
-          "items": [
-            {
-              "type": "function",
-              "name": "world_dispatcher",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "dojo::world::iworld::IWorldDispatcher"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "UpgradeableImpl",
-          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::upgradeable::IUpgradeable",
-          "items": [
-            {
-              "type": "function",
-              "name": "upgrade",
-              "inputs": [
-                {
-                  "name": "new_class_hash",
-                  "type": "core::starknet::class_hash::ClassHash"
-                }
-              ],
-              "outputs": [],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "constructor",
-          "name": "constructor",
-          "inputs": []
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-          "kind": "struct",
-          "members": [
-            {
-              "name": "class_hash",
-              "type": "core::starknet::class_hash::ClassHash",
-              "kind": "data"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "Upgraded",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-              "kind": "nested"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-          "kind": "enum",
-          "variants": []
-        },
-        {
-          "type": "event",
-          "name": "jokers_of_neon_classic::specials::special_round_type::life_saver::special_life_saver::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "UpgradeableEvent",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-              "kind": "nested"
-            },
-            {
-              "name": "WorldProviderEvent",
-              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-              "kind": "nested"
-            }
-          ]
-        }
-      ],
-      "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_life_saver",
-      "selector": "0x3e1a27fef58f63d3408c22bfe3902d229dc18cbf761f5444392d921b321de97",
-      "systems": [
-        "apply",
-        "upgrade"
-      ]
-    },
-    {
-      "address": "0x688ed827b9acdccbc3220e857b89758fd6a7735d1c4d1f7a11464e0377ac7e2",
+      "address": "0x666b9d7c7e4c5e7ad2c0e33e2e6e9ccd0f595575ac419de58cc0e8c0035af28",
       "class_hash": "0x60bdbb1f3b8ffdc883c18a35c1c1e861cac3eec85b50ed8a163a96d2f972ba4",
       "abi": [
         {
@@ -14729,8 +13124,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_lucky_hand",
-      "selector": "0x71db6df09eb2d668bd3f5774fdc47999ffe62853e3d3b76a530b9b7f5b0aba0",
+      "tag": "jokers_of_neon_classic-special_lucky_hand",
+      "selector": "0x3a9b051dcee960d91f8dbfd0f612f56ff6e92765155fe0a128cb9cee6c402b3",
       "systems": [
         "condition",
         "execute",
@@ -14740,7 +13135,7 @@
       ]
     },
     {
-      "address": "0x392b4636333b66202ce09e4ad45a0496606909da8c85a6e27d595ba09ef7d76",
+      "address": "0x619aa6935d87167e993672c1a1071f6260a5037dd7341439aae595d09068dc1",
       "class_hash": "0x164233588ae9f8a28802acaf62da08d0a36dbf66350b0fd5def111cf603c15d",
       "abi": [
         {
@@ -15183,8 +13578,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_lucky_seven",
-      "selector": "0x3fca3ddf97927403770457a0c133a13dac989c1fe6d1f6d6156299d4b47be92",
+      "tag": "jokers_of_neon_classic-special_lucky_seven",
+      "selector": "0x2cbb63bb4e89cedc2c8b677d8b4746e1e44810034398f4552916d8e2d21b6c9",
       "systems": [
         "condition",
         "execute",
@@ -15194,7 +13589,7 @@
       ]
     },
     {
-      "address": "0x1fe790d556791dc03091f05b77ee1b70034e351c5faffa9dcadd69b86a491e7",
+      "address": "0x75bce613a66da2afed301151629b1354e44413d9bd4312e810ed3d2aeb5a378",
       "class_hash": "0x221519f18c820f403f176ed95d257c30899a05b070320b64b458e28d49ed0c7",
       "abi": [
         {
@@ -15637,8 +14032,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_multi_aces",
-      "selector": "0x49065819cb77c7106afe6fedcbf72bc22108754809b552655efe78931f271e",
+      "tag": "jokers_of_neon_classic-special_multi_aces",
+      "selector": "0x13d4bf4f0c46bb453b318387439b79f1c7280b59eec5d9c4f05242adab9d79a",
       "systems": [
         "condition",
         "execute",
@@ -15648,7 +14043,7 @@
       ]
     },
     {
-      "address": "0x6637d21c177834ba8c6129f3f2135184e45cadbb709bcfc8b51a035f372b542",
+      "address": "0x6b2fff04d767b965ef65fa261256bb8c7ddd7c7bc20938443a3e4f26ee7cc5f",
       "class_hash": "0x2ceecfdebb1e63e961ef09e53fa685063f427bb60f6d946f4ac41ebc6d3ebe",
       "abi": [
         {
@@ -16091,8 +14486,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_multi_for_club",
-      "selector": "0x30cb7fc5286b386768be3479b7f888ac69d591c76c43ee56cf85a3e0c5e8b4c",
+      "tag": "jokers_of_neon_classic-special_multi_for_club",
+      "selector": "0x6924ed2264927cbe61a08f8973e4a45a498645b78bfea5e2ca3100fd6424395",
       "systems": [
         "condition",
         "execute",
@@ -16102,7 +14497,7 @@
       ]
     },
     {
-      "address": "0x2e831dc4ec5243319a45adedfd2d2d6e458b5626b0be1fce1b55a714c2f7af0",
+      "address": "0x47a63ce20dfbe34a6fb812cce5671d7f634d660ddd0c2f6b990a18a3ee3e53d",
       "class_hash": "0x558f531be89430574761694055be3fa10a4c16cfe24cfeb57642fd8f1339a98",
       "abi": [
         {
@@ -16545,8 +14940,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_multi_for_diamond",
-      "selector": "0x5cc5adf2d978998d5443d0fa47db58b8b28fac2da10306d38ce2cb823898146",
+      "tag": "jokers_of_neon_classic-special_multi_for_diamond",
+      "selector": "0x4954f714c544f7453e59059de5bd6f088fe62b5e6cd9892b8000671092d04d0",
       "systems": [
         "condition",
         "execute",
@@ -16556,7 +14951,7 @@
       ]
     },
     {
-      "address": "0x71dd909869e23e9f46d4349e938bd58d0c8d17b733eb1b76653d08c5285b099",
+      "address": "0x32c5e52d3494d6410787485eeb7ab33bdc0046b8972871a6fe93c6d81992616",
       "class_hash": "0x6f0bd3314df8e1b69bfbebbddb6129fd51f648c744ef814ce60e785bfd80b23",
       "abi": [
         {
@@ -16999,8 +15394,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_multi_for_heart",
-      "selector": "0x4b647e44178db4f881f52b5171b9f7b47c7b3054d0753a424b65d42416c3420",
+      "tag": "jokers_of_neon_classic-special_multi_for_heart",
+      "selector": "0x3c8cfb13be85f6bef76c1f96a95feb7b30d0c573a107add2bf129cf7cef1be8",
       "systems": [
         "condition",
         "execute",
@@ -17010,7 +15405,7 @@
       ]
     },
     {
-      "address": "0x6ccd024efc9b5ffb9c3d585f117ea045df73d5db7ed7b655c64c2abe92b4d54",
+      "address": "0x51d839a900d6328e3ad8019d9557ec32090d7bb9ba442dc8d923e5fd2e0a4f",
       "class_hash": "0x5a2694f988e49b6312ce6bd7105310115252dff80b0de4895a74d7c6acbeb3c",
       "abi": [
         {
@@ -17453,8 +15848,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_multi_for_spade",
-      "selector": "0x3915c5b84146ca1ecb990893dd068e97fd5c53a4ae7a476e8a555d10eafb963",
+      "tag": "jokers_of_neon_classic-special_multi_for_spade",
+      "selector": "0x56a90150ee943587ea781e4d586dee3a6c39b7705b3929f1c3715965abc4b08",
       "systems": [
         "condition",
         "execute",
@@ -17464,8 +15859,8 @@
       ]
     },
     {
-      "address": "0x3ccd707529007e9374699a5cf1827dc1362f359ce3784fd64146bc8487d97a4",
-      "class_hash": "0x62617a4c714cc9cfcacd7ef31c27080761788131920b896efccc12d43339c1d",
+      "address": "0x1d48f6eb687ef897e200d488877552429b0af112e7afa5a3289b932b3cf5bdc",
+      "class_hash": "0x19c1de3b3f16c61cc1a32cc70662389794bf9ca1bd33ffcb749a5702ccab4b1",
       "abi": [
         {
           "type": "impl",
@@ -17907,8 +16302,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_neon_bonus",
-      "selector": "0xc73d9a4078d0105b3a99e104466b7d88ca60f7a71192aed07abe1979ff1333",
+      "tag": "jokers_of_neon_classic-special_neon_bonus",
+      "selector": "0x2e36fb7233ea9d0f3901deece4f051aef7722fda70a60757a1c643498c07016",
       "systems": [
         "condition",
         "execute",
@@ -17918,860 +16313,7 @@
       ]
     },
     {
-      "address": "0x58334da0db8405ab7c9d77697589849071b6970655a7a25094950ae6bcd56b4",
-      "class_hash": "0x399ca3944d2cc085858aa75036fe02d948a7462522e0f88dbaeadf8876f27f4",
-      "abi": [
-        {
-          "type": "impl",
-          "name": "special_neon_synergy__ContractImpl",
-          "interface_name": "dojo::contract::interface::IContract"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::interface::IContract",
-          "items": []
-        },
-        {
-          "type": "impl",
-          "name": "special_neon_synergy__DeployedContractImpl",
-          "interface_name": "dojo::meta::interface::IDeployedResource"
-        },
-        {
-          "type": "struct",
-          "name": "core::byte_array::ByteArray",
-          "members": [
-            {
-              "name": "data",
-              "type": "core::array::Array::<core::bytes_31::bytes31>"
-            },
-            {
-              "name": "pending_word",
-              "type": "core::felt252"
-            },
-            {
-              "name": "pending_word_len",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::meta::interface::IDeployedResource",
-          "items": [
-            {
-              "type": "function",
-              "name": "dojo_name",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::byte_array::ByteArray"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "SpecialNeonSynergyImpl",
-          "interface_name": "jokers_of_neon_lib::interfaces::post_calculate_hand::ISpecialPostPlayType"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "RoyalFlush",
-              "type": "()"
-            },
-            {
-              "name": "StraightFlush",
-              "type": "()"
-            },
-            {
-              "name": "FiveOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "FourOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "FullHouse",
-              "type": "()"
-            },
-            {
-              "name": "Straight",
-              "type": "()"
-            },
-            {
-              "name": "Flush",
-              "type": "()"
-            },
-            {
-              "name": "ThreeOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "TwoPair",
-              "type": "()"
-            },
-            {
-              "name": "OnePair",
-              "type": "()"
-            },
-            {
-              "name": "HighCard",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Suit",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Clubs",
-              "type": "()"
-            },
-            {
-              "name": "Diamonds",
-              "type": "()"
-            },
-            {
-              "name": "Hearts",
-              "type": "()"
-            },
-            {
-              "name": "Spades",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Value",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Two",
-              "type": "()"
-            },
-            {
-              "name": "Three",
-              "type": "()"
-            },
-            {
-              "name": "Four",
-              "type": "()"
-            },
-            {
-              "name": "Five",
-              "type": "()"
-            },
-            {
-              "name": "Six",
-              "type": "()"
-            },
-            {
-              "name": "Seven",
-              "type": "()"
-            },
-            {
-              "name": "Eight",
-              "type": "()"
-            },
-            {
-              "name": "Nine",
-              "type": "()"
-            },
-            {
-              "name": "Ten",
-              "type": "()"
-            },
-            {
-              "name": "Jack",
-              "type": "()"
-            },
-            {
-              "name": "Queen",
-              "type": "()"
-            },
-            {
-              "name": "King",
-              "type": "()"
-            },
-            {
-              "name": "Ace",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "NeonJoker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::data::card::Card",
-          "members": [
-            {
-              "name": "id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "suit",
-              "type": "jokers_of_neon_lib::models::data::card::Suit"
-            },
-            {
-              "name": "value",
-              "type": "jokers_of_neon_lib::models::data::card::Value"
-            },
-            {
-              "name": "points",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "multi_add",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
-          "members": [
-            {
-              "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::play_info::PlayInfo",
-          "members": [
-            {
-              "name": "hand",
-              "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
-            },
-            {
-              "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
-            },
-            {
-              "name": "is_neon",
-              "type": "core::bool"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::special_type::SpecialType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Individual",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::post_calculate_hand::ISpecialPostPlayType",
-          "items": [
-            {
-              "type": "function",
-              "name": "apply",
-              "inputs": [
-                {
-                  "name": "play_info",
-                  "type": "jokers_of_neon_lib::models::play_info::PlayInfo"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::play_info::PlayInfo"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_id",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::integer::u32"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_type",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::special_type::SpecialType"
-                }
-              ],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "function",
-          "name": "dojo_init",
-          "inputs": [],
-          "outputs": [],
-          "state_mutability": "view"
-        },
-        {
-          "type": "impl",
-          "name": "WorldProviderImpl",
-          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
-        },
-        {
-          "type": "struct",
-          "name": "dojo::world::iworld::IWorldDispatcher",
-          "members": [
-            {
-              "name": "contract_address",
-              "type": "core::starknet::contract_address::ContractAddress"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::world_provider::IWorldProvider",
-          "items": [
-            {
-              "type": "function",
-              "name": "world_dispatcher",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "dojo::world::iworld::IWorldDispatcher"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "UpgradeableImpl",
-          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::upgradeable::IUpgradeable",
-          "items": [
-            {
-              "type": "function",
-              "name": "upgrade",
-              "inputs": [
-                {
-                  "name": "new_class_hash",
-                  "type": "core::starknet::class_hash::ClassHash"
-                }
-              ],
-              "outputs": [],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "constructor",
-          "name": "constructor",
-          "inputs": []
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-          "kind": "struct",
-          "members": [
-            {
-              "name": "class_hash",
-              "type": "core::starknet::class_hash::ClassHash",
-              "kind": "data"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "Upgraded",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-              "kind": "nested"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-          "kind": "enum",
-          "variants": []
-        },
-        {
-          "type": "event",
-          "name": "jokers_of_neon_classic::specials::special_post_play_type::neon_synergy::special_neon_synergy::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "UpgradeableEvent",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-              "kind": "nested"
-            },
-            {
-              "name": "WorldProviderEvent",
-              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-              "kind": "nested"
-            }
-          ]
-        }
-      ],
-      "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_neon_synergy",
-      "selector": "0x2e4f1da4154727e36b4725bf15cfe7972177ca303c7ca1df6365705aab88478",
-      "systems": [
-        "apply",
-        "get_id",
-        "get_type",
-        "upgrade"
-      ]
-    },
-    {
-      "address": "0x703477d4079673043483853db41774f9f62febe95c003dce75c2f2fa1f0bfd1",
-      "class_hash": "0x68cf68aaf627390e1addded16aaa7c517ecf63ef5b91a5511df678b7672afb8",
-      "abi": [
-        {
-          "type": "impl",
-          "name": "special_pack_discount__ContractImpl",
-          "interface_name": "dojo::contract::interface::IContract"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::interface::IContract",
-          "items": []
-        },
-        {
-          "type": "impl",
-          "name": "special_pack_discount__DeployedContractImpl",
-          "interface_name": "dojo::meta::interface::IDeployedResource"
-        },
-        {
-          "type": "struct",
-          "name": "core::byte_array::ByteArray",
-          "members": [
-            {
-              "name": "data",
-              "type": "core::array::Array::<core::bytes_31::bytes31>"
-            },
-            {
-              "name": "pending_word",
-              "type": "core::felt252"
-            },
-            {
-              "name": "pending_word_len",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::meta::interface::IDeployedResource",
-          "items": [
-            {
-              "type": "function",
-              "name": "dojo_name",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::byte_array::ByteArray"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "SpecialPackDiscountImpl",
-          "interface_name": "jokers_of_neon_lib::interfaces::shop::ISpecialShopType"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::status::shop::shop::DiscountSection",
-          "variants": [
-            {
-              "name": "Traditionals",
-              "type": "()"
-            },
-            {
-              "name": "Modifiers",
-              "type": "()"
-            },
-            {
-              "name": "Specials",
-              "type": "()"
-            },
-            {
-              "name": "LootBoxes",
-              "type": "()"
-            },
-            {
-              "name": "PokerHands",
-              "type": "()"
-            },
-            {
-              "name": "Burns",
-              "type": "()"
-            },
-            {
-              "name": "SpecialSlots",
-              "type": "()"
-            },
-            {
-              "name": "PowerUps",
-              "type": "()"
-            },
-            {
-              "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::special_type::SpecialType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Individual",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::shop::ISpecialShopType",
-          "items": [
-            {
-              "type": "function",
-              "name": "apply",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::array::Array::<(jokers_of_neon_lib::models::status::shop::shop::DiscountSection, core::integer::u32)>"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_id",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::integer::u32"
-                }
-              ],
-              "state_mutability": "view"
-            },
-            {
-              "type": "function",
-              "name": "get_type",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::special_type::SpecialType"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "function",
-          "name": "dojo_init",
-          "inputs": [],
-          "outputs": [],
-          "state_mutability": "view"
-        },
-        {
-          "type": "impl",
-          "name": "WorldProviderImpl",
-          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
-        },
-        {
-          "type": "struct",
-          "name": "dojo::world::iworld::IWorldDispatcher",
-          "members": [
-            {
-              "name": "contract_address",
-              "type": "core::starknet::contract_address::ContractAddress"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::world_provider::IWorldProvider",
-          "items": [
-            {
-              "type": "function",
-              "name": "world_dispatcher",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "dojo::world::iworld::IWorldDispatcher"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "UpgradeableImpl",
-          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::upgradeable::IUpgradeable",
-          "items": [
-            {
-              "type": "function",
-              "name": "upgrade",
-              "inputs": [
-                {
-                  "name": "new_class_hash",
-                  "type": "core::starknet::class_hash::ClassHash"
-                }
-              ],
-              "outputs": [],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "constructor",
-          "name": "constructor",
-          "inputs": []
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-          "kind": "struct",
-          "members": [
-            {
-              "name": "class_hash",
-              "type": "core::starknet::class_hash::ClassHash",
-              "kind": "data"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "Upgraded",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-              "kind": "nested"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-          "kind": "enum",
-          "variants": []
-        },
-        {
-          "type": "event",
-          "name": "jokers_of_neon_classic::specials::special_shop::pack_discount::special_pack_discount::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "UpgradeableEvent",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-              "kind": "nested"
-            },
-            {
-              "name": "WorldProviderEvent",
-              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-              "kind": "nested"
-            }
-          ]
-        }
-      ],
-      "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_pack_discount",
-      "selector": "0x7f4a0f170f964af82f783c97fc6743ba675bb2b043d97b0377566690b72f477",
-      "systems": [
-        "apply",
-        "upgrade"
-      ]
-    },
-    {
-      "address": "0x7964664cf675ba5edadce213cdec2cdb724c329ab37b0e11adadbe40027e005",
+      "address": "0x607727be33743e825947753cd9f896514898b155381a6e08fcc080287acedab",
       "class_hash": "0x490935d878c214479ca6e022e929c0bc2205fbbf4c7e5ffcf231f8c04f5bcdf",
       "abi": [
         {
@@ -19151,8 +16693,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_plus_discards",
-      "selector": "0x2446db19407b2b21eff0bd3a111615fc579f8a959687317f44dd57b5469b433",
+      "tag": "jokers_of_neon_classic-special_plus_discards",
+      "selector": "0x2fd2e13aa44905c96d631d46654b9d7a3d7a8964c26de189d5abf410093547b",
       "systems": [
         "equip",
         "unequip",
@@ -19162,7 +16704,7 @@
       ]
     },
     {
-      "address": "0x78fe54bb8095f415ac6628412610cdfd817708272a6d583459ebed24a39bf50",
+      "address": "0x528cb9025dbf333026f2f247981f9d1c911f899c1b5e8fb01137260edda34c8",
       "class_hash": "0x3025675ec78504791bb76dfec1072543cbdea12247a85d57f1518a4651afa14",
       "abi": [
         {
@@ -19542,8 +17084,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_plus_plays",
-      "selector": "0x6807f8b211c057b37656b3384c518825a76f3ceec19cbdd8b050461ad7c8cdc",
+      "tag": "jokers_of_neon_classic-special_plus_plays",
+      "selector": "0x2b80351423f8f9f614e1460c5be21e9dc4b258c506e4bfe6ac7e4296d8140da",
       "systems": [
         "equip",
         "unequip",
@@ -19553,7 +17095,7 @@
       ]
     },
     {
-      "address": "0x4cdd8080d3eb21d71fed852db15ddfb082edd808ceca82a155bd14a88960a88",
+      "address": "0x62bb8e486a37a06969f0acaa9ddd8a9ad46b508cba8bc449e7b84ba15e2ee97",
       "class_hash": "0x3761b9313c18ca41d3d883e5282134cea3cf034addc881ceb702d39d6758dbb",
       "abi": [
         {
@@ -19996,8 +17538,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_points_for_figures",
-      "selector": "0x2daebb894e0ef48be2d015936ea336a503eaed9ca5a795048655a65b7d37000",
+      "tag": "jokers_of_neon_classic-special_points_for_figures",
+      "selector": "0x3105e7c8ba5cacba32c4e647acfe4c26d288c939aa5ae501b1f00504178edb5",
       "systems": [
         "condition",
         "execute",
@@ -20007,7 +17549,7 @@
       ]
     },
     {
-      "address": "0x1c1d9582f371cbf2e2328827c815f25d5fd7c92bedd27a132bee5908f260f95",
+      "address": "0x2ba0cef487b02e0ffce6170d4d287ea1b8ca8713b85c0393bee2fb7f8d41baa",
       "class_hash": "0x43d106e808958a1937d388eaa2a900454af13172f6c990a2c651a29c1138dca",
       "abi": [
         {
@@ -20309,16 +17851,16 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_power_up_booster",
-      "selector": "0x6a25eac433ec533f4ac1b72f73e8973c9cde1ad12411fe3f1cfb02ba7c9401b",
+      "tag": "jokers_of_neon_classic-special_power_up_booster",
+      "selector": "0x610609023cce621e00c254c338c16db38f2d5b006948822f232784f102a0eb3",
       "systems": [
         "execute",
         "upgrade"
       ]
     },
     {
-      "address": "0x34dfdd85ec5c42d8a30d9cdf4c0b408d91f21538d39aa88d41155d4c22cf529",
-      "class_hash": "0x3988d8466938b4fd4b73397955adeeee1ebd70211d78cfa51c5686b0c294601",
+      "address": "0x75c9c3c212fe635cbaa9de55a27b67e06a3abdc52bfcb725d86722ca9cb9f00",
+      "class_hash": "0x5a2448250b104b016e5ec7d1f6261b59a59ae51878867d313c802b319ddfcb7",
       "abi": [
         {
           "type": "impl",
@@ -20760,8 +18302,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_random_multi_for_club",
-      "selector": "0x2fde8a7850e4ceb510887256b65ae1c3301df7d1ff262242b05c3799bd69173",
+      "tag": "jokers_of_neon_classic-special_random_multi_for_club",
+      "selector": "0x703cba6efe583c6d56f070e19c6ce4d295bd4e5f22454135a0bdf6b12b48379",
       "systems": [
         "condition",
         "execute",
@@ -20771,8 +18313,8 @@
       ]
     },
     {
-      "address": "0x61424491eff05a89f7ba04f96ff9556bb134b7b1ef112d01a4386eaa0c89289",
-      "class_hash": "0x746d9b9df2d4f71698bd85ac4770435e1c71e74e82ca662395f0f65570fdb35",
+      "address": "0x730a00211dfae3e99622941bcf634b3170787a8037ef7890591f6e2e5625c7c",
+      "class_hash": "0x162d0b8ddbfcdfd8d7b7491f464c85840b96191dea90eabe179f16cbe2edc44",
       "abi": [
         {
           "type": "impl",
@@ -21214,8 +18756,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_random_multi_for_diamond",
-      "selector": "0x41c8cff768b456c62c898e8ccd25ad8b46a4c12542b86cff1dc87f4335cbbf0",
+      "tag": "jokers_of_neon_classic-special_random_multi_for_diamond",
+      "selector": "0x63ca0a5063b5e9c169b300fb63474cb0f655e910c01fe02079651bde327b34d",
       "systems": [
         "condition",
         "execute",
@@ -21225,8 +18767,8 @@
       ]
     },
     {
-      "address": "0x35226e45960306bcd98cf2adf62f5a3e80d3f17b0f893913aa3fbd4679d116f",
-      "class_hash": "0x991992c60a8f05b11f36d070d4afd10d9107d5946bbfad91c6c74c7a9ea756",
+      "address": "0x7be35b2bb677ed7270eb84c795e70f67b747544ac3176291d71cc70dd4461d5",
+      "class_hash": "0x49f1915c3c7fc43b292ee93aef5f167de245181456b70c9b1e354f0eae5d963",
       "abi": [
         {
           "type": "impl",
@@ -21668,8 +19210,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_random_multi_for_heart",
-      "selector": "0x47fd560b822beb735e5eaf770d1540cfbfbca7657411be1e12d0dcfe99a39e5",
+      "tag": "jokers_of_neon_classic-special_random_multi_for_heart",
+      "selector": "0x67b738921a4a51df3fa1a803101cc26a355b8c2b348287f9bc7158d33dbd6a3",
       "systems": [
         "condition",
         "execute",
@@ -21679,8 +19221,8 @@
       ]
     },
     {
-      "address": "0x78b38f4c23f9d431809afd08ef3f1b434ee9812b44f7bc0c26ccce615c36554",
-      "class_hash": "0x43e94e43deda3976809367cb8dc8c3ffee9cd22fb688b634783f04d25a0192f",
+      "address": "0x79aa99b2613d6fcc1b5bccee0da779ca452a521ea623b658290ef6c2150be7a",
+      "class_hash": "0x3c506d2c620a6a5197f628c67ff57250cf10082c5e50997d41f144d2e14338f",
       "abi": [
         {
           "type": "impl",
@@ -22122,8 +19664,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_random_multi_for_spade",
-      "selector": "0x5a9627ccf93ece71145fe929990a9ffb3cff5195da838fe6a00b02e4b4f21a3",
+      "tag": "jokers_of_neon_classic-special_random_multi_for_spade",
+      "selector": "0x4b0434359308ee3ca9297716fbf1ce072bafd4f350c7f5a7a522be4b4529f7a",
       "systems": [
         "condition",
         "execute",
@@ -22133,873 +19675,8 @@
       ]
     },
     {
-      "address": "0x35ec5e8fe44a21e416e245aabe296ea1c26b8fc04dcdfbd22b72264bbbf563",
-      "class_hash": "0x1c1cbe2977b2092607bf92db5b6e74a34fbed83c4471259973a4f477c3e1b86",
-      "abi": [
-        {
-          "type": "impl",
-          "name": "special_retired_joker__ContractImpl",
-          "interface_name": "dojo::contract::interface::IContract"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::interface::IContract",
-          "items": []
-        },
-        {
-          "type": "impl",
-          "name": "special_retired_joker__DeployedContractImpl",
-          "interface_name": "dojo::meta::interface::IDeployedResource"
-        },
-        {
-          "type": "struct",
-          "name": "core::byte_array::ByteArray",
-          "members": [
-            {
-              "name": "data",
-              "type": "core::array::Array::<core::bytes_31::bytes31>"
-            },
-            {
-              "name": "pending_word",
-              "type": "core::felt252"
-            },
-            {
-              "name": "pending_word_len",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::meta::interface::IDeployedResource",
-          "items": [
-            {
-              "type": "function",
-              "name": "dojo_name",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::byte_array::ByteArray"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "SpecialRetiredJokerImpl",
-          "interface_name": "jokers_of_neon_lib::interfaces::discards::ISpecialDiscardSpecificType"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "RoyalFlush",
-              "type": "()"
-            },
-            {
-              "name": "StraightFlush",
-              "type": "()"
-            },
-            {
-              "name": "FiveOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "FourOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "FullHouse",
-              "type": "()"
-            },
-            {
-              "name": "Straight",
-              "type": "()"
-            },
-            {
-              "name": "Flush",
-              "type": "()"
-            },
-            {
-              "name": "ThreeOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "TwoPair",
-              "type": "()"
-            },
-            {
-              "name": "OnePair",
-              "type": "()"
-            },
-            {
-              "name": "HighCard",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Suit",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Clubs",
-              "type": "()"
-            },
-            {
-              "name": "Diamonds",
-              "type": "()"
-            },
-            {
-              "name": "Hearts",
-              "type": "()"
-            },
-            {
-              "name": "Spades",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Value",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Two",
-              "type": "()"
-            },
-            {
-              "name": "Three",
-              "type": "()"
-            },
-            {
-              "name": "Four",
-              "type": "()"
-            },
-            {
-              "name": "Five",
-              "type": "()"
-            },
-            {
-              "name": "Six",
-              "type": "()"
-            },
-            {
-              "name": "Seven",
-              "type": "()"
-            },
-            {
-              "name": "Eight",
-              "type": "()"
-            },
-            {
-              "name": "Nine",
-              "type": "()"
-            },
-            {
-              "name": "Ten",
-              "type": "()"
-            },
-            {
-              "name": "Jack",
-              "type": "()"
-            },
-            {
-              "name": "Queen",
-              "type": "()"
-            },
-            {
-              "name": "King",
-              "type": "()"
-            },
-            {
-              "name": "Ace",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "NeonJoker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::data::card::Card",
-          "members": [
-            {
-              "name": "id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "suit",
-              "type": "jokers_of_neon_lib::models::data::card::Suit"
-            },
-            {
-              "name": "value",
-              "type": "jokers_of_neon_lib::models::data::card::Value"
-            },
-            {
-              "name": "points",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "multi_add",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>",
-          "members": [
-            {
-              "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::play_info::PlayInfo",
-          "members": [
-            {
-              "name": "hand",
-              "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
-            },
-            {
-              "name": "cards",
-              "type": "core::array::Span::<(core::integer::u32, core::bool, jokers_of_neon_lib::models::data::card::Card)>"
-            },
-            {
-              "name": "is_neon",
-              "type": "core::bool"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::special_type::SpecialType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Individual",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::discards::ISpecialDiscardSpecificType",
-          "items": [
-            {
-              "type": "function",
-              "name": "execute",
-              "inputs": [
-                {
-                  "name": "play_info",
-                  "type": "jokers_of_neon_lib::models::play_info::PlayInfo"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_id",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::integer::u32"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_type",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::special_type::SpecialType"
-                }
-              ],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "function",
-          "name": "dojo_init",
-          "inputs": [],
-          "outputs": [],
-          "state_mutability": "view"
-        },
-        {
-          "type": "impl",
-          "name": "WorldProviderImpl",
-          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
-        },
-        {
-          "type": "struct",
-          "name": "dojo::world::iworld::IWorldDispatcher",
-          "members": [
-            {
-              "name": "contract_address",
-              "type": "core::starknet::contract_address::ContractAddress"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::world_provider::IWorldProvider",
-          "items": [
-            {
-              "type": "function",
-              "name": "world_dispatcher",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "dojo::world::iworld::IWorldDispatcher"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "UpgradeableImpl",
-          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::upgradeable::IUpgradeable",
-          "items": [
-            {
-              "type": "function",
-              "name": "upgrade",
-              "inputs": [
-                {
-                  "name": "new_class_hash",
-                  "type": "core::starknet::class_hash::ClassHash"
-                }
-              ],
-              "outputs": [],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "constructor",
-          "name": "constructor",
-          "inputs": []
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-          "kind": "struct",
-          "members": [
-            {
-              "name": "class_hash",
-              "type": "core::starknet::class_hash::ClassHash",
-              "kind": "data"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "Upgraded",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-              "kind": "nested"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-          "kind": "enum",
-          "variants": []
-        },
-        {
-          "type": "event",
-          "name": "jokers_of_neon_classic::specials::special_discard_specific::retired_joker::special_retired_joker::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "UpgradeableEvent",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-              "kind": "nested"
-            },
-            {
-              "name": "WorldProviderEvent",
-              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-              "kind": "nested"
-            }
-          ]
-        }
-      ],
-      "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_retired_joker",
-      "selector": "0x2506608cf401b64e1c0aa7a5f5064f38831a213c1eb3ee48a40146d25087548",
-      "systems": [
-        "execute",
-        "get_id",
-        "get_type",
-        "upgrade"
-      ]
-    },
-    {
-      "address": "0x388efd5ed16519350eb711dc7610a22f85d2bd2c8045b28623a4a4cc7924b90",
-      "class_hash": "0x5182ef0d14e67943eafd53a31ed56546b892f4ea0f29b805646446d9873c535",
-      "abi": [
-        {
-          "type": "impl",
-          "name": "special_straight_with_four_cards__ContractImpl",
-          "interface_name": "dojo::contract::interface::IContract"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::interface::IContract",
-          "items": []
-        },
-        {
-          "type": "impl",
-          "name": "special_straight_with_four_cards__DeployedContractImpl",
-          "interface_name": "dojo::meta::interface::IDeployedResource"
-        },
-        {
-          "type": "struct",
-          "name": "core::byte_array::ByteArray",
-          "members": [
-            {
-              "name": "data",
-              "type": "core::array::Array::<core::bytes_31::bytes31>"
-            },
-            {
-              "name": "pending_word",
-              "type": "core::felt252"
-            },
-            {
-              "name": "pending_word_len",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::meta::interface::IDeployedResource",
-          "items": [
-            {
-              "type": "function",
-              "name": "dojo_name",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::byte_array::ByteArray"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "SpecialStraightWithFourCardsImpl",
-          "interface_name": "jokers_of_neon_lib::interfaces::plays_rules::ISpecialPlaysRulesType"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "RoyalFlush",
-              "type": "()"
-            },
-            {
-              "name": "StraightFlush",
-              "type": "()"
-            },
-            {
-              "name": "FiveOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "FourOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "FullHouse",
-              "type": "()"
-            },
-            {
-              "name": "Straight",
-              "type": "()"
-            },
-            {
-              "name": "Flush",
-              "type": "()"
-            },
-            {
-              "name": "ThreeOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "TwoPair",
-              "type": "()"
-            },
-            {
-              "name": "OnePair",
-              "type": "()"
-            },
-            {
-              "name": "HighCard",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::special_type::SpecialType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Individual",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::plays_rules::ISpecialPlaysRulesType",
-          "items": [
-            {
-              "type": "function",
-              "name": "apply",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_id",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::integer::u32"
-                }
-              ],
-              "state_mutability": "view"
-            },
-            {
-              "type": "function",
-              "name": "get_type",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::special_type::SpecialType"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "function",
-          "name": "dojo_init",
-          "inputs": [],
-          "outputs": [],
-          "state_mutability": "view"
-        },
-        {
-          "type": "impl",
-          "name": "WorldProviderImpl",
-          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
-        },
-        {
-          "type": "struct",
-          "name": "dojo::world::iworld::IWorldDispatcher",
-          "members": [
-            {
-              "name": "contract_address",
-              "type": "core::starknet::contract_address::ContractAddress"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::world_provider::IWorldProvider",
-          "items": [
-            {
-              "type": "function",
-              "name": "world_dispatcher",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "dojo::world::iworld::IWorldDispatcher"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "UpgradeableImpl",
-          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::upgradeable::IUpgradeable",
-          "items": [
-            {
-              "type": "function",
-              "name": "upgrade",
-              "inputs": [
-                {
-                  "name": "new_class_hash",
-                  "type": "core::starknet::class_hash::ClassHash"
-                }
-              ],
-              "outputs": [],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "constructor",
-          "name": "constructor",
-          "inputs": []
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-          "kind": "struct",
-          "members": [
-            {
-              "name": "class_hash",
-              "type": "core::starknet::class_hash::ClassHash",
-              "kind": "data"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "Upgraded",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-              "kind": "nested"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-          "kind": "enum",
-          "variants": []
-        },
-        {
-          "type": "event",
-          "name": "jokers_of_neon_classic::specials::special_plays_rules::straight_with_four_cards::special_straight_with_four_cards::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "UpgradeableEvent",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-              "kind": "nested"
-            },
-            {
-              "name": "WorldProviderEvent",
-              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-              "kind": "nested"
-            }
-          ]
-        }
-      ],
-      "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-special_straight_with_four_cards",
-      "selector": "0x560321e87911f17bc3627e23f9a57e72aa51104fb8b4dcddce5f45e6f695576",
-      "systems": [
-        "apply",
-        "upgrade"
-      ]
-    },
-    {
-      "address": "0x27536eb14f8bb4f10bbc563ed1a0f8c3ff3d910a4c03596cdb01684cbacf7fb",
-      "class_hash": "0x255cd58f917aba70496091271eb9a36fbdd7ca45dd4588196197f34b306b66a",
+      "address": "0x309d12ae3c1acfac22dde49d38acf07dc14f0029502396682019d5435bef881",
+      "class_hash": "0x6618fef6793a45a73ca5a2d9f33a6d81d67dedcff102275400ed28cb0382a4d",
       "abi": [
         {
           "type": "impl",
@@ -23220,8 +19897,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_nicon-specials_info",
-      "selector": "0x2e76e9ec19abdd1608a1816c99f38d8092a26cf4da330a25b092b119d25cd6e",
+      "tag": "jokers_of_neon_classic-specials_info",
+      "selector": "0x875ca83c8d03a2c3343d75b29956e56b251703cb2509466968e3fbda4cf646",
       "systems": [
         "upgrade"
       ]
