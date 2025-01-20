@@ -30,13 +30,7 @@ fn loot_boxes_ids_all() -> Array<u32> {
     ]
 }
 fn loot_boxes_ids_all_without_jokers() -> Array<u32> {
-    array![
-        BASIC_LOOT_BOX_ID,
-        SPECIALS_LOOT_BOX_ID,
-        MODIFIER_LOOT_BOX_ID,
-        FIGURES_LOOT_BOX_ID,
-        SPECIAL_BET_LOOT_BOX_ID
-    ]
+    array![BASIC_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, SPECIAL_BET_LOOT_BOX_ID]
 }
 fn BASIC_LOOT_BOX() -> LootBox {
     LootBox {

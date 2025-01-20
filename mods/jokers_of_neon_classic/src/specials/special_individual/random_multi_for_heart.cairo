@@ -12,8 +12,8 @@ pub mod special_random_multi_for_heart {
         }
 
         fn execute(ref self: ContractState) -> (i32, i32, i32) {
-            let random = 5; // TODO:
-            (0, random, 0)
+            let mut random = RandomImpl::new();
+            (0, random.between_i32(-2, 6), 0)
         }
 
         fn get_id(ref self: ContractState) -> u32 {

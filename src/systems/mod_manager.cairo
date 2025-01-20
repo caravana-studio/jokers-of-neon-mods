@@ -30,24 +30,22 @@ pub mod mod_manager {
             let mut store = StoreTrait::new(ref world);
 
             let mut game_mod = store.get_game_mod(name);
-            
+
             if game_mod.created_date == 0 {
                 let mut mod_tracker = store.get_mod_tracker();
                 store.set_mod_map(GameModMap { idx: mod_tracker.total_mods, mod_id: name });
                 mod_tracker.total_mods = mod_tracker.total_mods + 1;
                 store.set_mod_tracker(mod_tracker);
-                
-                game_mod = GameMod {
-                    id: name,
-                    owner,
-                    total_games: 0,
-                    created_date: starknet::get_block_timestamp(),
-                    last_update_date: starknet::get_block_timestamp(),
-                };
-                store
-                    .set_game_mod(
-                        game_mod
-                    );
+
+                game_mod =
+                    GameMod {
+                        id: name,
+                        owner,
+                        total_games: 0,
+                        created_date: starknet::get_block_timestamp(),
+                        last_update_date: starknet::get_block_timestamp(),
+                    };
+                store.set_game_mod(game_mod);
             }
             assert(game_mod.owner == starknet::get_caller_address(), 'Caller not owner');
             let mut mod_config = config;

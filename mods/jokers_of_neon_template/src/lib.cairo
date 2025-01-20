@@ -36,9 +36,9 @@ mod specials {
         mod lucky_hand;
     }
     mod special_poker_hand {
+        mod high_card_booster;
         mod increase_level_double_pair;
         mod increase_level_pair;
-        mod high_card_booster;
     }
     mod special_power_up {
         mod power_up_booster;
