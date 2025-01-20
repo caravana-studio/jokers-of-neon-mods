@@ -132,7 +132,7 @@ fn execute(ref self: ContractState) -> (i32, i32, i32) {
 ```
 
 > [!TIP]
-> > **Suggested Use:** Create specific effects based on the type of card played.
+> **Suggested Use:** Create specific effects based on the type of card played.
 
 ---
 
@@ -149,7 +149,7 @@ fn execute(ref self: ContractState, power_up: PowerUp) -> (i32, i32, i32) {
 ```
 
 > [!TIP]
-> > **Suggested Use:** Amplify the benefits of specific PowerUps.
+> **Suggested Use:** Amplify the benefits of specific PowerUps.
 
 ---
 
