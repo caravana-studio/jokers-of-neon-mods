@@ -51,7 +51,7 @@ Additionally, you can design custom `special cards`, `rage cards`, and `loot box
 
 ### Create Your Mod Preview
 
-In the your mod resource folder create a `config.json` file that contains basic information about the mod. The structure is as follows:
+In your mod resources folder create a `config.json` file that contains basic information about the mod. The structure is as follows:
 
 ```json
 {
@@ -62,7 +62,7 @@ In the your mod resource folder create a `config.json` file that contains basic 
 
 ### Add Preview Image
 
-To customize the mod's preview image upload an image named `thumbnail.png` to the same directory as `config.json`.
+To customize the mod's preview image, upload an image named `thumbnail.png` to the same directory as `config.json`.
 
 ## 3. Configuring Your Mod
 
