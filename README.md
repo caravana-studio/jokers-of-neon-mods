@@ -301,10 +301,46 @@ pub mod special_high_card_booster {
 }
 ```
 
-#### Key Methods Explained
+##### Key Methods Explained
 
 - `get_id()`: Returns the unique ID of the card.
 - `get_type()`: Defines the card as a PokerHand type.
 - `execute()`: Implements the card’s effect. In this case:
   - _HighCard Hand_: Rewards 100 points, 20 multiplier, and 500 cash.
   - _Other Hands_: Rewards 0 points, 0 multiplier, and 0 cash.
+
+#### 4.2.4. Making Special Cards Available to the Frontend
+
+To ensure your special cards are accessible in the frontend, follow these steps:
+
+##### 4.2.4.1. Update the Card Metadata
+
+Navigate to `/public/mods/(MOD_NAME)/resources/` and update the JSON file to include the name and description of your special cards.
+
+_For example_:
+
+```json
+{
+  "CardID": {
+    "name": "Card Name",
+    "description": "Card Description"
+  },
+  "349": {
+    "name": "Random Diamond Joker",
+    "description": "Adds a number between -2 and 6 to the multiplier for each Diamonds-suited card played."
+  },
+  "355": {
+    "name": "Extra",
+    "description": "Demo"
+  }
+}
+```
+
+> Replace CardID with the unique ID of your card. For the card we implemented earlier, use `309`.
+
+##### 4.2.4.2. Add the Card Image
+
+Upload an image for your special card to the following directory:
+`/public/mods/(MOD_NAME)/resources/Cards/{cardID}.png`
+
+> Replace `{cardID}` with the unique ID of your card. For the example card, the image file should be named `309.png`
