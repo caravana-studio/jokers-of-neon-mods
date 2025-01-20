@@ -130,7 +130,8 @@ fn execute(ref self: ContractState) -> (i32, i32, i32) {
 }
 ```
 
-> [!TIP] > **Suggested Use:** Create specific effects based on the type of card played.
+> [!TIP]
+> > **Suggested Use:** Create specific effects based on the type of card played.
 
 ---
 
@@ -146,7 +147,8 @@ fn execute(ref self: ContractState, power_up: PowerUp) -> (i32, i32, i32) {
 }
 ```
 
-> [!TIP] > **Suggested Use:** Amplify the benefits of specific PowerUps.
+> [!TIP]
+> > **Suggested Use:** Amplify the benefits of specific PowerUps.
 
 ---
 
@@ -165,7 +167,8 @@ fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32)
 }
 ```
 
-> [!TIP] > **Suggested Use:** Create advantages based on round conditions.
+> [!TIP]
+> **Suggested Use:** Create advantages based on round conditions.
 
 ---
 
@@ -185,7 +188,8 @@ fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i3
 }
 ```
 
-> [!TIP] > **Suggested Use:** Reward specific poker hands.
+> [!TIP]
+> **Suggested Use:** Reward specific poker hands.
 
 ---
 
@@ -209,7 +213,8 @@ fn unequip(ref self: ContractState, game: Game) -> Game {
 }
 ```
 
-> [!TIP] > **Suggested Use:** Modify global game rules for broader effects.
+> [!TIP]
+> **Suggested Use:** Modify global game rules for broader effects.
 
 ---
 
