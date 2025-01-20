@@ -12,8 +12,9 @@ Additionally, you can design custom `special cards`, `rage cards`, and `loot box
 2. Navigate to the `mods` folder in your game directory
 3. Copy the `jokers_of_neon_template` folder
 4. Rename the copied folder to your mod name (e.g., `jokers_of_neon_custom`)
-   > [!IMPORTANT]
-   > Use underscores to separate words in the folder name
+
+> [!IMPORTANT]
+> Use underscores to separate words in the folder name
 
 ### Basic Folder Structure
 
