@@ -22,7 +22,7 @@ for special in "${special_names[@]}"; do
     # Convert special name to uppercase and replace hyphens with underscores
     special_upper=$(echo "$special" | tr '[:lower:]' '[:upper:]' | tr '-' '_')
     # Search for the ID in specials.cairo and get only the last number in the line
-    id=$(grep -i "^const SPECIAL_${special_upper}_ID" src/specials/specials.cairo | awk -F'=' '{print $2}' | tr -d ' ;')
+    id=$(grep -i "^const SPECIAL_${special_upper}_ID" src/specials/specials.cairo | awk -F'=' '{print $2}' | awk '{print $1}' | tr -d ' ;')
     if [ -n "$id" ]; then
         special_ids+=("$id")
     else
@@ -35,6 +35,9 @@ len_contract_addresses=${#contract_addresses[@]}
 len_special_ids=${#special_ids[@]}
 special_ids_str=$(IFS=,; echo "${special_ids[*]}")
 contract_addresses_str=$(IFS=,; echo "${contract_addresses[*]}" | tr -d '"')
+
+echo "special_ids_str: $special_ids_str"
+echo "contract_addresses_str: $contract_addresses_str"
 
 world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
 
