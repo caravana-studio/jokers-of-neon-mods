@@ -6,7 +6,6 @@ pub mod special_random_multi_for_club {
         random::{RandomImpl, RandomTrait}
     };
 
-
     #[abi(embed_v0)]
     impl SpecialRandomMultiForClubImpl of ISpecialIndividual<ContractState> {
         fn condition(ref self: ContractState, card: Card) -> bool {
