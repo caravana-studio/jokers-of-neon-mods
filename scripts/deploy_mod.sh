@@ -58,6 +58,7 @@ if [ -d "manifests" ]; then
 fi
 
 # echo "sozo build && sozo inspect && sozo migrate"
+echo "Deploying contracts..."
 sozo_build_output=$(sozo build && sozo inspect && sozo migrate)
 
 # echo -e "\n✅ deploy mod finish!"
