@@ -7,55 +7,7 @@ pub mod card_info {
     #[abi(embed_v0)]
     impl CardInfoImpl of ICardInfo<ContractState> {
         fn get_initial_deck(self: @ContractState) -> Array<u32> {
-            let mut deck = array![];
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
-            deck.append(JOKER_CARD);
+            let mut deck = traditional_cards_all();
             deck.append(JOKER_CARD);
             deck.append(JOKER_CARD);
             deck
