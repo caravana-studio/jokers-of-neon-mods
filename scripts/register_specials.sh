@@ -36,9 +36,6 @@ len_special_ids=${#special_ids[@]}
 special_ids_str=$(IFS=,; echo "${special_ids[*]}")
 contract_addresses_str=$(IFS=,; echo "${contract_addresses[*]}" | tr -d '"')
 
-echo "special_ids_str: $special_ids_str"
-echo "contract_addresses_str: $contract_addresses_str"
-
 world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
 
 # Execute sozo command
