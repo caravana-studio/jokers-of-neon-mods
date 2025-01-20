@@ -344,3 +344,106 @@ Upload an image for your special card to the following directory:
 `/public/mods/(MOD_NAME)/resources/Cards/{cardID}.png`
 
 > Replace `{cardID}` with the unique ID of your card. For the example card, the image file should be named `309.png`
+
+## 5. Customizing Game Visuals
+
+### 5.1. Card Designs
+
+You can customize card images from the base implementation. Use the table below to locate the specific card ID in the directory:
+`/public/mods/(MOD_NAME)/resources/Cards/{cardID}.png`
+
+Replace the existing image with your own design to personalize the cards.
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Range</th>
+    <th>Details</th>
+  </tr>
+  <tr>
+    <td rowspan="6">Traditional Cards</td>
+    <td>0-12</td>
+    <td>Clubs (2 to Ace)</td>
+  </tr>
+  <tr>
+    <td>13-25</td>
+    <td>Diamonds (2 to Ace)</td>
+  </tr>
+  <tr>
+    <td>26-38</td>
+    <td>Hearts (2 to Ace)</td>
+  </tr>
+  <tr>
+    <td>39-51</td>
+    <td>Spades (2 to Ace)</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>Joker</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>Wildcard</td>
+  </tr>
+  <tr>
+    <td rowspan="6">Neon Cards</td>
+    <td>200-212</td>
+    <td>Clubs (2 to Ace)</td>
+  </tr>
+  <tr>
+    <td>213-225</td>
+    <td>Diamonds (2 to Ace)</td>
+  </tr>
+  <tr>
+    <td>226-238</td>
+    <td>Hearts (2 to Ace)</td>
+  </tr>
+  <tr>
+    <td>239-251</td>
+    <td>Spades (2 to Ace)</td>
+  </tr>
+  <tr>
+    <td>252</td>
+    <td>Joker</td>
+  </tr>
+  <tr>
+    <td>253</td>
+    <td>Wildcard</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Other Cards</td>
+    <td>300-400</td>
+    <td>Special Cards</td>
+  </tr>
+  <tr>
+    <td>401-600</td>
+    <td>Rage Cards</td>
+  </tr>
+  <tr>
+    <td>601-700</td>
+    <td>Modifier Cards</td>
+  </tr>
+</table>
+
+### 5.2. Backgrounds
+
+Customize the game’s backgrounds by replacing the corresponding files in the `/public/mods/(MOD_NAME)/resources/bg` folder:
+
+- `game-bg.jpg`: Game background
+- `home-bg.jpg`: Home screen background
+- `store-bg.jpg`: Store screen background
+
+### 5.3. Borders
+
+To change the borders in your game, replace the following files in the `/public/mods/(MOD_NAME)/resources/borders` folder :
+
+- `bottom.png`
+- `bottom-rage.png`
+- `top.png`
+- `top-rage.png`
+
+### 5.4. Deck Background
+
+You can also personalize the deck background by replacing the file located at:
+`/public/mods/(MOD_NAME)/resources/Cards/Backs/back.png`
+
