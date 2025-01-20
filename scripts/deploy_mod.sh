@@ -40,11 +40,11 @@ RPC_URL=$(get_env_var "RPC_URL")
 WORLD_ADDRESS=$(get_env_var "WORLD_ADDRESS")
 
 # Print the stored variables
-echo "Variables loaded:"
-echo "ACCOUNT_ADDRESS=$ACCOUNT_ADDRESS"
-echo "PRIVATE_KEY=$PRIVATE_KEY"
-echo "RPC_URL=$RPC_URL"
-echo "WORLD_ADDRESS=$WORLD_ADDRESS"
+# echo "Variables loaded:"
+# echo "ACCOUNT_ADDRESS=$ACCOUNT_ADDRESS"
+# echo "PRIVATE_KEY=$PRIVATE_KEY"
+# echo "RPC_URL=$RPC_URL"
+# echo "WORLD_ADDRESS=$WORLD_ADDRESS"
 bash ../../scripts/replace_env.sh $mod_name $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
 
 rm -f Scarb.lock
@@ -57,8 +57,8 @@ if [ -d "manifests" ]; then
     rm -rf "manifests"
 fi
 
-echo "sozo build && sozo inspect && sozo migrate"
-sozo build && sozo inspect && sozo migrate
+# echo "sozo build && sozo inspect && sozo migrate"
+sozo_build_output=$(sozo build && sozo inspect && sozo migrate)
 
 # echo -e "\n✅ deploy mod finish!"
 
@@ -68,9 +68,9 @@ bash ../../scripts/replace_manifest.sh $mod_name
 hex_value=$(echo -n "$mod_name" | xxd -p | tr -d '\n')
 mod_id=$(python3 -c "print(int('$hex_value', 16))")
 
-echo "String original: $mod_name"
-echo "Valor hexadecimal: 0x$hex_value"
-echo "Valor decimal (felt252): $mod_id"
+# echo "String original: $mod_name"
+# echo "Valor hexadecimal: 0x$hex_value"
+# echo "Valor decimal (felt252): $mod_id"
 # Create mod and store the mod_id
 echo -e "\nCreating mod..."
 bash ../../scripts/create_mod.sh $mod_name $ACCOUNT_ADDRESS $WORLD_ADDRESS $mod_id

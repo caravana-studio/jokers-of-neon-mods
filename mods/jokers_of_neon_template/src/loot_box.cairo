@@ -1,8 +1,6 @@
 use jokers_of_neon_classic::specials::specials::{specials_ids_all, specials_shop_info};
 use jokers_of_neon_lib::constants::card::traditional_cards_all;
-use jokers_of_neon_lib::constants::card::{
-    JOKER_CARD, NEON_JOKER_CARD
-};
+use jokers_of_neon_lib::constants::card::{JOKER_CARD, NEON_JOKER_CARD};
 use jokers_of_neon_lib::constants::modifiers::modifiers_ids_all;
 use jokers_of_neon_lib::models::data::card::{Card, CardTrait, Suit, Value, ValueEnumerableImpl};
 use jokers_of_neon_lib::models::data::loot_box::LootBox;
@@ -13,11 +11,7 @@ const JOKER_LOOT_BOX_ID: u32 = 3;
 const EMPTY_PACK_ID: u32 = 999;
 
 fn loot_boxes_ids_all() -> Array<u32> {
-    array![
-        BASIC_LOOT_BOX_ID,
-        ADVANCED_LOOT_BOX_ID,
-        JOKER_LOOT_BOX_ID,
-    ]
+    array![BASIC_LOOT_BOX_ID, ADVANCED_LOOT_BOX_ID, JOKER_LOOT_BOX_ID,]
 }
 
 fn BASIC_LOOT_BOX() -> LootBox {
@@ -83,12 +77,12 @@ fn loot_boxes_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     let C_LOOT_BOX_PROBABILITY = 50;
     let C_LOOT_BOX_COST = 750;
     let C_LOOT_BOX = array![BASIC_LOOT_BOX_ID].span();
-    
+
     // B-Grade Group
     let B_LOOT_BOX_PROBABILITY = 30;
     let B_LOOT_BOX_COST = 1500;
     let B_LOOT_BOX = array![ADVANCED_LOOT_BOX_ID].span();
-    
+
     // A-Grade Group
     let A_LOOT_BOX_PROBABILITY = 20;
     let A_LOOT_BOX_COST = 2000;

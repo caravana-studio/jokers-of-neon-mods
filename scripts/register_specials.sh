@@ -22,7 +22,7 @@ for special in "${special_names[@]}"; do
     # Convert special name to uppercase and replace hyphens with underscores
     special_upper=$(echo "$special" | tr '[:lower:]' '[:upper:]' | tr '-' '_')
     # Search for the ID in specials.cairo and get only the last number in the line
-    id=$(grep -i "^const SPECIAL_${special_upper}_ID" src/specials/specials.cairo | awk -F'=' '{print $2}' | tr -d ' ;')
+    id=$(grep -i "^const SPECIAL_${special_upper}_ID" src/specials/specials.cairo | awk -F'=' '{print $2}' | awk '{print $1}' | tr -d ' ;')
     if [ -n "$id" ]; then
         special_ids+=("$id")
     else
@@ -39,6 +39,6 @@ contract_addresses_str=$(IFS=,; echo "${contract_addresses[*]}" | tr -d '"')
 world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
 
 # Execute sozo command
-echo -e "\nExecuting sozo command..."
+# echo -e "\nExecuting sozo command..."
 sozo execute special_manager register_specials -c $mod_id,$len_special_ids,$special_ids_str,$len_contract_addresses,$contract_addresses_str --wait --world $world_address
 echo -e "\n✅ Register specials finish!"

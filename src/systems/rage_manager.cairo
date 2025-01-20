@@ -21,9 +21,6 @@ pub mod rage_manager {
             let game_mod = store.get_game_mod(mod_id);
 
             assert(game_mod.owner == get_caller_address(), 'Caller is not owner of the mod');
-            let rage_data = store.get_rage_data(mod_id, rage_id);
-
-            assert(rage_data.contract_address.is_zero(), 'Special card already registered');
             store.set_rage_data(RageData { mod_id, rage_id, contract_address });
         }
 

@@ -1,9 +1,11 @@
 #[dojo::contract]
 pub mod special_random_multi_for_club {
     use jokers_of_neon_classic::specials::specials::SPECIAL_RANDOM_MULTI_FOR_CLUB_ID;
-    use jokers_of_neon_lib::interfaces::individual::ISpecialIndividual;
-    use jokers_of_neon_lib::models::data::card::{Card, Suit};
-    use jokers_of_neon_lib::models::special_type::SpecialType;
+    use jokers_of_neon_lib::{
+        interfaces::individual::ISpecialIndividual, models::data::card::{Card, Suit}, models::special_type::SpecialType,
+        random::{RandomImpl, RandomTrait}
+    };
+
 
     #[abi(embed_v0)]
     impl SpecialRandomMultiForClubImpl of ISpecialIndividual<ContractState> {
@@ -12,8 +14,8 @@ pub mod special_random_multi_for_club {
         }
 
         fn execute(ref self: ContractState) -> (i32, i32, i32) {
-            let random = 5; // TODO:
-            (0, random, 0)
+            let mut random = RandomImpl::new();
+            (0, random.between_i32(-2, 6), 0)
         }
 
         fn get_id(ref self: ContractState) -> u32 {
