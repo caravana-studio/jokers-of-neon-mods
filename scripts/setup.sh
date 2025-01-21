@@ -15,7 +15,12 @@ sozo build && sozo inspect && sozo migrate
 
 echo -e "\n✅ Setup finish!"
 
-world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
+# Store sozo inspect result once
+inspect_result=$(sozo inspect)
 
-echo -e "\n✅ Init Torii!"
-# torii --world $world_address --http.cors_origins "*"
+mod_manager_address=$(echo "$inspect_result" | grep "jokers_of_neon_mods-mod_manager" | awk '{print $NF}')
+rage_manager_address=$(echo "$inspect_result" | grep "jokers_of_neon_mods-rage_manager" | awk '{print $NF}')
+special_manager_address=$(echo "$inspect_result" | grep "jokers_of_neon_mods-special_manager" | awk '{print $NF}')
+
+echo "Execute in Jokers of Neon Contracts. Update the world address."
+echo "sozo execute mod_manager_registrator register_managers -c $mod_manager_address,$rage_manager_address,$special_manager_address --wait --world world_address"
