@@ -13,47 +13,47 @@
     },
     "303": {
       "name": "Charmander",
-      "description": "+1 Mult per hand played without discards"
+      "description": "+1 Multi per hand played without discards"
     },
     "304": {
       "name": "Charmeleon",
-      "description": "+2 Mult per hand played without discards"
+      "description": "+2 Multi per hand played without discards"
     },
     "305": {
       "name": "Charizard",
-      "description": "+20 Mult"
+      "description": "+20 Multi"
     },
     "306": {
       "name": "Caterpie",
-      "description": "+2 Mult"
+      "description": "+2 Multi"
     },
     "307": {
       "name": "Metapod",
-      "description": "+4 Mult"
+      "description": "+4 Multi"
     },
     "308": {
       "name": "Butterfree",
-      "description": "+10 Mult"
+      "description": "+10 Multi"
     },
     "309": {
       "name": "Weedle",
-      "description": "+16 Chips"
+      "description": "+16 Points"
     },
     "310": {
       "name": "Kakuna",
-      "description": "+32 Chips"
+      "description": "+32 Points"
     },
     "311": {
       "name": "Beedrill",
-      "description": "+80 Chips"
+      "description": "+80 Points"
     },
     "312": {
       "name": "Ekans",
-      "description": "+8 Mult if played hand contains a Straight"
+      "description": "+8 Multi if played hand contains a Straight"
     },
     "313": {
       "name": "Arbok",
-      "description": "+15 Mult if played hand contains a Straight. $500 if it also contains Ace"
+      "description": "+15 Multi if played hand contains a Straight. $500 if it also contains Ace"
     },
     "314": {
       "name": "Pikachu",
@@ -61,31 +61,31 @@
     },
     "315": {
       "name": "Clefairy",
-      "description": "Played cards with Club suit give +2 Mult when scored"
+      "description": "Played cards with Club suit give +2 Multi when scored"
     },
     "316": {
       "name": "Jigglypuff",
-      "description": "Played cards with Spade suit give +2 Mult when scored"
+      "description": "Played cards with Spade suit give +2 Multi when scored"
     },
     "317": {
       "name": "Wigglytuff",
-      "description": "Played cards with Spade suit give +2 Mult and +30 Chips when scored"
+      "description": "Played cards with Spade suit give +2 Multi and +30 Points when scored"
     },
     "318": {
       "name": "Paras",
-      "description": "+1 Mult per played hand that contains a Two Pair"
+      "description": "+1 Multi per played hand that contains a Two Pair"
     },
     "319": {
       "name": "Parasect",
-      "description": "+3 Mult per hand with Two Pairs, -2 Mult without"
+      "description": "+3 Multi per hand with Two Pairs, -2 Multi without"
     },
     "320": {
       "name": "Diglett",
-      "description": "+60 Chips with Three of a kind, +4 Mult with 2,3,4"
+      "description": "+60 Points with Three of a kind, +4 Multi with 2,3,4"
     },
     "321": {
       "name": "Dugtrio",
-      "description": "+120 Chips with Three of a kind, +4 Mult with 2,3,4"
+      "description": "+120 Points with Three of a kind, +4 Multi with 2,3,4"
     },
     "322": {
       "name": "Meowth",
@@ -97,15 +97,15 @@
     },
     "324": {
       "name": "Mankey",
-      "description": "Each played 2,3,5 gives +3 Mult and +5 Chips"
+      "description": "Each played 2,3,5 gives +3 Multi and +5 Points"
     },
     "325": {
       "name": "Primeape",
-      "description": "Each played 2,3,5 gives +7 Mult and +11 Chips"
+      "description": "Each played 2,3,5 gives +7 Multi and +11 Points"
     },
     "326": {
       "name": "Growlithe",
-      "description": "+8 Mult if played hand contains a Flush"
+      "description": "+8 Multi if played hand contains a Flush"
     },
     "327": {
       "name": "Machop",
@@ -121,18 +121,18 @@
     },
     "330": {
       "name": "Bellsprout",
-      "description": "Even rank cards give +16 Chips when scored"
+      "description": "Even rank cards give +16 Points when scored"
     },
     "331": {
       "name": "Weepinbell",
-      "description": "Even rank cards give +32 Chips when scored"
+      "description": "Even rank cards give +32 Points when scored"
     },
     "332": {
       "name": "Tentacool",
-      "description": "Each played 10 gives +8 Mult if hand only has 10s"
+      "description": "Each played 10 gives +8 Multi if hand only has 10s"
     },
     "333": {
       "name": "Tentacruel",
-      "description": "Each played 10 gives +10 Mult when scored"
+      "description": "Each played 10 gives +10 Multi when scored"
     }
   }
