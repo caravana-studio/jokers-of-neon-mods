@@ -11,7 +11,9 @@ pub mod special_half_joker {
         fn execute(
             ref self: ContractState, play_info: PlayInfo
         ) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
-            if play_info.hand == PokerHand::HighCard || play_info.hand == PokerHand::OnePair || play_info.hand == PokerHand::ThreeOfAKind {
+            if play_info.hand == PokerHand::HighCard
+                || play_info.hand == PokerHand::OnePair
+                || play_info.hand == PokerHand::ThreeOfAKind {
                 ((0, array![].span()), (20, array![].span()), (0, array![].span()))
             } else {
                 ((0, array![].span()), (0, array![].span()), (0, array![].span()))
