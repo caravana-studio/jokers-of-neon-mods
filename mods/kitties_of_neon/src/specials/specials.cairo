@@ -18,7 +18,7 @@ const SPECIAL_GLUTTONOUS_JOKER_ID: u32 = 304; // Played cards with Club suit ico
 const SPECIAL_FIBONACCI_JOKER_ID: u32 = 318; // Each played Ace, 2, 3, 5, or 8 gives +8 Mult when scored
 const SPECIAL_BANNER_JOKER_ID: u32 = 316; // +30 Chips for each remaining discard
 const SPECIAL_MYSTIC_SUMMIT_JOKER_ID: u32 = 317; // +15 Mult when 0 discards remaining
-const SPECIAL_ANTI_FIBONACCI_ID: u32 = 319; // Each played 4, 6, 7, 9, or 10 gives +8 Mult when scored
+const SPECIAL_ANTI_FIBONACCI_JOKER_ID: u32 = 319; // Each played 4, 6, 7, 9, or 10 gives +8 Mult when scored
 const SPECIAL_JOKER_2_ID: u32 = 320; // +6 multi
 
 
@@ -43,7 +43,7 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_BANNER_JOKER_ID,
         SPECIAL_MYSTIC_SUMMIT_JOKER_ID,
         SPECIAL_FIBONACCI_JOKER_ID,
-        SPECIAL_ANTI_FIBONACCI_ID,
+        SPECIAL_ANTI_FIBONACCI_JOKER_ID,
         SPECIAL_JOKER_2_ID,
     ]
 }
@@ -79,7 +79,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_FIBONACCI_JOKER_ID,
         SPECIAL_BANNER_JOKER_ID,
         SPECIAL_MYSTIC_SUMMIT_JOKER_ID,
-        SPECIAL_ANTI_FIBONACCI_ID,
+        SPECIAL_ANTI_FIBONACCI_JOKER_ID,
         SPECIAL_JOKER_2_ID,
     ]
         .span();
