@@ -1,32 +1,40 @@
-Jokers of neon Mods 
+# Jokers of Neon Mods
 
-La cantidad de cosas que se pueden hacer con los mods es enorme.
-Game config inicial
-Shop config inicial
-Mazo inicial
-Cartas especiales
-Rage rounds
-Loot Box
+The possibilities for modding in Jokers of Neon are vast. Here are some of the areas you can customize:
 
-# Guía para Crear Cartas Especiales en Jokers of Neon
-
-En Jokers of Neon, los jugadores pueden crear cartas especiales personalizadas para enriquecer la experiencia del juego. A continuación, se describen los tipos de cartas especiales disponibles y cómo configurarlas.
-
-## Tipos de Cartas Especiales
-1. **SpecialType::Individual**
-2. **SpecialType::PowerUp**
-3. **SpecialType::RoundState**
-4. **SpecialType::PokerHand**
-5. **SpecialType::Game**
-
-Estas cartas pueden otorgar o restar puntos, multiplicadores (multi) y efectivo (cash). Los valores pueden ser negativos, por ejemplo: `(100, 1, 0)`.
+- Initial game configuration
+- Initial shop configuration
+- Initial deck setup
+- Special cards
+- Rage rounds
+- Loot boxes
 
 ---
 
-### SpecialType::Individual
-Se ejecuta por cada carta de tu jugada. Usa las propiedades **Suit** y **Value** para determinar sus efectos.
+# Guide to Creating Special Cards in Jokers of Neon
 
-**Ejemplo:** Otorgar 100 puntos y 1 de multiplicador por cada Joker en la jugada.
+In Jokers of Neon, players can create custom special cards to enhance their gameplay experience. This guide explains the types of special cards available and how to configure them.
+
+## Types of Special Cards
+
+Special cards fall into the following categories:
+
+1. `SpecialType::Individual`
+2. `SpecialType::PowerUp`
+3. `SpecialType::RoundState`
+4. `SpecialType::PokerHand`
+5. `SpecialType::Game`
+
+Special cards can grant or subtract points, multipliers (multi), and cash. These values can be negative, e.g., `(100, 1, 0)`.
+
+---
+
+## 1. SpecialType::Individual
+
+This card type executes for every card in your play. It uses the `Suit` and `Value` properties to determine its effects.
+
+_Example: Grant 100 points and 1 multiplier for every Joker in the play._
+
 ```rust
 fn condition(ref self: ContractState, card: Card) -> bool {
     card.suit == Suit::Joker
@@ -36,29 +44,33 @@ fn execute(ref self: ContractState) -> (i32, i32, i32) {
     (100, 1, 0)
 }
 ```
-
-**Uso sugerido:** Crear efectos específicos basados en el tipo de carta jugada.
+> [!TIP]
+> **Suggested Use:** Create specific effects based on the type of card played.
 
 ---
 
-### SpecialType::PowerUp
-Se ejecuta por cada **PowerUp** activado. Accede a las propiedades **points** y **multi** del PowerUp.
+## 2. SpecialType::PowerUp
 
-**Ejemplo:** Duplicar puntos y multiplicadores de cada PowerUp activado.
+This card type executes for each activated `PowerUp` and accesses the PowerUp’s `points` and `multi` properties.
+
+_Example: Double the points and multipliers of each activated PowerUp._
+
 ```rust
 fn execute(ref self: ContractState, power_up: PowerUp) -> (i32, i32, i32) {
     (power_up.points.try_into().unwrap() * 2, power_up.multi.try_into().unwrap() * 2, 0)
 }
 ```
-
-**Uso sugerido:** Amplificar beneficios de PowerUps específicos.
+> [!TIP]
+> **Suggested Use:** Amplify the benefits of specific PowerUps.
 
 ---
 
-### SpecialType::RoundState
-Se ejecuta una vez por ronda y accede a datos como **player_score**, **level_score**, **remaining_plays**, y **remaining_discards**.
+## 3. SpecialType::RoundState
 
-**Ejemplo:** Otorgar 100 puntos y 10 de multiplicador en la primera jugada de la ronda.
+This card type executes once per round and accesses information such as `player_score`, `level_score`, `remaining_plays`, and `remaining_discards`.
+
+_Example: Grant 100 points and 10 multiplier during the first play of the round._
+
 ```rust
 fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
     if round.remaining_plays.into() == game.plays {
@@ -67,15 +79,17 @@ fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32)
     (0, 0, 0)
 }
 ```
-
-**Uso sugerido:** Crear ventajas basadas en el estado de la ronda.
+> [!TIP]
+> **Suggested Use:** Create advantages based on round conditions.
 
 ---
 
-### SpecialType::PokerHand
-Se ejecuta una vez por ronda, evaluando la mano de poker formada.
+## 4. SpecialType::PokerHand
 
-**Ejemplo:** Otorgar 20 puntos y 4 de multiplicador si la mano es "Dos Pares".
+This card type executes once per round, evaluating the poker hand formed during the play.
+
+_Example: Grant 20 points and 4 multiplier for a "Two Pairs" poker hand._
+
 ```rust
 fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
     if play_info.hand == PokerHand::TwoPair {
@@ -85,15 +99,17 @@ fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i3
     }
 }
 ```
-
-**Uso sugerido:** Recompensar manos de poker específicas.
+> [!TIP]
+> **Suggested Use:** Reward specific poker hands.
 
 ---
 
 ### SpecialType::Game
-Se ejecuta al comprar la carta y modifica propiedades globales del juego como **hand_len**, **plays**, y **discards**.
 
-**Ejemplo:** Incrementar en 2 el número de cartas en la mano al equipar la carta.
+This card type executes when the card is equipped and modifies global game properties such as `hand_len`, `plays`, and `discards`.
+
+_Example: Add 2 cards to the hand size when the card is equipped._
+
 ```rust
 fn equip(ref self: ContractState, game: Game) -> Game {
     let mut game = game;
@@ -107,15 +123,16 @@ fn unequip(ref self: ContractState, game: Game) -> Game {
     game
 }
 ```
-
-**Uso sugerido:** Alterar las reglas globales del juego para efectos más amplios.
+> [!TIP]
+> **Suggested Use:** Modify global game rules for broader effects.
 
 ---
 
-## Consejos para Diseñar Cartas Especiales
-1. **Balance:** Asegúrate de que las cartas no sean demasiado poderosas o débiles.
-2. **Temática:** Diseña las cartas acorde al universo de Jokers of Neon.
-3. **Pruebas:** Verifica que las condiciones y ejecuciones funcionan correctamente en diferentes escenarios.
-4. **Documentación:** Proporciona descripciones claras de los efectos de cada carta para los jugadores.
+## Tips for Designing Special Cards
 
-Con esta guía, podrás crear cartas especiales que enriquezcan las estrategias y dinámicas de Jokers of Neon.
+1. **Balance:** Ensure the cards are neither too powerful nor too weak.
+2. **Theme:** Design cards that align with the Jokers of Neon universe.
+3. **Testing:** Verify that the conditions and executions work correctly in various scenarios.
+4. **Documentation:** Provide clear descriptions of each card’s effects for players.
+
+With this guide, you can create special cards that enrich the strategies and dynamics of Jokers of Neon.

@@ -10,13 +10,11 @@ pub mod special_half_joker {
     impl SpecialHalfJokerImpl of ISpecialPokerHand<ContractState> {
         fn execute(
             ref self: ContractState, play_info: PlayInfo
-        ) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
-            if play_info.hand == PokerHand::HighCard
-                || play_info.hand == PokerHand::OnePair
-                || play_info.hand == PokerHand::ThreeOfAKind {
-                ((0, array![].span()), (20, array![].span()), (0, array![].span()))
+        ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
+            if play_info.hand == PokerHand::HighCard || play_info.hand == PokerHand::OnePair || play_info.hand == PokerHand::ThreeOfAKind {
+                ((0, 0, array![].span()), (20, 20, array![].span()), (0, 0, array![].span()))
             } else {
-                ((0, array![].span()), (0, array![].span()), (0, array![].span()))
+                ((0, 0, array![].span()), (0, 0, array![].span()), (0, 0, array![].span()))
             }
         }
 

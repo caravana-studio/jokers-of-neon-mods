@@ -4,7 +4,7 @@ name = "jokers_of_neon_classic"
 seed = "jokers_of_neon_classic"
 
 [namespace]
-default = "jokers_of_neon_nicon"
+default = "jokers_of_neon_x_balatro"
 
 [env]
 rpc_url = "https://api.cartridge.gg/x/jokers-of-neon-mods/katana"
