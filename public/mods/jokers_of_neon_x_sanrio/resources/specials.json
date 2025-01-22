@@ -1,0 +1,54 @@
+{
+  "300": {
+    "name": "The sun Joker",
+    "description": "+4 Mult"
+  },
+  "305": {
+    "name": "The hanged man Joker",
+    "description": "+8 Mult if played hand contains a Pair"
+  },
+  "306": {
+    "name": "The fool Joker",
+    "description": "+12 Mult if played hand contains a Three of a Kind"
+  },
+  "307": {
+    "name": "The world Joker",
+    "description": "+10 Mult if played hand contains a Two Pair"
+  },
+  "308": {
+    "name": "The tower Joker",
+    "description": "+12 Mult if played hand contains a Straight"
+  },
+  "309": {
+    "name": "Strength Joker",
+    "description": "+10 Mult if played hand contains a Flush"
+  },
+  "310": {
+    "name": "Death Joker",
+    "description": "+50 Chips if played hand contains a Pair"
+  },
+  "311": {
+    "name": "The moon Joker",
+    "description": "+100 Chips if played hand contains a Three of a Kind"
+  },
+  "312": {
+    "name": "Judgement Joker",
+    "description": "+80 Chips if played hand contains a Two Pair"
+  },
+  "313": {
+    "name": "The emperor Joker",
+    "description": "+100 Chips if played hand contains a Straight"
+  },
+  "314": {
+    "name": "Temperance Joker",
+    "description": "+80 Chips if played hand contains a Flush"
+  },
+  "316": {
+    "name": "Justice Joker",
+    "description": "+30 Chips for each remaining discard"
+  },
+  "317": {
+    "name": "The devil Joker",
+    "description": "+15 Mult when 0 discards remaining"
+  }
+}
