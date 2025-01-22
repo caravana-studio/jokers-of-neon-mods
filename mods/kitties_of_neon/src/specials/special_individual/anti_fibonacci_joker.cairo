@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod special_anti_fibonacci_joker {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_ANTI_FIBONACCI_JOKER_ID;
+    use jokers_of_neon_classic::specials::specials::SPECIAL_ANTI_FIBONACCI_ID;
     use jokers_of_neon_lib::interfaces::individual::ISpecialIndividual;
     use jokers_of_neon_lib::models::data::card::{Card, Value};
     use jokers_of_neon_lib::models::special_type::SpecialType;
@@ -20,7 +20,7 @@ pub mod special_anti_fibonacci_joker {
         }
 
         fn get_id(ref self: ContractState) -> u32 {
-            SPECIAL_ANTI_FIBONACCI_JOKER_ID
+            SPECIAL_ANTI_FIBONACCI_ID
         }
 
         fn get_type(ref self: ContractState) -> SpecialType {
