@@ -37,6 +37,7 @@ mod specials {
     }
     mod special_poker_hand {
         mod arbok;
+        mod beedrill;
         mod butterfree;
         mod caterpie;
         mod charizard;
@@ -44,11 +45,13 @@ mod specials {
         mod dugtrio;
         mod ekans;
         mod growlithe;
+        mod kakuna;
         mod metapod;
         mod paras;
         mod parasect;
         mod psyduck;
         mod tentacool;
+        mod weedle;
     }
     mod special_individual {
         mod bellsprout;
@@ -59,7 +62,6 @@ mod specials {
         mod pikachu;
         mod primeape;
         mod tentacruel;
-        mod weedle;
         mod weepinbell;
         mod wigglytuff;
     }
