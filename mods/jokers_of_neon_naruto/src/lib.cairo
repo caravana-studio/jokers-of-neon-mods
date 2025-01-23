@@ -46,6 +46,7 @@ mod specials {
     mod special_round_state {
         mod discard_mastery;
         mod initial_advantage;
+        mod score_even;
     }
 }
 

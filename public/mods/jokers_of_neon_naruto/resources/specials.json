@@ -41,6 +41,6 @@
   },
   "310": {
     "name": "Kabuto",
-    "description": "+50 Chips if played hand contains a Pair"
+    "description": "+50 points and +5 multi if player score is even"
   }
 }

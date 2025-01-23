@@ -1450,8 +1450,8 @@
       ]
     },
     {
-      "address": "0x76408d5f96886381464200d3d6b522842197f62992c51e0243be18bf36bf53b",
-      "class_hash": "0x1d247a770a0d2b316292644326709a93b1fbb24b178c81c764eb47ad18f1545",
+      "address": "0x3ee3e62fce5d0cf942f539eba2bfbfbafc38ac3ffa6e6c8aeecb6e23ae09c2b",
+      "class_hash": "0x5f306194401400ea999009622de8246605cc343562f3be0ecb396307d0384fd",
       "abi": [
         {
           "type": "impl",
@@ -1690,8 +1690,8 @@
       ]
     },
     {
-      "address": "0x64936fa2ff4c0cb5a5bcbd46651c2463cedd3969687671c6673debbe3dba331",
-      "class_hash": "0x513b46e4fa1af0190880cab0c504711234fdd7691f8eb1b553d97977e6b3296",
+      "address": "0xcef7ab2320969c6f5f2f21d071529154daf4b4ffcc8c0591b3cf231d1fbdea",
+      "class_hash": "0x6a5c708940b02e5d9863724ce2c7046d948c0edb8aad3ed1066127042ffc32c",
       "abi": [
         {
           "type": "impl",
@@ -6137,8 +6137,8 @@
       ]
     },
     {
-      "address": "0x6e5808c8b330beefb4f1241ad5740ab122e4ff2d3961bebc3e0d7b16f3ec946",
-      "class_hash": "0x363f704d92c079f7e4865a82cfd12b064390e38a02e6300c530ebec9c6c5102",
+      "address": "0x265acd69ff922757f0e02fea1b40557a983defad73f40544497286b9612f510",
+      "class_hash": "0x519e114229489bf55f1f851e6802f26110fc1af2adaba4cccf00db6a05dc203",
       "abi": [
         {
           "type": "impl",
@@ -10775,8 +10775,412 @@
       ]
     },
     {
-      "address": "0x2023dc8c59ca0929a45a8c50aa4fa84fdfa4bccd9aa75e84c9cedcd570e6537",
-      "class_hash": "0x528c451e8675cb73580d53ad5729f2f6567916ce00d5bbe65de3c6654e3573b",
+      "address": "0x7eb28239800aef2c0ac67208f533311252778b13aa884fe361192c96674a3b2",
+      "class_hash": "0x5edf9905499411389b4b4fcc2d94121009d565d7f9248dc74f8860ccaf2cd00",
+      "abi": [
+        {
+          "type": "impl",
+          "name": "special_score_even__ContractImpl",
+          "interface_name": "dojo::contract::interface::IContract"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::interface::IContract",
+          "items": []
+        },
+        {
+          "type": "impl",
+          "name": "special_score_even__DeployedContractImpl",
+          "interface_name": "dojo::meta::interface::IDeployedResource"
+        },
+        {
+          "type": "struct",
+          "name": "core::byte_array::ByteArray",
+          "members": [
+            {
+              "name": "data",
+              "type": "core::array::Array::<core::bytes_31::bytes31>"
+            },
+            {
+              "name": "pending_word",
+              "type": "core::felt252"
+            },
+            {
+              "name": "pending_word_len",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::meta::interface::IDeployedResource",
+          "items": [
+            {
+              "type": "function",
+              "name": "dojo_name",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::byte_array::ByteArray"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "SpecialScoreEvenImpl",
+          "interface_name": "jokers_of_neon_lib::interfaces::round_state::ISpecialRoundState"
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
+          "variants": [
+            {
+              "name": "IN_GAME",
+              "type": "()"
+            },
+            {
+              "name": "AT_SHOP",
+              "type": "()"
+            },
+            {
+              "name": "FINISHED",
+              "type": "()"
+            },
+            {
+              "name": "OPEN_BLISTER_PACK",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
+          "members": [
+            {
+              "name": "id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "mod_id",
+              "type": "core::felt252"
+            },
+            {
+              "name": "state",
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
+            },
+            {
+              "name": "owner",
+              "type": "core::starknet::contract_address::ContractAddress"
+            },
+            {
+              "name": "player_name",
+              "type": "core::felt252"
+            },
+            {
+              "name": "player_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "level",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "hand_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "plays",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "discards",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cash",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::round::round::Round",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "player_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "level_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "remaining_plays",
+              "type": "core::integer::u16"
+            },
+            {
+              "name": "remaining_discards",
+              "type": "core::integer::u16"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::special_type::SpecialType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Individual",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::round_state::ISpecialRoundState",
+          "items": [
+            {
+              "type": "function",
+              "name": "execute",
+              "inputs": [
+                {
+                  "name": "game",
+                  "type": "jokers_of_neon_lib::models::status::game::game::Game"
+                },
+                {
+                  "name": "round",
+                  "type": "jokers_of_neon_lib::models::status::round::round::Round"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                }
+              ],
+              "state_mutability": "external"
+            },
+            {
+              "type": "function",
+              "name": "get_id",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::integer::u32"
+                }
+              ],
+              "state_mutability": "external"
+            },
+            {
+              "type": "function",
+              "name": "get_type",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "jokers_of_neon_lib::models::special_type::SpecialType"
+                }
+              ],
+              "state_mutability": "external"
+            }
+          ]
+        },
+        {
+          "type": "function",
+          "name": "dojo_init",
+          "inputs": [],
+          "outputs": [],
+          "state_mutability": "view"
+        },
+        {
+          "type": "impl",
+          "name": "WorldProviderImpl",
+          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
+        },
+        {
+          "type": "struct",
+          "name": "dojo::world::iworld::IWorldDispatcher",
+          "members": [
+            {
+              "name": "contract_address",
+              "type": "core::starknet::contract_address::ContractAddress"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::world_provider::IWorldProvider",
+          "items": [
+            {
+              "type": "function",
+              "name": "world_dispatcher",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "dojo::world::iworld::IWorldDispatcher"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "UpgradeableImpl",
+          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::upgradeable::IUpgradeable",
+          "items": [
+            {
+              "type": "function",
+              "name": "upgrade",
+              "inputs": [
+                {
+                  "name": "new_class_hash",
+                  "type": "core::starknet::class_hash::ClassHash"
+                }
+              ],
+              "outputs": [],
+              "state_mutability": "external"
+            }
+          ]
+        },
+        {
+          "type": "constructor",
+          "name": "constructor",
+          "inputs": []
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+          "kind": "struct",
+          "members": [
+            {
+              "name": "class_hash",
+              "type": "core::starknet::class_hash::ClassHash",
+              "kind": "data"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "Upgraded",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+              "kind": "nested"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+          "kind": "enum",
+          "variants": []
+        },
+        {
+          "type": "event",
+          "name": "jokers_of_neon_classic::specials::special_round_state::score_even::special_score_even::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "UpgradeableEvent",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+              "kind": "nested"
+            },
+            {
+              "name": "WorldProviderEvent",
+              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+              "kind": "nested"
+            }
+          ]
+        }
+      ],
+      "init_calldata": [],
+      "tag": "jokers_of_neon_naruto-special_score_even",
+      "selector": "0x7d615f4ed244ddb29ac7d2e20d93bd216736c1c0ce8eb5cf4e7aed2e7a079d9",
+      "systems": [
+        "execute",
+        "get_id",
+        "get_type",
+        "upgrade"
+      ]
+    },
+    {
+      "address": "0xcfa55551ce0ecc06c0d7b8b6986a018b84fb98885d46e556916c44096930bd",
+      "class_hash": "0x70daf847e80b759d28142100164c949d1f558775824edb28d13b80b2785c81d",
       "abi": [
         {
           "type": "impl",
