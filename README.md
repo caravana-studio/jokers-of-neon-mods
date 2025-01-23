@@ -30,7 +30,7 @@ This folder contains the following key configuration files:
 #### 1.1.1. Game Configuration
 
 The _Game Configuration file_ allows you to modify the foundational rules of the game. It’s located at:
-`mods/<mod_name>/src/configs/game/config.cairo`.
+`mods/<mod_name>/src/configs/game.cairo`.
 
 Here’s an example configuration:
 
@@ -411,7 +411,7 @@ To customize the mod's preview image, upload an image named `thumbnail.png` to t
 #### 2.3.1. Game Configuration
 
 You can modify the initial game settings to create a more challenging experience while offering certain advantages. These parameters are defined in:
-`mods/(MOD_NAME)/src/configs/game/config.cairo.`
+`mods/(MOD_NAME)/src/configs/game.cairo.`
 
 Below is an example configuration with adjusted values for `plays`, `discards`, `hand size`, and `starting cash`:
 
@@ -419,10 +419,12 @@ Below is an example configuration with adjusted values for `plays`, `discards`, 
 GameConfig {
     plays: 2,                    // Number of plays per round
     discards: 7,                 // Number of discards allowed
-    ...,
+    max_special_slots: 5,        // Maximum number of special slots
+    power_up_slots: 4,           // Number of active power up slots
+    max_power_up_slots: 4,       // Maximum number of power up slots
     hand_len: 10,                 // Starting hand size
     start_cash: 10000,           // Starting cash amount
-    ...,
+    start_special_slots: 1,      // Number of special card slots active at the start of the game
 }
 ```
 
@@ -431,17 +433,18 @@ GameConfig {
 #### 2.3.2. Shop Configuration
 
 You can customize the shop to show more special cards and fewer traditional cards or loot boxes, tailoring the experience to your mod. The shop configuration is located in:
-`mods/mod_name/src/configs/shop/config.cairo`.
+`mods/mod_name/src/configs/shop.cairo`.
 
 Example of a customized shop configuration:
 
 ```rust
 ShopConfig {
     traditional_cards_quantity: 2,    // Regular cards in shop
-    ...,
+    modifiers_cards_quantity: 3,      // Modifier cards in shop
     specials_cards_quantity: 5,       // Special cards in shop
     loot_boxes_quantity: 1,           // Loot boxes in shop
-    ...,
+    power_ups_quantity: 2,            // Power ups in shop
+    poker_hands_quantity: 3           // Poker hands available to level up in shop
 }
 ```
 
@@ -449,7 +452,7 @@ ShopConfig {
 
 ### 2.4. Implementing your first Special Card
 
-In this section, we’ll create a special card that rewards `points`, a `multiplier`, and `cash` when the player has a HighCard hand.
+In this section, we’ll create a special card that rewards `points`, `multiplier`, and `cash` when the player has a HighCard hand.
 All special cards must be defined in `mods/mod_name/src/specials/specials.cairo`, with each card assigned a unique ID between `300` and `400`.
 
 #### 2.4.1. Define the Card ID
@@ -457,7 +460,7 @@ All special cards must be defined in `mods/mod_name/src/specials/specials.cairo`
 Open `mods/mod_name/src/specials/specials.cairo` and add the unique ID for your new Special Card:
 
 ```rust
-const SPECIAL_HIGH_CARD_BOOSTER_ID: u32 = 309;
+const SPECIAL_NEW_CARD_ID: u32 = 310;
 ```
 
 ---
@@ -470,14 +473,16 @@ Add the new card id into the `*specials_ids_all*` function :
   fn specials_ids_all() -> Array<u32> {
   array![
       ....,
-      SPECIAL_HIGH_CARD_BOOSTER_ID
+      SPECIAL_NEW_CARD_ID
   ]}
 ```
 
 Assign the card to a group to make it purchasable in the shop. _For example, add it to the `SS group`_:
+Groups define the probability the card has for appearing in the shop and also its cost.
+You can also adjust the probabilities and costs for each group. Ensure that the probabilities of all defined groups add up to 100.
 
 ```rust
-let SS_SPECIALS = array![..., SPECIAL_HIGH_CARD_BOOSTER_ID].span();
+let SS_SPECIALS = array![..., SPECIAL_NEW_CARD_ID].span();
 ```
 
 ---
@@ -584,6 +589,6 @@ Run the deploy command:
 make deploy-mod mod_name=your_mod_name
 ```
 
-> [!IMPORTANT]
->
-> Make sure to update the .env file with the correct data
+### 2.5. Create a PR on this repository
+
+Once you have completed the implementation of your mod including frontend assets and cairo code, create a pull request to this repository.
