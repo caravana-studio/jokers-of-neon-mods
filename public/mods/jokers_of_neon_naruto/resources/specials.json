@@ -1,0 +1,46 @@
+{
+  "300": {
+    "name": "Madara",
+    "description": "+4 Mult"
+  },
+  "301": {
+    "name": "Konan",
+    "description": "Played cards with Diamond suit give +3 Mult when scored"
+  },
+  "302": {
+    "name": "Itachi",
+    "description": "Played cards with Heart suit give +3 Mult when scored"
+  },
+  "303": {
+    "name": "Minato",
+    "description": "Played cards with Spade suit give +3 Mult when scored"
+  },
+  "304": {
+    "name": "Might Guy",
+    "description": "Played cards with Club suit give +3 Mult when scored"
+  },
+  "305": {
+    "name": "Tsunade",
+    "description": "+8 Mult if played hand contains a Pair"
+  },
+  "306": {
+    "name": "Kakashi",
+    "description": "+12 Mult if played hand contains a Three of a Kind"
+  },
+  "307": {
+    "name": "Deidara",
+    "description": "+10 Mult if played hand contains a Two Pair"
+  },
+  "308": {
+    "name": "Naruto",
+    "description": "+12 Mult if played hand contains a Straight"
+  },
+  "309": {
+    "name": "Sasuke",
+    "description": "+10 Mult if played hand contains a Flush"
+  },
+  "310": {
+    "name": "Kabuto",
+    "description": "+50 points and +5 multi if player score is even"
+  }
+}
