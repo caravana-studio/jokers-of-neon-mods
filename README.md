@@ -236,6 +236,8 @@ Customize the appearance of special, traditional, neon, and modifier cards, alon
 You can modify existing card designs or add new ones. To replace a card, locate its specific ID and upload the image file to:
 `/public/mods/(MOD_NAME)/resources/Cards/{cardID}.png`
 
+Recommended size for cards is: 276 x 420 px
+
 <table>
   <tr>
     <th>Category</th>
