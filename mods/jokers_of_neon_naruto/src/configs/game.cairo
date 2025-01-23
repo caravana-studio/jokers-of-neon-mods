@@ -8,11 +8,12 @@ pub mod game_config {
             GameConfig {
                 plays: 3,
                 discards: 8,
-                max_special_slots: 5,
+                specials_slots: 5,
+                max_special_slots: 7,
                 power_up_slots: 4,
                 max_power_up_slots: 4,
                 hand_len: 7,
-                start_cash: 500,
+                start_cash: 1000,
                 start_special_slots: 1,
             }
         }

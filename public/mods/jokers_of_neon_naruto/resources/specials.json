@@ -1,78 +1,46 @@
 {
   "300": {
-    "name": "Special Joker",
+    "name": "Madara",
     "description": "+4 Mult"
   },
   "301": {
-    "name": "Greedy Joker",
+    "name": "Konan",
     "description": "Played cards with Diamond suit give +3 Mult when scored"
   },
   "302": {
-    "name": "Lusty Joker",
+    "name": "Itachi",
     "description": "Played cards with Heart suit give +3 Mult when scored"
   },
   "303": {
-    "name": "Wrathful Joker",
+    "name": "Minato",
     "description": "Played cards with Spade suit give +3 Mult when scored"
   },
   "304": {
-    "name": "Gluttonous Joker",
+    "name": "Might Guy",
     "description": "Played cards with Club suit give +3 Mult when scored"
   },
   "305": {
-    "name": "Jolly Joker",
+    "name": "Tsunade",
     "description": "+8 Mult if played hand contains a Pair"
   },
   "306": {
-    "name": "Zany Joker",
+    "name": "Kakashi",
     "description": "+12 Mult if played hand contains a Three of a Kind"
   },
   "307": {
-    "name": "Mad Joker",
+    "name": "Deidara",
     "description": "+10 Mult if played hand contains a Two Pair"
   },
   "308": {
-    "name": "Crazy Joker",
+    "name": "Naruto",
     "description": "+12 Mult if played hand contains a Straight"
   },
   "309": {
-    "name": "Droll Joker",
+    "name": "Sasuke",
     "description": "+10 Mult if played hand contains a Flush"
   },
   "310": {
-    "name": "Sly Joker",
+    "name": "Kabuto",
     "description": "+50 Chips if played hand contains a Pair"
-  },
-  "311": {
-    "name": "Wily Joker",
-    "description": "+100 Chips if played hand contains a Three of a Kind"
-  },
-  "312": {
-    "name": "Clever Joker",
-    "description": "+80 Chips if played hand contains a Two Pair"
-  },
-  "313": {
-    "name": "Devious Joker",
-    "description": "+100 Chips if played hand contains a Straight"
-  },
-  "314": {
-    "name": "Crafty Joker",
-    "description": "+80 Chips if played hand contains a Flush"
-  },
-  "315": {
-    "name": "Half Joker",
-    "description": "+20 Mult if played hand contains 3 or fewer cards"
-  },
-  "316": {
-    "name": "Banner Joker",
-    "description": "+30 Chips for each remaining discard"
-  },
-  "317": {
-    "name": "Mystic Summit Joker",
-    "description": "+15 Mult when 0 discards remaining"
-  },
-  "318": {
-    "name": "Fibonacci Joker",
-    "description": "Each played Ace, 2, 3, 5, or 8 gives +8 Mult when scored"
   }
 }

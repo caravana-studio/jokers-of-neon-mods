@@ -4,7 +4,7 @@ name = "jokers_of_neon_classic"
 seed = "jokers_of_neon_classic"
 
 [namespace]
-default = "jokers_of_neon_classic"
+default = "jokers_of_neon_naruto"
 
 [env]
 rpc_url = "http://localhost:5050/"
