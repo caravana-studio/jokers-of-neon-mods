@@ -583,6 +583,8 @@ Upload an image for your special card to the following directory:
 
 #### 2.4.5. Deploy Your Mod
 
+Rename the .env_example file to .env
+
 Run the deploy command:
 
 ```bash
