@@ -1,54 +1,78 @@
 {
   "300": {
-    "name": "The sun Joker",
-    "description": "+4 Mult"
+    "name": "Bad Badtz-Maru",
+    "description": "+8 multi"
+  },
+  "301": {
+    "name": "Tuxedo Sam",
+    "description": "Played cards with Diamond suit give +100 points when scored"
+  },
+  "302": {
+    "name": "Hello Kitty",
+    "description": "Played cards with Heart suit give +2 multi and +50 cash when scored"
+  },
+  "303": {
+    "name": "Kuromi",
+    "description": "Played cards with Spade suit give +4 multi and +10 points when scored"
+  },
+  "304": {
+    "name": "Pompompurin",
+    "description": "Played cards with Club suit give +100 cash when scored"
   },
   "305": {
-    "name": "The hanged man Joker",
-    "description": "+8 Mult if played hand contains a Pair"
+    "name": "Little Twin Stars",
+    "description": "+8 multi if played hand contains a Pair"
   },
   "306": {
-    "name": "The fool Joker",
-    "description": "+12 Mult if played hand contains a Three of a Kind"
+    "name": "The Devil",
+    "description": "+300 points if played hand contains a Three of a Kind"
   },
   "307": {
-    "name": "The world Joker",
-    "description": "+10 Mult if played hand contains a Two Pair"
+    "name": "The Hieropant",
+    "description": "+10 multi and +50 points if played hand contains a Two Pair"
   },
   "308": {
-    "name": "The tower Joker",
-    "description": "+12 Mult if played hand contains a Straight"
+    "name": "The Tower",
+    "description": "+12 multi if played hand contains a Straight"
   },
   "309": {
-    "name": "Strength Joker",
-    "description": "+10 Mult if played hand contains a Flush"
+    "name": "The Lovers",
+    "description": "+12 multi and +200 cash if played hand contains a Flush"
   },
   "310": {
-    "name": "Death Joker",
-    "description": "+50 Chips if played hand contains a Pair"
+    "name": "The Moon",
+    "description": "+50 cash if played hand contains a Pair"
   },
   "311": {
-    "name": "The moon Joker",
-    "description": "+100 Chips if played hand contains a Three of a Kind"
+    "name": "Kerokerokeroppi",
+    "description": "+100 cash if played hand contains a Three of a Kind"
   },
   "312": {
-    "name": "Judgement Joker",
-    "description": "+80 Chips if played hand contains a Two Pair"
+    "name": "Hangyodon",
+    "description": "+80 cash if played hand contains a Two Pair"
   },
   "313": {
-    "name": "The emperor Joker",
-    "description": "+100 Chips if played hand contains a Straight"
+    "name": "The Sun",
+    "description": "+300 cash if played hand contains a Straight"
   },
   "314": {
-    "name": "Temperance Joker",
-    "description": "+80 Chips if played hand contains a Flush"
+    "name": "The Empress",
+    "description": "+500 cash if played hand contains a Flush"
+  },
+  "315": {
+    "name": "The High Priestess",
+    "description": "+1000 cash if played hand contains a Royal Flush"
   },
   "316": {
-    "name": "Justice Joker",
-    "description": "+30 Chips for each remaining discard"
+    "name": "The Justice",
+    "description": "+3 multi for each remaining discard"
   },
   "317": {
-    "name": "The devil Joker",
-    "description": "+15 Mult when 0 discards remaining"
+    "name": "The King of Wands",
+    "description": "+15 multi when 0 discards remaining"
+  },
+  "318": {
+    "name": "The world",
+    "description": "Each played Ace, 2, 3, 5, or 8 gives +8 multi when scored"
   }
 }

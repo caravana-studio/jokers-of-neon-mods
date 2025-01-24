@@ -12,7 +12,7 @@ pub mod special_wrathful_joker {
         }
 
         fn execute(ref self: ContractState) -> (i32, i32, i32) {
-            (0, 3, 0)
+            (10, 4, 0)
         }
 
         fn get_id(ref self: ContractState) -> u32 {
