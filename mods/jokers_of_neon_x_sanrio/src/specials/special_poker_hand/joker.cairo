@@ -11,7 +11,7 @@ pub mod special_joker {
         fn execute(
             ref self: ContractState, play_info: PlayInfo
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
-            ((0, 0, array![].span()), (4, 4, array![].span()), (0, 0, array![].span()))
+            ((0, 0, array![].span()), (8, 8, array![].span()), (0, 0, array![].span()))
         }
 
         fn get_id(ref self: ContractState) -> u32 {

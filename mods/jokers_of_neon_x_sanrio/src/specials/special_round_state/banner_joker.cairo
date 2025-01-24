@@ -10,7 +10,7 @@ pub mod special_banner_joker {
     impl SpecialBannerJokerImpl of ISpecialRoundState<ContractState> {
         fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
             let remaining_discards: i32 = round.remaining_discards.try_into().unwrap();
-            (remaining_discards * 30, 0, 0)
+            (0, 0, remaining_discards * 3)
         }
 
         fn get_id(ref self: ContractState) -> u32 {

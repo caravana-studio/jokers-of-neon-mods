@@ -12,7 +12,7 @@ pub mod special_devious_joker {
             ref self: ContractState, play_info: PlayInfo
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             if play_info.hand == PokerHand::Straight {
-                ((100, 100, array![].span()), (0, 0, array![].span()), (0, 0, array![].span()))
+                ((300, 300, array![].span()), (0, 0, array![].span()), (0, 0, array![].span()))
             } else {
                 ((0, 0, array![].span()), (0, 0, array![].span()), (0, 0, array![].span()))
             }

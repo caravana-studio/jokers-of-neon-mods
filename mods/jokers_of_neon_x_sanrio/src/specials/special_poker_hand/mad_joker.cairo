@@ -12,7 +12,7 @@ pub mod special_mad_joker {
             ref self: ContractState, play_info: PlayInfo
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             if play_info.hand == PokerHand::TwoPair {
-                ((0, 0, array![].span()), (10, 10, array![].span()), (0, 0, array![].span()))
+                ((50, 50, array![].span()), (10, 10, array![].span()), (0, 0, array![].span()))
             } else {
                 ((0, 0, array![].span()), (0, 0, array![].span()), (0, 0, array![].span()))
             }
