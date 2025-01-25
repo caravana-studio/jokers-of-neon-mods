@@ -610,3 +610,8 @@ Run the deploy command:
 ```bash
 make deploy-mod mod_name=your_mod_name
 ```
+
+### 2.7. Play your mod
+
+Wait until your PR is merged.
+Once it is, you will be able to play your mod at (modding.jokersofneon.com)[https://modding.jokersofneon.com/].
