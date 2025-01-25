@@ -1,83 +1,83 @@
 {
   "300": {
     "name": "The magician",
-    "description": "+4 Mult"
+    "description": "+4 multi"
   },
   "301": {
     "name": "The fool",
-    "description": "Played cards with Diamond suit give +3 Mult when scored"
+    "description": "Played cards with Diamond suit give +3 multi when scored"
   },
   "302": {
     "name": "The lovers",
-    "description": "Played cards with Heart suit give +3 Mult when scored"
+    "description": "Played cards with Heart suit give +3 multi when scored"
   },
   "303": {
     "name": "The empress",
-    "description": "Played cards with Spade suit give +3 Mult when scored"
+    "description": "Played cards with Spade suit give +3 multi when scored"
   },
   "304": {
     "name": "The emperor",
-    "description": "Played cards with Club suit give +3 Mult when scored"
+    "description": "Played cards with Club suit give +3 multi when scored"
   },
   "305": {
     "name": "The hierophant",
-    "description": "+8 Mult if played hand contains a Pair"
+    "description": "+8 multi if played hand contains a Pair"
   },
   "306": {
     "name": "The priestess",
-    "description": "+12 Mult if played hand contains a Three of a Kind"
+    "description": "+12 multi if played hand contains a Three of a Kind"
   },
   "307": {
     "name": "The chariot",
-    "description": "+10 Mult if played hand contains a Two Pair"
+    "description": "+10 multi if played hand contains a Two Pair"
   },
   "308": {
     "name": "Justice",
-    "description": "+12 Mult if played hand contains a Straight"
+    "description": "+12 multi if played hand contains a Straight"
   },
   "309": {
     "name": "The hermit",
-    "description": "+10 Mult if played hand contains a Flush"
+    "description": "+10 multi if played hand contains a Flush"
   },
   "310": {
     "name": "Wheel of fortune",
-    "description": "+50 Chips if played hand contains a Pair"
+    "description": "+50 points if played hand contains a Pair"
   },
   "311": {
     "name": "Strength",
-    "description": "+100 Chips if played hand contains a Three of a Kind"
+    "description": "+100 points if played hand contains a Three of a Kind"
   },
   "312": {
     "name": "The hanged man",
-    "description": "+80 Chips if played hand contains a Two Pair"
+    "description": "+80 points if played hand contains a Two Pair"
   },
   "313": {
     "name": "Death",
-    "description": "+100 Chips if played hand contains a Straight"
+    "description": "+100 points if played hand contains a Straight"
   },
   "314": {
     "name": "Temperance",
-    "description": "+80 Chips if played hand contains a Flush"
+    "description": "+80 points if played hand contains a Flush"
   },
   "315": {
     "name": "The devil",
-    "description": "+20 Mult if played hand contains 3 or fewer cards"
+    "description": "+20 multi if played hand contains 3 or fewer cards"
   },
   "316": {
     "name": "The star",
-    "description": "+30 Chips for each remaining discard"
+    "description": "+30 points for each remaining discard"
   },
   "317": {
     "name": "The tower",
-    "description": "+15 Mult when 0 discards remaining"
+    "description": "+15 multi when 0 discards remaining"
   },
   "318": {
     "name": "The moon",
-    "description": "Each played Ace, 2, 3, 5, or 8 gives +8 Mult when scored"
+    "description": "Each played Ace, 2, 3, 5, or 8 gives +8 multi when scored"
   },
   "319": {
     "name": "The sun",
-    "description": "Each played 4, 6, 7, 9, or 10 gives +8 Mult when scored"
+    "description": "Each played 4, 6, 7, 9, or 10 gives +8 multi when scored"
   },
   "320": {
     "name": "Judgement",
