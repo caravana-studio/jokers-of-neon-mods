@@ -12,6 +12,16 @@ With the mods, you can:
 - Design new special cards, rage cards, and loot boxes with distinct effects.
 - Replace visual elements such as card designs, borders, and backgrounds.
 
+## Prerequisites
+
+- Cairo v1.0.10 [Dojo docs](https://www.dojoengine.org/installation) (optional)
+
+If you have a different version of Cairo, you can update it by running:
+
+```bash
+dojoup --version 1.0.10
+```
+
 ### 1.1. Understanding the Mod Configuration Files
 
 The mods rely on a robust configuration system that allows you to modify various aspects of the game. These configuration files are located in: `mods/<mod_name>/src/configs/`
@@ -583,7 +593,15 @@ Upload an image for your special card to the following directory:
 
 > Replace `{cardID}` with the unique ID of your card. For the example card, the image file should be named `309.png`
 
-#### 2.4.5. Deploy Your Mod
+### 2.5. Create a PR on this repository
+
+Once you have completed the implementation of your mod including frontend assets and cairo code, create a pull request to this repository.
+
+#### 2.6. Deploy Your Mod
+
+> [!IMPORTANT]
+>
+> If you do not have Cairo installed, skip this step and comment your PR saying that you have skipped the deployment step, so that we can take care of it.
 
 Rename the .env_example file to .env
 
@@ -592,7 +610,3 @@ Run the deploy command:
 ```bash
 make deploy-mod mod_name=your_mod_name
 ```
-
-### 2.5. Create a PR on this repository
-
-Once you have completed the implementation of your mod including frontend assets and cairo code, create a pull request to this repository.
