@@ -597,7 +597,7 @@ Upload an image for your special card to the following directory:
 
 Once you have completed the implementation of your mod including frontend assets and cairo code, create a pull request to this repository.
 
-#### 2.6. Deploy Your Mod
+### 2.6. Deploy Your Mod
 
 > [!IMPORTANT]
 >
