@@ -2,6 +2,7 @@
 cairo-version = "=2.9.2"
 name = "jokers_of_neon_mods"
 version = "0.0.1"
+edition = "2024_07"
 
 [cairo]
 sierra-replace-ids = true
