@@ -175,8 +175,8 @@ Example:
 Grant 20 points and 4 multiplier for achieving a `Two Pairs` poker hand.
 
 ```rust
-fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
-    if play_info.hand == PokerHand::TwoPair {
+fn execute(ref self: ContractState, game_context: GameContext) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
+    if game_context.hand == PokerHand::TwoPair {
         ((20, array![].span()), (4, array![].span()), (0, array![].span()))
     } else {
         ((0, array![].span()), (0, array![].span()), (0, array![].span()))
@@ -521,13 +521,13 @@ pub mod special_high_card_booster {
     use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_CARD_BOOSTER_ID;
     use jokers_of_neon_lib::interfaces::poker_hand::ISpecialPokerHand;
     use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
-    use jokers_of_neon_lib::models::play_info::PlayInfo;
+use jokers_of_neon_lib::models::tracker::GameContext;
     use jokers_of_neon_lib::models::special_type::SpecialType;
 
     #[abi(embed_v0)]
     impl SpecialHighCardBoosterImpl of ISpecialPokerHand<ContractState> {
-        fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
-            if play_info.hand == PokerHand::HighCard {
+        fn execute(ref self: ContractState, game_context: GameContext) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
+            if game_context.hand == PokerHand::HighCard {
                 ((100, array![].span()), (20, array![].span()), (500, array![].span()))
             } else {
                 ((0, array![].span()), (0, array![].span()), (0, array![].span()))
