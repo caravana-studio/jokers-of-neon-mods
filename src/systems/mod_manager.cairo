@@ -14,8 +14,6 @@ trait IModManager<T> {
 
 #[dojo::contract]
 pub mod mod_manager {
-    use dojo::world::{IWorldDispatcher, IWorldDispatcherTrait};
-    use dojo::{model::{ModelStorage, ModelValueStorage}, world::{WorldStorage, WorldStorageTrait}};
     use jokers_of_neon_mods::models::{game_mod::ModConfig, mod_tracker::ModTracker, game_mod::{GameMod, GameModMap}};
     use jokers_of_neon_mods::store::{StoreTrait, StoreImpl};
     use starknet::ContractAddress;
