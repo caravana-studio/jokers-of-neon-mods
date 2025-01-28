@@ -6,7 +6,7 @@ use jokers_of_neon_mods::models::{
 const MOD_TRACKER_KEY: felt252 = 'MOD_TRACKER_KEY';
 
 #[derive(Drop)]
-pub struct Store {
+struct Store {
     world: WorldStorage
 }
 
