@@ -6,7 +6,6 @@ use jokers_of_neon_lib::constants::card::{
 use jokers_of_neon_lib::constants::modifiers::{modifiers_ids_all, modifiers_shop_info, SUIT_HEARTS_MODIFIER_ID};
 use jokers_of_neon_lib::models::data::card::{Card, CardTrait, Suit, Value, ValueEnumerableImpl};
 use jokers_of_neon_lib::models::data::loot_box::LootBox;
-
 const BASIC_LOOT_BOX_ID: u32 = 1;
 const ADVANCED_LOOT_BOX_ID: u32 = 2;
 const JOKER_LOOT_BOX_ID: u32 = 3;
@@ -17,7 +16,6 @@ const DECEITFUL_JOKER_LOOT_BOX_ID: u32 = 7;
 const SPECIAL_BET_LOOT_BOX_ID: u32 = 9;
 const NEON_LOOT_BOX_ID: u32 = 10;
 const EMPTY_PACK_ID: u32 = 999;
-
 fn loot_boxes_ids_all() -> Array<u32> {
     array![
         BASIC_LOOT_BOX_ID,
@@ -31,11 +29,9 @@ fn loot_boxes_ids_all() -> Array<u32> {
         NEON_LOOT_BOX_ID
     ]
 }
-
 fn loot_boxes_ids_all_without_jokers() -> Array<u32> {
     array![BASIC_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, SPECIAL_BET_LOOT_BOX_ID]
 }
-
 fn BASIC_LOOT_BOX() -> LootBox {
     LootBox {
         id: BASIC_LOOT_BOX_ID,
@@ -55,7 +51,6 @@ fn BASIC_LOOT_BOX() -> LootBox {
         probs: array![100, 2, 5, 4, 1, 88].span(),
     }
 }
-
 fn ADVANCED_LOOT_BOX() -> LootBox {
     LootBox {
         id: ADVANCED_LOOT_BOX_ID,
@@ -75,7 +70,6 @@ fn ADVANCED_LOOT_BOX() -> LootBox {
         probs: array![100, 4, 10, 8, 2, 76].span(),
     }
 }
-
 fn JOKER_LOOT_BOX() -> LootBox {
     LootBox {
         id: JOKER_LOOT_BOX_ID,
@@ -90,7 +84,6 @@ fn JOKER_LOOT_BOX() -> LootBox {
         probs: array![100, 29, 1, 70].span(),
     }
 }
-
 fn SPECIALS_LOOT_BOX() -> LootBox {
     let (specials_group, specials_probs, _) = specials_shop_info();
     let (modifiers_group, modifiers_probs, _) = modifiers_shop_info();
@@ -128,7 +121,6 @@ fn SPECIALS_LOOT_BOX() -> LootBox {
             .span(),
     }
 }
-
 fn MODIFIER_LOOT_BOX() -> LootBox {
     let (modifiers_group, modifiers_probs, _) = modifiers_shop_info();
     LootBox {
@@ -152,7 +144,6 @@ fn MODIFIER_LOOT_BOX() -> LootBox {
             .span(),
     }
 }
-
 fn FIGURES_LOOT_BOX() -> LootBox {
     let figures_cards = array![
         CardTrait::generate_id(Value::Jack, Suit::Hearts),
@@ -178,7 +169,6 @@ fn FIGURES_LOOT_BOX() -> LootBox {
         probs: array![100, 70, 30].span(),
     }
 }
-
 fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
     LootBox {
         id: DECEITFUL_JOKER_LOOT_BOX_ID,
@@ -200,7 +190,7 @@ fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
 fn SPECIAL_BET_LOOT_BOX() -> LootBox {
     LootBox {
         id: SPECIAL_BET_LOOT_BOX_ID,
-        cost: 500,
+        cost: 1000,
         name: 'special_bet_loot_box',
         probability: 50,
         size: 3,
@@ -211,7 +201,6 @@ fn SPECIAL_BET_LOOT_BOX() -> LootBox {
         probs: array![100, 5, 10, 85].span(),
     }
 }
-
 fn NEON_LOOT_BOX() -> LootBox {
     LootBox {
         id: NEON_LOOT_BOX_ID,
@@ -223,43 +212,32 @@ fn NEON_LOOT_BOX() -> LootBox {
         probs: array![100, 97, 3].span(),
     }
 }
-
 fn EMPTY_LOOT_BOX() -> LootBox {
     LootBox {
         id: EMPTY_PACK_ID, cost: 0, name: '', probability: 0, size: 0, cards: array![].span(), probs: array![].span(),
     }
 }
-
 // Return -> (Loot Boxes Group, Probability Group, Group Cost)
 fn loot_boxes_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
-    // D-Grade Group
-    let D_LOOT_BOX_PROBABILITY = 30;
-    let D_LOOT_BOX_COST = 500;
-    let D_LOOT_BOX = array![SPECIAL_BET_LOOT_BOX_ID].span();
-
     // C-Grade Group
-    let C_LOOT_BOX_PROBABILITY = 30;
+    let C_LOOT_BOX_PROBABILITY = 50;
     let C_LOOT_BOX_COST = 750;
-    let C_LOOT_BOX = array![BASIC_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID].span();
+    let C_LOOT_BOX = array![BASIC_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, SPECIAL_BET_LOOT_BOX_ID].span();
     // B-Grade Group
-    let B_LOOT_BOX_PROBABILITY = 20;
+    let B_LOOT_BOX_PROBABILITY = 30;
     let B_LOOT_BOX_COST = 1500;
     let B_LOOT_BOX = array![ADVANCED_LOOT_BOX_ID, JOKER_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID,].span();
     // A-Grade Group
     let A_LOOT_BOX_PROBABILITY = 20;
     let A_LOOT_BOX_COST = 2000;
     let A_LOOT_BOX = array![SPECIALS_LOOT_BOX_ID, DECEITFUL_JOKER_LOOT_BOX_ID, NEON_LOOT_BOX_ID].span();
-    assert(
-        D_LOOT_BOX_PROBABILITY + C_LOOT_BOX_PROBABILITY + B_LOOT_BOX_PROBABILITY + A_LOOT_BOX_PROBABILITY == 100,
-        'wrong probability sum'
-    );
+    assert(C_LOOT_BOX_PROBABILITY + B_LOOT_BOX_PROBABILITY + A_LOOT_BOX_PROBABILITY == 100, 'wrong probability sum');
     (
-        array![D_LOOT_BOX, C_LOOT_BOX, B_LOOT_BOX, A_LOOT_BOX].span(),
-        array![D_LOOT_BOX_PROBABILITY, C_LOOT_BOX_PROBABILITY, B_LOOT_BOX_PROBABILITY, A_LOOT_BOX_PROBABILITY].span(),
-        array![D_LOOT_BOX_COST, C_LOOT_BOX_COST, B_LOOT_BOX_COST, A_LOOT_BOX_COST].span()
+        array![C_LOOT_BOX, B_LOOT_BOX, A_LOOT_BOX].span(),
+        array![C_LOOT_BOX_PROBABILITY, B_LOOT_BOX_PROBABILITY, A_LOOT_BOX_PROBABILITY].span(),
+        array![C_LOOT_BOX_COST, B_LOOT_BOX_COST, A_LOOT_BOX_COST].span()
     )
 }
-
 fn get_loot_box(loot_box_id: u32) -> LootBox {
     if loot_box_id == BASIC_LOOT_BOX_ID {
         BASIC_LOOT_BOX()
