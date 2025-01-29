@@ -14,12 +14,12 @@ With the mods, you can:
 
 ## Prerequisites
 
-- Cairo v1.1.0 [Dojo docs](https://www.dojoengine.org/installation) (optional)
+- Cairo v1.1.1 [Dojo docs](https://www.dojoengine.org/installation) (optional)
 
 If you have a different version of Cairo, you can update it by running:
 
 ```bash
-dojoup --version 1.1.0
+dojoup --version v1.1.1
 ```
 
 ### 1.1. Understanding the Mod Configuration Files
