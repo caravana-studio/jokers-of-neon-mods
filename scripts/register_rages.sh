@@ -31,8 +31,6 @@ for rage in "${rage_names[@]}"; do
 done
 
 # Prepare the parameters for sozo execute
-len_contract_addresses=${#contract_addresses[@]}
-len_rage_ids=${#rage_ids[@]}
 rage_ids_str=$(IFS=,; echo "${rage_ids[*]}")
 contract_addresses_str=$(IFS=,; echo "${contract_addresses[*]}" | tr -d '"')
 

@@ -31,8 +31,6 @@ for special in "${special_names[@]}"; do
 done
 
 # Prepare the parameters for sozo execute
-len_contract_addresses=${#contract_addresses[@]}
-len_special_ids=${#special_ids[@]}
 special_ids_str=$(IFS=,; echo "${special_ids[*]}")
 contract_addresses_str=$(IFS=,; echo "${contract_addresses[*]}" | tr -d '"')
 
