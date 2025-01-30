@@ -3,8 +3,8 @@ version = 1
 
 [[package]]
 name = "dojo"
-version = "1.1.1"
-source = "git+https://github.com/dojoengine/dojo?tag=v1.1.1#dba10f26191bce47bb442ddc626ba7c6e2d8c160"
+version = "1.1.2"
+source = "git+https://github.com/dojoengine/dojo?tag=v1.1.2#4f3373ed4f98e1778022ed6f6502ce89f9d29b58"
 dependencies = [
  "dojo_plugin",
 ]
@@ -12,7 +12,7 @@ dependencies = [
 [[package]]
 name = "dojo_cairo_test"
 version = "1.0.12"
-source = "git+https://github.com/dojoengine/dojo?tag=v1.1.1#dba10f26191bce47bb442ddc626ba7c6e2d8c160"
+source = "git+https://github.com/dojoengine/dojo?tag=v1.1.2#4f3373ed4f98e1778022ed6f6502ce89f9d29b58"
 dependencies = [
  "dojo",
 ]
@@ -20,12 +20,12 @@ dependencies = [
 [[package]]
 name = "dojo_plugin"
 version = "2.9.2"
-source = "git+https://github.com/dojoengine/dojo?tag=v1.1.1#dba10f26191bce47bb442ddc626ba7c6e2d8c160"
+source = "git+https://github.com/dojoengine/dojo?tag=v1.1.2#4f3373ed4f98e1778022ed6f6502ce89f9d29b58"
 
 [[package]]
 name = "jokers_of_neon_lib"
 version = "0.0.1"
-source = "git+https://github.com/caravana-studio/jokers-of-neon-lib?rev=505df60#505df604a40d1497508a74e490db485e784259f0"
+source = "git+https://github.com/caravana-studio/jokers-of-neon-lib?rev=93059fa#93059fab7608a0babbea68a13923f7f1ed435de3"
 dependencies = [
  "dojo",
 ]
