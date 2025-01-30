@@ -40,5 +40,5 @@ world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
 
 # Execute sozo command
 # echo -e "\nExecuting sozo command..."
-sozo execute rage_manager register_rages -c $mod_id,$len_rage_ids,$rage_ids_str,$len_contract_addresses,$contract_addresses_str --wait --world $world_address
+sozo execute rage_manager register_rages $mod_id arr:$rage_ids_str arr:$contract_addresses_str --wait --world $world_address
 echo -e "\n✅ Register rages finish!"
