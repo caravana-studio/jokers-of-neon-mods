@@ -115,12 +115,12 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // S-Grade Group
     let S_SPECIALS_PROBABILITY = 10;
     let S_SPECIALS_COST = 5000;
-    let S_SPECIALS = array![SPECIAL_EXTRA_HELP_ID, SPECIAL_JOKER_BOOSTER_ID].span();
+    let S_SPECIALS = array![SPECIAL_EXTRA_HELP_ID, SPECIAL_JOKER_BOOSTER_ID, SPECIAL_POWER_UP_BOOSTER_ID].span();
 
     // SS-Grade Group
     let SS_SPECIALS_PROBABILITY = 5;
     let SS_SPECIALS_COST = 7000;
-    let SS_SPECIALS = array![SPECIAL_INITIAL_ADVANTAGE_ID, SPECIAL_POWER_UP_BOOSTER_ID].span();
+    let SS_SPECIALS = array![SPECIAL_INITIAL_ADVANTAGE_ID].span();
 
     assert(
         C_SPECIALS_PROBABILITY
