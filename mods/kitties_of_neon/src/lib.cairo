@@ -29,8 +29,8 @@ mod specials {
     mod specials;
     mod special_game_type {}
     mod special_individual {
-        mod fibonacci_joker;
         mod anti_fibonacci_joker;
+        mod fibonacci_joker;
         mod gluttonous_joker;
         mod greedy_joker;
         mod lusty_joker;
