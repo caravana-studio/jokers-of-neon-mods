@@ -1,4 +1,3 @@
-use jokers_of_neon_mods::models::mod_config::ModConfig;
 use starknet::ContractAddress;
 
 #[derive(Copy, Drop, IntrospectPacked, Serde)]

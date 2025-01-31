@@ -11,7 +11,9 @@ use jokers_of_neon_lib::models::tracker::GameContext;
         fn execute(
             ref self: ContractState, game_context: GameContext
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
-            if game_context.hand == PokerHand::HighCard || game_context.hand == PokerHand::OnePair || game_context.hand == PokerHand::ThreeOfAKind {
+            if play_info.hand == PokerHand::HighCard
+                || play_info.hand == PokerHand::OnePair
+                || play_info.hand == PokerHand::ThreeOfAKind {
                 ((0, 0, array![].span()), (20, 20, array![].span()), (0, 0, array![].span()))
             } else {
                 ((0, 0, array![].span()), (0, 0, array![].span()), (0, 0, array![].span()))

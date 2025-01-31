@@ -7,6 +7,9 @@ setup:
 deploy-mod:
 	@./scripts/deploy_mod.sh $(MOD_NAME)
 
+deploy-all-mods:
+	@./scripts/deploy_all_mods.sh
+
 create-mod:
 	@./scripts/create_mod.sh
 
