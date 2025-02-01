@@ -9,7 +9,7 @@ pub mod special_clever_joker {
     #[abi(embed_v0)]
     impl SpecialCleverJokerImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, play_info: PlayInfo
+            ref self: ContractState, play_info: PlayInfo,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             if play_info.hand == PokerHand::TwoPair {
                 ((80, 80, array![].span()), (0, 0, array![].span()), (0, 0, array![].span()))

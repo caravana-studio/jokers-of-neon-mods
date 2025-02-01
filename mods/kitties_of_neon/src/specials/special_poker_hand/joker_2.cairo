@@ -9,7 +9,7 @@ pub mod special_joker_2 {
     #[abi(embed_v0)]
     impl SpecialJoker2Impl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, play_info: PlayInfo
+            ref self: ContractState, play_info: PlayInfo,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             ((0, 0, array![].span()), (6, 6, array![].span()), (0, 0, array![].span()))
         }

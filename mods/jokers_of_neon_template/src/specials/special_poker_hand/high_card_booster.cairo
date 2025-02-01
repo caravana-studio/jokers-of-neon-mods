@@ -9,7 +9,7 @@ pub mod special_high_card_booster {
     #[abi(embed_v0)]
     impl SpecialHighCardBoosterImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, play_info: PlayInfo
+            ref self: ContractState, play_info: PlayInfo,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             if play_info.hand == PokerHand::HighCard {
                 ((100, 100, array![].span()), (20, 20, array![].span()), (0, 0, array![].span()))

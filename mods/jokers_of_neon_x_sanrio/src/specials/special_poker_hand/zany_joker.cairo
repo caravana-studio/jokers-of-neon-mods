@@ -9,7 +9,7 @@ pub mod special_zany_joker {
     #[abi(embed_v0)]
     impl SpecialZanyJokerImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, play_info: PlayInfo
+            ref self: ContractState, play_info: PlayInfo,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             if play_info.hand == PokerHand::ThreeOfAKind {
                 ((0, 0, array![].span()), (0, 0, array![].span()), (300, 300, array![].span()))

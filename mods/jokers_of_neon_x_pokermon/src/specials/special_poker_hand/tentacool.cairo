@@ -9,7 +9,7 @@ pub mod special_tentacool {
     #[abi(embed_v0)]
     impl SpecialTentacoolImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, play_info: PlayInfo
+            ref self: ContractState, play_info: PlayInfo,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             let mut cards = play_info.cards;
             let has_only_ten = loop {
@@ -17,7 +17,7 @@ pub mod special_tentacool {
                     Option::Some((_, hit, card)) => { if *hit && *card.value != Value::Ten {
                         break false;
                     } },
-                    Option::None => { break true; }
+                    Option::None => { break true; },
                 }
             };
 

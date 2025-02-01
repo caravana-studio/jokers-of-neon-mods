@@ -1,4 +1,4 @@
-use jokers_of_neon_mods::models::{mod_config::ModConfig, mod_tracker::ModTracker, game_mod::{GameMod, GameModMap}};
+use jokers_of_neon_mods::models::{game_mod::{GameMod, GameModMap}, mod_config::ModConfig, mod_tracker::ModTracker};
 use starknet::ContractAddress;
 
 #[starknet::interface]
@@ -14,8 +14,8 @@ trait IModManager<T> {
 
 #[dojo::contract]
 pub mod mod_manager {
-    use jokers_of_neon_mods::models::{mod_config::ModConfig, mod_tracker::ModTracker, game_mod::{GameMod, GameModMap}};
-    use jokers_of_neon_mods::store::{StoreTrait, StoreImpl};
+    use jokers_of_neon_mods::models::{game_mod::{GameMod, GameModMap}, mod_config::ModConfig, mod_tracker::ModTracker};
+    use jokers_of_neon_mods::store::{StoreImpl, StoreTrait};
     use starknet::ContractAddress;
 
     const MOD_TRACKER_KEY: felt252 = 'MOD_TRACKER_KEY';

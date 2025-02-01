@@ -3,7 +3,7 @@ pub mod special_random_multi_for_diamond {
     use jokers_of_neon_classic::specials::specials::SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID;
     use jokers_of_neon_lib::{
         interfaces::individual::ISpecialIndividual, models::data::card::{Card, Suit}, models::special_type::SpecialType,
-        random::{RandomImpl, RandomTrait}
+        random::{RandomImpl, RandomTrait},
     };
     #[abi(embed_v0)]
     impl SpecialRandomMultiForDiamondImpl of ISpecialIndividual<ContractState> {

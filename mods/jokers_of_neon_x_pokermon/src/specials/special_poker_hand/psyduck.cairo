@@ -10,7 +10,7 @@ pub mod special_psyduck {
     #[abi(embed_v0)]
     impl SpecialPsyduckImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, play_info: PlayInfo
+            ref self: ContractState, play_info: PlayInfo,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             if play_info.hand == PokerHand::HighCard {
                 let (_, _, card) = *play_info.cards.at(0);

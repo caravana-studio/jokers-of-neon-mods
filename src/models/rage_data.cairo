@@ -7,5 +7,5 @@ pub struct RageData {
     pub mod_id: felt252,
     #[key]
     pub rage_id: u32,
-    pub contract_address: ContractAddress
+    pub contract_address: ContractAddress,
 }

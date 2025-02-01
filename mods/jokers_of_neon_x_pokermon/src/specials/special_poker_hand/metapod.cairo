@@ -9,7 +9,7 @@ pub mod special_metapod {
     #[abi(embed_v0)]
     impl SpecialMetapodImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, play_info: PlayInfo
+            ref self: ContractState, play_info: PlayInfo,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             ((0, 0, array![].span()), (4, 4, array![].span()), (0, 0, array![].span()))
         }

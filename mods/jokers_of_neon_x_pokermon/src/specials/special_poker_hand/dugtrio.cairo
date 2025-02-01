@@ -10,14 +10,14 @@ pub mod special_dugtrio {
     #[abi(embed_v0)]
     impl SpecialDugtrioImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, play_info: PlayInfo
+            ref self: ContractState, play_info: PlayInfo,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             if play_info.hand == PokerHand::ThreeOfAKind {
                 let mut cards = play_info.cards;
                 let has_low_card = loop {
                     match cards.pop_front() {
                         Option::Some((
-                            _, hit, card
+                            _, hit, card,
                         )) => {
                             if *hit
                                 && (*card.value == Value::Two
@@ -26,7 +26,7 @@ pub mod special_dugtrio {
                                 break true;
                             }
                         },
-                        Option::None => { break false; }
+                        Option::None => { break false; },
                     }
                 };
 
