@@ -60,7 +60,7 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_RANDOM_MULTI_FOR_HEART_ID,
         SPECIAL_RANDOM_MULTI_FOR_CLUB_ID,
         SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID,
-        SPECIAL_RANDOM_MULTI_FOR_SPADE_ID
+        SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
     ]
 }
 
@@ -91,7 +91,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_RANDOM_MULTI_FOR_HEART_ID,
         SPECIAL_RANDOM_MULTI_FOR_CLUB_ID,
         SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID,
-        SPECIAL_RANDOM_MULTI_FOR_SPADE_ID
+        SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
     ]
         .span();
 
@@ -108,7 +108,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_LUCKY_SEVEN_ID,
         SPECIAL_POINTS_FOR_FIGURES_ID,
         SPECIAL_DISCARD_MASTERY_ID,
-        SPECIAL_NEON_SYNERGY_ID
+        SPECIAL_NEON_SYNERGY_ID,
     ]
         .span();
 
@@ -119,11 +119,11 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
 
     assert(
         C_SPECIALS_PROBABILITY + B_SPECIALS_PROBABILITY + A_SPECIALS_PROBABILITY + S_SPECIALS_PROBABILITY == 100,
-        'wrong probability sum'
+        'wrong probability sum',
     );
     (
         array![C_SPECIALS, B_SPECIALS, A_SPECIALS, S_SPECIALS].span(),
         array![C_SPECIALS_PROBABILITY, B_SPECIALS_PROBABILITY, A_SPECIALS_PROBABILITY, S_SPECIALS_PROBABILITY].span(),
-        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST].span()
+        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST].span(),
     )
 }

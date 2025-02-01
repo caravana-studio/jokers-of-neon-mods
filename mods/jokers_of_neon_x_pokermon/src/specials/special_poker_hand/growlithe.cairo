@@ -9,7 +9,7 @@ pub mod special_growlithe {
     #[abi(embed_v0)]
     impl SpecialGrowlitheImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, game_context: GameContext
+            ref self: ContractState, game_context: GameContext,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             if game_context.hand == PokerHand::Flush {
                 ((0, 0, array![].span()), (8, 8, array![].span()), (0, 0, array![].span()))

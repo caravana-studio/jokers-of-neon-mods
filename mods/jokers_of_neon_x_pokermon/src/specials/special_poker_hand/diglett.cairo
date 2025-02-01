@@ -10,14 +10,14 @@ pub mod special_diglett {
     #[abi(embed_v0)]
     impl SpecialDiglettImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, game_context: GameContext
+            ref self: ContractState, game_context: GameContext,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             if game_context.hand == PokerHand::ThreeOfAKind {
                 let mut cards = game_context.cards_played;
                 let has_low_card = loop {
                     match cards.pop_front() {
                         Option::Some((
-                            hit, _, card
+                            hit, _, card,
                         )) => {
                             if *hit
                                 && (*card.value == Value::Two
@@ -26,7 +26,7 @@ pub mod special_diglett {
                                 break true;
                             }
                         },
-                        Option::None => { break false; }
+                        Option::None => { break false; },
                     }
                 };
 

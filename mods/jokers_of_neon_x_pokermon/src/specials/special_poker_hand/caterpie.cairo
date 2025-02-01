@@ -9,7 +9,7 @@ pub mod special_caterpie {
     #[abi(embed_v0)]
     impl SpecialCaterpieImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, game_context: GameContext
+            ref self: ContractState, game_context: GameContext,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             ((0, 0, array![].span()), (2, 2, array![].span()), (0, 0, array![].span()))
         }

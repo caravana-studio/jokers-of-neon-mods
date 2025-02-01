@@ -10,7 +10,7 @@ pub mod special_arbok {
     #[abi(embed_v0)]
     impl SpecialArbokImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, game_context: GameContext
+            ref self: ContractState, game_context: GameContext,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             if game_context.hand == PokerHand::Straight {
                 let mut cards = game_context.cards_played;
@@ -19,7 +19,7 @@ pub mod special_arbok {
                         Option::Some((hit, _, card)) => { if *hit && *card.value == Value::Ace {
                             break true;
                         } },
-                        Option::None => { break false; }
+                        Option::None => { break false; },
                     }
                 };
 

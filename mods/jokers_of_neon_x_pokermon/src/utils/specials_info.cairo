@@ -2,7 +2,7 @@
 pub mod specials_info {
     use dojo::world::Resource::Contract;
     use jokers_of_neon_lib::interfaces::info::specials_info::{
-        ISpecialsInfo, ISpecialsInfoDispatcher, ISpecialsInfoDispatcherTrait
+        ISpecialsInfo, ISpecialsInfoDispatcher, ISpecialsInfoDispatcherTrait,
     };
     use jokers_of_neon_x_pokermon::specials::specials::{specials_ids_all, specials_shop_info};
 

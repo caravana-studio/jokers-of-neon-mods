@@ -7,5 +7,5 @@ pub struct SpecialData {
     pub mod_id: felt252,
     #[key]
     pub special_id: u32,
-    pub contract_address: ContractAddress
+    pub contract_address: ContractAddress,
 }

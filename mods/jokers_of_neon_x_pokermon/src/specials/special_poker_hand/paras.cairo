@@ -9,7 +9,7 @@ pub mod special_paras {
     #[abi(embed_v0)]
     impl SpecialParasImpl of ISpecialPokerHand<ContractState> {
         fn execute(
-            ref self: ContractState, game_context: GameContext
+            ref self: ContractState, game_context: GameContext,
         ) -> ((i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>), (i32, i32, Span<(u32, i32)>)) {
             if game_context.hand == PokerHand::TwoPair {
                 ((0, 0, array![].span()), (1, 1, array![].span()), (0, 0, array![].span()))
