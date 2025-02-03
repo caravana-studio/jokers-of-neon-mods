@@ -2,11 +2,11 @@
 pub mod special_random_multi_for_heart {
     use dojo::{model::ModelStorage, world::WorldStorage};
     use jokers_of_neon_classic::specials::specials::SPECIAL_RANDOM_MULTI_FOR_HEART_ID;
+    use jokers_of_neon_lib::random::Nonce;
     use jokers_of_neon_lib::{
         interfaces::individual::ISpecialIndividual, models::data::card::{Card, Suit}, models::special_type::SpecialType,
         random::{RandomImpl, RandomTrait},
     };
-    use jokers_of_neon_lib::random::Nonce;
 
     const NONCE_KEY: felt252 = 'NONCE_KEY';
 
