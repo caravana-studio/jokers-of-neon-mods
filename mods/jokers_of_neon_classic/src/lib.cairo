@@ -33,7 +33,7 @@ mod specials {
         mod plus_discards;
         mod plus_plays;
     }
-    mod special_individual {
+    mod hit {
         mod joker_booster;
         mod lucky_hand;
         mod lucky_seven;
@@ -49,6 +49,8 @@ mod specials {
         mod random_multi_for_heart;
         mod random_multi_for_spade;
     }
+    mod miss {}
+    mod hand {}
     mod special_poker_hand {
         mod increase_level_double_pair;
         mod increase_level_five_of_a_kind;

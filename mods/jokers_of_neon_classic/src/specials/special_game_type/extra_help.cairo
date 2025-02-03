@@ -5,6 +5,13 @@ pub mod special_extra_help {
     use jokers_of_neon_lib::models::special_type::SpecialType;
     use jokers_of_neon_lib::models::status::game::game::Game;
 
+    use jokers_of_neon_classic::specials::specials::SPECIAL_JOKER_BOOSTER_ID;
+    use jokers_of_neon_lib::interfaces::{
+        base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
+    };
+    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}};
+
+
     #[abi(embed_v0)]
     impl SpecialExtraHelpImpl of ISpecialGameTypeSpecificType<ContractState> {
         fn equip(ref self: ContractState, game: Game) -> Game {

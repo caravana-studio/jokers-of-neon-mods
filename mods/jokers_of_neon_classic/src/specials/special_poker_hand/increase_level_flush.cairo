@@ -1,10 +1,10 @@
 #[dojo::contract]
 pub mod special_increase_level_flush {
     use jokers_of_neon_classic::specials::specials::SPECIAL_INCREASE_LEVEL_FLUSH_ID;
-    use jokers_of_neon_lib::interfaces::poker_hand::ISpecialPokerHand;
-    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
-    use jokers_of_neon_lib::models::special_type::SpecialType;
-    use jokers_of_neon_lib::models::tracker::GameContext;
+    use jokers_of_neon_lib::{
+        interfaces::specials::{IBaseSpecial, ISpecialExecutable},
+        models::{poker_hand::PokerHand, special_type::SpecialType, tracker::GameContext},
+    };
 
     #[abi(embed_v0)]
     impl SpecialIncreaseLevelFlushImpl of ISpecialPokerHand<ContractState> {
