@@ -68,7 +68,7 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_BELLSPROUT_ID,
         SPECIAL_WEEPINBELL_ID,
         SPECIAL_TENTACOOL_ID,
-        SPECIAL_TENTACRUEL_ID
+        SPECIAL_TENTACRUEL_ID,
     ]
 }
 
@@ -81,7 +81,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_WEEDLE_ID,
         SPECIAL_PARAS_ID,
         SPECIAL_BELLSPROUT_ID,
-        SPECIAL_MACHOP_ID
+        SPECIAL_MACHOP_ID,
     ]
         .span();
 
@@ -97,7 +97,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_JIGGLYPUFF_ID,
         SPECIAL_TENTACOOL_ID,
         SPECIAL_MACHOKE_ID,
-        SPECIAL_WEEPINBELL_ID
+        SPECIAL_WEEPINBELL_ID,
     ]
         .span();
 
@@ -120,7 +120,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_PRIMEAPE_ID,
         SPECIAL_PIKACHU_ID,
         SPECIAL_MEOWTH_ID,
-        SPECIAL_PSYDUCK_ID
+        SPECIAL_PSYDUCK_ID,
     ]
         .span();
 
@@ -128,6 +128,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     (
         array![C_SPECIALS, B_SPECIALS, A_SPECIALS].span(),
         array![C_SPECIALS_PROBABILITY, B_SPECIALS_PROBABILITY, A_SPECIALS_PROBABILITY].span(),
-        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST].span()
+        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST].span(),
     )
 }

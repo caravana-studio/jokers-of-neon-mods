@@ -11,7 +11,7 @@ const JOKER_LOOT_BOX_ID: u32 = 3;
 const EMPTY_PACK_ID: u32 = 999;
 
 fn loot_boxes_ids_all() -> Array<u32> {
-    array![BASIC_LOOT_BOX_ID, ADVANCED_LOOT_BOX_ID, JOKER_LOOT_BOX_ID,]
+    array![BASIC_LOOT_BOX_ID, ADVANCED_LOOT_BOX_ID, JOKER_LOOT_BOX_ID]
 }
 
 fn BASIC_LOOT_BOX() -> LootBox {
@@ -27,7 +27,7 @@ fn BASIC_LOOT_BOX() -> LootBox {
             modifiers_ids_all().span(),
             array![JOKER_CARD].span(),
             array![NEON_JOKER_CARD].span(),
-            traditional_cards_all().span()
+            traditional_cards_all().span(),
         ]
             .span(),
         probs: array![100, 2, 5, 4, 1, 88].span(),
@@ -46,7 +46,7 @@ fn ADVANCED_LOOT_BOX() -> LootBox {
             modifiers_ids_all().span(),
             array![JOKER_CARD].span(),
             array![NEON_JOKER_CARD].span(),
-            traditional_cards_all().span()
+            traditional_cards_all().span(),
         ]
             .span(),
         probs: array![100, 4, 10, 8, 2, 76].span(),
@@ -60,7 +60,7 @@ fn JOKER_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 5,
         cards: array![
-            array![].span(), array![JOKER_CARD].span(), array![NEON_JOKER_CARD].span(), traditional_cards_all().span()
+            array![].span(), array![JOKER_CARD].span(), array![NEON_JOKER_CARD].span(), traditional_cards_all().span(),
         ]
             .span(),
         probs: array![100, 29, 1, 70].span(),
@@ -91,7 +91,7 @@ fn loot_boxes_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     (
         array![C_LOOT_BOX, B_LOOT_BOX, A_LOOT_BOX].span(),
         array![C_LOOT_BOX_PROBABILITY, B_LOOT_BOX_PROBABILITY, A_LOOT_BOX_PROBABILITY].span(),
-        array![C_LOOT_BOX_COST, B_LOOT_BOX_COST, A_LOOT_BOX_COST].span()
+        array![C_LOOT_BOX_COST, B_LOOT_BOX_COST, A_LOOT_BOX_COST].span(),
     )
 }
 fn get_loot_box(loot_box_id: u32) -> LootBox {

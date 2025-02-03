@@ -10,7 +10,7 @@ trait IRageManager<T> {
 #[dojo::contract]
 pub mod rage_manager {
     use dojo::world::{IWorldDispatcher, IWorldDispatcherTrait};
-    use jokers_of_neon_mods::{models::{game_mod::GameMod, rage_data::RageData}, store::{StoreTrait, StoreImpl}};
+    use jokers_of_neon_mods::{models::{game_mod::GameMod, rage_data::RageData}, store::{StoreImpl, StoreTrait}};
     use starknet::{ContractAddress, get_caller_address};
 
     #[abi(embed_v0)]
@@ -25,7 +25,7 @@ pub mod rage_manager {
         }
 
         fn register_rages(
-            ref self: ContractState, mod_id: felt252, rage_ids: Span<u32>, contract_addresses: Span<ContractAddress>
+            ref self: ContractState, mod_id: felt252, rage_ids: Span<u32>, contract_addresses: Span<ContractAddress>,
         ) {
             assert(rage_ids.len() == contract_addresses.len(), 'Invalid length of special cards');
             let mut rage_ids = rage_ids;
@@ -35,7 +35,7 @@ pub mod rage_manager {
                     Option::Some(rage_id) => {
                         self.register_rage(mod_id, *rage_id, *(contract_addresses.pop_front()).unwrap());
                     },
-                    Option::None => { break; }
+                    Option::None => { break; },
                 };
             }
         }
