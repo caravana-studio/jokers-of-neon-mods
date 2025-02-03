@@ -70,6 +70,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
             SS_SPECIALS_PROBABILITY,
         ]
             .span(),
-        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST, SS_SPECIALS_COST].span()
+        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST, SS_SPECIALS_COST].span(),
     )
 }
