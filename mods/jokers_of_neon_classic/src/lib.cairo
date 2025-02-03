@@ -27,6 +27,9 @@ mod rages {
 
 mod specials {
     mod specials;
+    mod special_discard {
+        mod retired_joker;
+    }
     mod special_game_type {
         mod extra_help;
         mod hand_thief;
