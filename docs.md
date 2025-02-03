@@ -91,8 +91,8 @@ This card type executes once per round, evaluating the poker hand formed during 
 _Example: Grant 20 points and 4 multiplier for a "Two Pairs" poker hand._
 
 ```rust
-fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
-    if play_info.hand == PokerHand::TwoPair {
+fn execute(ref self: ContractState, game_context: GameContext) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
+    if game_context.hand == PokerHand::TwoPair {
         ((20, array![].span()), (4, array![].span()), (0, array![].span()))
     } else {
         ((0, array![].span()), (0, array![].span()), (0, array![].span()))

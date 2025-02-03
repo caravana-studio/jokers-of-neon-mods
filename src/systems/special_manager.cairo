@@ -4,7 +4,7 @@ use starknet::ContractAddress;
 trait ISpecialManager<T> {
     fn register_special(ref self: T, mod_id: felt252, special_id: u32, contract_address: ContractAddress);
     fn register_specials(
-        ref self: T, mod_id: felt252, special_ids: Span<u32>, contract_addresses: Span<ContractAddress>
+        ref self: T, mod_id: felt252, special_ids: Span<u32>, contract_addresses: Span<ContractAddress>,
     );
     fn get_special_address(self: @T, mod_id: felt252, special_id: u32) -> ContractAddress;
 }
@@ -12,13 +12,13 @@ trait ISpecialManager<T> {
 #[dojo::contract]
 pub mod special_manager {
     use dojo::world::{IWorldDispatcher, IWorldDispatcherTrait};
-    use jokers_of_neon_mods::{models::{game_mod::GameMod, special_data::SpecialData}, store::{StoreTrait, StoreImpl}};
+    use jokers_of_neon_mods::{models::{game_mod::GameMod, special_data::SpecialData}, store::{StoreImpl, StoreTrait}};
     use starknet::{ContractAddress, get_caller_address};
 
     #[abi(embed_v0)]
     impl SpecialManagerImpl of super::ISpecialManager<ContractState> {
         fn register_special(
-            ref self: ContractState, mod_id: felt252, special_id: u32, contract_address: ContractAddress
+            ref self: ContractState, mod_id: felt252, special_id: u32, contract_address: ContractAddress,
         ) {
             let mut world = self.world(@"jokers_of_neon_mods");
             let mut store = StoreTrait::new(ref world);
@@ -29,7 +29,7 @@ pub mod special_manager {
         }
 
         fn register_specials(
-            ref self: ContractState, mod_id: felt252, special_ids: Span<u32>, contract_addresses: Span<ContractAddress>
+            ref self: ContractState, mod_id: felt252, special_ids: Span<u32>, contract_addresses: Span<ContractAddress>,
         ) {
             assert(special_ids.len() == contract_addresses.len(), 'Invalid length of special cards');
             let mut special_ids = special_ids;
@@ -39,7 +39,7 @@ pub mod special_manager {
                     Option::Some(special_id) => {
                         self.register_special(mod_id, *special_id, *(contract_addresses.pop_front()).unwrap());
                     },
-                    Option::None => { break; }
+                    Option::None => { break; },
                 };
             }
         }
