@@ -30,8 +30,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // C-Grade Group
     let C_SPECIALS_PROBABILITY = 45;
     let C_SPECIALS_COST = 1000;
-    let C_SPECIALS = array![SPECIAL_MULTI_FOR_HEART_ID, SPECIAL_MULTI_FOR_SPADE_ID]
-        .span();
+    let C_SPECIALS = array![SPECIAL_MULTI_FOR_HEART_ID, SPECIAL_MULTI_FOR_SPADE_ID].span();
 
     // B-Grade Group
     let B_SPECIALS_PROBABILITY = 25;
@@ -41,10 +40,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // A-Grade Group
     let A_SPECIALS_PROBABILITY = 15;
     let A_SPECIALS_COST = 3500;
-    let A_SPECIALS = array![
-        SPECIAL_INITIAL_ADVANTAGE_ID, SPECIAL_SCORE_ODD_ID
-    ]
-        .span();
+    let A_SPECIALS = array![SPECIAL_INITIAL_ADVANTAGE_ID, SPECIAL_SCORE_ODD_ID].span();
 
     // S-Grade Group
     let S_SPECIALS_PROBABILITY = 10;
@@ -55,7 +51,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     let SS_SPECIALS_PROBABILITY = 5;
     let SS_SPECIALS_COST = 7000;
     let SS_SPECIALS = array![
-        SPECIAL_HAND_THIEF_ID, SPECIAL_POWER_UP_BOOSTER_ID, SPECIAL_INCREASE_LEVEL_THREE_OF_A_KIND_ID
+        SPECIAL_HAND_THIEF_ID, SPECIAL_POWER_UP_BOOSTER_ID, SPECIAL_INCREASE_LEVEL_THREE_OF_A_KIND_ID,
     ]
         .span();
 
@@ -65,7 +61,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
             + A_SPECIALS_PROBABILITY
             + S_SPECIALS_PROBABILITY
             + SS_SPECIALS_PROBABILITY == 100,
-        'wrong probability sum'
+        'wrong probability sum',
     );
     (
         array![C_SPECIALS, B_SPECIALS, A_SPECIALS, S_SPECIALS, SS_SPECIALS].span(),
@@ -74,10 +70,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
             B_SPECIALS_PROBABILITY,
             A_SPECIALS_PROBABILITY,
             S_SPECIALS_PROBABILITY,
-            SS_SPECIALS_PROBABILITY
+            SS_SPECIALS_PROBABILITY,
         ]
             .span(),
-        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST, SS_SPECIALS_COST]
-            .span()
+        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST, SS_SPECIALS_COST].span(),
     )
 }
