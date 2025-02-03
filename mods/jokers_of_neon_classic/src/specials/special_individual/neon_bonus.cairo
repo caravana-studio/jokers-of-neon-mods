@@ -3,7 +3,6 @@ pub mod special_neon_bonus {
     use jokers_of_neon_classic::specials::specials::SPECIAL_NEON_BONUS_ID;
     use jokers_of_neon_lib::interfaces::individual::ISpecialIndividual;
     use jokers_of_neon_lib::models::data::card::Card;
-    use jokers_of_neon_lib::models::play_info::PlayInfo;
     use jokers_of_neon_lib::models::special_type::SpecialType;
 
     #[abi(embed_v0)]
