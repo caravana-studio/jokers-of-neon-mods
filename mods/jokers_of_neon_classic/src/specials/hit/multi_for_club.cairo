@@ -15,7 +15,7 @@ pub mod special_multi_for_club {
 
     #[abi(embed_v0)]
     impl MultiClubExecutable of ISpecialExecutable<ContractState> {
-        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             (0, 2, 0)
         }
     }

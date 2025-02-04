@@ -6,7 +6,7 @@ pub mod special_initial_advantage {
 
     #[abi(embed_v0)]
     impl PowerUpBoosterExecutable of ISpecialExecutable<ContractState> {
-        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             if context.round.remaining_plays.into() == context.game.plays {
                 (100, 10, 0)
             } else {

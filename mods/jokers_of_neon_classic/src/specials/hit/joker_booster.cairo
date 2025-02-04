@@ -15,8 +15,9 @@ pub mod special_joker_booster {
 
     #[abi(embed_v0)]
     impl JokerBoosterExecutable of ISpecialExecutable<ContractState> {
-        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
-            (100, 1, 0)
+        fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+            let joker_card: Card = raw_data.into();
+            ((joker_card.points * 2).try_into().unwrap(), (joker_card.multi_add * 2).try_into().unwrap(), 0)
         }
     }
 

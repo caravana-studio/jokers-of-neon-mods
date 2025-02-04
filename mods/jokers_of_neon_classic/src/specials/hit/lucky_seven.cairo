@@ -15,7 +15,7 @@ pub mod special_lucky_seven {
 
     #[abi(embed_v0)]
     impl LuckySevenExecutable of ISpecialExecutable<ContractState> {
-        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             (77, 0, 0)
         }
     }

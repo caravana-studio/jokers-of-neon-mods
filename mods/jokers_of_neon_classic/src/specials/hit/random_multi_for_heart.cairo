@@ -18,7 +18,7 @@ pub mod special_random_multi_for_heart {
 
     #[abi(embed_v0)]
     impl RandomMultiHeartExecutable of ISpecialExecutable<ContractState> {
-        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(@"jokers_of_neon_classic");
             let mut nonce: Nonce = world.read_model(NONCE_KEY);
             let mut random = RandomImpl::new_salt(nonce.value);
