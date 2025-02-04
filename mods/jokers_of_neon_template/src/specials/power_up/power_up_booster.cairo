@@ -8,7 +8,7 @@ mod special_power_up_booster {
     impl PowerUpBoosterExecutable of ISpecialExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let power_up: PowerUp = raw_data.into();
-            ((power_up.points * 2).try_into().unwrap(), (power_up.points * 3).try_into().unwrap(), 0)
+            ((power_up.points * 2).try_into().unwrap(), (power_up.points * 2).try_into().unwrap(), 0)
         }
     }
 

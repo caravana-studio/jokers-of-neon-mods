@@ -1,30 +1,28 @@
 #[dojo::contract]
-pub mod rage_diminished_hold {
-    use jokers_of_neon_classic::rages::rages::RAGE_CARD_DIMINISHED_HOLD;
-    use jokers_of_neon_lib::{
-        interfaces::{base::ICardBase, specials::equipable::ISpecialEquipable},
-        models::{card_type::CardType, tracker::GameContext},
-    };
+pub mod special_extra_help {
+    use jokers_of_neon_classic::specials::specials::SPECIAL_EXTRA_HELP_ID;
+    use jokers_of_neon_lib::interfaces::{base::ICardBase, specials::{equipable::ISpecialEquipable}};
+    use jokers_of_neon_lib::models::{card_type::CardType, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl DiminishedHoldEquipable of ISpecialEquipable<ContractState> {
+    impl ExtraHelpExecutable of ISpecialEquipable<ContractState> {
         fn equip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut context = context;
-            context.game.hand_len -= 2;
+            context.game.hand_len += 2;
             context
         }
 
         fn unequip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut context = context;
-            context.game.hand_len += 2;
+            context.game.hand_len -= 2;
             context
         }
     }
 
     #[abi(embed_v0)]
-    impl DiminishedHoldBase of ICardBase<ContractState> {
+    impl ExtraHelpBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            RAGE_CARD_DIMINISHED_HOLD
+            SPECIAL_EXTRA_HELP_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {

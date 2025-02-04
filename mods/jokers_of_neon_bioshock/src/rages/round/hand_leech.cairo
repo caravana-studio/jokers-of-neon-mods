@@ -1,27 +1,32 @@
 #[dojo::contract]
 pub mod rage_hand_leech {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_HAND_LEECH;
-    use jokers_of_neon_lib::interfaces::rage::{base::IRageBase, round::IRageRound};
-    use jokers_of_neon_lib::models::rage_type::RageType;
-    use jokers_of_neon_lib::models::status::round::round::Round;
+    use jokers_of_neon_lib::{
+        interfaces::{base::ICardBase, specials::equipable::ISpecialEquipable},
+        models::{card_type::CardType, tracker::GameContext},
+    };
 
     #[abi(embed_v0)]
-    impl RageHandLeechImpl of IRageRound<ContractState> {
-        fn apply(self: @ContractState, round: Round) -> Round {
-            let mut round = round;
-            round.remaining_plays -= 2;
-            round
+    impl HandLeechEquipable of ISpecialEquipable<ContractState> {
+        fn equip(ref self: ContractState, context: GameContext) -> GameContext {
+            let mut context = context;
+            context.round.remaining_plays -= 2;
+            context
+        }
+
+        fn unequip(ref self: ContractState, context: GameContext) -> GameContext {
+            context
         }
     }
 
     #[abi(embed_v0)]
-    impl RageHandLeechBase of IRageBase<ContractState> {
+    impl HandLeechBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             RAGE_CARD_HAND_LEECH
         }
 
-        fn get_types(self: @ContractState) -> RageType {
-            RageType::Round
+        fn get_types(self: @ContractState) -> Span<CardType> {
+            array![CardType::Round].span()
         }
     }
 }

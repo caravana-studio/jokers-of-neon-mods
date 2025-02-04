@@ -1,12 +1,13 @@
 #[dojo::contract]
 pub mod rage_silent_jokers {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_SILENT_JOKERS;
-    use jokers_of_neon_lib::interfaces::rage::{base::IRageBase, silence::IRageSilence};
-    use jokers_of_neon_lib::models::data::card::{Suit, Value};
-    use jokers_of_neon_lib::models::rage_type::RageType;
+    use jokers_of_neon_lib::{
+        interfaces::{base::ICardBase, rages::silence::IRageSilence},
+        models::{card_type::CardType, data::card::{Suit, Value}, tracker::GameContext},
+    };
 
     #[abi(embed_v0)]
-    impl RageSilenceJokersImpl of IRageSilence<ContractState> {
+    impl SilenceJokersImpl of IRageSilence<ContractState> {
         fn silenced_suits(self: @ContractState) -> Span<Suit> {
             array![Suit::Joker].span()
         }
@@ -21,13 +22,13 @@ pub mod rage_silent_jokers {
     }
 
     #[abi(embed_v0)]
-    impl RageSilenceJokersBase of IRageBase<ContractState> {
+    impl SilenceJokersBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             RAGE_CARD_SILENT_JOKERS
         }
 
-        fn get_types(self: @ContractState) -> RageType {
-            RageType::Silence
+        fn get_types(self: @ContractState) -> Span<CardType> {
+            array![CardType::Silence].span()
         }
     }
 }
