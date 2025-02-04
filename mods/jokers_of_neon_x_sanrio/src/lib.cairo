@@ -27,15 +27,14 @@ mod rages {
 
 mod specials {
     mod specials;
-    mod special_game_type {}
-    mod special_individual {
+    mod hit {
         mod fibonacci_joker;
         mod gluttonous_joker;
         mod greedy_joker;
         mod lusty_joker;
         mod wrathful_joker;
     }
-    mod special_poker_hand {
+    mod poker_hand {
         mod clever_joker;
         mod crafty_joker;
         mod crazy_joker;
@@ -49,8 +48,7 @@ mod specials {
         mod wily_joker;
         mod zany_joker;
     }
-    mod special_power_up {}
-    mod special_round_state {
+    mod round {
         mod banner_joker;
         mod mystic_summit_joker;
     }

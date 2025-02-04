@@ -1252,7 +1252,7 @@
   },
   "contracts": [
     {
-      "address": "0x4a3f6391931d4c545c266414ab654b747b0ffc3e6abe9b3799b9cf323e567ab",
+      "address": "0x1640ae6a1cf4ef44db1f5e75bc6922ba01b9cf1a59df2ccdb0a2fd8ca915150",
       "class_hash": "0x4cc3bb29c03e3f162d1584f1df991e67b8060498ae8573549e3fdef8e8fe7d7",
       "abi": [
         {
@@ -1443,15 +1443,15 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-card_info",
-      "selector": "0x69920f6508648e1a4fbd48a1b7e027c96406b0f7d8c73a8869bc23f194f8f56",
+      "tag": "jokers_of_neon_x_balatro-card_info",
+      "selector": "0xc5082357b56918ba5531e9696fe63c9485423b088a5768b3cbe52c9f123afe",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0xc51d78c9770c8ce88a5b918410604f2800d48b9099d0df0a9d039c4e4ece08",
-      "class_hash": "0x3993340b83f4ec87d6e44f5b3298fa06672847e2d720b41effd54697d69e61",
+      "address": "0x3e8dd8cc8f779efe1e4032c11f33929c29cd5c9f1b40d824f982bf6aff6a08f",
+      "class_hash": "0x2587800253906f1b51a9d1a25dfce77c681c624384d6329ef63ca2810f91431",
       "abi": [
         {
           "type": "impl",
@@ -1683,14 +1683,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-game_config",
-      "selector": "0x4729b464ae0a973d161263470fbb6c9dad3335167786d1424ed033b90d4abdd",
+      "tag": "jokers_of_neon_x_balatro-game_config",
+      "selector": "0x232659a311230ca3db163518bde2bb873106fec954f5419bffa4734483e225f",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x29f0c01498391411f526a8c3a0cd29c3c8a90a346ef867f0b817c4ec57b4239",
+      "address": "0x36454e6a80177106e2cbd973e559101a7eca97ebbd255f2c1701864b7e298ba",
       "class_hash": "0xe652c66c3e063f38af35a77368c8703fd34e7798d7c3294e2f7e66d105cde8",
       "abi": [
         {
@@ -1962,14 +1962,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-loot_boxes_info",
-      "selector": "0x3d7120b521f6de7ceb46fa2de83025219d619395e043d20246d26908e94cab8",
+      "tag": "jokers_of_neon_x_balatro-loot_boxes_info",
+      "selector": "0x1f5da1cd7abce5407835b02b9ca276f3962428159bb88bb4f6de6713b2c620e",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x74baf520a5de005257e2215002722ffdab1bfe79adbceb1a4bafe259051d520",
+      "address": "0x317f684250d480048baebb54a03f9e251e79056fd78244f880f4e8d80dc597",
       "class_hash": "0x4ba4ff9733cfdc535968f373468a02b96cfc8c16e7d9cbc06e1cfba1a268e20",
       "abi": [
         {
@@ -2178,14 +2178,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-play_rules_config",
-      "selector": "0x7c3da9d68b35d9103f41bb511e9b31786c81a2baf1f18d75d78b493aadb5dfa",
+      "tag": "jokers_of_neon_x_balatro-play_rules_config",
+      "selector": "0x541f08e4aacbb72786a8c01d4c3fd3a3a29de2f8a85a4f6fe17efb55bb80f24",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0xf4cff6e07a1881438c26cbde57dc5e474ff21daa241b3b9200cf50596f7ea6",
+      "address": "0x1870598b482127c8bc72bc79cc3128eb99a50ed133b2862939b321224f559a",
       "class_hash": "0xcdf9517d655f4dd51899995dac99e47a787c571fb25c0e579ebe55a5624e89",
       "abi": [
         {
@@ -2532,14 +2532,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-rage_diminished_hold",
-      "selector": "0x74f8808a1cb81956cc1be72a1762c7f1388a39cb5eaed6e1ee228d9488611b6",
+      "tag": "jokers_of_neon_x_balatro-rage_diminished_hold",
+      "selector": "0x4eb47b3a0bee7e7d28f1700dce56008193690fbac9a726e33144b2f36cf4183",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x464c40e257be612bc2cec1d907a479512850595a26b78379870d463c1d05354",
+      "address": "0x4a477693c69d9fa851612e3a2f7d0e16dd409bf49949cf18221021c44a2317",
       "class_hash": "0x43488fbf16c7a3532c09e6c0ca902a3dcc9e891e21130be5c0a1c55ac434d46",
       "abi": [
         {
@@ -2816,14 +2816,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-rage_hand_leech",
-      "selector": "0x7f334c43be93f66f93566f4cac1622cb9f0a83de1c1e99e0a8dd0606654d9d7",
+      "tag": "jokers_of_neon_x_balatro-rage_hand_leech",
+      "selector": "0x68224d267869696cc525dac8446b37e55a6e4c3c0b2e4bce8e8329559756ae9",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x1cb7094c9f8af86ca7cea43959f8c09b397ccabaa45f8b7ec5ea027f7cd85b8",
+      "address": "0x7d2e046b1f40ff70463981727a64a779e647fdaa12aba39ae4da4c5561aae29",
       "class_hash": "0x94b616b37c352d8a36d48371ac9eb262d20a8c7066a0079cb52f3f6ca49df3",
       "abi": [
         {
@@ -3229,14 +3229,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-rage_silent_clubs",
-      "selector": "0x6316739c1981e84831e08dd4f9901e03fdee8b6d571a6ef369b48ed353d4dda",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_clubs",
+      "selector": "0x7f86b7e75cbcc6cc53eeb9bba5e12f52a3516695b55a84f4c93e000f491dc3b",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x21bb5f4d79f4bc3c0af6d45b9daf8f6091ede5e22e6e3cc34c6a3b3c224963d",
+      "address": "0x5192acf4a89acce810d0f197de71320c5cb8a580401fb6eecac13dcb1245c59",
       "class_hash": "0xed46e66bee2b1df028c9bf77265cf300c32e3893d3edcde92dc433d5c249fd",
       "abi": [
         {
@@ -3642,14 +3642,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-rage_silent_diamonds",
-      "selector": "0x81bcc40a922257b97ac31ba94665836afe9db2848b3ce33713c57a648a4910",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_diamonds",
+      "selector": "0x57cc27f2cdfc407b648a1cc6c9e2be1ee84f14180ada250050733f891ec45e5",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x3c1250bed20fa0eb815e2988b722c567981d4683e4214493c8bb009cdb5811d",
+      "address": "0x49b1f29a7d4793e81f45d5667459bb0f01997d6fec7710200c722e7bff3c736",
       "class_hash": "0x7dce2533e83b303beb34d340582e8e6715c804b7df95ed0c6832ec4f1b7405b",
       "abi": [
         {
@@ -4055,14 +4055,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-rage_silent_figures",
-      "selector": "0x28f2c7a82892a27ce73a90b7a378cd4c9f649b8a6eba5d7f3a64c81a77d1b12",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_figures",
+      "selector": "0x3034332d53c2a7c57374821ad9d02f5e7a4ae004b5d039e8807afc9b3fd6894",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x1e9f3af7ec0fd2b708f1620ef45cb674ead4b3e97530404f00d73263432b670",
+      "address": "0x562fd81665ec6405182bbe4dc9af62b866ceab9b9559af266f57d11d369dcaa",
       "class_hash": "0x3e2441d3024e7f9bdd3841aee7d1d8c55d95803a16f51557bf68341fa3e65e9",
       "abi": [
         {
@@ -4468,14 +4468,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-rage_silent_hearts",
-      "selector": "0xa4aa147b5f901be3aecfbe16e673b72f805b948bd16d567174ecfddbc2bc10",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_hearts",
+      "selector": "0x60dcaa16a186d8742216d7c1ce7cab8d46889a2aede780ccbacde33a97ce812",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x10fb28df086e158ffb3e80d721ecc4a48140cbeaa7f551c7a9eff6cd36a5a10",
+      "address": "0x3bf5f427eb4eae01f40c7ce90cd7666b7c2a1d3870d6a8548929cd8415747d",
       "class_hash": "0x38903aeda8a2b2622c669c604b11e6ab8ab3676db34527d7549309d4e8cf269",
       "abi": [
         {
@@ -4881,14 +4881,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-rage_silent_jokers",
-      "selector": "0x169003dc448b83828b0dddcf3e02c07691dd9cfd37d791633117212f44b7e55",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_jokers",
+      "selector": "0x240e50518326faf83ad163d4cd2cc261ae503909e3c93ed8d14c18bd8dba49d",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0xfe9a55273821891b02dbc7a85a57b7de5932d61f4b5ac741b86fc10b50837f",
+      "address": "0x2c5243d4cde3dcd9067b64aa1a2cda25ef1ad651063e16400e2be81bb4283fc",
       "class_hash": "0x4ade226002dfa4fde18ea377009028fd5bb9cd419c47335f005801938070736",
       "abi": [
         {
@@ -5294,14 +5294,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-rage_silent_spades",
-      "selector": "0x32d946fe7acf6231dd9c36fda61f9c6adeb14e5cf7dab4afbd2ea1dd60b24a4",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_spades",
+      "selector": "0x399153abccd2f7c7e728f5619c309b2dbea0642731a3cf4f5b92c65ef5e7e89",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x4875e89391db33ab018881efef48bfb97aec9dda9cacbd28d511e4ad6755682",
+      "address": "0x4aaac00dadce5a225f8f252700ccd19b11c34c99213cf8c0e55f98040b992c7",
       "class_hash": "0x5f082c0addd2d4935b54fb2b83fb72c3566f744bb1a2849ff180b000d77cb42",
       "abi": [
         {
@@ -5648,14 +5648,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-rage_strategic_quarted",
-      "selector": "0x738a8b9c3ced3a6cbd8b1b230e4d60b5dcb6caf32eb07263e5e392f3d434f5d",
+      "tag": "jokers_of_neon_x_balatro-rage_strategic_quarted",
+      "selector": "0x3efe4755fd14176dd9facf518eebbda10895968041b81bd3d578694be398b91",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x9f8ce8e505803efcf200c6a8d940074179dfd29f3ac23ba80c3daf555d518b",
+      "address": "0x493b125bbf0a241e41cbf21097f71aa5d8de46df52c94245a9390611efc5ec0",
       "class_hash": "0x45cf6156f2619d76703d9d8d5af073c1931103b64d116fc2f789b6861034ab4",
       "abi": [
         {
@@ -5932,14 +5932,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-rage_zero_waste",
-      "selector": "0xa1ae7fb739a801caa84ce8a936917b2c022b40c410915515154b12a2e49d62",
+      "tag": "jokers_of_neon_x_balatro-rage_zero_waste",
+      "selector": "0x2874e6496e47992d6c40015beeb87f103868c32d19e09f84652fe912521a65c",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0xa255044290900f26baada959bcdf96964af55e7c0d9beaf6a5fd4809e56724",
+      "address": "0x6e0927b798b1e4a2ffb1362100582191365a7c4bd36cae7305f16f72443c2d3",
       "class_hash": "0x224632282c88360c500fadc5e22ba44846d1b3ca33ca7d39844889388d91de2",
       "abi": [
         {
@@ -6130,15 +6130,15 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-rages_info",
-      "selector": "0x1d7553b9591c0667682a91d4961b5998a8912df6d2e79341e8780c31df41826",
+      "tag": "jokers_of_neon_x_balatro-rages_info",
+      "selector": "0x2862200978ff809f08dcacf93d671772d8078636e0fb38f32845ee016dcf63a",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x786b0d2d4e94f70e37cd5c343ef6c008dc062d5c71700b933e5a75eee3c6d30",
-      "class_hash": "0x6d263df47469a5ee23c225b04d2ebb4e4d696f4506d325a74af548482af01c9",
+      "address": "0x792cd7b9a2cecbc6de94ddae398be415077fa5bc5cd37b6778e590fad9adfe6",
+      "class_hash": "0x363f704d92c079f7e4865a82cfd12b064390e38a02e6300c530ebec9c6c5102",
       "abi": [
         {
           "type": "impl",
@@ -6358,15 +6358,15 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-shop_config",
-      "selector": "0x264ca24be3cf7f7236e04997851cecad82225756c51935d14b9ba69257660a6",
+      "tag": "jokers_of_neon_x_balatro-shop_config",
+      "selector": "0x22b3d3f1be656f2ee82e417436018573c965e679e69fd693a510aee7dd09186",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x1cc83473c0614ea9514fe9384a2147b7a04a9128c25434bf54348fee91fc74e",
-      "class_hash": "0x62b4eaa0abb83018f585bfa44e1e72eee3ef1002fbdec44b718219f57e14830",
+      "address": "0x7cae728d44cb2471b214f895159ae28d175bdc24bc2985313e7416ed867c8b6",
+      "class_hash": "0xbcc8d6096f1a3d0da0cfd049bbe29b8902dffffaa8344b68c46f072c2c5bbc",
       "abi": [
         {
           "type": "impl",
@@ -6759,8 +6759,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_banner_joker",
-      "selector": "0x601c59a35a24cc308dd8377d703b38a666877100ddec20a1bc7a079a27554c7",
+      "tag": "jokers_of_neon_x_balatro-special_banner_joker",
+      "selector": "0x555b690228167225621abd80147ef0e1a5a53971bbefcc9a54ea52517fad2cc",
       "systems": [
         "execute",
         "get_id",
@@ -6769,7 +6769,7 @@
       ]
     },
     {
-      "address": "0x2c52e466ce3ffb79e2679db628d0d27a5b04b499a4591cf55aed790e70e57f3",
+      "address": "0x5b3c525df4decb954e9edac2339e3a3d22481fda2b860d75f9d7d552c8d4586",
       "class_hash": "0x3cf411c851ffa71e5fa815aedc375f4bdd7fdb4ee59ef219494332c125cce3d",
       "abi": [
         {
@@ -7293,8 +7293,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_clever_joker",
-      "selector": "0x2916614932c2158e45cac3552ccb173778c813254b09322a724f1672d37579b",
+      "tag": "jokers_of_neon_x_balatro-special_clever_joker",
+      "selector": "0x52bfa4952b8484db902a277e20d1aaa4894111ccece2571751f7720b32b1ab8",
       "systems": [
         "execute",
         "get_id",
@@ -7303,8 +7303,8 @@
       ]
     },
     {
-      "address": "0x1872f2cc48a5fa54801795fb90c7adce83ee02773dc4ce8ab23412c56ff8d38",
-      "class_hash": "0x2c9018b605c985aed63c1b695f71d492fd398c3b4b39a89e4bbf8b99335d7b6",
+      "address": "0x6765379421141a2c8dc5e01e708576aea5806631a04139867d43a3611e06c58",
+      "class_hash": "0xe6aac1f3f4b50c5e3c1fada89e7e8f4d9e508c3ec75c877e45cc143874c43b",
       "abi": [
         {
           "type": "impl",
@@ -7827,8 +7827,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_crafty_joker",
-      "selector": "0x7d67a1e9f471b487b66f343bc0f45ea9051acd1d6c63c31c2e43d18522361a7",
+      "tag": "jokers_of_neon_x_balatro-special_crafty_joker",
+      "selector": "0x77454ff8e8b35d9df870a127c2399925a580be317ea5259e9f49919d16740a2",
       "systems": [
         "execute",
         "get_id",
@@ -7837,7 +7837,7 @@
       ]
     },
     {
-      "address": "0x74f9eb0f114da5939f3219ff3240736ee5c17910b8ef2f7f6d8cd045759ef55",
+      "address": "0x631697d8aa1034ce6f248e327220a955dad7877c0303d08807154ee731b53f6",
       "class_hash": "0x5d51670937f83c5b1b2f72305cea8482022780731196f5db85d2ed45c56fa6c",
       "abi": [
         {
@@ -8361,8 +8361,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_crazy_joker",
-      "selector": "0x29277b58661bda99c0e887ca8f4fb5672ad01e8536ce3626511c99d117ac6f7",
+      "tag": "jokers_of_neon_x_balatro-special_crazy_joker",
+      "selector": "0x30ed8935b136dcb402e37034e8b5c24d2107b09bce5d483e2548c2bb2087b11",
       "systems": [
         "execute",
         "get_id",
@@ -8371,8 +8371,8 @@
       ]
     },
     {
-      "address": "0x707676345ca6005954eb57589957fe0fff7826851fe1e278b14006be2e4ba14",
-      "class_hash": "0x274a2f73c6b54694241b6c438fe8ce6ad59ba9493ffc63e576322c401904e44",
+      "address": "0x4a93a8b5cfc1b47c59a8e1351bdca6f96b5169bd5c770c7212609e234f41b32",
+      "class_hash": "0x2261a284d122c3c9be7ae729d78124b77861ceccd907db8e2b44cf0c2eb50ef",
       "abi": [
         {
           "type": "impl",
@@ -8895,8 +8895,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_devious_joker",
-      "selector": "0x3a0a5868ee5129c5476c0fa29c208851e823d8de4fa1d42a5f3068421056601",
+      "tag": "jokers_of_neon_x_balatro-special_devious_joker",
+      "selector": "0x1f7799bd3c75ac04f515c9e5ab722a1afda6904e705040fb6c571e9d187ad72",
       "systems": [
         "execute",
         "get_id",
@@ -8905,8 +8905,8 @@
       ]
     },
     {
-      "address": "0x1abb233d448779fa52781f6ee6ce1f39f864e5ead3434e266ac0ffc1ca4a548",
-      "class_hash": "0x3151010708f007812de3a8f438679248049f792e2ff5a23ec84e3e79fa1d69",
+      "address": "0xcbd2af5d90c32d91619097d67c69374abec0134db855dbc3b6cfa514f2adb",
+      "class_hash": "0x45fa9e71cd69b3f6c56ae83ab63a60848e18ca6e190d3a38eb232990e401cbe",
       "abi": [
         {
           "type": "impl",
@@ -9429,8 +9429,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_droll_joker",
-      "selector": "0x5228f9da7e2d2c6b1d07675908347a4737498874aee5cea48e44c194fb32744",
+      "tag": "jokers_of_neon_x_balatro-special_droll_joker",
+      "selector": "0x367cfc96d7747dd944f36a910fe1dc2545402dc8f72749826e9bde264d0d0c7",
       "systems": [
         "execute",
         "get_id",
@@ -9439,7 +9439,7 @@
       ]
     },
     {
-      "address": "0x2cd9de908ff191d5553d640726eaa0ebe432ac21bff7cbfa8f8a656cb1786ed",
+      "address": "0x39bb1d8be56af58602c67586d2ff254ddedd494c7a6565f1db73f3840fc5180",
       "class_hash": "0x42d0f549206334c9b18a3ea1c3b9753056b70c3cd6df1a4d412908462433321",
       "abi": [
         {
@@ -9882,8 +9882,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_fibonacci_joker",
-      "selector": "0x264a466b832a741cd4daa8f332d3439922f5a74be86dd7b57a9b10f5b8b25fb",
+      "tag": "jokers_of_neon_x_balatro-special_fibonacci_joker",
+      "selector": "0x6980ff1a91aea260c21d9497418669365ef8be48cc28a372a7e10daa3036601",
       "systems": [
         "condition",
         "execute",
@@ -9893,8 +9893,8 @@
       ]
     },
     {
-      "address": "0x7f68f6cca98842d0fb2ed234d305fa1678b9f1ce906be9bd1d5cb536b03008c",
-      "class_hash": "0x77122892bd958aa9108409c9b373719367a7635c1b1a45a569acca7b1534ced",
+      "address": "0x2ba0d8365b742517374ee685ab74a5d175800f611a2603cfb29ef617a7965a6",
+      "class_hash": "0x7d4986a619357e9c98a7a661bd56da3f28fef9f9295f2fa681a753a38fbf012",
       "abi": [
         {
           "type": "impl",
@@ -10336,8 +10336,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_gluttonous_joker",
-      "selector": "0x17cb31c4ef99cfc52a74a332ba26b2d8f98da966cb0c698de06733be2bcfce9",
+      "tag": "jokers_of_neon_x_balatro-special_gluttonous_joker",
+      "selector": "0x7e406c71455fe3f47916264ee7033aa68ca0e72b28ce170a344427cd4083404",
       "systems": [
         "condition",
         "execute",
@@ -10347,8 +10347,8 @@
       ]
     },
     {
-      "address": "0x4c6c6f6ea062b213fa4f70cd98974259c372a6e03c05e2f7759892c5f6c2a4d",
-      "class_hash": "0x6f25822e7ef1bd5fa536ffb8c97d15913ec33060fd3d92077d079fd47607ade",
+      "address": "0x41fe7bedbd13b7898cf3bd7720275e76246177b8d27c94f28e3f99eb3df9f83",
+      "class_hash": "0x1829209adc6fa087defa12481426149b16caffe5daef430665b4e0a914c4a5d",
       "abi": [
         {
           "type": "impl",
@@ -10790,8 +10790,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_greedy_joker",
-      "selector": "0xf3fdca1df55203ab0626a24157fc5230828c0610e071fb705b1f4b8d1410e4",
+      "tag": "jokers_of_neon_x_balatro-special_greedy_joker",
+      "selector": "0x7227f2c0ecb97d9fcd4309048b8ebba13da20641ebc8efc982ba38d2c59b040",
       "systems": [
         "condition",
         "execute",
@@ -10801,8 +10801,8 @@
       ]
     },
     {
-      "address": "0x5e208ea4b7913038c68cbc6a182ff47fe10ac6786aba272a89e5bad68b3fc4c",
-      "class_hash": "0x42ab414ecab914fb8bf9aa832b8c7763b64ce60e0f375fa255b2ea766b46cf8",
+      "address": "0x215d5b150c015245d765329386e2dd46cc9ef0d7f7009fa620454f11c0d4a10",
+      "class_hash": "0x340d765eec3c86a14effecec658f0682a0701956e145f85945c0c01eceabecd",
       "abi": [
         {
           "type": "impl",
@@ -11325,8 +11325,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_half_joker",
-      "selector": "0x65c7271efeade8d76ed3f2ad6be435e562b8c742ca4e85107f1560656796e9d",
+      "tag": "jokers_of_neon_x_balatro-special_half_joker",
+      "selector": "0x14f2085b05eca958d21dfd7c4922eae84901ea64023cb21f261e572417ebfc0",
       "systems": [
         "execute",
         "get_id",
@@ -11335,8 +11335,8 @@
       ]
     },
     {
-      "address": "0x504ba877fe1ff1b2719f5be943202f5b88ab8e82c893ac6aa556c06e24d41e1",
-      "class_hash": "0x58691eedc230a87b88f0050f263555613a12135a1cd8d3ce1e7d59d4e429f8e",
+      "address": "0x2392e77445da714151abb01e19c5c12e8599ac80ab0ac0dcae64f9a5b6630f0",
+      "class_hash": "0x22fba16398d4a5dfdbb62e9bdee0288e2ceb8adb9ca16d5fe9e76740bffe17e",
       "abi": [
         {
           "type": "impl",
@@ -11859,8 +11859,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_joker",
-      "selector": "0x7559873111a44a0a9907b9406b7aeadec8b51f299ccc933af97840d6abf4cd4",
+      "tag": "jokers_of_neon_x_balatro-special_joker",
+      "selector": "0x628c8357bba18a7d3b3fc5eb8761cf50ab1a9aacb2d37309c1434da3a80e231",
       "systems": [
         "execute",
         "get_id",
@@ -11869,7 +11869,7 @@
       ]
     },
     {
-      "address": "0x1ac50e7f81e084f25702008e8acf665906453d294fe19747aac63718310b494",
+      "address": "0x511b6ba4c73a4df83f722aa6c121a06063dd545fb01a497320e638ec9297f36",
       "class_hash": "0x10939b3e2554cf2909b62fdf2ed8b764922ebe9f18fdd8b7ae4df3f0149d69e",
       "abi": [
         {
@@ -12393,8 +12393,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_jolly_joker",
-      "selector": "0x44413f07e5d1e82323ff70f0721e7ed098018e9b517e7b8d587959204267173",
+      "tag": "jokers_of_neon_x_balatro-special_jolly_joker",
+      "selector": "0x291d355aca6f8a925f7ea5f939beac6e169dbed9b8c03e8fca78a89c58b72a4",
       "systems": [
         "execute",
         "get_id",
@@ -12403,8 +12403,8 @@
       ]
     },
     {
-      "address": "0x2c3350e3b4959253175aa7ae8da6486d53d3466a18f9dba6ee773f2bc93c8ab",
-      "class_hash": "0x2011c2d77597bb6430059457b7793c3d7e15b1d10c038c5399b7b473fa0d187",
+      "address": "0x55adcbe72cd72988c1912e70a698a2b1d014906346655dafb4ffa8d2ae5f276",
+      "class_hash": "0x13adc2127c22adaa67874111da69813954536f8d00d7ac3cf21847c90ff4538",
       "abi": [
         {
           "type": "impl",
@@ -12846,8 +12846,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_lusty_joker",
-      "selector": "0x3acac168d47b01339e25746fec3526877544d4117430ae7c7b5d968d0538a20",
+      "tag": "jokers_of_neon_x_balatro-special_lusty_joker",
+      "selector": "0x621b32adcbb01bb0bb7657840c0922b091c42f61bed9aa7054d06878b244eff",
       "systems": [
         "condition",
         "execute",
@@ -12857,8 +12857,8 @@
       ]
     },
     {
-      "address": "0x23be72dc2cfa78cb0af0550933d0beeed7c03ebe1365117a784259d5002110d",
-      "class_hash": "0x1f371e8a0c87a0fc8f0fb6e0007897f03c9731a6e85afb5123af95664996233",
+      "address": "0x2a6ec7f9fd1e7a03eb7d3cf11a7c47b020e1bf419ac198d96ebfc71f1dab047",
+      "class_hash": "0x6f2cd5b96875abafd160eaca1a2eed57606c3baf2c1425b778cb7b285b8bda4",
       "abi": [
         {
           "type": "impl",
@@ -13381,8 +13381,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_mad_joker",
-      "selector": "0xfc4ea7834040aa901d0d52905d7778da17b384db0dd28929cb99396e2b6c5c",
+      "tag": "jokers_of_neon_x_balatro-special_mad_joker",
+      "selector": "0x2e6c90a29399cd9f6468f60a3495e32d4d67a5f942f014af630adfe39f2201d",
       "systems": [
         "execute",
         "get_id",
@@ -13391,7 +13391,7 @@
       ]
     },
     {
-      "address": "0x359ac1ec8659f716cc465acbaa691a6fb880303743515b3321bf4c8a8b3f23f",
+      "address": "0x21d7fc40eab8992677b66c39aeb75e05dde6691d8463ce92307ac7ac84fb110",
       "class_hash": "0x541e683e58f4762747dded4895aded7b5c4765334125f5b2d442c9161122943",
       "abi": [
         {
@@ -13785,8 +13785,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_mystic_summit_joker",
-      "selector": "0x307764510760fe269a1f439f05bd2e7c3e5e0f205da30e487784c8aef8a0ebc",
+      "tag": "jokers_of_neon_x_balatro-special_mystic_summit_joker",
+      "selector": "0x5eef007865f0297b154691a276e88dc2ecf655d90875ab8c30155b592f1d771",
       "systems": [
         "execute",
         "get_id",
@@ -13795,7 +13795,7 @@
       ]
     },
     {
-      "address": "0x2bfccc9c9c3390cff5c6601eb9e562a8a30622df896403857bb8d1733d5b87",
+      "address": "0x64a37888527b0ee629ea567153b8eff48291d3c8736eb3ad1ca652b7d073674",
       "class_hash": "0x511f31f21c4e66401f75cc627472d9151fc33e39c366edc3b3e089d455e3ad5",
       "abi": [
         {
@@ -14319,8 +14319,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_sly_joker",
-      "selector": "0x813c682aff6acec39498c302726f4ddec5db95b2a1281d8584878d6714684b",
+      "tag": "jokers_of_neon_x_balatro-special_sly_joker",
+      "selector": "0x3621e5734483e01b185c0e6579faba55d2e292f985542d9052f444bdb7d6656",
       "systems": [
         "execute",
         "get_id",
@@ -14329,7 +14329,7 @@
       ]
     },
     {
-      "address": "0x5af518e86f59d278c496f1cadf0de5616bebd5d39e3a80db76cd7e468689e47",
+      "address": "0x35afe5a4a95985699c52f36893528e6113901421c9aaf3ef55ec56c0c869bff",
       "class_hash": "0x5b3a7644a5e9e3c4f2651f05962149e5fcfda584539745a509090b245135fc1",
       "abi": [
         {
@@ -14853,8 +14853,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_wily_joker",
-      "selector": "0x1c23d383944105cfdcbce9d3368a9614d3df34c229473c3927643d3e8e4bd5b",
+      "tag": "jokers_of_neon_x_balatro-special_wily_joker",
+      "selector": "0x79444a41003597f7379abcd444676149cf088cb77a0761783151104abd3735b",
       "systems": [
         "execute",
         "get_id",
@@ -14863,8 +14863,8 @@
       ]
     },
     {
-      "address": "0x32ffb8614b8c030ab75ac9dce7224b85257b7cfd25aff1a19d9c2021a85ce41",
-      "class_hash": "0x29fb78920c07a0f7cbb93fdf6ad34f7d2d265802119480b900f5ef69abaa52",
+      "address": "0x445c02fe72d92b9879d3f73bc61726a55ab0daaf90ea2468b02f169f2b9ac92",
+      "class_hash": "0xef01edb9f5e9eda1b7fb10e36045cd77127cd09c8b6e3d2d558c9eab4d72c8",
       "abi": [
         {
           "type": "impl",
@@ -15306,8 +15306,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_wrathful_joker",
-      "selector": "0x6f76dac64bfb121c58a2ad1e9b17f58a7473c17e12895f2b2a870a477037ac1",
+      "tag": "jokers_of_neon_x_balatro-special_wrathful_joker",
+      "selector": "0x1a10737be663273d41e59a54db539100fc7a460085cd44ae31280245f4fcdb0",
       "systems": [
         "condition",
         "execute",
@@ -15317,8 +15317,8 @@
       ]
     },
     {
-      "address": "0x24d5bb4ade49eee8253493c9517fb3b2381fbc3446af86c3f34961db94dd917",
-      "class_hash": "0x6433c6fec36b08d5bf4dab109c8095b0be152fe42f475e68afeddc95410a2a5",
+      "address": "0x4d65cfdf2ec053b68dd803bc22f19d72d43d60e31c6498a01f623c1540df972",
+      "class_hash": "0x256e119e05d735fc1e8db571269d7cbc65cc9ec85cbf13551be4a491e8bc8c6",
       "abi": [
         {
           "type": "impl",
@@ -15841,8 +15841,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-special_zany_joker",
-      "selector": "0x193ed91dc7a6307bc97d33546ea22bdacd39a531cd716d4307abbd291340b66",
+      "tag": "jokers_of_neon_x_balatro-special_zany_joker",
+      "selector": "0x620c72d36ecf73d792c67d875c7f7b252a4e78886f0e8c0907337ee32dc7f00",
       "systems": [
         "execute",
         "get_id",
@@ -15851,7 +15851,7 @@
       ]
     },
     {
-      "address": "0x443ff241d4c2847bb8b18a0ee264a60f5ae6a1b2567fbbfe4d0704327df8f32",
+      "address": "0x79a2fb156d19c5091a0fd2e49c3a74b4702148f910f03fbfbedbc695685c710",
       "class_hash": "0x4c640460cc10cf1d8a54efa70e7942613679a236fcbfebc309e915b62f0be7e",
       "abi": [
         {
@@ -16073,8 +16073,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_x_sanrio-specials_info",
-      "selector": "0x690ee7546654e486001c7ec849580f4adb677a165b8891239a6879cc9babf86",
+      "tag": "jokers_of_neon_x_balatro-specials_info",
+      "selector": "0x55ec182d1a28a8b13c70b78cad4a5659d910367b2980895c6b20b9173795974",
       "systems": [
         "upgrade"
       ]
