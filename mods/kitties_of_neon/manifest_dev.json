@@ -1252,7 +1252,7 @@
   },
   "contracts": [
     {
-      "address": "0x75d163617cb37b85f246440445780b2b99e4497c0c3dee25793e677d1874805",
+      "address": "0x1640ae6a1cf4ef44db1f5e75bc6922ba01b9cf1a59df2ccdb0a2fd8ca915150",
       "class_hash": "0x4cc3bb29c03e3f162d1584f1df991e67b8060498ae8573549e3fdef8e8fe7d7",
       "abi": [
         {
@@ -1443,15 +1443,15 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-card_info",
-      "selector": "0x49fc20a890be5cd3f50a84c13f00173a03b137b538a3e8614785fd5d09e247e",
+      "tag": "jokers_of_neon_x_balatro-card_info",
+      "selector": "0xc5082357b56918ba5531e9696fe63c9485423b088a5768b3cbe52c9f123afe",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x10d8130fd30071fd47a225f3cd46fb443c0bc4aca884ef5a0adb69d7cd0cb80",
-      "class_hash": "0x79f6b78e2ddff75101dabf5bce5c5970131360334a4794fa00b1208c60126b9",
+      "address": "0x3e8dd8cc8f779efe1e4032c11f33929c29cd5c9f1b40d824f982bf6aff6a08f",
+      "class_hash": "0x2587800253906f1b51a9d1a25dfce77c681c624384d6329ef63ca2810f91431",
       "abi": [
         {
           "type": "impl",
@@ -1683,15 +1683,15 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-game_config",
-      "selector": "0x3bbfc4c2dea2ad1fbedcceb91a9d9087138ac4fabf9d50b6e8831c0981b8db",
+      "tag": "jokers_of_neon_x_balatro-game_config",
+      "selector": "0x232659a311230ca3db163518bde2bb873106fec954f5419bffa4734483e225f",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x262ea77133642cecbc92b24ab51f22bd03e028436b0b99261b852b006e1cff7",
-      "class_hash": "0x62f042027b83cf4b24d550668d70f8dc8c097145a35616dc506c6760c8e451",
+      "address": "0x36454e6a80177106e2cbd973e559101a7eca97ebbd255f2c1701864b7e298ba",
+      "class_hash": "0xe652c66c3e063f38af35a77368c8703fd34e7798d7c3294e2f7e66d105cde8",
       "abi": [
         {
           "type": "impl",
@@ -1962,14 +1962,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-loot_boxes_info",
-      "selector": "0x2baaba4259ae7ac8849627e15357e52bb6ec741a7f12a09ff761d3eafaea8e9",
+      "tag": "jokers_of_neon_x_balatro-loot_boxes_info",
+      "selector": "0x1f5da1cd7abce5407835b02b9ca276f3962428159bb88bb4f6de6713b2c620e",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x1bfe98851e6a1b1d51cefac43dda7374c09f57a56689bb4e4967b6521d8574e",
+      "address": "0x317f684250d480048baebb54a03f9e251e79056fd78244f880f4e8d80dc597",
       "class_hash": "0x4ba4ff9733cfdc535968f373468a02b96cfc8c16e7d9cbc06e1cfba1a268e20",
       "abi": [
         {
@@ -2178,14 +2178,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-play_rules_config",
-      "selector": "0x15d59879df2862efb41419fec9f56d0c7b1265ce7fa9e00be75f490b6b461f7",
+      "tag": "jokers_of_neon_x_balatro-play_rules_config",
+      "selector": "0x541f08e4aacbb72786a8c01d4c3fd3a3a29de2f8a85a4f6fe17efb55bb80f24",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x283b4d72400f9c60fe2535e6e66bb1922467b4c6ef6b6d0271a8d1e577a9072",
+      "address": "0x1870598b482127c8bc72bc79cc3128eb99a50ed133b2862939b321224f559a",
       "class_hash": "0xcdf9517d655f4dd51899995dac99e47a787c571fb25c0e579ebe55a5624e89",
       "abi": [
         {
@@ -2532,14 +2532,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-rage_diminished_hold",
-      "selector": "0x38af144a90837b92f3f9eb2f5c4aceb044fa746c64f5560688127fde2d79a5d",
+      "tag": "jokers_of_neon_x_balatro-rage_diminished_hold",
+      "selector": "0x4eb47b3a0bee7e7d28f1700dce56008193690fbac9a726e33144b2f36cf4183",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x3fc1ec5d3677bc9272c121cf72a7284151771770d47147b9b9cdbf7246fa3c7",
+      "address": "0x4a477693c69d9fa851612e3a2f7d0e16dd409bf49949cf18221021c44a2317",
       "class_hash": "0x43488fbf16c7a3532c09e6c0ca902a3dcc9e891e21130be5c0a1c55ac434d46",
       "abi": [
         {
@@ -2816,14 +2816,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-rage_hand_leech",
-      "selector": "0x72d9d6e8c7bc3de938b75a0e4ec9b6212257d5a8b7d7fb47603868c499da002",
+      "tag": "jokers_of_neon_x_balatro-rage_hand_leech",
+      "selector": "0x68224d267869696cc525dac8446b37e55a6e4c3c0b2e4bce8e8329559756ae9",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x7ef1897393fbd45d52428827ef45596b239bf7e003995b98c968083be979e",
+      "address": "0x7d2e046b1f40ff70463981727a64a779e647fdaa12aba39ae4da4c5561aae29",
       "class_hash": "0x94b616b37c352d8a36d48371ac9eb262d20a8c7066a0079cb52f3f6ca49df3",
       "abi": [
         {
@@ -3229,14 +3229,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-rage_silent_clubs",
-      "selector": "0x72d772a7e84ec29b3640f4beee8f973c7442ac3341e5c55acc3b22486d10710",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_clubs",
+      "selector": "0x7f86b7e75cbcc6cc53eeb9bba5e12f52a3516695b55a84f4c93e000f491dc3b",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x1f4593a33d69a018db8edf550b5048318ab311d61c29378175e3ca79758e5f6",
+      "address": "0x5192acf4a89acce810d0f197de71320c5cb8a580401fb6eecac13dcb1245c59",
       "class_hash": "0xed46e66bee2b1df028c9bf77265cf300c32e3893d3edcde92dc433d5c249fd",
       "abi": [
         {
@@ -3642,14 +3642,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-rage_silent_diamonds",
-      "selector": "0xffb85f38d2637c9e27e05b328dbc60c01b21e66f4c720f16c73f06ab4bdb46",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_diamonds",
+      "selector": "0x57cc27f2cdfc407b648a1cc6c9e2be1ee84f14180ada250050733f891ec45e5",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x77aeb773862d383f3a5e2abc791bfdc6b38f54cb91b288d4ace4c73b6b0c995",
+      "address": "0x49b1f29a7d4793e81f45d5667459bb0f01997d6fec7710200c722e7bff3c736",
       "class_hash": "0x7dce2533e83b303beb34d340582e8e6715c804b7df95ed0c6832ec4f1b7405b",
       "abi": [
         {
@@ -4055,14 +4055,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-rage_silent_figures",
-      "selector": "0x33632b3203751ff765453d218536a36f706bf72513be0c29c10c7426c1b5486",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_figures",
+      "selector": "0x3034332d53c2a7c57374821ad9d02f5e7a4ae004b5d039e8807afc9b3fd6894",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x12315380d47e92ad86f045b42d78886f57f970b26d1090b784d64ec23b58637",
+      "address": "0x562fd81665ec6405182bbe4dc9af62b866ceab9b9559af266f57d11d369dcaa",
       "class_hash": "0x3e2441d3024e7f9bdd3841aee7d1d8c55d95803a16f51557bf68341fa3e65e9",
       "abi": [
         {
@@ -4468,14 +4468,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-rage_silent_hearts",
-      "selector": "0x9fa98680dc7391c8b53e37c584f57163506437c6b10cfe3302ab087f818f5f",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_hearts",
+      "selector": "0x60dcaa16a186d8742216d7c1ce7cab8d46889a2aede780ccbacde33a97ce812",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x581cf998e94742cde0ea567830f998bdcc0e2f18be149808336ac38a678a1b0",
+      "address": "0x3bf5f427eb4eae01f40c7ce90cd7666b7c2a1d3870d6a8548929cd8415747d",
       "class_hash": "0x38903aeda8a2b2622c669c604b11e6ab8ab3676db34527d7549309d4e8cf269",
       "abi": [
         {
@@ -4881,14 +4881,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-rage_silent_jokers",
-      "selector": "0x2b1a98737726f0ba5d0027041d4fbfcd2ebcdc957276a131d3b782a9a286451",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_jokers",
+      "selector": "0x240e50518326faf83ad163d4cd2cc261ae503909e3c93ed8d14c18bd8dba49d",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x16b1fe44f2d27d48c6f05d71f01303a2850db25a929fb250df3afc3f810bc6b",
+      "address": "0x2c5243d4cde3dcd9067b64aa1a2cda25ef1ad651063e16400e2be81bb4283fc",
       "class_hash": "0x4ade226002dfa4fde18ea377009028fd5bb9cd419c47335f005801938070736",
       "abi": [
         {
@@ -5294,14 +5294,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-rage_silent_spades",
-      "selector": "0x5e3451f89046d8a890393d27ea45848c3c97b699c11dec8aa25c2200a38d794",
+      "tag": "jokers_of_neon_x_balatro-rage_silent_spades",
+      "selector": "0x399153abccd2f7c7e728f5619c309b2dbea0642731a3cf4f5b92c65ef5e7e89",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x76969003c7a910f9b3d1cd79b25481ed2fb5cdd6616fa047dbe640499095893",
+      "address": "0x4aaac00dadce5a225f8f252700ccd19b11c34c99213cf8c0e55f98040b992c7",
       "class_hash": "0x5f082c0addd2d4935b54fb2b83fb72c3566f744bb1a2849ff180b000d77cb42",
       "abi": [
         {
@@ -5648,14 +5648,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-rage_strategic_quarted",
-      "selector": "0x7adfabed2b8377f0f3c0b12828483d5d4889f9e898510d3fb086ccc830b52ef",
+      "tag": "jokers_of_neon_x_balatro-rage_strategic_quarted",
+      "selector": "0x3efe4755fd14176dd9facf518eebbda10895968041b81bd3d578694be398b91",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x69a9f506381cf9c43972b95145237a3167e4c2c110eb0f4d4f143e17679b0a4",
+      "address": "0x493b125bbf0a241e41cbf21097f71aa5d8de46df52c94245a9390611efc5ec0",
       "class_hash": "0x45cf6156f2619d76703d9d8d5af073c1931103b64d116fc2f789b6861034ab4",
       "abi": [
         {
@@ -5932,14 +5932,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-rage_zero_waste",
-      "selector": "0x1c8b1b4ccf6d545b897f2351ed3df3414ce1f3536ba8c3593f38be9a0a15b21",
+      "tag": "jokers_of_neon_x_balatro-rage_zero_waste",
+      "selector": "0x2874e6496e47992d6c40015beeb87f103868c32d19e09f84652fe912521a65c",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x5025bd2c7de4423465e03e48e8ee72343a990ed9a1c13c50507a502ea5c1200",
+      "address": "0x6e0927b798b1e4a2ffb1362100582191365a7c4bd36cae7305f16f72443c2d3",
       "class_hash": "0x224632282c88360c500fadc5e22ba44846d1b3ca33ca7d39844889388d91de2",
       "abi": [
         {
@@ -6130,15 +6130,15 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-rages_info",
-      "selector": "0x34d5db595510ef01fe928943e4c0c6a979874fc6a7e31fce17848b52a33f644",
+      "tag": "jokers_of_neon_x_balatro-rages_info",
+      "selector": "0x2862200978ff809f08dcacf93d671772d8078636e0fb38f32845ee016dcf63a",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x44d04f31642398803cd2c8993a45a3d9e1674f09f9cc48f67ef68ae2f18a83b",
-      "class_hash": "0x38133cadcefa3a76e1494cc1c76c191363c35af0dfc9a0d96ea63dc39b22698",
+      "address": "0x792cd7b9a2cecbc6de94ddae398be415077fa5bc5cd37b6778e590fad9adfe6",
+      "class_hash": "0x363f704d92c079f7e4865a82cfd12b064390e38a02e6300c530ebec9c6c5102",
       "abi": [
         {
           "type": "impl",
@@ -6358,468 +6358,14 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-shop_config",
-      "selector": "0x7dcd0b80431c55dae1a131af68a26aea96b6b389750817fa90235e9a56ef9c4",
+      "tag": "jokers_of_neon_x_balatro-shop_config",
+      "selector": "0x22b3d3f1be656f2ee82e417436018573c965e679e69fd693a510aee7dd09186",
       "systems": [
         "upgrade"
       ]
     },
     {
-      "address": "0x695418529ce952749aca1cf4952ce396f444385b1c79f7eaf733d67427633f9",
-      "class_hash": "0x3f624f7c9ee364ff8e7fb4ebc8ec7e59af783695691325b41529be6a5000f50",
-      "abi": [
-        {
-          "type": "impl",
-          "name": "special_anti_fibonacci_joker__ContractImpl",
-          "interface_name": "dojo::contract::interface::IContract"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::interface::IContract",
-          "items": []
-        },
-        {
-          "type": "impl",
-          "name": "special_anti_fibonacci_joker__DeployedContractImpl",
-          "interface_name": "dojo::meta::interface::IDeployedResource"
-        },
-        {
-          "type": "struct",
-          "name": "core::byte_array::ByteArray",
-          "members": [
-            {
-              "name": "data",
-              "type": "core::array::Array::<core::bytes_31::bytes31>"
-            },
-            {
-              "name": "pending_word",
-              "type": "core::felt252"
-            },
-            {
-              "name": "pending_word_len",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::meta::interface::IDeployedResource",
-          "items": [
-            {
-              "type": "function",
-              "name": "dojo_name",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::byte_array::ByteArray"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "SpecialAntiFibonacciJokerImpl",
-          "interface_name": "jokers_of_neon_lib::interfaces::individual::ISpecialIndividual"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Suit",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Clubs",
-              "type": "()"
-            },
-            {
-              "name": "Diamonds",
-              "type": "()"
-            },
-            {
-              "name": "Hearts",
-              "type": "()"
-            },
-            {
-              "name": "Spades",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Value",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Two",
-              "type": "()"
-            },
-            {
-              "name": "Three",
-              "type": "()"
-            },
-            {
-              "name": "Four",
-              "type": "()"
-            },
-            {
-              "name": "Five",
-              "type": "()"
-            },
-            {
-              "name": "Six",
-              "type": "()"
-            },
-            {
-              "name": "Seven",
-              "type": "()"
-            },
-            {
-              "name": "Eight",
-              "type": "()"
-            },
-            {
-              "name": "Nine",
-              "type": "()"
-            },
-            {
-              "name": "Ten",
-              "type": "()"
-            },
-            {
-              "name": "Jack",
-              "type": "()"
-            },
-            {
-              "name": "Queen",
-              "type": "()"
-            },
-            {
-              "name": "King",
-              "type": "()"
-            },
-            {
-              "name": "Ace",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "NeonJoker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::data::card::Card",
-          "members": [
-            {
-              "name": "id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "suit",
-              "type": "jokers_of_neon_lib::models::data::card::Suit"
-            },
-            {
-              "name": "value",
-              "type": "jokers_of_neon_lib::models::data::card::Value"
-            },
-            {
-              "name": "points",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "multi_add",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::special_type::SpecialType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Individual",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::individual::ISpecialIndividual",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "card",
-                  "type": "jokers_of_neon_lib::models::data::card::Card"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "execute",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_id",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::integer::u32"
-                }
-              ],
-              "state_mutability": "external"
-            },
-            {
-              "type": "function",
-              "name": "get_type",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "jokers_of_neon_lib::models::special_type::SpecialType"
-                }
-              ],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "function",
-          "name": "dojo_init",
-          "inputs": [],
-          "outputs": [],
-          "state_mutability": "view"
-        },
-        {
-          "type": "impl",
-          "name": "WorldProviderImpl",
-          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
-        },
-        {
-          "type": "struct",
-          "name": "dojo::world::iworld::IWorldDispatcher",
-          "members": [
-            {
-              "name": "contract_address",
-              "type": "core::starknet::contract_address::ContractAddress"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::world_provider::IWorldProvider",
-          "items": [
-            {
-              "type": "function",
-              "name": "world_dispatcher",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "dojo::world::iworld::IWorldDispatcher"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "UpgradeableImpl",
-          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::upgradeable::IUpgradeable",
-          "items": [
-            {
-              "type": "function",
-              "name": "upgrade",
-              "inputs": [
-                {
-                  "name": "new_class_hash",
-                  "type": "core::starknet::class_hash::ClassHash"
-                }
-              ],
-              "outputs": [],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "constructor",
-          "name": "constructor",
-          "inputs": []
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-          "kind": "struct",
-          "members": [
-            {
-              "name": "class_hash",
-              "type": "core::starknet::class_hash::ClassHash",
-              "kind": "data"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "Upgraded",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-              "kind": "nested"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-          "kind": "enum",
-          "variants": []
-        },
-        {
-          "type": "event",
-          "name": "jokers_of_neon_classic::specials::special_individual::anti_fibonacci_joker::special_anti_fibonacci_joker::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "UpgradeableEvent",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-              "kind": "nested"
-            },
-            {
-              "name": "WorldProviderEvent",
-              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-              "kind": "nested"
-            }
-          ]
-        }
-      ],
-      "init_calldata": [],
-      "tag": "kitties_of_neon-special_anti_fibonacci_joker",
-      "selector": "0x19d498ee814742904dd1268716836fcc84e9e1ecd1db00c9a8b598c434ccea5",
-      "systems": [
-        "condition",
-        "execute",
-        "get_id",
-        "get_type",
-        "upgrade"
-      ]
-    },
-    {
-      "address": "0x11c7df0b52aa716e3dc552f6f924a672503265fef41b546fc883517c8daca86",
+      "address": "0x7cae728d44cb2471b214f895159ae28d175bdc24bc2985313e7416ed867c8b6",
       "class_hash": "0xbcc8d6096f1a3d0da0cfd049bbe29b8902dffffaa8344b68c46f072c2c5bbc",
       "abi": [
         {
@@ -7213,8 +6759,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_banner_joker",
-      "selector": "0x10103988116df82ada2e37ff93e6ce580409ff5f5140fbf0a2211d71bca67a3",
+      "tag": "jokers_of_neon_x_balatro-special_banner_joker",
+      "selector": "0x555b690228167225621abd80147ef0e1a5a53971bbefcc9a54ea52517fad2cc",
       "systems": [
         "execute",
         "get_id",
@@ -7223,7 +6769,7 @@
       ]
     },
     {
-      "address": "0x534c6c5f8920ff81880ce7f99cbd9dbc1c26c65e1ebc3e1d09b5d42e29eada3",
+      "address": "0x5b3c525df4decb954e9edac2339e3a3d22481fda2b860d75f9d7d552c8d4586",
       "class_hash": "0x3cf411c851ffa71e5fa815aedc375f4bdd7fdb4ee59ef219494332c125cce3d",
       "abi": [
         {
@@ -7747,8 +7293,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_clever_joker",
-      "selector": "0x56b36a8a21b0bccc533d8f34dafcd512bdf6c9a363d4c7e56448c8d05d5d860",
+      "tag": "jokers_of_neon_x_balatro-special_clever_joker",
+      "selector": "0x52bfa4952b8484db902a277e20d1aaa4894111ccece2571751f7720b32b1ab8",
       "systems": [
         "execute",
         "get_id",
@@ -7757,7 +7303,7 @@
       ]
     },
     {
-      "address": "0x29d25ab62d4b58eb7ef2e6af3eab2d11da14381ff9823907be3ca06e741d852",
+      "address": "0x6765379421141a2c8dc5e01e708576aea5806631a04139867d43a3611e06c58",
       "class_hash": "0xe6aac1f3f4b50c5e3c1fada89e7e8f4d9e508c3ec75c877e45cc143874c43b",
       "abi": [
         {
@@ -8281,8 +7827,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_crafty_joker",
-      "selector": "0x7454de36a298290f3a928c4b6b2f31f930a3c7f4742a0fcd6610a27e7fd6bf5",
+      "tag": "jokers_of_neon_x_balatro-special_crafty_joker",
+      "selector": "0x77454ff8e8b35d9df870a127c2399925a580be317ea5259e9f49919d16740a2",
       "systems": [
         "execute",
         "get_id",
@@ -8291,7 +7837,7 @@
       ]
     },
     {
-      "address": "0x249e71cdb18c6e9e0fc810f65720fe4db7d67b35d8f251ed369d1fdb1b825fe",
+      "address": "0x631697d8aa1034ce6f248e327220a955dad7877c0303d08807154ee731b53f6",
       "class_hash": "0x5d51670937f83c5b1b2f72305cea8482022780731196f5db85d2ed45c56fa6c",
       "abi": [
         {
@@ -8815,8 +8361,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_crazy_joker",
-      "selector": "0x3d3b532c74184fac3ac342fc5aa149c9a65bfb2387ad7c9765fcea6db020f85",
+      "tag": "jokers_of_neon_x_balatro-special_crazy_joker",
+      "selector": "0x30ed8935b136dcb402e37034e8b5c24d2107b09bce5d483e2548c2bb2087b11",
       "systems": [
         "execute",
         "get_id",
@@ -8825,7 +8371,7 @@
       ]
     },
     {
-      "address": "0x4a8f460c5ad1f875aa7c9bd26f8ca369b007e62d76c7ea75df445c49ea23964",
+      "address": "0x4a93a8b5cfc1b47c59a8e1351bdca6f96b5169bd5c770c7212609e234f41b32",
       "class_hash": "0x2261a284d122c3c9be7ae729d78124b77861ceccd907db8e2b44cf0c2eb50ef",
       "abi": [
         {
@@ -9349,8 +8895,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_devious_joker",
-      "selector": "0x26f7d25c3cbbe079e0685f74ee03814b5ee0d759bb4b1e7e6206ae9ae61bc81",
+      "tag": "jokers_of_neon_x_balatro-special_devious_joker",
+      "selector": "0x1f7799bd3c75ac04f515c9e5ab722a1afda6904e705040fb6c571e9d187ad72",
       "systems": [
         "execute",
         "get_id",
@@ -9359,7 +8905,7 @@
       ]
     },
     {
-      "address": "0x463ed437af6da5e1e04425103360beabd00dd3c80dcc911dc3597fecbc1c774",
+      "address": "0xcbd2af5d90c32d91619097d67c69374abec0134db855dbc3b6cfa514f2adb",
       "class_hash": "0x45fa9e71cd69b3f6c56ae83ab63a60848e18ca6e190d3a38eb232990e401cbe",
       "abi": [
         {
@@ -9883,8 +9429,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_droll_joker",
-      "selector": "0x63d78d670bf3c51b7495d16f9ca558261578b6905fa731c375cf007e4a874a8",
+      "tag": "jokers_of_neon_x_balatro-special_droll_joker",
+      "selector": "0x367cfc96d7747dd944f36a910fe1dc2545402dc8f72749826e9bde264d0d0c7",
       "systems": [
         "execute",
         "get_id",
@@ -9893,7 +9439,7 @@
       ]
     },
     {
-      "address": "0x6ea6e72e3ddb4db3709b49adc27188da700e6e60e0e5582b5edef5dbeacf647",
+      "address": "0x39bb1d8be56af58602c67586d2ff254ddedd494c7a6565f1db73f3840fc5180",
       "class_hash": "0x42d0f549206334c9b18a3ea1c3b9753056b70c3cd6df1a4d412908462433321",
       "abi": [
         {
@@ -10336,8 +9882,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_fibonacci_joker",
-      "selector": "0x3986794457575b656e11ea794c9cb82ed10b58ed4fd6361ce48e50e2c3079ea",
+      "tag": "jokers_of_neon_x_balatro-special_fibonacci_joker",
+      "selector": "0x6980ff1a91aea260c21d9497418669365ef8be48cc28a372a7e10daa3036601",
       "systems": [
         "condition",
         "execute",
@@ -10347,7 +9893,7 @@
       ]
     },
     {
-      "address": "0xb7993d247ca80a9da5af39b702353952715ac309fbd62e917ddcf7e91ec684",
+      "address": "0x2ba0d8365b742517374ee685ab74a5d175800f611a2603cfb29ef617a7965a6",
       "class_hash": "0x7d4986a619357e9c98a7a661bd56da3f28fef9f9295f2fa681a753a38fbf012",
       "abi": [
         {
@@ -10790,8 +10336,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_gluttonous_joker",
-      "selector": "0x6f39b48de18cdbe63f22e6d1f5acfa691c75031e43c278d271f154ba42402f",
+      "tag": "jokers_of_neon_x_balatro-special_gluttonous_joker",
+      "selector": "0x7e406c71455fe3f47916264ee7033aa68ca0e72b28ce170a344427cd4083404",
       "systems": [
         "condition",
         "execute",
@@ -10801,7 +10347,7 @@
       ]
     },
     {
-      "address": "0x778fea30e42039aed6da1c2c22c098758376a34d6a9b31173c5b346a5212e68",
+      "address": "0x41fe7bedbd13b7898cf3bd7720275e76246177b8d27c94f28e3f99eb3df9f83",
       "class_hash": "0x1829209adc6fa087defa12481426149b16caffe5daef430665b4e0a914c4a5d",
       "abi": [
         {
@@ -11244,8 +10790,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_greedy_joker",
-      "selector": "0x6a8fca19eb2a306556e176b7a5cc815f28431cd742846eacc88f0f7273e145f",
+      "tag": "jokers_of_neon_x_balatro-special_greedy_joker",
+      "selector": "0x7227f2c0ecb97d9fcd4309048b8ebba13da20641ebc8efc982ba38d2c59b040",
       "systems": [
         "condition",
         "execute",
@@ -11255,7 +10801,7 @@
       ]
     },
     {
-      "address": "0x6d8fa04edc87502b4be511b339cdee80540dac260f81ee0efbca2c51b1d96a",
+      "address": "0x215d5b150c015245d765329386e2dd46cc9ef0d7f7009fa620454f11c0d4a10",
       "class_hash": "0x340d765eec3c86a14effecec658f0682a0701956e145f85945c0c01eceabecd",
       "abi": [
         {
@@ -11779,8 +11325,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_half_joker",
-      "selector": "0x67571c7006e87a252a9e225d50bbdd5aa21a95a7301b1fc98b0e551e92177a4",
+      "tag": "jokers_of_neon_x_balatro-special_half_joker",
+      "selector": "0x14f2085b05eca958d21dfd7c4922eae84901ea64023cb21f261e572417ebfc0",
       "systems": [
         "execute",
         "get_id",
@@ -11789,7 +11335,7 @@
       ]
     },
     {
-      "address": "0x458abdffbb58a754695376ee6f13d68ccf8b3fec285b9c2cb8f03e8cc31f687",
+      "address": "0x2392e77445da714151abb01e19c5c12e8599ac80ab0ac0dcae64f9a5b6630f0",
       "class_hash": "0x22fba16398d4a5dfdbb62e9bdee0288e2ceb8adb9ca16d5fe9e76740bffe17e",
       "abi": [
         {
@@ -12313,8 +11859,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_joker",
-      "selector": "0x3f7772a0a4b808f6152326f3927c9b02a065b325457b16039df051072fa9bbd",
+      "tag": "jokers_of_neon_x_balatro-special_joker",
+      "selector": "0x628c8357bba18a7d3b3fc5eb8761cf50ab1a9aacb2d37309c1434da3a80e231",
       "systems": [
         "execute",
         "get_id",
@@ -12323,7 +11869,7 @@
       ]
     },
     {
-      "address": "0x726c175c722686f22a7d797342c6f06cb7529caf441be2749dc36913130eacb",
+      "address": "0x511b6ba4c73a4df83f722aa6c121a06063dd545fb01a497320e638ec9297f36",
       "class_hash": "0x10939b3e2554cf2909b62fdf2ed8b764922ebe9f18fdd8b7ae4df3f0149d69e",
       "abi": [
         {
@@ -12847,8 +12393,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_jolly_joker",
-      "selector": "0x79b5225bacdc39aa839c8026f089322d9077fe3ac6326340b90e3fc74a3391a",
+      "tag": "jokers_of_neon_x_balatro-special_jolly_joker",
+      "selector": "0x291d355aca6f8a925f7ea5f939beac6e169dbed9b8c03e8fca78a89c58b72a4",
       "systems": [
         "execute",
         "get_id",
@@ -12857,7 +12403,7 @@
       ]
     },
     {
-      "address": "0xef1c25dde5b8e6c26b0d0953572411b34ea8fc23cd8fbdf765c639d2431509",
+      "address": "0x55adcbe72cd72988c1912e70a698a2b1d014906346655dafb4ffa8d2ae5f276",
       "class_hash": "0x13adc2127c22adaa67874111da69813954536f8d00d7ac3cf21847c90ff4538",
       "abi": [
         {
@@ -13300,8 +12846,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_lusty_joker",
-      "selector": "0x5d3821c6235038beca62cb0be08eaa8995bec3c0b9f69037dd8245b226155f7",
+      "tag": "jokers_of_neon_x_balatro-special_lusty_joker",
+      "selector": "0x621b32adcbb01bb0bb7657840c0922b091c42f61bed9aa7054d06878b244eff",
       "systems": [
         "condition",
         "execute",
@@ -13311,7 +12857,7 @@
       ]
     },
     {
-      "address": "0x20d82c9da9b59276d7bd101150cd34ac7634d4a881d0d5dc2359ce1656897ce",
+      "address": "0x2a6ec7f9fd1e7a03eb7d3cf11a7c47b020e1bf419ac198d96ebfc71f1dab047",
       "class_hash": "0x6f2cd5b96875abafd160eaca1a2eed57606c3baf2c1425b778cb7b285b8bda4",
       "abi": [
         {
@@ -13835,8 +13381,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_mad_joker",
-      "selector": "0x1249a98eba794a1dfe12e4d9ad79780c5650fe60d237193244b0be5cf133358",
+      "tag": "jokers_of_neon_x_balatro-special_mad_joker",
+      "selector": "0x2e6c90a29399cd9f6468f60a3495e32d4d67a5f942f014af630adfe39f2201d",
       "systems": [
         "execute",
         "get_id",
@@ -13845,7 +13391,7 @@
       ]
     },
     {
-      "address": "0x40c738d7c6fe02fa3a371d7def465c0682f95d5e4b54c42420ed7b34d693162",
+      "address": "0x21d7fc40eab8992677b66c39aeb75e05dde6691d8463ce92307ac7ac84fb110",
       "class_hash": "0x541e683e58f4762747dded4895aded7b5c4765334125f5b2d442c9161122943",
       "abi": [
         {
@@ -14239,8 +13785,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_mystic_summit_joker",
-      "selector": "0x35e6f4ef94fc3498589e920926b8a5b48a2eb47fb535bfcdc3a550bcef356b9",
+      "tag": "jokers_of_neon_x_balatro-special_mystic_summit_joker",
+      "selector": "0x5eef007865f0297b154691a276e88dc2ecf655d90875ab8c30155b592f1d771",
       "systems": [
         "execute",
         "get_id",
@@ -14249,7 +13795,7 @@
       ]
     },
     {
-      "address": "0x4873ee08a319df2f43063d5f56ca31fd5048ac029d37fdc6256f290a6ed06cc",
+      "address": "0x64a37888527b0ee629ea567153b8eff48291d3c8736eb3ad1ca652b7d073674",
       "class_hash": "0x511f31f21c4e66401f75cc627472d9151fc33e39c366edc3b3e089d455e3ad5",
       "abi": [
         {
@@ -14773,8 +14319,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_sly_joker",
-      "selector": "0x55fc19fa822447161fe4efd503593b4e3943c5601236c0fcbaf7352f84358c9",
+      "tag": "jokers_of_neon_x_balatro-special_sly_joker",
+      "selector": "0x3621e5734483e01b185c0e6579faba55d2e292f985542d9052f444bdb7d6656",
       "systems": [
         "execute",
         "get_id",
@@ -14783,7 +14329,7 @@
       ]
     },
     {
-      "address": "0x6d9847bb94905091de303687aa13cabdfd0f7dbf5d5166e00451c46625557dc",
+      "address": "0x35afe5a4a95985699c52f36893528e6113901421c9aaf3ef55ec56c0c869bff",
       "class_hash": "0x5b3a7644a5e9e3c4f2651f05962149e5fcfda584539745a509090b245135fc1",
       "abi": [
         {
@@ -15307,8 +14853,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_wily_joker",
-      "selector": "0x185b9fb87ddcd1db559489606f1278f344883d783e0bdbf732ec420ed891c77",
+      "tag": "jokers_of_neon_x_balatro-special_wily_joker",
+      "selector": "0x79444a41003597f7379abcd444676149cf088cb77a0761783151104abd3735b",
       "systems": [
         "execute",
         "get_id",
@@ -15317,7 +14863,7 @@
       ]
     },
     {
-      "address": "0xc56783eb33e096199bd4e07d26ea5378152dfdd281b95439eba381d44a06c4",
+      "address": "0x445c02fe72d92b9879d3f73bc61726a55ab0daaf90ea2468b02f169f2b9ac92",
       "class_hash": "0xef01edb9f5e9eda1b7fb10e36045cd77127cd09c8b6e3d2d558c9eab4d72c8",
       "abi": [
         {
@@ -15760,8 +15306,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_wrathful_joker",
-      "selector": "0x20d25ad7e8f222fff8791dc550136969bedaa910a248fd0b0edee0e28f577b",
+      "tag": "jokers_of_neon_x_balatro-special_wrathful_joker",
+      "selector": "0x1a10737be663273d41e59a54db539100fc7a460085cd44ae31280245f4fcdb0",
       "systems": [
         "condition",
         "execute",
@@ -15771,7 +15317,7 @@
       ]
     },
     {
-      "address": "0x4d3f0341694b8dd8ab236120c41e57c7998544c5790f3edf7341c9bffc7084a",
+      "address": "0x4d65cfdf2ec053b68dd803bc22f19d72d43d60e31c6498a01f623c1540df972",
       "class_hash": "0x256e119e05d735fc1e8db571269d7cbc65cc9ec85cbf13551be4a491e8bc8c6",
       "abi": [
         {
@@ -16295,8 +15841,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-special_zany_joker",
-      "selector": "0x4ac0a423e824f6b6f716be8ea2a9a1183676188397c191e3c83ef3f6bf9c419",
+      "tag": "jokers_of_neon_x_balatro-special_zany_joker",
+      "selector": "0x620c72d36ecf73d792c67d875c7f7b252a4e78886f0e8c0907337ee32dc7f00",
       "systems": [
         "execute",
         "get_id",
@@ -16305,8 +15851,8 @@
       ]
     },
     {
-      "address": "0x7cfae5f0e6f7cb562126d8dca57eb0113597a20a87e145605499b3865d8433e",
-      "class_hash": "0x4cf133a06f945cbb044f41509c7c5f6da04f0348aa7eb9ed3056e94e27e564c",
+      "address": "0x79a2fb156d19c5091a0fd2e49c3a74b4702148f910f03fbfbedbc695685c710",
+      "class_hash": "0x4c640460cc10cf1d8a54efa70e7942613679a236fcbfebc309e915b62f0be7e",
       "abi": [
         {
           "type": "impl",
@@ -16527,8 +16073,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "kitties_of_neon-specials_info",
-      "selector": "0x117956c9c3237d5eb1301e64789e6b1748d1e59496e888a8e35a1cf2d974c28",
+      "tag": "jokers_of_neon_x_balatro-specials_info",
+      "selector": "0x55ec182d1a28a8b13c70b78cad4a5659d910367b2980895c6b20b9173795974",
       "systems": [
         "upgrade"
       ]
