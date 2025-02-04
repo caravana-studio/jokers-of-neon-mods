@@ -8,7 +8,8 @@ pub mod special_lucky_hand {
 
     #[abi(embed_v0)]
     impl LuckyHandCondition of ISpecialCondition<ContractState> {
-        fn condition(self: @ContractState, card: Card) -> bool {
+        fn condition(self: @ContractState, raw_data: felt252) -> bool {
+            let card: Card = raw_data.into();
             card.suit == Suit::Diamonds
         }
     }

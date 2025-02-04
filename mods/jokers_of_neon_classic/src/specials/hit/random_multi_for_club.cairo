@@ -10,7 +10,8 @@ pub mod special_random_multi_for_club {
 
     #[abi(embed_v0)]
     impl RandomMultiClubCondition of ISpecialCondition<ContractState> {
-        fn condition(self: @ContractState, card: Card) -> bool {
+        fn condition(self: @ContractState, raw_data: felt252) -> bool {
+            let card: Card = raw_data.into();
             card.suit == Suit::Clubs
         }
     }

@@ -8,7 +8,8 @@ pub mod special_multi_for_diamond {
 
     #[abi(embed_v0)]
     impl MultiDiamondCondition of ISpecialCondition<ContractState> {
-        fn condition(self: @ContractState, card: Card) -> bool {
+        fn condition(self: @ContractState, raw_data: felt252) -> bool {
+            let card: Card = raw_data.into();
             card.suit == Suit::Diamonds
         }
     }

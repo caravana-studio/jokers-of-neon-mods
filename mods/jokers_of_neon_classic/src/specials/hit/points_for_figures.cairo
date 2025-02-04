@@ -8,7 +8,8 @@ pub mod special_points_for_figures {
 
     #[abi(embed_v0)]
     impl PointsForFiguresCondition of ISpecialCondition<ContractState> {
-        fn condition(self: @ContractState, card: Card) -> bool {
+        fn condition(self: @ContractState, raw_data: felt252) -> bool {
+            let card: Card = raw_data.into();
             card.value == Value::Jack || card.value == Value::Queen || card.value == Value::King
         }
     }

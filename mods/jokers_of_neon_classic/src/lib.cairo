@@ -27,7 +27,7 @@ mod rages {
 
 mod specials {
     mod specials;
-    mod special_game_type {
+    mod game {
         mod extra_help;
         mod hand_thief;
         mod plus_discards;
@@ -51,7 +51,7 @@ mod specials {
     }
     mod miss {}
     mod hand {}
-    mod special_poker_hand {
+    mod poker_hand {
         mod increase_level_double_pair;
         mod increase_level_five_of_a_kind;
         mod increase_level_flush;
@@ -61,10 +61,10 @@ mod specials {
         mod increase_level_straight;
         mod increase_level_three_of_a_kind;
     }
-    mod special_power_up {
+    mod power_up {
         mod power_up_booster;
     }
-    mod special_round_state {
+    mod round {
         mod discard_mastery;
         mod initial_advantage;
     }
