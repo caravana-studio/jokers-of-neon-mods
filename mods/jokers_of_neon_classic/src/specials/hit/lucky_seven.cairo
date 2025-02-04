@@ -4,18 +4,18 @@ pub mod special_lucky_seven {
     use jokers_of_neon_lib::interfaces::{
         base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
     };
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Value}};
+    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Value}, tracker::GameContext};
 
     #[abi(embed_v0)]
     impl LuckySevenCondition of ISpecialCondition<ContractState> {
         fn condition(self: @ContractState, card: Card) -> bool {
-            card.suit == Value::Seven
+            card.value == Value::Seven
         }
     }
 
     #[abi(embed_v0)]
     impl LuckySevenExecutable of ISpecialExecutable<ContractState> {
-        fn execute(ref self: T, game_context: GameContext) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
             (77, 0, 0)
         }
     }
@@ -26,7 +26,7 @@ pub mod special_lucky_seven {
             SPECIAL_LUCKY_SEVEN_ID
         }
 
-        fn get_type(self: @ContractState) -> Span<CardType> {
+        fn get_types(self: @ContractState) -> Span<CardType> {
             array![CardType::Hit].span()
         }
     }

@@ -19,7 +19,7 @@ pub mod special_multi_for_spade {
             SPECIAL_MULTI_FOR_SPADE_ID
         }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
+        fn get_types(ref self: ContractState) -> SpecialType {
             SpecialType::Individual
         }
     }

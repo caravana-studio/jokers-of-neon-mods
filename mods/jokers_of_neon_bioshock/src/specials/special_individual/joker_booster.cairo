@@ -19,7 +19,7 @@ pub mod special_joker_booster {
             SPECIAL_JOKER_BOOSTER_ID
         }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
+        fn get_types(ref self: ContractState) -> SpecialType {
             SpecialType::Individual
         }
     }

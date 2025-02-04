@@ -19,7 +19,7 @@ pub mod special_extra_help {
             game
         }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
+        fn get_types(ref self: ContractState) -> SpecialType {
             SpecialType::Game
         }
 

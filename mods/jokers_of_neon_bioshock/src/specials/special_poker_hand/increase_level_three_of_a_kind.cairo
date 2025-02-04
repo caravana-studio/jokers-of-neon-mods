@@ -22,7 +22,7 @@ pub mod special_increase_level_three_of_a_kind {
             SPECIAL_INCREASE_LEVEL_THREE_OF_A_KIND_ID
         }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
+        fn get_types(ref self: ContractState) -> SpecialType {
             SpecialType::PokerHand
         }
     }

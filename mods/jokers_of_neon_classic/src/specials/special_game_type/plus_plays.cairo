@@ -1,30 +1,32 @@
 #[dojo::contract]
 pub mod special_plus_plays {
     use jokers_of_neon_classic::specials::specials::SPECIAL_PLUS_PLAYS_ID;
-    use jokers_of_neon_lib::interfaces::game::ISpecialGameTypeSpecificType;
-    use jokers_of_neon_lib::models::special_type::SpecialType;
-    use jokers_of_neon_lib::models::status::game::game::Game;
+    use jokers_of_neon_lib::interfaces::{base::ICardBase, specials::{equipable::ISpecialEquipable}};
+    use jokers_of_neon_lib::models::{card_type::CardType, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl SpecialPlusPlaysImpl of ISpecialGameTypeSpecificType<ContractState> {
-        fn equip(ref self: ContractState, game: Game) -> Game {
-            let mut game = game;
-            game.plays += 2;
-            game
+    impl PlusPlaysExecutable of ISpecialEquipable<ContractState> {
+        fn equip(ref self: ContractState, context: GameContext) -> GameContext {
+            let mut context = context;
+            context.game.plays += 2;
+            context
         }
 
-        fn unequip(ref self: ContractState, game: Game) -> Game {
-            let mut game = game;
-            game.plays -= 2;
-            game
+        fn unequip(ref self: ContractState, context: GameContext) -> GameContext {
+            let mut context = context;
+            context.game.plays -= 2;
+            context
         }
+    }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
-            SpecialType::Game
-        }
-
-        fn get_id(ref self: ContractState) -> u32 {
+    #[abi(embed_v0)]
+    impl PlusPlaysBase of ICardBase<ContractState> {
+        fn get_id(self: @ContractState) -> u32 {
             SPECIAL_PLUS_PLAYS_ID
+        }
+
+        fn get_types(self: @ContractState) -> Span<CardType> {
+            array![CardType::Game].span()
         }
     }
 }

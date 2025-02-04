@@ -27,7 +27,7 @@ pub mod rage_strategic_quarted {
             RAGE_CARD_STRATEGIC_QUARTED
         }
 
-        fn get_type(self: @ContractState) -> RageType {
+        fn get_types(self: @ContractState) -> RageType {
             RageType::Game
         }
     }

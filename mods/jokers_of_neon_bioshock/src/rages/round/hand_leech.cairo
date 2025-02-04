@@ -20,7 +20,7 @@ pub mod rage_hand_leech {
             RAGE_CARD_HAND_LEECH
         }
 
-        fn get_type(self: @ContractState) -> RageType {
+        fn get_types(self: @ContractState) -> RageType {
             RageType::Round
         }
     }

@@ -21,7 +21,7 @@ pub mod special_hand_thief {
             game
         }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
+        fn get_types(ref self: ContractState) -> SpecialType {
             SpecialType::Game
         }
 

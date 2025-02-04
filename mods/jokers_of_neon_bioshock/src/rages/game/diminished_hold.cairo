@@ -27,7 +27,7 @@ pub mod rage_diminished_hold {
             RAGE_CARD_DIMINISHED_HOLD
         }
 
-        fn get_type(self: @ContractState) -> RageType {
+        fn get_types(self: @ContractState) -> RageType {
             RageType::Game
         }
     }

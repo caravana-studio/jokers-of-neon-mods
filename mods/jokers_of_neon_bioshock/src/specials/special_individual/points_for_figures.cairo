@@ -19,7 +19,7 @@ pub mod special_points_for_figures {
             SPECIAL_POINTS_FOR_FIGURES_ID
         }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
+        fn get_types(ref self: ContractState) -> SpecialType {
             SpecialType::Individual
         }
     }

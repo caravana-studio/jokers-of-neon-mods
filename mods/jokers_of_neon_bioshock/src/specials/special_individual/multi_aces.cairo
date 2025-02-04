@@ -19,7 +19,7 @@ pub mod special_multi_aces {
             SPECIAL_MULTI_ACES_ID
         }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
+        fn get_types(ref self: ContractState) -> SpecialType {
             SpecialType::Individual
         }
     }

@@ -1,26 +1,17 @@
 #[dojo::contract]
 pub mod special_initial_advantage {
     use jokers_of_neon_classic::specials::specials::SPECIAL_INITIAL_ADVANTAGE_ID;
-    use jokers_of_neon_lib::interfaces::round_state::ISpecialRoundState;
-    use jokers_of_neon_lib::models::special_type::SpecialType;
-    use jokers_of_neon_lib::models::status::game::game::Game;
-    use jokers_of_neon_lib::models::status::round::round::Round;
+    use jokers_of_neon_lib::interfaces::{base::ICardBase, specials::executable::ISpecialExecutable};
+    use jokers_of_neon_lib::models::{card_type::CardType, data::power_up::PowerUp, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl SpecialInitialAdvantageImpl of ISpecialRoundState<ContractState> {
-        fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
-            if round.remaining_plays.into() == game.plays {
-                return (100, 10, 0);
+    impl PowerUpBoosterExecutable of ISpecialExecutable<ContractState> {
+        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
+            if context.round.remaining_plays.into() == context.game.plays {
+                (100, 10, 0)
+            } else {
+                (0, 0, 0)
             }
-            (0, 0, 0)
-        }
-
-        fn get_id(ref self: ContractState) -> u32 {
-            SPECIAL_INITIAL_ADVANTAGE_ID
-        }
-
-        fn get_type(ref self: ContractState) -> SpecialType {
-            SpecialType::RoundState
         }
     }
 }

@@ -19,7 +19,7 @@ pub mod special_score_odd {
             SPECIAL_SCORE_ODD_ID
         }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
+        fn get_types(ref self: ContractState) -> SpecialType {
             SpecialType::RoundState
         }
     }

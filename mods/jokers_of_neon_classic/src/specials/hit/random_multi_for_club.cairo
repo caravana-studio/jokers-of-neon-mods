@@ -2,9 +2,9 @@
 pub mod special_random_multi_for_club {
     use dojo::{model::ModelStorage, world::WorldStorage};
     use jokers_of_neon_classic::specials::specials::SPECIAL_RANDOM_MULTI_FOR_CLUB_ID;
-    use jokers_of_neon_lib::interfaces::{
-        base::ICardBase, models::{card_type::CardType, data::card::{Card, Suit}}, random::Nonce,
-        specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
+    use jokers_of_neon_lib::{
+        interfaces::{base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable}},
+        models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext}, random::{Nonce, RandomImpl},
     };
     const NONCE_KEY: felt252 = 'NONCE_KEY';
 
@@ -17,7 +17,7 @@ pub mod special_random_multi_for_club {
 
     #[abi(embed_v0)]
     impl RandomMultiClubExecutable of ISpecialExecutable<ContractState> {
-        fn execute(ref self: T, game_context: GameContext) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
             let mut world = self.world(@"jokers_of_neon_classic");
             let mut nonce: Nonce = world.read_model(NONCE_KEY);
             let mut random = RandomImpl::new_salt(nonce.value);
@@ -34,7 +34,7 @@ pub mod special_random_multi_for_club {
             SPECIAL_RANDOM_MULTI_FOR_CLUB_ID
         }
 
-        fn get_type(self: @ContractState) -> Span<CardType> {
+        fn get_types(self: @ContractState) -> Span<CardType> {
             array![CardType::Hit].span()
         }
     }

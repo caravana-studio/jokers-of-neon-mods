@@ -4,7 +4,7 @@ pub mod special_multi_for_diamond {
     use jokers_of_neon_lib::interfaces::{
         base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
     };
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}};
+    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext};
 
     #[abi(embed_v0)]
     impl MultiDiamondCondition of ISpecialCondition<ContractState> {
@@ -15,7 +15,7 @@ pub mod special_multi_for_diamond {
 
     #[abi(embed_v0)]
     impl MultiDiamondExecutable of ISpecialExecutable<ContractState> {
-        fn execute(ref self: T, game_context: GameContext) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
             (0, 2, 0)
         }
     }
@@ -26,7 +26,7 @@ pub mod special_multi_for_diamond {
             SPECIAL_MULTI_FOR_DIAMOND_ID
         }
 
-        fn get_type(self: @ContractState) -> Span<CardType> {
+        fn get_types(self: @ContractState) -> Span<CardType> {
             array![CardType::Hit].span()
         }
     }

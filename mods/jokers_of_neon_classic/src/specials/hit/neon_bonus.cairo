@@ -4,7 +4,7 @@ pub mod special_neon_bonus {
     use jokers_of_neon_lib::interfaces::{
         base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
     };
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::Card};
+    use jokers_of_neon_lib::models::{card_type::CardType, data::card::Card, tracker::GameContext};
 
     #[abi(embed_v0)]
     impl NeonBonusCondition of ISpecialCondition<ContractState> {
@@ -15,7 +15,7 @@ pub mod special_neon_bonus {
 
     #[abi(embed_v0)]
     impl NeonBonusExecutable of ISpecialExecutable<ContractState> {
-        fn execute(ref self: T, game_context: GameContext) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
             (20, 0, 0)
         }
     }
@@ -26,7 +26,7 @@ pub mod special_neon_bonus {
             SPECIAL_NEON_BONUS_ID
         }
 
-        fn get_type(self: @ContractState) -> Span<CardType> {
+        fn get_types(self: @ContractState) -> Span<CardType> {
             array![CardType::Hit].span()
         }
     }

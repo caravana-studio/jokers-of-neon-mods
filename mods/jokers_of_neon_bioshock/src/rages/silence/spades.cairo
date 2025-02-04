@@ -26,7 +26,7 @@ pub mod rage_silent_spades {
             RAGE_CARD_SILENT_SPADES
         }
 
-        fn get_type(self: @ContractState) -> RageType {
+        fn get_types(self: @ContractState) -> RageType {
             RageType::Silence
         }
     }

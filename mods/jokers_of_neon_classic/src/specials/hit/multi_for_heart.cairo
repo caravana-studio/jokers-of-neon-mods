@@ -4,18 +4,18 @@ pub mod special_multi_for_heart {
     use jokers_of_neon_lib::interfaces::{
         base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
     };
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}};
+    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext};
 
     #[abi(embed_v0)]
     impl MultiHeartCondition of ISpecialCondition<ContractState> {
         fn condition(self: @ContractState, card: Card) -> bool {
-            card.suit == Suit::Heart
+            card.suit == Suit::Hearts
         }
     }
 
     #[abi(embed_v0)]
     impl MultiHeartExecutable of ISpecialExecutable<ContractState> {
-        fn execute(ref self: T, game_context: GameContext) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
             (0, 2, 0)
         }
     }
@@ -26,7 +26,7 @@ pub mod special_multi_for_heart {
             SPECIAL_MULTI_FOR_HEART_ID
         }
 
-        fn get_type(self: @ContractState) -> Span<CardType> {
+        fn get_types(self: @ContractState) -> Span<CardType> {
             array![CardType::Hit].span()
         }
     }

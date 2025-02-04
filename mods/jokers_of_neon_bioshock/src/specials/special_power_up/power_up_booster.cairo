@@ -15,7 +15,7 @@ mod special_power_up_booster {
             SPECIAL_POWER_UP_BOOSTER_ID
         }
 
-        fn get_type(self: @ContractState) -> SpecialType {
+        fn get_typesself: @ContractState) -> SpecialType {
             SpecialType::PowerUp
         }
     }

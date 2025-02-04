@@ -4,7 +4,7 @@ pub mod special_joker_booster {
     use jokers_of_neon_lib::interfaces::{
         base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
     };
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}};
+    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext};
 
     #[abi(embed_v0)]
     impl JokerBoosterCondition of ISpecialCondition<ContractState> {
@@ -15,7 +15,7 @@ pub mod special_joker_booster {
 
     #[abi(embed_v0)]
     impl JokerBoosterExecutable of ISpecialExecutable<ContractState> {
-        fn execute(ref self: T, game_context: GameContext) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
             (100, 1, 0)
         }
     }
@@ -26,7 +26,7 @@ pub mod special_joker_booster {
             SPECIAL_JOKER_BOOSTER_ID
         }
 
-        fn get_type(self: @ContractState) -> Span<CardType> {
+        fn get_types(self: @ContractState) -> Span<CardType> {
             array![CardType::Hit].span()
         }
     }

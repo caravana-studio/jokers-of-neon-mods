@@ -26,7 +26,7 @@ pub mod rage_silent_diamonds {
             RAGE_CARD_SILENT_DIAMONDS
         }
 
-        fn get_type(self: @ContractState) -> RageType {
+        fn get_types(self: @ContractState) -> RageType {
             RageType::Silence
         }
     }

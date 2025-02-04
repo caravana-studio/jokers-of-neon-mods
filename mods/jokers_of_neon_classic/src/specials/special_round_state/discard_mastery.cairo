@@ -1,26 +1,28 @@
 #[dojo::contract]
-pub mod special_discard_mastery {
+mod special_discard_mastery {
     use jokers_of_neon_classic::specials::specials::SPECIAL_DISCARD_MASTERY_ID;
-    use jokers_of_neon_lib::interfaces::round_state::ISpecialRoundState;
-    use jokers_of_neon_lib::models::special_type::SpecialType;
-    use jokers_of_neon_lib::models::status::game::game::Game;
-    use jokers_of_neon_lib::models::status::round::round::Round;
+    use jokers_of_neon_lib::interfaces::{base::ICardBase, specials::executable::ISpecialExecutable};
+    use jokers_of_neon_lib::models::{card_type::CardType, data::power_up::PowerUp, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl SpecialDiscardMasteryImpl of ISpecialRoundState<ContractState> {
-        fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
-            if round.remaining_discards.is_zero() {
-                return (0, 10, 0);
+    impl PowerUpBoosterExecutable of ISpecialExecutable<ContractState> {
+        fn execute(ref self: ContractState, context: GameContext) -> (i32, i32, i32) {
+            if context.round.remaining_discards.is_zero() {
+                (0, 10, 0)
+            } else {
+                (0, 0, 0)
             }
-            (0, 0, 0)
         }
+    }
 
-        fn get_id(ref self: ContractState) -> u32 {
+    #[abi(embed_v0)]
+    impl PowerUpBoosterBase of ICardBase<ContractState> {
+        fn get_id(self: @ContractState) -> u32 {
             SPECIAL_DISCARD_MASTERY_ID
         }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
-            SpecialType::RoundState
+        fn get_types(self: @ContractState) -> Span<CardType> {
+            array![CardType::RoundState].span()
         }
     }
 }
