@@ -2,12 +2,12 @@
 pub mod special_lusty_joker {
     use jokers_of_neon_classic::specials::specials::SPECIAL_LUSTY_JOKER_ID;
     use jokers_of_neon_lib::interfaces::{
-        base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
+        base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable},
     };
     use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl LustyJokerCondition of ISpecialCondition<ContractState> {
+    impl LustyJokerCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
             card.suit == Suit::Hearts
@@ -15,7 +15,7 @@ pub mod special_lusty_joker {
     }
 
     #[abi(embed_v0)]
-    impl LustyJokerExecutable of ISpecialExecutable<ContractState> {
+    impl LustyJokerExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             (0, 3, 0)
         }

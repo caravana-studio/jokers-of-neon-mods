@@ -1,11 +1,11 @@
 #[dojo::contract]
 pub mod special_wily_joker {
     use jokers_of_neon_classic::specials::specials::SPECIAL_WILY_JOKER_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, specials::executable::ISpecialExecutable};
+    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
     use jokers_of_neon_lib::models::{card_type::CardType, data::poker_hand::PokerHand, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl WilyJokerExecutable of ISpecialExecutable<ContractState> {
+    impl WilyJokerExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             if context.hand == PokerHand::ThreeOfAKind {
                 (100, 0, 0)

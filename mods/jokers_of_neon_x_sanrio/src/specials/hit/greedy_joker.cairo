@@ -2,12 +2,12 @@
 pub mod special_greedy_joker {
     use jokers_of_neon_classic::specials::specials::SPECIAL_GREEDY_JOKER_ID;
     use jokers_of_neon_lib::interfaces::{
-        base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
+        base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable},
     };
     use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl GreedyJokerCondition of ISpecialCondition<ContractState> {
+    impl GreedyJokerCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
             card.suit == Suit::Diamonds
@@ -15,7 +15,7 @@ pub mod special_greedy_joker {
     }
 
     #[abi(embed_v0)]
-    impl GreedyJokerExecutable of ISpecialExecutable<ContractState> {
+    impl GreedyJokerExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             (0, 3, 0)
         }

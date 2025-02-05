@@ -2,12 +2,12 @@
 pub mod special_multi_for_diamond {
     use jokers_of_neon_classic::specials::specials::SPECIAL_MULTI_FOR_DIAMOND_ID;
     use jokers_of_neon_lib::interfaces::{
-        base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
+        base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable},
     };
     use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl MultiDiamondCondition of ISpecialCondition<ContractState> {
+    impl MultiDiamondCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
             card.suit == Suit::Diamonds
@@ -15,7 +15,7 @@ pub mod special_multi_for_diamond {
     }
 
     #[abi(embed_v0)]
-    impl MultiDiamondExecutable of ISpecialExecutable<ContractState> {
+    impl MultiDiamondExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             (0, 2, 0)
         }

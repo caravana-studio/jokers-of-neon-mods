@@ -2,12 +2,12 @@
 pub mod rage_diminished_hold {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_DIMINISHED_HOLD;
     use jokers_of_neon_lib::{
-        interfaces::{base::ICardBase, specials::equipable::ISpecialEquipable},
+        interfaces::{base::ICardBase, cards::equipable::ICardEquipable},
         models::{card_type::CardType, tracker::GameContext},
     };
 
     #[abi(embed_v0)]
-    impl DiminishedHoldEquipable of ISpecialEquipable<ContractState> {
+    impl DiminishedHoldEquipable of ICardEquipable<ContractState> {
         fn equip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut context = context;
             context.game.hand_len -= 2;

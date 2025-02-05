@@ -3,13 +3,13 @@ pub mod special_random_multi_for_club {
     use dojo::{model::ModelStorage, world::WorldStorage};
     use jokers_of_neon_classic::specials::specials::SPECIAL_RANDOM_MULTI_FOR_CLUB_ID;
     use jokers_of_neon_lib::{
-        interfaces::{base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable}},
+        interfaces::{base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable}},
         models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext}, random::{Nonce, RandomImpl},
     };
     const NONCE_KEY: felt252 = 'NONCE_KEY';
 
     #[abi(embed_v0)]
-    impl RandomMultiClubCondition of ISpecialCondition<ContractState> {
+    impl RandomMultiClubCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
             card.suit == Suit::Clubs
@@ -17,7 +17,7 @@ pub mod special_random_multi_for_club {
     }
 
     #[abi(embed_v0)]
-    impl RandomMultiClubExecutable of ISpecialExecutable<ContractState> {
+    impl RandomMultiClubExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(@"jokers_of_neon_classic");
             let mut nonce: Nonce = world.read_model(NONCE_KEY);

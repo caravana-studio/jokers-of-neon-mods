@@ -2,12 +2,12 @@
 pub mod rage_hand_leech {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_HAND_LEECH;
     use jokers_of_neon_lib::{
-        interfaces::{base::ICardBase, specials::equipable::ISpecialEquipable},
+        interfaces::{base::ICardBase, cards::equipable::ICardEquipable},
         models::{card_type::CardType, tracker::GameContext},
     };
 
     #[abi(embed_v0)]
-    impl HandLeechEquipable of ISpecialEquipable<ContractState> {
+    impl HandLeechEquipable of ICardEquipable<ContractState> {
         fn equip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut context = context;
             context.round.remaining_plays -= 2;

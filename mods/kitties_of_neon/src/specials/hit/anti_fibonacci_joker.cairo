@@ -2,12 +2,12 @@
 pub mod special_anti_fibonacci_joker {
     use jokers_of_neon_classic::specials::specials::SPECIAL_ANTI_FIBONACCI_JOKER_ID;
     use jokers_of_neon_lib::interfaces::{
-        base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
+        base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable},
     };
     use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit, Value}, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl AntiFibonacciJokerCondition of ISpecialCondition<ContractState> {
+    impl AntiFibonacciJokerCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
             card.value == Value::Four
@@ -19,7 +19,7 @@ pub mod special_anti_fibonacci_joker {
     }
 
     #[abi(embed_v0)]
-    impl AntiFibonacciJokerExecutable of ISpecialExecutable<ContractState> {
+    impl AntiFibonacciJokerExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             (0, 8, 0)
         }

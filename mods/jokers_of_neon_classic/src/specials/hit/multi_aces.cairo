@@ -2,12 +2,12 @@
 pub mod special_multi_aces {
     use jokers_of_neon_classic::specials::specials::SPECIAL_MULTI_ACES_ID;
     use jokers_of_neon_lib::interfaces::{
-        base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
+        base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable},
     };
     use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Value}, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl MultiAcesCondition of ISpecialCondition<ContractState> {
+    impl MultiAcesCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
             card.value == Value::Ace
@@ -15,7 +15,7 @@ pub mod special_multi_aces {
     }
 
     #[abi(embed_v0)]
-    impl MultiAcesExecutable of ISpecialExecutable<ContractState> {
+    impl MultiAcesExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             (0, 5, 0)
         }

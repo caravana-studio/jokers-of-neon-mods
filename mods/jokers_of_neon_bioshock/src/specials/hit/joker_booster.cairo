@@ -2,12 +2,12 @@
 pub mod special_joker_booster {
     use jokers_of_neon_classic::specials::specials::SPECIAL_JOKER_BOOSTER_ID;
     use jokers_of_neon_lib::interfaces::{
-        base::ICardBase, specials::{condition::ISpecialCondition, executable::ISpecialExecutable},
+        base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable},
     };
     use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl JokerBoosterCondition of ISpecialCondition<ContractState> {
+    impl JokerBoosterCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
             card.suit == Suit::Joker
@@ -15,7 +15,7 @@ pub mod special_joker_booster {
     }
 
     #[abi(embed_v0)]
-    impl JokerBoosterExecutable of ISpecialExecutable<ContractState> {
+    impl JokerBoosterExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let joker_card: Card = raw_data.into();
             ((joker_card.points * 2).try_into().unwrap(), (joker_card.multi_add * 2).try_into().unwrap(), 0)

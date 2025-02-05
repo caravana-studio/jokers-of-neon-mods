@@ -2241,7 +2241,7 @@
         {
           "type": "impl",
           "name": "DiminishedHoldEquipable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable"
         },
         {
           "type": "enum",
@@ -2697,7 +2697,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable",
+          "name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable",
           "items": [
             {
               "type": "function",
@@ -3039,7 +3039,7 @@
         {
           "type": "impl",
           "name": "HandLeechEquipable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable"
         },
         {
           "type": "enum",
@@ -3495,7 +3495,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable",
+          "name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable",
           "items": [
             {
               "type": "function",
@@ -6735,7 +6735,7 @@
         {
           "type": "impl",
           "name": "StrategicQuartedEquipable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable"
         },
         {
           "type": "enum",
@@ -7191,7 +7191,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable",
+          "name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable",
           "items": [
             {
               "type": "function",
@@ -7533,7 +7533,7 @@
         {
           "type": "impl",
           "name": "HandLeechEquipable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable"
         },
         {
           "type": "enum",
@@ -7989,7 +7989,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable",
+          "name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable",
           "items": [
             {
               "type": "function",
@@ -8757,7 +8757,7 @@
         {
           "type": "impl",
           "name": "ExtraHelpExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable"
         },
         {
           "type": "enum",
@@ -9213,7 +9213,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable",
+          "name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable",
           "items": [
             {
               "type": "function",
@@ -9555,7 +9555,7 @@
         {
           "type": "impl",
           "name": "HandThiefExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable"
         },
         {
           "type": "enum",
@@ -10011,7 +10011,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::equipable::ISpecialEquipable",
+          "name": "jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable",
           "items": [
             {
               "type": "function",
@@ -10353,7 +10353,7 @@
         {
           "type": "impl",
           "name": "ThreeOfAKindBoostExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -10809,7 +10809,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
           "items": [
             {
               "type": "function",
@@ -11138,7 +11138,7 @@
         {
           "type": "impl",
           "name": "InitialAdvantageExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -11594,7 +11594,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
           "items": [
             {
               "type": "function",
@@ -11923,7 +11923,7 @@
         {
           "type": "impl",
           "name": "JokerBoosterCondition",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::condition::ISpecialCondition"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
         },
         {
           "type": "enum",
@@ -11941,7 +11941,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::condition::ISpecialCondition",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
           "items": [
             {
               "type": "function",
@@ -11964,7 +11964,7 @@
         {
           "type": "impl",
           "name": "JokerBoosterExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -12406,7 +12406,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
           "items": [
             {
               "type": "function",
@@ -12735,7 +12735,7 @@
         {
           "type": "impl",
           "name": "MultiAcesCondition",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::condition::ISpecialCondition"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
         },
         {
           "type": "enum",
@@ -12753,7 +12753,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::condition::ISpecialCondition",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
           "items": [
             {
               "type": "function",
@@ -12776,7 +12776,7 @@
         {
           "type": "impl",
           "name": "MultiAcesExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -13218,7 +13218,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
           "items": [
             {
               "type": "function",
@@ -13547,7 +13547,7 @@
         {
           "type": "impl",
           "name": "MultiHeartCondition",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::condition::ISpecialCondition"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
         },
         {
           "type": "enum",
@@ -13565,7 +13565,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::condition::ISpecialCondition",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
           "items": [
             {
               "type": "function",
@@ -13588,7 +13588,7 @@
         {
           "type": "impl",
           "name": "MultiHeartExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -14030,7 +14030,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
           "items": [
             {
               "type": "function",
@@ -14359,7 +14359,7 @@
         {
           "type": "impl",
           "name": "MultiSpadeCondition",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::condition::ISpecialCondition"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
         },
         {
           "type": "enum",
@@ -14377,7 +14377,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::condition::ISpecialCondition",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
           "items": [
             {
               "type": "function",
@@ -14400,7 +14400,7 @@
         {
           "type": "impl",
           "name": "MultiSpadeExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -14842,7 +14842,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
           "items": [
             {
               "type": "function",
@@ -15171,7 +15171,7 @@
         {
           "type": "impl",
           "name": "PointsForFiguresCondition",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::condition::ISpecialCondition"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
         },
         {
           "type": "enum",
@@ -15189,7 +15189,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::condition::ISpecialCondition",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
           "items": [
             {
               "type": "function",
@@ -15212,7 +15212,7 @@
         {
           "type": "impl",
           "name": "PointsForFiguresExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -15654,7 +15654,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
           "items": [
             {
               "type": "function",
@@ -15983,7 +15983,7 @@
         {
           "type": "impl",
           "name": "PowerUpBoosterExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -16439,7 +16439,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
           "items": [
             {
               "type": "function",
@@ -16768,7 +16768,7 @@
         {
           "type": "impl",
           "name": "ScoreOddExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable"
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -17224,7 +17224,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::specials::executable::ISpecialExecutable",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
           "items": [
             {
               "type": "function",
