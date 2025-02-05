@@ -10,7 +10,7 @@ pub mod special_multi_for_spade {
     impl MultiSpadeCondition of ISpecialCondition<ContractState> {
         fn condition(self: @ContractState, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
-            card.suit == Suit::Hearts
+            card.suit == Suit::Spade
         }
     }
 
