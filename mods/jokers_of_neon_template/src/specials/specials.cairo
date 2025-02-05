@@ -7,7 +7,6 @@ const SPECIAL_INCREASE_LEVEL_DOUBLE_PAIR_ID: u32 = 305;
 const SPECIAL_POWER_UP_BOOSTER_ID: u32 = 306;
 const SPECIAL_INITIAL_ADVANTAGE_ID: u32 = 307;
 const SPECIAL_DISCARD_MASTERY_ID: u32 = 308;
-const SPECIAL_HIGH_CARD_BOOSTER_ID: u32 = 309;
 
 fn specials_ids_all() -> Array<u32> {
     array![
@@ -20,7 +19,6 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_POWER_UP_BOOSTER_ID,
         SPECIAL_INITIAL_ADVANTAGE_ID,
         SPECIAL_DISCARD_MASTERY_ID,
-        SPECIAL_HIGH_CARD_BOOSTER_ID,
     ]
 }
 
@@ -48,7 +46,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // SS-Grade Group
     let SS_SPECIALS_PROBABILITY = 5;
     let SS_SPECIALS_COST = 7000;
-    let SS_SPECIALS = array![SPECIAL_INITIAL_ADVANTAGE_ID, SPECIAL_HIGH_CARD_BOOSTER_ID].span();
+    let SS_SPECIALS = array![SPECIAL_INITIAL_ADVANTAGE_ID].span();
 
     assert(
         C_SPECIALS_PROBABILITY
