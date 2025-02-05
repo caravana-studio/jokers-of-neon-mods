@@ -43,8 +43,6 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_BANNER_JOKER_ID,
         SPECIAL_MYSTIC_SUMMIT_JOKER_ID,
         SPECIAL_FIBONACCI_JOKER_ID,
-        SPECIAL_ANTI_FIBONACCI_JOKER_ID,
-        SPECIAL_JOKER_2_ID,
     ]
 }
 

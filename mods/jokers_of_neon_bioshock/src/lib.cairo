@@ -27,26 +27,26 @@ mod rages {
 
 mod specials {
     mod specials;
-    mod special_game_type {
+    mod game {
         mod extra_help;
         mod hand_thief;
     }
-    mod special_individual {
+    mod hit {
         mod joker_booster;
-        mod lucky_hand;
+        mod multi_aces;
+        mod multi_for_heart;
+        mod multi_for_spade;
+        mod points_for_figures;
     }
-    mod special_poker_hand {
-        mod high_card_booster;
-        mod increase_level_double_pair;
-        mod increase_level_pair;
+    mod poker_hand {
+        mod increase_level_three_of_a_kind;
     }
-    mod special_power_up {
+    mod power_up {
         mod power_up_booster;
     }
-    mod special_round_state {
-        mod discard_mastery;
+    mod round {
         mod initial_advantage;
-        mod score_even;
+        mod score_odd;
     }
 }
 
