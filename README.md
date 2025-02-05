@@ -501,7 +501,7 @@ let SS_SPECIALS = array![..., SPECIAL_HIGH_CARD_BOOSTER_ID].span();
 
 #### 2.4.3. Create the Implementation File
 
-Since this card is specific to `PokerHand` functionality, its type will be `CardType::PokerHand`. Navigate to the `mods/mod_name/src/specials/special_poker_hand/` directory and create a new file named `high_card_booster.cairo`. Add the implementation for your new card in this file.
+Since this card is specific to `PokerHand` functionality, its type will be `CardType::PokerHand`. Navigate to the `mods/mod_name/src/specials/poker_hand/` directory and create a new file named `high_card_booster.cairo`. Add the implementation for your new card in this file.
 
 After that whe should go to `src/lib.cairo` and add this line to include our new module:
 
