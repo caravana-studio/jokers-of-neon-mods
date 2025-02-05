@@ -34,7 +34,7 @@ mod specials {
         mod plus_plays;
     }
     mod discard {
-        special_wanted_joker
+        mod wanted_joker;
     }
     mod hit {
         mod joker_booster;
