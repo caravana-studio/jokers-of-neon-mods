@@ -33,6 +33,9 @@ mod specials {
         mod plus_discards;
         mod plus_plays;
     }
+    mod discard {
+        mod wanted_joker;
+    }
     mod hit {
         mod joker_booster;
         mod lucky_hand;
