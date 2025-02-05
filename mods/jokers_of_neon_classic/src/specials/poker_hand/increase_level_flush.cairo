@@ -7,7 +7,7 @@ pub mod special_increase_level_flush {
     #[abi(embed_v0)]
     impl FlushBoostExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            if context.hand == PokerHand::FiveOfAKind {
+            if context.hand == PokerHand::Flush {
                 (20, 4, 0)
             } else {
                 (0, 0, 0)
