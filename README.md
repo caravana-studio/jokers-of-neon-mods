@@ -472,7 +472,7 @@ All special cards must be defined in `mods/mod_name/src/specials/specials.cairo`
 Open `mods/mod_name/src/specials/specials.cairo` and add the unique ID for your new Special Card:
 
 ```rust
-const SPECIAL_NEW_CARD_ID: u32 = 310;
+const SPECIAL_HIGH_CARD_BOOSTER_ID: u32 = 309;
 ```
 
 ---
@@ -485,7 +485,7 @@ Add the new card id into the `*specials_ids_all*` function :
   fn specials_ids_all() -> Array<u32> {
   array![
       ....,
-      SPECIAL_NEW_CARD_ID
+      SPECIAL_HIGH_CARD_BOOSTER_ID
   ]}
 ```
 
@@ -494,14 +494,14 @@ Groups define the probability the card has for appearing in the shop and also it
 You can also adjust the probabilities and costs for each group. Ensure that the probabilities of all defined groups add up to 100.
 
 ```rust
-let SS_SPECIALS = array![..., SPECIAL_NEW_CARD_ID].span();
+let SS_SPECIALS = array![..., SPECIAL_HIGH_CARD_BOOSTER_ID].span();
 ```
 
 ---
 
 #### 2.4.3. Create the Implementation File
 
-Since this card is specific to `PokerHand` functionality, its type will be `SpecialType::PokerHand`. Navigate to the `mods/mod_name/src/specials/special_poker_hand/` directory and create a new file named `high_card_booster.cairo`. Add the implementation for your new card in this file.
+Since this card is specific to `PokerHand` functionality, its type will be `CardType::PokerHand`. Navigate to the `mods/mod_name/src/specials/poker_hand/` directory and create a new file named `high_card_booster.cairo`. Add the implementation for your new card in this file.
 
 After that whe should go to `src/lib.cairo` and add this line to include our new module:
 
@@ -519,27 +519,28 @@ Below is an example of how to implement the HighCard Booster special card:
 #[dojo::contract]
 pub mod special_high_card_booster {
     use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_CARD_BOOSTER_ID;
-    use jokers_of_neon_lib::interfaces::poker_hand::ISpecialPokerHand;
-    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
-use jokers_of_neon_lib::models::tracker::GameContext;
-    use jokers_of_neon_lib::models::special_type::SpecialType;
+    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
+    use jokers_of_neon_lib::models::{card_type::CardType, data::poker_hand::PokerHand, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl SpecialHighCardBoosterImpl of ISpecialPokerHand<ContractState> {
-        fn execute(ref self: ContractState, game_context: GameContext) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
-            if game_context.hand == PokerHand::HighCard {
-                ((100, array![].span()), (20, array![].span()), (500, array![].span()))
+    impl HighCardBoostExecutable of ICardExecutable<ContractState> {
+        fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+            if context.hand == PokerHand::HighCard {
+                (100, 20, 500)
             } else {
-                ((0, array![].span()), (0, array![].span()), (0, array![].span()))
+                (0, 0, 0)
             }
         }
+    }
 
-        fn get_id(ref self: ContractState) -> u32 {
+    #[abi(embed_v0)]
+    impl HighCardBoostBase of ICardBase<ContractState> {
+        fn get_id(self: @ContractState) -> u32 {
             SPECIAL_HIGH_CARD_BOOSTER_ID
         }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
-            SpecialType::PokerHand
+        fn get_types(self: @ContractState) -> Span<CardType> {
+            array![CardType::PokerHand].span()
         }
     }
 }

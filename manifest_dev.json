@@ -1,7 +1,7 @@
 {
   "world": {
-    "class_hash": "0x2361c106e790c1d1bff8c9f73c9d84e9e3ac94b2d8df6db4ddd55e82c33a9b4",
-    "address": "0x5ea887b9a0da64376cf6d799587f0d502b19045097909a8b89c53ad8eb02aca",
+    "class_hash": "0x4b767fda48530353c2e44e4b9433f4d75c6c9974aaff43ecc00de9455eb71b8",
+    "address": "0x6aee3caa2bf572667623e328530bc8e3ba8c9b96b5eaf482825e8ddda14c2d0",
     "seed": "jokers_of_neon_mods",
     "name": "jokers_of_neon_mods",
     "entrypoints": [
@@ -1252,7 +1252,7 @@
   },
   "contracts": [
     {
-      "address": "0x1f937bd99b6e376aeefdff931a9c6a1193116c611d93454f6875ea9793a9667",
+      "address": "0x2abb4e3384f68bfafbf9965a4d7a4a112d001095823acba55f51781cf50998a",
       "class_hash": "0x25971ac1ec0d91c5bc4fed5105a79e441bec3d4e095b1aafd5f5975ba33f4d8",
       "abi": [
         {
@@ -1641,7 +1641,7 @@
       ]
     },
     {
-      "address": "0x1cca9c88725b5fc6cc76c0b260b6684b7bdf7d350c425f24d8d681acfe45e70",
+      "address": "0x65a29aad59a2596fbca9795c7f8eb8a211f07f4303512c55c4c775d5464e75c",
       "class_hash": "0x292e51aa93b7530af37f71c887656e7d5cb05a52db5baaa03bf9ae782700b36",
       "abi": [
         {
@@ -1910,7 +1910,7 @@
       ]
     },
     {
-      "address": "0x65d89bba8b9e9b7e8f248ae76b634ed63ca6bd6c8f96984284275bc6eea9e5f",
+      "address": "0x2aa5f6b0d85b6bf4c58f5a941bbf29efa00c513c2b2d41e02486d99b45a953d",
       "class_hash": "0x7def46010638847e50d273b3871c64d3cdf502d1021cfa004017b97e4754064",
       "abi": [
         {
@@ -2182,7 +2182,7 @@
   "models": [
     {
       "members": [],
-      "class_hash": "0x76e5f60c740062ae3d4d53547f25fcbc82ff80d036394924d419c71be12e8fe",
+      "class_hash": "0x1ad4ccb4e03123ed5882658413c63c6e84ab4da5731dfd84acd6caefd51f0d3",
       "tag": "jokers_of_neon_mods-GameMod",
       "selector": "0x7780c0a617454aeb11cb482af68ba50b9068cdaf0a23506b244d0dc512356d"
     },
@@ -2194,7 +2194,7 @@
     },
     {
       "members": [],
-      "class_hash": "0x4f0a899fcfa24d18271ac34298e652fc2a7d02b235e6c4d01b63907fb82924d",
+      "class_hash": "0x6db8f4062cfcda99e89aadcbc5cd6b02f3f5f88dabe3231a75112128e5b66f7",
       "tag": "jokers_of_neon_mods-ModConfig",
       "selector": "0x26a71fa368dab860d69ad69d90cdde591bf7d51c87d0d2853986e2b6ada2d50"
     },
@@ -2206,13 +2206,13 @@
     },
     {
       "members": [],
-      "class_hash": "0x6e4a556283d579d4df98d37527cfd9895181b6c53111e8f297d2c96b2d84936",
+      "class_hash": "0x5c9f378946ec1c0f4a119728c95c11c5581739e7d00f0e9e30ea9b39a59d613",
       "tag": "jokers_of_neon_mods-RageData",
       "selector": "0x6b98e85ad8505173f160f50dac5af659d54b516c909a5d5f5194396581f3ce4"
     },
     {
       "members": [],
-      "class_hash": "0x4363ba655e420db446ba74313d394f8cf0836be85e4a5badd249973b4b7d9a2",
+      "class_hash": "0x6c6b2fe5ae724e22f0ca62142c33a87b2579bd02aece6d7267e3e0a43f65d34",
       "tag": "jokers_of_neon_mods-SpecialData",
       "selector": "0x16d80dd61ca87e82de4ffbe91d73bbdcf2a58ec785cf870a07d1570dc82f1c9"
     }
