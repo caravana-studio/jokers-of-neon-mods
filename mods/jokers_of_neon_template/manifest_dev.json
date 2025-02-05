@@ -1690,8 +1690,8 @@
       ]
     },
     {
-      "address": "0x2b2e6cf90c120adecc76abb4812641a991a7d23e512ee3cf3bd47621aefe1d6",
-      "class_hash": "0x39d6c6cebfa8a2362dca043449cccb193476d9d346f2b02272f9aa2a58e7cfa",
+      "address": "0x18aac942b4fa236c7b24deaf03864885c517a93c83d9db98155b78cac1d117f",
+      "class_hash": "0x3f56e35bdc5ea9b4bdc1791c1f60e0d7526aedb68c420ef1a71bcbe260a10b9",
       "abi": [
         {
           "type": "impl",
@@ -2185,8 +2185,8 @@
       ]
     },
     {
-      "address": "0x1eecc3813d6f8f48a75d59138087038d65f5da4c40bb1a5b91456fb2d4a0e09",
-      "class_hash": "0x49e770502400e36a3526e06fd8ad8a4722e0c076f6272b5227725ad9bbf3a43",
+      "address": "0x6537c0f224d9c1b4c29e382d415bcb2bd15d91332eda585c2ad13a65c8371f4",
+      "class_hash": "0x648a64c34ed99f088da85e4e33d2c3a530aea5ac9592b2f9425cd84fae0b393",
       "abi": [
         {
           "type": "impl",
@@ -2405,6 +2405,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "core::bool",
           "variants": [
             {
@@ -2666,6 +2752,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -2737,88 +2827,6 @@
           "type": "impl",
           "name": "DiminishedHoldBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -2983,8 +2991,8 @@
       ]
     },
     {
-      "address": "0x359fe4bcc62c7a6714d63610cda6f674325cea8e7eec26365efb2952fd74f88",
-      "class_hash": "0x681ed1db9b2e63f166cef40b996499c3750afbad9daa8e4bd6feb14720a3333",
+      "address": "0x7d54f0bfef648f4fae1fedd24971d464c41468d374d9eacd93cfc9662648017",
+      "class_hash": "0x10f4eac264622f0f79f722501d8e6165e74c2a6818c4ebe0ec9b649efa610ff",
       "abi": [
         {
           "type": "impl",
@@ -3203,6 +3211,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "core::bool",
           "variants": [
             {
@@ -3464,6 +3558,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -3535,88 +3633,6 @@
           "type": "impl",
           "name": "HandLeechBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -3781,8 +3797,8 @@
       ]
     },
     {
-      "address": "0x38fcbb9591458d30900514fb4818196f025435e04e186a4ee69f3713bddb67b",
-      "class_hash": "0x3f42bf5393094b717a64d7dcee8bbe1d1e5b70cd14d70c11aa7a4d8d0c60a12",
+      "address": "0x37df7fbd1da9c7e4bd687a785aaeb7669b63731275cc2eb4d55386f61735e60",
+      "class_hash": "0x74b296a1d88741f959ced693afc88c4ed2fc5f75e472642837424b3a4a16e60",
       "abi": [
         {
           "type": "impl",
@@ -4100,6 +4116,10 @@
             {
               "name": "Silence",
               "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
             }
           ]
         },
@@ -4264,8 +4284,8 @@
       ]
     },
     {
-      "address": "0x160307d710546c4e1f4e6dc0c6795132899908b02b8cff89f7e6d2696789385",
-      "class_hash": "0x2d7f99e55de90976f16fcc47d53ab7f55f401aa77531037275f46a0ac221b85",
+      "address": "0x3b18be971e8fc30b0a8d220618643277f1cc39eef0beda4570a3a8e3909d577",
+      "class_hash": "0x38c74866d09dbb9e5f6beb50f349bcb7c6fcc1f306c48b97bf3085d903ea5d2",
       "abi": [
         {
           "type": "impl",
@@ -4583,6 +4603,10 @@
             {
               "name": "Silence",
               "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
             }
           ]
         },
@@ -4747,8 +4771,8 @@
       ]
     },
     {
-      "address": "0xa176cb809850e323142a6152b87fae7bdb56ea2044c07ffa19e475dd19206e",
-      "class_hash": "0x76278d6d0794c2f105cbb4c45df19cdf8c5a48c6457f5bcd318dce5fa2f60b9",
+      "address": "0x215adb60214bf917a1c0123548a041016de649c2027ffe831cc4b2e57f5a557",
+      "class_hash": "0x116614ab47bcc39548794d4d10510e71460475c082180755fd2213c1f4da9b0",
       "abi": [
         {
           "type": "impl",
@@ -5066,6 +5090,10 @@
             {
               "name": "Silence",
               "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
             }
           ]
         },
@@ -5230,8 +5258,8 @@
       ]
     },
     {
-      "address": "0x6034368025b900cfddb0c0be17e36c9e996c490c91f0c7b4ce294b0ac0098af",
-      "class_hash": "0x4b0bc03065b62ac081db7a122abfb15ce02416bff27886c15814c6ae7472607",
+      "address": "0x194d7ffbc0d28d2791a4b670bc515c50dc37c61b7f7f7d588e5290521290382",
+      "class_hash": "0x78e48bc1296f068fd4627827b007e0ea8625bcb3fb62c530fbfa240d6219dfe",
       "abi": [
         {
           "type": "impl",
@@ -5549,6 +5577,10 @@
             {
               "name": "Silence",
               "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
             }
           ]
         },
@@ -5713,8 +5745,8 @@
       ]
     },
     {
-      "address": "0x2a01be43124a7d47c36c3c13e8d9cbeeddd65c39fafcd17e2063a187c993cb7",
-      "class_hash": "0x4290bff71032baabee9d8d4a881ea99599b5be32f46cbee2249c8ddc9f9e359",
+      "address": "0x52d4cc6914cf538c1f4966d196f84b0dc7fde0bf8c98936d4ded73285c640a8",
+      "class_hash": "0x41846dcb8fe8cdbb11efeb09a5f2c1af557d3a74369257425659ed9fe786652",
       "abi": [
         {
           "type": "impl",
@@ -6032,6 +6064,10 @@
             {
               "name": "Silence",
               "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
             }
           ]
         },
@@ -6196,8 +6232,8 @@
       ]
     },
     {
-      "address": "0x1bc7317b59e04595d18d3c0867a7a657202915ee688ac77f91eb8c84377b323",
-      "class_hash": "0x71ac1bba765e2851e35b1c9a37dc0d61a3bfc5f2e73bb6a78087a33168a9934",
+      "address": "0x52c07d4f05a91c3c00870735aa61588e727b6262d96fd42439737426c9fc293",
+      "class_hash": "0x3d3bd1743e52f6bcc80021acf36fb6baac8684811ffb06aee9fd1609df8814e",
       "abi": [
         {
           "type": "impl",
@@ -6515,6 +6551,10 @@
             {
               "name": "Silence",
               "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
             }
           ]
         },
@@ -6679,8 +6719,8 @@
       ]
     },
     {
-      "address": "0x2566d765fc7bdf18fe23d0a3e2a5bac65bdda53c73c6b835da42c3f5970ea44",
-      "class_hash": "0x38685b6eaa6b088e7c00ed2cd503cded2d9cc39c13d9f8e76f9294796e237ee",
+      "address": "0x3b233848862879db25c81f2cc41613eb90c90930a3ccb5236a7a2d080eb0f0a",
+      "class_hash": "0x75a0c89c7769b594d42778b2a89ac1551f3efde92dfc5de2049e6fa5bc9468f",
       "abi": [
         {
           "type": "impl",
@@ -6899,6 +6939,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "core::bool",
           "variants": [
             {
@@ -7160,6 +7286,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -7231,88 +7361,6 @@
           "type": "impl",
           "name": "StrategicQuartedBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -7477,8 +7525,8 @@
       ]
     },
     {
-      "address": "0x7b4b9c6c8ef61b03d2b47dc6a7edb347c5b2d66fc4b1f14dd7c368b8b65dac3",
-      "class_hash": "0x7a473af7f26f75efb484100fab60d67f49f94c203c560aafcc8c38a98d0307a",
+      "address": "0x3ca46c8a913d0d09b2eb718eac7c56e08482087ebd4eaf7b652ba096147f557",
+      "class_hash": "0x6ed95b8ac4b8a2da2ab38018a378525652cfd082ff0c472eef352ae3304748",
       "abi": [
         {
           "type": "impl",
@@ -7697,6 +7745,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "core::bool",
           "variants": [
             {
@@ -7958,6 +8092,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -8029,88 +8167,6 @@
           "type": "impl",
           "name": "HandLeechBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -8701,8 +8757,8 @@
       ]
     },
     {
-      "address": "0x7443b85cd7961e8a69a3240efc4f812b385d9401464b46874642c83919ba607",
-      "class_hash": "0x7a25ef2803e42051e5640e2a08ca59fb1396f56685430920e9adca16d3557b",
+      "address": "0x6a349b0b396ad34539a3974019b48454266bbeab351339e95e390925599d6b4",
+      "class_hash": "0x896303e162c7cfc4743e049a4218a81cf02daa73621a376628b10d1e4e4131",
       "abi": [
         {
           "type": "impl",
@@ -8921,6 +8977,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "core::bool",
           "variants": [
             {
@@ -9182,6 +9324,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -9241,88 +9387,6 @@
           "type": "impl",
           "name": "PowerUpBoosterBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -9486,8 +9550,8 @@
       ]
     },
     {
-      "address": "0x6fdcacc85fa73c54be1657e7a2ec7005148dbef3418e11943144ad258e264df",
-      "class_hash": "0x601f89ccf1a95e70824e5506d7cf2dbccebe86403be7decb64d4ce9f733ea13",
+      "address": "0x75d9fa559ee7c8489e794cb0b30f4f3ef4054fc18b2c05f76d112601e805d00",
+      "class_hash": "0x70d64457c00279611ebe705932bf629cf22891bebc4dd627c246e36105173a3",
       "abi": [
         {
           "type": "impl",
@@ -9706,6 +9770,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "core::bool",
           "variants": [
             {
@@ -9967,6 +10117,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -10038,88 +10192,6 @@
           "type": "impl",
           "name": "ExtraHelpBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -10284,8 +10356,8 @@
       ]
     },
     {
-      "address": "0x6be56b971b1788a73d2be00fc6fdc10dd33f82eae30fec0c84c3162949a1a2",
-      "class_hash": "0x77836d9a58f444c76c9a010d4e31baad8cec7ffdbf2a0adab9b3597431e7eac",
+      "address": "0x2d6d92bd797f2f74dcbac41d776482442d82d516f3ca65ea9b29f7b2ab3e417",
+      "class_hash": "0x3aee7ba821853685d48d11a2d9b407d4f5b33ae15d041a1d63c959e18882f1c",
       "abi": [
         {
           "type": "impl",
@@ -10504,6 +10576,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "core::bool",
           "variants": [
             {
@@ -10765,6 +10923,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -10836,88 +10998,6 @@
           "type": "impl",
           "name": "HandThiefBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -11082,793 +11162,8 @@
       ]
     },
     {
-      "address": "0xb83fd1df196e9e03be686024878985f5103cd6bd64fbc6215ee39ac6e0031b",
-      "class_hash": "0x6658b670fed61d8446daa03a1f15bc437ca9b86f096b16da0d22c5162292ed8",
-      "abi": [
-        {
-          "type": "impl",
-          "name": "special_high_card_booster__ContractImpl",
-          "interface_name": "dojo::contract::interface::IContract"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::interface::IContract",
-          "items": []
-        },
-        {
-          "type": "impl",
-          "name": "special_high_card_booster__DeployedContractImpl",
-          "interface_name": "dojo::meta::interface::IDeployedResource"
-        },
-        {
-          "type": "struct",
-          "name": "core::byte_array::ByteArray",
-          "members": [
-            {
-              "name": "data",
-              "type": "core::array::Array::<core::bytes_31::bytes31>"
-            },
-            {
-              "name": "pending_word",
-              "type": "core::felt252"
-            },
-            {
-              "name": "pending_word_len",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::meta::interface::IDeployedResource",
-          "items": [
-            {
-              "type": "function",
-              "name": "dojo_name",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::byte_array::ByteArray"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "HighCardBoostExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
-          "variants": [
-            {
-              "name": "IN_GAME",
-              "type": "()"
-            },
-            {
-              "name": "AT_SHOP",
-              "type": "()"
-            },
-            {
-              "name": "FINISHED",
-              "type": "()"
-            },
-            {
-              "name": "OPEN_BLISTER_PACK",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::status::game::game::Game",
-          "members": [
-            {
-              "name": "id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "mod_id",
-              "type": "core::felt252"
-            },
-            {
-              "name": "state",
-              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
-            },
-            {
-              "name": "owner",
-              "type": "core::starknet::contract_address::ContractAddress"
-            },
-            {
-              "name": "player_name",
-              "type": "core::felt252"
-            },
-            {
-              "name": "player_score",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "level",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "hand_len",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "plays",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "discards",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "current_specials_len",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "special_slots",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "cash",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::status::round::round::Round",
-          "members": [
-            {
-              "name": "game_id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "player_score",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "level_score",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "remaining_plays",
-              "type": "core::integer::u16"
-            },
-            {
-              "name": "remaining_discards",
-              "type": "core::integer::u16"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "RoyalFlush",
-              "type": "()"
-            },
-            {
-              "name": "StraightFlush",
-              "type": "()"
-            },
-            {
-              "name": "FiveOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "FourOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "FullHouse",
-              "type": "()"
-            },
-            {
-              "name": "Straight",
-              "type": "()"
-            },
-            {
-              "name": "Flush",
-              "type": "()"
-            },
-            {
-              "name": "ThreeOfAKind",
-              "type": "()"
-            },
-            {
-              "name": "TwoPair",
-              "type": "()"
-            },
-            {
-              "name": "OnePair",
-              "type": "()"
-            },
-            {
-              "name": "HighCard",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Suit",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Clubs",
-              "type": "()"
-            },
-            {
-              "name": "Diamonds",
-              "type": "()"
-            },
-            {
-              "name": "Hearts",
-              "type": "()"
-            },
-            {
-              "name": "Spades",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::data::card::Value",
-          "variants": [
-            {
-              "name": "None",
-              "type": "()"
-            },
-            {
-              "name": "Two",
-              "type": "()"
-            },
-            {
-              "name": "Three",
-              "type": "()"
-            },
-            {
-              "name": "Four",
-              "type": "()"
-            },
-            {
-              "name": "Five",
-              "type": "()"
-            },
-            {
-              "name": "Six",
-              "type": "()"
-            },
-            {
-              "name": "Seven",
-              "type": "()"
-            },
-            {
-              "name": "Eight",
-              "type": "()"
-            },
-            {
-              "name": "Nine",
-              "type": "()"
-            },
-            {
-              "name": "Ten",
-              "type": "()"
-            },
-            {
-              "name": "Jack",
-              "type": "()"
-            },
-            {
-              "name": "Queen",
-              "type": "()"
-            },
-            {
-              "name": "King",
-              "type": "()"
-            },
-            {
-              "name": "Ace",
-              "type": "()"
-            },
-            {
-              "name": "Joker",
-              "type": "()"
-            },
-            {
-              "name": "NeonJoker",
-              "type": "()"
-            },
-            {
-              "name": "Wild",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::data::card::Card",
-          "members": [
-            {
-              "name": "id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "suit",
-              "type": "jokers_of_neon_lib::models::data::card::Suit"
-            },
-            {
-              "name": "value",
-              "type": "jokers_of_neon_lib::models::data::card::Value"
-            },
-            {
-              "name": "points",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "multi_add",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
-          "members": [
-            {
-              "name": "snapshot",
-              "type": "@core::array::Array::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
-          "members": [
-            {
-              "name": "snapshot",
-              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "core::array::Span::<core::integer::u32>",
-          "members": [
-            {
-              "name": "snapshot",
-              "type": "@core::array::Array::<core::integer::u32>"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::tracker::PurchaseTracker",
-          "members": [
-            {
-              "name": "game_id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "traditonal_cards_count",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "modifier_cards_count",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "special_cards_count",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "loot_boxes_count",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "power_up_count",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "level_poker_hands_count",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "burn_count",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "reroll_count",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::tracker::GameTracker",
-          "members": [
-            {
-              "name": "game_id",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "highest_hand",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "rage_wins",
-              "type": "core::integer::u32"
-            },
-            {
-              "name": "special_cards_removed",
-              "type": "core::integer::u32"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "jokers_of_neon_lib::models::tracker::GameContext",
-          "members": [
-            {
-              "name": "game",
-              "type": "jokers_of_neon_lib::models::status::game::game::Game"
-            },
-            {
-              "name": "round",
-              "type": "jokers_of_neon_lib::models::status::round::round::Round"
-            },
-            {
-              "name": "hand",
-              "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
-            },
-            {
-              "name": "cards_played",
-              "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            },
-            {
-              "name": "cards_in_hand",
-              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
-            },
-            {
-              "name": "cards_in_deck",
-              "type": "core::array::Span::<core::integer::u32>"
-            },
-            {
-              "name": "special_cards",
-              "type": "core::array::Span::<core::integer::u32>"
-            },
-            {
-              "name": "power_ups",
-              "type": "core::array::Span::<core::integer::u32>"
-            },
-            {
-              "name": "purchase_tracker",
-              "type": "jokers_of_neon_lib::models::tracker::PurchaseTracker"
-            },
-            {
-              "name": "game_tracker",
-              "type": "jokers_of_neon_lib::models::tracker::GameTracker"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
-          "items": [
-            {
-              "type": "function",
-              "name": "execute",
-              "inputs": [
-                {
-                  "name": "context",
-                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
-                },
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
-                }
-              ],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "HighCardBoostBase",
-          "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "struct",
-          "name": "core::array::Span::<jokers_of_neon_lib::models::card_type::CardType>",
-          "members": [
-            {
-              "name": "snapshot",
-              "type": "@core::array::Array::<jokers_of_neon_lib::models::card_type::CardType>"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::base::ICardBase",
-          "items": [
-            {
-              "type": "function",
-              "name": "get_id",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::integer::u32"
-                }
-              ],
-              "state_mutability": "view"
-            },
-            {
-              "type": "function",
-              "name": "get_types",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "core::array::Span::<jokers_of_neon_lib::models::card_type::CardType>"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "function",
-          "name": "dojo_init",
-          "inputs": [],
-          "outputs": [],
-          "state_mutability": "view"
-        },
-        {
-          "type": "impl",
-          "name": "WorldProviderImpl",
-          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
-        },
-        {
-          "type": "struct",
-          "name": "dojo::world::iworld::IWorldDispatcher",
-          "members": [
-            {
-              "name": "contract_address",
-              "type": "core::starknet::contract_address::ContractAddress"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::world_provider::IWorldProvider",
-          "items": [
-            {
-              "type": "function",
-              "name": "world_dispatcher",
-              "inputs": [],
-              "outputs": [
-                {
-                  "type": "dojo::world::iworld::IWorldDispatcher"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "UpgradeableImpl",
-          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
-        },
-        {
-          "type": "interface",
-          "name": "dojo::contract::components::upgradeable::IUpgradeable",
-          "items": [
-            {
-              "type": "function",
-              "name": "upgrade",
-              "inputs": [
-                {
-                  "name": "new_class_hash",
-                  "type": "core::starknet::class_hash::ClassHash"
-                }
-              ],
-              "outputs": [],
-              "state_mutability": "external"
-            }
-          ]
-        },
-        {
-          "type": "constructor",
-          "name": "constructor",
-          "inputs": []
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-          "kind": "struct",
-          "members": [
-            {
-              "name": "class_hash",
-              "type": "core::starknet::class_hash::ClassHash",
-              "kind": "data"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "Upgraded",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
-              "kind": "nested"
-            }
-          ]
-        },
-        {
-          "type": "event",
-          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-          "kind": "enum",
-          "variants": []
-        },
-        {
-          "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::high_card_booster::special_high_card_booster::Event",
-          "kind": "enum",
-          "variants": [
-            {
-              "name": "UpgradeableEvent",
-              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
-              "kind": "nested"
-            },
-            {
-              "name": "WorldProviderEvent",
-              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
-              "kind": "nested"
-            }
-          ]
-        }
-      ],
-      "init_calldata": [],
-      "tag": "jokers_of_neon_template-special_high_card_booster",
-      "selector": "0xac7995a30e128909a65ccaa5e833d8badbbaa318e28c4ab6a1dff2f0f80c06",
-      "systems": [
-        "execute",
-        "upgrade"
-      ]
-    },
-    {
-      "address": "0x610153fe3fe20a281ee9e90a26a6ce567359a329d294634ac278eb9fa5ceee6",
-      "class_hash": "0x149da478e81011641f9fa631fd5dec50e59722a7c8cc2e8600a46a02e49c0f9",
+      "address": "0x131f0c69b01b4ab54898aad432b714123f9be01ad2dc379942cf48852888dba",
+      "class_hash": "0x159d3dcba0e7f5e13f12b828897fabd31389d0adb423bd7beb34c699f0b79f8",
       "abi": [
         {
           "type": "impl",
@@ -12087,6 +11382,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "core::bool",
           "variants": [
             {
@@ -12348,6 +11729,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -12407,88 +11792,6 @@
           "type": "impl",
           "name": "DoublePairBoostBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -12652,8 +11955,8 @@
       ]
     },
     {
-      "address": "0xbe551d02f756385cca27a4ec0fbbd8d646c5634d58a1b15caa99c6e02cadc0",
-      "class_hash": "0x262b011f3977f2a887c33414302ccd70ea0358ec38fbe4702fb410c96082b41",
+      "address": "0xdc0ee237b67166559a18ddb0ad8454ad1ccb0e1e15c9768b425d168c831e12",
+      "class_hash": "0x1f6bcf33c18feda54311d9c857ed7aac6e0e587bdde31accfd3450709c25d65",
       "abi": [
         {
           "type": "impl",
@@ -12872,6 +12175,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "core::bool",
           "variants": [
             {
@@ -13133,6 +12522,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -13192,88 +12585,6 @@
           "type": "impl",
           "name": "PairBoostBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -13437,8 +12748,8 @@
       ]
     },
     {
-      "address": "0x31ed77c6022eeaf84751f43b4b776a3adcc0ed2c475937d870a3111857f8363",
-      "class_hash": "0x2a9dde1a75f71b393688bca978ba9bbef38e4e942b049775cca72da3631e26",
+      "address": "0x5d5b08be09cb8152ea8d20de79e7e1859dac1a922c377d1eeb1dc07cf18f360",
+      "class_hash": "0x5e4c6e09e64286f60496b85f02b981d5486d7b020c50a3ef7244aa58981e578",
       "abi": [
         {
           "type": "impl",
@@ -13657,6 +12968,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "core::bool",
           "variants": [
             {
@@ -13918,6 +13315,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -13977,88 +13378,6 @@
           "type": "impl",
           "name": "InitialAdvantageBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -14222,8 +13541,8 @@
       ]
     },
     {
-      "address": "0x3cddbb143fa7a4b586a48528d80a1241c6b3653810b2a218d81b82998e7af79",
-      "class_hash": "0x716c1094366f39d53b27ae6e5566fff23d7a8ac9fa5038ad75b5071fb28e5b9",
+      "address": "0x4baecb1f25859679ee1a27ee542033d1f5d301950c599c282cc25068f82f926",
+      "class_hash": "0x7d2d26fe8e1aa42400ec04244beab71abc3d1ee216d835c1596b58514567ab2",
       "abi": [
         {
           "type": "impl",
@@ -14483,6 +13802,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
@@ -14730,6 +14135,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -14789,88 +14198,6 @@
           "type": "impl",
           "name": "JokerBoosterBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -15034,8 +14361,8 @@
       ]
     },
     {
-      "address": "0x443683229f6fbd934ef708cb58f7f13f2fc746252a27a93b25a548d4df57256",
-      "class_hash": "0x634b1b2caf01c47ca5daf31d5e52fd348614ead740239d289f613dcf0cf749d",
+      "address": "0x47ca115a2b3f9c6682ef64d65005007ca21f217b26b5fb2067996f0bf6e33cf",
+      "class_hash": "0x5cd875bf13454c42020653cc319a05226b4956af571e6ef90ed21f634f67907",
       "abi": [
         {
           "type": "impl",
@@ -15295,6 +14622,92 @@
         },
         {
           "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
           "name": "jokers_of_neon_lib::models::data::card::Suit",
           "variants": [
             {
@@ -15542,6 +14955,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -15601,88 +15018,6 @@
           "type": "impl",
           "name": "LuckyHandBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -15846,8 +15181,8 @@
       ]
     },
     {
-      "address": "0x59e54194454884d2c0f6a989aeed1005146177e2475e837503a56eb60a21882",
-      "class_hash": "0xa659d243b0b932fc17d97e1f7c5f5a5f62affac66ebf01ce249d571cd8a0bd",
+      "address": "0x3218755bf7430f27314f4ffdd61651b7e536dcdd181c788769ae1224eac4ae",
+      "class_hash": "0x5f05f7681020ef408a987c31f2df5d1e2bee7dc9451c9c3879fba4d2e80f7f6",
       "abi": [
         {
           "type": "impl",
@@ -16060,6 +15395,92 @@
             },
             {
               "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
               "type": "()"
             }
           ]
@@ -16327,6 +15748,10 @@
               "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
             },
             {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
               "name": "cards_played",
               "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
             },
@@ -16386,88 +15811,6 @@
           "type": "impl",
           "name": "PowerUpBoosterBase",
           "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
-        },
-        {
-          "type": "enum",
-          "name": "jokers_of_neon_lib::models::card_type::CardType",
-          "variants": [
-            {
-              "name": "PreCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "PostCalculateHand",
-              "type": "()"
-            },
-            {
-              "name": "Hit",
-              "type": "()"
-            },
-            {
-              "name": "Miss",
-              "type": "()"
-            },
-            {
-              "name": "Hand",
-              "type": "()"
-            },
-            {
-              "name": "CurrentHand",
-              "type": "()"
-            },
-            {
-              "name": "PowerUp",
-              "type": "()"
-            },
-            {
-              "name": "RoundState",
-              "type": "()"
-            },
-            {
-              "name": "Win",
-              "type": "()"
-            },
-            {
-              "name": "Lose",
-              "type": "()"
-            },
-            {
-              "name": "Discard",
-              "type": "()"
-            },
-            {
-              "name": "Round",
-              "type": "()"
-            },
-            {
-              "name": "Game",
-              "type": "()"
-            },
-            {
-              "name": "Shop",
-              "type": "()"
-            },
-            {
-              "name": "LevelUpPlay",
-              "type": "()"
-            },
-            {
-              "name": "PlayRules",
-              "type": "()"
-            },
-            {
-              "name": "PokerHand",
-              "type": "()"
-            },
-            {
-              "name": "Debuff",
-              "type": "()"
-            },
-            {
-              "name": "Silence",
-              "type": "()"
-            }
-          ]
         },
         {
           "type": "struct",
@@ -16631,8 +15974,8 @@
       ]
     },
     {
-      "address": "0x7a744c5cf46a39758c590a6de9532553ea2e969f33635c6d1f366ce0c18c6c2",
-      "class_hash": "0x5ae38b344656bddb29c3842aa9b13957f7c6135efd5552597cae0315a0c3a01",
+      "address": "0x6e2d240a57d882a1a70acdcc092f2afc54063f97d337501250f4f9dd78a5ce0",
+      "class_hash": "0x32c2d1c9280c68e67650f583ed8533fc546b21b486cf8c97253fc57ee3194f",
       "abi": [
         {
           "type": "impl",
