@@ -472,7 +472,7 @@ All special cards must be defined in `mods/mod_name/src/specials/specials.cairo`
 Open `mods/mod_name/src/specials/specials.cairo` and add the unique ID for your new Special Card:
 
 ```rust
-const SPECIAL_HIGH_CARD_BOOSTER_ID: u32 = 309;
+const SPECIAL_HIGH_CARD_BOOSTER_ID: u32 = 310;
 ```
 
 ---
