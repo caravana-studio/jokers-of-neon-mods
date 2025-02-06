@@ -19,7 +19,7 @@ With the mods, you can:
 If you have a different version of Dojo, you can update it by running:
 
 ```bash
-dojoup --version 1.0.10
+dojoup --version 1.1.2
 ```
 
 ### 1.1. Understanding the Mod Configuration Files
