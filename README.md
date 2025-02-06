@@ -81,17 +81,18 @@ ShopConfig {
 
 Special cards in _Jokers of Neon_ introduce unique gameplay dynamics. They can grant or subtract points, multi, cash, and more. To streamline their behavior, we’ve implemented an abstract layer with predefined categories. Each category encapsulates fundamental methods to define and execute specific behaviors:
 
-1. `SpecialType::Individual`
-2. `SpecialType::PowerUp`
-3. `SpecialType::RoundState`
-4. `SpecialType::PokerHand`
-5. `SpecialType::Game`
+1. `CardType::Hit`
+2. `CardType::Discard`
+3. `CardType::PowerUp`
+4. `CardType::Round`
+5. `CardType::PokerHand`
+6. `CardType::Game`
 
 Below, we’ll explore each type, its use case, and implementation.
 
 ---
 
-#### 1.2.1. SpecialType::Individual
+#### 1.2.1. CardType::Hit
 
 Description:
 
@@ -102,12 +103,14 @@ Example:
 Grant 100 points and 1 multi for every Joker in the play.
 
 ```rust
-fn condition(ref self: ContractState, card: Card) -> bool {
+fn condition(self: @ContractState, raw_data: felt252) -> bool {
+    let card: Card = raw_data.into();
     card.suit == Suit::Joker
 }
 
-fn execute(ref self: ContractState) -> (i32, i32, i32) {
-    (100, 1, 0)
+fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+    let joker_card: Card = raw_data.into();
+    ((joker_card.points * 2).try_into().unwrap(), (joker_card.multi_add * 2).try_into().unwrap(), 0)
 }
 ```
 
@@ -117,7 +120,30 @@ fn execute(ref self: ContractState) -> (i32, i32, i32) {
 
 ---
 
-#### 1.2.2. SpecialType::PowerUp
+#### 1.2.2. CardType::Discard
+
+Description:
+
+This type of card is executed for each discarded card of a player. It uses the card’s `Suit` and `Value` properties to trigger effects.
+
+Example:
+
+Grant 500 cash for every discarded card.
+
+```rust
+fn condition(self: @ContractState, raw_data: felt252) -> bool {
+    let card: Card = raw_data.into();
+    card.suit == Suit::Joker
+}
+
+fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+    (0, 0, 500)
+}
+```
+
+---
+
+#### 1.2.3. CardType::PowerUp
 
 Description:
 
@@ -128,8 +154,9 @@ Example:
 Double the points and multipliers of all activated PowerUps.
 
 ```rust
-fn execute(ref self: ContractState, power_up: PowerUp) -> (i32, i32, i32) {
-    (power_up.points.try_into().unwrap() * 2, power_up.multi.try_into().unwrap() * 2, 0)
+fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+    let power_up: PowerUp = raw_data.into();
+    ((power_up.points * 2).try_into().unwrap(), (power_up.points * 2).try_into().unwrap(), 0)
 }
 ```
 
@@ -139,7 +166,7 @@ fn execute(ref self: ContractState, power_up: PowerUp) -> (i32, i32, i32) {
 
 ---
 
-#### 1.2.3. SpecialType::RoundState
+#### 1.2.4. CardType::Round
 
 Description:
 
@@ -150,11 +177,12 @@ Example:
 Grant 100 points and 10 multiplier during the first play of the round.
 
 ```rust
-fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
-    if round.remaining_plays.into() == game.plays {
-        return (100, 10, 0);
+fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+    if context.round.remaining_plays.into() == context.game.plays {
+        (100, 10, 0)
+    } else {
+        (0, 0, 0)
     }
-    (0, 0, 0)
 }
 ```
 
@@ -164,7 +192,7 @@ fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32)
 
 ---
 
-#### 1.2.4. SpecialType::PokerHand
+#### 1.2.5. CardType::PokerHand
 
 Description:
 
@@ -175,11 +203,11 @@ Example:
 Grant 20 points and 4 multiplier for achieving a `Two Pairs` poker hand.
 
 ```rust
-fn execute(ref self: ContractState, game_context: GameContext) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
-    if game_context.hand == PokerHand::TwoPair {
-        ((20, array![].span()), (4, array![].span()), (0, array![].span()))
+fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+    if context.hand == PokerHand::TwoPair {
+        (20, 4, 0)
     } else {
-        ((0, array![].span()), (0, array![].span()), (0, array![].span()))
+        (0, 0, 0)
     }
 }
 ```
@@ -190,7 +218,7 @@ fn execute(ref self: ContractState, game_context: GameContext) -> ((i32, Span<(u
 
 ---
 
-#### 1.2.5. SpecialType::Game
+#### 1.2.6. CardType::Game
 
 Description:
 
@@ -201,16 +229,16 @@ Example:
 Increase the hand size by _2 cards_ when the card is equipped.
 
 ```rust
-fn equip(ref self: ContractState, game: Game) -> Game {
-    let mut game = game;
-    game.hand_len += 2;
-    game
+fn equip(ref self: ContractState, context: GameContext) -> GameContext {
+    let mut context = context;
+    context.game.hand_len += 2;
+    context
 }
 
-fn unequip(ref self: ContractState, game: Game) -> Game {
-    let mut game = game;
-    game.hand_len -= 2;
-    game
+fn unequip(ref self: ContractState, context: GameContext) -> GameContext {
+    let mut context = context;
+    context.game.hand_len -= 2;
+    context
 }
 ```
 

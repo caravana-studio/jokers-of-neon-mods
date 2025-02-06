@@ -30,6 +30,7 @@ mod specials {
     mod game {
         mod extra_help;
         mod hand_thief;
+        mod plus_discards;
     }
     mod hit {
         mod joker_booster;
