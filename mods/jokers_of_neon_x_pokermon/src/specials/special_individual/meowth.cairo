@@ -1,7 +1,7 @@
 #[dojo::contract]
 pub mod special_meowth {
     use jokers_of_neon_lib::interfaces::individual::ISpecialIndividual;
-    use jokers_of_neon_lib::models::data::card::{Card, Value, Suit};
+    use jokers_of_neon_lib::models::data::card::{Card, Suit, Value};
     use jokers_of_neon_lib::models::special_type::SpecialType;
     use jokers_of_neon_x_pokermon::specials::specials::SPECIAL_MEOWTH_ID;
 

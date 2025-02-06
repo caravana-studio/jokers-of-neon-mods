@@ -28,6 +28,7 @@ const SPECIAL_RANDOM_MULTI_FOR_HEART_ID: u32 = 347;
 const SPECIAL_RANDOM_MULTI_FOR_CLUB_ID: u32 = 348;
 const SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID: u32 = 349;
 const SPECIAL_RANDOM_MULTI_FOR_SPADE_ID: u32 = 350;
+const SPECIAL_WANTED_JOKER_ID: u32 = 336;
 
 fn specials_ids_all() -> Array<u32> {
     array![
@@ -60,7 +61,8 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_RANDOM_MULTI_FOR_HEART_ID,
         SPECIAL_RANDOM_MULTI_FOR_CLUB_ID,
         SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID,
-        SPECIAL_RANDOM_MULTI_FOR_SPADE_ID
+        SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
+        SPECIAL_WANTED_JOKER_ID,
     ]
 }
 
@@ -76,6 +78,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_INCREASE_LEVEL_PAIR_ID,
         SPECIAL_INCREASE_LEVEL_DOUBLE_PAIR_ID,
         SPECIAL_LUCKY_HAND_ID,
+        SPECIAL_WANTED_JOKER_ID,
     ]
         .span();
 
@@ -91,7 +94,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_RANDOM_MULTI_FOR_HEART_ID,
         SPECIAL_RANDOM_MULTI_FOR_CLUB_ID,
         SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID,
-        SPECIAL_RANDOM_MULTI_FOR_SPADE_ID
+        SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
     ]
         .span();
 
@@ -108,38 +111,25 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_LUCKY_SEVEN_ID,
         SPECIAL_POINTS_FOR_FIGURES_ID,
         SPECIAL_DISCARD_MASTERY_ID,
-        SPECIAL_NEON_SYNERGY_ID
+        SPECIAL_NEON_SYNERGY_ID,
     ]
         .span();
 
     // S-Grade Group
-    let S_SPECIALS_PROBABILITY = 10;
+    let S_SPECIALS_PROBABILITY = 15;
     let S_SPECIALS_COST = 5000;
-    let S_SPECIALS = array![SPECIAL_EXTRA_HELP_ID, SPECIAL_JOKER_BOOSTER_ID].span();
-
-    // SS-Grade Group
-    let SS_SPECIALS_PROBABILITY = 5;
-    let SS_SPECIALS_COST = 7000;
-    let SS_SPECIALS = array![SPECIAL_INITIAL_ADVANTAGE_ID, SPECIAL_POWER_UP_BOOSTER_ID].span();
+    let S_SPECIALS = array![
+        SPECIAL_EXTRA_HELP_ID, SPECIAL_JOKER_BOOSTER_ID, SPECIAL_POWER_UP_BOOSTER_ID, SPECIAL_INITIAL_ADVANTAGE_ID,
+    ]
+        .span();
 
     assert(
-        C_SPECIALS_PROBABILITY
-            + B_SPECIALS_PROBABILITY
-            + A_SPECIALS_PROBABILITY
-            + S_SPECIALS_PROBABILITY
-            + SS_SPECIALS_PROBABILITY == 100,
-        'wrong probability sum'
+        C_SPECIALS_PROBABILITY + B_SPECIALS_PROBABILITY + A_SPECIALS_PROBABILITY + S_SPECIALS_PROBABILITY == 100,
+        'wrong probability sum',
     );
     (
-        array![C_SPECIALS, B_SPECIALS, A_SPECIALS, S_SPECIALS, SS_SPECIALS].span(),
-        array![
-            C_SPECIALS_PROBABILITY,
-            B_SPECIALS_PROBABILITY,
-            A_SPECIALS_PROBABILITY,
-            S_SPECIALS_PROBABILITY,
-            SS_SPECIALS_PROBABILITY
-        ]
-            .span(),
-        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST, SS_SPECIALS_COST].span()
+        array![C_SPECIALS, B_SPECIALS, A_SPECIALS, S_SPECIALS].span(),
+        array![C_SPECIALS_PROBABILITY, B_SPECIALS_PROBABILITY, A_SPECIALS_PROBABILITY, S_SPECIALS_PROBABILITY].span(),
+        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST].span(),
     )
 }

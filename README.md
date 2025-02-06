@@ -81,17 +81,18 @@ ShopConfig {
 
 Special cards in _Jokers of Neon_ introduce unique gameplay dynamics. They can grant or subtract points, multi, cash, and more. To streamline their behavior, we’ve implemented an abstract layer with predefined categories. Each category encapsulates fundamental methods to define and execute specific behaviors:
 
-1. `SpecialType::Individual`
-2. `SpecialType::PowerUp`
-3. `SpecialType::RoundState`
-4. `SpecialType::PokerHand`
-5. `SpecialType::Game`
+1. `CardType::Hit`
+2. `CardType::Discard`
+3. `CardType::PowerUp`
+4. `CardType::Round`
+5. `CardType::PokerHand`
+6. `CardType::Game`
 
 Below, we’ll explore each type, its use case, and implementation.
 
 ---
 
-#### 1.2.1. SpecialType::Individual
+#### 1.2.1. CardType::Hit
 
 Description:
 
@@ -102,12 +103,14 @@ Example:
 Grant 100 points and 1 multi for every Joker in the play.
 
 ```rust
-fn condition(ref self: ContractState, card: Card) -> bool {
+fn condition(self: @ContractState, raw_data: felt252) -> bool {
+    let card: Card = raw_data.into();
     card.suit == Suit::Joker
 }
 
-fn execute(ref self: ContractState) -> (i32, i32, i32) {
-    (100, 1, 0)
+fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+    let joker_card: Card = raw_data.into();
+    ((joker_card.points * 2).try_into().unwrap(), (joker_card.multi_add * 2).try_into().unwrap(), 0)
 }
 ```
 
@@ -117,7 +120,30 @@ fn execute(ref self: ContractState) -> (i32, i32, i32) {
 
 ---
 
-#### 1.2.2. SpecialType::PowerUp
+#### 1.2.2. CardType::Discard
+
+Description:
+
+This type of card is executed for each discarded card of a player. It uses the card’s `Suit` and `Value` properties to trigger effects.
+
+Example:
+
+Grant 500 cash for every discarded card.
+
+```rust
+fn condition(self: @ContractState, raw_data: felt252) -> bool {
+    let card: Card = raw_data.into();
+    card.suit == Suit::Joker
+}
+
+fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+    (0, 0, 500)
+}
+```
+
+---
+
+#### 1.2.3. CardType::PowerUp
 
 Description:
 
@@ -128,8 +154,9 @@ Example:
 Double the points and multipliers of all activated PowerUps.
 
 ```rust
-fn execute(ref self: ContractState, power_up: PowerUp) -> (i32, i32, i32) {
-    (power_up.points.try_into().unwrap() * 2, power_up.multi.try_into().unwrap() * 2, 0)
+fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+    let power_up: PowerUp = raw_data.into();
+    ((power_up.points * 2).try_into().unwrap(), (power_up.points * 2).try_into().unwrap(), 0)
 }
 ```
 
@@ -139,7 +166,7 @@ fn execute(ref self: ContractState, power_up: PowerUp) -> (i32, i32, i32) {
 
 ---
 
-#### 1.2.3. SpecialType::RoundState
+#### 1.2.4. CardType::Round
 
 Description:
 
@@ -150,11 +177,12 @@ Example:
 Grant 100 points and 10 multiplier during the first play of the round.
 
 ```rust
-fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32) {
-    if round.remaining_plays.into() == game.plays {
-        return (100, 10, 0);
+fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+    if context.round.remaining_plays.into() == context.game.plays {
+        (100, 10, 0)
+    } else {
+        (0, 0, 0)
     }
-    (0, 0, 0)
 }
 ```
 
@@ -164,7 +192,7 @@ fn execute(ref self: ContractState, game: Game, round: Round) -> (i32, i32, i32)
 
 ---
 
-#### 1.2.4. SpecialType::PokerHand
+#### 1.2.5. CardType::PokerHand
 
 Description:
 
@@ -175,11 +203,11 @@ Example:
 Grant 20 points and 4 multiplier for achieving a `Two Pairs` poker hand.
 
 ```rust
-fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
-    if play_info.hand == PokerHand::TwoPair {
-        ((20, array![].span()), (4, array![].span()), (0, array![].span()))
+fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+    if context.hand == PokerHand::TwoPair {
+        (20, 4, 0)
     } else {
-        ((0, array![].span()), (0, array![].span()), (0, array![].span()))
+        (0, 0, 0)
     }
 }
 ```
@@ -190,7 +218,7 @@ fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i3
 
 ---
 
-#### 1.2.5. SpecialType::Game
+#### 1.2.6. CardType::Game
 
 Description:
 
@@ -201,16 +229,16 @@ Example:
 Increase the hand size by _2 cards_ when the card is equipped.
 
 ```rust
-fn equip(ref self: ContractState, game: Game) -> Game {
-    let mut game = game;
-    game.hand_len += 2;
-    game
+fn equip(ref self: ContractState, context: GameContext) -> GameContext {
+    let mut context = context;
+    context.game.hand_len += 2;
+    context
 }
 
-fn unequip(ref self: ContractState, game: Game) -> Game {
-    let mut game = game;
-    game.hand_len -= 2;
-    game
+fn unequip(ref self: ContractState, context: GameContext) -> GameContext {
+    let mut context = context;
+    context.game.hand_len -= 2;
+    context
 }
 ```
 
@@ -472,7 +500,7 @@ All special cards must be defined in `mods/mod_name/src/specials/specials.cairo`
 Open `mods/mod_name/src/specials/specials.cairo` and add the unique ID for your new Special Card:
 
 ```rust
-const SPECIAL_NEW_CARD_ID: u32 = 310;
+const SPECIAL_HIGH_CARD_BOOSTER_ID: u32 = 309;
 ```
 
 ---
@@ -485,7 +513,7 @@ Add the new card id into the `*specials_ids_all*` function :
   fn specials_ids_all() -> Array<u32> {
   array![
       ....,
-      SPECIAL_NEW_CARD_ID
+      SPECIAL_HIGH_CARD_BOOSTER_ID
   ]}
 ```
 
@@ -494,14 +522,14 @@ Groups define the probability the card has for appearing in the shop and also it
 You can also adjust the probabilities and costs for each group. Ensure that the probabilities of all defined groups add up to 100.
 
 ```rust
-let SS_SPECIALS = array![..., SPECIAL_NEW_CARD_ID].span();
+let SS_SPECIALS = array![..., SPECIAL_HIGH_CARD_BOOSTER_ID].span();
 ```
 
 ---
 
 #### 2.4.3. Create the Implementation File
 
-Since this card is specific to `PokerHand` functionality, its type will be `SpecialType::PokerHand`. Navigate to the `mods/mod_name/src/specials/special_poker_hand/` directory and create a new file named `high_card_booster.cairo`. Add the implementation for your new card in this file.
+Since this card is specific to `PokerHand` functionality, its type will be `CardType::PokerHand`. Navigate to the `mods/mod_name/src/specials/poker_hand/` directory and create a new file named `high_card_booster.cairo`. Add the implementation for your new card in this file.
 
 After that whe should go to `src/lib.cairo` and add this line to include our new module:
 
@@ -519,27 +547,28 @@ Below is an example of how to implement the HighCard Booster special card:
 #[dojo::contract]
 pub mod special_high_card_booster {
     use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_CARD_BOOSTER_ID;
-    use jokers_of_neon_lib::interfaces::poker_hand::ISpecialPokerHand;
-    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
-    use jokers_of_neon_lib::models::play_info::PlayInfo;
-    use jokers_of_neon_lib::models::special_type::SpecialType;
+    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
+    use jokers_of_neon_lib::models::{card_type::CardType, data::poker_hand::PokerHand, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl SpecialHighCardBoosterImpl of ISpecialPokerHand<ContractState> {
-        fn execute(ref self: ContractState, play_info: PlayInfo) -> ((i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>), (i32, Span<(u32, i32)>)) {
-            if play_info.hand == PokerHand::HighCard {
-                ((100, array![].span()), (20, array![].span()), (500, array![].span()))
+    impl HighCardBoostExecutable of ICardExecutable<ContractState> {
+        fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+            if context.hand == PokerHand::HighCard {
+                (100, 20, 500)
             } else {
-                ((0, array![].span()), (0, array![].span()), (0, array![].span()))
+                (0, 0, 0)
             }
         }
+    }
 
-        fn get_id(ref self: ContractState) -> u32 {
+    #[abi(embed_v0)]
+    impl HighCardBoostBase of ICardBase<ContractState> {
+        fn get_id(self: @ContractState) -> u32 {
             SPECIAL_HIGH_CARD_BOOSTER_ID
         }
 
-        fn get_type(ref self: ContractState) -> SpecialType {
-            SpecialType::PokerHand
+        fn get_types(self: @ContractState) -> Span<CardType> {
+            array![CardType::PokerHand].span()
         }
     }
 }

@@ -23,4 +23,4 @@ rage_manager_address=$(echo "$inspect_result" | grep "jokers_of_neon_mods-rage_m
 special_manager_address=$(echo "$inspect_result" | grep "jokers_of_neon_mods-special_manager" | awk '{print $NF}')
 
 echo "Execute in Jokers of Neon Contracts. Update the world address."
-echo "sozo execute mod_manager_registrator register_managers -c $mod_manager_address,$rage_manager_address,$special_manager_address --wait --world world_address"
+echo "sozo execute mod_manager_registrator register_managers $mod_manager_address $rage_manager_address $special_manager_address --wait --world world_address"
