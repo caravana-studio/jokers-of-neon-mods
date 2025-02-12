@@ -9,10 +9,10 @@ mod rages {
     mod debuff {}
     mod game {
         mod diminished_hold;
+        mod hand_leech;
         mod strategic_quarted;
     }
     mod round {
-        mod hand_leech;
         mod zero_waste;
     }
     mod silence {
