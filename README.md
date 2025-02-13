@@ -103,7 +103,7 @@ Example:
 Grant 100 points and 1 multi for every Joker in the play.
 
 ```rust
-fn condition(self: @ContractState, raw_data: felt252) -> bool {
+fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
     let card: Card = raw_data.into();
     card.suit == Suit::Joker
 }
@@ -131,7 +131,7 @@ Example:
 Grant 500 cash for every discarded card.
 
 ```rust
-fn condition(self: @ContractState, raw_data: felt252) -> bool {
+fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
     let card: Card = raw_data.into();
     card.suit == Suit::Joker
 }
