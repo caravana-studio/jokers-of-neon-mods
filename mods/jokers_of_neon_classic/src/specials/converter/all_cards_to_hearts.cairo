@@ -10,7 +10,7 @@ pub mod special_all_cards_to_hearts {
     impl AllCardsToHeartsCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
-            card.suit == Suit::Hearts
+            card.suit != Suit::Hearts
         }
     }
 
