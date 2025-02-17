@@ -1,18 +1,18 @@
 use jokers_of_neon_lib::models::data::poker_hand::{LevelPokerHand, PokerHand};
 
-fn poker_hands_ids_all() -> Array<PokerHand> {
+fn poker_hands_ids_all() -> Array<u32> {
     array![
-        PokerHand::RoyalFlush,
-        PokerHand::StraightFlush,
-        PokerHand::FiveOfAKind,
-        PokerHand::FourOfAKind,
-        PokerHand::FullHouse,
-        PokerHand::Straight,
-        PokerHand::Flush,
-        PokerHand::ThreeOfAKind,
-        PokerHand::TwoPair,
-        PokerHand::OnePair,
-        PokerHand::HighCard,
+        PokerHand::RoyalFlush.into(),
+        PokerHand::StraightFlush.into(),
+        PokerHand::FiveOfAKind.into(),
+        PokerHand::FourOfAKind.into(),
+        PokerHand::FullHouse.into(),
+        PokerHand::Straight.into(),
+        PokerHand::Flush.into(),
+        PokerHand::ThreeOfAKind.into(),
+        PokerHand::TwoPair.into(),
+        PokerHand::OnePair.into(),
+        PokerHand::HighCard.into(),
     ]
 }
 
