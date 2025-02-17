@@ -10,11 +10,13 @@ pub mod rage_hand_leech {
     impl HandLeechEquipable of ICardEquipable<ContractState> {
         fn equip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut context = context;
-            context.round.remaining_plays -= 2;
+            context.game.plays -= 2;
             context
         }
 
         fn unequip(ref self: ContractState, context: GameContext) -> GameContext {
+            let mut context = context;
+            context.game.plays += 2;
             context
         }
     }
@@ -26,7 +28,7 @@ pub mod rage_hand_leech {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::Round].span()
+            array![CardType::Game].span()
         }
     }
 }
