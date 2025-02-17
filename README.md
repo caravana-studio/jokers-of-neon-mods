@@ -14,7 +14,7 @@ With the mods, you can:
 
 ## Prerequisites
 
-- Dojo v1.1.2 [Dojo docs](https://www.dojoengine.org/installation) (optional)
+- Dojo v1.2.0 [Dojo docs](https://www.dojoengine.org/installation) (optional)
 
 If you have a different version of Dojo, you can update it by running:
 
