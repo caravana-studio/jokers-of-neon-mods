@@ -77,7 +77,7 @@ mod specials {
 mod utils {
     mod card_info;
     mod loot_boxes_info;
-    mod poker_hand_info;
+    mod poker_hands_info;
     mod rages_info;
     mod specials_info;
 }
