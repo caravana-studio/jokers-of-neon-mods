@@ -86,7 +86,14 @@ fn poker_hands_info() -> (Span<Span<PokerHand>>, Span<u32>, Span<u32>, Span<u32>
             SS_POKER_HAND_PROBABILITY,
         ]
             .span(),
-        array![C_POKER_HAND_CONSTANT_COST, B_POKER_HAND_CONSTANT_COST, A_POKER_HAND_CONSTANT_COST, S_POKER_HAND_CONSTANT_COST, SS_POKER_HAND_CONSTANT_COST].span(),
+        array![
+            C_POKER_HAND_CONSTANT_COST,
+            B_POKER_HAND_CONSTANT_COST,
+            A_POKER_HAND_CONSTANT_COST,
+            S_POKER_HAND_CONSTANT_COST,
+            SS_POKER_HAND_CONSTANT_COST,
+        ]
+            .span(),
         array![
             C_POKER_HAND_POINTS_LEVEL_UP,
             B_POKER_HAND_POINTS_LEVEL_UP,
