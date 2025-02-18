@@ -35,35 +35,35 @@ fn initial_poker_hands() -> Array<LevelPokerHand> {
 fn poker_hands_info() -> (Span<Span<PokerHand>>, Span<u32>, Span<u32>, Span<u32>, Span<u32>) {
     // C-Grade Group
     let C_POKER_HAND_PROBABILITY = 30;
-    let C_POKER_HAND_COST = 750;
+    let C_POKER_HAND_CONSTANT_COST = 10;
     let C_POKER_HAND = array![PokerHand::HighCard, PokerHand::OnePair].span();
     let C_POKER_HAND_POINTS_LEVEL_UP = 10;
     let C_POKER_HAND_MULTI_LEVEL_UP = 1;
 
     // B-Grade Group
     let B_POKER_HAND_PROBABILITY = 20;
-    let B_POKER_HAND_COST = 1500;
+    let B_POKER_HAND_CONSTANT_COST = 15;
     let B_POKER_HAND = array![PokerHand::ThreeOfAKind, PokerHand::TwoPair].span();
     let B_POKER_HAND_POINTS_LEVEL_UP = 20;
     let B_POKER_HAND_MULTI_LEVEL_UP = 1;
 
     // A-Grade Group
     let A_POKER_HAND_PROBABILITY = 20;
-    let A_POKER_HAND_COST = 2000;
+    let A_POKER_HAND_CONSTANT_COST = 20;
     let A_POKER_HAND = array![PokerHand::FullHouse, PokerHand::Flush, PokerHand::Straight].span();
     let A_POKER_HAND_POINTS_LEVEL_UP = 25;
     let A_POKER_HAND_MULTI_LEVEL_UP = 2;
 
     // S-Grade Group
-    let S_POKER_HAND_PROBABILITY = 10;
-    let S_POKER_HAND_COST = 3000;
+    let S_POKER_HAND_PROBABILITY = 20;
+    let S_POKER_HAND_CONSTANT_COST = 25;
     let S_POKER_HAND = array![PokerHand::StraightFlush, PokerHand::FourOfAKind].span();
     let S_POKER_HAND_POINTS_LEVEL_UP = 30;
     let S_POKER_HAND_MULTI_LEVEL_UP = 2;
 
     // SS-Grade Group
     let SS_POKER_HAND_PROBABILITY = 10;
-    let SS_POKER_HAND_COST = 5000;
+    let SS_POKER_HAND_CONSTANT_COST = 30;
     let SS_POKER_HAND = array![PokerHand::RoyalFlush, PokerHand::FiveOfAKind].span();
     let SS_POKER_HAND_POINTS_LEVEL_UP = 35;
     let SS_POKER_HAND_MULTI_LEVEL_UP = 3;
@@ -86,7 +86,7 @@ fn poker_hands_info() -> (Span<Span<PokerHand>>, Span<u32>, Span<u32>, Span<u32>
             SS_POKER_HAND_PROBABILITY,
         ]
             .span(),
-        array![C_POKER_HAND_COST, B_POKER_HAND_COST, A_POKER_HAND_COST, S_POKER_HAND_COST, SS_POKER_HAND_COST].span(),
+        array![C_POKER_HAND_CONSTANT_COST, B_POKER_HAND_CONSTANT_COST, A_POKER_HAND_CONSTANT_COST, S_POKER_HAND_CONSTANT_COST, SS_POKER_HAND_CONSTANT_COST].span(),
         array![
             C_POKER_HAND_POINTS_LEVEL_UP,
             B_POKER_HAND_POINTS_LEVEL_UP,
