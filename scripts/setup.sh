@@ -11,7 +11,7 @@ if [ -d "manifests" ]; then
 fi
 
 echo "sozo build && sozo inspect && sozo migrate"
-sozo build && sozo inspect && sozo migrate
+sozo build && sleep 3 && sozo inspect && sleep 3 && sozo migrate
 
 echo -e "\n✅ Setup finish!"
 

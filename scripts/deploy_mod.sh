@@ -59,7 +59,7 @@ fi
 
 # echo "sozo build && sozo inspect && sozo migrate"
 echo "Deploying contracts..."
-sozo_build_output=$(sozo build && sozo inspect && sozo migrate)
+sozo_build_output=$(sozo build && sleep 3 && sozo inspect && sleep 3 && sozo migrate)
 
 # echo -e "\n✅ deploy mod finish!"
 
