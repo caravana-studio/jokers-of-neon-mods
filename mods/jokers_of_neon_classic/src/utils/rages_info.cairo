@@ -10,7 +10,7 @@ pub mod rages_info {
             rages_ids_all()
         }
 
-        fn get_rages_info(self: @ContractState) -> (Span<Span<u32>>, Span<u32>) {
+        fn get_rages_info(self: @ContractState) -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
             rages_info()
         }
     }
