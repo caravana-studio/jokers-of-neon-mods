@@ -10,7 +10,6 @@ const RAGE_CARD_HAND_LEECH: u32 = 416;
 
 const RAGE_CARD_DIMINISHED_HOLD: u32 = 406;
 const RAGE_CARD_STRATEGIC_QUARTED: u32 = 409;
-const RAGE_CARD_UNEXPECTED_SACRIFICE: u32 = 408; // Hard to implement with current scheme
 
 fn rages_ids_all() -> Array<u32> {
     array![
@@ -23,7 +22,6 @@ fn rages_ids_all() -> Array<u32> {
         RAGE_CARD_HAND_LEECH,
         RAGE_CARD_DIMINISHED_HOLD,
         RAGE_CARD_STRATEGIC_QUARTED,
-        RAGE_CARD_UNEXPECTED_SACRIFICE,
     ]
 }
 
@@ -43,7 +41,7 @@ fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
 
     // A-Grade Group
     let A_RAGES_PROBABILITY = 20;
-    let A_RAGES = array![RAGE_CARD_DIMINISHED_HOLD, RAGE_CARD_UNEXPECTED_SACRIFICE].span();
+    let A_RAGES = array![RAGE_CARD_DIMINISHED_HOLD].span();
     let A_RAGES_REWARDS = 1000;
 
     // S-Grade Group
