@@ -34,6 +34,9 @@ mod specials {
         mod plus_discards;
         mod plus_plays;
     }
+    mod converter {
+        mod all_cards_to_hearts;
+    }
     mod discard {
         mod wanted_joker;
     }

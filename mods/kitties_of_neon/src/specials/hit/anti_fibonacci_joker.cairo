@@ -8,7 +8,7 @@ pub mod special_anti_fibonacci_joker {
 
     #[abi(embed_v0)]
     impl AntiFibonacciJokerCondition of ICardCondition<ContractState> {
-        fn condition(self: @ContractState, raw_data: felt252) -> bool {
+        fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
             card.value == Value::Four
                 || card.value == Value::Six
