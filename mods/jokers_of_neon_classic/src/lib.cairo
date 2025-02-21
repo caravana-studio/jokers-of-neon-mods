@@ -24,6 +24,9 @@ mod rages {
         mod jokers;
         mod spades;
     }
+    mod update_special_card {
+        mod unexpected_sacrifice;
+    }
 }
 
 mod specials {
