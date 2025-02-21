@@ -31,5 +31,5 @@ game_config_address=$(echo "$inspect_result" | grep "${mod_name}-game_config" | 
 shop_config_address=$(echo "$inspect_result" | grep "${mod_name}-shop_config" | awk '{print $NF}')
 # echo "Shop Config address: $shop_config_address"
 
-sozo execute mod_manager create_mod $owner $mod_id 0 $card_info_address $specials_info_address $rages_info_address $loot_boxes_info_address $game_config_address $shop_config_address --wait --world $world_address
-sleep 2
+sozo execute mod_manager create_mod -c $owner,$mod_id,0,$card_info_address,$specials_info_address,$rages_info_address,$loot_boxes_info_address,$game_config_address,$shop_config_address --wait --world $world_address
+echo -e "\n✅ Create mod finish!"
