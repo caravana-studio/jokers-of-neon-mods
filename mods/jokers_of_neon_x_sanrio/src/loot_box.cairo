@@ -131,15 +131,15 @@ fn MODIFIER_LOOT_BOX() -> LootBox {
         size: 5,
         cards: array![
             array![].span(), *modifiers_group.at(0), // B
-            *modifiers_group.at(1), // A
-            traditional_cards_all().span(),
+             *modifiers_group.at(1), // A
+             traditional_cards_all().span(),
         ]
             .span(),
         probs: array![
             100, // 50 % modifiers
-            *modifiers_probs.at(0) * 50 / 100, // B
-            *modifiers_probs.at(1) * 50 / 100, // A
-            50,
+             *modifiers_probs.at(0) * 50 / 100, // B
+             *modifiers_probs.at(1) * 50 / 100, // A
+             50,
         ]
             .span(),
     }
