@@ -31,6 +31,8 @@ for rage in "${rage_names[@]}"; do
 done
 
 # Prepare the parameters for sozo execute
+len_contract_addresses=${#contract_addresses[@]}
+len_rage_ids=${#rage_ids[@]}
 rage_ids_str=$(IFS=,; echo "${rage_ids[*]}")
 contract_addresses_str=$(IFS=,; echo "${contract_addresses[*]}" | tr -d '"')
 
@@ -38,5 +40,5 @@ world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
 
 # Execute sozo command
 # echo -e "\nExecuting sozo command..."
-sozo execute rage_manager register_rages -c $mod_id,arr:$rage_ids_str,arr:$contract_addresses_str --wait --world $world_address
+sozo execute rage_manager register_rages -c $mod_id,$len_rage_ids,$rage_ids_str,$len_contract_addresses,$contract_addresses_str --wait --world $world_address
 echo -e "\n✅ Register rages finish!"
