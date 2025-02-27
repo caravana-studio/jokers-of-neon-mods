@@ -28,6 +28,9 @@ mod rages {
 
 mod specials {
     mod specials;
+    mod lose {
+        mod second_chance;
+    }
     mod game {
         mod extra_help;
         mod hand_thief;
