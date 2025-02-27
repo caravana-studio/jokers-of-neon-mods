@@ -1252,8 +1252,8 @@
   },
   "contracts": [
     {
-      "address": "0x2abb4e3384f68bfafbf9965a4d7a4a112d001095823acba55f51781cf50998a",
-      "class_hash": "0x25971ac1ec0d91c5bc4fed5105a79e441bec3d4e095b1aafd5f5975ba33f4d8",
+      "address": "0x44652d183e96e4cacd435121b517ecb5ef03d9ec5e6deeed55eb13cd0290c22",
+      "class_hash": "0x56bd9ea25ccd384fa8ae43ac77261d2fbabcf781b3305f4efe9ec5fa314458",
       "abi": [
         {
           "type": "impl",
@@ -1340,6 +1340,10 @@
             },
             {
               "name": "shop_config_address",
+              "type": "core::starknet::contract_address::ContractAddress"
+            },
+            {
+              "name": "poker_hands_address",
               "type": "core::starknet::contract_address::ContractAddress"
             }
           ]
@@ -2194,7 +2198,7 @@
     },
     {
       "members": [],
-      "class_hash": "0x6db8f4062cfcda99e89aadcbc5cd6b02f3f5f88dabe3231a75112128e5b66f7",
+      "class_hash": "0x27d0b68304652e0106654f8391e37b48daccdbea1ca58563dff3e27431f2fd9",
       "tag": "jokers_of_neon_mods-ModConfig",
       "selector": "0x26a71fa368dab860d69ad69d90cdde591bf7d51c87d0d2853986e2b6ada2d50"
     },

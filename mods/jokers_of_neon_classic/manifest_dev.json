@@ -1690,8 +1690,8 @@
       ]
     },
     {
-      "address": "0x19ee2d19f2708e5619294eeba13be122e02e1c911a5d73d018e966efaf4340f",
-      "class_hash": "0x319fdd5a0253d9a084e3aefcee76dce5faf6d7a7bea51aa3bead8734e272e12",
+      "address": "0x59ddcaf5fce7804448343742ad29c3bfa175cbad537f1d04cd0f3fa89158f8e",
+      "class_hash": "0x4970b1b4758d7a02b9565157d478ef9edf6e8af99e0e0fe5141c9bee6fda898",
       "abi": [
         {
           "type": "impl",
@@ -2180,6 +2180,332 @@
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-play_rules_config",
       "selector": "0x5020ebe5e3ec8c97f9b86250245a53ad12f5d19fa5bc8973a96cf26bd40de4d",
+      "systems": [
+        "upgrade"
+      ]
+    },
+    {
+      "address": "0x2b8f0d99b4f265a86bffab41b22213520942149b20fc98be8138605fa7ff994",
+      "class_hash": "0x14a0f17476176d685665f32e2e4d9e388c0c22cbecda8cca9f5632c6ef04343",
+      "abi": [
+        {
+          "type": "impl",
+          "name": "poker_hands_info__ContractImpl",
+          "interface_name": "dojo::contract::interface::IContract"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::interface::IContract",
+          "items": []
+        },
+        {
+          "type": "impl",
+          "name": "poker_hands_info__DeployedContractImpl",
+          "interface_name": "dojo::meta::interface::IDeployedResource"
+        },
+        {
+          "type": "struct",
+          "name": "core::byte_array::ByteArray",
+          "members": [
+            {
+              "name": "data",
+              "type": "core::array::Array::<core::bytes_31::bytes31>"
+            },
+            {
+              "name": "pending_word",
+              "type": "core::felt252"
+            },
+            {
+              "name": "pending_word_len",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::meta::interface::IDeployedResource",
+          "items": [
+            {
+              "type": "function",
+              "name": "dojo_name",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::byte_array::ByteArray"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "PokerHandsInfoImpl",
+          "interface_name": "jokers_of_neon_lib::interfaces::info::poker_hands_info::IPokerHandsInfo"
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "RoyalFlush",
+              "type": "()"
+            },
+            {
+              "name": "StraightFlush",
+              "type": "()"
+            },
+            {
+              "name": "FiveOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "FourOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "FullHouse",
+              "type": "()"
+            },
+            {
+              "name": "Straight",
+              "type": "()"
+            },
+            {
+              "name": "Flush",
+              "type": "()"
+            },
+            {
+              "name": "ThreeOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "TwoPair",
+              "type": "()"
+            },
+            {
+              "name": "OnePair",
+              "type": "()"
+            },
+            {
+              "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::LevelPokerHand",
+          "members": [
+            {
+              "name": "poker_hand",
+              "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
+            },
+            {
+              "name": "level",
+              "type": "core::integer::u8"
+            },
+            {
+              "name": "multi",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "points",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<jokers_of_neon_lib::models::data::poker_hand::PokerHand>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<jokers_of_neon_lib::models::data::poker_hand::PokerHand>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<core::array::Span::<jokers_of_neon_lib::models::data::poker_hand::PokerHand>>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<core::array::Span::<jokers_of_neon_lib::models::data::poker_hand::PokerHand>>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<core::integer::u32>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<core::integer::u32>"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::info::poker_hands_info::IPokerHandsInfo",
+          "items": [
+            {
+              "type": "function",
+              "name": "get_poker_hands_ids_all",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::array::Array::<core::integer::u32>"
+                }
+              ],
+              "state_mutability": "view"
+            },
+            {
+              "type": "function",
+              "name": "get_initial_poker_hands",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::array::Array::<jokers_of_neon_lib::models::data::poker_hand::LevelPokerHand>"
+                }
+              ],
+              "state_mutability": "view"
+            },
+            {
+              "type": "function",
+              "name": "get_poker_hands_info",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "(core::array::Span::<core::array::Span::<jokers_of_neon_lib::models::data::poker_hand::PokerHand>>, core::array::Span::<core::integer::u32>, core::array::Span::<core::integer::u32>, core::array::Span::<core::integer::u32>, core::array::Span::<core::integer::u32>)"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "function",
+          "name": "dojo_init",
+          "inputs": [],
+          "outputs": [],
+          "state_mutability": "view"
+        },
+        {
+          "type": "impl",
+          "name": "WorldProviderImpl",
+          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
+        },
+        {
+          "type": "struct",
+          "name": "dojo::world::iworld::IWorldDispatcher",
+          "members": [
+            {
+              "name": "contract_address",
+              "type": "core::starknet::contract_address::ContractAddress"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::world_provider::IWorldProvider",
+          "items": [
+            {
+              "type": "function",
+              "name": "world_dispatcher",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "dojo::world::iworld::IWorldDispatcher"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "UpgradeableImpl",
+          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::upgradeable::IUpgradeable",
+          "items": [
+            {
+              "type": "function",
+              "name": "upgrade",
+              "inputs": [
+                {
+                  "name": "new_class_hash",
+                  "type": "core::starknet::class_hash::ClassHash"
+                }
+              ],
+              "outputs": [],
+              "state_mutability": "external"
+            }
+          ]
+        },
+        {
+          "type": "constructor",
+          "name": "constructor",
+          "inputs": []
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+          "kind": "struct",
+          "members": [
+            {
+              "name": "class_hash",
+              "type": "core::starknet::class_hash::ClassHash",
+              "kind": "data"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "Upgraded",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+              "kind": "nested"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+          "kind": "enum",
+          "variants": []
+        },
+        {
+          "type": "event",
+          "name": "jokers_of_neon_classic::utils::poker_hands_info::poker_hands_info::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "UpgradeableEvent",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+              "kind": "nested"
+            },
+            {
+              "name": "WorldProviderEvent",
+              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+              "kind": "nested"
+            }
+          ]
+        }
+      ],
+      "init_calldata": [],
+      "tag": "jokers_of_neon_classic-poker_hands_info",
+      "selector": "0x389aa00ba520ae2ec3f1a01cbef7d6ae1ecc318bf09a0e852de48bee13f0e5a",
       "systems": [
         "upgrade"
       ]
@@ -2991,8 +3317,8 @@
       ]
     },
     {
-      "address": "0x10ecce460e722f77f875b1635b30de3bb6cc0694d59bdbe348c7f9ed75fb9c",
-      "class_hash": "0x10f4eac264622f0f79f722501d8e6165e74c2a6818c4ebe0ec9b649efa610ff",
+      "address": "0x29cc310d00696db829c333d191f9b21bde49ae60ec0bc919836b487356273e7",
+      "class_hash": "0xf6422be64f77a82dd52accef9471353f83104e48d562ee3b00bfbf0c248fe5",
       "abi": [
         {
           "type": "impl",
@@ -3771,7 +4097,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::rages::round::hand_leech::rage_hand_leech::Event",
+          "name": "jokers_of_neon_classic::rages::game::hand_leech::rage_hand_leech::Event",
           "kind": "enum",
           "variants": [
             {
@@ -8331,8 +8657,8 @@
       ]
     },
     {
-      "address": "0x3a88b34e76a420292f26d5663505dbdfb7a1323b449126127bce3c774074dd5",
-      "class_hash": "0x71a891cfa50d9ed49d1fdf5cae8e221efdc3830bba2efcafba4c06bf35c617a",
+      "address": "0x36766d3ccb8b9003adb6930d7f50dcae7f5a9da984e5bbb09bdf812366abb3c",
+      "class_hash": "0x47e683a23495cb66ba23d2b5ab72e5a3fbce77992e9abac710cf49fa05cdb0a",
       "abi": [
         {
           "type": "impl",
@@ -8430,7 +8756,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "(core::array::Span::<core::array::Span::<core::integer::u32>>, core::array::Span::<core::integer::u32>)"
+                  "type": "(core::array::Span::<core::array::Span::<core::integer::u32>>, core::array::Span::<core::integer::u32>, core::array::Span::<core::integer::u32>)"
                 }
               ],
               "state_mutability": "view"
@@ -8784,6 +9110,830 @@
       "tag": "jokers_of_neon_classic-shop_config",
       "selector": "0x3f1e66e3be7840da3d2846dacbb087ac476aa474bd1afcb23d4b104dbe4776",
       "systems": [
+        "upgrade"
+      ]
+    },
+    {
+      "address": "0x6e7d9c47a728d9d240d7e8f266309e62fee61690cb3e72ff74df8bfb66653b1",
+      "class_hash": "0x5c8cdb31bd94ccf4d3b559b39fdc0c667dab9a102bcc92fbd938690de87e4b2",
+      "abi": [
+        {
+          "type": "impl",
+          "name": "special_all_cards_to_hearts__ContractImpl",
+          "interface_name": "dojo::contract::interface::IContract"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::interface::IContract",
+          "items": []
+        },
+        {
+          "type": "impl",
+          "name": "special_all_cards_to_hearts__DeployedContractImpl",
+          "interface_name": "dojo::meta::interface::IDeployedResource"
+        },
+        {
+          "type": "struct",
+          "name": "core::byte_array::ByteArray",
+          "members": [
+            {
+              "name": "data",
+              "type": "core::array::Array::<core::bytes_31::bytes31>"
+            },
+            {
+              "name": "pending_word",
+              "type": "core::felt252"
+            },
+            {
+              "name": "pending_word_len",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::meta::interface::IDeployedResource",
+          "items": [
+            {
+              "type": "function",
+              "name": "dojo_name",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::byte_array::ByteArray"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "AllCardsToHeartsCondition",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
+          "variants": [
+            {
+              "name": "IN_GAME",
+              "type": "()"
+            },
+            {
+              "name": "AT_SHOP",
+              "type": "()"
+            },
+            {
+              "name": "FINISHED",
+              "type": "()"
+            },
+            {
+              "name": "OPEN_BLISTER_PACK",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
+          "members": [
+            {
+              "name": "id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "mod_id",
+              "type": "core::felt252"
+            },
+            {
+              "name": "state",
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
+            },
+            {
+              "name": "owner",
+              "type": "core::starknet::contract_address::ContractAddress"
+            },
+            {
+              "name": "player_name",
+              "type": "core::felt252"
+            },
+            {
+              "name": "player_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "level",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "hand_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "plays",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "discards",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cash",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::round::round::Round",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "player_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "level_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "remaining_plays",
+              "type": "core::integer::u16"
+            },
+            {
+              "name": "remaining_discards",
+              "type": "core::integer::u16"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "RoyalFlush",
+              "type": "()"
+            },
+            {
+              "name": "StraightFlush",
+              "type": "()"
+            },
+            {
+              "name": "FiveOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "FourOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "FullHouse",
+              "type": "()"
+            },
+            {
+              "name": "Straight",
+              "type": "()"
+            },
+            {
+              "name": "Flush",
+              "type": "()"
+            },
+            {
+              "name": "ThreeOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "TwoPair",
+              "type": "()"
+            },
+            {
+              "name": "OnePair",
+              "type": "()"
+            },
+            {
+              "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "Clubs",
+              "type": "()"
+            },
+            {
+              "name": "Diamonds",
+              "type": "()"
+            },
+            {
+              "name": "Hearts",
+              "type": "()"
+            },
+            {
+              "name": "Spades",
+              "type": "()"
+            },
+            {
+              "name": "Joker",
+              "type": "()"
+            },
+            {
+              "name": "Wild",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "Two",
+              "type": "()"
+            },
+            {
+              "name": "Three",
+              "type": "()"
+            },
+            {
+              "name": "Four",
+              "type": "()"
+            },
+            {
+              "name": "Five",
+              "type": "()"
+            },
+            {
+              "name": "Six",
+              "type": "()"
+            },
+            {
+              "name": "Seven",
+              "type": "()"
+            },
+            {
+              "name": "Eight",
+              "type": "()"
+            },
+            {
+              "name": "Nine",
+              "type": "()"
+            },
+            {
+              "name": "Ten",
+              "type": "()"
+            },
+            {
+              "name": "Jack",
+              "type": "()"
+            },
+            {
+              "name": "Queen",
+              "type": "()"
+            },
+            {
+              "name": "King",
+              "type": "()"
+            },
+            {
+              "name": "Ace",
+              "type": "()"
+            },
+            {
+              "name": "Joker",
+              "type": "()"
+            },
+            {
+              "name": "NeonJoker",
+              "type": "()"
+            },
+            {
+              "name": "Wild",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
+          "members": [
+            {
+              "name": "id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "suit",
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
+            },
+            {
+              "name": "value",
+              "type": "jokers_of_neon_lib::models::data::card::Value"
+            },
+            {
+              "name": "points",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "multi_add",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<core::integer::u32>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<core::integer::u32>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::PurchaseTracker",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "traditonal_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "modifier_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "loot_boxes_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "power_up_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "level_poker_hands_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "burn_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "reroll_count",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::GameTracker",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "power_ups_used",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "highest_hand",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_removed",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::GameContext",
+          "members": [
+            {
+              "name": "game",
+              "type": "jokers_of_neon_lib::models::status::game::game::Game"
+            },
+            {
+              "name": "round",
+              "type": "jokers_of_neon_lib::models::status::round::round::Round"
+            },
+            {
+              "name": "hand",
+              "type": "jokers_of_neon_lib::models::data::poker_hand::PokerHand"
+            },
+            {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
+              "name": "cards_played",
+              "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            },
+            {
+              "name": "cards_in_hand",
+              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            },
+            {
+              "name": "cards_in_deck",
+              "type": "core::array::Span::<core::integer::u32>"
+            },
+            {
+              "name": "special_cards",
+              "type": "core::array::Span::<core::integer::u32>"
+            },
+            {
+              "name": "power_ups",
+              "type": "core::array::Span::<core::integer::u32>"
+            },
+            {
+              "name": "purchase_tracker",
+              "type": "jokers_of_neon_lib::models::tracker::PurchaseTracker"
+            },
+            {
+              "name": "game_tracker",
+              "type": "jokers_of_neon_lib::models::tracker::GameTracker"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "AllCardsToHeartsConverter",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::converter::ICardConverter"
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::converter::ICardConverter",
+          "items": [
+            {
+              "type": "function",
+              "name": "apply",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "card",
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "jokers_of_neon_lib::models::data::card::Card"
+                }
+              ],
+              "state_mutability": "external"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "AllCardsToHeartsBase",
+          "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<jokers_of_neon_lib::models::card_type::CardType>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<jokers_of_neon_lib::models::card_type::CardType>"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::base::ICardBase",
+          "items": [
+            {
+              "type": "function",
+              "name": "get_id",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::integer::u32"
+                }
+              ],
+              "state_mutability": "view"
+            },
+            {
+              "type": "function",
+              "name": "get_types",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::array::Span::<jokers_of_neon_lib::models::card_type::CardType>"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "function",
+          "name": "dojo_init",
+          "inputs": [],
+          "outputs": [],
+          "state_mutability": "view"
+        },
+        {
+          "type": "impl",
+          "name": "WorldProviderImpl",
+          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
+        },
+        {
+          "type": "struct",
+          "name": "dojo::world::iworld::IWorldDispatcher",
+          "members": [
+            {
+              "name": "contract_address",
+              "type": "core::starknet::contract_address::ContractAddress"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::world_provider::IWorldProvider",
+          "items": [
+            {
+              "type": "function",
+              "name": "world_dispatcher",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "dojo::world::iworld::IWorldDispatcher"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "UpgradeableImpl",
+          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::upgradeable::IUpgradeable",
+          "items": [
+            {
+              "type": "function",
+              "name": "upgrade",
+              "inputs": [
+                {
+                  "name": "new_class_hash",
+                  "type": "core::starknet::class_hash::ClassHash"
+                }
+              ],
+              "outputs": [],
+              "state_mutability": "external"
+            }
+          ]
+        },
+        {
+          "type": "constructor",
+          "name": "constructor",
+          "inputs": []
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+          "kind": "struct",
+          "members": [
+            {
+              "name": "class_hash",
+              "type": "core::starknet::class_hash::ClassHash",
+              "kind": "data"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "Upgraded",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+              "kind": "nested"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+          "kind": "enum",
+          "variants": []
+        },
+        {
+          "type": "event",
+          "name": "jokers_of_neon_classic::specials::converter::all_cards_to_hearts::special_all_cards_to_hearts::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "UpgradeableEvent",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+              "kind": "nested"
+            },
+            {
+              "name": "WorldProviderEvent",
+              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+              "kind": "nested"
+            }
+          ]
+        }
+      ],
+      "init_calldata": [],
+      "tag": "jokers_of_neon_classic-special_all_cards_to_hearts",
+      "selector": "0x23535550682ae625e60fa91efcde1ef07f4c5edd1790ce0cfb988ef3780a74",
+      "systems": [
+        "apply",
         "upgrade"
       ]
     },
@@ -18330,8 +19480,8 @@
       ]
     },
     {
-      "address": "0x5955f10a117cec98d4c5d6a4f9f9636e3bd84641a2f646a54b8f4965d3a83a4",
-      "class_hash": "0x6323fb444bdaabcd7c1915f76150b073cc8c31f75c2dab0943b350554f6ac24",
+      "address": "0x38f45064855d1c2e7c812dfa79d4ba79a69b9a912d571f04e3c5a0c0fdc03ad",
+      "class_hash": "0x756583bde3982e894d8a01ed430f22b551fde4f779320fe0a080fae5c01d0fb",
       "abi": [
         {
           "type": "impl",
@@ -18387,47 +19537,6 @@
           "type": "impl",
           "name": "JokerBoosterCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "JokerBoosterExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -18671,6 +19780,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -18956,6 +20079,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "JokerBoosterExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -19150,8 +20304,8 @@
       ]
     },
     {
-      "address": "0x4699568f632bcb4622449c0f293e9bb23a8ac7c92f5c5c189238969c1593724",
-      "class_hash": "0x56d443a442e954dedd38d525af85a18918e95f0d114c45a3dd37a1f478574ad",
+      "address": "0x3166b385a7cb0841a0821886e820bd3a8ab84b6c98b10fb7049487d83062ad8",
+      "class_hash": "0x1ad640220fcf5531fca9f59b2e0768287f6e20e87e4bcd8e20b2726cbf92ed7",
       "abi": [
         {
           "type": "impl",
@@ -19207,47 +20361,6 @@
           "type": "impl",
           "name": "LuckyHandCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "LuckyHandExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -19491,6 +20604,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -19776,6 +20903,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "LuckyHandExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -19970,8 +21128,8 @@
       ]
     },
     {
-      "address": "0xdd807150cafb524b91c81e054a7e8f74a5e4f22675b480809405c0f939e3e6",
-      "class_hash": "0x2392edda52a092b7917cbf588e1130533a2d9f965c8a705412b4ffabb0f31aa",
+      "address": "0x398da4dfb83140680263c38ac8b53cdd6124c5ed6823490be89667812185ef",
+      "class_hash": "0x3ed8adb191313945e956a06d163f2e9cae42ea957337cb5d89d9ef647665918",
       "abi": [
         {
           "type": "impl",
@@ -20027,47 +21185,6 @@
           "type": "impl",
           "name": "LuckySevenCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "LuckySevenExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -20311,6 +21428,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -20596,6 +21727,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "LuckySevenExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -20790,8 +21952,8 @@
       ]
     },
     {
-      "address": "0x32a2d66527915e5b936eab1cc5fc93e091c9bb24a4f28181e158d95c63189f9",
-      "class_hash": "0x52efa8b483dee66241d5c6e28d4c16cbb3a7980bbaf1844d825089327f013d6",
+      "address": "0x2801a62f52b6bf641bc4ed14a945b51aeec683396ca425c21af2d62fe0d95c0",
+      "class_hash": "0x53738c9444b7c76057fa896027eeba80dae639a0311700bee5046f72bd963ce",
       "abi": [
         {
           "type": "impl",
@@ -20847,47 +22009,6 @@
           "type": "impl",
           "name": "MultiAcesCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "MultiAcesExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -21131,6 +22252,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -21416,6 +22551,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "MultiAcesExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -21610,8 +22776,8 @@
       ]
     },
     {
-      "address": "0x300dba034dbec814a569d2317e8d4d793f93336abe7ea6fc03632f5bd70913a",
-      "class_hash": "0x646e8796f95d09d5e74de843fb1b4c8c4fb0e38775a8c7b0ae71e47636d2452",
+      "address": "0x20e48962c2eb7a2f43e031d7d6745f002ef8b321f623bc8f48d792aaed98b05",
+      "class_hash": "0xb021c9fa6c78668e8def68a55c2705b7ed55d24e40cb4f23df92c6787303b7",
       "abi": [
         {
           "type": "impl",
@@ -21667,47 +22833,6 @@
           "type": "impl",
           "name": "MultiClubCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "MultiClubExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -21951,6 +23076,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -22236,6 +23375,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "MultiClubExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -22430,8 +23600,8 @@
       ]
     },
     {
-      "address": "0x78d6323bd228a961120979e6da0402da7be869fc7e053fba94ef0584948d33e",
-      "class_hash": "0x43d1d0b0d04d74d8df68cafacebd339af5355a187bf90181a2e87cf858e7230",
+      "address": "0x654e2dca2ae7b69ebe568e6b158717146f9e18ed4fd5d5d7017d664a857ca0e",
+      "class_hash": "0x15cbffe13eb54518a3924835a045018378d62411d46a1100d712ea3c0558df4",
       "abi": [
         {
           "type": "impl",
@@ -22487,47 +23657,6 @@
           "type": "impl",
           "name": "MultiDiamondCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "MultiDiamondExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -22771,6 +23900,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -23056,6 +24199,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "MultiDiamondExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -23250,8 +24424,8 @@
       ]
     },
     {
-      "address": "0x3cb8bde79c9bbb154e1259420c03fab101a662c07a714c1e74bcb99983524ed",
-      "class_hash": "0x3ee0a25e46ce218d45cd00cc078c8b39a9387513ae93dce23f7288b8e9a7608",
+      "address": "0x1f42b6e314f67efd630fbc1a48b419622e2897d066ff02f768ff189f4e578ec",
+      "class_hash": "0x764dd244f2688f7bb5070d77a0880cec1d70476f2be002d64751c0612a79a42",
       "abi": [
         {
           "type": "impl",
@@ -23307,47 +24481,6 @@
           "type": "impl",
           "name": "MultiHeartCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "MultiHeartExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -23591,6 +24724,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -23876,6 +25023,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "MultiHeartExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -24070,8 +25248,8 @@
       ]
     },
     {
-      "address": "0x57648e1fa6797b8766b113b901238e1149f6b176662307d35fc6af823ca8216",
-      "class_hash": "0x601159fe756b0dbcbd295c2823691967c2f1161f5b66ce5eab817e7c277c392",
+      "address": "0x504290182717acaffc0b88ed44a9571c44f63045a0697cb24de0ef8593e77e3",
+      "class_hash": "0x1ec9aaa2c8c6b99941f104a2883fd2f23607b36015286e2234398cb68f42557",
       "abi": [
         {
           "type": "impl",
@@ -24127,47 +25305,6 @@
           "type": "impl",
           "name": "MultiSpadeCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "MultiSpadeExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -24411,6 +25548,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -24696,6 +25847,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "MultiSpadeExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -24890,8 +26072,8 @@
       ]
     },
     {
-      "address": "0x78f8ef9c95e3ee1028c3c2e5463bb64a8f38d5de79752967ab4abf2ce9da1c6",
-      "class_hash": "0x704e8c56b6ce09ba3168baedeb9f6a4d7c0e4e6e236e940d3e3eef252b7cbd5",
+      "address": "0x687d1fd6fe1c363721a3b1c2fd93242109d8b401d67d3c89ee1583981d2842",
+      "class_hash": "0x1c24fbf7b37856d59488ce6cd65f94f34e333104f58da59e0308c74fc23eb06",
       "abi": [
         {
           "type": "impl",
@@ -24947,47 +26129,6 @@
           "type": "impl",
           "name": "NeonBonusCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "NeonBonusExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -25231,6 +26372,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -25516,6 +26671,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "NeonBonusExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -27322,8 +28508,8 @@
       ]
     },
     {
-      "address": "0x4c16cfbcb773da082c816319031e8354bbe7a8c864f5676b8a50386bdea636",
-      "class_hash": "0x2a5072d7a1492eafb10ccf2e8d9b098678729685c254db4275b571c05827223",
+      "address": "0x4a15cf990ee7657e429140e92d64a1f7df685e69df8787887dedc3d57d71825",
+      "class_hash": "0x6a4c7b68505fd701fe23dcfa28b8aad4872d4dda0f2a3bbc982b5a7cb93b067",
       "abi": [
         {
           "type": "impl",
@@ -27379,47 +28565,6 @@
           "type": "impl",
           "name": "PointsForFiguresCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "PointsForFiguresExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -27663,6 +28808,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -27948,6 +29107,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "PointsForFiguresExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -28935,8 +30125,8 @@
       ]
     },
     {
-      "address": "0x2e1b2f7f37dbbaee938698a161c7c2ca172a0dcc9dd62c3f0e604788851f766",
-      "class_hash": "0x1cbef370f8d9cb8b0a6ddcc28bf8b060b1020e8a694d4b3e8f83d7442bcdff8",
+      "address": "0x58d35efd6169961bbe82922b6c8046c35304daf5634956846874566bbbf32f1",
+      "class_hash": "0x2ac05f0b459a0cf2e2285e7071c48b6d742026465de51caaa166cebf52cae5",
       "abi": [
         {
           "type": "impl",
@@ -28992,47 +30182,6 @@
           "type": "impl",
           "name": "RandomMultiClubCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "RandomMultiClubExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -29276,6 +30425,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -29561,6 +30724,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "RandomMultiClubExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -29755,8 +30949,8 @@
       ]
     },
     {
-      "address": "0x78e96670efba1f0a21bb241b009615b48ae57c028736df65b7fbd45edb8fe25",
-      "class_hash": "0x60b7f5d4d02a66984d7ab3abc4e0eeff32ba8c71bf264790364d136e2dbb0ed",
+      "address": "0x617a4b24c636de2555f1f4e1ca86ea707567854ffc17d204c5920559f0aa972",
+      "class_hash": "0x3c61f28591730c42261c0376f2d45bbb4769a97ec355f7329e23a8efd89bb83",
       "abi": [
         {
           "type": "impl",
@@ -29812,47 +31006,6 @@
           "type": "impl",
           "name": "RandomMultiDiamondCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "RandomMultiDiamondExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -30096,6 +31249,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -30381,6 +31548,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "RandomMultiDiamondExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -30575,8 +31773,8 @@
       ]
     },
     {
-      "address": "0x2e3fbd428adda79aafc727eb5ddfb1b5ac09e552ec581b87fe05f13bcf9ce54",
-      "class_hash": "0x53ec5f92183fabdfd97e4b8129ef90b499ff90067373d505c1527949c46e5f3",
+      "address": "0x1741d726350c0abcd54ce5c3dedcd8a554de69793b116852806d9b1e05fef9b",
+      "class_hash": "0x17368dc72cfaac0257a7001dcdc32123df47af7dbc9fb2ee38c4068a3bcbd6c",
       "abi": [
         {
           "type": "impl",
@@ -30632,47 +31830,6 @@
           "type": "impl",
           "name": "RandomMultiHeartCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "RandomMultiHeartExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -30916,6 +32073,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -31201,6 +32372,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "RandomMultiHeartExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -31395,8 +32597,8 @@
       ]
     },
     {
-      "address": "0x4f1b192198b6fd7360d3fe5d65b1701b995f82fd945eef209226e586bf7338",
-      "class_hash": "0x378dc05711111c02205c7c75dcd1ee5fba27bc3c7507b0ccd7275c22960dadd",
+      "address": "0x4d82746f3810bf17b87abe29d783e14a9fb3630f98318eadd8e608c06e6723d",
+      "class_hash": "0x41aab99b326c8292b5c93aa3d70adb4134e74e417fd8237d25b50ea8554ef3e",
       "abi": [
         {
           "type": "impl",
@@ -31452,47 +32654,6 @@
           "type": "impl",
           "name": "RandomMultiSpadeCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "RandomMultiSpadeExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -31736,6 +32897,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -32021,6 +33196,37 @@
               "type": "jokers_of_neon_lib::models::tracker::GameTracker"
             }
           ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "RandomMultiSpadeExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "interface",
@@ -32215,8 +33421,8 @@
       ]
     },
     {
-      "address": "0x73e607be7e76d9281ea3a2854410ea42aea400c33b206aca28672f0b522437d",
-      "class_hash": "0x2502757839b22bfc67a5f2fcc70dd7fbde76fe430aa44bf62f0adf24cc2650c",
+      "address": "0x5c7f41184448b0c215b448337746a1c20f68f263e1c3748a7a4097b8ae73c7a",
+      "class_hash": "0x4438c250389ea21b96500678043eb6c9993eca1e3cb5f6f3b19a0667ef4d34c",
       "abi": [
         {
           "type": "impl",
@@ -32272,47 +33478,6 @@
           "type": "impl",
           "name": "WantedJokerCondition",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition"
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "interface",
-          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
-          "items": [
-            {
-              "type": "function",
-              "name": "condition",
-              "inputs": [
-                {
-                  "name": "raw_data",
-                  "type": "core::felt252"
-                }
-              ],
-              "outputs": [
-                {
-                  "type": "core::bool"
-                }
-              ],
-              "state_mutability": "view"
-            }
-          ]
-        },
-        {
-          "type": "impl",
-          "name": "WantedJokerExecutable",
-          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
           "type": "enum",
@@ -32556,6 +33721,20 @@
             },
             {
               "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
               "type": "()"
             }
           ]
@@ -32844,6 +34023,37 @@
         },
         {
           "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::condition::ICardCondition",
+          "items": [
+            {
+              "type": "function",
+              "name": "condition",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "core::bool"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "WantedJokerExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
+        },
+        {
+          "type": "interface",
           "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
           "items": [
             {
@@ -33035,8 +34245,8 @@
       ]
     },
     {
-      "address": "0x300cb9d644bb089c86736b760319dbe35f0d664416cf4316b9c8cfa410a16c0",
-      "class_hash": "0x13220600829070fe0b4f6473a250c545ba0ecf183537cc6671f1173a6df076c",
+      "address": "0x169fdc1a157140a3badb6994a41d02e13967b7a533538bb1de522b87a073c23",
+      "class_hash": "0x4a322737a0825fafbeafb2669a85385ce39cf6f0505adac75e457d446c93119",
       "abi": [
         {
           "type": "impl",
