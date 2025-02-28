@@ -8,7 +8,7 @@ pub mod special_neon_bonus {
 
     #[abi(embed_v0)]
     impl NeonBonusCondition of ICardCondition<ContractState> {
-        fn condition(self: @ContractState, raw_data: felt252) -> bool {
+        fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
             card.id >= 200 && card.id <= 253
         }

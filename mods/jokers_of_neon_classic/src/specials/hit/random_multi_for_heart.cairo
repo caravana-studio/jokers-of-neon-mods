@@ -11,7 +11,7 @@ pub mod special_random_multi_for_heart {
 
     #[abi(embed_v0)]
     impl RandomMultiHeartCondition of ICardCondition<ContractState> {
-        fn condition(self: @ContractState, raw_data: felt252) -> bool {
+        fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
             card.suit == Suit::Hearts
         }

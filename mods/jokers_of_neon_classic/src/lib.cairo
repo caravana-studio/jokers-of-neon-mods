@@ -1,4 +1,5 @@
 mod loot_box;
+mod poker_hand;
 mod configs {
     mod game;
     mod play_rules;
@@ -9,10 +10,10 @@ mod rages {
     mod debuff {}
     mod game {
         mod diminished_hold;
+        mod hand_leech;
         mod strategic_quarted;
     }
     mod round {
-        mod hand_leech;
         mod zero_waste;
     }
     mod silence {
@@ -32,6 +33,9 @@ mod specials {
         mod hand_thief;
         mod plus_discards;
         mod plus_plays;
+    }
+    mod converter {
+        mod all_cards_to_hearts;
     }
     mod discard {
         mod wanted_joker;
@@ -76,6 +80,7 @@ mod specials {
 mod utils {
     mod card_info;
     mod loot_boxes_info;
+    mod poker_hands_info;
     mod rages_info;
     mod specials_info;
 }
