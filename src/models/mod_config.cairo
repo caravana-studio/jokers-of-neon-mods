@@ -10,6 +10,5 @@ pub struct ModConfig {
     pub rages_address: ContractAddress,
     pub loot_boxes_address: ContractAddress,
     pub game_config_address: ContractAddress,
-    pub shop_config_address: ContractAddress,
     pub poker_hands_address: ContractAddress,
 }
