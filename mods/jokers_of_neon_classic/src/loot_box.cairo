@@ -106,7 +106,6 @@ fn SPECIALS_LOOT_BOX() -> LootBox {
             *specials_group.at(1), // B
             *specials_group.at(2), // A
             *specials_group.at(3), // S
-            *specials_group.at(4), // SS
             *modifiers_group.at(0), // B
             *modifiers_group.at(1), // A
             traditional_cards_all().span(),
@@ -119,7 +118,6 @@ fn SPECIALS_LOOT_BOX() -> LootBox {
             *specials_probs.at(1) * 25 / 100, // B
             *specials_probs.at(2) * 25 / 100, // A
             *specials_probs.at(3) * 25 / 100, // S
-            *specials_probs.at(4) * 25 / 100, // SS
             // 15 % modifiers
             *modifiers_probs.at(0) * 15 / 100, // B
             *modifiers_probs.at(1) * 15 / 100, // A
