@@ -1,9 +1,9 @@
 mod loot_box;
 mod poker_hand;
+mod shop_config;
 mod configs {
     mod game;
     mod play_rules;
-    mod shop;
 }
 mod rages {
     mod rages;
