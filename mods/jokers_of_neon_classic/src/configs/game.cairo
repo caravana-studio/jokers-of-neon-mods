@@ -1,7 +1,7 @@
 #[dojo::contract]
 pub mod game_config {
     use jokers_of_neon_lib::configs::game::{
-        DiscountConfig, EarningCashConfig, GameConfig, RageRoundConfig, RoundRewardConfig, ShopConfig, ShopPricesConfig,
+        DiscountConfig, GameConfig, RageRoundConfig, RoundRewardConfig, ShopConfig, ShopPricesConfig,
     };
     use jokers_of_neon_lib::constants::two_pow::two_pow;
     use jokers_of_neon_lib::interfaces::configs::game::IGameConfig;
@@ -45,7 +45,7 @@ pub mod game_config {
         }
 
         fn get_round_reward_config(self: @ContractState) -> RoundRewardConfig {
-            RoundRewardConfig { reward: 100, reward_per_discards: 100, reward_per_plays: 100 }
+            RoundRewardConfig { reward: 500, reward_per_discards: 150, reward_per_plays: 150 }
         }
 
         fn get_rage_round_config(self: @ContractState) -> RageRoundConfig {
@@ -57,10 +57,6 @@ pub mod game_config {
                 min_round_level_before_activate: 3,
                 level_cooldown: 1,
             }
-        }
-
-        fn get_earning_cash_config(self: @ContractState) -> EarningCashConfig {
-            EarningCashConfig { base: 5, config_hands_played: 1, config_remaining_discards: 1, config_extra_points: 1 }
         }
 
         fn get_discount_config(self: @ContractState) -> DiscountConfig {
