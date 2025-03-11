@@ -14,9 +14,9 @@ pub mod special_second_chance {
             let mut new_specials = array![];
             loop {
                 match context.special_cards.pop_front() {
-                    Option::Some(special_id) => {
-                        if *special_id != SPECIAL_SECOND_CHANCE_ID {
-                            new_specials.append(*special_id);
+                    Option::Some(special) => {
+                        if *special.effect_card_id != SPECIAL_SECOND_CHANCE_ID {
+                            new_specials.append(*special);
                         }
                     },
                     Option::None => { break; },
