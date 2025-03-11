@@ -1,7 +1,7 @@
 #[dojo::contract]
 pub mod game_config {
     use jokers_of_neon_lib::configs::game::{
-        DiscountConfig, GameConfig, RageRoundConfig, RoundRewardConfig, ShopConfig, ShopPricesConfig,
+        DiscountConfig, GameConfig, RageRoundConfig, RoundRewardConfig, ShopPricesConfig,
     };
     use jokers_of_neon_lib::constants::two_pow::two_pow;
     use jokers_of_neon_lib::interfaces::configs::game::IGameConfig;
@@ -21,26 +21,15 @@ pub mod game_config {
             }
         }
 
-        fn get_shop_config(self: @ContractState) -> ShopConfig {
-            ShopConfig {
-                traditional_cards_quantity: 5,
-                modifiers_cards_quantity: 3,
-                specials_cards_quantity: 3,
-                loot_boxes_quantity: 2,
-                power_ups_quantity: 2,
-                poker_hands_quantity: 3,
-            }
-        }
-
         fn get_shop_prices_config(self: @ContractState) -> ShopPricesConfig {
             ShopPricesConfig {
                 initial_price_slot: 100,
                 initial_price_of_burn: 100,
                 initial_price_of_reroll: 100,
-                number_of_burns_per_store: 100,
-                number_of_rerolls_per_store: 100,
-                price_of_traditional_cards: 100,
-                price_of_modifier_cards: 100,
+                price_of_traditional_cards: 200,
+                price_of_neon_traditional_cards: 700,
+                price_of_joker_card: 1500,
+                price_of_neon_joker_card: 3000,
             }
         }
 
