@@ -25,10 +25,13 @@ rages_info_address=$(echo "$inspect_result" | grep "${mod_name}-rages_info" | aw
 specials_info_address=$(echo "$inspect_result" | grep "${mod_name}-specials_info" | awk '{print $NF}')
 # echo "Specials Info address: $specials_info_address"
 
+shop_config_address=$(echo "$inspect_result" | grep "${mod_name}-shop_config" | awk '{print $NF}')
+# echo "Shop Config address: $shop_config_address"
+
 game_config_address=$(echo "$inspect_result" | grep "${mod_name}-game_config" | awk '{print $NF}')
 # echo "Game Config address: $game_config_address"
 
 poker_hands_info_address=$(echo "$inspect_result" | grep "${mod_name}-poker_hands_info" | awk '{print $NF}')
 # echo "Poker Hands Info address: $poker_hands_info_address"
 
-sozo execute mod_manager create_mod $owner $mod_id 0 $card_info_address $specials_info_address $rages_info_address $loot_boxes_info_address $game_config_address $poker_hands_info_address --wait --world $world_address
+sozo execute mod_manager create_mod $owner $mod_id 0 $card_info_address $specials_info_address $rages_info_address $loot_boxes_info_address $game_config_address $shop_config_address $poker_hands_info_address --wait --world $world_address
