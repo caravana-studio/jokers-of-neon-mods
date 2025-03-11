@@ -7,6 +7,7 @@ pub mod special_second_chance {
     #[abi(embed_v0)]
     impl SecondChanceExecutable of IContextExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext) -> GameContext {
+            // at this point, game state is GameState::FINISHED
             let mut context = context;
             context.game.state == GameState::IN_GAME;
 
@@ -15,14 +16,13 @@ pub mod special_second_chance {
             loop {
                 match context.special_cards.pop_front() {
                     Option::Some(special) => {
-                        if *special.effect_card_id != SPECIAL_SECOND_CHANCE_ID {
+                        if special.effect_card_id != @SPECIAL_SECOND_CHANCE_ID {
                             new_specials.append(*special);
                         }
                     },
                     Option::None => { break; },
                 }
             };
-            context.game.current_specials_len = context.game.current_specials_len - 1;
             context.special_cards = new_specials.span();
             context
         }
