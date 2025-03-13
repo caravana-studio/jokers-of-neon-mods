@@ -52,7 +52,6 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_INITIAL_ADVANTAGE_ID,
         SPECIAL_LUCKY_HAND_ID,
         SPECIAL_DISCARD_MASTERY_ID,
-        SPECIAL_NEON_SYNERGY_ID,
         SPECIAL_PLUS_DISCARDS_ID,
         SPECIAL_PLUS_PLAYS_ID,
         SPECIAL_INCREASE_LEVEL_FULL_HOUSE_ID,
@@ -113,7 +112,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_POINTS_FOR_FIGURES_ID,
         SPECIAL_ALL_CARDS_TO_HEARTS_ID,
         SPECIAL_DISCARD_MASTERY_ID,
-        SPECIAL_NEON_SYNERGY_ID,
     ]
         .span();
 
