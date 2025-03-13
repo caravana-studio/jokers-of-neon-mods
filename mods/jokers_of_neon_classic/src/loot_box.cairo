@@ -207,10 +207,6 @@ fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
 }
 
 fn LOVERS_LOOT_BOX() -> LootBox {
-    let hearts_ace = array![
-        CardTrait::generate_id(Value::Ace, Suit::Hearts), CardTrait::generate_id(Value::Ace, Suit::Hearts),
-    ];
-
     LootBox {
         id: LOVERS_LOOT_BOX_ID,
         cost: 1500,
@@ -218,7 +214,7 @@ fn LOVERS_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 5,
         cards: array![
-            hearts_ace.span(),
+            array![CardTrait::generate_id(Value::Ace, Suit::Hearts)].span(),
             array![SPECIAL_ALL_CARDS_TO_HEARTS_ID].span(),
             neon_hearts_cards().span(),
             array![SUIT_HEARTS_MODIFIER_ID].span(),
