@@ -26,7 +26,6 @@ pub mod game_config {
             ShopPricesConfig {
                 initial_price_slot: 100,
                 initial_price_of_burn: 100,
-                initial_price_of_reroll: 100,
                 price_of_traditional_cards: 200,
                 price_of_neon_traditional_cards: 700,
                 price_of_joker_card: 1500,
