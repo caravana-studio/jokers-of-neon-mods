@@ -18,6 +18,7 @@ pub mod game_config {
                 hand_len: 8,
                 start_cash: 1000,
                 start_special_slots: 1,
+                start_rerolls: 3,
             }
         }
 
