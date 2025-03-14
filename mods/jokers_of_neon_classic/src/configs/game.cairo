@@ -35,7 +35,7 @@ pub mod game_config {
         fn get_shop_prices_config(self: @ContractState) -> ShopPricesConfig {
             ShopPricesConfig {
                 initial_price_slot: 100,
-                initial_price_of_burn: 100,
+                initial_price_of_burn: 400,
                 initial_price_of_reroll: 100,
                 number_of_burns_per_store: 100,
                 number_of_rerolls_per_store: 100,
