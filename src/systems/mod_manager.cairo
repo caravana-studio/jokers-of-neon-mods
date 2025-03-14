@@ -71,6 +71,7 @@ pub mod mod_manager {
             mod_config.rages_address = config.rages_address;
             mod_config.loot_boxes_address = config.loot_boxes_address;
             mod_config.game_config_address = config.game_config_address;
+            mod_config.shop_config_address = config.shop_config_address;
             store.set_mod_config(mod_config);
         }
 
@@ -121,6 +122,7 @@ pub mod mod_manager {
             assert(config.rages_address != Zeroable::zero(), 'Rages config is zero');
             assert(config.loot_boxes_address != Zeroable::zero(), 'Loot boxes config is zero');
             assert(config.game_config_address != Zeroable::zero(), 'Game config is zero');
+            assert(config.shop_config_address != Zeroable::zero(), 'Shop config is zero');
         }
     }
 }
