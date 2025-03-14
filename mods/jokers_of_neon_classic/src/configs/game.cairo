@@ -1,7 +1,7 @@
 #[dojo::contract]
 pub mod game_config {
     use jokers_of_neon_lib::configs::game::{
-        DiscountConfig, GameConfig, RageRoundConfig, RoundRewardConfig, ShopConfig, ShopPricesConfig,
+        DiscountConfig, GameConfig, RageRoundConfig, RoundRewardConfig, ShopPricesConfig,
     };
     use jokers_of_neon_lib::constants::two_pow::two_pow;
     use jokers_of_neon_lib::interfaces::configs::game::IGameConfig;
@@ -18,29 +18,18 @@ pub mod game_config {
                 hand_len: 8,
                 start_cash: 1000,
                 start_special_slots: 1,
-            }
-        }
-
-        fn get_shop_config(self: @ContractState) -> ShopConfig {
-            ShopConfig {
-                traditional_cards_quantity: 5,
-                modifiers_cards_quantity: 3,
-                specials_cards_quantity: 3,
-                loot_boxes_quantity: 2,
-                power_ups_quantity: 2,
-                poker_hands_quantity: 3,
+                start_rerolls: 3,
             }
         }
 
         fn get_shop_prices_config(self: @ContractState) -> ShopPricesConfig {
             ShopPricesConfig {
-                initial_price_slot: 600,
-                initial_price_of_burn: 400,
-                initial_price_of_reroll: 100,
-                number_of_burns_per_store: 100,
-                number_of_rerolls_per_store: 100,
-                price_of_traditional_cards: 100,
-                price_of_modifier_cards: 100,
+                initial_price_slot: 100,
+                initial_price_of_burn: 100,
+                price_of_traditional_cards: 200,
+                price_of_neon_traditional_cards: 700,
+                price_of_joker_card: 1500,
+                price_of_neon_joker_card: 3000,
             }
         }
 
@@ -87,11 +76,6 @@ pub mod game_config {
         fn calculate_price_of_burn(self: @ContractState, count_burns: u32) -> u32 {
             let shop_prices_config = self.get_shop_prices_config();
             shop_prices_config.initial_price_of_burn + (count_burns * 200)
-        }
-
-        fn calculate_price_of_reroll(self: @ContractState, count_rerolls: u32) -> u32 {
-            let shop_prices_config = self.get_shop_prices_config();
-            shop_prices_config.initial_price_of_reroll * (count_rerolls + 1)
         }
     }
 }
