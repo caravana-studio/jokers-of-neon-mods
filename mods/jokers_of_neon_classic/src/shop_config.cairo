@@ -28,7 +28,6 @@ fn DECK_SHOP_CONFIG() -> ShopConfig {
         loot_boxes_quantity: 0,
         power_ups_quantity: 0,
         poker_hands_quantity: 0,
-        reroll_quantity: 0,
         burn_quantity: 1,
     }
 }
@@ -42,7 +41,6 @@ fn GLOBAL_SHOP_CONFIG() -> ShopConfig {
         loot_boxes_quantity: 0,
         power_ups_quantity: 2,
         poker_hands_quantity: 0,
-        reroll_quantity: 0,
         burn_quantity: 0,
     }
 }
@@ -56,7 +54,6 @@ fn SPECIALS_SHOP_CONFIG() -> ShopConfig {
         loot_boxes_quantity: 3,
         power_ups_quantity: 0,
         poker_hands_quantity: 0,
-        reroll_quantity: 0,
         burn_quantity: 0,
     }
 }
@@ -70,7 +67,6 @@ fn LEVEL_UPS_SHOP_CONFIG() -> ShopConfig {
         loot_boxes_quantity: 0,
         power_ups_quantity: 0,
         poker_hands_quantity: 3,
-        reroll_quantity: 0,
         burn_quantity: 0,
     }
 }
@@ -84,7 +80,6 @@ fn MODIFIERS_SHOP_CONFIG() -> ShopConfig {
         loot_boxes_quantity: 3,
         power_ups_quantity: 0,
         poker_hands_quantity: 0,
-        reroll_quantity: 0,
         burn_quantity: 0,
     }
 }
@@ -98,7 +93,6 @@ fn MIX_SHOP_CONFIG() -> ShopConfig {
         loot_boxes_quantity: 3,
         power_ups_quantity: 2,
         poker_hands_quantity: 3,
-        reroll_quantity: 0,
         burn_quantity: 0,
     }
 }
@@ -112,7 +106,6 @@ fn EMPTY_SHOP_CONFIG() -> ShopConfig {
         loot_boxes_quantity: 0,
         power_ups_quantity: 0,
         poker_hands_quantity: 0,
-        reroll_quantity: 0,
         burn_quantity: 0,
     }
 }
