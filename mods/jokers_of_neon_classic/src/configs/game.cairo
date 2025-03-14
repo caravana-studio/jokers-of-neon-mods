@@ -70,7 +70,7 @@ pub mod game_config {
 
         fn calculate_price_of_slot(self: @ContractState, count_slots: u32) -> u32 {
             let shop_prices_config = self.get_shop_prices_config();
-            shop_prices_config.initial_price_slot * two_pow((count_slots).into()).try_into().unwrap()
+            shop_prices_config.initial_price_slot * two_pow((count_slots - 1).into()).try_into().unwrap()
         }
 
         fn calculate_price_of_burn(self: @ContractState, count_burns: u32) -> u32 {
