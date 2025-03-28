@@ -11,6 +11,8 @@ pub mod special_high_roller {
     #[derive(Copy, Drop, Serde)]
     struct Cumulative {
         #[key]
+        game_id: u32,
+        #[key]
         key: felt252,
         value: u32,
     }
@@ -20,7 +22,7 @@ pub mod special_high_roller {
     impl HighRollerExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(@"jokers_of_neon_classic");
-            let mut cumulative: Cumulative = world.read_model(HIGH_ROLLER_KEY);
+            let mut cumulative: Cumulative = world.read_model((context.game.id, HIGH_ROLLER_KEY));
             match context.hand {
                 PokerHand::HighCard => {
                     cumulative.value += 1;
@@ -45,7 +47,7 @@ pub mod special_high_roller {
 
     #[abi(embed_v0)]
     impl HighRollerInfo of ICardInfo<ContractState> {
-        fn info(self: @ContractState, key: Option<felt252>) -> felt252 {
+        fn info(self: @ContractState, game_id: u32, key: Option<felt252>) -> felt252 {
             let mut world = self.world(@"jokers_of_neon_classic");
             let cumulative: Cumulative = world.read_model(HIGH_ROLLER_KEY);
             cumulative.value.into()
