@@ -45,12 +45,12 @@ pub mod special_high_roller {
 
     #[abi(embed_v0)]
     impl HighRollerInfo of ICardInfo<ContractState> {
-        fn info(ref self: ContractState, key: Option<felt252>) -> felt252 {
+        fn info(self: @ContractState, key: Option<felt252>) -> felt252 {
             let mut world = self.world(@"jokers_of_neon_classic");
             world.read_model(HIGH_ROLLER_KEY).value
         }
 
-        fn keys(ref self: ContractState) -> Span<felt252> {
+        fn keys(self: @ContractState) -> Span<felt252> {
             array![HIGH_ROLLER_KEY].span()
         }
     }
