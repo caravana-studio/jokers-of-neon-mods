@@ -62,6 +62,11 @@ mod specials {
     mod miss {}
     mod hand {}
     mod poker_hand {
+        mod blackjack;
+        mod blacks;
+        mod cash_catalyst;
+        mod club_keeper;
+        mod efficient_play;
         mod increase_level_double_pair;
         mod increase_level_five_of_a_kind;
         mod increase_level_flush;
@@ -70,6 +75,9 @@ mod specials {
         mod increase_level_pair;
         mod increase_level_straight;
         mod increase_level_three_of_a_kind;
+        mod multiplier;
+        mod reds;
+        mod spade_trio;
     }
     mod power_up {
         mod power_up_booster;
