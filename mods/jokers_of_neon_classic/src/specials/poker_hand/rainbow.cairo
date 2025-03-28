@@ -37,7 +37,10 @@ pub mod special_rainbow {
                 }
             };
 
-            if count == count_spades + count_clubs + count_hearts + count_diamonds && count_spades > 0 && count_clubs > 0 && count_hearts > 0 && count_diamonds > 0 {
+            if count == count_spades
+                + count_clubs
+                + count_hearts
+                + count_diamonds && count_spades > 0 && count_clubs > 0 && count_hearts > 0 && count_diamonds > 0 {
                 (200, 5, 0)
             } else {
                 (0, 0, 0)

@@ -1,6 +1,7 @@
 #[dojo::contract]
 pub mod special_club_keeper {
     use jokers_of_neon_classic::specials::specials::SPECIAL_CLUB_KEEPER_ID;
+    use jokers_of_neon_lib::constants::card::{ACE_CLUBS_ID, NEON_ACE_CLUBS_ID, NEON_TWO_CLUBS_ID, TWO_CLUBS_ID};
     use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
     use jokers_of_neon_lib::models::{
         card_type::CardType, data::card::{Card, Suit}, data::poker_hand::PokerHand, tracker::GameContext,
@@ -14,10 +15,8 @@ pub mod special_club_keeper {
             loop {
                 match cards_in_deck.pop_front() {
                     Option::Some(card_id) => {
-                        println!("card_id: {}", card_id);
-                        let card_id: felt252 = (*card_id).into();
-                        let card: Card = card_id.into(); // TODO: Check if this is correct
-                        if card.suit == Suit::Clubs {
+                        if (*card_id >= TWO_CLUBS_ID && *card_id <= ACE_CLUBS_ID)
+                            || (*card_id == NEON_TWO_CLUBS_ID && *card_id == NEON_ACE_CLUBS_ID) {
                             points += 10;
                         }
                     },
