@@ -49,5 +49,9 @@ pub mod special_high_roller {
             let mut world = self.world(@"jokers_of_neon_classic");
             world.read_model(HIGH_ROLLER_KEY).value
         }
+
+        fn keys(ref self: ContractState) -> Span<felt252> {
+            array![HIGH_ROLLER_KEY].span()
+        }
     }
 }
