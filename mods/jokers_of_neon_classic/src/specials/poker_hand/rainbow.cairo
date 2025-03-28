@@ -9,11 +9,11 @@ pub mod special_rainbow {
     #[abi(embed_v0)]
     impl RainbowExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut count = 0;
-            let mut count_spades = 0;
-            let mut count_clubs = 0;
-            let mut count_hearts = 0;
-            let mut count_diamonds = 0;
+            let mut count: u8 = 0;
+            let mut count_spades: u8 = 0;
+            let mut count_clubs: u8 = 0;
+            let mut count_hearts: u8 = 0;
+            let mut count_diamonds: u8 = 0;
             let mut cards = context.cards_played;
             loop {
                 match cards.pop_front() {
@@ -37,7 +37,7 @@ pub mod special_rainbow {
                 }
             };
 
-            if count == count_spades + count_clubs + count_hearts + count_diamonds {
+            if count == count_spades + count_clubs + count_hearts + count_diamonds && count_spades > 0 && count_clubs > 0 && count_hearts > 0 && count_diamonds > 0 {
                 (200, 5, 0)
             } else {
                 (0, 0, 0)

@@ -14,6 +14,7 @@ pub mod special_club_keeper {
             loop {
                 match cards_in_deck.pop_front() {
                     Option::Some(card_id) => {
+                        println!("card_id: {}", card_id);
                         let card_id: felt252 = (*card_id).into();
                         let card: Card = card_id.into(); // TODO: Check if this is correct
                         if card.suit == Suit::Clubs {

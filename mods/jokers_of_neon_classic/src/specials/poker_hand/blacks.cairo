@@ -9,9 +9,9 @@ pub mod special_blacks {
     #[abi(embed_v0)]
     impl BlacksExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut count = 0;
-            let mut count_spades = 0;
-            let mut count_clubs = 0;
+            let mut count: u8 = 0;
+            let mut count_spades: u8 = 0;
+            let mut count_clubs: u8 = 0;
             let mut cards = context.cards_played;
             loop {
                 match cards.pop_front() {
@@ -31,7 +31,7 @@ pub mod special_blacks {
                 }
             };
 
-            if count == count_spades + count_clubs {
+            if count == count_spades + count_clubs && count_spades > 0 && count_clubs > 0 {
                 (0, 10, 0)
             } else {
                 (0, 0, 0)
