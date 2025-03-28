@@ -3,8 +3,8 @@ pub mod special_high_roller {
     use dojo::{model::ModelStorage, world::WorldStorage};
     use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_ROLLER;
     use jokers_of_neon_lib::{
-        interfaces::{base::ICardBase, cards::{executable::ICardExecutable, info::CardInfo}},
-        models::{card_type::CardType},
+        interfaces::{base::ICardBase, cards::{executable::ICardExecutable, info::ICardInfo}},
+        models::{data::poker_hand::{PokerHand}, {card_type::CardType, tracker::GameContext}},
     };
 
     #[dojo::model]
@@ -19,16 +19,16 @@ pub mod special_high_roller {
     #[abi(embed_v0)]
     impl HighRollerExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+            let mut world = self.world(@"jokers_of_neon_classic");
+            let mut cumulative: Cumulative = world.read_model(HIGH_ROLLER_KEY);
             match context.hand {
                 PokerHand::HighCard => {
-                    let world = self.world(@"jokers_of_neon_classic");
-                    let mut cumulative: Cumulative = world.read_model(HIGH_ROLLER_KEY);
                     cumulative.value += 1;
-                    world.write_model(cumulative);
+                    world.write_model(@cumulative);
                 },
                 _ => {},
             };
-            (0, cumulative.value, 0)
+            (0, cumulative.value.try_into().unwrap(), 0)
         }
     }
 
@@ -47,7 +47,8 @@ pub mod special_high_roller {
     impl HighRollerInfo of ICardInfo<ContractState> {
         fn info(self: @ContractState, key: Option<felt252>) -> felt252 {
             let mut world = self.world(@"jokers_of_neon_classic");
-            world.read_model(HIGH_ROLLER_KEY).value
+            let cumulative: Cumulative = world.read_model(HIGH_ROLLER_KEY);
+            cumulative.value.into()
         }
 
         fn keys(self: @ContractState) -> Span<felt252> {

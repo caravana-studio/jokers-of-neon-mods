@@ -76,6 +76,7 @@ mod specials {
     }
     mod round {
         mod discard_mastery;
+        mod high_roller;
         mod initial_advantage;
     }
 }
