@@ -76,6 +76,7 @@ mod specials {
         mod increase_level_straight;
         mod increase_level_three_of_a_kind;
         mod multiplier;
+        mod rainbow;
         mod reds;
         mod spade_trio;
     }
