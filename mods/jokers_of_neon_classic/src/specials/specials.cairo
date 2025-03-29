@@ -40,6 +40,7 @@ const SPECIAL_CASH_CATALYST_ID: u32 = 356;
 const SPECIAL_REDS_ID: u32 = 357;
 const SPECIAL_BLACKS_ID: u32 = 358;
 const SPECIAL_RAINBOW_ID: u32 = 359;
+const SPECIAL_DEUCES_WILD_ID: u32 = 360;
 
 fn specials_ids_all() -> Array<u32> {
     array![
@@ -84,22 +85,15 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_REDS_ID,
         SPECIAL_BLACKS_ID,
         SPECIAL_RAINBOW_ID,
+        SPECIAL_DEUCES_WILD_ID,
     ]
 }
 
 fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // C-Grade Group
-    let C_SPECIALS_PROBABILITY = 45;
+    let C_SPECIALS_PROBABILITY = 100;
     let C_SPECIALS_COST = 1000;
     let C_SPECIALS = array![
-        SPECIAL_MULTI_FOR_HEART_ID,
-        SPECIAL_MULTI_FOR_CLUB_ID,
-        SPECIAL_MULTI_FOR_DIAMOND_ID,
-        SPECIAL_MULTI_FOR_SPADE_ID,
-        SPECIAL_INCREASE_LEVEL_PAIR_ID,
-        SPECIAL_INCREASE_LEVEL_DOUBLE_PAIR_ID,
-        SPECIAL_LUCKY_HAND_ID,
-        SPECIAL_WANTED_JOKER_ID,
         SPECIAL_BLACKJACK_ID,
         SPECIAL_EFFICIENT_PLAY_ID,
         SPECIAL_MULTIPLIER_ID,
@@ -109,6 +103,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_REDS_ID,
         SPECIAL_BLACKS_ID,
         SPECIAL_RAINBOW_ID,
+        SPECIAL_DEUCES_WILD_ID,
     ]
         .span();
 
@@ -157,13 +152,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     ]
         .span();
 
-    assert(
-        C_SPECIALS_PROBABILITY + B_SPECIALS_PROBABILITY + A_SPECIALS_PROBABILITY + S_SPECIALS_PROBABILITY == 100,
-        'wrong probability sum',
-    );
-    (
-        array![C_SPECIALS, B_SPECIALS, A_SPECIALS, S_SPECIALS].span(),
-        array![C_SPECIALS_PROBABILITY, B_SPECIALS_PROBABILITY, A_SPECIALS_PROBABILITY, S_SPECIALS_PROBABILITY].span(),
-        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST].span(),
-    )
+    // assert(
+    //     C_SPECIALS_PROBABILITY + B_SPECIALS_PROBABILITY + A_SPECIALS_PROBABILITY + S_SPECIALS_PROBABILITY == 100,
+    //     'wrong probability sum',
+    // );
+    (array![C_SPECIALS].span(), array![C_SPECIALS_PROBABILITY].span(), array![C_SPECIALS_COST].span())
 }

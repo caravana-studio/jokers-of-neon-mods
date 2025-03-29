@@ -39,6 +39,7 @@ mod specials {
     }
     mod converter {
         mod all_cards_to_hearts;
+        mod deuces_wild;
     }
     mod discard {
         mod wanted_joker;

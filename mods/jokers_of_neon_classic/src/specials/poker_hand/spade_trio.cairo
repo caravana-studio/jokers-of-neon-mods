@@ -16,10 +16,15 @@ pub mod special_spade_trio {
                     match cards.pop_front() {
                         Option::Some((
                             hit, _, card,
-                        )) => { if *hit && *card.suit != Suit::Spades && *card.suit != Suit::Joker && *card.suit != Suit::Wild {
-                            is_spade_trio = false;
-                            break;
-                        } },
+                        )) => {
+                            if *hit
+                                && *card.suit != Suit::Spades
+                                && *card.suit != Suit::Joker
+                                && *card.suit != Suit::Wild {
+                                is_spade_trio = false;
+                                break;
+                            }
+                        },
                         Option::None => { break; },
                     }
                 };
