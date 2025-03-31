@@ -41,7 +41,7 @@ pub mod special_high_roller {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::Round].span()
+            array![CardType::Round, CardType::Info].span()
         }
     }
 
