@@ -47,14 +47,10 @@ pub mod special_high_roller {
 
     #[abi(embed_v0)]
     impl HighRollerInfo of ICardInfo<ContractState> {
-        fn info(self: @ContractState, game_id: u32, key: Option<felt252>) -> felt252 {
+        fn values(self: @ContractState, game_id: u32) -> (i32, i32, i32) {
             let mut world = self.world(@"jokers_of_neon_classic");
-            let cumulative: Cumulative = world.read_model(HIGH_ROLLER_KEY);
-            cumulative.value.into()
-        }
-
-        fn keys(self: @ContractState) -> Span<felt252> {
-            array![HIGH_ROLLER_KEY].span()
+            let cumulative: Cumulative = world.read_model((game_id, HIGH_ROLLER_KEY));
+            (0, cumulative.value.try_into().unwrap(), 0)
         }
     }
 }
