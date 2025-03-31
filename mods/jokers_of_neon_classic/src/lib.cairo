@@ -70,13 +70,13 @@ mod specials {
         mod increase_level_pair;
         mod increase_level_straight;
         mod increase_level_three_of_a_kind;
+        mod high_roller;
     }
     mod power_up {
         mod power_up_booster;
     }
     mod round {
         mod discard_mastery;
-        mod high_roller;
         mod initial_advantage;
     }
 }

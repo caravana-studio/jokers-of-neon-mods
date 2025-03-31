@@ -42,7 +42,7 @@ pub mod special_high_roller {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::Round, CardType::Info].span()
+            array![CardType::PokerHand, CardType::Info].span()
         }
     }
 
@@ -51,7 +51,7 @@ pub mod special_high_roller {
         fn values(self: @ContractState, game_id: u32) -> (i32, i32, i32) {
             let mut world = self.world(@"jokers_of_neon_classic");
             let cumulative: Cumulative = world.read_model((game_id, HIGH_ROLLER_KEY));
-            (0, cumulative.value.try_into().unwrap(), 0)
+            (0, cumulative.value, 0)
         }
     }
 }
