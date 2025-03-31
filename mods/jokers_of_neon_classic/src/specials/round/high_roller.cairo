@@ -1,7 +1,7 @@
 #[dojo::contract]
 pub mod special_high_roller {
     use dojo::{model::ModelStorage, world::WorldStorage};
-    use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_ROLLER;
+    use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_ROLLER_ID;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::{executable::ICardExecutable, info::ICardInfo}},
         models::{data::poker_hand::{PokerHand}, {card_type::CardType, tracker::GameContext}},
@@ -37,7 +37,7 @@ pub mod special_high_roller {
     #[abi(embed_v0)]
     impl HighRollerBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            SPECIAL_HIGH_ROLLER
+            SPECIAL_HIGH_ROLLER_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
