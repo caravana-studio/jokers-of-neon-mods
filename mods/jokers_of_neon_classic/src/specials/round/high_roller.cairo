@@ -14,7 +14,7 @@ pub mod special_high_roller {
         game_id: u32,
         #[key]
         key: felt252,
-        value: u32,
+        value: i32,
     }
     const HIGH_ROLLER_KEY: felt252 = 'HIGH_ROLLER_KEY';
 
@@ -30,7 +30,7 @@ pub mod special_high_roller {
                 },
                 _ => {},
             };
-            (0, cumulative.value.try_into().unwrap(), 0)
+            (0, cumulative.value, 0)
         }
     }
 
