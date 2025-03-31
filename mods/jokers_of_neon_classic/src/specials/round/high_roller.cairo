@@ -23,6 +23,7 @@ pub mod special_high_roller {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(@"jokers_of_neon_classic");
             let mut cumulative: Cumulative = world.read_model((context.game.id, HIGH_ROLLER_KEY));
+            let value = cumulative.value;
             match context.hand {
                 PokerHand::HighCard => {
                     cumulative.value += 1;
@@ -30,7 +31,7 @@ pub mod special_high_roller {
                 },
                 _ => {},
             };
-            (0, cumulative.value, 0)
+            (0, value, 0)
         }
     }
 
