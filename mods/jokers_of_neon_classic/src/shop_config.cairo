@@ -9,7 +9,14 @@ const MIX_SHOP_CONFIG_ID: u32 = 6;
 const EMPTY_SHOP_CONFIG_ID: u32 = 999;
 
 fn shop_configs_ids_all() -> Array<u32> {
-    array![GLOBAL_SHOP_CONFIG_ID]
+    array![
+        DECK_SHOP_CONFIG_ID,
+        GLOBAL_SHOP_CONFIG_ID,
+        SPECIALS_SHOP_CONFIG_ID,
+        LEVEL_UPS_SHOP_CONFIG_ID,
+        MODIFIERS_SHOP_CONFIG_ID,
+        MIX_SHOP_CONFIG_ID,
+    ]
 }
 
 fn DECK_SHOP_CONFIG() -> ShopConfig {
