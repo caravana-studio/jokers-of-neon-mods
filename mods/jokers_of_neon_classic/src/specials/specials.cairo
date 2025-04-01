@@ -77,16 +77,6 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
         SPECIAL_WANTED_JOKER_ID,
         SPECIAL_SECOND_CHANCE_ID,
-        SPECIAL_BLACKJACK_ID,
-        SPECIAL_EFFICIENT_PLAY_ID,
-        SPECIAL_MULTIPLIER_ID,
-        SPECIAL_CLUB_KEEPER_ID,
-        SPECIAL_SPADE_TRIO_ID,
-        SPECIAL_CASH_CATALYST_ID,
-        SPECIAL_REDS_ID,
-        SPECIAL_BLACKS_ID,
-        SPECIAL_RAINBOW_ID,
-        SPECIAL_DEUCES_WILD_ID,
         SPECIAL_HIGH_ROLLER_ID,
     ]
 }
@@ -120,6 +110,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_RANDOM_MULTI_FOR_CLUB_ID,
         SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID,
         SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
+        SPECIAL_HIGH_ROLLER_ID,
     ]
         .span();
 
@@ -137,7 +128,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_POINTS_FOR_FIGURES_ID,
         SPECIAL_ALL_CARDS_TO_HEARTS_ID,
         SPECIAL_DISCARD_MASTERY_ID,
-        SPECIAL_NEON_SYNERGY_ID,
     ]
         .span();
 
@@ -145,7 +135,11 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     let S_SPECIALS_PROBABILITY = 15;
     let S_SPECIALS_COST = 5000;
     let S_SPECIALS = array![
-        SPECIAL_EXTRA_HELP_ID, SPECIAL_JOKER_BOOSTER_ID, SPECIAL_POWER_UP_BOOSTER_ID, SPECIAL_INITIAL_ADVANTAGE_ID,
+        SPECIAL_EXTRA_HELP_ID,
+        SPECIAL_JOKER_BOOSTER_ID,
+        SPECIAL_POWER_UP_BOOSTER_ID,
+        SPECIAL_INITIAL_ADVANTAGE_ID,
+        SPECIAL_SECOND_CHANCE_ID,
     ]
         .span();
 
