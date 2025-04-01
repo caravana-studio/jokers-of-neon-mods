@@ -148,7 +148,7 @@ fn get_poker_hand_data(poker_hand: PokerHand, level: u32) -> (u32, u32) {
                     }
                     inner_idx += 1;
                 };
-                category_idx += 1; // Ahora sí se incrementa correctamente
+                category_idx += 1;
             },
             Option::None => { break; },
         }
