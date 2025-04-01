@@ -43,6 +43,9 @@ mod specials {
     mod discard {
         mod wanted_joker;
     }
+    mod hand {
+        mod twos_matter;
+    }
     mod hit {
         mod joker_booster;
         mod lucky_hand;
@@ -60,7 +63,6 @@ mod specials {
         mod random_multi_for_spade;
     }
     mod miss {}
-    mod hand {}
     mod poker_hand {
         mod high_roller;
         mod increase_level_double_pair;
