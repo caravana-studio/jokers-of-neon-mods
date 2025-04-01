@@ -68,6 +68,7 @@ mod specials {
         mod cash_catalyst;
         mod club_keeper;
         mod efficient_play;
+        mod high_roller;
         mod increase_level_double_pair;
         mod increase_level_five_of_a_kind;
         mod increase_level_flush;

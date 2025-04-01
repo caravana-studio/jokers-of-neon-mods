@@ -41,6 +41,7 @@ const SPECIAL_REDS_ID: u32 = 357;
 const SPECIAL_BLACKS_ID: u32 = 358;
 const SPECIAL_RAINBOW_ID: u32 = 359;
 const SPECIAL_DEUCES_WILD_ID: u32 = 360;
+const SPECIAL_HIGH_ROLLER_ID: u32 = 361;
 
 fn specials_ids_all() -> Array<u32> {
     array![
@@ -86,6 +87,7 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_BLACKS_ID,
         SPECIAL_RAINBOW_ID,
         SPECIAL_DEUCES_WILD_ID,
+        SPECIAL_HIGH_ROLLER_ID,
     ]
 }
 
@@ -104,6 +106,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_BLACKS_ID,
         SPECIAL_RAINBOW_ID,
         SPECIAL_DEUCES_WILD_ID,
+        SPECIAL_HIGH_ROLLER_ID,
     ]
         .span();
 
@@ -120,6 +123,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_RANDOM_MULTI_FOR_CLUB_ID,
         SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID,
         SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
+        SPECIAL_HIGH_ROLLER_ID,
     ]
         .span();
 
