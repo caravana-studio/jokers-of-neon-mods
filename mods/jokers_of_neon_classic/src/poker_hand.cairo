@@ -112,3 +112,46 @@ fn poker_hands_info() -> (Span<Span<PokerHand>>, Span<u32>, Span<u32>, Span<u32>
             .span(),
     )
 }
+
+/// Returns the cost and points required for leveling up a given poker hand.
+///
+/// # Arguments
+/// * `poker_hand` - The specific `PokerHand` to retrieve data for.
+/// * `level` - The current level of the hand.
+///
+/// # Returns
+/// A tuple `(u32, u32)`, where:
+/// * The first value is the cost associated with the hand at the given level.
+/// * The second value is the points required for leveling up.
+///
+/// If the hand is not found, `(0, 0)` is returned.
+fn get_poker_hand_data(poker_hand: PokerHand, level: u32) -> (u32, u32) {
+    let mut data = (0, 0);
+    if level == 0 {
+        return data;
+    }
+
+    let (mut all_hands, _, _, points, multi) = poker_hands_info();
+    let mut category_idx = 0;
+
+    loop {
+        match all_hands.pop_front() {
+            Option::Some(category_hands) => {
+                let mut inner_idx = 0;
+                loop {
+                    if inner_idx == (*category_hands).len() {
+                        break;
+                    }
+                    if *(*category_hands).at(inner_idx) == poker_hand {
+                        data = (*points.at(category_idx) * level, *multi.at(category_idx) * level);
+                        break;
+                    }
+                    inner_idx += 1;
+                };
+                category_idx += 1; // Ahora sí se incrementa correctamente
+            },
+            Option::None => { break; },
+        }
+    };
+    data
+}

@@ -75,6 +75,7 @@ mod specials {
         mod power_up_booster;
     }
     mod round {
+        mod deadline;
         mod discard_mastery;
         mod initial_advantage;
     }

@@ -7,8 +7,9 @@ pub mod special_increase_level_pair {
     #[abi(embed_v0)]
     impl PairBoostExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            if context.hand == PokerHand::OnePair {
-                (20, 4, 0)
+            let (poker_hand, _) = context.hand;
+            if poker_hand == PokerHand::OnePair {
+                (40, 4, 0)
             } else {
                 (0, 0, 0)
             }
