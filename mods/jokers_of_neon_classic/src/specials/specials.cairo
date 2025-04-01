@@ -132,7 +132,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_POWER_UP_BOOSTER_ID,
         SPECIAL_INITIAL_ADVANTAGE_ID,
         SPECIAL_SECOND_CHANCE_ID,
-        SPECIAL_DEADLINE_ID
+        SPECIAL_DEADLINE_ID,
     ]
         .span();
 
