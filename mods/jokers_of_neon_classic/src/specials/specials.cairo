@@ -78,6 +78,11 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_WANTED_JOKER_ID,
         SPECIAL_SECOND_CHANCE_ID,
         SPECIAL_HIGH_ROLLER_ID,
+        SPECIAL_BLACKJACK_ID,
+        SPECIAL_EFFICIENT_PLAY_ID,
+        SPECIAL_MULTIPLIER_ID,
+        SPECIAL_SPADE_TRIO_ID,
+        SPECIAL_DEUCES_WILD_ID,
     ]
 }
 
@@ -94,6 +99,8 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_INCREASE_LEVEL_DOUBLE_PAIR_ID,
         SPECIAL_LUCKY_HAND_ID,
         SPECIAL_WANTED_JOKER_ID,
+        SPECIAL_BLACKJACK_ID,
+        SPECIAL_MULTIPLIER_ID,
     ]
         .span();
 
@@ -111,6 +118,8 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID,
         SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
         SPECIAL_HIGH_ROLLER_ID,
+        SPECIAL_EFFICIENT_PLAY_ID,
+        SPECIAL_DEUCES_WILD_ID,
     ]
         .span();
 
@@ -128,6 +137,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_POINTS_FOR_FIGURES_ID,
         SPECIAL_ALL_CARDS_TO_HEARTS_ID,
         SPECIAL_DISCARD_MASTERY_ID,
+        SPECIAL_SPADE_TRIO_ID,
     ]
         .span();
 
