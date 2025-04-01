@@ -31,7 +31,11 @@ fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
     // C-Grade Group
     let C_RAGES_PROBABILITY = 45;
     let C_RAGES = array![
-        RAGE_CARD_SILENT_HEARTS, RAGE_CARD_SILENT_CLUBS, RAGE_CARD_SILENT_DIAMONDS, RAGE_CARD_SILENT_SPADES, RAGE_CARD_SILENT_ACES,
+        RAGE_CARD_SILENT_HEARTS,
+        RAGE_CARD_SILENT_CLUBS,
+        RAGE_CARD_SILENT_DIAMONDS,
+        RAGE_CARD_SILENT_SPADES,
+        RAGE_CARD_SILENT_ACES,
     ]
         .span();
     let C_RAGES_REWARDS = 500;

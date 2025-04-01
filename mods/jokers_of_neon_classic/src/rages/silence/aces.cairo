@@ -3,7 +3,7 @@ pub mod rage_silent_aces {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_SILENT_ACES;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, rages::silence::IRageSilence},
-        models::{card_type::CardType, data::card::Value},
+        models::{card_type::CardType, data::card::{Suit, Value}},
     };
 
     #[abi(embed_v0)]
