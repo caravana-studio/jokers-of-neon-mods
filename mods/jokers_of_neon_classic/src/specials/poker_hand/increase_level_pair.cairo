@@ -9,7 +9,7 @@ pub mod special_increase_level_pair {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let (poker_hand, _) = context.hand;
             if poker_hand == PokerHand::OnePair {
-                (40, 4, 0)
+                (60, 6, 0)
             } else {
                 (0, 0, 0)
             }
