@@ -62,6 +62,7 @@ mod specials {
     mod miss {}
     mod hand {}
     mod poker_hand {
+        mod high_roller;
         mod increase_level_double_pair;
         mod increase_level_five_of_a_kind;
         mod increase_level_flush;
