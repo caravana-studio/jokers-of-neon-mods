@@ -15,6 +15,7 @@ const SPECIAL_HAND_THIEF_ID: u32 = 315;
 const SPECIAL_EXTRA_HELP_ID: u32 = 316;
 const SPECIAL_LUCKY_SEVEN_ID: u32 = 317;
 const SPECIAL_NEON_BONUS_ID: u32 = 318;
+const SPECIAL_DEADLINE_ID: u32 = 319;
 const SPECIAL_INITIAL_ADVANTAGE_ID: u32 = 320;
 const SPECIAL_LUCKY_HAND_ID: u32 = 321;
 const SPECIAL_DISCARD_MASTERY_ID: u32 = 322;
@@ -67,6 +68,7 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
         SPECIAL_WANTED_JOKER_ID,
         SPECIAL_SECOND_CHANCE_ID,
+        SPECIAL_DEADLINE_ID,
         SPECIAL_HIGH_ROLLER_ID,
     ]
 }
@@ -130,6 +132,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_POWER_UP_BOOSTER_ID,
         SPECIAL_INITIAL_ADVANTAGE_ID,
         SPECIAL_SECOND_CHANCE_ID,
+        SPECIAL_DEADLINE_ID,
     ]
         .span();
 
