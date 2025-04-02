@@ -1,6 +1,8 @@
 #[dojo::contract]
 pub mod poker_hands_info {
-    use jokers_of_neon_classic::poker_hand::{initial_poker_hands, poker_hands_ids_all, poker_hands_info};
+    use jokers_of_neon_classic::poker_hand::{
+        get_poker_hand_data, initial_poker_hands, poker_hands_ids_all, poker_hands_info,
+    };
     use jokers_of_neon_lib::interfaces::info::poker_hands_info::{
         IPokerHandsInfo, IPokerHandsInfoDispatcher, IPokerHandsInfoDispatcherTrait,
     };
@@ -20,6 +22,10 @@ pub mod poker_hands_info {
             self: @ContractState,
         ) -> (Span<Span<PokerHand>>, Span<u32>, Span<u32>, Span<u32>, Span<u32>) {
             poker_hands_info()
+        }
+
+        fn get_poker_hand_data(self: @ContractState, poker_hand: PokerHand, level: u32) -> (u32, u32) {
+            get_poker_hand_data(poker_hand, level)
         }
     }
 }
