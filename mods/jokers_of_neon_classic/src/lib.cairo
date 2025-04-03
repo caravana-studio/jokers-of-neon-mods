@@ -39,6 +39,7 @@ mod specials {
     }
     mod converter {
         mod all_cards_to_hearts;
+        mod deuces_wild;
     }
     mod discard {
         mod wanted_joker;
@@ -62,6 +63,11 @@ mod specials {
     mod miss {}
     mod hand {}
     mod poker_hand {
+        mod blackjack;
+        mod blacks;
+        mod cash_catalyst;
+        mod club_keeper;
+        mod efficient_play;
         mod high_roller;
         mod increase_level_double_pair;
         mod increase_level_five_of_a_kind;
@@ -71,7 +77,11 @@ mod specials {
         mod increase_level_pair;
         mod increase_level_straight;
         mod increase_level_three_of_a_kind;
+        mod multiplier;
+        mod rainbow;
+        mod reds;
         mod scaling_factor;
+        mod spade_trio;
     }
     mod power_up {
         mod power_up_booster;
