@@ -80,8 +80,8 @@ mod specials {
         mod multiplier;
         mod rainbow;
         mod reds;
-        mod spade_trio;
         mod scaling_factor;
+        mod spade_trio;
     }
     mod power_up {
         mod power_up_booster;
