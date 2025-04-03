@@ -9,7 +9,7 @@ pub mod special_increase_level_four_of_a_kind {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let (poker_hand, _) = context.hand;
             if poker_hand == PokerHand::FourOfAKind {
-                (20, 4, 0)
+                (90, 6, 0)
             } else {
                 (0, 0, 0)
             }

@@ -9,7 +9,7 @@ pub mod special_increase_level_full_house {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let (poker_hand, _) = context.hand;
             if poker_hand == PokerHand::FullHouse {
-                (20, 4, 0)
+                (100, 8, 0)
             } else {
                 (0, 0, 0)
             }
