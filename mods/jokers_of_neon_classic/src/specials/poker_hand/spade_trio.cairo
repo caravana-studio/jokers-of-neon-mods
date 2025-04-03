@@ -16,7 +16,7 @@ pub mod special_spade_trio {
                     Option::Some((
                         hit, _, card,
                     )) => {
-                        if *hit && *card.suit != Suit::Spades && *card.suit != Suit::Joker && *card.suit != Suit::Wild {
+                        if *hit && *card.suit == Suit::Spades {
                             count_spades += 1;
                         }
                     },
