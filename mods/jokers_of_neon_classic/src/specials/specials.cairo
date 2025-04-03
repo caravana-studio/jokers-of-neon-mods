@@ -86,7 +86,7 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_EFFICIENT_PLAY_ID,
         SPECIAL_MULTIPLIER_ID,
         SPECIAL_SPADE_TRIO_ID,
-        SPECIAL_DEUCES_WILD_ID,
+        // SPECIAL_DEUCES_WILD_ID,
         SPECIAL_SCALING_FACTOR_ID,
     ]
 }
