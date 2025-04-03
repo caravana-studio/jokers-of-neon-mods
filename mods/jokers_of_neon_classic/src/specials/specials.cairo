@@ -49,6 +49,7 @@ const SPECIAL_HIGH_ROLLER_ID: u32 = 357;
 
 const SPECIAL_CLUB_KEEPER_ID: u32 = 359;
 const SPECIAL_SPADE_TRIO_ID: u32 = 360;
+const SPECIAL_TWOS_MATTER_ID: u32 = 361;
 
 const SPECIAL_CASH_CATALYST_ID: u32 = 376;
 const SPECIAL_REDS_ID: u32 = 377;
@@ -96,6 +97,7 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_MULTIPLIER_ID,
         SPECIAL_SPADE_TRIO_ID,
         SPECIAL_SCALING_FACTOR_ID,
+        SPECIAL_TWOS_MATTER_ID,
     ]
 }
 
@@ -114,6 +116,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_WANTED_JOKER_ID,
         SPECIAL_BLACKJACK_ID,
         SPECIAL_MULTIPLIER_ID,
+        SPECIAL_TWOS_MATTER_ID,
     ]
         .span();
 
