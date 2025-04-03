@@ -7,7 +7,8 @@ pub mod special_increase_level_four_of_a_kind {
     #[abi(embed_v0)]
     impl FourOfAKindBoostExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            if context.hand == PokerHand::FourOfAKind {
+            let (poker_hand, _) = context.hand;
+            if poker_hand == PokerHand::FourOfAKind {
                 (20, 4, 0)
             } else {
                 (0, 0, 0)

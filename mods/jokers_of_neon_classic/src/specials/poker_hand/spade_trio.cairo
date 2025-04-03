@@ -13,13 +13,9 @@ pub mod special_spade_trio {
             let mut cards = context.cards_played;
             loop {
                 match cards.pop_front() {
-                    Option::Some((
-                        hit, _, card,
-                    )) => {
-                        if *hit && *card.suit == Suit::Spades {
-                            count_spades += 1;
-                        }
-                    },
+                    Option::Some((hit, _, card)) => { if *hit && *card.suit == Suit::Spades {
+                        count_spades += 1;
+                    } },
                     Option::None => { break; },
                 }
             };

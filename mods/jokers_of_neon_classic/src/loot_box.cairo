@@ -93,7 +93,10 @@ fn JOKER_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 5,
         cards: array![
-            array![].span(), array![JOKER_CARD_ID].span(), array![NEON_JOKER_CARD_ID].span(), traditional_cards_all().span(),
+            array![].span(),
+            array![JOKER_CARD_ID].span(),
+            array![NEON_JOKER_CARD_ID].span(),
+            traditional_cards_all().span(),
         ]
             .span(),
         probs: array![100, 29, 1, 70].span(),
