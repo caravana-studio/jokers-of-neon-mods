@@ -81,11 +81,13 @@ mod specials {
         mod rainbow;
         mod reds;
         mod spade_trio;
+        mod scaling_factor;
     }
     mod power_up {
         mod power_up_booster;
     }
     mod round {
+        mod deadline;
         mod discard_mastery;
         mod initial_advantage;
     }
