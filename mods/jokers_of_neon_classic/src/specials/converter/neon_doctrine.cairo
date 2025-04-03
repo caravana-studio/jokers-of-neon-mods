@@ -1,11 +1,15 @@
 #[dojo::contract]
 pub mod special_neon_doctrine {
+    use dojo::{model::ModelStorage, world::WorldStorage};
     use jokers_of_neon_classic::specials::specials::SPECIAL_NEON_DOCTRINE_ID;
-    use jokers_of_neon_lib::constants::card::JOKER_CARD_ID;
+    use jokers_of_neon_lib::constants::card::{JOKER_CARD_ID, WILD_CARD_ID, get_card};
     use jokers_of_neon_lib::interfaces::{
         base::ICardBase, cards::{condition::ICardCondition, converter::ICardConverter},
     };
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit, Value}, tracker::GameContext};
+    use jokers_of_neon_lib::models::{
+        card_type::CardType, data::card::{Card, CardTrait, Suit, Value}, tracker::GameContext,
+    };
+    use jokers_of_neon_lib::random::{Nonce, RandomImpl};
 
     const NONCE_KEY: felt252 = 'NONCE_KEY';
 
@@ -13,13 +17,14 @@ pub mod special_neon_doctrine {
     impl NeonDoctrineCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
-            (card.id >= 0 && card.id <= 53) || card.id == JOKER_CARD_ID || card.id == WILDCARD_ID
+            (card.id >= 0 && card.id <= 53) || card.id == JOKER_CARD_ID || card.id == WILD_CARD_ID
         }
     }
 
     #[abi(embed_v0)]
     impl NeonDoctrineConverter of ICardConverter<ContractState> {
         fn apply(ref self: ContractState, context: GameContext, card: Card) -> Card {
+            let mut world = self.world(@"jokers_of_neon_classic");
             let mut card = card;
 
             let mut nonce: Nonce = world.read_model(NONCE_KEY);
@@ -29,7 +34,7 @@ pub mod special_neon_doctrine {
 
             let converter = random.between(1, 4) == 1; // 25% chance
             if converter {
-                card = store.get_card(CardTrait::generate_neon_id(card.id));
+                card = get_card(CardTrait::generate_neon_id(card.id));
             }
             card
         }
