@@ -46,6 +46,7 @@ const SPECIAL_RANDOM_MULTI_FOR_SPADE_ID: u32 = 350;
 const SPECIAL_MULTIPLIER_ID: u32 = 351;
 const SPECIAL_DECK_COLLECTOR_ID: u32 = 352;
 
+const SPECIAL_SLOT_SAVER_ID: u32 = 356;
 const SPECIAL_HIGH_ROLLER_ID: u32 = 357;
 
 const SPECIAL_CLUB_KEEPER_ID: u32 = 359;
@@ -100,6 +101,8 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_SCALING_FACTOR_ID,
         SPECIAL_TWOS_MATTER_ID,
         SPECIAL_DECK_COLLECTOR_ID,
+        SPECIAL_SLOT_SAVER_ID,
+        SPECIAL_NEON_DOCTRINE_ID,
     ]
 }
 
@@ -120,6 +123,8 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_BLACKJACK_ID,
         SPECIAL_MULTIPLIER_ID,
         SPECIAL_TWOS_MATTER_ID,
+        SPECIAL_SLOT_SAVER_ID,
+        SPECIAL_NEON_DOCTRINE_ID,
     ]
         .span();
 

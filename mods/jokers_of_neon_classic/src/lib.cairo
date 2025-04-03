@@ -41,6 +41,7 @@ mod specials {
     mod converter {
         mod all_cards_to_hearts;
         mod deuces_wild;
+        mod neon_doctrine;
     }
     mod discard {
         mod wanted_joker;
@@ -85,6 +86,7 @@ mod specials {
         mod rainbow;
         mod reds;
         mod scaling_factor;
+        mod slot_saver;
         mod spade_trio;
     }
     mod power_up {
