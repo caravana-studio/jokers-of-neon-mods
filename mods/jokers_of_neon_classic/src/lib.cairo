@@ -70,6 +70,7 @@ mod specials {
         mod blacks;
         mod cash_catalyst;
         mod club_keeper;
+        mod deck_collector;
         mod efficient_play;
         mod high_roller;
         mod increase_level_double_pair;
