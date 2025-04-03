@@ -17,6 +17,7 @@ mod rages {
         mod zero_waste;
     }
     mod silence {
+        mod aces;
         mod clubs;
         mod diamonds;
         mod figures;
