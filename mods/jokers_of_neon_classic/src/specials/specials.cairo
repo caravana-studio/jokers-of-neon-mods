@@ -23,6 +23,7 @@ const SPECIAL_SECOND_CHANCE_ID: u32 = 323;
 const SPECIAL_NEON_SYNERGY_ID: u32 = 325;
 const SPECIAL_PLUS_DISCARDS_ID: u32 = 337;
 const SPECIAL_PLUS_PLAYS_ID: u32 = 338;
+const SPECIAL_SCALING_FACTOR_ID: u32 = 339;
 const SPECIAL_INCREASE_LEVEL_FULL_HOUSE_ID: u32 = 343;
 const SPECIAL_INCREASE_LEVEL_THREE_OF_A_KIND_ID: u32 = 344;
 const SPECIAL_INCREASE_LEVEL_FOUR_OF_A_KIND_ID: u32 = 345;
@@ -33,6 +34,7 @@ const SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID: u32 = 349;
 const SPECIAL_RANDOM_MULTI_FOR_SPADE_ID: u32 = 350;
 const SPECIAL_WANTED_JOKER_ID: u32 = 336;
 const SPECIAL_HIGH_ROLLER_ID: u32 = 357;
+
 
 fn specials_ids_all() -> Array<u32> {
     array![
@@ -70,6 +72,7 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_SECOND_CHANCE_ID,
         SPECIAL_DEADLINE_ID,
         SPECIAL_HIGH_ROLLER_ID,
+        SPECIAL_SCALING_FACTOR_ID,
     ]
 }
 
@@ -103,6 +106,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID,
         SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
         SPECIAL_HIGH_ROLLER_ID,
+        SPECIAL_SCALING_FACTOR_ID,
     ]
         .span();
 

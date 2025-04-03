@@ -71,6 +71,7 @@ mod specials {
         mod increase_level_pair;
         mod increase_level_straight;
         mod increase_level_three_of_a_kind;
+        mod scaling_factor;
     }
     mod power_up {
         mod power_up_booster;
