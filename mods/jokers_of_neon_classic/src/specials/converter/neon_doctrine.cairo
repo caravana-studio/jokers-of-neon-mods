@@ -13,7 +13,7 @@ pub mod special_neon_doctrine {
     impl NeonDoctrineCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
-            (card.id >= 0 && card.id <= 53) || card.id == JOKER_CARD_ID
+            (card.id >= 0 && card.id <= 53) || card.id == JOKER_CARD_ID || card.id == WILDCARD_ID
         }
     }
 
