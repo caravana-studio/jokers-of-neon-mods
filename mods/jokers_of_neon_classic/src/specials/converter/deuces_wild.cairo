@@ -20,9 +20,9 @@ pub mod special_deuces_wild {
         fn apply(ref self: ContractState, context: GameContext, card: Card) -> Card {
             let mut card = card;
             if card.id >= 0 && card.id <= 53 { // is a common card
-                card = Card { id: WILD_CARD, suit: Suit::Wild, value: Value::Wild, points: 0, multi_add: 0 };
+                card = WILD_CARD();
             } else {
-                card = Card { id: NEON_WILD_CARD, suit: Suit::Wild, value: Value::Wild, points: 0, multi_add: 1 };
+                card = NEON_WILD_CARD();
             }
             card
         }
