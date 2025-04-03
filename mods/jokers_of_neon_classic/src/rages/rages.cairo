@@ -10,6 +10,7 @@ const RAGE_CARD_HAND_LEECH: u32 = 416;
 
 const RAGE_CARD_DIMINISHED_HOLD: u32 = 406;
 const RAGE_CARD_STRATEGIC_QUARTED: u32 = 409;
+const RAGE_CARD_SILENT_ACES: u32 = 413;
 
 fn rages_ids_all() -> Array<u32> {
     array![
@@ -22,6 +23,7 @@ fn rages_ids_all() -> Array<u32> {
         RAGE_CARD_HAND_LEECH,
         RAGE_CARD_DIMINISHED_HOLD,
         RAGE_CARD_STRATEGIC_QUARTED,
+        RAGE_CARD_SILENT_ACES,
     ]
 }
 
@@ -29,7 +31,11 @@ fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
     // C-Grade Group
     let C_RAGES_PROBABILITY = 45;
     let C_RAGES = array![
-        RAGE_CARD_SILENT_HEARTS, RAGE_CARD_SILENT_CLUBS, RAGE_CARD_SILENT_DIAMONDS, RAGE_CARD_SILENT_SPADES,
+        RAGE_CARD_SILENT_HEARTS,
+        RAGE_CARD_SILENT_CLUBS,
+        RAGE_CARD_SILENT_DIAMONDS,
+        RAGE_CARD_SILENT_SPADES,
+        RAGE_CARD_SILENT_ACES,
     ]
         .span();
     let C_RAGES_REWARDS = 500;
