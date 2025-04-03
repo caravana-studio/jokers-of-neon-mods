@@ -1,7 +1,7 @@
 use jokers_of_neon_classic::specials::specials::{SPECIAL_ALL_CARDS_TO_HEARTS_ID, specials_ids_all, specials_shop_info};
 use jokers_of_neon_lib::constants::card::traditional_cards_all;
 use jokers_of_neon_lib::constants::card::{
-    JOKER_CARD, NEON_JOKER_CARD, all_hearts_cards, neon_cards_all, neon_hearts_cards,
+    JOKER_CARD_ID, NEON_JOKER_CARD_ID, all_hearts_cards, neon_cards_all, neon_hearts_cards,
 };
 use jokers_of_neon_lib::constants::modifiers::{SUIT_HEARTS_MODIFIER_ID, modifiers_ids_all, modifiers_shop_info};
 use jokers_of_neon_lib::models::data::card::{Card, CardTrait, Suit, Value, ValueEnumerableImpl};
@@ -56,8 +56,8 @@ fn BASIC_LOOT_BOX() -> LootBox {
             array![].span(),
             specials_ids_all().span(),
             modifiers_ids_all().span(),
-            array![JOKER_CARD].span(),
-            array![NEON_JOKER_CARD].span(),
+            array![JOKER_CARD_ID].span(),
+            array![NEON_JOKER_CARD_ID].span(),
             traditional_cards_all().span(),
         ]
             .span(),
@@ -76,8 +76,8 @@ fn ADVANCED_LOOT_BOX() -> LootBox {
             array![].span(),
             specials_ids_all().span(),
             modifiers_ids_all().span(),
-            array![JOKER_CARD].span(),
-            array![NEON_JOKER_CARD].span(),
+            array![JOKER_CARD_ID].span(),
+            array![NEON_JOKER_CARD_ID].span(),
             traditional_cards_all().span(),
         ]
             .span(),
@@ -93,7 +93,10 @@ fn JOKER_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 5,
         cards: array![
-            array![].span(), array![JOKER_CARD].span(), array![NEON_JOKER_CARD].span(), traditional_cards_all().span(),
+            array![].span(),
+            array![JOKER_CARD_ID].span(),
+            array![NEON_JOKER_CARD_ID].span(),
+            traditional_cards_all().span(),
         ]
             .span(),
         probs: array![100, 29, 1, 70].span(),
@@ -194,9 +197,9 @@ fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 4,
         cards: array![
-            array![JOKER_CARD.into()].span(),
-            array![JOKER_CARD].span(),
-            array![NEON_JOKER_CARD].span(),
+            array![JOKER_CARD_ID.into()].span(),
+            array![JOKER_CARD_ID].span(),
+            array![NEON_JOKER_CARD_ID].span(),
             traditional_cards_all().span(),
         ]
             .span(),
@@ -245,7 +248,7 @@ fn NEON_LOOT_BOX() -> LootBox {
         name: 'neon_loot_box',
         probability: 50,
         size: 5,
-        cards: array![array![].span(), neon_cards_all().span(), array![NEON_JOKER_CARD].span()].span(),
+        cards: array![array![].span(), neon_cards_all().span(), array![NEON_JOKER_CARD_ID].span()].span(),
         probs: array![100, 97, 3].span(),
     }
 }
