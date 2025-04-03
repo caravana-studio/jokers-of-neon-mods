@@ -124,7 +124,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
         SPECIAL_HIGH_ROLLER_ID,
         SPECIAL_EFFICIENT_PLAY_ID,
-        SPECIAL_DEUCES_WILD_ID,
+        // SPECIAL_DEUCES_WILD_ID,
         SPECIAL_SCALING_FACTOR_ID,
     ]
         .span();
