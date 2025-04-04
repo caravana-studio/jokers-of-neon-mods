@@ -53,6 +53,7 @@ const SPECIAL_CLUB_KEEPER_ID: u32 = 359;
 const SPECIAL_SPADE_TRIO_ID: u32 = 360;
 const SPECIAL_TWOS_MATTER_ID: u32 = 361;
 
+const SPECIAL_WILD_BOOSTER_ID: u32 = 374;
 const SPECIAL_CASH_CATALYST_ID: u32 = 376;
 const SPECIAL_REDS_ID: u32 = 377;
 const SPECIAL_BLACKS_ID: u32 = 378;
@@ -102,6 +103,8 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_TWOS_MATTER_ID,
         SPECIAL_DECK_COLLECTOR_ID,
         SPECIAL_SLOT_SAVER_ID,
+        SPECIAL_RAINBOW_ID,
+        SPECIAL_WILD_BOOSTER_ID,
     ]
 }
 
@@ -142,6 +145,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_HIGH_ROLLER_ID,
         SPECIAL_EFFICIENT_PLAY_ID,
         SPECIAL_SCALING_FACTOR_ID,
+        SPECIAL_WILD_BOOSTER_ID,
     ]
         .span();
 
@@ -160,6 +164,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_ALL_CARDS_TO_HEARTS_ID,
         SPECIAL_DISCARD_MASTERY_ID,
         SPECIAL_SPADE_TRIO_ID,
+        SPECIAL_RAINBOW_ID,
     ]
         .span();
 
