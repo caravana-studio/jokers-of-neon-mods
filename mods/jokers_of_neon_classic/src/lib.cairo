@@ -11,6 +11,7 @@ mod rages {
     mod game {
         mod diminished_hold;
         mod hand_leech;
+        mod hand_leech;
         mod strategic_quarted;
     }
     mod round {
@@ -103,6 +104,7 @@ mod specials {
 mod utils {
     mod card_info;
     mod loot_boxes_info;
+    mod poker_hands_info;
     mod poker_hands_info;
     mod rages_info;
     mod specials_info;
