@@ -102,7 +102,6 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_TWOS_MATTER_ID,
         SPECIAL_DECK_COLLECTOR_ID,
         SPECIAL_SLOT_SAVER_ID,
-        SPECIAL_NEON_DOCTRINE_ID,
     ]
 }
 
@@ -124,7 +123,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_MULTIPLIER_ID,
         SPECIAL_TWOS_MATTER_ID,
         SPECIAL_SLOT_SAVER_ID,
-        SPECIAL_NEON_DOCTRINE_ID,
     ]
         .span();
 
