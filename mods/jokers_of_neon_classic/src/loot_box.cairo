@@ -1,7 +1,7 @@
-use jokers_of_neon_classic::specials::specials::{specials_ids_all, specials_shop_info};
+use jokers_of_neon_classic::specials::specials::{SPECIAL_ALL_CARDS_TO_HEARTS_ID, specials_ids_all, specials_shop_info};
 use jokers_of_neon_lib::constants::card::traditional_cards_all;
 use jokers_of_neon_lib::constants::card::{
-    JOKER_CARD, NEON_JOKER_CARD, all_hearts_cards, neon_cards_all, neon_hearts_cards,
+    JOKER_CARD_ID, NEON_JOKER_CARD_ID, all_hearts_cards, neon_cards_all, neon_hearts_cards,
 };
 use jokers_of_neon_lib::constants::modifiers::{SUIT_HEARTS_MODIFIER_ID, modifiers_ids_all, modifiers_shop_info};
 use jokers_of_neon_lib::models::data::card::{Card, CardTrait, Suit, Value, ValueEnumerableImpl};
@@ -14,6 +14,7 @@ const SPECIALS_LOOT_BOX_ID: u32 = 4;
 const MODIFIER_LOOT_BOX_ID: u32 = 5;
 const FIGURES_LOOT_BOX_ID: u32 = 6;
 const DECEITFUL_JOKER_LOOT_BOX_ID: u32 = 7;
+const LOVERS_LOOT_BOX_ID: u32 = 8;
 const SPECIAL_BET_LOOT_BOX_ID: u32 = 9;
 const NEON_LOOT_BOX_ID: u32 = 10;
 const EMPTY_PACK_ID: u32 = 999;
@@ -27,13 +28,21 @@ fn loot_boxes_ids_all() -> Array<u32> {
         MODIFIER_LOOT_BOX_ID,
         FIGURES_LOOT_BOX_ID,
         DECEITFUL_JOKER_LOOT_BOX_ID,
+        LOVERS_LOOT_BOX_ID,
         SPECIAL_BET_LOOT_BOX_ID,
         NEON_LOOT_BOX_ID,
     ]
 }
 
 fn loot_boxes_ids_all_without_jokers() -> Array<u32> {
-    array![BASIC_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, SPECIAL_BET_LOOT_BOX_ID]
+    array![
+        BASIC_LOOT_BOX_ID,
+        SPECIALS_LOOT_BOX_ID,
+        MODIFIER_LOOT_BOX_ID,
+        FIGURES_LOOT_BOX_ID,
+        LOVERS_LOOT_BOX_ID,
+        SPECIAL_BET_LOOT_BOX_ID,
+    ]
 }
 
 fn BASIC_LOOT_BOX() -> LootBox {
@@ -47,8 +56,8 @@ fn BASIC_LOOT_BOX() -> LootBox {
             array![].span(),
             specials_ids_all().span(),
             modifiers_ids_all().span(),
-            array![JOKER_CARD].span(),
-            array![NEON_JOKER_CARD].span(),
+            array![JOKER_CARD_ID].span(),
+            array![NEON_JOKER_CARD_ID].span(),
             traditional_cards_all().span(),
         ]
             .span(),
@@ -67,8 +76,8 @@ fn ADVANCED_LOOT_BOX() -> LootBox {
             array![].span(),
             specials_ids_all().span(),
             modifiers_ids_all().span(),
-            array![JOKER_CARD].span(),
-            array![NEON_JOKER_CARD].span(),
+            array![JOKER_CARD_ID].span(),
+            array![NEON_JOKER_CARD_ID].span(),
             traditional_cards_all().span(),
         ]
             .span(),
@@ -84,7 +93,10 @@ fn JOKER_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 5,
         cards: array![
-            array![].span(), array![JOKER_CARD].span(), array![NEON_JOKER_CARD].span(), traditional_cards_all().span(),
+            array![].span(),
+            array![JOKER_CARD_ID].span(),
+            array![NEON_JOKER_CARD_ID].span(),
+            traditional_cards_all().span(),
         ]
             .span(),
         probs: array![100, 29, 1, 70].span(),
@@ -106,7 +118,6 @@ fn SPECIALS_LOOT_BOX() -> LootBox {
             *specials_group.at(1), // B
             *specials_group.at(2), // A
             *specials_group.at(3), // S
-            *specials_group.at(4), // SS
             *modifiers_group.at(0), // B
             *modifiers_group.at(1), // A
             traditional_cards_all().span(),
@@ -119,7 +130,6 @@ fn SPECIALS_LOOT_BOX() -> LootBox {
             *specials_probs.at(1) * 25 / 100, // B
             *specials_probs.at(2) * 25 / 100, // A
             *specials_probs.at(3) * 25 / 100, // S
-            *specials_probs.at(4) * 25 / 100, // SS
             // 15 % modifiers
             *modifiers_probs.at(0) * 15 / 100, // B
             *modifiers_probs.at(1) * 15 / 100, // A
@@ -187,13 +197,32 @@ fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 4,
         cards: array![
-            array![JOKER_CARD.into()].span(),
-            array![JOKER_CARD].span(),
-            array![NEON_JOKER_CARD].span(),
+            array![JOKER_CARD_ID.into()].span(),
+            array![JOKER_CARD_ID].span(),
+            array![NEON_JOKER_CARD_ID].span(),
             traditional_cards_all().span(),
         ]
             .span(),
         probs: array![100, 9, 1, 90].span(),
+    }
+}
+
+fn LOVERS_LOOT_BOX() -> LootBox {
+    LootBox {
+        id: LOVERS_LOOT_BOX_ID,
+        cost: 1500,
+        name: 'lovers_pack',
+        probability: 50,
+        size: 5,
+        cards: array![
+            array![CardTrait::generate_id(Value::Ace, Suit::Hearts)].span(),
+            array![SPECIAL_ALL_CARDS_TO_HEARTS_ID].span(),
+            neon_hearts_cards().span(),
+            all_hearts_cards().span(),
+            array![SUIT_HEARTS_MODIFIER_ID].span(),
+        ]
+            .span(),
+        probs: array![100, 5, 25, 10, 60].span(),
     }
 }
 
@@ -219,7 +248,7 @@ fn NEON_LOOT_BOX() -> LootBox {
         name: 'neon_loot_box',
         probability: 50,
         size: 5,
-        cards: array![array![].span(), neon_cards_all().span(), array![NEON_JOKER_CARD].span()].span(),
+        cards: array![array![].span(), neon_cards_all().span(), array![NEON_JOKER_CARD_ID].span()].span(),
         probs: array![100, 97, 3].span(),
     }
 }
@@ -240,7 +269,7 @@ fn loot_boxes_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // C-Grade Group
     let C_LOOT_BOX_PROBABILITY = 30;
     let C_LOOT_BOX_COST = 750;
-    let C_LOOT_BOX = array![BASIC_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID].span();
+    let C_LOOT_BOX = array![BASIC_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, LOVERS_LOOT_BOX_ID].span();
     // B-Grade Group
     let B_LOOT_BOX_PROBABILITY = 20;
     let B_LOOT_BOX_COST = 1500;
@@ -275,6 +304,8 @@ fn get_loot_box(loot_box_id: u32) -> LootBox {
         FIGURES_LOOT_BOX()
     } else if loot_box_id == DECEITFUL_JOKER_LOOT_BOX_ID {
         DECEITFUL_JOKER_LOOT_BOX()
+    } else if loot_box_id == LOVERS_LOOT_BOX_ID {
+        LOVERS_LOOT_BOX()
     } else if loot_box_id == SPECIAL_BET_LOOT_BOX_ID {
         SPECIAL_BET_LOOT_BOX()
     } else if loot_box_id == NEON_LOOT_BOX_ID {
