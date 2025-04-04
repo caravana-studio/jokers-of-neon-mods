@@ -7,7 +7,7 @@ pub mod special_wild_booster {
     use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext};
 
     #[abi(embed_v0)]
-    impl JokerBoosterCondition of ICardCondition<ContractState> {
+    impl WildBoosterCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
             card.suit == Suit::Wild
