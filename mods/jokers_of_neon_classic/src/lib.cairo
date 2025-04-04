@@ -64,6 +64,7 @@ mod specials {
         mod random_multi_for_diamond;
         mod random_multi_for_heart;
         mod random_multi_for_spade;
+        mod wild_booster;
     }
     mod miss {}
     mod poker_hand {
