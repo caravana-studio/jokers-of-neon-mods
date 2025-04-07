@@ -142,7 +142,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_RANDOM_MULTI_FOR_CLUB_ID,
         SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID,
         SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
-        SPECIAL_HIGH_ROLLER_ID,
         SPECIAL_EFFICIENT_PLAY_ID,
         SPECIAL_SCALING_FACTOR_ID,
         SPECIAL_WILD_BOOSTER_ID,
@@ -165,6 +164,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_DISCARD_MASTERY_ID,
         SPECIAL_SPADE_TRIO_ID,
         SPECIAL_RAINBOW_ID,
+        SPECIAL_HIGH_ROLLER_ID,
     ]
         .span();
 
