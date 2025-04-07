@@ -24,7 +24,7 @@ pub mod game_config {
 
         fn get_shop_prices_config(self: @ContractState) -> ShopPricesConfig {
             ShopPricesConfig {
-                initial_price_slot: 100,
+                initial_price_slot: 600,
                 initial_price_of_burn: 100,
                 price_of_traditional_cards: 200,
                 price_of_neon_traditional_cards: 700,
