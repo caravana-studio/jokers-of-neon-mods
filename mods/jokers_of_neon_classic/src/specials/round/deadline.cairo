@@ -10,7 +10,7 @@ mod special_deadline {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             if context.round.remaining_plays == 1 {
                 let (poker_hand, level) = context.hand;
-                let (leveled_points, leveled_multi) = get_poker_hand_data(poker_hand, level + 10);
+                let (leveled_points, leveled_multi) = get_poker_hand_data(poker_hand, level + 3);
                 let (current_points, current_multi) = get_poker_hand_data(poker_hand, level);
                 (
                     (leveled_points - current_points).try_into().unwrap(),
