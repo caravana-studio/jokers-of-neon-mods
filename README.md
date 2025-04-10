@@ -546,7 +546,7 @@ Below is an example of how to implement the HighCard Booster special card:
 ```rust
 #[dojo::contract]
 pub mod special_high_card_booster {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_CARD_BOOSTER_ID;
+    use jokers_of_neon_classic_v18::specials::specials::SPECIAL_HIGH_CARD_BOOSTER_ID;
     use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
     use jokers_of_neon_lib::models::{card_type::CardType, data::poker_hand::PokerHand, tracker::GameContext};
 

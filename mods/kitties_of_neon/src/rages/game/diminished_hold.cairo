@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod rage_diminished_hold {
-    use jokers_of_neon_classic::rages::rages::RAGE_CARD_DIMINISHED_HOLD;
+    use jokers_of_neon_classic_v18::rages::rages::RAGE_CARD_DIMINISHED_HOLD;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::equipable::ICardEquipable},
         models::{card_type::CardType, tracker::GameContext},

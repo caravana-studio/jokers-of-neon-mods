@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod special_increase_level_pair {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_INCREASE_LEVEL_PAIR_ID;
+    use jokers_of_neon_classic_v18::specials::specials::SPECIAL_INCREASE_LEVEL_PAIR_ID;
     use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
     use jokers_of_neon_lib::models::{card_type::CardType, data::poker_hand::PokerHand, tracker::GameContext};
 

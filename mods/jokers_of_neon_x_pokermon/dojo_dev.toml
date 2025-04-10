@@ -1,10 +1,10 @@
 [world]
-description = "jokers_of_neon_classic"
-name = "jokers_of_neon_classic"
-seed = "jokers_of_neon_classic"
+description = "jokers_of_neon_classic_v18"
+name = "jokers_of_neon_classic_v18"
+seed = "jokers_of_neon_classic_v18"
 
 [namespace]
-default = "jokers_of_neon_classic"
+default = "jokers_of_neon_classic_v18"
 
 [env]
 rpc_url = "http://localhost:5050/"

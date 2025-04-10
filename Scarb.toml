@@ -1,6 +1,6 @@
 [package]
 cairo-version = "=2.9.2"
-name = "jokers_of_neon_mods"
+name = "jokers_of_neon_mods_v18"
 version = "0.0.1"
 
 [cairo]
@@ -21,5 +21,6 @@ build-external-contracts = ["dojo::world::world_contract::world"]
 dojo_cairo_test = { git = "https://github.com/dojoengine/dojo", tag = "v1.2.1" }
 
 [profile.prod]
+[profile.sepolia]
 
 [lib]

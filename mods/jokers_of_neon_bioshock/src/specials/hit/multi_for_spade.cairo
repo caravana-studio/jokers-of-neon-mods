@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod special_multi_for_spade {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_MULTI_FOR_SPADE_ID;
+    use jokers_of_neon_classic_v18::specials::specials::SPECIAL_MULTI_FOR_SPADE_ID;
     use jokers_of_neon_lib::interfaces::{
         base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable},
     };

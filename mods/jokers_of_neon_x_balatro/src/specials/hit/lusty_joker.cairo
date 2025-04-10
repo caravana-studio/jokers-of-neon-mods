@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod special_lusty_joker {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_LUSTY_JOKER_ID;
+    use jokers_of_neon_classic_v18::specials::specials::SPECIAL_LUSTY_JOKER_ID;
     use jokers_of_neon_lib::interfaces::{
         base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable},
     };

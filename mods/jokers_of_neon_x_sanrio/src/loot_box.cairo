@@ -1,4 +1,4 @@
-use jokers_of_neon_classic::specials::specials::{specials_ids_all, specials_shop_info};
+use jokers_of_neon_classic_v18::specials::specials::{specials_ids_all, specials_shop_info};
 use jokers_of_neon_lib::constants::card::traditional_cards_all;
 use jokers_of_neon_lib::constants::card::{
     JOKER_CARD, NEON_JOKER_CARD, all_hearts_cards, neon_cards_all, neon_hearts_cards,

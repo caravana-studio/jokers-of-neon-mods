@@ -2,8 +2,8 @@
   "world": {
     "class_hash": "0x4b767fda48530353c2e44e4b9433f4d75c6c9974aaff43ecc00de9455eb71b8",
     "address": "0x7965c374be862edb7451c6a78e8eea4aa7144240a3dcaa136a332640373c2d9",
-    "seed": "jokers_of_neon_classic",
-    "name": "jokers_of_neon_classic",
+    "seed": "jokers_of_neon_classic_v18",
+    "name": "jokers_of_neon_classic_v18",
     "entrypoints": [
       "uuid",
       "set_metadata",
@@ -1426,7 +1426,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::utils::card_info::card_info::Event",
+          "name": "jokers_of_neon_classic_v18::utils::card_info::card_info::Event",
           "kind": "enum",
           "variants": [
             {
@@ -1666,7 +1666,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::configs::game::game_config::Event",
+          "name": "jokers_of_neon_classic_v18::configs::game::game_config::Event",
           "kind": "enum",
           "variants": [
             {
@@ -1945,7 +1945,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::utils::loot_boxes_info::loot_boxes_info::Event",
+          "name": "jokers_of_neon_classic_v18::utils::loot_boxes_info::loot_boxes_info::Event",
           "kind": "enum",
           "variants": [
             {
@@ -2161,7 +2161,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::configs::play_rules::play_rules_config::Event",
+          "name": "jokers_of_neon_classic_v18::configs::play_rules::play_rules_config::Event",
           "kind": "enum",
           "variants": [
             {
@@ -2965,7 +2965,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::rages::game::diminished_hold::rage_diminished_hold::Event",
+          "name": "jokers_of_neon_classic_v18::rages::game::diminished_hold::rage_diminished_hold::Event",
           "kind": "enum",
           "variants": [
             {
@@ -3771,7 +3771,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::rages::round::hand_leech::rage_hand_leech::Event",
+          "name": "jokers_of_neon_classic_v18::rages::round::hand_leech::rage_hand_leech::Event",
           "kind": "enum",
           "variants": [
             {
@@ -4260,7 +4260,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::rages::silence::clubs::rage_silent_clubs::Event",
+          "name": "jokers_of_neon_classic_v18::rages::silence::clubs::rage_silent_clubs::Event",
           "kind": "enum",
           "variants": [
             {
@@ -4747,7 +4747,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::rages::silence::diamonds::rage_silent_diamonds::Event",
+          "name": "jokers_of_neon_classic_v18::rages::silence::diamonds::rage_silent_diamonds::Event",
           "kind": "enum",
           "variants": [
             {
@@ -5234,7 +5234,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::rages::silence::figures::rage_silent_figures::Event",
+          "name": "jokers_of_neon_classic_v18::rages::silence::figures::rage_silent_figures::Event",
           "kind": "enum",
           "variants": [
             {
@@ -5721,7 +5721,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::rages::silence::hearts::rage_silent_hearts::Event",
+          "name": "jokers_of_neon_classic_v18::rages::silence::hearts::rage_silent_hearts::Event",
           "kind": "enum",
           "variants": [
             {
@@ -6208,7 +6208,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::rages::silence::jokers::rage_silent_jokers::Event",
+          "name": "jokers_of_neon_classic_v18::rages::silence::jokers::rage_silent_jokers::Event",
           "kind": "enum",
           "variants": [
             {
@@ -6695,7 +6695,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::rages::silence::spades::rage_silent_spades::Event",
+          "name": "jokers_of_neon_classic_v18::rages::silence::spades::rage_silent_spades::Event",
           "kind": "enum",
           "variants": [
             {
@@ -7499,7 +7499,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::rages::game::strategic_quarted::rage_strategic_quarted::Event",
+          "name": "jokers_of_neon_classic_v18::rages::game::strategic_quarted::rage_strategic_quarted::Event",
           "kind": "enum",
           "variants": [
             {
@@ -8305,7 +8305,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::rages::round::zero_waste::rage_zero_waste::Event",
+          "name": "jokers_of_neon_classic_v18::rages::round::zero_waste::rage_zero_waste::Event",
           "kind": "enum",
           "variants": [
             {
@@ -8505,7 +8505,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::utils::rages_info::rages_info::Event",
+          "name": "jokers_of_neon_classic_v18::utils::rages_info::rages_info::Event",
           "kind": "enum",
           "variants": [
             {
@@ -8733,7 +8733,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::configs::shop::shop_config::Event",
+          "name": "jokers_of_neon_classic_v18::configs::shop::shop_config::Event",
           "kind": "enum",
           "variants": [
             {
@@ -9525,7 +9525,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::round::banner_joker::special_banner_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::round::banner_joker::special_banner_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -10318,7 +10318,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::clever_joker::special_clever_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::clever_joker::special_clever_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -11111,7 +11111,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::crafty_joker::special_crafty_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::crafty_joker::special_crafty_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -11904,7 +11904,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::crazy_joker::special_crazy_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::crazy_joker::special_crazy_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -12697,7 +12697,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::devious_joker::special_devious_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::devious_joker::special_devious_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -13490,7 +13490,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::droll_joker::special_droll_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::droll_joker::special_droll_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -14310,7 +14310,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::hit::fibonacci_joker::special_fibonacci_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::hit::fibonacci_joker::special_fibonacci_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -15130,7 +15130,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::hit::gluttonous_joker::special_gluttonous_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::hit::gluttonous_joker::special_gluttonous_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -15950,7 +15950,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::hit::greedy_joker::special_greedy_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::hit::greedy_joker::special_greedy_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -16743,7 +16743,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::half_joker::special_half_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::half_joker::special_half_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -17536,7 +17536,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::joker::special_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::joker::special_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -18329,7 +18329,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::jolly_joker::special_jolly_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::jolly_joker::special_jolly_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -19149,7 +19149,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::hit::lusty_joker::special_lusty_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::hit::lusty_joker::special_lusty_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -19942,7 +19942,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::mad_joker::special_mad_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::mad_joker::special_mad_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -20735,7 +20735,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::round::mystic_summit_joker::special_mystic_summit_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::round::mystic_summit_joker::special_mystic_summit_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -21528,7 +21528,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::sly_joker::special_sly_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::sly_joker::special_sly_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -22321,7 +22321,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::wily_joker::special_wily_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::wily_joker::special_wily_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -23141,7 +23141,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::hit::wrathful_joker::special_wrathful_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::hit::wrathful_joker::special_wrathful_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -23934,7 +23934,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::specials::poker_hand::zany_joker::special_zany_joker::Event",
+          "name": "jokers_of_neon_classic_v18::specials::poker_hand::zany_joker::special_zany_joker::Event",
           "kind": "enum",
           "variants": [
             {
@@ -24164,7 +24164,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_classic::utils::specials_info::specials_info::Event",
+          "name": "jokers_of_neon_classic_v18::utils::specials_info::specials_info::Event",
           "kind": "enum",
           "variants": [
             {

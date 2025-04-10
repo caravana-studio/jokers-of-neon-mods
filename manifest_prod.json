@@ -2,8 +2,8 @@
   "world": {
     "class_hash": "0x4b767fda48530353c2e44e4b9433f4d75c6c9974aaff43ecc00de9455eb71b8",
     "address": "0x6aee3caa2bf572667623e328530bc8e3ba8c9b96b5eaf482825e8ddda14c2d0",
-    "seed": "jokers_of_neon_mods",
-    "name": "jokers_of_neon_mods",
+    "seed": "jokers_of_neon_mods_v18",
+    "name": "jokers_of_neon_mods_v18",
     "entrypoints": [
       "uuid",
       "set_metadata",
@@ -1308,11 +1308,11 @@
         {
           "type": "impl",
           "name": "ModManagerImpl",
-          "interface_name": "jokers_of_neon_mods::systems::mod_manager::IModManager"
+          "interface_name": "jokers_of_neon_mods_v18::systems::mod_manager::IModManager"
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_mods::models::mod_config::ModConfig",
+          "name": "jokers_of_neon_mods_v18::models::mod_config::ModConfig",
           "members": [
             {
               "name": "mod_id",
@@ -1346,7 +1346,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_mods::models::mod_tracker::ModTracker",
+          "name": "jokers_of_neon_mods_v18::models::mod_tracker::ModTracker",
           "members": [
             {
               "name": "mod_tracker_key",
@@ -1360,7 +1360,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_mods::models::game_mod::GameMod",
+          "name": "jokers_of_neon_mods_v18::models::game_mod::GameMod",
           "members": [
             {
               "name": "id",
@@ -1386,7 +1386,7 @@
         },
         {
           "type": "struct",
-          "name": "jokers_of_neon_mods::models::game_mod::GameModMap",
+          "name": "jokers_of_neon_mods_v18::models::game_mod::GameModMap",
           "members": [
             {
               "name": "idx",
@@ -1400,7 +1400,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_mods::systems::mod_manager::IModManager",
+          "name": "jokers_of_neon_mods_v18::systems::mod_manager::IModManager",
           "items": [
             {
               "type": "function",
@@ -1416,7 +1416,7 @@
                 },
                 {
                   "name": "config",
-                  "type": "jokers_of_neon_mods::models::mod_config::ModConfig"
+                  "type": "jokers_of_neon_mods_v18::models::mod_config::ModConfig"
                 }
               ],
               "outputs": [
@@ -1436,7 +1436,7 @@
                 },
                 {
                   "name": "config",
-                  "type": "jokers_of_neon_mods::models::mod_config::ModConfig"
+                  "type": "jokers_of_neon_mods_v18::models::mod_config::ModConfig"
                 }
               ],
               "outputs": [],
@@ -1465,7 +1465,7 @@
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_mods::models::mod_config::ModConfig"
+                  "type": "jokers_of_neon_mods_v18::models::mod_config::ModConfig"
                 }
               ],
               "state_mutability": "view"
@@ -1476,7 +1476,7 @@
               "inputs": [],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_mods::models::mod_tracker::ModTracker"
+                  "type": "jokers_of_neon_mods_v18::models::mod_tracker::ModTracker"
                 }
               ],
               "state_mutability": "view"
@@ -1492,7 +1492,7 @@
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_mods::models::game_mod::GameMod"
+                  "type": "jokers_of_neon_mods_v18::models::game_mod::GameMod"
                 }
               ],
               "state_mutability": "view"
@@ -1508,7 +1508,7 @@
               ],
               "outputs": [
                 {
-                  "type": "jokers_of_neon_mods::models::game_mod::GameModMap"
+                  "type": "jokers_of_neon_mods_v18::models::game_mod::GameModMap"
                 }
               ],
               "state_mutability": "view"
@@ -1614,7 +1614,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_mods::systems::mod_manager::mod_manager::Event",
+          "name": "jokers_of_neon_mods_v18::systems::mod_manager::mod_manager::Event",
           "kind": "enum",
           "variants": [
             {
@@ -1631,7 +1631,7 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_mods-mod_manager",
+      "tag": "jokers_of_neon_mods_v18-mod_manager",
       "selector": "0x1773de643253716ecd2f020cab0d1438f87c63ea1d82621181860dc294907c6",
       "systems": [
         "create_mod",
@@ -1697,7 +1697,7 @@
         {
           "type": "impl",
           "name": "RageManagerImpl",
-          "interface_name": "jokers_of_neon_mods::systems::rage_manager::IRageManager"
+          "interface_name": "jokers_of_neon_mods_v18::systems::rage_manager::IRageManager"
         },
         {
           "type": "struct",
@@ -1721,7 +1721,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_mods::systems::rage_manager::IRageManager",
+          "name": "jokers_of_neon_mods_v18::systems::rage_manager::IRageManager",
           "items": [
             {
               "type": "function",
@@ -1884,7 +1884,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_mods::systems::rage_manager::rage_manager::Event",
+          "name": "jokers_of_neon_mods_v18::systems::rage_manager::rage_manager::Event",
           "kind": "enum",
           "variants": [
             {
@@ -1901,7 +1901,7 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_mods-rage_manager",
+      "tag": "jokers_of_neon_mods_v18-rage_manager",
       "selector": "0x7133dba719dc1aeb1f56e35bb072b11956769b833a7ee64ce947039444770ac",
       "systems": [
         "register_rage",
@@ -1966,7 +1966,7 @@
         {
           "type": "impl",
           "name": "SpecialManagerImpl",
-          "interface_name": "jokers_of_neon_mods::systems::special_manager::ISpecialManager"
+          "interface_name": "jokers_of_neon_mods_v18::systems::special_manager::ISpecialManager"
         },
         {
           "type": "struct",
@@ -1990,7 +1990,7 @@
         },
         {
           "type": "interface",
-          "name": "jokers_of_neon_mods::systems::special_manager::ISpecialManager",
+          "name": "jokers_of_neon_mods_v18::systems::special_manager::ISpecialManager",
           "items": [
             {
               "type": "function",
@@ -2153,7 +2153,7 @@
         },
         {
           "type": "event",
-          "name": "jokers_of_neon_mods::systems::special_manager::special_manager::Event",
+          "name": "jokers_of_neon_mods_v18::systems::special_manager::special_manager::Event",
           "kind": "enum",
           "variants": [
             {
@@ -2170,7 +2170,7 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_mods-special_manager",
+      "tag": "jokers_of_neon_mods_v18-special_manager",
       "selector": "0x6bd0bc416c4ebb2eeeecf677fef64ff94bf6e83510f776de2c2f9733eedb5f9",
       "systems": [
         "register_special",
@@ -2183,37 +2183,37 @@
     {
       "members": [],
       "class_hash": "0x1ad4ccb4e03123ed5882658413c63c6e84ab4da5731dfd84acd6caefd51f0d3",
-      "tag": "jokers_of_neon_mods-GameMod",
+      "tag": "jokers_of_neon_mods_v18-GameMod",
       "selector": "0x7780c0a617454aeb11cb482af68ba50b9068cdaf0a23506b244d0dc512356d"
     },
     {
       "members": [],
       "class_hash": "0x1a87c88ad212963070aa018275ba5edabb9b462460351b946ac48a504dfd219",
-      "tag": "jokers_of_neon_mods-GameModMap",
+      "tag": "jokers_of_neon_mods_v18-GameModMap",
       "selector": "0x4b76cecaa093842952c655e77cce012a5f9b9005f22eb447945487f742ec6ba"
     },
     {
       "members": [],
       "class_hash": "0x6db8f4062cfcda99e89aadcbc5cd6b02f3f5f88dabe3231a75112128e5b66f7",
-      "tag": "jokers_of_neon_mods-ModConfig",
+      "tag": "jokers_of_neon_mods_v18-ModConfig",
       "selector": "0x26a71fa368dab860d69ad69d90cdde591bf7d51c87d0d2853986e2b6ada2d50"
     },
     {
       "members": [],
       "class_hash": "0x6bb91dfcebb5e63c82f4f58563e23d167f1431eb3b8bd4c8e11d7cd604236b5",
-      "tag": "jokers_of_neon_mods-ModTracker",
+      "tag": "jokers_of_neon_mods_v18-ModTracker",
       "selector": "0x6ebfe51ebfe085cc13cd3e025cd06d6ceeac6365f3f139a0a8019f95fe4a75d"
     },
     {
       "members": [],
       "class_hash": "0x5c9f378946ec1c0f4a119728c95c11c5581739e7d00f0e9e30ea9b39a59d613",
-      "tag": "jokers_of_neon_mods-RageData",
+      "tag": "jokers_of_neon_mods_v18-RageData",
       "selector": "0x6b98e85ad8505173f160f50dac5af659d54b516c909a5d5f5194396581f3ce4"
     },
     {
       "members": [],
       "class_hash": "0x6c6b2fe5ae724e22f0ca62142c33a87b2579bd02aece6d7267e3e0a43f65d34",
-      "tag": "jokers_of_neon_mods-SpecialData",
+      "tag": "jokers_of_neon_mods_v18-SpecialData",
       "selector": "0x16d80dd61ca87e82de4ffbe91d73bbdcf2a58ec785cf870a07d1570dc82f1c9"
     }
   ],

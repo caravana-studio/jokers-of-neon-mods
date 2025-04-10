@@ -1,0 +1,22 @@
+[world]
+description = "jokers_of_neon_classic_v18"
+name = "jokers_of_neon_classic_v18"
+seed = "jokers_of_neon_classic_v18"
+
+[namespace]
+default = "jokers_of_neon_classic_v18"
+
+[env]
+rpc_url = "https://api.cartridge.gg/x/starknet/sepolia"
+account_address = "0x053c80dd051d0a515ba87dc8a3a32d56dc792e30d046ced89c6a537364e3435e"
+private_key = "0x07222e994e5fd0379d6224d8e7412c01c2008b993fb6b81f3f8dca5465d9123d"
+
+[writers]
+"jokers_of_neon_classic_v18" = [
+    "jokers_of_neon_classic_v18-special_random_multi_for_club",
+    "jokers_of_neon_classic_v18-special_random_multi_for_diamond",
+    "jokers_of_neon_classic_v18-special_random_multi_for_heart",
+    "jokers_of_neon_classic_v18-special_random_multi_for_spade",
+    "jokers_of_neon_classic_v18-special_high_roller",
+    "jokers_of_neon_classic_v18-special_neon_doctrine",
+]

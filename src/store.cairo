@@ -1,5 +1,5 @@
 use dojo::{model::ModelStorage, world::WorldStorage};
-use jokers_of_neon_mods::models::{
+use jokers_of_neon_mods_v18::models::{
     game_mod::{GameMod, GameModMap}, mod_config::ModConfig, mod_tracker::ModTracker, rage_data::RageData,
     special_data::SpecialData,
 };

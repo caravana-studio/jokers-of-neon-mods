@@ -1,6 +1,6 @@
 [package]
 cairo-version = "=2.9.2"
-name = "jokers_of_neon_classic"
+name = "jokers_of_neon_classic_v18"
 version = "0.0.1"
 
 [cairo]

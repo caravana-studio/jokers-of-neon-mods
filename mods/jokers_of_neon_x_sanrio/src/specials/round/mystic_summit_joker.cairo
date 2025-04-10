@@ -1,6 +1,6 @@
 #[dojo::contract]
 mod special_mystic_summit_joker {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_MYSTIC_SUMMIT_JOKER_ID;
+    use jokers_of_neon_classic_v18::specials::specials::SPECIAL_MYSTIC_SUMMIT_JOKER_ID;
     use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
     use jokers_of_neon_lib::models::{card_type::CardType, data::power_up::PowerUp, tracker::GameContext};
 

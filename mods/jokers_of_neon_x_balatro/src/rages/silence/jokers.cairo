@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod rage_silent_jokers {
-    use jokers_of_neon_classic::rages::rages::RAGE_CARD_SILENT_JOKERS;
+    use jokers_of_neon_classic_v18::rages::rages::RAGE_CARD_SILENT_JOKERS;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, rages::silence::IRageSilence},
         models::{card_type::CardType, data::card::{Suit, Value}, tracker::GameContext},

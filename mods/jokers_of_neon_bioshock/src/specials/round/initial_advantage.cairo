@@ -1,6 +1,6 @@
 #[dojo::contract]
 mod special_initial_advantage {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_INITIAL_ADVANTAGE_ID;
+    use jokers_of_neon_classic_v18::specials::specials::SPECIAL_INITIAL_ADVANTAGE_ID;
     use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
     use jokers_of_neon_lib::models::{card_type::CardType, tracker::GameContext};
 

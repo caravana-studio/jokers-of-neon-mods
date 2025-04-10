@@ -12,7 +12,7 @@ trait ISpecialManager<T> {
 #[dojo::contract]
 pub mod special_manager {
     use dojo::world::{IWorldDispatcher, IWorldDispatcherTrait};
-    use jokers_of_neon_mods::{models::{game_mod::GameMod, special_data::SpecialData}, store::{StoreImpl, StoreTrait}};
+    use jokers_of_neon_mods_v18::{models::{game_mod::GameMod, special_data::SpecialData}, store::{StoreImpl, StoreTrait}};
     use starknet::{ContractAddress, get_caller_address};
 
     #[abi(embed_v0)]
@@ -20,7 +20,7 @@ pub mod special_manager {
         fn register_special(
             ref self: ContractState, mod_id: felt252, special_id: u32, contract_address: ContractAddress,
         ) {
-            let mut world = self.world(@"jokers_of_neon_mods");
+            let mut world = self.world(@"jokers_of_neon_mods_v18");
             let mut store = StoreTrait::new(ref world);
             let game_mod = store.get_game_mod(mod_id);
 
@@ -45,7 +45,7 @@ pub mod special_manager {
         }
 
         fn get_special_address(self: @ContractState, mod_id: felt252, special_id: u32) -> ContractAddress {
-            let mut world = self.world(@"jokers_of_neon_mods");
+            let mut world = self.world(@"jokers_of_neon_mods_v18");
             let mut store = StoreTrait::new(ref world);
             let special_data = store.get_special_data(mod_id, special_id);
 

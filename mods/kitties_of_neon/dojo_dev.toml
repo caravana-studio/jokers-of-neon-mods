@@ -1,7 +1,7 @@
 [world]
-description = "jokers_of_neon_classic"
-name = "jokers_of_neon_classic"
-seed = "jokers_of_neon_classic"
+description = "jokers_of_neon_classic_v18"
+name = "jokers_of_neon_classic_v18"
+seed = "jokers_of_neon_classic_v18"
 
 [namespace]
 default = "kitties_of_neon"

@@ -99,7 +99,7 @@ Here’s the full implementation for a special card that rewards points, multipl
 ```rust
 #[dojo::contract]
 pub mod special_high_card_booster {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_CARD_BOOSTER_ID;
+    use jokers_of_neon_classic_v18::specials::specials::SPECIAL_HIGH_CARD_BOOSTER_ID;
     use jokers_of_neon_lib::interfaces::poker_hand::ISpecialPokerHand;
     use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
     use jokers_of_neon_lib::models::tracker::GameContext;

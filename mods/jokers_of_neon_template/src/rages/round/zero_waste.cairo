@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod rage_zero_waste {
-    use jokers_of_neon_classic::rages::rages::RAGE_CARD_ZERO_WASTE;
+    use jokers_of_neon_classic_v18::rages::rages::RAGE_CARD_ZERO_WASTE;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::equipable::ICardEquipable},
         models::{card_type::CardType, tracker::GameContext},

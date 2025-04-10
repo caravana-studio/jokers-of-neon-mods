@@ -1,7 +1,7 @@
 #[dojo::contract]
 pub mod specials_info {
     use dojo::world::Resource::Contract;
-    use jokers_of_neon_classic::specials::specials::{specials_ids_all, specials_shop_info};
+    use jokers_of_neon_classic_v18::specials::specials::{specials_ids_all, specials_shop_info};
     use jokers_of_neon_lib::interfaces::info::specials_info::{
         ISpecialsInfo, ISpecialsInfoDispatcher, ISpecialsInfoDispatcherTrait,
     };
