@@ -9,7 +9,7 @@ pub mod special_second_chance {
         fn execute(ref self: ContractState, context: GameContext) -> GameContext {
             // at this point, game state is GameState::FINISHED
             let mut context = context;
-            context.game.state == GameState::IN_GAME;
+            context.game.state = GameState::IN_GAME;
 
             // Remove Phoenix Card
             let mut new_specials = array![];
