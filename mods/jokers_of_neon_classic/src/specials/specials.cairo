@@ -28,6 +28,7 @@ const SPECIAL_NEON_DOCTRINE_ID: u32 = 326;
 const SPECIAL_BLACKJACK_ID: u32 = 327;
 const SPECIAL_EFFICIENT_PLAY_ID: u32 = 328;
 const SPECIAL_SACRIFICE_ID: u32 = 329;
+const SPECIAL_RAGE_BREAKER_ID: u32 = 330;
 const SPECIAL_LIFE_SAVER_ID: u32 = 331;
 
 const SPECIAL_WANTED_JOKER_ID: u32 = 336;
@@ -109,6 +110,7 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_WILD_BOOSTER_ID,
         SPECIAL_BURNING_REWARDS_ID,
         SPECIAL_SACRIFICE_ID,
+        SPECIAL_RAGE_BREAKER_ID,
     ]
 }
 
@@ -132,6 +134,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_SLOT_SAVER_ID,
         SPECIAL_BURNING_REWARDS_ID,
         SPECIAL_SACRIFICE_ID,
+        SPECIAL_RAGE_BREAKER_ID,
     ]
         .span();
 
