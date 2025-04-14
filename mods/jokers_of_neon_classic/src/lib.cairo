@@ -70,6 +70,7 @@ mod specials {
     mod poker_hand {
         mod blackjack;
         mod blacks;
+        mod burning_rewards;
         mod cash_catalyst;
         mod club_keeper;
         mod deck_collector;
@@ -84,8 +85,10 @@ mod specials {
         mod increase_level_straight;
         mod increase_level_three_of_a_kind;
         mod multiplier;
+        mod rage_breaker;
         mod rainbow;
         mod reds;
+        mod sacrifice;
         mod scaling_factor;
         mod slot_saver;
         mod spade_trio;
