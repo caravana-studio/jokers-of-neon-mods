@@ -24,7 +24,7 @@ pub mod special_sacrifice {
             let mut world = self.world(@"jokers_of_neon_classic");
 
             let mut cumulative: Cumulative = world.read_model((context.game.id, SACRIFICE_KEY));
-            cumulative.value = context.game_tracker.special_cards_removed.try_into().unwrap();
+            cumulative.value = context.game_tracker.special_cards_sold.try_into().unwrap();
             world.write_model(@cumulative);
             (0, cumulative.value, 0)
         }
