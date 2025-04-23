@@ -35,7 +35,7 @@ pub mod special_spade_trio {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::PokerHand].span()
+            array![CardType::Play].span()
         }
     }
 }

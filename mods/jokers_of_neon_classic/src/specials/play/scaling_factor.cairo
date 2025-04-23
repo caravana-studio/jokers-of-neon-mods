@@ -26,7 +26,7 @@ mod special_scaling_factor {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::PokerHand].span()
+            array![CardType::Play].span()
         }
     }
 }

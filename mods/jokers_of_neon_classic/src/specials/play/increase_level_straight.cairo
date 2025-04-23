@@ -23,7 +23,7 @@ pub mod special_increase_level_straight {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::PokerHand].span()
+            array![CardType::Play].span()
         }
     }
 }

@@ -56,7 +56,7 @@ pub mod special_high_roller {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::PokerHand, CardType::Info].span()
+            array![CardType::Play, CardType::Info].span()
         }
     }
 

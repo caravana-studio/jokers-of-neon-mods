@@ -34,7 +34,7 @@ pub mod special_club_keeper {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::PokerHand].span()
+            array![CardType::Play].span()
         }
     }
 }

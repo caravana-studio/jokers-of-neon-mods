@@ -67,13 +67,15 @@ mod specials {
         mod wild_booster;
     }
     mod miss {}
-    mod poker_hand {
+    mod play {
         mod blackjack;
         mod blacks;
         mod burning_rewards;
         mod cash_catalyst;
         mod club_keeper;
+        mod deadline;
         mod deck_collector;
+        mod discard_mastery;
         mod efficient_play;
         mod high_roller;
         mod increase_level_double_pair;
@@ -84,6 +86,7 @@ mod specials {
         mod increase_level_pair;
         mod increase_level_straight;
         mod increase_level_three_of_a_kind;
+        mod initial_advantage;
         mod multiplier;
         mod rage_breaker;
         mod rainbow;
@@ -95,11 +98,6 @@ mod specials {
     }
     mod power_up {
         mod power_up_booster;
-    }
-    mod round {
-        mod deadline;
-        mod discard_mastery;
-        mod initial_advantage;
     }
 }
 
