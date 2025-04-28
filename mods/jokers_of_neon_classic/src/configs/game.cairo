@@ -52,19 +52,19 @@ pub mod game_config {
             DiscountConfig { max_discounts_per_shop: 3, tries: 10 }
         }
 
-        fn calculate_level_score(self: @ContractState, level: u32) -> u32 {
-            if level <= 2 {
-                300 * level
-            } else if level <= 10 {
-                600 * level - 600
-            } else if level <= 20 {
-                1200 * level - 6600
-            } else if level <= 25 {
-                3000 * level - 42600
-            } else if level <= 30 {
-                7000 * level - 142600
+        fn calculate_round_score(self: @ContractState, round: u32) -> u32 {
+            if round <= 2 {
+                300 * round
+            } else if round <= 10 {
+                600 * round - 600
+            } else if round <= 20 {
+                1200 * round - 6600
+            } else if round <= 25 {
+                3000 * round - 42600
+            } else if round <= 30 {
+                7000 * round - 142600
             } else {
-                20000 * level - 532600
+                20000 * round - 532600
             }
         }
 

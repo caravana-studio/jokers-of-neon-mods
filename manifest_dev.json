@@ -1,7 +1,7 @@
 {
   "world": {
-    "class_hash": "0x4b767fda48530353c2e44e4b9433f4d75c6c9974aaff43ecc00de9455eb71b8",
-    "address": "0x6aee3caa2bf572667623e328530bc8e3ba8c9b96b5eaf482825e8ddda14c2d0",
+    "class_hash": "0x7c9469d45a9cdbab775035afb48e1fa73fb35ab059fcb9dfb0a301aa973e783",
+    "address": "0x685e0f9596d23e7aa98100ca2c5ec72fe7b491741c541f32893d825a03783b8",
     "seed": "jokers_of_neon_mods",
     "name": "jokers_of_neon_mods",
     "entrypoints": [
@@ -11,6 +11,7 @@
       "register_event",
       "register_model",
       "register_contract",
+      "register_library",
       "init_contract",
       "upgrade_event",
       "upgrade_model",
@@ -78,6 +79,10 @@
           {
             "name": "Unregistered",
             "type": "()"
+          },
+          {
+            "name": "Library",
+            "type": "(core::starknet::class_hash::ClassHash, core::felt252)"
           }
         ]
       },
@@ -358,6 +363,34 @@
             "outputs": [
               {
                 "type": "core::starknet::contract_address::ContractAddress"
+              }
+            ],
+            "state_mutability": "external"
+          },
+          {
+            "type": "function",
+            "name": "register_library",
+            "inputs": [
+              {
+                "name": "namespace",
+                "type": "core::byte_array::ByteArray"
+              },
+              {
+                "name": "class_hash",
+                "type": "core::starknet::class_hash::ClassHash"
+              },
+              {
+                "name": "name",
+                "type": "core::byte_array::ByteArray"
+              },
+              {
+                "name": "version",
+                "type": "core::byte_array::ByteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "type": "core::starknet::class_hash::ClassHash"
               }
             ],
             "state_mutability": "external"
@@ -967,6 +1000,28 @@
       },
       {
         "type": "event",
+        "name": "dojo::world::world_contract::world::LibraryRegistered",
+        "kind": "struct",
+        "members": [
+          {
+            "name": "name",
+            "type": "core::byte_array::ByteArray",
+            "kind": "key"
+          },
+          {
+            "name": "namespace",
+            "type": "core::byte_array::ByteArray",
+            "kind": "key"
+          },
+          {
+            "name": "class_hash",
+            "type": "core::starknet::class_hash::ClassHash",
+            "kind": "data"
+          }
+        ]
+      },
+      {
+        "type": "event",
         "name": "dojo::world::world_contract::world::EventEmitted",
         "kind": "struct",
         "members": [
@@ -1207,6 +1262,11 @@
             "kind": "nested"
           },
           {
+            "name": "LibraryRegistered",
+            "type": "dojo::world::world_contract::world::LibraryRegistered",
+            "kind": "nested"
+          },
+          {
             "name": "EventEmitted",
             "type": "dojo::world::world_contract::world::EventEmitted",
             "kind": "nested"
@@ -1252,8 +1312,8 @@
   },
   "contracts": [
     {
-      "address": "0x2abb4e3384f68bfafbf9965a4d7a4a112d001095823acba55f51781cf50998a",
-      "class_hash": "0x25971ac1ec0d91c5bc4fed5105a79e441bec3d4e095b1aafd5f5975ba33f4d8",
+      "address": "0x40c94dc4045a151972d493a256dcb88139c125beb6e98b1a35c02144ca3f948",
+      "class_hash": "0x56bd9ea25ccd384fa8ae43ac77261d2fbabcf781b3305f4efe9ec5fa314458",
       "abi": [
         {
           "type": "impl",
@@ -1340,6 +1400,10 @@
             },
             {
               "name": "shop_config_address",
+              "type": "core::starknet::contract_address::ContractAddress"
+            },
+            {
+              "name": "poker_hands_address",
               "type": "core::starknet::contract_address::ContractAddress"
             }
           ]
@@ -1641,7 +1705,7 @@
       ]
     },
     {
-      "address": "0x65a29aad59a2596fbca9795c7f8eb8a211f07f4303512c55c4c775d5464e75c",
+      "address": "0x1931316e69e1b7ca9e148bf6dd28ae6fc609972b1a75e2ec41d0fe6d77ac378",
       "class_hash": "0x292e51aa93b7530af37f71c887656e7d5cb05a52db5baaa03bf9ae782700b36",
       "abi": [
         {
@@ -1910,7 +1974,7 @@
       ]
     },
     {
-      "address": "0x2aa5f6b0d85b6bf4c58f5a941bbf29efa00c513c2b2d41e02486d99b45a953d",
+      "address": "0x16facdf4e2e44171c1f5a7c1bd7de423b7614999f86cb29ca698319c9d77bf0",
       "class_hash": "0x7def46010638847e50d273b3871c64d3cdf502d1021cfa004017b97e4754064",
       "abi": [
         {
@@ -2179,6 +2243,7 @@
       ]
     }
   ],
+  "libraries": [],
   "models": [
     {
       "members": [],
@@ -2194,7 +2259,7 @@
     },
     {
       "members": [],
-      "class_hash": "0x6db8f4062cfcda99e89aadcbc5cd6b02f3f5f88dabe3231a75112128e5b66f7",
+      "class_hash": "0x27d0b68304652e0106654f8391e37b48daccdbea1ca58563dff3e27431f2fd9",
       "tag": "jokers_of_neon_mods-ModConfig",
       "selector": "0x26a71fa368dab860d69ad69d90cdde591bf7d51c87d0d2853986e2b6ada2d50"
     },
@@ -2217,5 +2282,6 @@
       "selector": "0x16d80dd61ca87e82de4ffbe91d73bbdcf2a58ec785cf870a07d1570dc82f1c9"
     }
   ],
-  "events": []
+  "events": [],
+  "external_contracts": []
 }
