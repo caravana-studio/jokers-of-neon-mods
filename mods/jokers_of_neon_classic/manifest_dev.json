@@ -1934,8 +1934,8 @@
       ]
     },
     {
-      "address": "0x7a22d75a8cf9c5a8ecf6914adafcacc8f589de9a352aa6d518794088300bb32",
-      "class_hash": "0xd07d1aa703aca6d181dc804e22498ca73f1416d5001a30338ce6ab943fe8e1",
+      "address": "0x6ee0784dfe08105634a34b8e8ec12dfd9935288b35b316b676c772ea3a0d914",
+      "class_hash": "0x1e0be7078e8a5ea062de7cfce9b741e33d9894bb874323c710b83b749b2ca5",
       "abi": [
         {
           "type": "impl",
@@ -2559,8 +2559,8 @@
       ]
     },
     {
-      "address": "0xe80bd06966ad1acc37ff338b5f6f2293c4952e249c9eeca876dae5a16259e",
-      "class_hash": "0x2b72c36f4aad39981bc794dd89eb41981c5d49d1e6a200bc354d4a27abd26dd",
+      "address": "0x17720a33b527217823b534de44c92491815e5e8cab092f7dcf803da50dcf832",
+      "class_hash": "0x574469058e1e8eb3d4eb1603d5179bbec48ae77bf8beaeda0818ee4877ecc29",
       "abi": [
         {
           "type": "impl",
@@ -2718,6 +2718,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -3176,7 +3180,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -3437,8 +3441,8 @@
       ]
     },
     {
-      "address": "0x286275e63b02796203e650b5c65aab877b79f2b240c9cc9f3babd1896b9f99d",
-      "class_hash": "0x42e116a0e3532ab9412ab051a783feb728690fe751501e040f77146ce2d1b13",
+      "address": "0x55eea0ef5796ffc37e6792258a9c4676576c55546685dbe8b6a456b6382306d",
+      "class_hash": "0x3c8c5a826078e24cdbdada261c8e6a8a3894c8e0908345b854c940a1cdec497",
       "abi": [
         {
           "type": "impl",
@@ -3596,6 +3600,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -4054,7 +4062,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -7752,8 +7760,8 @@
       ]
     },
     {
-      "address": "0x427289db838d09d70a5b2e34e2725d6242f9886384a09058704e15900c1c380",
-      "class_hash": "0xec327976fb6e7b2a84948dc23f8602521968bb2ac14338755273578148a984",
+      "address": "0x623299994f4fd0e4fae0cda4ad016f80917b493d58893c40ff2874a62f393f",
+      "class_hash": "0x5a6c3b0addc8577c3fff88f17c5cf0cdd5157d46ca104d16965e5011cbbfbde",
       "abi": [
         {
           "type": "impl",
@@ -7911,6 +7919,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -8369,7 +8381,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -8630,8 +8642,8 @@
       ]
     },
     {
-      "address": "0x2abaff1e7de645e37eeb57470fae143f65790aeb106da953ea37e76daa23727",
-      "class_hash": "0x50328ea017951d4b4e6ef43ea58d6e6fce08ea3a76bdb0155e4b9207151fd10",
+      "address": "0x1d5c46acdd3ed08bb4702554d4cd026ec44821f89272c4674766bf91b5466e3",
+      "class_hash": "0x247ebc8c7429b155a3959aa217b21eafb26146d9cb81b95887f29a49673ef5f",
       "abi": [
         {
           "type": "impl",
@@ -8789,6 +8801,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -9247,7 +9263,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -10020,8 +10036,8 @@
       ]
     },
     {
-      "address": "0x7134e166ce106378da1c20b2995926850ce78eb77ea48bcb6095e5f1b4c8a82",
-      "class_hash": "0x382899d6b233fa1b17466649cfd32f5b6958b429e17ffc585579fcea3e8eb4a",
+      "address": "0x2299a6b1393cb642dbd45bbdd109862afde6a94c03cf1f747333e08783895cb",
+      "class_hash": "0x49f81c0d85c042c24b12dc308ccb13832e2b8b93a732dd15b50a47a7b883bdf",
       "abi": [
         {
           "type": "impl",
@@ -10179,6 +10195,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -10637,7 +10657,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -10916,8 +10936,8 @@
       ]
     },
     {
-      "address": "0x3beb5ab2eb0034436dec1fd8b5a856455f7c86fe8c634bd06acd3d822208d67",
-      "class_hash": "0x369e5e38031069a0e035cb03ca497de43df2b7efe18db3e0324849082d3b0c9",
+      "address": "0x20b8e167fe6aee017ec5f72fc8c93be6985dc64628a5ec14b7a58306382faff",
+      "class_hash": "0x6fe644e9f1ca4d230c5cef67a3701235a154e39deff7fb9b4797c1dbff245a3",
       "abi": [
         {
           "type": "impl",
@@ -11075,6 +11095,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -11533,7 +11557,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -11781,8 +11805,8 @@
       ]
     },
     {
-      "address": "0x114cdf9b896223b9b33a837da4d025822116950e22f813851bd6e73efc6606b",
-      "class_hash": "0x7e1e800faf0f448162efa59e273e43a196f6add28584e1237060a05be8aaf69",
+      "address": "0x4719c60b9f7d36910eb4bbbd86a65e2adaedc94071a5b1cbc7cda0e81303acf",
+      "class_hash": "0x4b1000afdbfef9a414f98c8b58fd680ace57a759b1747b81d95282fd85e23c4",
       "abi": [
         {
           "type": "impl",
@@ -11940,6 +11964,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -12398,7 +12426,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -12646,12 +12674,12 @@
       ]
     },
     {
-      "address": "0x5e1582185528e3c77548c389a660a95e6b5176fe286ebf09dbdc05546e12aca",
-      "class_hash": "0x5aee63e707f3e2519171d921a5dc1d84bbdf03f3f04995e04fe00223b183e71",
+      "address": "0x22282d3b35c9d3a488a192f21ce9191018730c2b15a3da8257e50077274b7e9",
+      "class_hash": "0x5f00a6286c214a69601693dd8449deccfb64fa0d7086e74b6883afa90a867af",
       "abi": [
         {
           "type": "impl",
-          "name": "special_cash_catalyst__ContractImpl",
+          "name": "special_burning_rewards__ContractImpl",
           "interface_name": "dojo::contract::interface::IContract"
         },
         {
@@ -12661,7 +12689,7 @@
         },
         {
           "type": "impl",
-          "name": "special_cash_catalyst__DeployedContractImpl",
+          "name": "special_burning_rewards__DeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -12701,7 +12729,7 @@
         },
         {
           "type": "impl",
-          "name": "CashCatalystExecutable",
+          "name": "BurningRewardsExecutable",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
@@ -12805,6 +12833,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -13263,7 +13295,903 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::GameContext",
+          "members": [
+            {
+              "name": "game",
+              "type": "jokers_of_neon_lib::models::status::game::game::Game"
+            },
+            {
+              "name": "round",
+              "type": "jokers_of_neon_lib::models::status::round::round::Round"
+            },
+            {
+              "name": "hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
+              "name": "cards_played",
+              "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            },
+            {
+              "name": "cards_in_hand",
+              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            },
+            {
+              "name": "cards_in_deck",
+              "type": "core::array::Span::<core::integer::u32>"
+            },
+            {
+              "name": "special_cards",
+              "type": "core::array::Span::<jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards>"
+            },
+            {
+              "name": "power_ups",
+              "type": "core::array::Span::<core::integer::u32>"
+            },
+            {
+              "name": "purchase_tracker",
+              "type": "jokers_of_neon_lib::models::tracker::PurchaseTracker"
+            },
+            {
+              "name": "game_tracker",
+              "type": "jokers_of_neon_lib::models::tracker::GameTracker"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
+          "items": [
+            {
+              "type": "function",
+              "name": "execute",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                }
+              ],
+              "state_mutability": "external"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "BurningRewardsBase",
+          "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<jokers_of_neon_lib::models::card_type::CardType>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<jokers_of_neon_lib::models::card_type::CardType>"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::base::ICardBase",
+          "items": [
+            {
+              "type": "function",
+              "name": "get_id",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::integer::u32"
+                }
+              ],
+              "state_mutability": "view"
+            },
+            {
+              "type": "function",
+              "name": "get_types",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::array::Span::<jokers_of_neon_lib::models::card_type::CardType>"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "BurningRewardsInfo",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::info::ICardInfo"
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::info::ICardInfo",
+          "items": [
+            {
+              "type": "function",
+              "name": "values",
+              "inputs": [
+                {
+                  "name": "game_id",
+                  "type": "core::integer::u32"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "function",
+          "name": "dojo_init",
+          "inputs": [],
+          "outputs": [],
+          "state_mutability": "view"
+        },
+        {
+          "type": "impl",
+          "name": "WorldProviderImpl",
+          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
+        },
+        {
+          "type": "struct",
+          "name": "dojo::world::iworld::IWorldDispatcher",
+          "members": [
+            {
+              "name": "contract_address",
+              "type": "core::starknet::contract_address::ContractAddress"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::world_provider::IWorldProvider",
+          "items": [
+            {
+              "type": "function",
+              "name": "world_dispatcher",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "dojo::world::iworld::IWorldDispatcher"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "UpgradeableImpl",
+          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::upgradeable::IUpgradeable",
+          "items": [
+            {
+              "type": "function",
+              "name": "upgrade",
+              "inputs": [
+                {
+                  "name": "new_class_hash",
+                  "type": "core::starknet::class_hash::ClassHash"
+                }
+              ],
+              "outputs": [],
+              "state_mutability": "external"
+            }
+          ]
+        },
+        {
+          "type": "constructor",
+          "name": "constructor",
+          "inputs": []
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+          "kind": "struct",
+          "members": [
+            {
+              "name": "class_hash",
+              "type": "core::starknet::class_hash::ClassHash",
+              "kind": "data"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "Upgraded",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+              "kind": "nested"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+          "kind": "enum",
+          "variants": []
+        },
+        {
+          "type": "event",
+          "name": "jokers_of_neon_classic::specials::poker_hand::burning_rewards::special_burning_rewards::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "UpgradeableEvent",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+              "kind": "nested"
+            },
+            {
+              "name": "WorldProviderEvent",
+              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+              "kind": "nested"
+            }
+          ]
+        }
+      ],
+      "init_calldata": [],
+      "tag": "jokers_of_neon_classic-special_burning_rewards",
+      "selector": "0x7713b39b8113dfcacc7dba884a7cb797e99e464fe69e4f9bdf8dd2a8619c298",
+      "systems": [
+        "execute",
+        "upgrade"
+      ]
+    },
+    {
+      "address": "0x1509e05e225ea2d29ffce67c8a64e7391fb81bd713df00ed8722277fc9a9e72",
+      "class_hash": "0x7cc8661ed03a38bfcc830ad66b903f213209f385c66c93f389b79bf2c1da90f",
+      "abi": [
+        {
+          "type": "impl",
+          "name": "special_cash_catalyst__ContractImpl",
+          "interface_name": "dojo::contract::interface::IContract"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::interface::IContract",
+          "items": []
+        },
+        {
+          "type": "impl",
+          "name": "special_cash_catalyst__DeployedContractImpl",
+          "interface_name": "dojo::meta::interface::IDeployedResource"
+        },
+        {
+          "type": "struct",
+          "name": "core::byte_array::ByteArray",
+          "members": [
+            {
+              "name": "data",
+              "type": "core::array::Array::<core::bytes_31::bytes31>"
+            },
+            {
+              "name": "pending_word",
+              "type": "core::felt252"
+            },
+            {
+              "name": "pending_word_len",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::meta::interface::IDeployedResource",
+          "items": [
+            {
+              "type": "function",
+              "name": "dojo_name",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::byte_array::ByteArray"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "CashCatalystExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
+          "variants": [
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Rage",
+              "type": "()"
+            },
+            {
+              "name": "Reward",
+              "type": "()"
+            },
+            {
+              "name": "Challenge",
+              "type": "()"
+            },
+            {
+              "name": "Map",
+              "type": "()"
+            },
+            {
+              "name": "Store",
+              "type": "()"
+            },
+            {
+              "name": "Lootbox",
+              "type": "()"
+            },
+            {
+              "name": "GameOver",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
+          "members": [
+            {
+              "name": "id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "mod_id",
+              "type": "core::felt252"
+            },
+            {
+              "name": "state",
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
+            },
+            {
+              "name": "owner",
+              "type": "core::starknet::contract_address::ContractAddress"
+            },
+            {
+              "name": "player_name",
+              "type": "core::felt252"
+            },
+            {
+              "name": "player_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "level",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "hand_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "plays",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "discards",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cash",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "available_rerolls",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<core::integer::u32>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<core::integer::u32>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::round::round::Round",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "current_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "target_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "remaining_plays",
+              "type": "core::integer::u16"
+            },
+            {
+              "name": "remaining_discards",
+              "type": "core::integer::u16"
+            },
+            {
+              "name": "rages",
+              "type": "core::array::Span::<core::integer::u32>"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "RoyalFlush",
+              "type": "()"
+            },
+            {
+              "name": "StraightFlush",
+              "type": "()"
+            },
+            {
+              "name": "FiveOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "FourOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "FullHouse",
+              "type": "()"
+            },
+            {
+              "name": "Straight",
+              "type": "()"
+            },
+            {
+              "name": "Flush",
+              "type": "()"
+            },
+            {
+              "name": "ThreeOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "TwoPair",
+              "type": "()"
+            },
+            {
+              "name": "OnePair",
+              "type": "()"
+            },
+            {
+              "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "Info",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "Clubs",
+              "type": "()"
+            },
+            {
+              "name": "Diamonds",
+              "type": "()"
+            },
+            {
+              "name": "Hearts",
+              "type": "()"
+            },
+            {
+              "name": "Spades",
+              "type": "()"
+            },
+            {
+              "name": "Joker",
+              "type": "()"
+            },
+            {
+              "name": "Wild",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "Two",
+              "type": "()"
+            },
+            {
+              "name": "Three",
+              "type": "()"
+            },
+            {
+              "name": "Four",
+              "type": "()"
+            },
+            {
+              "name": "Five",
+              "type": "()"
+            },
+            {
+              "name": "Six",
+              "type": "()"
+            },
+            {
+              "name": "Seven",
+              "type": "()"
+            },
+            {
+              "name": "Eight",
+              "type": "()"
+            },
+            {
+              "name": "Nine",
+              "type": "()"
+            },
+            {
+              "name": "Ten",
+              "type": "()"
+            },
+            {
+              "name": "Jack",
+              "type": "()"
+            },
+            {
+              "name": "Queen",
+              "type": "()"
+            },
+            {
+              "name": "King",
+              "type": "()"
+            },
+            {
+              "name": "Ace",
+              "type": "()"
+            },
+            {
+              "name": "Joker",
+              "type": "()"
+            },
+            {
+              "name": "NeonJoker",
+              "type": "()"
+            },
+            {
+              "name": "Wild",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
+          "members": [
+            {
+              "name": "id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "suit",
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
+            },
+            {
+              "name": "value",
+              "type": "jokers_of_neon_lib::models::data::card::Value"
+            },
+            {
+              "name": "points",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "multi_add",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "idx",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "effect_card_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "is_temporary",
+              "type": "core::bool"
+            },
+            {
+              "name": "remaining",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "selling_price",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::PurchaseTracker",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "traditonal_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "modifier_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "loot_boxes_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "power_up_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "level_poker_hands_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "burn_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "reroll_count",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::GameTracker",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "power_ups_used",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "highest_hand",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -13511,8 +14439,8 @@
       ]
     },
     {
-      "address": "0x5a1fb04c3e458e8e630b49891ced4093ce1e255381134c7c088c2dd34b7ba72",
-      "class_hash": "0x23295d6b06a5f652097f865cb97e0ea2fa36ff2e4806f96f8f070b9e6d6bb36",
+      "address": "0x3d167f28b3cd129d44300ac5010fa37de8b14505e5e463f8e0126c432b2d97d",
+      "class_hash": "0x6afd8a83efef7d553c0ff898a63566fff06627ca823aa79e229bc08d6315882",
       "abi": [
         {
           "type": "impl",
@@ -13670,6 +14598,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -14128,7 +15060,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -14376,8 +15308,8 @@
       ]
     },
     {
-      "address": "0x3064ac956b8ccbba698687d77304ac16421a6a5947117772a96f6f006811fb4",
-      "class_hash": "0x212216e143dc44c25604c2674a2be7e2be8c5a7866dabbee4093a822df393de",
+      "address": "0x7d5120d7cfd66ff074d826ab736331f88f32724901fc361a8f03a1ebd1852d",
+      "class_hash": "0x2cde46d016f4444f465a9f8e62625ba76f5e81a4979bbfc7a4c3175d186068",
       "abi": [
         {
           "type": "impl",
@@ -14535,6 +15467,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -14993,7 +15929,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -15241,8 +16177,8 @@
       ]
     },
     {
-      "address": "0x4c06869d0392aae7414eb56b5d630a5bbfec34f5782b40e8fe096732af34a4",
-      "class_hash": "0x51786492678dd6dc17388456973b991d09c911a54d68aeabfdf5e2357759ef8",
+      "address": "0x45216a7c1ce22ef84e94a991bb1ef981d93ec4d61fea2f3dd19d24696c6dbc1",
+      "class_hash": "0x72b4485b1046328b06dc6e7d212efa66b10464daf10b8d844abbb87fe75fa9c",
       "abi": [
         {
           "type": "impl",
@@ -15400,6 +16336,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -15858,7 +16798,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -16106,8 +17046,8 @@
       ]
     },
     {
-      "address": "0x315b7da2148add6aeb633b095742ff60bcdbdb3d4bc3ff292b76c8f9c1e1761",
-      "class_hash": "0x6980c38cd038b678e1810e475b27bf0a9b7cc3fbb94d1df40d323931056875c",
+      "address": "0x7701772f9ba85e12f7679c78e5c0957b78534b07ac6aba8d1a71222888633fe",
+      "class_hash": "0x7aa0b5990754e36caa1837ad7f17f15dd9b3f6fe279e1a26c1fb1c4b13cfd6d",
       "abi": [
         {
           "type": "impl",
@@ -16265,6 +17205,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -16723,7 +17667,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -17002,8 +17946,8 @@
       ]
     },
     {
-      "address": "0x2fc616a5adc097b0ce7409efc2004d5c00f554cbc6fc41ca5c984fe35818be1",
-      "class_hash": "0x6138c657660232b2dbfa9d41f40997f8edad36b1f1d84be375e52cedb51e3d9",
+      "address": "0x1e9d0899582a983161a7a5ac42934a063bbc77cf97f980628fa4b7fcb0f47bf",
+      "class_hash": "0x41e296311a6c3b6eacd421835535f21d37d2991c7a18d33ce263f9e928ec825",
       "abi": [
         {
           "type": "impl",
@@ -17161,6 +18105,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -17619,7 +18567,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -17867,8 +18815,8 @@
       ]
     },
     {
-      "address": "0x382b547bcfc41b8947655f870e41cf9daefa098caee3ac3606d11f672e0dadd",
-      "class_hash": "0x74f8a6bfee1c1c7e55cd251f885b9d9438308ccfa72f098fad86a532e587825",
+      "address": "0x2849695c4f8901855f0a57a631f4f7950d2d3fe896f0d7f763b7ee72effb5ce",
+      "class_hash": "0x62a9084f2330ea17efc08e376ff7db5a46d653a5fa7bd6750fe7632cb5d2bc4",
       "abi": [
         {
           "type": "impl",
@@ -18026,6 +18974,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -18484,7 +19436,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -18732,8 +19684,8 @@
       ]
     },
     {
-      "address": "0x2188e423d9482ac42b848aa61a241fd8d31e9e1702145f621a625364afd32b2",
-      "class_hash": "0x28693bc292e9504a8dbef2fc4a29324e8f2ee695e89fc1ccb6703a8fb406fe9",
+      "address": "0x63f359c94762bf361c5bfa3ccf89ad5dd99acdd3b76f6c0c59c859419dee166",
+      "class_hash": "0x50f0a0ae1a66e149714761eff52985e034f0f2909b2f8f16eb179b970d26bb5",
       "abi": [
         {
           "type": "impl",
@@ -18891,6 +19843,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -19349,7 +20305,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -19610,8 +20566,8 @@
       ]
     },
     {
-      "address": "0x1b7f58b00d2f3f2a87b91a7511b5e45d1cbf3281b8bf27c4e75cd85d2abdd26",
-      "class_hash": "0x52433c631e4c8f8db54847db047bd6bdb8043dd98dc814769378e57b02f8cb6",
+      "address": "0x229973307e1e2a330377d9c9ec05e2c3eb9c8a7cf10dd1c8996136f2b6e26cf",
+      "class_hash": "0x796808848e01194947167cb858fbdb133d6601af308bc10c44e87058c300cb3",
       "abi": [
         {
           "type": "impl",
@@ -19769,6 +20725,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -20227,7 +21187,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -20488,8 +21448,8 @@
       ]
     },
     {
-      "address": "0x3b2638572b09466a9e015b749e3b382e5e66f8816f84f114c2d571630297ad5",
-      "class_hash": "0x13f17be0d7b8f1daee1d1f1808940959f9ac7162c34daac79dd2d155633a585",
+      "address": "0x16770f2668528f16620abf5d8f271ee45196d6913f675890116fc9ab54924cc",
+      "class_hash": "0x1f6be5e5a5ef16d986a1140e331be6fcebd507febfdc4ed1c261acc227f84f9",
       "abi": [
         {
           "type": "impl",
@@ -20647,6 +21607,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -21105,7 +22069,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -21380,8 +22344,8 @@
       ]
     },
     {
-      "address": "0x5e429b625921cec023a9801864d2050da3c8aad8cd672969e65a8451c210760",
-      "class_hash": "0x4172fa3eccf6a04d3a1736a65af6de336908b9a4f92939a9d06b27f233fe912",
+      "address": "0x7218c546b2ec67350a16cfcbc8e01d8ab9ee232f0872bffa504a1dfe716efc6",
+      "class_hash": "0x5db75e3703d5bc79e0051e37a13d3e50bbec2b912272da5ef72dafed9b8aea3",
       "abi": [
         {
           "type": "impl",
@@ -21539,6 +22503,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -21997,7 +22965,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -22245,8 +23213,8 @@
       ]
     },
     {
-      "address": "0x47c8832cab77c20f7c6c433cd56e4f56944ed7085299ee3bc0b8b770b2f3dff",
-      "class_hash": "0x30f2b5475630add50fd418eb5911953b92ad1fe57485938d164bbd95a05cc73",
+      "address": "0x773d5107d0962cc792f44e9836bfa46866b7149bbaa7a35843cecc362fbe1bf",
+      "class_hash": "0x51a61d56642448ee996dc367586fec1866c1c0ca5f65c1a5249da1937b50af2",
       "abi": [
         {
           "type": "impl",
@@ -22404,6 +23372,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -22862,7 +23834,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -23110,8 +24082,8 @@
       ]
     },
     {
-      "address": "0x646ee6557aa6694b1dfeeb7efdcb8fcbd14d97ba2d36bda82a724d84fca171e",
-      "class_hash": "0x7c05d8594d4f0828a022adf5a8346dc280f3386d33370f67beda6231468f1f9",
+      "address": "0x675a3a32d93c4278412c749d9684b9ae0750a09e6fa5ca4122ac4b75fda830",
+      "class_hash": "0x6df93720410424ffc1429e7b54d9844976ce81bb0c4edddc10b84d2f98338b4",
       "abi": [
         {
           "type": "impl",
@@ -23269,6 +24241,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -23727,7 +24703,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -23975,8 +24951,8 @@
       ]
     },
     {
-      "address": "0x72c37173f03ed36b9c65b6bbc951039f5e75ee232b3dbf21d70b706f34c2837",
-      "class_hash": "0x3ea94fc20ebc2bd2b77f6606974a8e3049440c038ffbcf2ded5c4e522ebaeb6",
+      "address": "0x55ba754080f85553f803be14e0bf370d91e0d60251a41ea5f91497a7451da87",
+      "class_hash": "0x2a9472774f7aa952124aa8a8871043b152ab345cfa33f949b709c16fb4a3081",
       "abi": [
         {
           "type": "impl",
@@ -24134,6 +25110,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -24592,7 +25572,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -24840,8 +25820,8 @@
       ]
     },
     {
-      "address": "0x11c0e7b19cef778681c7902c73555301ddf82f73447b2a7a7151483b780be5a",
-      "class_hash": "0x27c97dca0bad7f908f7a9edc095acf8a8d903ffa5cc2524a20a5ec8d117e0ee",
+      "address": "0x512fa77a819534cc363cd1ee18e325c957bc7d03a7736d85a611fe9ff651953",
+      "class_hash": "0x7845f91a5c550ca1162d427274f2403858200a18fa5b0624d4c8993c95ad9da",
       "abi": [
         {
           "type": "impl",
@@ -24999,6 +25979,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -25457,7 +26441,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -25705,8 +26689,8 @@
       ]
     },
     {
-      "address": "0x7a74fa11fcd753f3e3eaccc07ea403ab5f8c103cfbe03747bb4cfedb347210f",
-      "class_hash": "0x22c5e0ed9e50dfba96896a5d0a5ea92d1e11ab4fb74b49e0d0844cb5515a8fe",
+      "address": "0x2afc18cefbfe3c4afbb92ab88f98f6988398228f3100a9ca433427736000e4b",
+      "class_hash": "0x3f935fa7cf92e4e502f7f80e5095892102c670d305eeaad189a37ccc448b8a1",
       "abi": [
         {
           "type": "impl",
@@ -25864,6 +26848,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -26322,7 +27310,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -26570,8 +27558,8 @@
       ]
     },
     {
-      "address": "0x50d5bc7c95490d943ae41c3fa38037ffc8ca60ba17129f45e44842cee9bd7cf",
-      "class_hash": "0x498700c411c14abaa4ff0d539a5c58f8d0a42aa424d4987d6a775a9ce178ce3",
+      "address": "0x305f46fbd2d7986f5cce3b6fa9c0c0fcd627cca678fdd94cb46cc9bd2751e2a",
+      "class_hash": "0x4e2eddbddf6642e1ef6be1ae6c26db205d675b70a17fb5c1b4b0596097ec794",
       "abi": [
         {
           "type": "impl",
@@ -26729,6 +27717,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -27187,7 +28179,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -27435,8 +28427,8 @@
       ]
     },
     {
-      "address": "0x315d92f86021117198157b8ff60274a526bf2ee97855c99492e123800ab633",
-      "class_hash": "0x56e474887e3f8c510b9ac621cadea2cf3f5f7a3d7a6525bb371eb80382a4d04",
+      "address": "0x25144423baaa0a9c4e72986a370df6dea3531d04a3c02d1171f524775ab9298",
+      "class_hash": "0x7335403e0e2f216db06565a66c82dd654219f5054617b88cc54163b3394986a",
       "abi": [
         {
           "type": "impl",
@@ -27594,6 +28586,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -28052,7 +29048,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -28300,8 +29296,8 @@
       ]
     },
     {
-      "address": "0x575c2e2826e5fdc265e8b3764c98e6c6ff213ac08bc8986299a6cebf270db6d",
-      "class_hash": "0x36aafb214173320c0e11eaaf9522d4484fb0a44f614e3f828af86f1c503b160",
+      "address": "0x4fb8eb0826a43fe669fc4932e9b3c6487162e0f706545df9908589bd2da4ffe",
+      "class_hash": "0x70fab8100821c0d2b517e57b4c3c5a2125854db3af49ce7ee2351dca538219e",
       "abi": [
         {
           "type": "impl",
@@ -28459,6 +29455,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -28917,7 +29917,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -29165,8 +30165,8 @@
       ]
     },
     {
-      "address": "0x262eb198984ad6b6b11b299484ea07ca31116a92b1cb39fe0689114ad1fab3c",
-      "class_hash": "0x39da8b29261ac712db5c491d517e14be8e07ccdb3729632221a42cfea6adff5",
+      "address": "0x64ff258e851be500aa9ec36b8023cac3c5ae49f678974b63468586f94e0a2bc",
+      "class_hash": "0x29d44d3ff442bf15f50558f7d5bac3d02dc6422197ded6936da864ee8d8af5e",
       "abi": [
         {
           "type": "impl",
@@ -29324,6 +30324,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -29782,7 +30786,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -30061,8 +31065,8 @@
       ]
     },
     {
-      "address": "0x28b560604bab44913f39db248d9952825c15372e18fe61285075bb4f13deb1c",
-      "class_hash": "0x4044cbcda1aa75064be5d20643832e27eca3860fcd803b239c957e6bcc1ee9d",
+      "address": "0x22be8693130ac1c5453498ae5aec441616df7ec1e28a1847ac1750a4773f4fa",
+      "class_hash": "0x3c9012e7075d430bfedd12ddf6f371b822b78468073ca7745df6c8e8bdcd05",
       "abi": [
         {
           "type": "impl",
@@ -30220,6 +31224,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -30678,7 +31686,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -30957,8 +31965,8 @@
       ]
     },
     {
-      "address": "0x2b94f61693c38ab812fc53c79d29f1dee1dc146ef017000a2c06e8dcdd19bb3",
-      "class_hash": "0x3fdafee6b43a558f880331fc3bc7d6a894408a46f351f766aa54df94136a0ea",
+      "address": "0x344f767c49a8ebed435a82ae3dc8f24ff7010b2b76ac38f7dfe1e02d494a160",
+      "class_hash": "0x4d291b30e427a740d03530ee38ed223b916ad21ceb8705118a1a5e834c5ee7",
       "abi": [
         {
           "type": "impl",
@@ -31116,6 +32124,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -31574,7 +32586,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -31853,8 +32865,8 @@
       ]
     },
     {
-      "address": "0x49a198955efa67bfdccc99cb60356fc6dcb6c75d90ab89e731bee0decbf65d3",
-      "class_hash": "0x79c07e7086cd5a8fde78d48c435fac8c727b67873a679920ec6f1180d6835cc",
+      "address": "0x66efd194fd10976aefdd3f9dd36e32021159205b3a72bbfd721b40dba08d26c",
+      "class_hash": "0x6558f967c00616081aeaf0f241c7a64eea7090a03ac8f046a338e9a79996aa2",
       "abi": [
         {
           "type": "impl",
@@ -32012,6 +33024,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -32470,7 +33486,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -32749,8 +33765,8 @@
       ]
     },
     {
-      "address": "0x3b4e0950052033e82907e81a6e233eef9f5a90a8e2f7a0da6a25b8b4ed3ff77",
-      "class_hash": "0x57edf4420be8242a53cd03b8e1ff7ce360d05fbab0b5e229f636c7c9bc2d19d",
+      "address": "0x6fad6623fbaf0f66d48d36d515d7b3931a72c4cdbe7f60870e29b96cea55ab",
+      "class_hash": "0x75569160086dff4b93b7ec8fd2e4bebd097cb244be7e5ae5ea98441a8b23a49",
       "abi": [
         {
           "type": "impl",
@@ -32908,6 +33924,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -33366,7 +34386,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -33645,8 +34665,8 @@
       ]
     },
     {
-      "address": "0x7e2c809b9fa8aac7f313160fd332ea57835a3823489a366a574f00895a840c2",
-      "class_hash": "0x71bba9c92b922fbc36f41c88681f235bc608dc0eb6aedd6a6ae401068d41123",
+      "address": "0x3a4cd3312dda1d08cf10f44ced7cacafbf23b3d7b33349691e3cb518026e34e",
+      "class_hash": "0x246a44b72355d6cd0ade1e42849bfae574319e23c6ba8d7f324fbeea18bbe59",
       "abi": [
         {
           "type": "impl",
@@ -33804,6 +34824,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -34262,7 +35286,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -34541,8 +35565,8 @@
       ]
     },
     {
-      "address": "0x59b3b0d6ef020020363d1d9fc2e4385e8602086089e964e1ebd3a68c95a8421",
-      "class_hash": "0x158466efd2f3372b145ede376d52d3489eb37b625aa4bcd2f84e2c84a0199ba",
+      "address": "0x4e0c52a5aa3c584100f3fd8171a7362358802fee22052f03963423bfb927a8e",
+      "class_hash": "0x1b4bed436463e041d8817b819445810acc9812e0d2dec17b77ef712ee97d38",
       "abi": [
         {
           "type": "impl",
@@ -34700,6 +35724,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -35158,7 +36186,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -35437,8 +36465,8 @@
       ]
     },
     {
-      "address": "0x303be8be68159d355e97857e8c634a3579c4daed600786950886443f59ec397",
-      "class_hash": "0x52b2d3473c8ce93f935a6f92292d2ffadaf00b48bb126fd6ed4e9db518b9e4d",
+      "address": "0x7140d2182cf133fbaf39a6b5bbc60f817c73d547e09b4fac47a800e7997d4ce",
+      "class_hash": "0x7e60a3552d4fd0a38fe40f11be3d9a7167cf49bfd2c035e4346843f4c5ddcfc",
       "abi": [
         {
           "type": "impl",
@@ -35596,6 +36624,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -36054,7 +37086,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -36333,8 +37365,8 @@
       ]
     },
     {
-      "address": "0x33697296b71a76d7105b08ffbb80cbb02bdac4c57142f9f1589e721c362e2e9",
-      "class_hash": "0x380a86eee8b4d35677adfa065670a3866a4412f3bc1630147b57ff12d7ad297",
+      "address": "0xd9c00be242e716ade94342d45598706db3f561b5c48db1d3ede7537cd244f",
+      "class_hash": "0x1ca9e125c122d6e8822fa53f62747b7665444269ab5d0fededf934a75ac36c3",
       "abi": [
         {
           "type": "impl",
@@ -36492,6 +37524,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -36950,7 +37986,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -37198,8 +38234,8 @@
       ]
     },
     {
-      "address": "0xee1791e5baf640273e8f7b0fe0fb48094e59d2d68c49631992508ac8603f3c",
-      "class_hash": "0x6caff9714b198d1041c1b9ba777b58e8c2fe150e6a837580f1a278edab6ac3d",
+      "address": "0x18f1ce88b8c0b22b23580bd66e61915a68fff13735880968bd73824a93faeeb",
+      "class_hash": "0x6270a5a9267e02599f61f31655ada2a57aa15b3c01df923f1f2eb4d1c351fb2",
       "abi": [
         {
           "type": "impl",
@@ -37357,6 +38393,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -37815,7 +38855,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -38094,8 +39134,8 @@
       ]
     },
     {
-      "address": "0x4d1b3a4bd2ddad1f49e6a99a42acf86c10dc193751fd4341f7452a07afa48ed",
-      "class_hash": "0x2ac37e3bb04763171b2e164effd16b73a57f82749ddb6fc283de724ff206df3",
+      "address": "0x2d58149435d91bb20792ca6df40bafae9ddfa8af6eed4fde21c20ce9a2dd550",
+      "class_hash": "0x8b14eb536646d46b98e5507024480e16f670c804081b6b252e9b467f33433c",
       "abi": [
         {
           "type": "impl",
@@ -38253,6 +39293,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -38711,7 +39755,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -38990,8 +40034,8 @@
       ]
     },
     {
-      "address": "0x114001390ab881feeaaee7a81e71614a95db3685160b9c4a6d948dff3f5d2a0",
-      "class_hash": "0x23d527d8fef605a12ee510d8a9da985aabc4a21c1d94b42851a629486e52aa3",
+      "address": "0x5dae6c818b7271aeddc5bcbea16d3804558c2c9fae8ef35c9a58ae70e26547a",
+      "class_hash": "0x59f4fb29a1cb547c322dd3d47d8daedf91e33004a1f4880be1b67fb220241a4",
       "abi": [
         {
           "type": "impl",
@@ -39149,6 +40193,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -39607,7 +40655,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -39868,8 +40916,8 @@
       ]
     },
     {
-      "address": "0x238ee49ef88e70dc3df4c8cf6f694b63b66ee104f0db3768264f2aa448184f",
-      "class_hash": "0x2d64c1c8785c2b5b9524628a2d52cfea86deaba4f166a86fb72bbadae558f28",
+      "address": "0x6bc4b55bd5292d42f5a7bde1ce06388fcc9d9f94427b66fb7f49185325976ca",
+      "class_hash": "0x42d630a961506a5132df6d3d7f2f6e2c1e48a56a20e71064841cad7a0146ff5",
       "abi": [
         {
           "type": "impl",
@@ -40027,6 +41075,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -40485,7 +41537,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -40746,8 +41798,8 @@
       ]
     },
     {
-      "address": "0x2624996bb1162e104656604f0d792469f38bf4b3a7286fa3bbe1798b530fea5",
-      "class_hash": "0x7be5f66198be6782e424a6d0d072cf0dd5fdc1d0f5b3519c7814cd4d6329dbb",
+      "address": "0x1615964f9d10ce3678d58e79faa0c743b8570267ce0e844be882e3982c63758",
+      "class_hash": "0x29a9b3bb1d0d033e2d8a4696b744e47bc570e788efdc0b0ffbff51033a28686",
       "abi": [
         {
           "type": "impl",
@@ -40905,6 +41957,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -41363,7 +42419,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -41642,8 +42698,8 @@
       ]
     },
     {
-      "address": "0x40103c8063d679b53aab1cedfe7a57333201976d34938c0a8759e30010bc6fa",
-      "class_hash": "0x6b5ad8a66f2c5bb76e9472bea4dd8474f3793b66ebcb551c2c841dec1fd12ae",
+      "address": "0x349b750f2af4f24d9437d645f605d58f62bc61324ca713129a16264c47c0317",
+      "class_hash": "0x4f716db17a40e6650c8a305f7b6df29fadc9bf9e6774cd90826775aca543487",
       "abi": [
         {
           "type": "impl",
@@ -41801,6 +42857,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -42259,7 +43319,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -42507,12 +43567,12 @@
       ]
     },
     {
-      "address": "0x40542efc965648e498909b8e8460d6698b8cf2edbf1cdf670bce488cecc7fc8",
-      "class_hash": "0x1de83c8678eaed60e5a63cadb1a8da19c031f15911c6be8fc76339f1bed0126",
+      "address": "0x704faf02e6cef150ffa4624b332e5eab4c858e7192b3ed2c262d2933de4f4",
+      "class_hash": "0x42bb92ed491d642415967b30721e31dc32c12c4ada4a9a9130bce130f9c4b5a",
       "abi": [
         {
           "type": "impl",
-          "name": "special_rainbow__ContractImpl",
+          "name": "special_rage_breaker__ContractImpl",
           "interface_name": "dojo::contract::interface::IContract"
         },
         {
@@ -42522,7 +43582,7 @@
         },
         {
           "type": "impl",
-          "name": "special_rainbow__DeployedContractImpl",
+          "name": "special_rage_breaker__DeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -42562,7 +43622,7 @@
         },
         {
           "type": "impl",
-          "name": "RainbowExecutable",
+          "name": "RageBreakerExecutable",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
@@ -42666,6 +43726,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -43124,7 +44188,903 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::GameContext",
+          "members": [
+            {
+              "name": "game",
+              "type": "jokers_of_neon_lib::models::status::game::game::Game"
+            },
+            {
+              "name": "round",
+              "type": "jokers_of_neon_lib::models::status::round::round::Round"
+            },
+            {
+              "name": "hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
+              "name": "cards_played",
+              "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            },
+            {
+              "name": "cards_in_hand",
+              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            },
+            {
+              "name": "cards_in_deck",
+              "type": "core::array::Span::<core::integer::u32>"
+            },
+            {
+              "name": "special_cards",
+              "type": "core::array::Span::<jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards>"
+            },
+            {
+              "name": "power_ups",
+              "type": "core::array::Span::<core::integer::u32>"
+            },
+            {
+              "name": "purchase_tracker",
+              "type": "jokers_of_neon_lib::models::tracker::PurchaseTracker"
+            },
+            {
+              "name": "game_tracker",
+              "type": "jokers_of_neon_lib::models::tracker::GameTracker"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
+          "items": [
+            {
+              "type": "function",
+              "name": "execute",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                }
+              ],
+              "state_mutability": "external"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "RageBreakerBase",
+          "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<jokers_of_neon_lib::models::card_type::CardType>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<jokers_of_neon_lib::models::card_type::CardType>"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::base::ICardBase",
+          "items": [
+            {
+              "type": "function",
+              "name": "get_id",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::integer::u32"
+                }
+              ],
+              "state_mutability": "view"
+            },
+            {
+              "type": "function",
+              "name": "get_types",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::array::Span::<jokers_of_neon_lib::models::card_type::CardType>"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "RageBreakerInfo",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::info::ICardInfo"
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::info::ICardInfo",
+          "items": [
+            {
+              "type": "function",
+              "name": "values",
+              "inputs": [
+                {
+                  "name": "game_id",
+                  "type": "core::integer::u32"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "function",
+          "name": "dojo_init",
+          "inputs": [],
+          "outputs": [],
+          "state_mutability": "view"
+        },
+        {
+          "type": "impl",
+          "name": "WorldProviderImpl",
+          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
+        },
+        {
+          "type": "struct",
+          "name": "dojo::world::iworld::IWorldDispatcher",
+          "members": [
+            {
+              "name": "contract_address",
+              "type": "core::starknet::contract_address::ContractAddress"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::world_provider::IWorldProvider",
+          "items": [
+            {
+              "type": "function",
+              "name": "world_dispatcher",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "dojo::world::iworld::IWorldDispatcher"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "UpgradeableImpl",
+          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::upgradeable::IUpgradeable",
+          "items": [
+            {
+              "type": "function",
+              "name": "upgrade",
+              "inputs": [
+                {
+                  "name": "new_class_hash",
+                  "type": "core::starknet::class_hash::ClassHash"
+                }
+              ],
+              "outputs": [],
+              "state_mutability": "external"
+            }
+          ]
+        },
+        {
+          "type": "constructor",
+          "name": "constructor",
+          "inputs": []
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+          "kind": "struct",
+          "members": [
+            {
+              "name": "class_hash",
+              "type": "core::starknet::class_hash::ClassHash",
+              "kind": "data"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "Upgraded",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+              "kind": "nested"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+          "kind": "enum",
+          "variants": []
+        },
+        {
+          "type": "event",
+          "name": "jokers_of_neon_classic::specials::poker_hand::rage_breaker::special_rage_breaker::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "UpgradeableEvent",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+              "kind": "nested"
+            },
+            {
+              "name": "WorldProviderEvent",
+              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+              "kind": "nested"
+            }
+          ]
+        }
+      ],
+      "init_calldata": [],
+      "tag": "jokers_of_neon_classic-special_rage_breaker",
+      "selector": "0x2f0e0a417ada96cd7431a84134760c6e37c28dda9c87d42297d75768ae17204",
+      "systems": [
+        "execute",
+        "upgrade"
+      ]
+    },
+    {
+      "address": "0x49fed8961597ce0c967f2c8195e4ace0e63464bbcc66fc8e220462198697669",
+      "class_hash": "0x1c2ed17a07a64c1039d669360350daa700081b91003139286392497099576d5",
+      "abi": [
+        {
+          "type": "impl",
+          "name": "special_rainbow__ContractImpl",
+          "interface_name": "dojo::contract::interface::IContract"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::interface::IContract",
+          "items": []
+        },
+        {
+          "type": "impl",
+          "name": "special_rainbow__DeployedContractImpl",
+          "interface_name": "dojo::meta::interface::IDeployedResource"
+        },
+        {
+          "type": "struct",
+          "name": "core::byte_array::ByteArray",
+          "members": [
+            {
+              "name": "data",
+              "type": "core::array::Array::<core::bytes_31::bytes31>"
+            },
+            {
+              "name": "pending_word",
+              "type": "core::felt252"
+            },
+            {
+              "name": "pending_word_len",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::meta::interface::IDeployedResource",
+          "items": [
+            {
+              "type": "function",
+              "name": "dojo_name",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::byte_array::ByteArray"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "RainbowExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
+          "variants": [
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Rage",
+              "type": "()"
+            },
+            {
+              "name": "Reward",
+              "type": "()"
+            },
+            {
+              "name": "Challenge",
+              "type": "()"
+            },
+            {
+              "name": "Map",
+              "type": "()"
+            },
+            {
+              "name": "Store",
+              "type": "()"
+            },
+            {
+              "name": "Lootbox",
+              "type": "()"
+            },
+            {
+              "name": "GameOver",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
+          "members": [
+            {
+              "name": "id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "mod_id",
+              "type": "core::felt252"
+            },
+            {
+              "name": "state",
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
+            },
+            {
+              "name": "owner",
+              "type": "core::starknet::contract_address::ContractAddress"
+            },
+            {
+              "name": "player_name",
+              "type": "core::felt252"
+            },
+            {
+              "name": "player_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "level",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "hand_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "plays",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "discards",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cash",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "available_rerolls",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<core::integer::u32>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<core::integer::u32>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::round::round::Round",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "current_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "target_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "remaining_plays",
+              "type": "core::integer::u16"
+            },
+            {
+              "name": "remaining_discards",
+              "type": "core::integer::u16"
+            },
+            {
+              "name": "rages",
+              "type": "core::array::Span::<core::integer::u32>"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "RoyalFlush",
+              "type": "()"
+            },
+            {
+              "name": "StraightFlush",
+              "type": "()"
+            },
+            {
+              "name": "FiveOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "FourOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "FullHouse",
+              "type": "()"
+            },
+            {
+              "name": "Straight",
+              "type": "()"
+            },
+            {
+              "name": "Flush",
+              "type": "()"
+            },
+            {
+              "name": "ThreeOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "TwoPair",
+              "type": "()"
+            },
+            {
+              "name": "OnePair",
+              "type": "()"
+            },
+            {
+              "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "Info",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "Clubs",
+              "type": "()"
+            },
+            {
+              "name": "Diamonds",
+              "type": "()"
+            },
+            {
+              "name": "Hearts",
+              "type": "()"
+            },
+            {
+              "name": "Spades",
+              "type": "()"
+            },
+            {
+              "name": "Joker",
+              "type": "()"
+            },
+            {
+              "name": "Wild",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "Two",
+              "type": "()"
+            },
+            {
+              "name": "Three",
+              "type": "()"
+            },
+            {
+              "name": "Four",
+              "type": "()"
+            },
+            {
+              "name": "Five",
+              "type": "()"
+            },
+            {
+              "name": "Six",
+              "type": "()"
+            },
+            {
+              "name": "Seven",
+              "type": "()"
+            },
+            {
+              "name": "Eight",
+              "type": "()"
+            },
+            {
+              "name": "Nine",
+              "type": "()"
+            },
+            {
+              "name": "Ten",
+              "type": "()"
+            },
+            {
+              "name": "Jack",
+              "type": "()"
+            },
+            {
+              "name": "Queen",
+              "type": "()"
+            },
+            {
+              "name": "King",
+              "type": "()"
+            },
+            {
+              "name": "Ace",
+              "type": "()"
+            },
+            {
+              "name": "Joker",
+              "type": "()"
+            },
+            {
+              "name": "NeonJoker",
+              "type": "()"
+            },
+            {
+              "name": "Wild",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
+          "members": [
+            {
+              "name": "id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "suit",
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
+            },
+            {
+              "name": "value",
+              "type": "jokers_of_neon_lib::models::data::card::Value"
+            },
+            {
+              "name": "points",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "multi_add",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "idx",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "effect_card_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "is_temporary",
+              "type": "core::bool"
+            },
+            {
+              "name": "remaining",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "selling_price",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::PurchaseTracker",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "traditonal_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "modifier_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "loot_boxes_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "power_up_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "level_poker_hands_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "burn_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "reroll_count",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::GameTracker",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "power_ups_used",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "highest_hand",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -43372,8 +45332,8 @@
       ]
     },
     {
-      "address": "0x2d3f6c3590b9caef8323bfb5c6b1d9fad0188f79027a511cc428798cb1ba5d0",
-      "class_hash": "0x15cb0b04daf50dcbae97beb514374a1340763eb2d4795c4c462895093d4dec7",
+      "address": "0x79c235cf01e560d251d702eb3095d354e0af537aceb5465d274b8aaae095b9a",
+      "class_hash": "0x61a4645af760230f3bdea0f000467abb25f07a697d50bc825f5d08cf3d8d691",
       "abi": [
         {
           "type": "impl",
@@ -43531,6 +45491,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -43989,7 +45953,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -44268,8 +46232,8 @@
       ]
     },
     {
-      "address": "0x5732711b423bc7dd8eda2c2c19af2813f9b10435cc55b6c87dc88976387309",
-      "class_hash": "0x68799f66685c3149d60edefa6e743bcaffb7acb9b8eb194b91834c9c9d84fe1",
+      "address": "0x20f31e2ee6da67ba3c3d30575ecfd4533f449ae2586b7f14a07f55d4b417371",
+      "class_hash": "0x7f52040c6a0bceb7c5587fa0641cd377305253b5c8d8e62ce0da8a2c496d8cf",
       "abi": [
         {
           "type": "impl",
@@ -44427,6 +46391,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -44885,7 +46853,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -45164,8 +47132,8 @@
       ]
     },
     {
-      "address": "0x107ca26460332c90e2eaa9325369dbc87e4c0a25c59bc68560bcf00cf3b4e22",
-      "class_hash": "0x7c89dbb185b65a47bb7f70c7806f2a489b43389ef7e9b8d7827422cafd42c52",
+      "address": "0x6dde101270f26ada33fbfc5244d3074f8f3eb286124117058920e753c0b1d55",
+      "class_hash": "0x6ca0d24082f59e09a58d29672cda5cb2ed4a846a5eb005c34827b51ac289dcb",
       "abi": [
         {
           "type": "impl",
@@ -45323,6 +47291,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -45781,7 +47753,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -46060,8 +48032,8 @@
       ]
     },
     {
-      "address": "0xfc96db3845d69888c57f571bf7c032a87fb6383410331d0630608726b6da3f",
-      "class_hash": "0x67f763c5dc57bd67d36b818376431910d0749572870098b77f11b25060568dd",
+      "address": "0x2dd395ff4e72290cb35fac0824cfc8ef59e6ffa56ef435e4b214a8370b921e7",
+      "class_hash": "0x6ce55146340d7fb46876014e1f8c83664846c7c0137f95cc870469e5317f8ac",
       "abi": [
         {
           "type": "impl",
@@ -46219,6 +48191,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -46677,7 +48653,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -46956,8 +48932,8 @@
       ]
     },
     {
-      "address": "0x469d9ecaa129839d657999dff0f1b9be26057dc4e03d4ce23a630e4ccea6b18",
-      "class_hash": "0x378eb4121d504f632215f1f375887b212b76161274a743b6ebb2fc5616522f8",
+      "address": "0x4187830a523254b5a3bf2a890e289c84bb03435893c8d7d268568466fdca79d",
+      "class_hash": "0x559bc994459e60e5c7c819376dfa714a8a23a5b93bfd0484d2c376ffde14237",
       "abi": [
         {
           "type": "impl",
@@ -47115,6 +49091,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -47573,7 +49553,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -47821,12 +49801,12 @@
       ]
     },
     {
-      "address": "0x2b85f34d7377e94b60b0f1af105e25960f375d6a533e1b441dfd54038cf8bb6",
-      "class_hash": "0x72d06d854515cf4191a9e53ae31cc305fb851bece534a1b2c5d332e85d0ccb9",
+      "address": "0x4dfbb4aab146fdf8f185d0ed0b95a224be80de8eaac066a8255c9a4abc81ac1",
+      "class_hash": "0x3c060b261dbcc19e1c2a84ee47e47cf7b9d7407090b53acc778b4df1cd93b73",
       "abi": [
         {
           "type": "impl",
-          "name": "special_scaling_factor__ContractImpl",
+          "name": "special_sacrifice__ContractImpl",
           "interface_name": "dojo::contract::interface::IContract"
         },
         {
@@ -47836,7 +49816,7 @@
         },
         {
           "type": "impl",
-          "name": "special_scaling_factor__DeployedContractImpl",
+          "name": "special_sacrifice__DeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -47876,7 +49856,7 @@
         },
         {
           "type": "impl",
-          "name": "DeadlineExecutable",
+          "name": "SacrificeExecutable",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
         },
         {
@@ -47980,6 +49960,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -48438,7 +50422,903 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::GameContext",
+          "members": [
+            {
+              "name": "game",
+              "type": "jokers_of_neon_lib::models::status::game::game::Game"
+            },
+            {
+              "name": "round",
+              "type": "jokers_of_neon_lib::models::status::round::round::Round"
+            },
+            {
+              "name": "hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "card_type",
+              "type": "jokers_of_neon_lib::models::card_type::CardType"
+            },
+            {
+              "name": "cards_played",
+              "type": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            },
+            {
+              "name": "cards_in_hand",
+              "type": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            },
+            {
+              "name": "cards_in_deck",
+              "type": "core::array::Span::<core::integer::u32>"
+            },
+            {
+              "name": "special_cards",
+              "type": "core::array::Span::<jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards>"
+            },
+            {
+              "name": "power_ups",
+              "type": "core::array::Span::<core::integer::u32>"
+            },
+            {
+              "name": "purchase_tracker",
+              "type": "jokers_of_neon_lib::models::tracker::PurchaseTracker"
+            },
+            {
+              "name": "game_tracker",
+              "type": "jokers_of_neon_lib::models::tracker::GameTracker"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable",
+          "items": [
+            {
+              "type": "function",
+              "name": "execute",
+              "inputs": [
+                {
+                  "name": "context",
+                  "type": "jokers_of_neon_lib::models::tracker::GameContext"
+                },
+                {
+                  "name": "raw_data",
+                  "type": "core::felt252"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                }
+              ],
+              "state_mutability": "external"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "SacrificeBase",
+          "interface_name": "jokers_of_neon_lib::interfaces::base::ICardBase"
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<jokers_of_neon_lib::models::card_type::CardType>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<jokers_of_neon_lib::models::card_type::CardType>"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::base::ICardBase",
+          "items": [
+            {
+              "type": "function",
+              "name": "get_id",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::integer::u32"
+                }
+              ],
+              "state_mutability": "view"
+            },
+            {
+              "type": "function",
+              "name": "get_types",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::array::Span::<jokers_of_neon_lib::models::card_type::CardType>"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "SacrificeInfo",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::info::ICardInfo"
+        },
+        {
+          "type": "interface",
+          "name": "jokers_of_neon_lib::interfaces::cards::info::ICardInfo",
+          "items": [
+            {
+              "type": "function",
+              "name": "values",
+              "inputs": [
+                {
+                  "name": "game_id",
+                  "type": "core::integer::u32"
+                }
+              ],
+              "outputs": [
+                {
+                  "type": "(core::integer::i32, core::integer::i32, core::integer::i32)"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "function",
+          "name": "dojo_init",
+          "inputs": [],
+          "outputs": [],
+          "state_mutability": "view"
+        },
+        {
+          "type": "impl",
+          "name": "WorldProviderImpl",
+          "interface_name": "dojo::contract::components::world_provider::IWorldProvider"
+        },
+        {
+          "type": "struct",
+          "name": "dojo::world::iworld::IWorldDispatcher",
+          "members": [
+            {
+              "name": "contract_address",
+              "type": "core::starknet::contract_address::ContractAddress"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::world_provider::IWorldProvider",
+          "items": [
+            {
+              "type": "function",
+              "name": "world_dispatcher",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "dojo::world::iworld::IWorldDispatcher"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "UpgradeableImpl",
+          "interface_name": "dojo::contract::components::upgradeable::IUpgradeable"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::components::upgradeable::IUpgradeable",
+          "items": [
+            {
+              "type": "function",
+              "name": "upgrade",
+              "inputs": [
+                {
+                  "name": "new_class_hash",
+                  "type": "core::starknet::class_hash::ClassHash"
+                }
+              ],
+              "outputs": [],
+              "state_mutability": "external"
+            }
+          ]
+        },
+        {
+          "type": "constructor",
+          "name": "constructor",
+          "inputs": []
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+          "kind": "struct",
+          "members": [
+            {
+              "name": "class_hash",
+              "type": "core::starknet::class_hash::ClassHash",
+              "kind": "data"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "Upgraded",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Upgraded",
+              "kind": "nested"
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "name": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+          "kind": "enum",
+          "variants": []
+        },
+        {
+          "type": "event",
+          "name": "jokers_of_neon_classic::specials::poker_hand::sacrifice::special_sacrifice::Event",
+          "kind": "enum",
+          "variants": [
+            {
+              "name": "UpgradeableEvent",
+              "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+              "kind": "nested"
+            },
+            {
+              "name": "WorldProviderEvent",
+              "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+              "kind": "nested"
+            }
+          ]
+        }
+      ],
+      "init_calldata": [],
+      "tag": "jokers_of_neon_classic-special_sacrifice",
+      "selector": "0x48c5ef87bcab6582f6206b59861e1bde66b71f2e02a452994b0b62e31ce17ac",
+      "systems": [
+        "execute",
+        "upgrade"
+      ]
+    },
+    {
+      "address": "0x7e0e46617543439c8ba933397a4fdbec26e38671028a511463c9c2f3b8ae7dd",
+      "class_hash": "0x3c551ca5ae38f30174efb0a1bf0791504daeb4b3efd7543a99cc7d7d675e382",
+      "abi": [
+        {
+          "type": "impl",
+          "name": "special_scaling_factor__ContractImpl",
+          "interface_name": "dojo::contract::interface::IContract"
+        },
+        {
+          "type": "interface",
+          "name": "dojo::contract::interface::IContract",
+          "items": []
+        },
+        {
+          "type": "impl",
+          "name": "special_scaling_factor__DeployedContractImpl",
+          "interface_name": "dojo::meta::interface::IDeployedResource"
+        },
+        {
+          "type": "struct",
+          "name": "core::byte_array::ByteArray",
+          "members": [
+            {
+              "name": "data",
+              "type": "core::array::Array::<core::bytes_31::bytes31>"
+            },
+            {
+              "name": "pending_word",
+              "type": "core::felt252"
+            },
+            {
+              "name": "pending_word_len",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "interface",
+          "name": "dojo::meta::interface::IDeployedResource",
+          "items": [
+            {
+              "type": "function",
+              "name": "dojo_name",
+              "inputs": [],
+              "outputs": [
+                {
+                  "type": "core::byte_array::ByteArray"
+                }
+              ],
+              "state_mutability": "view"
+            }
+          ]
+        },
+        {
+          "type": "impl",
+          "name": "DeadlineExecutable",
+          "interface_name": "jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable"
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::status::game::game::GameState",
+          "variants": [
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Rage",
+              "type": "()"
+            },
+            {
+              "name": "Reward",
+              "type": "()"
+            },
+            {
+              "name": "Challenge",
+              "type": "()"
+            },
+            {
+              "name": "Map",
+              "type": "()"
+            },
+            {
+              "name": "Store",
+              "type": "()"
+            },
+            {
+              "name": "Lootbox",
+              "type": "()"
+            },
+            {
+              "name": "GameOver",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::game::game::Game",
+          "members": [
+            {
+              "name": "id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "mod_id",
+              "type": "core::felt252"
+            },
+            {
+              "name": "state",
+              "type": "jokers_of_neon_lib::models::status::game::game::GameState"
+            },
+            {
+              "name": "owner",
+              "type": "core::starknet::contract_address::ContractAddress"
+            },
+            {
+              "name": "player_name",
+              "type": "core::felt252"
+            },
+            {
+              "name": "player_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "level",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "hand_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "plays",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "discards",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "current_specials_len",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_slots",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cash",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "available_rerolls",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<core::integer::u32>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<core::integer::u32>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::round::round::Round",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "current_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "target_score",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "remaining_plays",
+              "type": "core::integer::u16"
+            },
+            {
+              "name": "remaining_discards",
+              "type": "core::integer::u16"
+            },
+            {
+              "name": "rages",
+              "type": "core::array::Span::<core::integer::u32>"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::poker_hand::PokerHand",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "RoyalFlush",
+              "type": "()"
+            },
+            {
+              "name": "StraightFlush",
+              "type": "()"
+            },
+            {
+              "name": "FiveOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "FourOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "FullHouse",
+              "type": "()"
+            },
+            {
+              "name": "Straight",
+              "type": "()"
+            },
+            {
+              "name": "Flush",
+              "type": "()"
+            },
+            {
+              "name": "ThreeOfAKind",
+              "type": "()"
+            },
+            {
+              "name": "TwoPair",
+              "type": "()"
+            },
+            {
+              "name": "OnePair",
+              "type": "()"
+            },
+            {
+              "name": "HighCard",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::card_type::CardType",
+          "variants": [
+            {
+              "name": "PreCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "PostCalculateHand",
+              "type": "()"
+            },
+            {
+              "name": "Hit",
+              "type": "()"
+            },
+            {
+              "name": "Miss",
+              "type": "()"
+            },
+            {
+              "name": "Hand",
+              "type": "()"
+            },
+            {
+              "name": "CurrentHand",
+              "type": "()"
+            },
+            {
+              "name": "PowerUp",
+              "type": "()"
+            },
+            {
+              "name": "RoundState",
+              "type": "()"
+            },
+            {
+              "name": "Win",
+              "type": "()"
+            },
+            {
+              "name": "Lose",
+              "type": "()"
+            },
+            {
+              "name": "Discard",
+              "type": "()"
+            },
+            {
+              "name": "Round",
+              "type": "()"
+            },
+            {
+              "name": "Game",
+              "type": "()"
+            },
+            {
+              "name": "Shop",
+              "type": "()"
+            },
+            {
+              "name": "LevelUpPlay",
+              "type": "()"
+            },
+            {
+              "name": "PlayRules",
+              "type": "()"
+            },
+            {
+              "name": "PokerHand",
+              "type": "()"
+            },
+            {
+              "name": "Debuff",
+              "type": "()"
+            },
+            {
+              "name": "Silence",
+              "type": "()"
+            },
+            {
+              "name": "Info",
+              "type": "()"
+            },
+            {
+              "name": "None",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::card::Suit",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "Clubs",
+              "type": "()"
+            },
+            {
+              "name": "Diamonds",
+              "type": "()"
+            },
+            {
+              "name": "Hearts",
+              "type": "()"
+            },
+            {
+              "name": "Spades",
+              "type": "()"
+            },
+            {
+              "name": "Joker",
+              "type": "()"
+            },
+            {
+              "name": "Wild",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "jokers_of_neon_lib::models::data::card::Value",
+          "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
+            {
+              "name": "Two",
+              "type": "()"
+            },
+            {
+              "name": "Three",
+              "type": "()"
+            },
+            {
+              "name": "Four",
+              "type": "()"
+            },
+            {
+              "name": "Five",
+              "type": "()"
+            },
+            {
+              "name": "Six",
+              "type": "()"
+            },
+            {
+              "name": "Seven",
+              "type": "()"
+            },
+            {
+              "name": "Eight",
+              "type": "()"
+            },
+            {
+              "name": "Nine",
+              "type": "()"
+            },
+            {
+              "name": "Ten",
+              "type": "()"
+            },
+            {
+              "name": "Jack",
+              "type": "()"
+            },
+            {
+              "name": "Queen",
+              "type": "()"
+            },
+            {
+              "name": "King",
+              "type": "()"
+            },
+            {
+              "name": "Ace",
+              "type": "()"
+            },
+            {
+              "name": "Joker",
+              "type": "()"
+            },
+            {
+              "name": "NeonJoker",
+              "type": "()"
+            },
+            {
+              "name": "Wild",
+              "type": "()"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::data::card::Card",
+          "members": [
+            {
+              "name": "id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "suit",
+              "type": "jokers_of_neon_lib::models::data::card::Suit"
+            },
+            {
+              "name": "value",
+              "type": "jokers_of_neon_lib::models::data::card::Value"
+            },
+            {
+              "name": "points",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "multi_add",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::bool, core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<(core::integer::u32, jokers_of_neon_lib::models::data::card::Card)>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "idx",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "effect_card_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "is_temporary",
+              "type": "core::bool"
+            },
+            {
+              "name": "remaining",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "selling_price",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "core::array::Span::<jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards>",
+          "members": [
+            {
+              "name": "snapshot",
+              "type": "@core::array::Array::<jokers_of_neon_lib::models::status::game::game::CurrentSpecialCards>"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::PurchaseTracker",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "traditonal_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "modifier_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "loot_boxes_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "power_up_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "level_poker_hands_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "burn_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "reroll_count",
+              "type": "core::integer::u32"
+            }
+          ]
+        },
+        {
+          "type": "struct",
+          "name": "jokers_of_neon_lib::models::tracker::GameTracker",
+          "members": [
+            {
+              "name": "game_id",
+              "type": "core::integer::u64"
+            },
+            {
+              "name": "power_ups_used",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "highest_hand",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -48686,8 +51566,8 @@
       ]
     },
     {
-      "address": "0x1c51b442ac6149c41b6b88d37162a5df309cb2c5e1598db9ca3d2701d63e868",
-      "class_hash": "0x491496132d59542062526502f55846bd0b349509433057f022fd17b4b1920d1",
+      "address": "0xd18d0a72d708defd0c5cd8f94a4eeaff2dde987b46dc8dedc87110aaadd8df",
+      "class_hash": "0x6f716b234370c14bda214703b7e49a20bb8d524bd7f888fbb15629ed868b677",
       "abi": [
         {
           "type": "impl",
@@ -48845,6 +51725,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -49303,7 +52187,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -49547,8 +52431,8 @@
       ]
     },
     {
-      "address": "0x111fb3a846cf65eea689db129c0c10926cff77c364b3b36b75e2eb1ec10761a",
-      "class_hash": "0x19b6cbe480b1e3ce65438a670fd2e9d642adc6463489314cdd6e71083d74e46",
+      "address": "0x693b97df2ed449104ce6703cb72d5854dd4e1b739726ab55e3f4813cc7a46b8",
+      "class_hash": "0x25c3ecce9a32c13d63a0dd83af4dc0b706fc48f19d01db88da30171cb874f3c",
       "abi": [
         {
           "type": "impl",
@@ -49706,6 +52590,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -50164,7 +53052,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -50412,8 +53300,8 @@
       ]
     },
     {
-      "address": "0x1351bcc15e0ab1e86dd1f2a41dead3564901d21e27e6531f4a389dffd09dc46",
-      "class_hash": "0x2237009ee9f00e19f45a3a3200472331f89dc6fd01449a8e66c30632c031188",
+      "address": "0x40e82d225b962265d50fa88e21eebad073ef984826c6513f4627123840a20fe",
+      "class_hash": "0x795b2d4066fda2b57d93ef8ec8a5ece34c704c89443683e1593f936191b81cb",
       "abi": [
         {
           "type": "impl",
@@ -50571,6 +53459,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -51029,7 +53921,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -51277,8 +54169,8 @@
       ]
     },
     {
-      "address": "0x369e088b03bb5c926c07b234e4a027a330d7e4a28cb7ca28ae57526ea63433e",
-      "class_hash": "0x3c806fcf45543e18301bdb491f5a79840ec75ebb8e07f627673551553e97661",
+      "address": "0x5ec933d337bda7290f98c4e6c62c75f5169a46f15d5b0d1f8c7f9336b5e1a7",
+      "class_hash": "0x56f3035c8279b7807a5a4459fc6e40c255e6a92d74b14ef469a776130a74c7",
       "abi": [
         {
           "type": "impl",
@@ -51436,6 +54328,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -51894,7 +54790,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -52173,8 +55069,8 @@
       ]
     },
     {
-      "address": "0x1c33e5f086014586d0bb50205e47647ff6cc89d818c451f98ee14c05b637cd9",
-      "class_hash": "0x450de7c553c7086a7d024cbe48e2cda08469eba597bc719b218b407e204e8c2",
+      "address": "0x42b13b47a99883c9190c34e9baf20fb4b9adf9a27772a103ca60814464e963b",
+      "class_hash": "0x6bd1553ddf3d541983e64a972c10a0802d4e13e8f0730a2a3f618a93d55f689",
       "abi": [
         {
           "type": "impl",
@@ -52332,6 +55228,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -52790,7 +55690,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -53069,8 +55969,8 @@
       ]
     },
     {
-      "address": "0x12eb3d6c492352231fb6cd674575897c4ff7e9be88bb2ffbf942b0135984f3f",
-      "class_hash": "0x5ba43e885c0748d509d47b5a320e1e31e62e1972f7ef3f2a4fdc914707ee3b0",
+      "address": "0x45e5753d86e28b7400ecc3801cc797805e4987e91d26204b4e5591857f87561",
+      "class_hash": "0x1928ef5ecc77c572400c690914c957d14ea8766e713752ecd877453534de6e3",
       "abi": [
         {
           "type": "impl",
@@ -53228,6 +56128,10 @@
             {
               "name": "available_rerolls",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "seed",
+              "type": "core::felt252"
             }
           ]
         },
@@ -53686,7 +56590,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_removed",
+              "name": "special_cards_sold",
               "type": "core::integer::u32"
             }
           ]
@@ -53965,8 +56869,8 @@
       ]
     },
     {
-      "address": "0x5105d9711e2d224fff3d2f23e4c7e937793a7d5a83b92a8067fcf3dfebb6ae",
-      "class_hash": "0x5e7019c73328f2d8918e3deeb327e9e9411b54ffacfe52b0d5037a053336463",
+      "address": "0x30e41e9c71084f735fb67586d502da354e816670b42f170c48260806447d2d2",
+      "class_hash": "0x23629cd2e2da9d1a920ca95acb5b513cf79dca297212a871572210057f93947",
       "abi": [
         {
           "type": "impl",
