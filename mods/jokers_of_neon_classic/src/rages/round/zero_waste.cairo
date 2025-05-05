@@ -25,7 +25,7 @@ pub mod rage_zero_waste {
             RAGE_CARD_ZERO_WASTE
         }
 
-        fn get_types(self: @ContractState) -> Span<CardType> { 
+        fn get_types(self: @ContractState) -> Span<CardType> {
             array![CardType::Round].span()
         }
     }
