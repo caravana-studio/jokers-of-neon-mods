@@ -2,13 +2,11 @@
 pub mod special_high_roller {
     use dojo::{model::ModelStorage, world::WorldStorage};
     use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_ROLLER_ID;
-    use jokers_of_neon_lib::random::{Nonce, RandomImpl};
+    use jokers_of_neon_lib::random::{Nonce, RandomTrait};
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::{executable::ICardExecutable, info::ICardInfo}},
         models::{data::poker_hand::{PokerHand}, {card_type::CardType, tracker::GameContext}},
     };
-
-    const NONCE_KEY: felt252 = 'NONCE_KEY';
 
     #[dojo::model]
     #[derive(Copy, Drop, Serde)]
@@ -26,14 +24,11 @@ pub mod special_high_roller {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(@"jokers_of_neon_classic");
 
-            let mut nonce: Nonce = world.read_model(NONCE_KEY);
-            let mut random = RandomImpl::new_salt(nonce.value);
-            nonce.value += 1;
-            world.write_model(@nonce);
+            let mut random = RandomTrait::new('jokers_of_neon_classic');
 
             let mut cumulative: Cumulative = world.read_model((context.game.id, HIGH_ROLLER_KEY));
             let value = cumulative.value;
-            let accumulate = random.between(1, 2) == 1; // 50% chance
+            let accumulate = random.get_random_number(2) == 1; // 50% chance
 
             if accumulate {
                 let (poker_hand, _) = context.hand;
