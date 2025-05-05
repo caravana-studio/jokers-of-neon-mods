@@ -7,7 +7,7 @@ pub mod special_slot_saver {
     #[abi(embed_v0)]
     impl SlotSaverExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            (((context.game.special_slots - context.game.current_specials_len) * 50).try_into().unwrap(), 0, 0)
+            (((context.game.special_slots - context.game.current_specials_len) * 100).try_into().unwrap(), 0, 0)
         }
     }
 
