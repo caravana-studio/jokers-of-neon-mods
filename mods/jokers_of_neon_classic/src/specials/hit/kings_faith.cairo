@@ -55,34 +55,6 @@ pub mod special_kings_faith {
         }
     }
 
-    // #[abi(embed_v0)]
-    // impl KingsFaithExecutable of ICardExecutable<ContractState> {
-    //     fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-    //         let mut world = self.world(@"jokers_of_neon_classic");
-
-    //         let mut nonce: Nonce = world.read_model(NONCE_KEY);
-    //         let mut random = RandomImpl::new_salt(nonce.value);
-    //         nonce.value += 1;
-    //         world.write_model(@nonce);
-
-    //         let mut cumulative: Cumulative = world.read_model((context.game.id, HIGH_ROLLER_KEY));
-    //         let value = cumulative.value;
-    //         let accumulate = random.between(1, 2) == 1; // 50% chance
-
-    //         if accumulate {
-    //             let (poker_hand, _) = context.hand;
-    //             match poker_hand {
-    //                 PokerHand::HighCard => {
-    //                     cumulative.value += 1;
-    //                     world.write_model(@cumulative);
-    //                 },
-    //                 _ => {},
-    //             };
-    //         }
-    //         (0, value, 0)
-    //     }
-    // }
-
     #[abi(embed_v0)]
     impl KingsFaithBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
