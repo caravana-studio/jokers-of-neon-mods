@@ -22,7 +22,7 @@ mod special_initial_advantage {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::RoundState].span()
+            array![CardType::Play].span()
         }
     }
 }

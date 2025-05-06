@@ -44,7 +44,7 @@ pub mod special_blackjack {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::PokerHand].span()
+            array![CardType::Play].span()
         }
     }
 }

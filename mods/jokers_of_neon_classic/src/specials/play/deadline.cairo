@@ -30,7 +30,7 @@ mod special_deadline {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::RoundState].span()
+            array![CardType::Play].span()
         }
     }
 }
