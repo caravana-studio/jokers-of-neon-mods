@@ -18,6 +18,7 @@ mod rages {
     }
     mod silence {
         mod aces;
+        mod betraying_the_weak;
         mod clubs;
         mod diamonds;
         mod figures;
@@ -42,15 +43,19 @@ mod specials {
         mod all_cards_to_hearts;
         mod deuces_wild;
         mod neon_doctrine;
+        mod relativity;
     }
     mod discard {
         mod wanted_joker;
     }
     mod hand {
+        mod quad_multiplier;
         mod twos_matter;
     }
     mod hit {
+        mod black_and_red;
         mod joker_booster;
+        mod kings_faith;
         mod lucky_hand;
         mod lucky_seven;
         mod multi_aces;
@@ -83,6 +88,7 @@ mod specials {
         mod increase_level_flush;
         mod increase_level_four_of_a_kind;
         mod increase_level_full_house;
+        mod increase_level_high_card;
         mod increase_level_pair;
         mod increase_level_straight;
         mod increase_level_three_of_a_kind;
