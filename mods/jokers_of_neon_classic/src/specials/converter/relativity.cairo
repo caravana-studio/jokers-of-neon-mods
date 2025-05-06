@@ -1,11 +1,12 @@
 #[dojo::contract]
 pub mod special_relativity {
     use jokers_of_neon_classic::specials::specials::SPECIAL_RELATIVITY_ID;
+    use jokers_of_neon_lib::constants::card::get_card;
     use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::converter::ICardConverter};
     use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, CardTrait, Suit, Value}, data::poker_hand::PokerHand, tracker::GameContext,
+        card_type::CardType, data::card::{Card, CardTrait, Suit, Value}, data::poker_hand::PokerHand,
+        tracker::GameContext,
     };
-    use jokers_of_neon_lib::constants::card::get_card;
 
 
     #[abi(embed_v0)]
