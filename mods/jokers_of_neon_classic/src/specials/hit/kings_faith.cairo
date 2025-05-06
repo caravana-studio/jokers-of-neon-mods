@@ -12,7 +12,6 @@ pub mod special_kings_faith {
 
     const NONCE_KEY: felt252 = 'NONCE_KEY';
 
-
     #[abi(embed_v0)]
     impl KingsFaithCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
@@ -25,32 +24,35 @@ pub mod special_kings_faith {
     impl KingsFaithExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(@"jokers_of_neon_classic");
-            if context.card_type == CardType::Hand {
-                let mut nonce: Nonce = world.read_model(NONCE_KEY);
-                let mut random = RandomImpl::new_salt(nonce.value);
-                nonce.value += 1;
-                world.write_model(@nonce);
 
-                let points = if random.between(1, 4) == 1 { // 25% chance
-                    100
-                } else {
-                    0
-                };
-                (points, 0, 0)
-            } else if context.card_type == CardType::Hit {
-                let mut nonce: Nonce = world.read_model(NONCE_KEY);
-                let mut random = RandomImpl::new_salt(nonce.value);
-                nonce.value += 1;
-                world.write_model(@nonce);
+            match context.card_type {
+                CardType::Hand => {
+                    let mut nonce: Nonce = world.read_model(NONCE_KEY);
+                    let mut random = RandomImpl::new_salt(nonce.value);
+                    nonce.value += 1;
+                    world.write_model(@nonce);
 
-                let cash = if random.between(1, 2) == 1 { // 50% chance
-                    100
-                } else {
-                    0
-                };
-                (0, 0, cash)
-            } else {
-                (0, 0, 0)
+                    let points = if random.between(1, 4) == 1 { // 25% chance
+                        100
+                    } else {
+                        0
+                    };
+                    (points, 0, 0)
+                },
+                CardType::Hit => {
+                    let mut nonce: Nonce = world.read_model(NONCE_KEY);
+                    let mut random = RandomImpl::new_salt(nonce.value);
+                    nonce.value += 1;
+                    world.write_model(@nonce);
+
+                    let cash = if random.between(1, 2) == 1 { // 50% chance
+                        100
+                    } else {
+                        0
+                    };
+                    (0, 0, cash)
+                },
+                _ => { (0, 0, 0) },
             }
         }
     }

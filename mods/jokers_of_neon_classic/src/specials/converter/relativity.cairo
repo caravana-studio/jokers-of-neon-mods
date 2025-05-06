@@ -8,7 +8,6 @@ pub mod special_relativity {
         tracker::GameContext,
     };
 
-
     #[abi(embed_v0)]
     impl RelativityConverter of ICardConverter<ContractState> {
         fn apply(ref self: ContractState, context: GameContext, cards: Span<Card>) -> Span<Card> {
