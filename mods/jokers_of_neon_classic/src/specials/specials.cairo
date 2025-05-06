@@ -123,7 +123,6 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_QUAD_MULTIPLIER_ID,
         SPECIAL_KINGS_FAITH_ID,
         SPECIAL_BLACK_AND_RED_ID,
-        SPECIAL_INCREASE_LEVEL_HIGH_CARD_ID,
     ]
 }
 
@@ -151,7 +150,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_QUAD_MULTIPLIER_ID,
         SPECIAL_KINGS_FAITH_ID,
         SPECIAL_BLACK_AND_RED_ID,
-        SPECIAL_INCREASE_LEVEL_HIGH_CARD_ID,
     ]
         .span();
 
