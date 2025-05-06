@@ -3,8 +3,10 @@ pub mod special_relativity {
     use jokers_of_neon_classic::specials::specials::SPECIAL_RELATIVITY_ID;
     use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::converter::ICardConverter};
     use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, Suit, Value}, data::poker_hand::PokerHand, tracker::GameContext,
+        card_type::CardType, data::card::{Card, CardTrait, Suit, Value}, data::poker_hand::PokerHand, tracker::GameContext,
     };
+    use jokers_of_neon_lib::constants::card::get_card;
+
 
     #[abi(embed_v0)]
     impl RelativityConverter of ICardConverter<ContractState> {
@@ -20,15 +22,15 @@ pub mod special_relativity {
                             let mut new_card = *card;
                             if new_card.suit != Suit::Joker && new_card.suit != Suit::Wild {
                                 if count == 0 {
-                                    new_card.value = Value::Ten;
+                                    new_card = get_card(CardTrait::generate_id(Value::Ten, new_card.suit));
                                 } else if count == 1 {
-                                    new_card.value = Value::Jack;
+                                    new_card = get_card(CardTrait::generate_id(Value::Jack, new_card.suit));
                                 } else if count == 2 {
-                                    new_card.value = Value::Queen;
+                                    new_card = get_card(CardTrait::generate_id(Value::Queen, new_card.suit));
                                 } else if count == 3 {
-                                    new_card.value = Value::King;
+                                    new_card = get_card(CardTrait::generate_id(Value::King, new_card.suit));
                                 } else {
-                                    new_card.value = Value::Ace;
+                                    new_card = get_card(CardTrait::generate_id(Value::Ace, new_card.suit));
                                 }
                             }
                             count = count + 1;
