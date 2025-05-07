@@ -144,9 +144,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_MULTIPLIER_ID,
         SPECIAL_TWOS_MATTER_ID,
         SPECIAL_SLOT_SAVER_ID,
-        SPECIAL_BURNING_REWARDS_ID,
-        SPECIAL_SACRIFICE_ID,
-        SPECIAL_RAGE_BREAKER_ID,
         SPECIAL_QUAD_MULTIPLIER_ID,
         SPECIAL_KINGS_FAITH_ID,
         SPECIAL_BLACK_AND_RED_ID,
@@ -186,6 +183,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_POINTS_FOR_FIGURES_ID,
         SPECIAL_ALL_CARDS_TO_HEARTS_ID,
         SPECIAL_DISCARD_MASTERY_ID,
+        SPECIAL_BURNING_REWARDS_ID,
         SPECIAL_SPADE_TRIO_ID,
         SPECIAL_RAINBOW_ID,
         SPECIAL_HIGH_ROLLER_ID,
@@ -201,7 +199,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_POWER_UP_BOOSTER_ID,
         SPECIAL_INITIAL_ADVANTAGE_ID,
         SPECIAL_SECOND_CHANCE_ID,
+        SPECIAL_RAGE_BREAKER_ID,
         SPECIAL_DEADLINE_ID,
+        SPECIAL_SACRIFICE_ID,
     ]
         .span();
 

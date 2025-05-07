@@ -24,7 +24,7 @@ pub mod special_rage_breaker {
             let mut world = self.world(@"jokers_of_neon_classic");
 
             let mut cumulative: Cumulative = world.read_model((context.game.id, RAGE_BREAKER_KEY));
-            cumulative.value = context.game_tracker.rage_wins.try_into().unwrap() * 3;
+            cumulative.value = context.game_tracker.rage_wins.try_into().unwrap() * 2;
             world.write_model(@cumulative);
             (0, cumulative.value, 0)
         }
