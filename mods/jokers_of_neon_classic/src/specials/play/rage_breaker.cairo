@@ -43,7 +43,7 @@ pub mod special_rage_breaker {
 
     #[abi(embed_v0)]
     impl RageBreakerInfo of ICardInfo<ContractState> {
-        fn values(self: @ContractState, game_id: u32) -> (i32, i32, i32) {
+        fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
             let mut world = self.world(@"jokers_of_neon_classic");
             let cumulative: Cumulative = world.read_model((game_id, RAGE_BREAKER_KEY));
             (0, cumulative.value, 0)
