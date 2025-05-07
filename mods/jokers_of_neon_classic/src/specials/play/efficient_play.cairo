@@ -11,7 +11,7 @@ pub mod special_efficient_play {
             if poker_hand == PokerHand::HighCard
                 || poker_hand == PokerHand::OnePair
                 || poker_hand == PokerHand::ThreeOfAKind {
-                (50, 15, 0)
+                (50, 10, 0)
             } else {
                 (0, 0, 0)
             }
