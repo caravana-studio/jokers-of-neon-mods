@@ -21,7 +21,7 @@ pub mod special_kings_faith {
     #[abi(embed_v0)]
     impl KingsFaithExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut random = RandomTrait::new('jokers_of_neon_classic');
+            let mut random = RandomTrait::create_random_instance('jokers_of_neon_classic');
             match context.card_type {
                 CardType::Hand => {
                     let points = if random.get_random_number(4) == 1 { // 25% chance

@@ -12,7 +12,7 @@ pub mod special_neon_doctrine {
     #[abi(embed_v0)]
     impl AllCardsToHeartsConverter of ICardConverter<ContractState> {
         fn apply(ref self: ContractState, context: GameContext, cards: Span<Card>) -> Span<Card> {
-            let mut random = RandomTrait::new('jokers_of_neon_classic');
+            let mut random = RandomTrait::create_random_instance('jokers_of_neon_classic');
             let mut cards = cards;
             let mut result = array![];
             loop {
