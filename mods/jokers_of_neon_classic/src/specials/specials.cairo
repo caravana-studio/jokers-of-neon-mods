@@ -57,17 +57,20 @@ const SPECIAL_SPADE_TRIO_ID: u32 = 360;
 const SPECIAL_TWOS_MATTER_ID: u32 = 361;
 
 const SPECIAL_QUAD_MULTIPLIER_ID: u32 = 364;
+const SPECIAL_JACKPOT_ID: u32 = 365;
 
 const SPECIAL_KINGS_FAITH_ID: u32 = 368;
-
+const SPECIAL_ARITHMOMANIA_ID: u32 = 369;
 const SPECIAL_BLACK_AND_RED_ID: u32 = 370;
 
+const SPECIAL_RISING_LADDER_ID: u32 = 372;
 const SPECIAL_RELATIVITY_ID: u32 = 373;
 const SPECIAL_WILD_BOOSTER_ID: u32 = 374;
 const SPECIAL_CASH_CATALYST_ID: u32 = 376;
 const SPECIAL_REDS_ID: u32 = 377;
 const SPECIAL_BLACKS_ID: u32 = 378;
 const SPECIAL_RAINBOW_ID: u32 = 379;
+const SPECIAL_QUEENS_FORTUNE_ID: u32 = 380;
 
 const SPECIAL_INCREASE_LEVEL_HIGH_CARD_ID: u32 = 384;
 
@@ -123,6 +126,10 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_QUAD_MULTIPLIER_ID,
         SPECIAL_KINGS_FAITH_ID,
         SPECIAL_BLACK_AND_RED_ID,
+        SPECIAL_JACKPOT_ID,
+        SPECIAL_ARITHMOMANIA_ID,
+        SPECIAL_RISING_LADDER_ID,
+        SPECIAL_QUEENS_FORTUNE_ID,
     ]
 }
 
@@ -147,6 +154,8 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_QUAD_MULTIPLIER_ID,
         SPECIAL_KINGS_FAITH_ID,
         SPECIAL_BLACK_AND_RED_ID,
+        SPECIAL_JACKPOT_ID,
+        SPECIAL_RISING_LADDER_ID,
     ]
         .span();
 
@@ -166,6 +175,8 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_EFFICIENT_PLAY_ID,
         SPECIAL_SCALING_FACTOR_ID,
         SPECIAL_WILD_BOOSTER_ID,
+        SPECIAL_ARITHMOMANIA_ID,
+        SPECIAL_QUEENS_FORTUNE_ID,
     ]
         .span();
 

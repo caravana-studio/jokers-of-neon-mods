@@ -49,6 +49,7 @@ mod specials {
         mod wanted_joker;
     }
     mod hand {
+        mod jackpot;
         mod quad_multiplier;
         mod twos_matter;
     }
@@ -65,6 +66,7 @@ mod specials {
         mod multi_for_spade;
         mod neon_bonus;
         mod points_for_figures;
+        mod queens_fortune;
         mod random_multi_for_club;
         mod random_multi_for_diamond;
         mod random_multi_for_heart;
@@ -73,6 +75,7 @@ mod specials {
     }
     mod miss {}
     mod play {
+        mod arithmomania;
         mod blackjack;
         mod blacks;
         mod burning_rewards;
@@ -97,6 +100,7 @@ mod specials {
         mod rage_breaker;
         mod rainbow;
         mod reds;
+        mod rising_ladder;
         mod sacrifice;
         mod scaling_factor;
         mod slot_saver;
