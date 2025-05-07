@@ -16,7 +16,7 @@ pub mod special_queens_fortune {
     impl QueensFortuneCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
             let card: Card = raw_data.into();
-            card.value == Value::King
+            card.value == Value::Queen
         }
     }
 
