@@ -15,6 +15,7 @@ mod rages {
     }
     mod round {
         mod zero_waste;
+        mod double_trouble;
     }
     mod silence {
         mod aces;
