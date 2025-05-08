@@ -13,7 +13,7 @@ pub mod rage_betraying_the_weak {
         }
 
         fn silenced_values(self: @ContractState) -> Span<Value> {
-            array![Value::Ace, Value::Two, Value::Three, Value::Four, Value::Five].span()
+            array![Value::Two, Value::Three, Value::Four, Value::Five].span()
         }
 
         fn silenced_ids(self: @ContractState) -> Span<u32> {
