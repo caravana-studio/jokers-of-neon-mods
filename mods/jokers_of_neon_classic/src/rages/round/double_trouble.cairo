@@ -1,5 +1,5 @@
 #[dojo::contract]
-pub mod RAGE_CARD_DOUBLE_TROUBLE {
+pub mod rage_double_trouble {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_DOUBLE_TROUBLE;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::equipable::ICardEquipable},
