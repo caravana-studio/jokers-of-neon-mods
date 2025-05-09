@@ -14,8 +14,8 @@ mod rages {
         mod strategic_quarted;
     }
     mod round {
-        mod zero_waste;
         mod double_trouble;
+        mod zero_waste;
     }
     mod silence {
         mod aces;

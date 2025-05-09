@@ -29,7 +29,7 @@ fn rages_ids_all() -> Array<u32> {
         RAGE_CARD_STRATEGIC_QUARTED,
         RAGE_CARD_SILENT_FIGURES,
         RAGE_CARD_BETRAYING_THE_WEAK,
-        RAGE_CARD_DOUBLE_TROUBLE
+        RAGE_CARD_DOUBLE_TROUBLE,
     ]
 }
 
@@ -59,7 +59,7 @@ fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
     let A_RAGES = array![RAGE_CARD_DIMINISHED_HOLD].span();
     let A_RAGES_REWARDS = 1000;
     let A_RAGES_LEVEL = 3;
-    
+
     // S-Grade Group
     let S_RAGES_PROBABILITY = 10;
     let S_RAGES = array![RAGE_CARD_ZERO_WASTE, RAGE_CARD_STRATEGIC_QUARTED].span();
