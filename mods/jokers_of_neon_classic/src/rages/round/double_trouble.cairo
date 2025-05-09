@@ -1,6 +1,6 @@
 #[dojo::contract]
-pub mod rage_double_trouble {
-    use jokers_of_neon_classic::rages::rages::RAGE_DOUBLE_TROUBLE;
+pub mod RAGE_CARD_DOUBLE_TROUBLE {
+    use jokers_of_neon_classic::rages::rages::RAGE_CARD_DOUBLE_TROUBLE;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::equipable::ICardEquipable},
         models::{card_type::CardType, tracker::GameContext},
@@ -22,7 +22,7 @@ pub mod rage_double_trouble {
     #[abi(embed_v0)]
     impl DoubleTroubleBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            RAGE_DOUBLE_TROUBLE
+            RAGE_CARD_DOUBLE_TROUBLE
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
