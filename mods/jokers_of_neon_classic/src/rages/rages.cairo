@@ -13,6 +13,7 @@ const RAGE_CARD_STRATEGIC_QUARTED: u32 = 409;
 const RAGE_CARD_SILENT_FIGURES: u32 = 412;
 const RAGE_CARD_SILENT_ACES: u32 = 413;
 
+const RAGE_CARD_DOUBLE_TROUBLE: u32 = 420;
 const RAGE_CARD_BETRAYING_THE_WEAK: u32 = 421;
 
 fn rages_ids_all() -> Array<u32> {
@@ -26,9 +27,9 @@ fn rages_ids_all() -> Array<u32> {
         RAGE_CARD_HAND_LEECH,
         RAGE_CARD_DIMINISHED_HOLD,
         RAGE_CARD_STRATEGIC_QUARTED,
-        RAGE_CARD_SILENT_ACES,
         RAGE_CARD_SILENT_FIGURES,
         RAGE_CARD_BETRAYING_THE_WEAK,
+        RAGE_CARD_DOUBLE_TROUBLE,
     ]
 }
 
@@ -40,7 +41,6 @@ fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
         RAGE_CARD_SILENT_CLUBS,
         RAGE_CARD_SILENT_DIAMONDS,
         RAGE_CARD_SILENT_SPADES,
-        RAGE_CARD_SILENT_ACES,
         RAGE_CARD_SILENT_FIGURES,
         RAGE_CARD_BETRAYING_THE_WEAK,
     ]
@@ -50,7 +50,7 @@ fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
 
     // B-Grade Group
     let B_RAGES_PROBABILITY = 25;
-    let B_RAGES = array![RAGE_CARD_SILENT_JOKERS, RAGE_CARD_HAND_LEECH].span();
+    let B_RAGES = array![RAGE_CARD_SILENT_JOKERS, RAGE_CARD_HAND_LEECH, RAGE_CARD_DOUBLE_TROUBLE].span();
     let B_RAGES_REWARDS = 750;
     let B_RAGES_LEVEL = 2;
 
@@ -59,6 +59,7 @@ fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
     let A_RAGES = array![RAGE_CARD_DIMINISHED_HOLD].span();
     let A_RAGES_REWARDS = 1000;
     let A_RAGES_LEVEL = 3;
+
     // S-Grade Group
     let S_RAGES_PROBABILITY = 10;
     let S_RAGES = array![RAGE_CARD_ZERO_WASTE, RAGE_CARD_STRATEGIC_QUARTED].span();
