@@ -1,7 +1,8 @@
 [package]
-cairo-version = "=2.9.2"
+cairo-version = "=2.9.4"
 name = "jokers_of_neon_classic"
 version = "0.19.0"
+edition = "2023_01"
 
 [cairo]
 sierra-replace-ids = true
@@ -11,7 +12,7 @@ sort-module-level-items = true
 max-line-length = 120
 
 [dependencies]
-dojo = { git = "https://github.com/dojoengine/dojo", tag = "v1.2.1" }
+dojo = { git = "https://github.com/dojoengine/dojo", tag = "v1.4.0" }
 jokers_of_neon_lib = { git = "https://github.com/caravana-studio/jokers-of-neon-lib", branch="develop" }
 
 [[target.starknet-contract]]
@@ -21,4 +22,4 @@ build-external-contracts = [
 ]
 
 [dev-dependencies]
-dojo_cairo_test = { git = "https://github.com/dojoengine/dojo", tag = "v1.2.1" }
+dojo_cairo_test = { git = "https://github.com/dojoengine/dojo", tag = "v1.4.0" }

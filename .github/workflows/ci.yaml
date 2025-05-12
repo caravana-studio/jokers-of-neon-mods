@@ -9,8 +9,8 @@ on:
     workflow_dispatch:
 
 env:
-  DOJO_VERSION: v1.2.1
-  SCARB_VERSION: v2.9.2
+  DOJO_VERSION: v1.4.0
+  SCARB_VERSION: v2.9.4
 
 jobs:
   check:
