@@ -23,6 +23,7 @@ mod rages {
         mod clubs;
         mod diamonds;
         mod figures;
+        mod flush;
         mod hearts;
         mod jokers;
         mod spades;

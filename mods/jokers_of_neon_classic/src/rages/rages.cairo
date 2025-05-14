@@ -16,6 +16,9 @@ const RAGE_CARD_SILENT_ACES: u32 = 413;
 const RAGE_CARD_DOUBLE_TROUBLE: u32 = 420;
 const RAGE_CARD_BETRAYING_THE_WEAK: u32 = 421;
 
+// TODO: Remove this
+const RAGE_CARD_FLUSH: u32 = 422;
+
 fn rages_ids_all() -> Array<u32> {
     array![
         RAGE_CARD_SILENT_HEARTS,
@@ -30,6 +33,7 @@ fn rages_ids_all() -> Array<u32> {
         RAGE_CARD_SILENT_FIGURES,
         RAGE_CARD_BETRAYING_THE_WEAK,
         RAGE_CARD_DOUBLE_TROUBLE,
+        RAGE_CARD_FLUSH,
     ]
 }
 
@@ -43,6 +47,7 @@ fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
         RAGE_CARD_SILENT_SPADES,
         RAGE_CARD_SILENT_FIGURES,
         RAGE_CARD_BETRAYING_THE_WEAK,
+        RAGE_CARD_FLUSH,
     ]
         .span();
     let C_RAGES_REWARDS = 500;
