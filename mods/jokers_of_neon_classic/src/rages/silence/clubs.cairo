@@ -3,7 +3,7 @@ pub mod rage_silent_clubs {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_SILENT_CLUBS;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, rages::silence::IRageSilence},
-        models::{card_type::CardType, data::card::{Suit, Value}, tracker::GameContext},
+        models::{card_type::CardType, data::card::{Suit, Value}, data::poker_hand::PokerHand, tracker::GameContext},
     };
 
     #[abi(embed_v0)]
@@ -17,6 +17,10 @@ pub mod rage_silent_clubs {
         }
 
         fn silenced_ids(self: @ContractState) -> Span<u32> {
+            array![].span()
+        }
+
+        fn silenced_hands(self: @ContractState, context: GameContext) -> Span<PokerHand> {
             array![].span()
         }
     }

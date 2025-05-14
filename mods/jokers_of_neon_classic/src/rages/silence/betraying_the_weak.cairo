@@ -3,7 +3,7 @@ pub mod rage_betraying_the_weak {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_BETRAYING_THE_WEAK;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, rages::silence::IRageSilence},
-        models::{card_type::CardType, data::card::{Suit, Value}},
+        models::{card_type::CardType, data::card::{Suit, Value}, data::poker_hand::PokerHand, tracker::GameContext},
     };
 
     #[abi(embed_v0)]
@@ -17,6 +17,10 @@ pub mod rage_betraying_the_weak {
         }
 
         fn silenced_ids(self: @ContractState) -> Span<u32> {
+            array![].span()
+        }
+
+        fn silenced_hands(self: @ContractState, context: GameContext) -> Span<PokerHand> {
             array![].span()
         }
     }
