@@ -53,18 +53,22 @@ pub mod game_config {
         }
 
         fn calculate_round_score(self: @ContractState, round: u32) -> u32 {
-            if round <= 2 {
+            if round <= 5 {
                 300 * round
-            } else if round <= 10 {
-                600 * round - 600
-            } else if round <= 20 {
-                1200 * round - 6600
-            } else if round <= 25 {
-                3000 * round - 42600
-            } else if round <= 30 {
-                7000 * round - 142600
+            } else if round <= 11 {
+                2400 + (round - 6) * 900
+            } else if round <= 18 {
+                10500 + (round - 12) * 3600
+            } else if round <= 26 {
+                50100 + (round - 19) * 18000
+            } else if round <= 35 {
+                284100 + (round - 27) * 108000
+            }  else if round <= 45 { 
+                1904100 + (round - 36) * 756000
+            }  else if round <= 56 {
+                14756100 + (round - 46) * 6048000 
             } else {
-                20000 * round - 532600
+                178052100 + (round - 57) * 54432000 
             }
         }
 
