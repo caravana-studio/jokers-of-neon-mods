@@ -49,7 +49,7 @@ pub mod special_manager {
             let mut store = StoreTrait::new(ref world);
             let special_data = store.get_special_data(mod_id, special_id);
 
-            assert(!special_data.contract_address.is_zero(), 'Special card not registered');
+            assert!(!special_data.contract_address.is_zero(), "Special card ({}) not registered", special_id);
             special_data.contract_address
         }
     }
