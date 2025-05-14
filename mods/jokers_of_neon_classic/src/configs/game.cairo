@@ -63,12 +63,12 @@ pub mod game_config {
                 50100 + (round - 19) * 18000
             } else if round <= 35 {
                 284100 + (round - 27) * 108000
-            }  else if round <= 45 { 
+            } else if round <= 45 {
                 1904100 + (round - 36) * 756000
-            }  else if round <= 56 {
-                14756100 + (round - 46) * 6048000 
+            } else if round <= 56 {
+                14756100 + (round - 46) * 6048000
             } else {
-                178052100 + (round - 57) * 54432000 
+                178052100 + (round - 57) * 54432000
             }
         }
 
