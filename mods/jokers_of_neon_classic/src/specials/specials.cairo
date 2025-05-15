@@ -148,9 +148,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_BLACKJACK_ID,
         SPECIAL_TWOS_MATTER_ID,
         SPECIAL_SLOT_SAVER_ID,
-        ]
+    ]
         .span();
-    
+
     // B-Grade Group
     let B_SPECIALS_PROBABILITY = 25;
     let B_SPECIALS_COST = 1750;
@@ -172,9 +172,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_ARITHMOMANIA_ID,
         SPECIAL_QUEENS_FORTUNE_ID,
         SPECIAL_JACKPOT_ID,
-        ]
+    ]
         .span();
-    
+
     // A-Grade Group
     let A_SPECIALS_PROBABILITY = 15;
     let A_SPECIALS_COST = 3500;
@@ -196,9 +196,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_RAINBOW_ID,
         SPECIAL_RISING_LADDER_ID,
         SPECIAL_HIGH_ROLLER_ID,
-        ]
+    ]
         .span();
-    
+
     // S-Grade Group
     let S_SPECIALS_PROBABILITY = 15;
     let S_SPECIALS_COST = 5000;
