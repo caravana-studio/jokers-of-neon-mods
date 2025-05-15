@@ -194,17 +194,17 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_POINTS_FOR_FIGURES_ID,
         SPECIAL_ALL_CARDS_TO_HEARTS_ID,
         SPECIAL_DISCARD_MASTERY_ID,
-        SPECIAL_BURNING_REWARDS_ID,
         SPECIAL_SPADE_TRIO_ID,
         SPECIAL_RAINBOW_ID,
         SPECIAL_HIGH_ROLLER_ID,
-    ]
+        ]
         .span();
-
+    
     // S-Grade Group
     let S_SPECIALS_PROBABILITY = 15;
     let S_SPECIALS_COST = 5000;
     let S_SPECIALS = array![
+        SPECIAL_BURNING_REWARDS_ID,
         SPECIAL_EXTRA_HELP_ID,
         SPECIAL_JOKER_BOOSTER_ID,
         SPECIAL_POWER_UP_BOOSTER_ID,

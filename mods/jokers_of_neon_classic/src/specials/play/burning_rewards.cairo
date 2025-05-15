@@ -24,7 +24,7 @@ pub mod special_burning_rewards {
             let mut world = self.world(@"jokers_of_neon_classic");
 
             let mut cumulative: Cumulative = world.read_model((context.game.id, BURNING_REWARDS_KEY));
-            cumulative.value = context.purchase_tracker.burn_count.try_into().unwrap() * 25;
+            cumulative.value = context.purchase_tracker.burn_count.try_into().unwrap() * 15;
             world.write_model(@cumulative);
             (cumulative.value, 0, 0)
         }
