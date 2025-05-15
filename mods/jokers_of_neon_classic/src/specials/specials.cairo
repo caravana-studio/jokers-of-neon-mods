@@ -150,7 +150,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_BLACKJACK_ID,
         SPECIAL_TWOS_MATTER_ID,
         SPECIAL_SLOT_SAVER_ID,
-        SPECIAL_RISING_LADDER_ID,
         ]
         .span();
     
@@ -204,6 +203,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     let S_SPECIALS_PROBABILITY = 15;
     let S_SPECIALS_COST = 5000;
     let S_SPECIALS = array![
+        SPECIAL_RISING_LADDER_ID,
         SPECIAL_HIGH_ROLLER_ID,
         SPECIAL_BURNING_REWARDS_ID,
         SPECIAL_EXTRA_HELP_ID,
