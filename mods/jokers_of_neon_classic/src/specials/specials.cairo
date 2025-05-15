@@ -168,7 +168,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_RANDOM_MULTI_FOR_CLUB_ID,
         SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID,
         SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
-        SPECIAL_EFFICIENT_PLAY_ID,
         SPECIAL_SCALING_FACTOR_ID,
         SPECIAL_WILD_BOOSTER_ID,
         SPECIAL_ARITHMOMANIA_ID,
@@ -180,6 +179,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     let A_SPECIALS_PROBABILITY = 15;
     let A_SPECIALS_COST = 3500;
     let A_SPECIALS = array![
+        SPECIAL_EFFICIENT_PLAY_ID,
         SPECIAL_JACKPOT_ID,
         SPECIAL_BLACK_AND_RED_ID,
         SPECIAL_QUAD_MULTIPLIER_ID,
