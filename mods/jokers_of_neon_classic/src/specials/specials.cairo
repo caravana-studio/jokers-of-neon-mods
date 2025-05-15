@@ -197,6 +197,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_SPADE_TRIO_ID,
         SPECIAL_RAINBOW_ID,
         SPECIAL_HIGH_ROLLER_ID,
+        SPECIAL_POWER_UP_BOOSTER_ID,
         ]
         .span();
     
@@ -207,7 +208,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_BURNING_REWARDS_ID,
         SPECIAL_EXTRA_HELP_ID,
         SPECIAL_JOKER_BOOSTER_ID,
-        SPECIAL_POWER_UP_BOOSTER_ID,
         SPECIAL_INITIAL_ADVANTAGE_ID,
         SPECIAL_SECOND_CHANCE_ID,
         SPECIAL_RAGE_BREAKER_ID,
