@@ -85,7 +85,6 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_INCREASE_LEVEL_STRAIGHT_ID,
         SPECIAL_INCREASE_LEVEL_FLUSH_ID,
         SPECIAL_JOKER_BOOSTER_ID,
-        SPECIAL_POWER_UP_BOOSTER_ID,
         SPECIAL_POINTS_FOR_FIGURES_ID,
         SPECIAL_MULTI_ACES_ID,
         SPECIAL_ALL_CARDS_TO_HEARTS_ID,
@@ -146,16 +145,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_INCREASE_LEVEL_DOUBLE_PAIR_ID,
         SPECIAL_LUCKY_HAND_ID,
         SPECIAL_WANTED_JOKER_ID,
-        SPECIAL_DECK_COLLECTOR_ID,
         SPECIAL_BLACKJACK_ID,
-        SPECIAL_MULTIPLIER_ID,
         SPECIAL_TWOS_MATTER_ID,
         SPECIAL_SLOT_SAVER_ID,
-        SPECIAL_QUAD_MULTIPLIER_ID,
-        SPECIAL_KINGS_FAITH_ID,
-        SPECIAL_BLACK_AND_RED_ID,
-        SPECIAL_JACKPOT_ID,
-        SPECIAL_RISING_LADDER_ID,
     ]
         .span();
 
@@ -163,6 +155,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     let B_SPECIALS_PROBABILITY = 25;
     let B_SPECIALS_COST = 1750;
     let B_SPECIALS = array![
+        SPECIAL_DECK_COLLECTOR_ID,
+        SPECIAL_KINGS_FAITH_ID,
+        SPECIAL_MULTIPLIER_ID,
         SPECIAL_INCREASE_LEVEL_STRAIGHT_ID,
         SPECIAL_INCREASE_LEVEL_FLUSH_ID,
         SPECIAL_MULTI_ACES_ID,
@@ -172,11 +167,11 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_RANDOM_MULTI_FOR_CLUB_ID,
         SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID,
         SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
-        SPECIAL_EFFICIENT_PLAY_ID,
         SPECIAL_SCALING_FACTOR_ID,
         SPECIAL_WILD_BOOSTER_ID,
         SPECIAL_ARITHMOMANIA_ID,
         SPECIAL_QUEENS_FORTUNE_ID,
+        SPECIAL_JACKPOT_ID,
     ]
         .span();
 
@@ -184,6 +179,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     let A_SPECIALS_PROBABILITY = 15;
     let A_SPECIALS_COST = 3500;
     let A_SPECIALS = array![
+        SPECIAL_EFFICIENT_PLAY_ID,
+        SPECIAL_BLACK_AND_RED_ID,
+        SPECIAL_QUAD_MULTIPLIER_ID,
         SPECIAL_PLUS_PLAYS_ID,
         SPECIAL_PLUS_DISCARDS_ID,
         SPECIAL_INCREASE_LEVEL_FULL_HOUSE_ID,
@@ -194,9 +192,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_POINTS_FOR_FIGURES_ID,
         SPECIAL_ALL_CARDS_TO_HEARTS_ID,
         SPECIAL_DISCARD_MASTERY_ID,
-        SPECIAL_BURNING_REWARDS_ID,
         SPECIAL_SPADE_TRIO_ID,
         SPECIAL_RAINBOW_ID,
+        SPECIAL_RISING_LADDER_ID,
         SPECIAL_HIGH_ROLLER_ID,
     ]
         .span();
@@ -205,9 +203,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     let S_SPECIALS_PROBABILITY = 15;
     let S_SPECIALS_COST = 5000;
     let S_SPECIALS = array![
+        SPECIAL_BURNING_REWARDS_ID,
         SPECIAL_EXTRA_HELP_ID,
         SPECIAL_JOKER_BOOSTER_ID,
-        SPECIAL_POWER_UP_BOOSTER_ID,
         SPECIAL_INITIAL_ADVANTAGE_ID,
         SPECIAL_SECOND_CHANCE_ID,
         SPECIAL_RAGE_BREAKER_ID,
