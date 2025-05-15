@@ -146,7 +146,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_INCREASE_LEVEL_DOUBLE_PAIR_ID,
         SPECIAL_LUCKY_HAND_ID,
         SPECIAL_WANTED_JOKER_ID,
-        SPECIAL_DECK_COLLECTOR_ID,
         SPECIAL_BLACKJACK_ID,
         SPECIAL_TWOS_MATTER_ID,
         SPECIAL_SLOT_SAVER_ID,
@@ -157,6 +156,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     let B_SPECIALS_PROBABILITY = 25;
     let B_SPECIALS_COST = 1750;
     let B_SPECIALS = array![
+        SPECIAL_DECK_COLLECTOR_ID,
         SPECIAL_KINGS_FAITH_ID,
         SPECIAL_MULTIPLIER_ID,
         SPECIAL_INCREASE_LEVEL_STRAIGHT_ID,
