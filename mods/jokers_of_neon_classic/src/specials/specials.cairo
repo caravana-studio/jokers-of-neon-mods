@@ -148,7 +148,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_WANTED_JOKER_ID,
         SPECIAL_DECK_COLLECTOR_ID,
         SPECIAL_BLACKJACK_ID,
-        SPECIAL_MULTIPLIER_ID,
         SPECIAL_TWOS_MATTER_ID,
         SPECIAL_SLOT_SAVER_ID,
         SPECIAL_QUAD_MULTIPLIER_ID,
@@ -156,13 +155,14 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_BLACK_AND_RED_ID,
         SPECIAL_JACKPOT_ID,
         SPECIAL_RISING_LADDER_ID,
-    ]
+        ]
         .span();
-
+    
     // B-Grade Group
     let B_SPECIALS_PROBABILITY = 25;
     let B_SPECIALS_COST = 1750;
     let B_SPECIALS = array![
+        SPECIAL_MULTIPLIER_ID,
         SPECIAL_INCREASE_LEVEL_STRAIGHT_ID,
         SPECIAL_INCREASE_LEVEL_FLUSH_ID,
         SPECIAL_MULTI_ACES_ID,
@@ -196,7 +196,6 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_DISCARD_MASTERY_ID,
         SPECIAL_SPADE_TRIO_ID,
         SPECIAL_RAINBOW_ID,
-        SPECIAL_HIGH_ROLLER_ID,
         SPECIAL_POWER_UP_BOOSTER_ID,
         ]
         .span();
@@ -205,6 +204,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     let S_SPECIALS_PROBABILITY = 15;
     let S_SPECIALS_COST = 5000;
     let S_SPECIALS = array![
+        SPECIAL_HIGH_ROLLER_ID,
         SPECIAL_BURNING_REWARDS_ID,
         SPECIAL_EXTRA_HELP_ID,
         SPECIAL_JOKER_BOOSTER_ID,
