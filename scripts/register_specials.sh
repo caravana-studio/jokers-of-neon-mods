@@ -3,6 +3,8 @@
 mod_name="$1"
 mod_id="$2"
 world_address="$3"
+namespace_mods="$4"
+
 # Check if specials.cairo exists
 if [ ! -f "src/specials/specials.cairo" ]; then
     echo "Error: src/specials/specials.cairo not found"
@@ -13,8 +15,8 @@ fi
 inspect_output=$(sozo inspect)
 
 # Create arrays directly
-special_names=($(echo "$inspect_output" | grep "${mod_name}-special_" | sed "s/${mod_name}-special_\([^ ]*\).*/\1/"))
-contract_addresses=($(echo "$inspect_output" | grep "${mod_name}-special_" | awk '{print $NF}'))
+special_names=($(echo "$inspect_output" | grep "\-special_" | awk -F'|' '{gsub(/^[ \t]+/, "", $1); print $1}' | sed 's/.*-special_//'))
+contract_addresses=($(echo "$inspect_output" | grep "\-special_" | awk -F'|' '{gsub(/^[ \t]+|[ \t]+$/, "", $5); print $5}'))
 
 # Create array for special IDs
 declare -a special_ids
@@ -38,5 +40,5 @@ world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
 
 # Execute sozo command
 # echo -e "\nExecuting sozo command..."
-sozo execute special_manager register_specials $mod_id arr:$special_ids_str arr:$contract_addresses_str --wait --world $world_address
+sozo execute $namespace_mods-special_manager register_specials $mod_id arr:$special_ids_str arr:$contract_addresses_str --wait --world $world_address
 echo -e "\n✅ Register specials finish!"
