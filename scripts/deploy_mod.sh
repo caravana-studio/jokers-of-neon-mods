@@ -60,7 +60,7 @@ fi
 
 # echo "sozo build && sozo inspect && sozo migrate"
 echo "Deploying contracts..."
-sozo build && sozo inspect && sozo migrate --fee ETH
+sozo build && sozo inspect && sozo migrate
 # sozo build && sozo inspect && sozo migrate --fee ETH
 
 # echo -e "\n✅ deploy mod finish!"
