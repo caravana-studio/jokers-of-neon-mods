@@ -46,7 +46,7 @@ NAMESPACE_MODS=$(get_env_var "NAMESPACE_MODS")
 # echo "PRIVATE_KEY=$PRIVATE_KEY"
 # echo "RPC_URL=$RPC_URL"
 # echo "WORLD_ADDRESS=$WORLD_ADDRESS"
-bash ../../scripts/replace_env.sh $mod_name $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
+bash ../../scripts/replace_env.sh $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
 
 rm -f Scarb.lock
 
@@ -65,7 +65,7 @@ sozo build && sozo inspect && sozo migrate
 
 # echo -e "\n✅ deploy mod finish!"
 
-bash ../../scripts/replace_manifest.sh $mod_name
+bash ../../scripts/replace_manifest.sh
 
 hex_value=$(echo -n "$mod_name" | xxd -p | tr -d '\n')
 mod_id=$(python3 -c "print(int('$hex_value', 16))")
