@@ -38,6 +38,7 @@ ACCOUNT_ADDRESS=$(get_env_var "ACCOUNT_ADDRESS")
 PRIVATE_KEY=$(get_env_var "PRIVATE_KEY")
 RPC_URL=$(get_env_var "RPC_URL")
 WORLD_ADDRESS=$(get_env_var "WORLD_ADDRESS")
+NAMESPACE_MODS=$(get_env_var "NAMESPACE_MODS")
 
 # Print the stored variables
 # echo "Variables loaded:"
@@ -45,7 +46,7 @@ WORLD_ADDRESS=$(get_env_var "WORLD_ADDRESS")
 # echo "PRIVATE_KEY=$PRIVATE_KEY"
 # echo "RPC_URL=$RPC_URL"
 # echo "WORLD_ADDRESS=$WORLD_ADDRESS"
-bash ../../scripts/replace_env.sh $mod_name $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
+bash ../../scripts/replace_env.sh $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
 
 rm -f Scarb.lock
 
@@ -60,11 +61,11 @@ fi
 # echo "sozo build && sozo inspect && sozo migrate"
 echo "Deploying contracts..."
 sozo build && sozo inspect && sozo migrate
+# sozo build && sozo inspect && sozo migrate --fee ETH
 
 # echo -e "\n✅ deploy mod finish!"
 
-bash ../../scripts/replace_manifest.sh $mod_name
-
+bash ../../scripts/replace_manifest.sh
 
 hex_value=$(echo -n "$mod_name" | xxd -p | tr -d '\n')
 mod_id=$(python3 -c "print(int('$hex_value', 16))")
@@ -74,13 +75,13 @@ mod_id=$(python3 -c "print(int('$hex_value', 16))")
 # echo "Valor decimal (felt252): $mod_id"
 # Create mod and store the mod_id
 echo -e "\nCreating mod..."
-bash ../../scripts/create_mod.sh $mod_name $ACCOUNT_ADDRESS $WORLD_ADDRESS $mod_id
+bash ../../scripts/create_mod.sh $mod_name $ACCOUNT_ADDRESS $WORLD_ADDRESS $mod_id $NAMESPACE_MODS
 
 echo -e "\nRegistering specials..."
-bash ../../scripts/register_specials.sh $mod_name $mod_id $WORLD_ADDRESS
+bash ../../scripts/register_specials.sh $mod_name $mod_id $WORLD_ADDRESS $NAMESPACE_MODS
 
 echo -e "\nRegistering rages..."
-bash ../../scripts/register_rages.sh $mod_name $mod_id $WORLD_ADDRESS
+bash ../../scripts/register_rages.sh $mod_name $mod_id $WORLD_ADDRESS $NAMESPACE_MODS
 
 echo -e "\n✅ All registrations completed!"
 
