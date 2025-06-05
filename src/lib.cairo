@@ -13,3 +13,5 @@ mod systems {
     mod rage_manager;
     mod special_manager;
 }
+
+mod constants;

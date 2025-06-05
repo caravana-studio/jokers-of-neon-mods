@@ -1,6 +1,7 @@
 #[dojo::contract]
 pub mod special_high_roller {
     use dojo::{model::ModelStorage, world::WorldStorage};
+    use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_ROLLER_ID;
     use jokers_of_neon_lib::random::{Nonce, RandomTrait};
     use jokers_of_neon_lib::{
@@ -22,7 +23,7 @@ pub mod special_high_roller {
     #[abi(embed_v0)]
     impl HighRollerExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut world = self.world(@"jokers_of_neon_classic");
+            let mut world = self.world(DEFAULT_NS());
 
             let mut random = RandomTrait::create_random_instance('jokers_of_neon_classic');
 
@@ -58,7 +59,7 @@ pub mod special_high_roller {
     #[abi(embed_v0)]
     impl HighRollerInfo of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
-            let mut world = self.world(@"jokers_of_neon_classic");
+            let mut world = self.world(DEFAULT_NS());
             let cumulative: Cumulative = world.read_model((game_id, HIGH_ROLLER_KEY));
             (0, cumulative.value, 0)
         }

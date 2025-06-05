@@ -119,3 +119,5 @@ mod utils {
     mod rages_info;
     mod specials_info;
 }
+
+mod constants;
