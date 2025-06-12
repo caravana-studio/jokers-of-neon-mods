@@ -18,7 +18,7 @@ pub mod special_random_multi_for_spade {
     #[abi(embed_v0)]
     impl RandomMultiSpadeExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut random = RandomTrait::create_random_instance('jokers_of_neon_classic');
+            let mut random = RandomTrait::initialize_random('jokers_of_neon_classic', context.game.seed);
             (0, random.between(-2, 6), 0)
         }
     }
