@@ -1,6 +1,7 @@
 #[dojo::contract]
 pub mod special_burning_rewards {
     use dojo::{model::ModelStorage, world::WorldStorage};
+    use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_BURNING_REWARDS_ID;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::{executable::ICardExecutable, info::ICardInfo}},
@@ -21,7 +22,7 @@ pub mod special_burning_rewards {
     #[abi(embed_v0)]
     impl BurningRewardsExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut world = self.world(@"jokers_of_neon_classic");
+            let mut world = self.world(DEFAULT_NS());
 
             let mut cumulative: Cumulative = world.read_model((context.game.id, BURNING_REWARDS_KEY));
             cumulative.value = context.purchase_tracker.burn_count.try_into().unwrap() * 15;
@@ -44,7 +45,7 @@ pub mod special_burning_rewards {
     #[abi(embed_v0)]
     impl BurningRewardsInfo of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
-            let mut world = self.world(@"jokers_of_neon_classic");
+            let mut world = self.world(DEFAULT_NS());
             let cumulative: Cumulative = world.read_model((game_id, BURNING_REWARDS_KEY));
             (cumulative.value, 0, 0)
         }

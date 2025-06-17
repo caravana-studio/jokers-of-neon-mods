@@ -7,27 +7,22 @@ pub mod special_neon_doctrine {
     use jokers_of_neon_lib::models::{
         card_type::CardType, data::card::{Card, CardTrait, Suit, Value}, tracker::GameContext,
     };
-    use jokers_of_neon_lib::random::{Nonce, RandomImpl};
-
-    const NONCE_KEY: felt252 = 'NONCE_KEY';
+    use jokers_of_neon_lib::random::{Nonce, RandomTrait};
 
     #[abi(embed_v0)]
     impl AllCardsToHeartsConverter of ICardConverter<ContractState> {
         fn apply(ref self: ContractState, context: GameContext, cards: Span<Card>) -> Span<Card> {
-            let mut world = self.world(@"jokers_of_neon_classic");
-            let mut nonce: Nonce = world.read_model(NONCE_KEY);
+            let mut random = RandomTrait::initialize_random('jokers_of_neon_classic', context.game.seed);
             let mut cards = cards;
             let mut result = array![];
             loop {
                 match cards.pop_front() {
                     Option::Some(card) => {
-                        let mut random = RandomImpl::new_salt(nonce.value);
-                        nonce.value += 1;
                         let mut new_card = *card;
                         if (new_card.id >= 0 && new_card.id <= 53)
                             || new_card.id == JOKER_CARD_ID
                             || new_card.id == WILD_CARD_ID {
-                            let converter = random.between(1, 4) == 1; // 25% chance
+                            let converter = random.get_random_number(4) == 1; // 25% chance
                             if converter {
                                 new_card = get_card(CardTrait::generate_neon_id(new_card.id));
                             }
@@ -37,7 +32,6 @@ pub mod special_neon_doctrine {
                     Option::None => { break; },
                 }
             };
-            world.write_model(@nonce);
             result.span()
         }
     }

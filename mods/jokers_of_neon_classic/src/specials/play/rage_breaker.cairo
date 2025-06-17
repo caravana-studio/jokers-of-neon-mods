@@ -1,6 +1,7 @@
 #[dojo::contract]
 pub mod special_rage_breaker {
     use dojo::{model::ModelStorage, world::WorldStorage};
+    use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_RAGE_BREAKER_ID;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::{executable::ICardExecutable, info::ICardInfo}},
@@ -21,7 +22,7 @@ pub mod special_rage_breaker {
     #[abi(embed_v0)]
     impl RageBreakerExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut world = self.world(@"jokers_of_neon_classic");
+            let mut world = self.world(DEFAULT_NS());
 
             let mut cumulative: Cumulative = world.read_model((context.game.id, RAGE_BREAKER_KEY));
             cumulative.value = context.game_tracker.rage_wins.try_into().unwrap() * 2;
@@ -44,7 +45,7 @@ pub mod special_rage_breaker {
     #[abi(embed_v0)]
     impl RageBreakerInfo of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
-            let mut world = self.world(@"jokers_of_neon_classic");
+            let mut world = self.world(DEFAULT_NS());
             let cumulative: Cumulative = world.read_model((game_id, RAGE_BREAKER_KEY));
             (0, cumulative.value, 0)
         }

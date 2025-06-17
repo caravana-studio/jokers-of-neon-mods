@@ -1,6 +1,7 @@
 #[dojo::contract]
 pub mod special_rising_ladder {
     use dojo::{model::ModelStorage, world::WorldStorage};
+    use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_RISING_LADDER_ID;
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::{executable::ICardExecutable, info::ICardInfo}},
@@ -21,7 +22,7 @@ pub mod special_rising_ladder {
     #[abi(embed_v0)]
     impl RisingLadderExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut world = self.world(@"jokers_of_neon_classic");
+            let mut world = self.world(DEFAULT_NS());
             let mut cumulative: Cumulative = world.read_model((context.game.id, RISING_LADDER_KEY));
             let value = cumulative.value;
 
@@ -51,7 +52,7 @@ pub mod special_rising_ladder {
     #[abi(embed_v0)]
     impl RisingLadderInfo of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
-            let mut world = self.world(@"jokers_of_neon_classic");
+            let mut world = self.world(DEFAULT_NS());
             let cumulative: Cumulative = world.read_model((game_id, RISING_LADDER_KEY));
             (cumulative.value, 0, 0)
         }
