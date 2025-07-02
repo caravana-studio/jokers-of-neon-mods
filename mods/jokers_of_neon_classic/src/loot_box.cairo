@@ -218,11 +218,11 @@ fn LOVERS_LOOT_BOX() -> LootBox {
             array![CardTrait::generate_id(Value::Ace, Suit::Hearts)].span(),
             array![SPECIAL_ALL_CARDS_TO_HEARTS_ID].span(),
             neon_hearts_cards().span(),
-            all_hearts_cards().span(),
             array![SUIT_HEARTS_MODIFIER_ID].span(),
+            all_hearts_cards().span(),
         ]
             .span(),
-        probs: array![100, 5, 25, 10, 60].span(),
+        probs: array![100, 5, 30, 10, 55].span(),
     }
 }
 
