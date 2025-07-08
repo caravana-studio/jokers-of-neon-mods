@@ -7,11 +7,15 @@ mod configs {
 }
 mod rages {
     mod rages;
-    mod debuff {}
+    mod debuff {
+        mod chaotic_variance;
+        mod debuff_flush;
+        mod obsessive_repetition;
+        mod strategic_quarted;
+    }
     mod game {
         mod diminished_hold;
         mod hand_leech;
-        mod strategic_quarted;
     }
     mod round {
         mod double_trouble;
