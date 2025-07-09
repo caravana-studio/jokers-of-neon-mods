@@ -12,8 +12,8 @@ sort-module-level-items = true
 max-line-length = 120
 
 [dependencies]
-dojo = { git = "https://github.com/dojoengine/dojo", tag = "v1.6.0-alpha.1" }
-jokers_of_neon_lib = { git = "https://github.com/caravana-studio/jokers-of-neon-lib", branch="develop" }
+dojo = { git = "https://github.com/dojoengine/dojo", tag = "v1.5.0" }
+jokers_of_neon_lib = { git = "https://github.com/caravana-studio/jokers-of-neon-lib", rev="e8815d26a7dfedd87b9e3be73137349ad597da08" }
 
 [[target.starknet-contract]]
 build-external-contracts = [
@@ -22,4 +22,4 @@ build-external-contracts = [
 ]
 
 [dev-dependencies]
-dojo_cairo_test = { git = "https://github.com/dojoengine/dojo", tag = "v1.6.0-alpha.1" }
+dojo_cairo_test = { git = "https://github.com/dojoengine/dojo", tag = "v1.5.0" }
