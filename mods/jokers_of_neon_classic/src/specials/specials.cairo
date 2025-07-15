@@ -177,7 +177,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
 
     // A-Grade Group
     let A_SPECIALS_PROBABILITY = 15;
-    let A_SPECIALS_COST = 100500;
+    let A_SPECIALS_COST = 3500;
     let A_SPECIALS = array![
         SPECIAL_EFFICIENT_PLAY_ID,
         SPECIAL_BLACK_AND_RED_ID,
