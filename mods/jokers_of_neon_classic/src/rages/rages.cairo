@@ -19,6 +19,7 @@ const RAGE_CARD_BETRAYING_THE_WEAK: u32 = 421;
 const RAGE_CARD_DEBUFF_FLUSH: u32 = 422;
 const RAGE_CARD_CHAOTIC_VARIANCE: u32 = 423;
 const RAGE_CARD_OBSESSIVE_REPETITION: u32 = 424;
+const RAGE_CARD_FAVORITE_LOCK: u32 = 425;
 
 fn rages_ids_all() -> Array<u32> {
     array![
