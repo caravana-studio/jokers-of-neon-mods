@@ -3,10 +3,10 @@ pub mod rage_chaotic_variance {
     use dojo::{model::ModelStorage, world::WorldStorage};
     use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_CHAOTIC_VARIANCE;
-    use jokers_of_neon_lib::interfaces::{
-        base::ICardBase, cards::condition::ICardCondition,
+    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::condition::ICardCondition};
+    use jokers_of_neon_lib::models::{
+        card_type::CardType, data::card::{Card, Suit}, data::poker_hand::PokerHand, tracker::GameContext,
     };
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}, data::poker_hand::PokerHand, tracker::GameContext};
 
     #[dojo::model]
     #[derive(Copy, Drop, Serde)]
@@ -20,18 +20,16 @@ pub mod rage_chaotic_variance {
     impl ChaoticVarianceCondition of ICardCondition<ContractState> {
         fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
             let (poker_hand, _) = context.hand;
-            
+
             let mut world = self.world(DEFAULT_NS());
             let mut cumulative: Cumulative = world.read_model(context.game.id);
 
             let mut temp_poker_hands = cumulative.poker_hands;
             let is_contain = loop {
                 match temp_poker_hands.pop_front() {
-                    Option::Some(temp_poker_hand) => {
-                        if *temp_poker_hand == poker_hand {
-                            break true;
-                        }
-                    },
+                    Option::Some(temp_poker_hand) => { if *temp_poker_hand == poker_hand {
+                        break true;
+                    } },
                     Option::None => { break false; },
                 }
             };
@@ -42,9 +40,7 @@ pub mod rage_chaotic_variance {
                 let mut new_poker_hands = array![];
                 loop {
                     match cumulative.poker_hands.pop_front() {
-                        Option::Some(temp_poker_hand) => {
-                            new_poker_hands.append(*temp_poker_hand);
-                        },
+                        Option::Some(temp_poker_hand) => { new_poker_hands.append(*temp_poker_hand); },
                         Option::None => { break; },
                     }
                 };
