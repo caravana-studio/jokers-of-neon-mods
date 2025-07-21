@@ -1,7 +1,7 @@
 {
   "world": {
-    "class_hash": "0x7c9469d45a9cdbab775035afb48e1fa73fb35ab059fcb9dfb0a301aa973e783",
-    "address": "0x685e0f9596d23e7aa98100ca2c5ec72fe7b491741c541f32893d825a03783b8",
+    "class_hash": "0x7746f30d2b8494780387ed469797ecb5c62c7b6f49f4939a5e60e0f7ae5f99e",
+    "address": "0x3f40fa19fc198576d29111122fd3144653a97fa7abfec506efaf74ea98d3c9c",
     "seed": "jokers_of_neon_mods",
     "name": "jokers_of_neon_mods",
     "entrypoints": [
@@ -693,6 +693,22 @@
           },
           {
             "type": "function",
+            "name": "owners_count",
+            "inputs": [
+              {
+                "name": "resource",
+                "type": "core::felt252"
+              }
+            ],
+            "outputs": [
+              {
+                "type": "core::integer::u64"
+              }
+            ],
+            "state_mutability": "view"
+          },
+          {
+            "type": "function",
             "name": "is_writer",
             "inputs": [
               {
@@ -1312,8 +1328,8 @@
   },
   "contracts": [
     {
-      "address": "0x40c94dc4045a151972d493a256dcb88139c125beb6e98b1a35c02144ca3f948",
-      "class_hash": "0x56bd9ea25ccd384fa8ae43ac77261d2fbabcf781b3305f4efe9ec5fa314458",
+      "address": "0x5260dd2d79a1884a1565b85612752007a627bc615094fb8261b6470c5096543",
+      "class_hash": "0x50c232b1ea01588c67a0ded8c2fe00989a7f7684824083d88932dd468e8120d",
       "abi": [
         {
           "type": "impl",
@@ -1705,8 +1721,8 @@
       ]
     },
     {
-      "address": "0x1931316e69e1b7ca9e148bf6dd28ae6fc609972b1a75e2ec41d0fe6d77ac378",
-      "class_hash": "0x292e51aa93b7530af37f71c887656e7d5cb05a52db5baaa03bf9ae782700b36",
+      "address": "0x623758feb3fcc666725a2aefb610fabadbdbe4d95c8a35c7c4ec7a0df6235c2",
+      "class_hash": "0x71caa45956501faa4646a2a141fc62cde05499f69e2277a64cc6f2c530bcaf6",
       "abi": [
         {
           "type": "impl",
@@ -1974,8 +1990,8 @@
       ]
     },
     {
-      "address": "0x16facdf4e2e44171c1f5a7c1bd7de423b7614999f86cb29ca698319c9d77bf0",
-      "class_hash": "0x7def46010638847e50d273b3871c64d3cdf502d1021cfa004017b97e4754064",
+      "address": "0x4ffa1c6e4c59fb1034cd9cfb1f51b0c0abd785c1c34a6a8a3f5b40690a90b94",
+      "class_hash": "0x37412ae58102704171e3963d127cdc95e47be3f60b2dc0ece0b747783d062ff",
       "abi": [
         {
           "type": "impl",
@@ -2247,37 +2263,37 @@
   "models": [
     {
       "members": [],
-      "class_hash": "0x1ad4ccb4e03123ed5882658413c63c6e84ab4da5731dfd84acd6caefd51f0d3",
+      "class_hash": "0x4d4cd7364ece56858339e7b5ca108d6aefd8a01faef8c38925dc4afd99d91b2",
       "tag": "jokers_of_neon_mods-GameMod",
       "selector": "0x7780c0a617454aeb11cb482af68ba50b9068cdaf0a23506b244d0dc512356d"
     },
     {
       "members": [],
-      "class_hash": "0x1a87c88ad212963070aa018275ba5edabb9b462460351b946ac48a504dfd219",
+      "class_hash": "0x64111a92233fcded4ad67b88f044569268334e27a40c2f404ac60fcc89a112b",
       "tag": "jokers_of_neon_mods-GameModMap",
       "selector": "0x4b76cecaa093842952c655e77cce012a5f9b9005f22eb447945487f742ec6ba"
     },
     {
       "members": [],
-      "class_hash": "0x27d0b68304652e0106654f8391e37b48daccdbea1ca58563dff3e27431f2fd9",
+      "class_hash": "0x19554fa0958305a8760bf8b4825847fe0dfa1d57df16d5944353307989366e0",
       "tag": "jokers_of_neon_mods-ModConfig",
       "selector": "0x26a71fa368dab860d69ad69d90cdde591bf7d51c87d0d2853986e2b6ada2d50"
     },
     {
       "members": [],
-      "class_hash": "0x6bb91dfcebb5e63c82f4f58563e23d167f1431eb3b8bd4c8e11d7cd604236b5",
+      "class_hash": "0x646bdc40e8ebb9f72dbcb8c1d5560b60a5c82130ee80d2d005ba9d5a840e6a4",
       "tag": "jokers_of_neon_mods-ModTracker",
       "selector": "0x6ebfe51ebfe085cc13cd3e025cd06d6ceeac6365f3f139a0a8019f95fe4a75d"
     },
     {
       "members": [],
-      "class_hash": "0x5c9f378946ec1c0f4a119728c95c11c5581739e7d00f0e9e30ea9b39a59d613",
+      "class_hash": "0x4b3805d86197e250b3ec203a3bb013da7f22d2f4feb7228c3057c27589f9dd8",
       "tag": "jokers_of_neon_mods-RageData",
       "selector": "0x6b98e85ad8505173f160f50dac5af659d54b516c909a5d5f5194396581f3ce4"
     },
     {
       "members": [],
-      "class_hash": "0x6c6b2fe5ae724e22f0ca62142c33a87b2579bd02aece6d7267e3e0a43f65d34",
+      "class_hash": "0x33a2aa09c6398602b7c4d6a248dfaa0d50fed88c075511c877674574a229ffa",
       "tag": "jokers_of_neon_mods-SpecialData",
       "selector": "0x16d80dd61ca87e82de4ffbe91d73bbdcf2a58ec785cf870a07d1570dc82f1c9"
     }

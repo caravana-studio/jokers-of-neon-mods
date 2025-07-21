@@ -2,7 +2,9 @@
 
 set -e
 
-cp -f manifest_dev.json manifest_dev_bkp.json 
+profile="${1:-dev}"
+
+cp -f manifest_${profile}.json manifest_${profile}_bkp.json 
 
 # Copy manifest_dev.json to the mod directory
-cp -f ../../manifest_dev.json manifest_dev.json
+cp -f ../../manifest_${profile}.json manifest_${profile}.json
