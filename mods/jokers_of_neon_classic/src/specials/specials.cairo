@@ -134,7 +134,7 @@ fn specials_ids_all() -> Array<u32> {
 
 fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // C-Grade Group
-    let C_SPECIALS_PROBABILITY = 45;
+    let C_SPECIALS_PROBABILITY = 60;
     let C_SPECIALS_COST = 1000;
     let C_SPECIALS = array![
         SPECIAL_MULTI_FOR_HEART_ID,
@@ -152,7 +152,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         .span();
 
     // B-Grade Group
-    let B_SPECIALS_PROBABILITY = 25;
+    let B_SPECIALS_PROBABILITY = 40;
     let B_SPECIALS_COST = 1750;
     let B_SPECIALS = array![
         SPECIAL_DECK_COLLECTOR_ID,
@@ -176,7 +176,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         .span();
 
     // A-Grade Group
-    let A_SPECIALS_PROBABILITY = 15;
+    let A_SPECIALS_PROBABILITY = 0;
     let A_SPECIALS_COST = 3500;
     let A_SPECIALS = array![
         SPECIAL_EFFICIENT_PLAY_ID,
@@ -200,7 +200,7 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         .span();
 
     // S-Grade Group
-    let S_SPECIALS_PROBABILITY = 15;
+    let S_SPECIALS_PROBABILITY = 0;
     let S_SPECIALS_COST = 5000;
     let S_SPECIALS = array![
         SPECIAL_BURNING_REWARDS_ID,
