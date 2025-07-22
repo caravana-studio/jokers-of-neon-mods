@@ -2,6 +2,8 @@
 
 set -e
 
-cp -f manifest_dev_bkp.json manifest_dev.json
+profile="${1:-dev}"
 
-rm manifest_dev_bkp.json
+cp -f manifest_${profile}_bkp.json manifest_${profile}.json
+
+rm manifest_${profile}_bkp.json

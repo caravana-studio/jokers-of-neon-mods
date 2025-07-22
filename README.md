@@ -637,7 +637,9 @@ Rename the .env_example file to .env
 Run the deploy command:
 
 ```bash
-make deploy-mod mod_name=your_mod_name
+make deploy-mod profile=dev mod_name=your_mod_name
+
+make deploy-mod # dev profile, mod_name is jokers_of_neon_classic
 ```
 
 ### 2.7. Play your mod
