@@ -85,6 +85,6 @@ bash ../../scripts/register_rages.sh $mod_name $mod_id $WORLD_ADDRESS $NAMESPACE
 
 echo -e "\n✅ All registrations completed!"
 
-bash ../../scripts/restore_manifest.sh $profile
+bash ../../scripts/restore_manifest.sh
 
 echo "Mod ID registered: $mod_name"
