@@ -1,5 +1,5 @@
 setup:
-	@./scripts/setup.sh
+	@./scripts/setup.sh $(PROFILE)
 
 deploy-mod:
 	@./scripts/deploy_mod.sh $(PROFILE) $(MOD_NAME)
