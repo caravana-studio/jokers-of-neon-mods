@@ -4,6 +4,6 @@ set -e
 
 profile="${1:-dev}"
 
-cp -f manifest_${profile}_bkp.json manifest_${profile}.json
+cp -f manifest_dev_bkp.json manifest_dev.json
 
-rm manifest_${profile}_bkp.json
+rm manifest_dev_bkp.json
