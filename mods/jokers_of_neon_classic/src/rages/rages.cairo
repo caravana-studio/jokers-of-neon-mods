@@ -40,32 +40,34 @@ fn rages_ids_all() -> Array<u32> {
 
 fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
     // C-Grade Group
-    let C_RAGES_PROBABILITY = 100;
+    let C_RAGES_PROBABILITY = 45;
     let C_RAGES = array![
-        RAGE_CARD_STRATEGIC_QUARTED, RAGE_CARD_DEBUFF_FLUSH, RAGE_CARD_CHAOTIC_VARIANCE, RAGE_CARD_OBSESSIVE_REPETITION, RAGE_CARD_FAVORITE_LOCK
+        RAGE_CARD_SILENT_HEARTS,
+        RAGE_CARD_SILENT_CLUBS,
+        RAGE_CARD_SILENT_DIAMONDS,
+        RAGE_CARD_SILENT_SPADES,
+        RAGE_CARD_SILENT_FIGURES,
+        RAGE_CARD_BETRAYING_THE_WEAK,
     ]
         .span();
     let C_RAGES_REWARDS = 500;
     let C_RAGES_LEVEL = 1;
 
     // B-Grade Group
-    let B_RAGES_PROBABILITY = 0;
+    let B_RAGES_PROBABILITY = 25;
     let B_RAGES = array![RAGE_CARD_SILENT_JOKERS, RAGE_CARD_HAND_LEECH, RAGE_CARD_DOUBLE_TROUBLE].span();
     let B_RAGES_REWARDS = 750;
     let B_RAGES_LEVEL = 2;
 
     // A-Grade Group
-    let A_RAGES_PROBABILITY = 0;
+    let A_RAGES_PROBABILITY = 20;
     let A_RAGES = array![RAGE_CARD_DIMINISHED_HOLD].span();
     let A_RAGES_REWARDS = 1000;
     let A_RAGES_LEVEL = 3;
 
     // S-Grade Group
-    let S_RAGES_PROBABILITY = 0;
-    let S_RAGES = array![
-        RAGE_CARD_STRATEGIC_QUARTED, RAGE_CARD_DEBUFF_FLUSH, RAGE_CARD_CHAOTIC_VARIANCE, RAGE_CARD_OBSESSIVE_REPETITION,
-    ]
-        .span();
+    let S_RAGES_PROBABILITY = 10;
+    let S_RAGES = array![RAGE_CARD_ZERO_WASTE, RAGE_CARD_STRATEGIC_QUARTED].span();
     let S_RAGES_REWARDS = 1500;
     let S_RAGES_LEVEL = 4;
 

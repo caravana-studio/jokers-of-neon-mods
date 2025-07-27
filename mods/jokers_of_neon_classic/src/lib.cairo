@@ -16,6 +16,7 @@ mod rages {
     mod game {
         mod diminished_hold;
         mod hand_leech;
+        mod strategic_quarted;
     }
     mod round {
         mod double_trouble;
