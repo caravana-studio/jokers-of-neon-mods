@@ -7,7 +7,12 @@ mod configs {
 }
 mod rages {
     mod rages;
-    mod debuff {}
+    mod debuff {
+        mod chaotic_variance;
+        mod debuff_flush;
+        mod favorite_lock;
+        mod obsessive_repetition;
+    }
     mod game {
         mod diminished_hold;
         mod hand_leech;
