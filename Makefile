@@ -1,29 +1,11 @@
-katana:
-	katana --dev --dev.no-fee --http.cors_origins "*" --block-time 2500 --invoke-max-steps 4294967295 
-
 setup:
-	@./scripts/setup.sh
+	@./scripts/setup.sh $(PROFILE)
 
 deploy-mod:
-	@./scripts/deploy_mod.sh $(MOD_NAME)
-
-deploy-all-mods:
-	@./scripts/deploy_all_mods.sh
-
-create-mod:
-	@./scripts/create_mod.sh
-
-register-specials:
-	@./scripts/register_specials.sh $(MOD_ID)
-
-register-rages:
-	@./scripts/register_rages.sh $(MOD_ID)
-
-deploy-slot:
-	@./scripts/deploy_slot.sh $(PROFILE) $(ACTION)
+	@./scripts/deploy_mod.sh $(PROFILE) $(MOD_NAME)
 
 # Define tasks that are not real files
-.PHONY: deploy-slot deploy-sepolia katana setup torii generate-event-keys
+.PHONY: setup deploy-mod
 
 # Catch-all rule for undefined commands
 %:

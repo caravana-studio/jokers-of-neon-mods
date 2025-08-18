@@ -2,7 +2,14 @@
 
 set -e
 
-MOD_NAME=$1
+profile="${1:-dev}"
+mod_name="${2:-jokers_of_neon_classic}"
+
+# Validate profile parameter
+if [ "$profile" != "dev" ] && [ "$profile" != "slot" ] && [ "$profile" != "testnet" ] && [ "$profile" != "mainnet" ]; then
+    echo "Error: Invalid profile. Please use 'dev', 'slot', 'testnet', or 'mainnet'."
+    exit 1
+fi
 
 # Check if mod directory exists
 if [ ! -d "mods/$mod_name" ]; then
@@ -50,30 +57,23 @@ bash ../../scripts/replace_env.sh $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
 
 rm -f Scarb.lock
 
-if [ -d "target" ]; then
-    rm -rf "target"
-fi
+rm -rf "target"
+rm -f "Scarb.lock"
+rm -f "manifest_dev.json"
 
-if [ -d "manifests" ]; then
-    rm -rf "manifests"
-fi
+echo "Deploying in ${profile}."
+echo "Deploying mod: ${mod_name}"
 
-# echo "sozo build && sozo inspect && sozo migrate"
-echo "Deploying contracts..."
 sozo build && sozo inspect && sozo migrate
 # sozo build && sozo inspect && sozo migrate --fee ETH
 
 # echo -e "\n✅ deploy mod finish!"
 
-bash ../../scripts/replace_manifest.sh
+bash ../../scripts/replace_manifest.sh $profile
 
 hex_value=$(echo -n "$mod_name" | xxd -p | tr -d '\n')
 mod_id=$(python3 -c "print(int('$hex_value', 16))")
 
-# echo "String original: $mod_name"
-# echo "Valor hexadecimal: 0x$hex_value"
-# echo "Valor decimal (felt252): $mod_id"
-# Create mod and store the mod_id
 echo -e "\nCreating mod..."
 bash ../../scripts/create_mod.sh $mod_name $ACCOUNT_ADDRESS $WORLD_ADDRESS $mod_id $NAMESPACE_MODS
 
