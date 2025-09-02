@@ -74,6 +74,10 @@ const SPECIAL_QUEENS_FORTUNE_ID: u32 = 10080;
 
 const SPECIAL_INCREASE_LEVEL_HIGH_CARD_ID: u32 = 10084;
 
+const SPECIAL_SWAP_REDEMPTION_ID: u32 = 10085;
+const SPECIAL_RESONANT_MULTIPLIER_ID: u32 = 10086;
+const SPECIAL_SWAMP_REDEMPTION_ID: u32 = 10087;
+
 fn specials_ids_all() -> Array<u32> {
     array![
         SPECIAL_MULTI_FOR_HEART_ID,
@@ -129,6 +133,9 @@ fn specials_ids_all() -> Array<u32> {
         SPECIAL_ARITHMOMANIA_ID,
         SPECIAL_RISING_LADDER_ID,
         SPECIAL_QUEENS_FORTUNE_ID,
+        SPECIAL_SWAP_REDEMPTION_ID,
+        SPECIAL_RESONANT_MULTIPLIER_ID,
+        SPECIAL_SWAMP_REDEMPTION_ID,
     ]
 }
 
@@ -172,6 +179,9 @@ fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         SPECIAL_ARITHMOMANIA_ID,
         SPECIAL_QUEENS_FORTUNE_ID,
         SPECIAL_JACKPOT_ID,
+        SPECIAL_SWAP_REDEMPTION_ID,
+        SPECIAL_RESONANT_MULTIPLIER_ID,
+        SPECIAL_SWAMP_REDEMPTION_ID,
     ]
         .span();
 

@@ -52,6 +52,7 @@ mod specials {
         mod relativity;
     }
     mod discard {
+        mod swamp_redemption;
         mod wanted_joker;
     }
     mod hand {
@@ -77,6 +78,7 @@ mod specials {
         mod random_multi_for_diamond;
         mod random_multi_for_heart;
         mod random_multi_for_spade;
+        mod resonant_multiplier;
         mod wild_booster;
     }
     mod miss {}
@@ -111,6 +113,7 @@ mod specials {
         mod scaling_factor;
         mod slot_saver;
         mod spade_trio;
+        mod swap_redemption;
     }
     mod power_up {
         mod power_up_booster;
