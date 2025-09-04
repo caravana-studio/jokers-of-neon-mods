@@ -104,6 +104,7 @@ mod specials {
         mod increase_level_straight;
         mod increase_level_three_of_a_kind;
         mod initial_advantage;
+        mod lucky_cashback;
         mod multiplier;
         mod rage_breaker;
         mod rainbow;
@@ -113,7 +114,6 @@ mod specials {
         mod scaling_factor;
         mod slot_saver;
         mod spade_trio;
-        mod swap_redemption;
     }
     mod power_up {
         mod power_up_booster;
