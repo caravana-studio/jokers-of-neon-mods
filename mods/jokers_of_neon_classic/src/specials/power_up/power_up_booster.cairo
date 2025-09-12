@@ -1,8 +1,11 @@
 #[dojo::contract]
 mod special_power_up_booster {
     use jokers_of_neon_classic::specials::specials::SPECIAL_POWER_UP_BOOSTER_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
-    use jokers_of_neon_lib::models::{card_type::CardType, data::power_up::PowerUp, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::power_up::PowerUp;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl PowerUpBoosterExecutable of ICardExecutable<ContractState> {

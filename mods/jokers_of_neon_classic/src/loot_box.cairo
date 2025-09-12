@@ -1,7 +1,6 @@
 use jokers_of_neon_classic::specials::specials::{SPECIAL_ALL_CARDS_TO_HEARTS_ID, specials_ids_all, specials_shop_info};
-use jokers_of_neon_lib::constants::card::traditional_cards_all;
 use jokers_of_neon_lib::constants::card::{
-    JOKER_CARD_ID, NEON_JOKER_CARD_ID, all_hearts_cards, neon_cards_all, neon_hearts_cards,
+    JOKER_CARD_ID, NEON_JOKER_CARD_ID, all_hearts_cards, neon_cards_all, neon_hearts_cards, traditional_cards_all,
 };
 use jokers_of_neon_lib::constants::modifiers::{SUIT_HEARTS_MODIFIER_ID, modifiers_ids_all, modifiers_shop_info};
 use jokers_of_neon_lib::models::data::card::{Card, CardTrait, Suit, Value, ValueEnumerableImpl};
@@ -21,26 +20,14 @@ const EMPTY_PACK_ID: u32 = 999;
 
 fn loot_boxes_ids_all() -> Array<u32> {
     array![
-        BASIC_LOOT_BOX_ID,
-        ADVANCED_LOOT_BOX_ID,
-        JOKER_LOOT_BOX_ID,
-        SPECIALS_LOOT_BOX_ID,
-        MODIFIER_LOOT_BOX_ID,
-        FIGURES_LOOT_BOX_ID,
-        DECEITFUL_JOKER_LOOT_BOX_ID,
-        LOVERS_LOOT_BOX_ID,
-        SPECIAL_BET_LOOT_BOX_ID,
-        NEON_LOOT_BOX_ID,
+        BASIC_LOOT_BOX_ID, ADVANCED_LOOT_BOX_ID, JOKER_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID,
+        FIGURES_LOOT_BOX_ID, DECEITFUL_JOKER_LOOT_BOX_ID, LOVERS_LOOT_BOX_ID, SPECIAL_BET_LOOT_BOX_ID, NEON_LOOT_BOX_ID,
     ]
 }
 
 fn loot_boxes_ids_all_without_jokers() -> Array<u32> {
     array![
-        BASIC_LOOT_BOX_ID,
-        SPECIALS_LOOT_BOX_ID,
-        MODIFIER_LOOT_BOX_ID,
-        FIGURES_LOOT_BOX_ID,
-        LOVERS_LOOT_BOX_ID,
+        BASIC_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, LOVERS_LOOT_BOX_ID,
         SPECIAL_BET_LOOT_BOX_ID,
     ]
 }
@@ -53,12 +40,8 @@ fn BASIC_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 5,
         cards: array![
-            array![].span(),
-            specials_ids_all().span(),
-            modifiers_ids_all().span(),
-            array![JOKER_CARD_ID].span(),
-            array![NEON_JOKER_CARD_ID].span(),
-            traditional_cards_all().span(),
+            array![].span(), specials_ids_all().span(), modifiers_ids_all().span(), array![JOKER_CARD_ID].span(),
+            array![NEON_JOKER_CARD_ID].span(), traditional_cards_all().span(),
         ]
             .span(),
         probs: array![100, 2, 5, 4, 1, 88].span(),
@@ -73,12 +56,8 @@ fn ADVANCED_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 5,
         cards: array![
-            array![].span(),
-            specials_ids_all().span(),
-            modifiers_ids_all().span(),
-            array![JOKER_CARD_ID].span(),
-            array![NEON_JOKER_CARD_ID].span(),
-            traditional_cards_all().span(),
+            array![].span(), specials_ids_all().span(), modifiers_ids_all().span(), array![JOKER_CARD_ID].span(),
+            array![NEON_JOKER_CARD_ID].span(), traditional_cards_all().span(),
         ]
             .span(),
         probs: array![100, 4, 10, 8, 2, 76].span(),
@@ -93,9 +72,7 @@ fn JOKER_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 5,
         cards: array![
-            array![].span(),
-            array![JOKER_CARD_ID].span(),
-            array![NEON_JOKER_CARD_ID].span(),
+            array![].span(), array![JOKER_CARD_ID].span(), array![NEON_JOKER_CARD_ID].span(),
             traditional_cards_all().span(),
         ]
             .span(),
@@ -113,8 +90,7 @@ fn SPECIALS_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 3,
         cards: array![
-            array![].span(),
-            *specials_group.at(0), // C
+            array![].span(), *specials_group.at(0), // C
             *specials_group.at(1), // B
             *specials_group.at(2), // A
             *specials_group.at(3), // S
@@ -124,8 +100,7 @@ fn SPECIALS_LOOT_BOX() -> LootBox {
         ]
             .span(),
         probs: array![
-            100,
-            // 25% specials
+            100, // 25% specials
             *specials_probs.at(0) * 25 / 100, // C
             *specials_probs.at(1) * 25 / 100, // B
             *specials_probs.at(2) * 25 / 100, // A
@@ -165,18 +140,12 @@ fn MODIFIER_LOOT_BOX() -> LootBox {
 
 fn FIGURES_LOOT_BOX() -> LootBox {
     let figures_cards = array![
-        CardTrait::generate_id(Value::Jack, Suit::Hearts),
-        CardTrait::generate_id(Value::Queen, Suit::Hearts),
-        CardTrait::generate_id(Value::King, Suit::Hearts),
-        CardTrait::generate_id(Value::Jack, Suit::Spades),
-        CardTrait::generate_id(Value::Queen, Suit::Spades),
-        CardTrait::generate_id(Value::King, Suit::Spades),
-        CardTrait::generate_id(Value::Jack, Suit::Diamonds),
-        CardTrait::generate_id(Value::Queen, Suit::Diamonds),
-        CardTrait::generate_id(Value::King, Suit::Diamonds),
-        CardTrait::generate_id(Value::Jack, Suit::Clubs),
-        CardTrait::generate_id(Value::Queen, Suit::Clubs),
-        CardTrait::generate_id(Value::King, Suit::Clubs),
+        CardTrait::generate_id(Value::Jack, Suit::Hearts), CardTrait::generate_id(Value::Queen, Suit::Hearts),
+        CardTrait::generate_id(Value::King, Suit::Hearts), CardTrait::generate_id(Value::Jack, Suit::Spades),
+        CardTrait::generate_id(Value::Queen, Suit::Spades), CardTrait::generate_id(Value::King, Suit::Spades),
+        CardTrait::generate_id(Value::Jack, Suit::Diamonds), CardTrait::generate_id(Value::Queen, Suit::Diamonds),
+        CardTrait::generate_id(Value::King, Suit::Diamonds), CardTrait::generate_id(Value::Jack, Suit::Clubs),
+        CardTrait::generate_id(Value::Queen, Suit::Clubs), CardTrait::generate_id(Value::King, Suit::Clubs),
     ];
     LootBox {
         id: FIGURES_LOOT_BOX_ID,
@@ -197,9 +166,7 @@ fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 4,
         cards: array![
-            array![JOKER_CARD_ID.into()].span(),
-            array![JOKER_CARD_ID].span(),
-            array![NEON_JOKER_CARD_ID].span(),
+            array![JOKER_CARD_ID.into()].span(), array![JOKER_CARD_ID].span(), array![NEON_JOKER_CARD_ID].span(),
             traditional_cards_all().span(),
         ]
             .span(),
@@ -216,10 +183,8 @@ fn LOVERS_LOOT_BOX() -> LootBox {
         size: 5,
         cards: array![
             array![CardTrait::generate_id(Value::Ace, Suit::Hearts)].span(),
-            array![SPECIAL_ALL_CARDS_TO_HEARTS_ID].span(),
-            neon_hearts_cards().span(),
-            array![SUIT_HEARTS_MODIFIER_ID].span(),
-            all_hearts_cards().span(),
+            array![SPECIAL_ALL_CARDS_TO_HEARTS_ID].span(), neon_hearts_cards().span(),
+            array![SUIT_HEARTS_MODIFIER_ID].span(), all_hearts_cards().span(),
         ]
             .span(),
         probs: array![100, 5, 30, 10, 55].span(),

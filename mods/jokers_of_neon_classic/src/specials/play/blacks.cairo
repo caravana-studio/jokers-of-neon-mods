@@ -1,10 +1,12 @@
 #[dojo::contract]
 pub mod special_blacks {
     use jokers_of_neon_classic::specials::specials::SPECIAL_BLACKS_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
-    use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, Suit}, data::poker_hand::PokerHand, tracker::GameContext,
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Card, Suit};
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl BlacksExecutable of ICardExecutable<ContractState> {
@@ -29,7 +31,7 @@ pub mod special_blacks {
                     },
                     Option::None => { break; },
                 }
-            };
+            }
 
             if count == count_spades + count_clubs && count_spades > 0 && count_clubs > 0 {
                 (0, 10, 0)

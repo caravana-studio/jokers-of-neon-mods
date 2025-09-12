@@ -1,10 +1,10 @@
 #[dojo::contract]
 pub mod rage_betraying_the_weak {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_BETRAYING_THE_WEAK;
-    use jokers_of_neon_lib::{
-        interfaces::{base::ICardBase, rages::silence::IRageSilence},
-        models::{card_type::CardType, data::card::{Suit, Value}},
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::rages::silence::IRageSilence;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Suit, Value};
 
     #[abi(embed_v0)]
     impl BetrayingTheWeakImpl of IRageSilence<ContractState> {

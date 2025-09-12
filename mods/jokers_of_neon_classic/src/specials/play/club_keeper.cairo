@@ -2,10 +2,12 @@
 pub mod special_club_keeper {
     use jokers_of_neon_classic::specials::specials::SPECIAL_CLUB_KEEPER_ID;
     use jokers_of_neon_lib::constants::card::{ACE_CLUBS_ID, NEON_ACE_CLUBS_ID, NEON_TWO_CLUBS_ID, TWO_CLUBS_ID};
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
-    use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, Suit}, data::poker_hand::PokerHand, tracker::GameContext,
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Card, Suit};
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl ClubKeeperExecutable of ICardExecutable<ContractState> {
@@ -22,7 +24,7 @@ pub mod special_club_keeper {
                     },
                     Option::None => { break; },
                 }
-            };
+            }
             (points, 0, 0)
         }
     }

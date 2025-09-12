@@ -11,7 +11,9 @@ trait IRageManager<T> {
 pub mod rage_manager {
     use dojo::world::{IWorldDispatcher, IWorldDispatcherTrait};
     use jokers_of_neon_mods::constants::DEFAULT_NS;
-    use jokers_of_neon_mods::{models::{game_mod::GameMod, rage_data::RageData}, store::{StoreImpl, StoreTrait}};
+    use jokers_of_neon_mods::models::game_mod::GameMod;
+    use jokers_of_neon_mods::models::rage_data::RageData;
+    use jokers_of_neon_mods::store::{StoreImpl, StoreTrait};
     use starknet::{ContractAddress, get_caller_address};
 
     #[abi(embed_v0)]

@@ -2,8 +2,10 @@
 mod special_deadline {
     use jokers_of_neon_classic::poker_hand::get_poker_hand_data;
     use jokers_of_neon_classic::specials::specials::SPECIAL_DEADLINE_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
-    use jokers_of_neon_lib::models::{card_type::CardType, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl DeadlineExecutable of ICardExecutable<ContractState> {

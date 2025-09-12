@@ -1,12 +1,14 @@
 #[dojo::contract]
 pub mod special_neon_doctrine {
-    use dojo::{model::ModelStorage, world::WorldStorage};
+    use dojo::model::ModelStorage;
+    use dojo::world::WorldStorage;
     use jokers_of_neon_classic::specials::specials::SPECIAL_NEON_DOCTRINE_ID;
     use jokers_of_neon_lib::constants::card::{JOKER_CARD_ID, WILD_CARD_ID, get_card};
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::converter::ICardConverter};
-    use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, CardTrait, Suit, Value}, tracker::GameContext,
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::converter::ICardConverter;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Card, CardTrait, Suit, Value};
+    use jokers_of_neon_lib::models::tracker::GameContext;
     use jokers_of_neon_lib::random::{Nonce, RandomTrait};
 
     #[abi(embed_v0)]
@@ -31,7 +33,7 @@ pub mod special_neon_doctrine {
                     },
                     Option::None => { break; },
                 }
-            };
+            }
             result.span()
         }
     }

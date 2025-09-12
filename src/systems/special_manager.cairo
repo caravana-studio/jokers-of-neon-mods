@@ -13,7 +13,9 @@ trait ISpecialManager<T> {
 pub mod special_manager {
     use dojo::world::{IWorldDispatcher, IWorldDispatcherTrait};
     use jokers_of_neon_mods::constants::DEFAULT_NS;
-    use jokers_of_neon_mods::{models::{game_mod::GameMod, special_data::SpecialData}, store::{StoreImpl, StoreTrait}};
+    use jokers_of_neon_mods::models::game_mod::GameMod;
+    use jokers_of_neon_mods::models::special_data::SpecialData;
+    use jokers_of_neon_mods::store::{StoreImpl, StoreTrait};
     use starknet::{ContractAddress, get_caller_address};
 
     #[abi(embed_v0)]

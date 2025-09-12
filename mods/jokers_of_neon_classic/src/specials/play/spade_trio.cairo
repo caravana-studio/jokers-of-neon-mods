@@ -1,10 +1,12 @@
 #[dojo::contract]
 pub mod special_spade_trio {
     use jokers_of_neon_classic::specials::specials::SPECIAL_SPADE_TRIO_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
-    use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, Suit}, data::poker_hand::PokerHand, tracker::GameContext,
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Card, Suit};
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl SpadeTrioExecutable of ICardExecutable<ContractState> {
@@ -18,7 +20,7 @@ pub mod special_spade_trio {
                     } },
                     Option::None => { break; },
                 }
-            };
+            }
 
             if count_spades >= 3 {
                 return (100, 3, 0);

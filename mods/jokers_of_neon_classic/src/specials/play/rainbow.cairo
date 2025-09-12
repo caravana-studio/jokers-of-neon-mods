@@ -1,10 +1,12 @@
 #[dojo::contract]
 pub mod special_rainbow {
     use jokers_of_neon_classic::specials::specials::SPECIAL_RAINBOW_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
-    use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, Suit}, data::poker_hand::PokerHand, tracker::GameContext,
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Card, Suit};
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl RainbowExecutable of ICardExecutable<ContractState> {
@@ -35,7 +37,7 @@ pub mod special_rainbow {
                     },
                     Option::None => { break; },
                 }
-            };
+            }
 
             if count == count_spades
                 + count_clubs
