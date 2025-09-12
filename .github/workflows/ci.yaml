@@ -9,8 +9,8 @@ on:
     workflow_dispatch:
 
 env:
-  DOJO_VERSION: v1.6.0-alpha.1
-  SCARB_VERSION: v2.10.1
+  DOJO_VERSION: v1.7.0-alpha.3
+  SCARB_VERSION: v2.12.1
 
 jobs:
   check:
@@ -32,7 +32,16 @@ jobs:
     if: github.event.pull_request.draft == false
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup
-      - name: Build
-        run: sozo build
-        shell: bash
+      - uses: software-mansion/setup-scarb@v1
+        with:
+          scarb-version: ${{ env.SCARB_VERSION }}
+      - uses: asdf-vm/actions/setup@v4
+      - run: |
+          asdf plugin add sozo https://github.com/dojoengine/asdf-sozo.git
+          asdf install
+          sozo build
+          if [[ `git status --porcelain` ]]; then
+            echo The git repo is dirty
+            echo "Make sure to run \"sozo build\" after changing Scarb.toml and commit Scarb.lock"
+            exit 1
+          fi
