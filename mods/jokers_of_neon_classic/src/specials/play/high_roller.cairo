@@ -26,16 +26,16 @@ pub mod special_high_roller {
             let mut cumulative: Cumulative = world.read_model((context.game.id, HIGH_ROLLER_KEY));
             let value = cumulative.value;
 
-            if random::between(ref world, context, (1, 2)) == 1 { // 50% chance
-                let (poker_hand, _) = context.hand;
-                match poker_hand {
-                    PokerHand::HighCard => {
+            let (poker_hand, _) = context.hand;
+            match poker_hand {
+                PokerHand::HighCard => {
+                    if random::between(ref world, context, (1, 2)) == 1 { // 50% chance
                         cumulative.value += 1;
                         world.write_model(@cumulative);
-                    },
-                    _ => {},
-                };
-            }
+                    }
+                },
+                _ => {},
+            };
             (0, value, 0)
         }
     }
