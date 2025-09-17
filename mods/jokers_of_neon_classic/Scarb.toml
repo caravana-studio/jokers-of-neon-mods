@@ -13,12 +13,12 @@ max-line-length = 120
 
 [dependencies]
 dojo = { git = "https://github.com/dojoengine/dojo", tag = "v1.6.0-alpha.1" }
-jokers_of_neon_lib = { git = "https://github.com/caravana-studio/jokers-of-neon-lib", branch="develop" }
+jokers_of_neon_lib = { git = "https://github.com/caravana-studio/jokers-of-neon-lib", branch="salt-u128" }
 
 [[target.starknet-contract]]
 build-external-contracts = [
     "dojo::world::world_contract::world",
-    "jokers_of_neon_lib::random::m_Nonce",
+    "jokers_of_neon_lib::random::m_Salt",
 ]
 
 [dev-dependencies]
