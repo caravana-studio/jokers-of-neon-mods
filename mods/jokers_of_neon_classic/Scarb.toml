@@ -18,7 +18,7 @@ jokers_of_neon_lib = { git = "https://github.com/caravana-studio/jokers-of-neon-
 [[target.starknet-contract]]
 build-external-contracts = [
     "dojo::world::world_contract::world",
-    "jokers_of_neon_lib::random::m_Nonce",
+    "jokers_of_neon_lib::random::m_Salt",
 ]
 
 [dev-dependencies]

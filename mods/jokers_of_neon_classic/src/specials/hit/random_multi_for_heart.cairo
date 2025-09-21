@@ -1,10 +1,10 @@
 #[dojo::contract]
 pub mod special_random_multi_for_heart {
-    use dojo::{model::ModelStorage, world::WorldStorage};
-    use jokers_of_neon_classic::specials::specials::SPECIAL_RANDOM_MULTI_FOR_HEART_ID;
+    use crate::utils::random;
+    use jokers_of_neon_classic::{constants::DEFAULT_NS, specials::specials::SPECIAL_RANDOM_MULTI_FOR_HEART_ID};
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable}},
-        models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext}, random::{Nonce, RandomTrait},
+        models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext},
     };
 
     #[abi(embed_v0)]
@@ -18,8 +18,8 @@ pub mod special_random_multi_for_heart {
     #[abi(embed_v0)]
     impl RandomMultiHeartExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut random = RandomTrait::initialize_random('jokers_of_neon_classic', context.game.seed);
-            (0, random.between(-2, 6), 0)
+            let mut world = self.world(DEFAULT_NS());
+            (0, random::between(ref world, context, (-2, 6)), 0)
         }
     }
 

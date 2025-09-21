@@ -1526,8 +1526,8 @@
       ]
     },
     {
-      "address": "0x64cef36260024d6c204f26682291f0c5b4ef44fcce07f574f459e7e3789de9f",
-      "class_hash": "0x69aab1693a35bfe6fc1f59ac19d9940fada2ac82f9fb4383436885b52556d45",
+      "address": "0x4b5d4cddda0fecfc08488aa335c93d7c2a773fcf17b7818533f219d1587403c",
+      "class_hash": "0x573a32c541ef008adc0d0b698e51396dabc0bda180b2a62b5967d7b2bde4306",
       "abi": [
         {
           "type": "impl",
@@ -1950,8 +1950,8 @@
       ]
     },
     {
-      "address": "0x2fdc603e5278072c3e14388d4d8487120f34e60d7b5e8f23b45d56ac67251ba",
-      "class_hash": "0x55454e6f4ab0abb2ef9fb6b074ea9c82bf05658d0d1bfb2c00b2593ef3268da",
+      "address": "0x238f66f6bff9d0fd0543b450bf5e7b255ff02c1274a8fa11590283703b7f939",
+      "class_hash": "0x54aadf0993390fe191ceb5fdb22fb752c11d87d63c03dfa2185faea549465cb",
       "abi": [
         {
           "type": "impl",
@@ -2575,8 +2575,8 @@
       ]
     },
     {
-      "address": "0x6c729fa5134e6c5386e81b38faec8921446144cf60a139dccef7385d3156b6a",
-      "class_hash": "0x1469f1cec3725d0f36bd47a3a9cb8d2402c06e177f12145bd56aa08e1658786",
+      "address": "0x75579c2f08823f2fc13fce3db6d5ad696fa8c959f629ba8d4e3b57fc0d8da7e",
+      "class_hash": "0x2b2db2b30ae6ca9f40263ebc0fe2d6b22d88e13a47ca4a78d64de9476f9edc2",
       "abi": [
         {
           "type": "impl",
@@ -3062,8 +3062,8 @@
       ]
     },
     {
-      "address": "0x71f17f06e3b4147dddae9a5273596016df7e16a28291e4ff0402fddb9fa296b",
-      "class_hash": "0x3fe412272360682194ec077910ed1abef06dbb94e33861375ef6f7e047f1818",
+      "address": "0x726e27214f27b0fb9c866333a172ce5adc9f0696b1bf2c47635d383233f749f",
+      "class_hash": "0x5fb1df097235c91c4fa7ce7f63adb02e36fd137907fb86db51325581af36b18",
       "abi": [
         {
           "type": "impl",
@@ -3551,7 +3551,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -3625,7 +3625,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -3655,6 +3655,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -3667,19 +3671,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -3984,8 +3996,8 @@
       ]
     },
     {
-      "address": "0x193d7d0a8e6002020b0f582dac1b07ce7a328b601daa5f8e09b2efc0f6f417c",
-      "class_hash": "0x56bd29aaf8481f957e9d24b342157f835985978cd1963e1d79e672e4d5594be",
+      "address": "0x4d1246f1d77e8ffba8798baee579ea9aec337a408b9f190c2af8c5b955cd503",
+      "class_hash": "0x54041d00c31fa3475550c6e42067a429966e9f0aaf4617d871a9d779a1751a9",
       "abi": [
         {
           "type": "impl",
@@ -4473,7 +4485,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -4547,7 +4559,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -4577,6 +4589,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -4589,19 +4605,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -4906,8 +4930,8 @@
       ]
     },
     {
-      "address": "0x59f6813710c8a66cc2ff2b0c8e2a26ff3a7a2fcb17d4b1e2385cd8c68e2cd37",
-      "class_hash": "0xbc9f2be9c5b68e95fd9b68e2fe122f81a16484503999e08ebb9244966d2ca8",
+      "address": "0x5df6ff2adae0e421989c81cb2566cbd48a6d48df34a345fb029fb202d8ccf49",
+      "class_hash": "0x1ccb228902d8a58dc9bd16112e57973fc885f9be7e6d91ceb28baded4cd1f2f",
       "abi": [
         {
           "type": "impl",
@@ -5395,7 +5419,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -5469,7 +5493,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -5499,6 +5523,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -5511,19 +5539,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -5842,8 +5878,8 @@
       ]
     },
     {
-      "address": "0x6d9058325d20b83058793208290379bbf4c6fdfeb96650a0327f2209bcdb3fb",
-      "class_hash": "0x4f5025bcc6d1f1782ef17d66e853bf815b2bf15f256322460115bc8c9c02030",
+      "address": "0xcd66aa6ea60dec00bd2c205c216325ebee58f5fdb113d004373c4c7c660e90",
+      "class_hash": "0x3781251c490e276fe93988351dee3de0e1c1d2af65916348d55116a15394645",
       "abi": [
         {
           "type": "impl",
@@ -6331,7 +6367,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -6405,7 +6441,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -6435,6 +6471,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -6447,19 +6487,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -6778,8 +6826,8 @@
       ]
     },
     {
-      "address": "0x68b20b1cf7848407b29f1aaf4286b8b7edd1af2225dd89ca72dae583fbed8d1",
-      "class_hash": "0x65c02aa04b037a480fb5c21ba015228afe8311f0dd5c99dbffb6a54d903cb0e",
+      "address": "0x7e9bbb1f59aa86041aa8162f8e9db57fd87205b1581a3b022164ebc66fad489",
+      "class_hash": "0x20c02040d1156da48f1a3338d10525512f2302735f9f53428b23b3b104fb919",
       "abi": [
         {
           "type": "impl",
@@ -7267,7 +7315,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -7341,7 +7389,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -7371,6 +7419,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -7383,19 +7435,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -7700,8 +7760,8 @@
       ]
     },
     {
-      "address": "0x701f7bedab5eeda4b15f701de3f689b1a8ca3d4ed92c20912d04b5bd6c32f36",
-      "class_hash": "0x2b4309a77bfb032ce5f6586ea4f0ddc204d2f2628078de09e9d9fe032503f82",
+      "address": "0x55cbcbba3b6aae03e5111f39da50d60a1d364589518b186c857552ce037918a",
+      "class_hash": "0x74e2cfb9c44666471551f2513e8cc745c506806995a3ac417af5396910c0633",
       "abi": [
         {
           "type": "impl",
@@ -8189,7 +8249,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -8263,7 +8323,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -8293,6 +8353,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -8305,19 +8369,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -8636,8 +8708,8 @@
       ]
     },
     {
-      "address": "0x1792d4a2b8bde3984b86b28aba10ac9ea7b50d498f13276d005c438728b23b0",
-      "class_hash": "0x474c4db4ca70bc58104540208e0805f42dcfc38d2958b7b0c933825292c67ca",
+      "address": "0x1dd13d2f868bad6cfd5ec4ea7a763270ee36f58dd0dc829ee44e72fbf9c1c4b",
+      "class_hash": "0x7e55524f4a9bf67d79cac133b3309c0e495657c2cb8514be79610f8956a7439",
       "abi": [
         {
           "type": "impl",
@@ -9125,7 +9197,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -9199,7 +9271,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -9229,6 +9301,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -9241,19 +9317,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -9558,8 +9642,8 @@
       ]
     },
     {
-      "address": "0x1c8e58989030416969d45f80263df43d25f9b62ccc3d56f8b61b609af64665e",
-      "class_hash": "0x72d6aab2d957815583c80e596fae8f0a843ef3f81ae03468031ce3ef787b9c1",
+      "address": "0x2f3a76f2ed88710351faf66a832dee1bf4c2f63880a806a6c53ec31785e2203",
+      "class_hash": "0x174fbe62b3ea36af83dca9c0ca1ab23027223bf9dbb26d893a6a5252f940496",
       "abi": [
         {
           "type": "impl",
@@ -10045,8 +10129,8 @@
       ]
     },
     {
-      "address": "0x13a13e5206b8b62305361c42a0d7fcffd21ccc4469395904c3d132542153af1",
-      "class_hash": "0x3b699c35b8c366788b6ab5a6354ebc0f3aea1e0a901e54cf1106bbf8b05dca9",
+      "address": "0x28a7e15fe0822b171169f1eb3589a7ceebdac244f72ab1e20abfa8d2c689ed4",
+      "class_hash": "0x17e9d0bc20ff929bd87eed993315ae4a8eb8d934bf0a26fbbe8ab86d086b44c",
       "abi": [
         {
           "type": "impl",
@@ -10532,8 +10616,8 @@
       ]
     },
     {
-      "address": "0x3d7792d786dce2d589ebd5d765c23fd7713887618d78b7d4a10b028a2e52b49",
-      "class_hash": "0x27a24dda7cd351b5be0e11571a5b2ac7da43616b24592fbc7364934c1973c31",
+      "address": "0x57971b580472f64728e101a45b9b37a9b3c8466c10cc128d39b04adb4eab420",
+      "class_hash": "0x3a31a0bd9bb303b172fdd9624e9d22907be51ea5241cdf40fab18819cea2f2d",
       "abi": [
         {
           "type": "impl",
@@ -11019,8 +11103,8 @@
       ]
     },
     {
-      "address": "0x11946496e0fa4d1f2ffd75133ba64bcab09d9e42b916c7e7127a24bd590f7ad",
-      "class_hash": "0x6f16c4425755b286f2257d37e3e4f78f3b06ac38ef83516f45bb47b8eafbcc",
+      "address": "0x594a2fc44603adbf371ce555b374f33aa30411357b9a309ca20f6b14cc56df8",
+      "class_hash": "0x718e840e3633ed08064f8e5bcbb1ab242e5f39eca14a6a1b6a17d5be4d589db",
       "abi": [
         {
           "type": "impl",
@@ -11506,8 +11590,8 @@
       ]
     },
     {
-      "address": "0x207e09a9fc9d58c7a52b78a58e3cf6c6e156280bae6a3e705e01fd902f8dd65",
-      "class_hash": "0x3bd279c980ea0e53cd6d04b83a7c316730f7f1c22dbf9009a2784d01831c8d5",
+      "address": "0x45c583e092f23c84366780cbd8428721e74f5f929b11b2271889e205e4c0b2e",
+      "class_hash": "0x702ba914bd46d2713264a8501b0a76dfe9eb7a681cc59625484296d2cd7d4db",
       "abi": [
         {
           "type": "impl",
@@ -11993,8 +12077,8 @@
       ]
     },
     {
-      "address": "0x38b19b10e0c0b4f6e617a8bb3b9827b1dee34eeb8cef6c7084731eff3619c6a",
-      "class_hash": "0x4f8f4ee5a7cc2f3e928b39c91a66c559cfa152af8e86d8b7b06eeaf9be9e407",
+      "address": "0x13615f01ba7016b7feebd971f68a9c04dd35b5ee41442e6c57834600e21b4db",
+      "class_hash": "0x2cc38376e1c10444b5b5240303dc5ec3171862b40d132bcf51edbfcfb17a314",
       "abi": [
         {
           "type": "impl",
@@ -12480,8 +12564,8 @@
       ]
     },
     {
-      "address": "0x241271d61e6d9d9eeea9f063035172ee1c1f875b50bed480b8181f9d51e4280",
-      "class_hash": "0x1deccce9566838201930b7c679f2af8bb2f59f902c1e40df0575239fa7acab8",
+      "address": "0x3e47c239af4cba0bb86ad695234d298655a341b75eb5a02dc1987933ef123c0",
+      "class_hash": "0x63f8c7678ed3e0d34d1368722bba9bda4ab870c92cdbcc431d72c453224fac1",
       "abi": [
         {
           "type": "impl",
@@ -12967,8 +13051,8 @@
       ]
     },
     {
-      "address": "0x3318a20d6a1f31a0cf023a716cb2cf13d35fad97b44ae453ab07154839ba52c",
-      "class_hash": "0x6f8f801bf50c1d5bada44722e7638de579d22629122cfada935a3fcaef32739",
+      "address": "0x422ba253d8fd0d6f5141df0787c6ca8ef4de2c4889f95ba7a0518cc54649be9",
+      "class_hash": "0x52bb07bf0dbd08645c25da16a4232009ce2299ca68477baf220195b6cb09d09",
       "abi": [
         {
           "type": "impl",
@@ -13456,7 +13540,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -13530,7 +13614,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -13560,6 +13644,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -13572,19 +13660,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -13903,8 +13999,8 @@
       ]
     },
     {
-      "address": "0x16c1a6ce2910cafafd848c8d9c5acfea8aa1e54f484cc0965d2d3d87fff1228",
-      "class_hash": "0x20d50d65f13c2da12d0470723af0a0cbbeb8c719151d91f22b8cdd83a2375ee",
+      "address": "0xe30ef6e3250d8d264899b393afc1c9f636783062898465c65f7109b767daa8",
+      "class_hash": "0x5519dbeba69207e85880b84ce986de20ddd7d097c49484b340aa9360ef4ffb4",
       "abi": [
         {
           "type": "impl",
@@ -14392,7 +14488,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -14466,7 +14562,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -14496,6 +14592,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -14508,19 +14608,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -14839,8 +14947,8 @@
       ]
     },
     {
-      "address": "0x3b3bdb7bc1c4551a67f5a65866ee761213e4d62c457689a1df9146eabc53c45",
-      "class_hash": "0x6f688f47c6a014003a7e36a8946186c1ab995425175870d99df30c0ebdf4a9d",
+      "address": "0x3e6498c018fe532dc41a4c06f785bfc319160a2dec108763a608dd4689d7819",
+      "class_hash": "0x685a83710bcbd65039b4904ffd8e67ce5b2738cced3044d06b38b8ab009d07a",
       "abi": [
         {
           "type": "impl",
@@ -15351,8 +15459,8 @@
       ]
     },
     {
-      "address": "0x5d732a1b1c3154e3e9d54dd6f25d99e64ec84f806591ec1b137956d47e73487",
-      "class_hash": "0x5d22171149a00ab0191682f8d7dfae1a939c3432ccd779a96bac96c83b11c01",
+      "address": "0x714e3d633b81e7e13ae2da1e744e1a4e993f27c7164b9a14ef20cc1dfdf7f5c",
+      "class_hash": "0x638bc592af1012b6867292012d9dc8e273bbdfefa8d1d2c6e9e4d72e7baeb15",
       "abi": [
         {
           "type": "impl",
@@ -15840,7 +15948,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -15914,7 +16022,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -15944,6 +16052,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -15956,19 +16068,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -16284,8 +16404,8 @@
       ]
     },
     {
-      "address": "0x40b4699f1e0a9144334eb3a5019feb1acfb78370b089d9d40d40af2b9e53a47",
-      "class_hash": "0x65130a4fc8e6ce914ea763d1b953dd361fa2e17e15a3dbf87fbd4b5a0a92ce1",
+      "address": "0x79be70e00c6aa6f17f199201bd7380bc14a8656ece42c063a22ea0af8cdfe8d",
+      "class_hash": "0x6db138aef451c48dfe5f0b0b153635e0090cb91ab0f1de95d4320b54f13ea5",
       "abi": [
         {
           "type": "impl",
@@ -16773,7 +16893,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -16847,7 +16967,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -16877,6 +16997,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -16889,19 +17013,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -17207,8 +17339,8 @@
       ]
     },
     {
-      "address": "0x393083393c8df973c1decaa615066eed07196259b6e7a1d5da9d5c214142577",
-      "class_hash": "0x253a3bbecab2674ffc7088501566511f52f4f0f735a89155fe2f9adef8230eb",
+      "address": "0x4879c21d0787f4c9f5d4e871d5726e483a89f31db69bf3ea355de3076d6b52b",
+      "class_hash": "0x64b89d64721a166ff93d37f5ca2b70bb333c819989f5a60225cdfac63296ef2",
       "abi": [
         {
           "type": "impl",
@@ -17696,7 +17828,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -17770,7 +17902,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -17800,6 +17932,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -17812,19 +17948,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -18161,8 +18305,8 @@
       ]
     },
     {
-      "address": "0x68df2069f5d1115375768a2f38182c67edcb8d2a098623f4223d155f38e35ec",
-      "class_hash": "0x5fee90288d0154a74694cfc7bc5d34aa303e521a4aa3612511eeff2a4b813ee",
+      "address": "0x41f9c988b6bb51ce409965441b9406567d1cff6771f87f65a125f53373007d",
+      "class_hash": "0x33675cc70de82111801c333c5e727568eee59b4c660d6d1dedbee2b11c68a9b",
       "abi": [
         {
           "type": "impl",
@@ -18650,7 +18794,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -18724,7 +18868,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -18754,6 +18898,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -18766,19 +18914,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -19084,8 +19240,8 @@
       ]
     },
     {
-      "address": "0x503dc4eb5cfcc51f9923112f53add2ae0ea9c6bdbd4e857d14da6de66ff2008",
-      "class_hash": "0x737112866b57f7d225e1b6ecb0e11b2d6ca170e03f2acf88a171e918da27e0f",
+      "address": "0x63b8b30d7d01ada8a5cdff401a9a7f6a0954b9f3ce3a4c75874fb18da9325e7",
+      "class_hash": "0x1459d9fe672fd163fbdb0f85dd431a80a73887a537ea56c4c7f2a2c17d6ab41",
       "abi": [
         {
           "type": "impl",
@@ -19573,7 +19729,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -19647,7 +19803,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -19677,6 +19833,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -19689,19 +19849,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -20007,8 +20175,8 @@
       ]
     },
     {
-      "address": "0x5460d38463a35c0ee017cbcd84b3ee04727994380ac3d1dc6906290aff6f490",
-      "class_hash": "0x71cdc1b22d807d912ce71f173a158fcce8115be3e6b20e3ff763a176c1dda16",
+      "address": "0x4d427b38657d5464224cf3de825345e47bb184fe940f8506d2f00408da4e518",
+      "class_hash": "0x7244365915a655b59f16ded65379f36f209ba4da888dda0ff982097f41203c2",
       "abi": [
         {
           "type": "impl",
@@ -20496,7 +20664,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -20570,7 +20738,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -20600,6 +20768,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -20612,19 +20784,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -20957,8 +21137,8 @@
       ]
     },
     {
-      "address": "0x4c190ab5dcafba1b324fbd7f270feff7af2707bc4fb4da8be5b3328c9ca7ce5",
-      "class_hash": "0xa43308c3d5c1e3ba3e56099203d2baaee29c689cac5f755ff394987b30969b",
+      "address": "0x4c9e7a99a4f8fb7a9024a6e1a99915bb677c46aa10a14a20b1169e74bb8c480",
+      "class_hash": "0x7769256994845002f12da2c5aa2ce5816abb6f20a0c0400e2a4c9e56074a39a",
       "abi": [
         {
           "type": "impl",
@@ -21446,7 +21626,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -21520,7 +21700,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -21550,6 +21730,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -21562,19 +21746,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -21880,8 +22072,8 @@
       ]
     },
     {
-      "address": "0x65d822d3ca321e49463dce33164169961ba2548251fb3ec0ad95a1cf9d91078",
-      "class_hash": "0x277ef54c6f2c44f09228aab20dfa7fd00d771934d3c978078fe0ef53b8c0828",
+      "address": "0x50fea40b7975689c80956e4d996681e7d0a6c492b9c6e1c20599a2d94fc546e",
+      "class_hash": "0x204fefc5b98b79c565f8d05a880cf337783a84f82e4c14c392b7c0b17c13ef",
       "abi": [
         {
           "type": "impl",
@@ -22369,7 +22561,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -22443,7 +22635,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -22473,6 +22665,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -22485,19 +22681,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -22803,8 +23007,8 @@
       ]
     },
     {
-      "address": "0x461b40902f57c0a0138fb17213122e5e28af388c860cf39b27fa7161218d6b6",
-      "class_hash": "0x71831001bc0cd922773f9320775631c02309e9dbbd5b4b51a07795e7251dc97",
+      "address": "0x36734796268f0e3bb99de1b4b6779f0379d4a28b2fad22c88ccfbc442805fa",
+      "class_hash": "0x15b0d2a731b0d444aff52ea626e085bc2595e3bc6a3fa1395119c87d9281937",
       "abi": [
         {
           "type": "impl",
@@ -23292,7 +23496,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -23366,7 +23570,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -23396,6 +23600,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -23408,19 +23616,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -23726,8 +23942,8 @@
       ]
     },
     {
-      "address": "0x5e1ded60c741c1507756bf11f4f9a2de8fa7afca3a2163b54d423208e9e3106",
-      "class_hash": "0x7b2ad25b6a61e7af0a89997e9b014dbc093d3ce586ad7d9aa8aded22f37f2fe",
+      "address": "0x7b7f982fb65daa1dd436e7207f8853cd3df16ddbf28fbbe180f5b7b67c906ce",
+      "class_hash": "0x3d1e0f12cce9ee2c9d1a9b03a8df3148f63efba08221210ea91f0671ad15825",
       "abi": [
         {
           "type": "impl",
@@ -24215,7 +24431,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -24289,7 +24505,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -24319,6 +24535,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -24331,19 +24551,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -24649,8 +24877,8 @@
       ]
     },
     {
-      "address": "0x70cb8843339d4a4aa07debc948e5bfeb47837377451ca229a98a885209d7355",
-      "class_hash": "0x2c4a4decdb35f952a4844c52a364fe284d85dba7d6de57f0473bfcdf1031973",
+      "address": "0x5b744bce6feb5b2ca4c0086bbc048909f63d0e2666748c5d63bb791f65e1da0",
+      "class_hash": "0x45fe43e16a46dbd03797d5381eab1a7e5d2e94c91dc74fa96e4a8e9f88376d4",
       "abi": [
         {
           "type": "impl",
@@ -25138,7 +25366,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -25212,7 +25440,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -25242,6 +25470,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -25254,19 +25486,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -25582,8 +25822,8 @@
       ]
     },
     {
-      "address": "0x3470e1a2569c473ba40a5a1cea99aff9a2bc0973d282d5e3a5f1f40334ad72e",
-      "class_hash": "0x369a65136ee88e4882a157f56329bdffe4346990423edd7aadeab9c4e477754",
+      "address": "0x65ac5c2b7605a47d54e4cd79729777c266f49aa13bae842d0754e59d6b4278f",
+      "class_hash": "0x18426b20d4c7a48f8f9eaccb87dd516afbe864abfb10cdceff1c5de8859d850",
       "abi": [
         {
           "type": "impl",
@@ -26071,7 +26311,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -26145,7 +26385,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -26175,6 +26415,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -26187,19 +26431,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -26505,8 +26757,8 @@
       ]
     },
     {
-      "address": "0x6e27b3797c75eea40626572fc63ac924606da8a5252d8cb55e960e40f2e85cc",
-      "class_hash": "0x3b472c347e3082fb42d26881f10767ee4382e49aa67d65f6c2a4ee50caac3e6",
+      "address": "0x5fdb63eae4c05ca839f69d1c4351a3b148a9b597f2bdd8573aa87c493f00b5",
+      "class_hash": "0x16e18ba93c9fb3dcc027bb5dc55c3f1359e3b748401a200c31357d6cabb659",
       "abi": [
         {
           "type": "impl",
@@ -26994,7 +27246,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -27068,7 +27320,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -27098,6 +27350,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -27110,19 +27366,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -27428,8 +27692,8 @@
       ]
     },
     {
-      "address": "0x251a9e7ede514a128695e2c9b02e0a8921d66070775f56bdeefe488694bac0f",
-      "class_hash": "0x2ec85347b0179b299ecca52de68fd71989756caca078c697866885614cc0409",
+      "address": "0x4c5acf23461117e478c2f96d51d9bcdb71f0c690c615ccd316b7ac28fd77a5c",
+      "class_hash": "0x1454a29a964a7977117cea3a2ce7348dbe5b0a13e932641b8b50a6745e66e06",
       "abi": [
         {
           "type": "impl",
@@ -27917,7 +28181,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -27991,7 +28255,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -28021,6 +28285,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -28033,19 +28301,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -28364,8 +28640,8 @@
       ]
     },
     {
-      "address": "0x783841ebe5b523347d5b8b9ae7d108d2301c7340ddfa2d1504ca294b6c27b27",
-      "class_hash": "0x531ca4a4076ec23923e1ca5e19006ac88cead922e4da449a77e0fd2b7f58380",
+      "address": "0x6cf77a0fe4833a0c99a0ece949a0e520ee2dad55daf703c1ef42b63f9c4ff60",
+      "class_hash": "0x6a757e7659af07244be4e45b91e2300c062028a0f8686644b85948db67f9cb",
       "abi": [
         {
           "type": "impl",
@@ -28853,7 +29129,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -28927,7 +29203,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -28957,6 +29233,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -28969,19 +29249,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -29300,8 +29588,8 @@
       ]
     },
     {
-      "address": "0x6cd01592efa45874ebbed2498ff2de362f2d19dd4d8b7684447108a6d4eaf17",
-      "class_hash": "0x4315fe7541349fada6358f1934a888a8e3081e470af9729d1f1a39cad7a6eac",
+      "address": "0x66e380a60e3b55646b0247ec0161f8903352956cd769c3ee95a63d6de1c6730",
+      "class_hash": "0x3de49bc3e7d29665062cf9e5f9972472c06b7c8d281f26cae30a6168caf619e",
       "abi": [
         {
           "type": "impl",
@@ -29789,7 +30077,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -29863,7 +30151,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -29893,6 +30181,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -29905,19 +30197,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -30250,8 +30550,8 @@
       ]
     },
     {
-      "address": "0x2008c3cd0f25a13b038054db3af784994c9307d11f79f6d5b6d89627ebd4e85",
-      "class_hash": "0x221a5f6dcc6d5b1cb8d1b6ed997cdc7e3cf7482540d8477de0cd5b01ffff805",
+      "address": "0x67c9d25c41df2562a3b9c9800d864b3e317ff849a92be0cae80371939839511",
+      "class_hash": "0x5da2c728751b7e2209c293a848d0bc6660f8475c6184caf1d012027587affec",
       "abi": [
         {
           "type": "impl",
@@ -30739,7 +31039,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -30813,7 +31113,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -30843,6 +31143,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -30855,19 +31159,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -31173,8 +31485,8 @@
       ]
     },
     {
-      "address": "0x5a087c83313f0c965f4536443b0dc07a71b68c9f4f9eae1d462b7c8b6b19b9",
-      "class_hash": "0x6ff9b4cfa5c0c0d9f673b5f804ad46ca527f2ba15c960fbbb5ff0014ffe8ff6",
+      "address": "0x76223e4597c5b63cee41180ae9b09dde2cf6854199de72a5508836f15335ea0",
+      "class_hash": "0x3058ae1005f14d32eeb7554019c6bfd2b2a1c99209367892961371ab1dcc581",
       "abi": [
         {
           "type": "impl",
@@ -31662,7 +31974,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -31736,7 +32048,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -31766,6 +32078,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -31778,19 +32094,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -32096,8 +32420,8 @@
       ]
     },
     {
-      "address": "0x3cff635cb2bb6606828d5c5b6e09632688d79d2db9e1c351e4e632ba94a435a",
-      "class_hash": "0x40d242778b83c2b7dd437ae1b51b10ebe218d5d3732b6331f3600527b6bc215",
+      "address": "0x6e91536a7a4f2a834523e302a79b7c0cc5e6172ac9ca9e5b009efb4fe76480",
+      "class_hash": "0x275563c37ad7898d195ce569020dfd7789ad963631155758ad7ae6802c19a22",
       "abi": [
         {
           "type": "impl",
@@ -32585,7 +32909,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -32659,7 +32983,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -32689,6 +33013,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -32701,19 +33029,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -33019,8 +33355,8 @@
       ]
     },
     {
-      "address": "0x5c277ed9388407afc3868d48c59878ba94152bc37ebbef8239ae40ebcc9547d",
-      "class_hash": "0x677d9d3795d695c2abcc632801fa13960a7a6971ba2d7b735627c0489985cb0",
+      "address": "0x4a487dad652a7c27bf84354c317b6ecc70bd683181ffb2bd2ca7f63c55dc570",
+      "class_hash": "0xff8797d4b41a4bc452ea6cb627403d6871ca32ec9c2124eace706de757472d",
       "abi": [
         {
           "type": "impl",
@@ -33508,7 +33844,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -33582,7 +33918,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -33612,6 +33948,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -33624,19 +33964,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -33942,8 +34290,8 @@
       ]
     },
     {
-      "address": "0x558c2c59762ef2a4ddf29cdf2c8db7ca6fc5db75a8b9a917459e7bea3e819b0",
-      "class_hash": "0xfddb366848e0384fcc5e72e53d2f8879119305816060505dce336a66080de",
+      "address": "0x107ae1755cbfdb308910f462dee9317e94b8a2c1823882d70e8d85435dbe924",
+      "class_hash": "0x6f57e2a9bbe39341a34150fd3e70386212b18003dc43589c982bf93be639f40",
       "abi": [
         {
           "type": "impl",
@@ -34431,7 +34779,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -34505,7 +34853,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -34535,6 +34883,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -34547,19 +34899,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -34865,8 +35225,8 @@
       ]
     },
     {
-      "address": "0x450ffcfab9969746d1eb5722898cca333028643a6b8ed7e4573ac3a958f2757",
-      "class_hash": "0x3e14cfac359c79fc0f843d999393dca80551bc3249a78179ff2f078e62f806d",
+      "address": "0x404dc68ce158b9f6a1ba5565063c90fa851ba5b751b784a729c9478fbad0133",
+      "class_hash": "0x3f7be18b285fb7026e27b57919fa4e2b9c0f237c3cefad44130eb14cf0d8d44",
       "abi": [
         {
           "type": "impl",
@@ -35354,7 +35714,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -35428,7 +35788,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -35458,6 +35818,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -35470,19 +35834,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -35788,8 +36160,8 @@
       ]
     },
     {
-      "address": "0x33da41bb3d2093cf4de63b03c8bc46a78eb6381af8e6928b2b53a47297fba74",
-      "class_hash": "0x51c91b9b503596412a6eb16891738a75fa749e99c7a7cf92878f0af37fd4d2c",
+      "address": "0x39ed3fed3eb9f945c0150654f63a987ab9228319992ea112529fcfdeed5c678",
+      "class_hash": "0x49e2a20f241c7609bd51865da93562bf740b3d1d6d6ef4d4c5dbd96c762484f",
       "abi": [
         {
           "type": "impl",
@@ -36277,7 +36649,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -36351,7 +36723,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -36381,6 +36753,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -36393,19 +36769,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -36711,8 +37095,8 @@
       ]
     },
     {
-      "address": "0x7eaf1da526b0d1077f8fbec2bc5f75a58d699dfcd2472c2e9b3d1669797f998",
-      "class_hash": "0x18f89827b324f461468962eccfb8f6aa8cc51a1b979e3649a19186c0b32c5d7",
+      "address": "0x7984cb5f3f85fc54f8016370270ca0003c2fcfbc095d566490173e049eadc3b",
+      "class_hash": "0x6b72230a3ea67d75062e2a9ddf7e3e667a528fcc1c7535994405c08386ef8bd",
       "abi": [
         {
           "type": "impl",
@@ -37200,7 +37584,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -37274,7 +37658,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -37304,6 +37688,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -37316,19 +37704,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -37634,8 +38030,8 @@
       ]
     },
     {
-      "address": "0x18e138a7dbaf5608ffd9cfab476f5ef6eaec895dae72b1a8ab153c21749e48",
-      "class_hash": "0x69068292d11f05696d4e27c48347290b58718db84b3fcd9173a6e827dd1bccf",
+      "address": "0x23d9f87d029dd970ab72ebdd017ef1fcb35341031852c3548792fa6ab1bc597",
+      "class_hash": "0x3b4a2c588aea287cd585beb962848b70517e18a62f2515ca1c06f51b438eb5e",
       "abi": [
         {
           "type": "impl",
@@ -38123,7 +38519,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -38197,7 +38593,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -38227,6 +38623,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -38239,19 +38639,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -38557,8 +38965,8 @@
       ]
     },
     {
-      "address": "0x3913f725a59a8c1c87afeff3017eb0833c48b7a35bbc04d7836799e7653d6c9",
-      "class_hash": "0x5710dfe077724ea529c1b9acbc129bf5fe18b4aa5294ee042b3d39a42a83970",
+      "address": "0x453ba3d133a307890afea654fc6d45f6c52db4ccc676ce1aaeb1aaa07328f7e",
+      "class_hash": "0x65c7b62f4429150b1b20758ef3578066fbba43f2c467f22a8fe1ea025f7888b",
       "abi": [
         {
           "type": "impl",
@@ -39046,7 +39454,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -39120,7 +39528,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -39150,6 +39558,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -39162,19 +39574,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -39480,8 +39900,8 @@
       ]
     },
     {
-      "address": "0x792db7a79e144c0e172347577c7cb2f08b73fb46a98a5bbc013a2a0510b7e67",
-      "class_hash": "0x110340ee00aac127ae7677f32a245d5561fc06c68adf36481a71327641283ce",
+      "address": "0x58fc20fd0f2443d8501fb1791e2b37a3d182dbf31bad6025abc52bec85e1416",
+      "class_hash": "0x328a132a2793f5ab4f093eb9cb500fb35f67f457011b61ca9f205b7e48dc92e",
       "abi": [
         {
           "type": "impl",
@@ -39969,7 +40389,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -40043,7 +40463,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -40073,6 +40493,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -40085,19 +40509,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -40434,8 +40866,8 @@
       ]
     },
     {
-      "address": "0x5401d42fe20641a6b31748f41f9b096adecbcc8195062d94efa547f8878045e",
-      "class_hash": "0x5ab2409e4e951e22e3e4990a37a138566c3227c6c9e970e71db71da4fd1e41e",
+      "address": "0x45b25800c867b62a7c7169edd4fc8eceb912cadb30f0c7a5bc2821f591568",
+      "class_hash": "0x3c44bd44c6c805e7b271cf36a82abe22c7b7a07f5ac587c58457ea374ef29c0",
       "abi": [
         {
           "type": "impl",
@@ -40923,7 +41355,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -40997,7 +41429,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -41027,6 +41459,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -41039,19 +41475,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -41388,8 +41832,8 @@
       ]
     },
     {
-      "address": "0x56ec624cd4b01370c43d08d204059cd4b775423266b17fee9f054c8fcf65b9e",
-      "class_hash": "0x14b661398463944130b197bead8252040f60d34de24912562558a6142d3a884",
+      "address": "0x12e77c3ccfe4284fb329a5414bfdd0ca91f218c318d5c87ce35af801097d42d",
+      "class_hash": "0x586d3a5b51aafebf4c48ae2db751cd1d64434b4cc6a73f36ae9bc532241ce6c",
       "abi": [
         {
           "type": "impl",
@@ -41877,7 +42321,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -41951,7 +42395,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -41981,6 +42425,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -41993,19 +42441,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -42342,8 +42798,8 @@
       ]
     },
     {
-      "address": "0x3b6aaa228ad5a3e992496e8bb2193ba58c6c25ec74c0e9c925c8a7ea52a7f87",
-      "class_hash": "0x78c0d426723dac94747972bd62ee53ae9e40ad7e3415a4e8c40a2324a44ed2",
+      "address": "0x1aea0ad77da19e4c287c1eb3415b617e859ed12f91d95bf375ef576777fd5eb",
+      "class_hash": "0x7ee1e3282cd0899e354cfb0d6a15ee66f1f01c0f3096c152a8686bd7799b96e",
       "abi": [
         {
           "type": "impl",
@@ -42831,7 +43287,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -42905,7 +43361,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -42935,6 +43391,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -42947,19 +43407,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -43296,8 +43764,8 @@
       ]
     },
     {
-      "address": "0x2ab78cdab18bba9ce1a8936e09220112a8633345c33debbeeadacf8b6f20ba0",
-      "class_hash": "0x4b01fe5bbddcc42cd761bfd4156074c0acb376cf7670455c0d6457130c0ffd3",
+      "address": "0x6191594fe7d45e77b1e9f37e6cacad7357a516d9e379355e9683699f1a6e0b",
+      "class_hash": "0x77d88fc59a21fa7608f3271131a96bed636f6daa2bdfefaa99b09f3bc19726f",
       "abi": [
         {
           "type": "impl",
@@ -43785,7 +44253,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -43859,7 +44327,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -43889,6 +44357,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -43901,19 +44373,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -44250,8 +44730,8 @@
       ]
     },
     {
-      "address": "0x4e86cf85bd98e33a187b694b15b64907dd28ef35ca8e617d31f1aa2b271c991",
-      "class_hash": "0x760da87f7b1d90e27b0ba91cea499cc58e631144b43a9509d6c188537ede51b",
+      "address": "0x75007756960c4427bc2b66e2751133f6d719ef8345fad885ef45dcfcc5c580a",
+      "class_hash": "0xe1af72d6cfae9cb7963fb40ff048e132fda8914e267bb704b9458f7509a020",
       "abi": [
         {
           "type": "impl",
@@ -44739,7 +45219,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -44813,7 +45293,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -44843,6 +45323,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -44855,19 +45339,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -45204,8 +45696,8 @@
       ]
     },
     {
-      "address": "0x60126edd0aac702a14f71796a9b2384d0d13ca4b577892691415dcad65a4da5",
-      "class_hash": "0x3c91bdb9cdc9c25b8bf4fbe3a4491422be9d7f2aa94d211174ff5d3d3b6b43b",
+      "address": "0x43ce237c6d497d9483af0b9130e5da50cb6e0252d034ed409ec94e1e448d1e7",
+      "class_hash": "0x403b497eab7fd843eb0621c057fcf0ffc0a4d5d32d7b5e0f899e655db80d69f",
       "abi": [
         {
           "type": "impl",
@@ -45693,7 +46185,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -45767,7 +46259,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -45797,6 +46289,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -45809,19 +46305,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -46158,8 +46662,8 @@
       ]
     },
     {
-      "address": "0x48b51c34efafbc7fe8a3d1680497c89168e760c263bbba53693890551a7ac89",
-      "class_hash": "0x4df8891e078e8957d0355ca9de2b03b46097f3c5a6e57779bc659b1a692b392",
+      "address": "0x61abcc09214a57ec424e5b61d4836aa2a6e246622c42d885e9be822bac0c854",
+      "class_hash": "0x8498615fddcc1c2cb8d1ea51627e48589dd59a13204cff6eac990d4beaa30f",
       "abi": [
         {
           "type": "impl",
@@ -46647,7 +47151,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -46721,7 +47225,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -46751,6 +47255,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -46763,19 +47271,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -47112,8 +47628,8 @@
       ]
     },
     {
-      "address": "0x71922fe1ae3becfa95253490dee6fa1d5bc72c5762ea164adb831c9c14cae73",
-      "class_hash": "0x2287bfae5d7ca90b853092a443482bb1757e85e0396723563ed99ae2b34855a",
+      "address": "0x2d086e8252d21af773d1dcdee44d285a042c84366e23895dc7a0c4298ea38ac",
+      "class_hash": "0x1079457b5ae072620aff1098946f3527f0d5bde68193579551fbef91f4615d",
       "abi": [
         {
           "type": "impl",
@@ -47601,7 +48117,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -47675,7 +48191,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -47705,6 +48221,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -47717,19 +48237,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -48066,8 +48594,8 @@
       ]
     },
     {
-      "address": "0x4a68b45e7dead93a8cdc8bb248e7da304a974e79b06d7f85ac81293f7be9c3b",
-      "class_hash": "0x24fe141cfc7d1d5ab70457e3cee52d788d04b2a9940d938a6c92ce2a7ccc45f",
+      "address": "0x70b9f2581ae628da892e957aedfa246c9582fcc1e4e6915fa0649ccf29fa8a",
+      "class_hash": "0x90289f2b442c7b411f6d1cde5075148d92e573649d4a43c5abc54df631f1cb",
       "abi": [
         {
           "type": "impl",
@@ -48555,7 +49083,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -48629,7 +49157,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -48659,6 +49187,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -48671,19 +49203,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -49020,8 +49560,8 @@
       ]
     },
     {
-      "address": "0x5e073b1cf67378cccb817b8ae10497752e416b4be9cfcf509cf7981dab233eb",
-      "class_hash": "0xde3c62caa8c3c59541e38c74256afa9625cad81fbaf4466853fabb70ca58ce",
+      "address": "0x2cbb2620ae3b4a9e243e482f6e9badbc328b697f56027f6ac5b35e22628649e",
+      "class_hash": "0x6ef81eeecfd6e2b4832c15d1a9db5939a43230800abcc52196ed6de0016cc7b",
       "abi": [
         {
           "type": "impl",
@@ -49509,7 +50049,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -49583,7 +50123,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -49613,6 +50153,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -49625,19 +50169,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -49943,8 +50495,8 @@
       ]
     },
     {
-      "address": "0x5979edc83b99e052b4841ac9103b8cdcd158e30e69286e4cb0bd4ae2df93fd",
-      "class_hash": "0x31b1f3941eb854a72e04105a47ee27d77868f6aac8962599634543752c6a690",
+      "address": "0x59e7a930fe2d137edcd39a8ada217889f9e03d5e4f4c12bcbd28608b60d6b44",
+      "class_hash": "0x78a608cf87fca820ea4c57be909db1059e70ee93a38a0667438c78308c1215b",
       "abi": [
         {
           "type": "impl",
@@ -50432,7 +50984,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -50506,7 +51058,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -50536,6 +51088,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -50548,19 +51104,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -50897,8 +51461,8 @@
       ]
     },
     {
-      "address": "0x5fdee0948d22ed1bd93be257556126d1e4c263777376274c10c51f00658a5fb",
-      "class_hash": "0x1c260fb5c5fdd24711f0916230223883b42195338dfa10fa7cf33a6265c9b76",
+      "address": "0x687e1e5bd603fd66469b322c95aff33b32603556975fd877df28be073af898a",
+      "class_hash": "0x1f28c5b4fe246bbcc44bdc2e92594a4dc73c681d66a7f46822ab95558c7009b",
       "abi": [
         {
           "type": "impl",
@@ -50952,7 +51516,7 @@
         },
         {
           "type": "impl",
-          "name": "AllCardsToHeartsConverter",
+          "name": "NeonDoctrineConverter",
           "interface_name": "jokers_of_neon_lib::interfaces::cards::converter::ICardConverter"
         },
         {
@@ -51386,7 +51950,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -51460,7 +52024,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -51490,6 +52054,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -51502,19 +52070,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -51830,8 +52406,8 @@
       ]
     },
     {
-      "address": "0x12a3cc866386eb9b5645683d514626ecdd6aa51d4d727c9dcb79e5fb9684ea5",
-      "class_hash": "0x6655a4f16a300720c1638e5a46e13f5b9a51210404d90c0dba9452924b15b48",
+      "address": "0x2e0ce32fefa9a40430e41d9f41e6dce4ac1af407db4f17d520537ebbef44ad3",
+      "class_hash": "0x4879a82659f7f57bedc911e82e24104bb035fb211c2bfb4b165a4bf27b11c96",
       "abi": [
         {
           "type": "impl",
@@ -52319,7 +52895,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -52393,7 +52969,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -52423,6 +52999,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -52435,19 +53015,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -52766,8 +53354,8 @@
       ]
     },
     {
-      "address": "0x2c8f085e1942ba32b1f7a47736541243732aab0711c2a3896b21b67c0d76c32",
-      "class_hash": "0x9a1eec15e83a6d3c3eed0352df287e751444748f0f194793c2d91e2cbecf3",
+      "address": "0x3f4ea5f37a712ce75f6e5d4ba6513a69c059dfb885c052a2943ad97233a8c27",
+      "class_hash": "0x7ca3daf0e41674c8bad784e89c0dbca4ffd245e27bfbb11f567b6b8272b4fd4",
       "abi": [
         {
           "type": "impl",
@@ -53255,7 +53843,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -53329,7 +53917,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -53359,6 +53947,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -53371,19 +53963,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -53702,8 +54302,8 @@
       ]
     },
     {
-      "address": "0x12fa7b7c72e283ba7190f403b7e661552eab02eb34c53be6fab75a92b211cdd",
-      "class_hash": "0x4de77b95edf0484c92f7c01203409352bd6f01ce973e21c6525b2a1e46d36ea",
+      "address": "0x29ac81ab93232257df2e465ed21634bb7cc319e5161c4efb183915efd237cc7",
+      "class_hash": "0x4efe034567e0e3b538bf430e862292edae2a866f80ef3557a1430113b376f71",
       "abi": [
         {
           "type": "impl",
@@ -54191,7 +54791,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -54265,7 +54865,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -54295,6 +54895,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -54307,19 +54911,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -54656,8 +55268,8 @@
       ]
     },
     {
-      "address": "0x3ef754eaea937984eb29cde53893c37a8c5aad300b4eb68ff31a173b46319c1",
-      "class_hash": "0x4c51ca48c62f8f95f2876c2f68ee90b608a5aaf2253ac7cbc4bd77d80fa949a",
+      "address": "0x723bfe156494b903ba84da877ec0d4c211bde70f55ff9ef726bfd8d0dddc3fe",
+      "class_hash": "0x6c0a7f07e0bfb87d1b64409e8db05ffa12a22abf373641fa349e52c2dd6a2e5",
       "abi": [
         {
           "type": "impl",
@@ -55145,7 +55757,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -55219,7 +55831,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -55249,6 +55861,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -55261,19 +55877,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -55579,8 +56203,8 @@
       ]
     },
     {
-      "address": "0x75a3864f2227921541a70abed6083d76a8ee3909e8aee61070199b06a2a14a",
-      "class_hash": "0x26336ca6eba6010501dd479897e61056571045905b57ba4b7a71d4e4327894",
+      "address": "0x2004cac321418d7c59ee5a0553f117506588876b05b130217d41f45681f62",
+      "class_hash": "0x7b8c65b211284a22df8a70cab9582d5e8ddeefd5c26678e1f2e3831dc1aab6",
       "abi": [
         {
           "type": "impl",
@@ -56068,7 +56692,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -56142,7 +56766,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -56172,6 +56796,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -56184,19 +56812,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -56533,8 +57169,8 @@
       ]
     },
     {
-      "address": "0xd48115c6d62cc8eac4475e51499e5ee21b4c5e257890bc72702260de3f6039",
-      "class_hash": "0x54bb3fd804f47a1a30d29c1e753fa69918a57d90dfbe32072498d5ce62db4ae",
+      "address": "0x3785b58468835c8dfb87896de2b3659b03f92585b2d3bde5f6e3aa2b58d2370",
+      "class_hash": "0xaf57b32007f49fe2f8c136a8f68554c586b6c6273c1068abba4486cd14a7ce",
       "abi": [
         {
           "type": "impl",
@@ -57022,7 +57658,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -57096,7 +57732,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -57126,6 +57762,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -57138,19 +57778,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -57487,8 +58135,8 @@
       ]
     },
     {
-      "address": "0x32a7f1ebc9e08888636c57294c9590c9a5ab92f3f88d27c9478e58b34528155",
-      "class_hash": "0xd8d3cdb5a3bbd9800f7e7ea408fec4f055c7fff0df273e9801b684309b4194",
+      "address": "0x691bfedccf349855fb9bd4bc947e2cc7cc145694d9f1a3343c5b477f0796a7c",
+      "class_hash": "0x1d072850a81a7c51e2a5a273b2148626e888b39f730f10f4eb800e4b6c05a8b",
       "abi": [
         {
           "type": "impl",
@@ -57976,7 +58624,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -58050,7 +58698,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -58080,6 +58728,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -58092,19 +58744,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -58437,8 +59097,8 @@
       ]
     },
     {
-      "address": "0x2fb6b2dc213734487e6a0f5bc51186869c9dcaefffae46a99eefb3755a4470f",
-      "class_hash": "0xba93d27967fc244e7c92c1450f19f43e4b9508f4e5bc3e6aa5394d13ee0b4",
+      "address": "0x420dfdd27fe4affd1b9f1b8d7d50e6e4663516569de44495d7ab56e583786c3",
+      "class_hash": "0x392ff19814d71631f78f6c3d8b3f37673acc26e12c0d709929029ea36b3a096",
       "abi": [
         {
           "type": "impl",
@@ -58926,7 +59586,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -59000,7 +59660,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -59030,6 +59690,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -59042,19 +59706,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -59360,8 +60032,8 @@
       ]
     },
     {
-      "address": "0x1a296647415b77925a563a0c98e2a4752d15f4f5f7ba0eb0ced33df7746ef83",
-      "class_hash": "0x3dfcf9fdd1dc8c432347cd9fa03fc4ab5aedfbfaa51d1c3d641fde6cf9bbe5c",
+      "address": "0x7b4c9586933203b664f3fb2652a18e45a9a2289c7aa6a6a95af85201ffadb18",
+      "class_hash": "0x5031f0061f3c8a345017c313cab22c95cc01a9ce87f6c6619b9e08cb5f25f64",
       "abi": [
         {
           "type": "impl",
@@ -59849,7 +60521,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -59923,7 +60595,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -59953,6 +60625,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -59965,19 +60641,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -60314,8 +60998,8 @@
       ]
     },
     {
-      "address": "0x1578954b9b5467c5305462738e654ecda5c634f877669e23a92a5317a2906d3",
-      "class_hash": "0x7244ee16d00d146b4af4ba4697ca7f1a7f700f7729f34b5c2e1a707ba1722d5",
+      "address": "0x1cec8111d7834a13e41c53eaf377d75ab2cdbfe6941979505448b685235a942",
+      "class_hash": "0x46d26c5fb74641d3b84b87fa72cc8665535161f74136b7f7e01232b18d7b583",
       "abi": [
         {
           "type": "impl",
@@ -60803,7 +61487,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -60877,7 +61561,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -60907,6 +61591,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -60919,19 +61607,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -61268,8 +61964,8 @@
       ]
     },
     {
-      "address": "0x6a9f462673ce0f2070e4989bcb06b71f266b243f897fb735e3a5edbd9baa907",
-      "class_hash": "0x4e5ffba526718c759e90bbb19283314e79249b5e805f5114522b68c9f163253",
+      "address": "0x45557c74bc461f4c67b53c2a7de4336c86af25eed39eb47970b7dc2c3dfb5b4",
+      "class_hash": "0x471b43caf382026514f7dffba446e288c32ac62773ea6f09586a3b682362b22",
       "abi": [
         {
           "type": "impl",
@@ -61757,7 +62453,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -61831,7 +62527,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -61861,6 +62557,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -61873,19 +62573,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -62222,8 +62930,8 @@
       ]
     },
     {
-      "address": "0x69edde41bad83e984899e38deafb306e2cf86d9cc6700850066cbe1b5859e4f",
-      "class_hash": "0x55adee7e46ddb5bb08d249483de5d8fb8bdc929c6d66a6a17ef5c0eaeb4e83",
+      "address": "0x3d5e88a5bccc3f6ad0014e69b5b182d33a92bb3aef836c801bba3b0ef6b7363",
+      "class_hash": "0x3ca39f4e5b2f514427c320fc62c7e211916235075a65e431f17276ab0fee11c",
       "abi": [
         {
           "type": "impl",
@@ -62711,7 +63419,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -62785,7 +63493,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -62815,6 +63523,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -62827,19 +63539,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -63176,8 +63896,8 @@
       ]
     },
     {
-      "address": "0x50354d0318424b33da69ea316de966abefbf13dfd5068892b7a51e05001ce20",
-      "class_hash": "0x5bdb7ec5f2979c6b87c8fc3e0fd87a4aa0f6330e9b571d1ab28094066475f",
+      "address": "0x3645a2b9cb18e5d8b48a69b39cacef1113993f49ebd844ac3079eae366fec0",
+      "class_hash": "0x48bfac038e2c9eb1bc604c250757ab597e4e8f1abbf63f8c842564602d3d8c3",
       "abi": [
         {
           "type": "impl",
@@ -63665,7 +64385,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -63739,7 +64459,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -63769,6 +64489,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -63781,19 +64505,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -64099,8 +64831,8 @@
       ]
     },
     {
-      "address": "0x155029476045c57dd4c8a3bbe80701ddc0ba416cc9d51fd97ccb8b34b91c754",
-      "class_hash": "0x3da2d45a1fba598075fa8d249747c3d460ec3d18a7ba78f7e57c2fbcddf5325",
+      "address": "0x8dfc3e9a60fc965ca9dfd4b5657b3555e8ec7878e9c7c5e7ec761a1ccf0091",
+      "class_hash": "0x565d2e281c56a4e19626754f8ddf303652b2b90d223c2c52e52d2425ba5f336",
       "abi": [
         {
           "type": "impl",
@@ -64588,7 +65320,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -64662,7 +65394,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -64692,6 +65424,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -64704,19 +65440,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -65032,8 +65776,8 @@
       ]
     },
     {
-      "address": "0x79b90849c2b76da3f0a5c8ca1b2c44ea84dc3010d8c0a12bedcb7055af15866",
-      "class_hash": "0x6f34be1c978d1d84797eb0549a510a799e9f6aa6374ef45db7816e25f0359e6",
+      "address": "0x4e2aaad125015d5a92f6aeaed1f55a5b465132e8dd805384a076b64142dbdd1",
+      "class_hash": "0xa4e1b41875db11ec3609e97790c42db91b73a8a615127e932b1aa3a5a970c5",
       "abi": [
         {
           "type": "impl",
@@ -65521,7 +66265,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -65595,7 +66339,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -65625,6 +66369,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -65637,19 +66385,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -65982,8 +66738,8 @@
       ]
     },
     {
-      "address": "0x53238f52b5c29eaaf1b7a41047fdef18676cc27013bd5b7764ef839c96ea233",
-      "class_hash": "0x2d648138f131ca6b27fb81673c1764b6d6223f14eaf04cecd54fb21dc6eac92",
+      "address": "0x612f819b0f159646493d372e15d1c9d3a22e2320f5b9dea449dd042aa4dfd8a",
+      "class_hash": "0x9cc3f97ced5016c5135d970838844508b5d1d13653795a4b2859b86007fca1",
       "abi": [
         {
           "type": "impl",
@@ -66471,7 +67227,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -66545,7 +67301,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -66575,6 +67331,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -66587,19 +67347,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -66932,8 +67700,8 @@
       ]
     },
     {
-      "address": "0x20af089e7b89a5be51a3600dbe6c27e7532472d462b783085535b8c75b99d00",
-      "class_hash": "0x12447c57e0876f9198966c01924ceb9666220db7585bb6cb21ef9a40c7b39db",
+      "address": "0x101c3321820f0443b80020ab1ce2d6a6f5c9f64afde285cc0b031017eee4519",
+      "class_hash": "0x28577bd2c15366ae6af6481ae794c1713fb6395fbb46fe758481ea7a45eac9f",
       "abi": [
         {
           "type": "impl",
@@ -67421,7 +68189,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -67495,7 +68263,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -67525,6 +68293,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -67537,19 +68309,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -67855,8 +68635,8 @@
       ]
     },
     {
-      "address": "0xf8aa5eb28bf97dd44af47460f2c0c43d8b00b9dfd37b3890716bb1328707c3",
-      "class_hash": "0x1376eaf35b56b39315ad514ba52e53469c3a36ea3204709451794d9ff3a51ff",
+      "address": "0x3e7fc8051b703c317241c0a29a0f1c653766d5810dadd481fd6da0c1da1da1b",
+      "class_hash": "0x32d834b2b4e764737888edbc99a94028eeb7f7755dc847c55c9ebf0eb627e8d",
       "abi": [
         {
           "type": "impl",
@@ -68344,7 +69124,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -68418,7 +69198,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -68448,6 +69228,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -68460,19 +69244,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -68774,8 +69566,8 @@
       ]
     },
     {
-      "address": "0x1a30d471ad16d7fb4dbeaa31f28b24809c02a32f33dc82ad6b837f64693f4f3",
-      "class_hash": "0x18dde3c30007ae8189f5c86f581bdcf38ba8db011b26a0e22fdc278bffb4de7",
+      "address": "0x4dd59b27a0252300fcf631aa064c84293902e5b84ee9fbd960f0d0a2f97b032",
+      "class_hash": "0x406fc964ef22fa67f58d2c4b4bb6a9280fc18297619b1d5530eab89cdbeb575",
       "abi": [
         {
           "type": "impl",
@@ -69263,7 +70055,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -69337,7 +70129,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -69367,6 +70159,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -69379,19 +70175,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -69697,8 +70501,8 @@
       ]
     },
     {
-      "address": "0x6e449f8ca166cccb88bd47c3cef81c48eff492dc797cb7886ee90a362d11f1c",
-      "class_hash": "0x12637ca5299dccdff54717c70886f68e7c1c2a37013b9413d0dde33761c672b",
+      "address": "0x3c81bc84b904156cdd84afc7549209bfc3724b0c698e9c2de38d6e9a4e6bb17",
+      "class_hash": "0x538dde1f9c3f7282159d3f75b3d998568d348a71532313783b94ad755060e71",
       "abi": [
         {
           "type": "impl",
@@ -70186,7 +70990,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -70260,7 +71064,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -70290,6 +71094,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -70302,19 +71110,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -70620,8 +71436,8 @@
       ]
     },
     {
-      "address": "0x2e0232020a892c1d0c29db275145eb7472b06ac6a7ae7d0a4516a3faca4584d",
-      "class_hash": "0x9367bc9fa4591d829cc783375a66f078367124706a03ac89ceef9d0834c2ec",
+      "address": "0x2374f1aa49b3ce082be62caf209f362d15825ae3ab660f3d105ab4eefea209f",
+      "class_hash": "0x29b5e69794972aea75bec004a1a26caecffc46f698272a6c80e0639e1aff7ef",
       "abi": [
         {
           "type": "impl",
@@ -71109,7 +71925,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -71183,7 +71999,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -71213,6 +72029,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -71225,19 +72045,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -71574,8 +72402,8 @@
       ]
     },
     {
-      "address": "0x788756987b77dde40bf3f1242e1353e1e093cd60f6602e255e98ab3f1a5aa56",
-      "class_hash": "0x68d8d4b2704a3276492df8e559601b5950589037dab21b1fe57abaebaf1519b",
+      "address": "0x14e9455e64bb928772aa362b05aa2d8b74b31d8587fcc40132fab29801e872e",
+      "class_hash": "0x78763d2bcdcc707f8055b9b1d8f90db3f79e870f36ea2daac4d874f261760a9",
       "abi": [
         {
           "type": "impl",
@@ -72063,7 +72891,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -72137,7 +72965,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -72167,6 +72995,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -72179,19 +73011,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -72528,8 +73368,8 @@
       ]
     },
     {
-      "address": "0x12bb18d7929ce51b0857a599da573b949c4045c88b7896d76ffb03a0c236650",
-      "class_hash": "0x3ca5fd7ce02c96de6561576d7dd7b042f027feffddfbe3eeb7140f7fdec6704",
+      "address": "0x3e119ac5839868c0d05905ae0eb70772cebf2e3dccf2b1c18bd168590546948",
+      "class_hash": "0x5dc233c4f9181c8c157ba62b958be8c6baf53e87987945ec5e33233563bfb6c",
       "abi": [
         {
           "type": "impl",
@@ -73017,7 +73857,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "multi_add",
+              "name": "multi",
               "type": "core::integer::u32"
             }
           ]
@@ -73091,7 +73931,7 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "traditonal_cards_count",
+              "name": "traditional_cards_count",
               "type": "core::integer::u32"
             },
             {
@@ -73121,6 +73961,10 @@
             {
               "name": "reroll_count",
               "type": "core::integer::u32"
+            },
+            {
+              "name": "special_cards_sold",
+              "type": "core::integer::u32"
             }
           ]
         },
@@ -73133,19 +73977,27 @@
               "type": "core::integer::u64"
             },
             {
-              "name": "power_ups_used",
-              "type": "core::integer::u32"
-            },
-            {
               "name": "highest_hand",
               "type": "core::integer::u32"
             },
             {
-              "name": "rage_wins",
+              "name": "most_played_hand",
+              "type": "(jokers_of_neon_lib::models::data::poker_hand::PokerHand, core::integer::u32)"
+            },
+            {
+              "name": "highest_cash",
               "type": "core::integer::u32"
             },
             {
-              "name": "special_cards_sold",
+              "name": "cards_played_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "cards_discarded_count",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "rage_wins",
               "type": "core::integer::u32"
             }
           ]
@@ -73482,8 +74334,8 @@
       ]
     },
     {
-      "address": "0x2af69b2496b585919945720b1138617652aa40fd64f5cbd572f5eff2a38f62",
-      "class_hash": "0x57e330cedbd919fe54df7ae8890589b8b025f0303542879270a8e2190157e5f",
+      "address": "0x33d250a8a8b20482c6569dc8ad7691fc61f303d2a0b46ab5ed8dfd2156ba8f8",
+      "class_hash": "0x3b5b02bec5b2eb23f316a80f30ad0bde3d437f3b2f3389ebd1a958f2512e494",
       "abi": [
         {
           "type": "impl",
@@ -73721,9 +74573,9 @@
     },
     {
       "members": [],
-      "class_hash": "0x58fea05a148073c54983ddf48afc93d1a8f8afd4aca58c8e791f5c4e042e664",
-      "tag": "jokers_of_neon_classic-Nonce",
-      "selector": "0x65c0c860d25f304e901f148c253c24165e7e30d6acd24afb6924b0662410d05"
+      "class_hash": "0x2e91218cc34ef2f24c0be1652c9cf2e7db73bdd18ca8b98a7a3d73300b070c7",
+      "tag": "jokers_of_neon_classic-Salt",
+      "selector": "0x139be4778ee1cb997450813f8a5a58aa0f613d758f14c861b61f06bc39ac0c5"
     }
   ],
   "events": [],

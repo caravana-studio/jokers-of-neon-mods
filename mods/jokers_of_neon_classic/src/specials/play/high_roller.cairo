@@ -1,12 +1,11 @@
 #[dojo::contract]
 pub mod special_high_roller {
+    use crate::utils::random;
     use dojo::{model::ModelStorage, world::WorldStorage};
-    use jokers_of_neon_classic::constants::DEFAULT_NS;
-    use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_ROLLER_ID;
-    use jokers_of_neon_lib::random::{Nonce, RandomTrait};
+    use jokers_of_neon_classic::{constants::DEFAULT_NS, specials::specials::SPECIAL_HIGH_ROLLER_ID};
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::{executable::ICardExecutable, info::ICardInfo}},
-        models::{data::poker_hand::{PokerHand}, {card_type::CardType, tracker::GameContext}},
+        models::{card_type::CardType, data::poker_hand::PokerHand, tracker::GameContext},
     };
 
     #[dojo::model]
@@ -24,23 +23,19 @@ pub mod special_high_roller {
     impl HighRollerExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-
-            let mut random = RandomTrait::initialize_random('jokers_of_neon_classic', context.game.seed);
-
             let mut cumulative: Cumulative = world.read_model((context.game.id, HIGH_ROLLER_KEY));
             let value = cumulative.value;
-            let accumulate = random.get_random_number(2) == 1; // 50% chance
 
-            if accumulate {
-                let (poker_hand, _) = context.hand;
-                match poker_hand {
-                    PokerHand::HighCard => {
+            let (poker_hand, _) = context.hand;
+            match poker_hand {
+                PokerHand::HighCard => {
+                    if random::between(ref world, context, (1, 2)) == 1 { // 50% chance
                         cumulative.value += 1;
                         world.write_model(@cumulative);
-                    },
-                    _ => {},
-                };
-            }
+                    }
+                },
+                _ => {},
+            };
             (0, value, 0)
         }
     }

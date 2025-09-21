@@ -1,13 +1,10 @@
 #[dojo::contract]
 pub mod special_kings_faith {
-    use dojo::{model::ModelStorage, world::WorldStorage};
-    use jokers_of_neon_classic::specials::specials::SPECIAL_KINGS_FAITH_ID;
-    use jokers_of_neon_lib::random::{Nonce, RandomTrait};
+    use crate::utils::random;
+    use jokers_of_neon_classic::{constants::DEFAULT_NS, specials::specials::SPECIAL_KINGS_FAITH_ID};
     use jokers_of_neon_lib::{
         interfaces::{base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable}},
-        models::{
-            data::card::{Card, Suit, Value}, data::poker_hand::{PokerHand}, {card_type::CardType, tracker::GameContext},
-        },
+        models::{card_type::CardType, data::card::{Card, Value}, tracker::GameContext},
     };
 
     #[abi(embed_v0)]
@@ -21,10 +18,11 @@ pub mod special_kings_faith {
     #[abi(embed_v0)]
     impl KingsFaithExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut random = RandomTrait::initialize_random('jokers_of_neon_classic', context.game.seed);
+            let mut world = self.world(DEFAULT_NS());
+            // This card has double effect
             match context.card_type {
                 CardType::Hand => {
-                    let points = if random.get_random_number(4) == 1 { // 25% chance
+                    let points = if random::between(ref world, context, (1, 4)) == 1 { // 25% chance
                         100
                     } else {
                         0
@@ -32,7 +30,7 @@ pub mod special_kings_faith {
                     (points, 0, 0)
                 },
                 CardType::Hit => {
-                    let cash = if random.get_random_number(2) == 1 { // 50% chance
+                    let cash = if random::between(ref world, context, (1, 2)) == 1 { // 50% chance
                         100
                     } else {
                         0
