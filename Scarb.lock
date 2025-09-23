@@ -3,32 +3,35 @@ version = 1
 
 [[package]]
 name = "dojo"
-version = "1.7.0-alpha.2"
-source = "git+https://github.com/dojoengine/dojo?tag=v1.7.0-alpha.3#98231fbe8a2f2f001e162bac8adea667b129bc5b"
+version = "1.7.0"
+source = "registry+https://scarbs.xyz/"
+checksum = "sha256:43866af1b23659c992fcf786f7f69429689eb684d42ffb77a351490e763bf915"
 dependencies = [
- "dojo_macros",
+ "dojo_cairo_macros",
 ]
+
+[[package]]
+name = "dojo_cairo_macros"
+version = "1.7.0"
+source = "registry+https://scarbs.xyz/"
+checksum = "sha256:53d38987d9a0acc9493282711cd504ad4920fd4cd31f230deb5ff4ea11183958"
 
 [[package]]
 name = "dojo_cairo_test"
-version = "1.7.0-alpha.2"
-source = "git+https://github.com/dojoengine/dojo?tag=v1.7.0-alpha.3#98231fbe8a2f2f001e162bac8adea667b129bc5b"
+version = "1.7.0"
+source = "registry+https://scarbs.xyz/"
+checksum = "sha256:3e95042deeef76bd43c8c05b15f8757060663269aed7e31f9c6c4a3934a5cba4"
 dependencies = [
  "dojo",
 ]
-
-[[package]]
-name = "dojo_macros"
-version = "1.7.0-alpha.2"
-source = "git+https://github.com/dojoengine/dojo?tag=v1.7.0-alpha.3#98231fbe8a2f2f001e162bac8adea667b129bc5b"
 
 [[package]]
 name = "jokers_of_neon_lib"
 version = "0.19.0"
-source = "git+https://github.com/caravana-studio/jokers-of-neon-lib?branch=bump-v1.7.0-alpha.3#b11d37cad02611eb693abd203404619629fa17a6"
+source = "git+https://github.com/caravana-studio/jokers-of-neon-lib?branch=bump-v1.7.0-alpha.3#dcd6132bd498f0d23f9a55956e8ca2c06492d333"
 dependencies = [
  "dojo",
- "dojo_macros",
+ "dojo_cairo_macros",
 ]
 
 [[package]]
@@ -36,7 +39,7 @@ name = "jokers_of_neon_mods"
 version = "0.19.0"
 dependencies = [
  "dojo",
+ "dojo_cairo_macros",
  "dojo_cairo_test",
- "dojo_macros",
  "jokers_of_neon_lib",
 ]
