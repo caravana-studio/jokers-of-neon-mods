@@ -122,6 +122,7 @@ mod utils {
     mod loot_boxes_info;
     mod poker_hands_info;
     mod rages_info;
+    mod random;
     mod specials_info;
 }
 
