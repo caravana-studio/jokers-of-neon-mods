@@ -11,9 +11,7 @@ trait ISpecialManager<T> {
 
 #[dojo::contract]
 pub mod special_manager {
-    use dojo::world::{IWorldDispatcher, IWorldDispatcherTrait};
     use jokers_of_neon_mods::constants::DEFAULT_NS;
-    use jokers_of_neon_mods::models::game_mod::GameMod;
     use jokers_of_neon_mods::models::special_data::SpecialData;
     use jokers_of_neon_mods::store::{StoreImpl, StoreTrait};
     use starknet::{ContractAddress, get_caller_address};
@@ -52,7 +50,9 @@ pub mod special_manager {
             let mut store = StoreTrait::new(ref world);
             let special_data = store.get_special_data(mod_id, special_id);
 
-            assert!(!special_data.contract_address.is_zero(), "Special card ({}) not registered", special_id);
+            assert!(
+                special_data.contract_address != 0.try_into().unwrap(), "Special card ({}) not registered", special_id,
+            );
             special_data.contract_address
         }
     }

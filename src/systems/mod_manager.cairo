@@ -64,7 +64,7 @@ pub mod mod_manager {
             let mut world = self.world(DEFAULT_NS());
             let mut store = StoreTrait::new(ref world);
             let mut _mod = store.get_game_mod(mod_id);
-            assert(_mod.created_date != Zeroable::zero(), 'Mod does not exist');
+            assert(_mod.created_date != 0, 'Mod does not exist');
             assert(_mod.owner == starknet::get_caller_address(), 'Caller not owner');
 
             _mod.last_update_date = starknet::get_block_timestamp();
@@ -85,12 +85,12 @@ pub mod mod_manager {
             let mut world = self.world(DEFAULT_NS());
             let mut store = StoreTrait::new(ref world);
             let mut _mod = store.get_game_mod(mod_id);
-            assert(_mod.created_date != Zeroable::zero(), 'Mod does not exist');
+            assert(_mod.created_date != 0, 'Mod does not exist');
             assert(_mod.owner == starknet::get_caller_address(), 'Caller not owner');
 
             _mod.created_date = 0;
             _mod.last_update_date = 0;
-            _mod.owner = Zeroable::zero();
+            _mod.owner = 0.try_into().unwrap();
             store.set_game_mod(_mod);
         }
 
@@ -122,12 +122,12 @@ pub mod mod_manager {
     #[generate_trait]
     impl InternalImpl of InternalTrait {
         fn assert_configs_are_non_zero(self: @ContractState, config: ModConfig) {
-            assert(config.deck_address != Zeroable::zero(), 'Deck config is zero');
-            assert(config.specials_address != Zeroable::zero(), 'Specials config is zero');
-            assert(config.rages_address != Zeroable::zero(), 'Rages config is zero');
-            assert(config.loot_boxes_address != Zeroable::zero(), 'Loot boxes config is zero');
-            assert(config.game_config_address != Zeroable::zero(), 'Game config is zero');
-            assert(config.shop_config_address != Zeroable::zero(), 'Shop config is zero');
+            assert(config.deck_address != 0.try_into().unwrap(), 'Deck config is zero');
+            assert(config.specials_address != 0.try_into().unwrap(), 'Specials config is zero');
+            assert(config.rages_address != 0.try_into().unwrap(), 'Rages config is zero');
+            assert(config.loot_boxes_address != 0.try_into().unwrap(), 'Loot boxes config is zero');
+            assert(config.game_config_address != 0.try_into().unwrap(), 'Game config is zero');
+            assert(config.shop_config_address != 0.try_into().unwrap(), 'Shop config is zero');
         }
     }
 }

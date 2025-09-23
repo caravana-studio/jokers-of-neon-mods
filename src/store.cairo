@@ -8,12 +8,12 @@ use jokers_of_neon_mods::models::special_data::SpecialData;
 const MOD_TRACKER_KEY: felt252 = 'MOD_TRACKER_KEY';
 
 #[derive(Drop)]
-struct Store {
+pub struct Store {
     world: WorldStorage,
 }
 
 #[generate_trait]
-impl StoreImpl of StoreTrait {
+pub impl StoreImpl of StoreTrait {
     #[inline(always)]
     fn new(ref world: WorldStorage) -> Store {
         Store { world: world }
