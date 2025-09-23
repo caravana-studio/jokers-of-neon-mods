@@ -1,8 +1,7 @@
 #[dojo::contract]
 pub mod card_info {
-    use dojo::world::Resource::Contract;
     use jokers_of_neon_lib::constants::card::{JOKER_CARD_ID, traditional_cards_all};
-    use jokers_of_neon_lib::interfaces::info::card_info::{ICardInfo, ICardInfoDispatcher, ICardInfoDispatcherTrait};
+    use jokers_of_neon_lib::interfaces::info::card_info::ICardInfo;
 
     #[abi(embed_v0)]
     impl CardInfoImpl of ICardInfo<ContractState> {

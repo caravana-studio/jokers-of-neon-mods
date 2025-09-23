@@ -4,13 +4,12 @@ mod special_discard_mastery {
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::models::card_type::CardType;
-    use jokers_of_neon_lib::models::data::power_up::PowerUp;
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl DiscardMasteryExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            if context.round.remaining_discards.is_zero() {
+            if context.round.remaining_discards == 0 {
                 (0, 10, 0)
             } else {
                 (0, 0, 0)

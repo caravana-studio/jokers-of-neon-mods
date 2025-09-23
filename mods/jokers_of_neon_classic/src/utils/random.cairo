@@ -3,7 +3,7 @@ use dojo::model::ModelStorage;
 use dojo::world::WorldStorage;
 use jokers_of_neon_lib::models::tracker::GameContext;
 use jokers_of_neon_lib::random::{RandomTrait, Salt};
-use crate::constants::{DEFAULT_NS, DEFAULT_NS_FELT};
+use crate::constants::DEFAULT_NS_FELT;
 
 pub fn between(ref world: WorldStorage, context: GameContext, range: (i32, i32)) -> i32 {
     let mut salt: Salt = world.read_model('SALT_ID');

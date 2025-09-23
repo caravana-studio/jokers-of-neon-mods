@@ -4,8 +4,7 @@ pub mod special_reds {
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::models::card_type::CardType;
-    use jokers_of_neon_lib::models::data::card::{Card, Suit};
-    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::data::card::Suit;
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]

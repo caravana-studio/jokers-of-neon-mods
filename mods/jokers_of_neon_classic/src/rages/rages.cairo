@@ -21,7 +21,7 @@ pub const RAGE_CARD_CHAOTIC_VARIANCE: u32 = 20043;
 pub const RAGE_CARD_OBSESSIVE_REPETITION: u32 = 20044;
 pub const RAGE_CARD_FAVORITE_LOCK: u32 = 20045;
 
-fn rages_ids_all() -> Array<u32> {
+pub fn rages_ids_all() -> Array<u32> {
     array![
         RAGE_CARD_SILENT_HEARTS, RAGE_CARD_SILENT_CLUBS, RAGE_CARD_SILENT_DIAMONDS, RAGE_CARD_SILENT_SPADES,
         RAGE_CARD_SILENT_JOKERS, RAGE_CARD_ZERO_WASTE, RAGE_CARD_HAND_LEECH, RAGE_CARD_DIMINISHED_HOLD,
@@ -29,7 +29,7 @@ fn rages_ids_all() -> Array<u32> {
     ]
 }
 
-fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
+pub fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
     // C-Grade Group
     let C_RAGES_PROBABILITY = 45;
     let C_RAGES = array![

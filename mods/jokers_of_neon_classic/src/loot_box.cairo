@@ -3,7 +3,7 @@ use jokers_of_neon_lib::constants::card::{
     JOKER_CARD_ID, NEON_JOKER_CARD_ID, all_hearts_cards, neon_cards_all, neon_hearts_cards, traditional_cards_all,
 };
 use jokers_of_neon_lib::constants::modifiers::{SUIT_HEARTS_MODIFIER_ID, modifiers_ids_all, modifiers_shop_info};
-use jokers_of_neon_lib::models::data::card::{Card, CardTrait, Suit, Value, ValueEnumerableImpl};
+use jokers_of_neon_lib::models::data::card::{CardTrait, Suit, Value};
 use jokers_of_neon_lib::models::data::loot_box::LootBox;
 
 const BASIC_LOOT_BOX_ID: u32 = 1;
@@ -18,21 +18,21 @@ const SPECIAL_BET_LOOT_BOX_ID: u32 = 9;
 const NEON_LOOT_BOX_ID: u32 = 10;
 const EMPTY_PACK_ID: u32 = 999;
 
-fn loot_boxes_ids_all() -> Array<u32> {
+pub fn loot_boxes_ids_all() -> Array<u32> {
     array![
         BASIC_LOOT_BOX_ID, ADVANCED_LOOT_BOX_ID, JOKER_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID,
         FIGURES_LOOT_BOX_ID, DECEITFUL_JOKER_LOOT_BOX_ID, LOVERS_LOOT_BOX_ID, SPECIAL_BET_LOOT_BOX_ID, NEON_LOOT_BOX_ID,
     ]
 }
 
-fn loot_boxes_ids_all_without_jokers() -> Array<u32> {
+pub fn loot_boxes_ids_all_without_jokers() -> Array<u32> {
     array![
         BASIC_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, LOVERS_LOOT_BOX_ID,
         SPECIAL_BET_LOOT_BOX_ID,
     ]
 }
 
-fn BASIC_LOOT_BOX() -> LootBox {
+pub fn BASIC_LOOT_BOX() -> LootBox {
     LootBox {
         id: BASIC_LOOT_BOX_ID,
         cost: 1000,
@@ -48,7 +48,7 @@ fn BASIC_LOOT_BOX() -> LootBox {
     }
 }
 
-fn ADVANCED_LOOT_BOX() -> LootBox {
+pub fn ADVANCED_LOOT_BOX() -> LootBox {
     LootBox {
         id: ADVANCED_LOOT_BOX_ID,
         cost: 1500,
@@ -64,7 +64,7 @@ fn ADVANCED_LOOT_BOX() -> LootBox {
     }
 }
 
-fn JOKER_LOOT_BOX() -> LootBox {
+pub fn JOKER_LOOT_BOX() -> LootBox {
     LootBox {
         id: JOKER_LOOT_BOX_ID,
         cost: 1500,
@@ -80,7 +80,7 @@ fn JOKER_LOOT_BOX() -> LootBox {
     }
 }
 
-fn SPECIALS_LOOT_BOX() -> LootBox {
+pub fn SPECIALS_LOOT_BOX() -> LootBox {
     let (specials_group, specials_probs, _) = specials_shop_info();
     let (modifiers_group, modifiers_probs, _) = modifiers_shop_info();
     LootBox {
@@ -114,7 +114,7 @@ fn SPECIALS_LOOT_BOX() -> LootBox {
     }
 }
 
-fn MODIFIER_LOOT_BOX() -> LootBox {
+pub fn MODIFIER_LOOT_BOX() -> LootBox {
     let (modifiers_group, modifiers_probs, _) = modifiers_shop_info();
     LootBox {
         id: MODIFIER_LOOT_BOX_ID,
@@ -138,7 +138,7 @@ fn MODIFIER_LOOT_BOX() -> LootBox {
     }
 }
 
-fn FIGURES_LOOT_BOX() -> LootBox {
+pub fn FIGURES_LOOT_BOX() -> LootBox {
     let figures_cards = array![
         CardTrait::generate_id(Value::Jack, Suit::Hearts), CardTrait::generate_id(Value::Queen, Suit::Hearts),
         CardTrait::generate_id(Value::King, Suit::Hearts), CardTrait::generate_id(Value::Jack, Suit::Spades),
@@ -158,7 +158,7 @@ fn FIGURES_LOOT_BOX() -> LootBox {
     }
 }
 
-fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
+pub fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
     LootBox {
         id: DECEITFUL_JOKER_LOOT_BOX_ID,
         cost: 1700,
@@ -174,7 +174,7 @@ fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
     }
 }
 
-fn LOVERS_LOOT_BOX() -> LootBox {
+pub fn LOVERS_LOOT_BOX() -> LootBox {
     LootBox {
         id: LOVERS_LOOT_BOX_ID,
         cost: 1500,
@@ -191,7 +191,7 @@ fn LOVERS_LOOT_BOX() -> LootBox {
     }
 }
 
-fn SPECIAL_BET_LOOT_BOX() -> LootBox {
+pub fn SPECIAL_BET_LOOT_BOX() -> LootBox {
     LootBox {
         id: SPECIAL_BET_LOOT_BOX_ID,
         cost: 500,
@@ -206,7 +206,7 @@ fn SPECIAL_BET_LOOT_BOX() -> LootBox {
     }
 }
 
-fn NEON_LOOT_BOX() -> LootBox {
+pub fn NEON_LOOT_BOX() -> LootBox {
     LootBox {
         id: NEON_LOOT_BOX_ID,
         cost: 1500,
@@ -218,14 +218,14 @@ fn NEON_LOOT_BOX() -> LootBox {
     }
 }
 
-fn EMPTY_LOOT_BOX() -> LootBox {
+pub fn EMPTY_LOOT_BOX() -> LootBox {
     LootBox {
         id: EMPTY_PACK_ID, cost: 0, name: '', probability: 0, size: 0, cards: array![].span(), probs: array![].span(),
     }
 }
 
 // Return -> (Loot Boxes Group, Probability Group, Group Cost)
-fn loot_boxes_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
+pub fn loot_boxes_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // D-Grade Group
     let D_LOOT_BOX_PROBABILITY = 30;
     let D_LOOT_BOX_COST = 500;
@@ -254,7 +254,7 @@ fn loot_boxes_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     )
 }
 
-fn get_loot_box(loot_box_id: u32) -> LootBox {
+pub fn get_loot_box(loot_box_id: u32) -> LootBox {
     if loot_box_id == BASIC_LOOT_BOX_ID {
         BASIC_LOOT_BOX()
     } else if loot_box_id == ADVANCED_LOOT_BOX_ID {

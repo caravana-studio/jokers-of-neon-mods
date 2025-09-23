@@ -1,6 +1,5 @@
 #[dojo::contract]
 mod special_deadline {
-    use jokers_of_neon_classic::poker_hand::get_poker_hand_data;
     use jokers_of_neon_classic::specials::specials::SPECIAL_DEADLINE_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;

@@ -5,7 +5,7 @@ pub mod special_deuces_wild {
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::converter::ICardConverter;
     use jokers_of_neon_lib::models::card_type::CardType;
-    use jokers_of_neon_lib::models::data::card::{Card, Suit, Value};
+    use jokers_of_neon_lib::models::data::card::{Card, Value};
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]

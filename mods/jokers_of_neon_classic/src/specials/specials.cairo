@@ -74,7 +74,7 @@ pub const SPECIAL_QUEENS_FORTUNE_ID: u32 = 10080;
 
 pub const SPECIAL_INCREASE_LEVEL_HIGH_CARD_ID: u32 = 10084;
 
-fn specials_ids_all() -> Array<u32> {
+pub fn specials_ids_all() -> Array<u32> {
     array![
         SPECIAL_MULTI_FOR_HEART_ID, SPECIAL_MULTI_FOR_CLUB_ID, SPECIAL_MULTI_FOR_DIAMOND_ID, SPECIAL_MULTI_FOR_SPADE_ID,
         SPECIAL_INCREASE_LEVEL_PAIR_ID, SPECIAL_INCREASE_LEVEL_DOUBLE_PAIR_ID, SPECIAL_INCREASE_LEVEL_STRAIGHT_ID,
@@ -94,7 +94,7 @@ fn specials_ids_all() -> Array<u32> {
     ]
 }
 
-fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
+pub fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // C-Grade Group
     let C_SPECIALS_PROBABILITY = 45;
     let C_SPECIALS_COST = 1000;

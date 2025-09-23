@@ -6,7 +6,7 @@ pub mod special_neon_doctrine {
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::converter::ICardConverter;
     use jokers_of_neon_lib::models::card_type::CardType;
-    use jokers_of_neon_lib::models::data::card::{Card, CardTrait, Suit, Value};
+    use jokers_of_neon_lib::models::data::card::{Card, CardTrait};
     use jokers_of_neon_lib::models::tracker::GameContext;
     use crate::utils::random;
 

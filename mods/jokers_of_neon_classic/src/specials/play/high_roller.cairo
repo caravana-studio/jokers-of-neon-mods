@@ -1,7 +1,6 @@
 #[dojo::contract]
 pub mod special_high_roller {
     use dojo::model::ModelStorage;
-    use dojo::world::WorldStorage;
     use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_ROLLER_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;

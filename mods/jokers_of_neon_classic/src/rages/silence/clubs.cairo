@@ -5,7 +5,6 @@ pub mod rage_silent_clubs {
     use jokers_of_neon_lib::interfaces::rages::silence::IRageSilence;
     use jokers_of_neon_lib::models::card_type::CardType;
     use jokers_of_neon_lib::models::data::card::{Suit, Value};
-    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl SilenceClubsSilence of IRageSilence<ContractState> {

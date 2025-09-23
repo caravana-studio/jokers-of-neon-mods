@@ -1,14 +1,12 @@
 #[dojo::contract]
 pub mod special_burning_rewards {
     use dojo::model::ModelStorage;
-    use dojo::world::WorldStorage;
     use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_BURNING_REWARDS_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::interfaces::cards::info::ICardInfo;
     use jokers_of_neon_lib::models::card_type::CardType;
-    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[dojo::model]
