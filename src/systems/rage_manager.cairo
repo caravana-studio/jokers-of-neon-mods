@@ -1,7 +1,7 @@
 use starknet::ContractAddress;
 
 #[starknet::interface]
-trait IRageManager<T> {
+pub trait IRageManager<T> {
     fn register_rage(ref self: T, mod_id: felt252, rage_id: u32, contract_address: ContractAddress);
     fn register_rages(ref self: T, mod_id: felt252, rage_ids: Span<u32>, contract_addresses: Span<ContractAddress>);
     fn get_rage_address(self: @T, mod_id: felt252, rage_id: u32) -> ContractAddress;

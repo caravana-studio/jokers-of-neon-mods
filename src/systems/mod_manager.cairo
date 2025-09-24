@@ -4,7 +4,7 @@ use jokers_of_neon_mods::models::mod_tracker::ModTracker;
 use starknet::ContractAddress;
 
 #[starknet::interface]
-trait IModManager<T> {
+pub trait IModManager<T> {
     fn create_mod(ref self: T, owner: ContractAddress, name: felt252, config: ModConfig) -> felt252;
     fn update_mod(ref self: T, mod_id: felt252, config: ModConfig);
     fn delete_mod(ref self: T, mod_id: felt252);

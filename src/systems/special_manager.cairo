@@ -1,7 +1,7 @@
 use starknet::ContractAddress;
 
 #[starknet::interface]
-trait ISpecialManager<T> {
+pub trait ISpecialManager<T> {
     fn register_special(ref self: T, mod_id: felt252, special_id: u32, contract_address: ContractAddress);
     fn register_specials(
         ref self: T, mod_id: felt252, special_ids: Span<u32>, contract_addresses: Span<ContractAddress>,
