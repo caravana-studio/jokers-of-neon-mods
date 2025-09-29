@@ -2,8 +2,11 @@
 pub mod special_deuces_wild {
     use jokers_of_neon_classic::specials::specials::SPECIAL_DEUCES_WILD_ID;
     use jokers_of_neon_lib::constants::card::{NEON_WILD_CARD, WILD_CARD};
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::converter::ICardConverter};
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit, Value}, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::converter::ICardConverter;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Card, Value};
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl AllCardsToHeartsConverter of ICardConverter<ContractState> {
@@ -25,7 +28,7 @@ pub mod special_deuces_wild {
                     },
                     Option::None => { break; },
                 }
-            };
+            }
             result.span()
         }
     }

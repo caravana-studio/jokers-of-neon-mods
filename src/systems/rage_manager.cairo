@@ -1,7 +1,7 @@
 use starknet::ContractAddress;
 
 #[starknet::interface]
-trait IRageManager<T> {
+pub trait IRageManager<T> {
     fn register_rage(ref self: T, mod_id: felt252, rage_id: u32, contract_address: ContractAddress);
     fn register_rages(ref self: T, mod_id: felt252, rage_ids: Span<u32>, contract_addresses: Span<ContractAddress>);
     fn get_rage_address(self: @T, mod_id: felt252, rage_id: u32) -> ContractAddress;
@@ -9,9 +9,9 @@ trait IRageManager<T> {
 
 #[dojo::contract]
 pub mod rage_manager {
-    use dojo::world::{IWorldDispatcher, IWorldDispatcherTrait};
     use jokers_of_neon_mods::constants::DEFAULT_NS;
-    use jokers_of_neon_mods::{models::{game_mod::GameMod, rage_data::RageData}, store::{StoreImpl, StoreTrait}};
+    use jokers_of_neon_mods::models::rage_data::RageData;
+    use jokers_of_neon_mods::store::{StoreImpl, StoreTrait};
     use starknet::{ContractAddress, get_caller_address};
 
     #[abi(embed_v0)]
@@ -46,7 +46,7 @@ pub mod rage_manager {
             let mut store = StoreTrait::new(ref world);
             let rage_data = store.get_rage_data(mod_id, rage_id);
 
-            assert!(!rage_data.contract_address.is_zero(), "Rage card ({}) is not registered", rage_id);
+            assert!(rage_data.contract_address != 0.try_into().unwrap(), "Rage card ({}) is not registered", rage_id);
             rage_data.contract_address
         }
     }

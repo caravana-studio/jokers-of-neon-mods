@@ -1,12 +1,13 @@
 #[dojo::contract]
 pub mod rage_obsessive_repetition {
-    use dojo::{model::ModelStorage, world::WorldStorage};
+    use dojo::model::ModelStorage;
     use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_OBSESSIVE_REPETITION;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::condition::ICardCondition};
-    use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, Suit}, data::poker_hand::PokerHand, tracker::GameContext,
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[dojo::model]
     #[derive(Copy, Drop, Serde)]

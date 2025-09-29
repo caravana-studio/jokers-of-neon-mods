@@ -1,11 +1,14 @@
 #[dojo::contract]
 pub mod special_kings_faith {
+    use jokers_of_neon_classic::constants::DEFAULT_NS;
+    use jokers_of_neon_classic::specials::specials::SPECIAL_KINGS_FAITH_ID;
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Card, Value};
+    use jokers_of_neon_lib::models::tracker::GameContext;
     use crate::utils::random;
-    use jokers_of_neon_classic::{constants::DEFAULT_NS, specials::specials::SPECIAL_KINGS_FAITH_ID};
-    use jokers_of_neon_lib::{
-        interfaces::{base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable}},
-        models::{card_type::CardType, data::card::{Card, Value}, tracker::GameContext},
-    };
 
     #[abi(embed_v0)]
     impl KingsFaithCondition of ICardCondition<ContractState> {

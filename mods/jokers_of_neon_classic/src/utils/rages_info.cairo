@@ -1,8 +1,7 @@
 #[dojo::contract]
 pub mod rages_info {
-    use dojo::world::Resource::Contract;
     use jokers_of_neon_classic::rages::rages::{rages_ids_all, rages_info};
-    use jokers_of_neon_lib::interfaces::info::rages_info::{IRagesInfo, IRagesInfoDispatcher, IRagesInfoDispatcherTrait};
+    use jokers_of_neon_lib::interfaces::info::rages_info::IRagesInfo;
 
     #[abi(embed_v0)]
     impl RagesInfoImpl of IRagesInfo<ContractState> {

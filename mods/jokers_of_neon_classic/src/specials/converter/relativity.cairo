@@ -2,11 +2,12 @@
 pub mod special_relativity {
     use jokers_of_neon_classic::specials::specials::SPECIAL_RELATIVITY_ID;
     use jokers_of_neon_lib::constants::card::get_card;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::converter::ICardConverter};
-    use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, CardTrait, Suit, Value}, data::poker_hand::PokerHand,
-        tracker::GameContext,
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::converter::ICardConverter;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Card, CardTrait, Suit, Value};
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl RelativityConverter of ICardConverter<ContractState> {
@@ -38,7 +39,7 @@ pub mod special_relativity {
                         },
                         Option::None => { break; },
                     }
-                };
+                }
                 result.span()
             } else {
                 cards

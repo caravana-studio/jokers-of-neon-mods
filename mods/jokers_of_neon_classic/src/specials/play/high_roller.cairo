@@ -1,12 +1,15 @@
 #[dojo::contract]
 pub mod special_high_roller {
+    use dojo::model::ModelStorage;
+    use jokers_of_neon_classic::constants::DEFAULT_NS;
+    use jokers_of_neon_classic::specials::specials::SPECIAL_HIGH_ROLLER_ID;
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::interfaces::cards::info::ICardInfo;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::tracker::GameContext;
     use crate::utils::random;
-    use dojo::{model::ModelStorage, world::WorldStorage};
-    use jokers_of_neon_classic::{constants::DEFAULT_NS, specials::specials::SPECIAL_HIGH_ROLLER_ID};
-    use jokers_of_neon_lib::{
-        interfaces::{base::ICardBase, cards::{executable::ICardExecutable, info::ICardInfo}},
-        models::{card_type::CardType, data::poker_hand::PokerHand, tracker::GameContext},
-    };
 
     #[dojo::model]
     #[derive(Copy, Drop, Serde)]
@@ -35,7 +38,7 @@ pub mod special_high_roller {
                     }
                 },
                 _ => {},
-            };
+            }
             (0, value, 0)
         }
     }

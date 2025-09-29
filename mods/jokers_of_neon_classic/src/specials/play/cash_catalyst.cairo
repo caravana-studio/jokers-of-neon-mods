@@ -1,8 +1,10 @@
 #[dojo::contract]
 pub mod special_cash_catalyst {
     use jokers_of_neon_classic::specials::specials::SPECIAL_CASH_CATALYST_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
-    use jokers_of_neon_lib::models::{card_type::CardType, data::poker_hand::PokerHand, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl CashCatalystExecutable of ICardExecutable<ContractState> {

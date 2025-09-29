@@ -1,22 +1,15 @@
 use jokers_of_neon_lib::models::data::poker_hand::{LevelPokerHand, PokerHand};
 
-fn poker_hands_ids_all() -> Array<u32> {
+pub fn poker_hands_ids_all() -> Array<u32> {
     array![
-        PokerHand::RoyalFlush.into(),
-        PokerHand::StraightFlush.into(),
-        PokerHand::FiveOfAKind.into(),
-        PokerHand::FourOfAKind.into(),
-        PokerHand::FullHouse.into(),
-        PokerHand::Straight.into(),
-        PokerHand::Flush.into(),
-        PokerHand::ThreeOfAKind.into(),
-        PokerHand::TwoPair.into(),
-        PokerHand::OnePair.into(),
+        PokerHand::RoyalFlush.into(), PokerHand::StraightFlush.into(), PokerHand::FiveOfAKind.into(),
+        PokerHand::FourOfAKind.into(), PokerHand::FullHouse.into(), PokerHand::Straight.into(), PokerHand::Flush.into(),
+        PokerHand::ThreeOfAKind.into(), PokerHand::TwoPair.into(), PokerHand::OnePair.into(),
         PokerHand::HighCard.into(),
     ]
 }
 
-fn initial_poker_hands() -> Array<LevelPokerHand> {
+pub fn initial_poker_hands() -> Array<LevelPokerHand> {
     array![
         LevelPokerHand { poker_hand: PokerHand::RoyalFlush, level: 1, multi: 9, points: 120 },
         LevelPokerHand { poker_hand: PokerHand::StraightFlush, level: 1, multi: 8, points: 100 },
@@ -32,7 +25,7 @@ fn initial_poker_hands() -> Array<LevelPokerHand> {
     ]
 }
 
-fn poker_hands_info() -> (Span<Span<PokerHand>>, Span<u32>, Span<u32>, Span<u32>, Span<u32>) {
+pub fn poker_hands_info() -> (Span<Span<PokerHand>>, Span<u32>, Span<u32>, Span<u32>, Span<u32>) {
     // C-Grade Group
     let C_POKER_HAND_PROBABILITY = 30;
     let C_POKER_HAND_CONSTANT_COST = 10;
@@ -79,35 +72,23 @@ fn poker_hands_info() -> (Span<Span<PokerHand>>, Span<u32>, Span<u32>, Span<u32>
     (
         array![C_POKER_HAND, B_POKER_HAND, A_POKER_HAND, S_POKER_HAND, SS_POKER_HAND].span(),
         array![
-            C_POKER_HAND_PROBABILITY,
-            B_POKER_HAND_PROBABILITY,
-            A_POKER_HAND_PROBABILITY,
-            S_POKER_HAND_PROBABILITY,
+            C_POKER_HAND_PROBABILITY, B_POKER_HAND_PROBABILITY, A_POKER_HAND_PROBABILITY, S_POKER_HAND_PROBABILITY,
             SS_POKER_HAND_PROBABILITY,
         ]
             .span(),
         array![
-            C_POKER_HAND_CONSTANT_COST,
-            B_POKER_HAND_CONSTANT_COST,
-            A_POKER_HAND_CONSTANT_COST,
-            S_POKER_HAND_CONSTANT_COST,
-            SS_POKER_HAND_CONSTANT_COST,
+            C_POKER_HAND_CONSTANT_COST, B_POKER_HAND_CONSTANT_COST, A_POKER_HAND_CONSTANT_COST,
+            S_POKER_HAND_CONSTANT_COST, SS_POKER_HAND_CONSTANT_COST,
         ]
             .span(),
         array![
-            C_POKER_HAND_POINTS_LEVEL_UP,
-            B_POKER_HAND_POINTS_LEVEL_UP,
-            A_POKER_HAND_POINTS_LEVEL_UP,
-            S_POKER_HAND_POINTS_LEVEL_UP,
-            SS_POKER_HAND_POINTS_LEVEL_UP,
+            C_POKER_HAND_POINTS_LEVEL_UP, B_POKER_HAND_POINTS_LEVEL_UP, A_POKER_HAND_POINTS_LEVEL_UP,
+            S_POKER_HAND_POINTS_LEVEL_UP, SS_POKER_HAND_POINTS_LEVEL_UP,
         ]
             .span(),
         array![
-            C_POKER_HAND_MULTI_LEVEL_UP,
-            B_POKER_HAND_MULTI_LEVEL_UP,
-            A_POKER_HAND_MULTI_LEVEL_UP,
-            S_POKER_HAND_MULTI_LEVEL_UP,
-            SS_POKER_HAND_MULTI_LEVEL_UP,
+            C_POKER_HAND_MULTI_LEVEL_UP, B_POKER_HAND_MULTI_LEVEL_UP, A_POKER_HAND_MULTI_LEVEL_UP,
+            S_POKER_HAND_MULTI_LEVEL_UP, SS_POKER_HAND_MULTI_LEVEL_UP,
         ]
             .span(),
     )
@@ -125,7 +106,7 @@ fn poker_hands_info() -> (Span<Span<PokerHand>>, Span<u32>, Span<u32>, Span<u32>
 /// * The second value is the points required for leveling up.
 ///
 /// If the hand is not found, `(0, 0)` is returned.
-fn get_poker_hand_data(poker_hand: PokerHand, level: u32) -> (u32, u32) {
+pub fn get_poker_hand_data(poker_hand: PokerHand, level: u32) -> (u32, u32) {
     let mut data = (0, 0);
     if level == 0 {
         return data;
@@ -147,11 +128,11 @@ fn get_poker_hand_data(poker_hand: PokerHand, level: u32) -> (u32, u32) {
                         break;
                     }
                     inner_idx += 1;
-                };
+                }
                 category_idx += 1;
             },
             Option::None => { break; },
         }
-    };
+    }
     data
 }

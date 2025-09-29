@@ -1,8 +1,10 @@
 #[dojo::contract]
 pub mod special_plus_discards {
     use jokers_of_neon_classic::specials::specials::SPECIAL_PLUS_DISCARDS_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::{equipable::ICardEquipable}};
-    use jokers_of_neon_lib::models::{card_type::CardType, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl PlusDiscardsExecutable of ICardEquipable<ContractState> {

@@ -1,8 +1,11 @@
 #[dojo::contract]
 pub mod special_second_chance {
     use jokers_of_neon_classic::specials::specials::SPECIAL_SECOND_CHANCE_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::IContextExecutable};
-    use jokers_of_neon_lib::models::{card_type::CardType, status::game::game::GameState, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::IContextExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::status::game::game::GameState;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl SecondChanceExecutable of IContextExecutable<ContractState> {
@@ -22,7 +25,7 @@ pub mod special_second_chance {
                     },
                     Option::None => { break; },
                 }
-            };
+            }
             context.special_cards = new_specials.span();
             context
         }

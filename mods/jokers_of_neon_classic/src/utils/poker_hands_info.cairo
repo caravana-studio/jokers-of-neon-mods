@@ -3,9 +3,7 @@ pub mod poker_hands_info {
     use jokers_of_neon_classic::poker_hand::{
         get_poker_hand_data, initial_poker_hands, poker_hands_ids_all, poker_hands_info,
     };
-    use jokers_of_neon_lib::interfaces::info::poker_hands_info::{
-        IPokerHandsInfo, IPokerHandsInfoDispatcher, IPokerHandsInfoDispatcherTrait,
-    };
+    use jokers_of_neon_lib::interfaces::info::poker_hands_info::IPokerHandsInfo;
     use jokers_of_neon_lib::models::data::poker_hand::{LevelPokerHand, PokerHand};
 
     #[abi(embed_v0)]
