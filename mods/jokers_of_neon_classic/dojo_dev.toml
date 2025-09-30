@@ -4,28 +4,28 @@ name = "jokers_of_neon_classic"
 seed = "jokers_of_neon_classic"
 
 [namespace]
-default = "jokers_of_neon_classic"
+default = "jon_classic_tournament"
 
 [env]
-rpc_url = "http://localhost:5050/"
-account_address = "0x127fd5f1fe78a71f8bcd1fec63e3fe2f0486b6ecd5c86a0466c3a21fa5cfcec"
-private_key = "0xc5b2fcab997346f3ea1c00b002ecf6f382c5f9c9659a3894eb783c5320f912"
+rpc_url = "https://starknet-mainnet.g.alchemy.com/starknet/version/rpc/v0_9/NWCu9tuBdPGQBWPnfgyzF"
+account_address = "0x053c80dd051d0a515ba87dc8a3a32d56dc792e30d046ced89c6a537364e3435e"
+private_key = "0x07222e994e5fd0379d6224d8e7412c01c2008b993fb6b81f3f8dca5465d9123d"
 
 [writers]
-"jokers_of_neon_classic" = [
-    "jokers_of_neon_classic-special_high_roller",
-    "jokers_of_neon_classic-special_neon_doctrine",
-    "jokers_of_neon_classic-special_sacrifice",
-    "jokers_of_neon_classic-special_rage_breaker",
-    "jokers_of_neon_classic-special_burning_rewards",
-    "jokers_of_neon_classic-special_kings_faith",
-    "jokers_of_neon_classic-special_rising_ladder",
-    "jokers_of_neon_classic-rage_chaotic_variance",
-    "jokers_of_neon_classic-rage_obsessive_repetition",
-    "jokers_of_neon_classic-special_random_multi_for_diamond",
-    "jokers_of_neon_classic-special_random_multi_for_spade",
-    "jokers_of_neon_classic-special_random_multi_for_heart",
-    "jokers_of_neon_classic-special_random_multi_for_club",
-    "jokers_of_neon_classic-special_queens_fortune",
-    "jokers_of_neon_classic-special_kings_faith",
+"jon_classic_tournament" = [
+    "jon_classic_tournament-special_high_roller",
+    "jon_classic_tournament-special_neon_doctrine",
+    "jon_classic_tournament-special_sacrifice",
+    "jon_classic_tournament-special_rage_breaker",
+    "jon_classic_tournament-special_burning_rewards",
+    "jon_classic_tournament-special_kings_faith",
+    "jon_classic_tournament-special_rising_ladder",
+    "jon_classic_tournament-rage_chaotic_variance",
+    "jon_classic_tournament-rage_obsessive_repetition",
+    "jon_classic_tournament-special_random_multi_for_diamond",
+    "jon_classic_tournament-special_random_multi_for_spade",
+    "jon_classic_tournament-special_random_multi_for_heart",
+    "jon_classic_tournament-special_random_multi_for_club",
+    "jon_classic_tournament-special_queens_fortune",
+    "jon_classic_tournament-special_kings_faith",
 ]

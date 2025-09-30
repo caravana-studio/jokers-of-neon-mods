@@ -1479,8 +1479,8 @@
   },
   "contracts": [
     {
-      "address": "0x6c8adc9362645aa21ff5133debf2aafb6abe2f54dd4f64293923295f94979c1",
-      "class_hash": "0x5ee0129bb49418feec92e101c21693573c0e030174b08b2494badaebb47ed74",
+      "address": "0x25b56d657a1052bcaed40efd5ee62f14756b3f557e59d05680f91c45a7b50a5",
+      "class_hash": "0x5af4083bf1fc997ac49c56328c9ef9e501a8354a9ddc19bb42631e4fe0de641",
       "abi": [
         {
           "type": "impl",
@@ -1862,8 +1862,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_mods-mod_manager",
-      "selector": "0x1773de643253716ecd2f020cab0d1438f87c63ea1d82621181860dc294907c6",
+      "tag": "jon_mods_tournaments-mod_manager",
+      "selector": "0x7545a1079e9b2bc3926c1f89c4ebc4c0e172eae56264505780d5b1f0739332c",
       "systems": [
         "create_mod",
         "update_mod",
@@ -1872,8 +1872,8 @@
       ]
     },
     {
-      "address": "0x693482c5584c48b230cdb164add6a820fc9afbcf84a3d6f6bba60f394390821",
-      "class_hash": "0x25d2422994af3c96e2de235aeda2366b8b653520da6a630f2954ba0f4b3de39",
+      "address": "0x4b9258b6308631783db529eedfbbc1e42f9750097d7434aadbfdcccc17407d7",
+      "class_hash": "0x6225bb6634be6be4cff853a7bdbc256daf6b44c5acb2a4cae683bf57c4dbcca",
       "abi": [
         {
           "type": "impl",
@@ -2132,8 +2132,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_mods-rage_manager",
-      "selector": "0x7133dba719dc1aeb1f56e35bb072b11956769b833a7ee64ce947039444770ac",
+      "tag": "jon_mods_tournaments-rage_manager",
+      "selector": "0x5272fa1d95026946a359c15c767d61165e4ed5bca350eb2f51e05092196d43",
       "systems": [
         "register_rage",
         "register_rages",
@@ -2141,8 +2141,8 @@
       ]
     },
     {
-      "address": "0x39802c07993df53ca3dbf8795668dbe858d45d3cbd48ded7b40f8433eeab086",
-      "class_hash": "0x1a782ac671245da2fbfda835e5a17adfb6f81c1512b7f6ecb07b3089d2e5aa4",
+      "address": "0x125da72a31384c47be3d07dc5b5e43b8648dea65c9cd89933a440fb827d466f",
+      "class_hash": "0x7fc91a5be0150a006a5728806f35552abb9dd78b9ae73f7dd4a09c94249b0d",
       "abi": [
         {
           "type": "impl",
@@ -2401,8 +2401,8 @@
         }
       ],
       "init_calldata": [],
-      "tag": "jokers_of_neon_mods-special_manager",
-      "selector": "0x6bd0bc416c4ebb2eeeecf677fef64ff94bf6e83510f776de2c2f9733eedb5f9",
+      "tag": "jon_mods_tournaments-special_manager",
+      "selector": "0x6578c1cd28de7a1552e2d4f5cfeeb997546807ab748e55de1a56f9554ec7b0b",
       "systems": [
         "register_special",
         "register_specials",
@@ -2415,38 +2415,38 @@
     {
       "members": [],
       "class_hash": "0xac9ac09067a55e2e7ea131fc10a4a636dbfbe9fa3bdc134f437757f95cdabe",
-      "tag": "jokers_of_neon_mods-GameMod",
-      "selector": "0x7780c0a617454aeb11cb482af68ba50b9068cdaf0a23506b244d0dc512356d"
+      "tag": "jon_mods_tournaments-GameMod",
+      "selector": "0x2f857a3ca8811ad8eebec41b07afb832a9218f052fc2651e0b6f9aecc66fef0"
     },
     {
       "members": [],
       "class_hash": "0x5293a65fc9fcde617231743dfafdc0076b631666eabbe8462ce609b1e0a7d32",
-      "tag": "jokers_of_neon_mods-GameModMap",
-      "selector": "0x4b76cecaa093842952c655e77cce012a5f9b9005f22eb447945487f742ec6ba"
+      "tag": "jon_mods_tournaments-GameModMap",
+      "selector": "0x15b2a2a8b8edf0e820d287feaad5acc0553713d9b57224a676c584aa24c1ef6"
     },
     {
       "members": [],
       "class_hash": "0x5d31b2dcac3f5c1801af8384280536de7bc51838f75f1ce92b24a67722ddee8",
-      "tag": "jokers_of_neon_mods-ModConfig",
-      "selector": "0x26a71fa368dab860d69ad69d90cdde591bf7d51c87d0d2853986e2b6ada2d50"
+      "tag": "jon_mods_tournaments-ModConfig",
+      "selector": "0x285097545d956eff8a3f090ce494f0dfb93688fcb96c05c04ba1c2dca16cd3"
     },
     {
       "members": [],
       "class_hash": "0x2d34aa0c3891cd5edd03f5df0658978b96e1dea31c426bb6fe335054db24827",
-      "tag": "jokers_of_neon_mods-ModTracker",
-      "selector": "0x6ebfe51ebfe085cc13cd3e025cd06d6ceeac6365f3f139a0a8019f95fe4a75d"
+      "tag": "jon_mods_tournaments-ModTracker",
+      "selector": "0xb08f3de209d3d84a8ff962a61b0a3fca2b065a16f789de80b68d86cc80a53"
     },
     {
       "members": [],
       "class_hash": "0x73c8c45543dabb9266b834820ed1b86f4bd1c5aa443077cbb9c65e91daa4a39",
-      "tag": "jokers_of_neon_mods-RageData",
-      "selector": "0x6b98e85ad8505173f160f50dac5af659d54b516c909a5d5f5194396581f3ce4"
+      "tag": "jon_mods_tournaments-RageData",
+      "selector": "0x14406a7c465a454ad539ef1cbad0d9ae4f0c4a36ee0d040971a68af64c346bc"
     },
     {
       "members": [],
       "class_hash": "0x6d62f22d17c3c9edfb69cfd1a084452e2b93ed8f8ae573f15ccdb2a4b188623",
-      "tag": "jokers_of_neon_mods-SpecialData",
-      "selector": "0x16d80dd61ca87e82de4ffbe91d73bbdcf2a58ec785cf870a07d1570dc82f1c9"
+      "tag": "jon_mods_tournaments-SpecialData",
+      "selector": "0x78f04e870f1f37bdf014e9cc93a603b2b630fcfa3eb38c84f90dbd7dd0333e9"
     }
   ],
   "events": [],
