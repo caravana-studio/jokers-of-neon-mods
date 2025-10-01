@@ -14,6 +14,8 @@ pub mod rage_obsessive_repetition {
     struct Cumulative {
         #[key]
         game_id: u32,
+        level: u32,
+        round: u32,
         poker_hand: PokerHand,
     }
 
@@ -24,6 +26,15 @@ pub mod rage_obsessive_repetition {
 
             let mut world = self.world(DEFAULT_NS());
             let mut cumulative: Cumulative = world.read_model(context.game.id);
+
+            // Reset if level or round changed
+            if cumulative.level != context.game.level || cumulative.round != context.game.round {
+                cumulative.level = context.game.level;
+                cumulative.round = context.game.round;
+                cumulative.poker_hand = poker_hand;
+                world.write_model(@cumulative);
+                return false;
+            }
 
             if cumulative.poker_hand == PokerHand::None {
                 cumulative.poker_hand = poker_hand;
