@@ -14,6 +14,8 @@ pub mod rage_chaotic_variance {
     struct Cumulative {
         #[key]
         game_id: u32,
+        level: u32,
+        round: u32,
         poker_hands: Span<PokerHand>,
     }
 
@@ -24,6 +26,15 @@ pub mod rage_chaotic_variance {
 
             let mut world = self.world(DEFAULT_NS());
             let mut cumulative: Cumulative = world.read_model(context.game.id);
+
+            // Reset if level or round changed
+            if cumulative.level != context.game.level || cumulative.round != context.game.round {
+                cumulative.level = context.game.level;
+                cumulative.round = context.game.round;
+                cumulative.poker_hands = array![poker_hand].span();
+                world.write_model(@cumulative);
+                return false;
+            }
 
             let mut temp_poker_hands = cumulative.poker_hands;
             let is_contain = loop {
