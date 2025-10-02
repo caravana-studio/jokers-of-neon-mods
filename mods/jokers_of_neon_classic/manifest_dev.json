@@ -1,7 +1,7 @@
 {
   "world": {
-    "class_hash": "0x7746f30d2b8494780387ed469797ecb5c62c7b6f49f4939a5e60e0f7ae5f99e",
-    "address": "0x5f584f4bfa5fe8b558aa62445990932ec38c1ac4db6a71e4c6f065a8c59e693",
+    "class_hash": "0x57994b6a75fad550ca18b41ee82e2110e158c59028c4478109a67965a0e5b1e",
+    "address": "0x704192eab846f40aa557f2e11c93660d4b431e05349380102975ba72dd89ea0",
     "seed": "jokers_of_neon_classic",
     "name": "jokers_of_neon_classic",
     "entrypoints": [
@@ -11,11 +11,13 @@
       "register_event",
       "register_model",
       "register_contract",
+      "register_external_contract",
       "register_library",
       "init_contract",
       "upgrade_event",
       "upgrade_model",
       "upgrade_contract",
+      "upgrade_external_contract",
       "emit_event",
       "emit_events",
       "set_entity",
@@ -83,6 +85,10 @@
           {
             "name": "Library",
             "type": "(core::starknet::class_hash::ClassHash, core::felt252)"
+          },
+          {
+            "name": "ExternalContract",
+            "type": "(core::starknet::contract_address::ContractAddress, core::felt252)"
           }
         ]
       },
@@ -213,6 +219,10 @@
           {
             "name": "Enum",
             "type": "core::array::Span::<dojo::meta::layout::FieldLayout>"
+          },
+          {
+            "name": "FixedArray",
+            "type": "(core::array::Span::<dojo::meta::layout::Layout>, core::integer::u32)"
           }
         ]
       },
@@ -369,6 +379,34 @@
           },
           {
             "type": "function",
+            "name": "register_external_contract",
+            "inputs": [
+              {
+                "name": "namespace",
+                "type": "core::byte_array::ByteArray"
+              },
+              {
+                "name": "contract_name",
+                "type": "core::byte_array::ByteArray"
+              },
+              {
+                "name": "instance_name",
+                "type": "core::byte_array::ByteArray"
+              },
+              {
+                "name": "contract_address",
+                "type": "core::starknet::contract_address::ContractAddress"
+              },
+              {
+                "name": "block_number",
+                "type": "core::integer::u64"
+              }
+            ],
+            "outputs": [],
+            "state_mutability": "external"
+          },
+          {
+            "type": "function",
             "name": "register_library",
             "inputs": [
               {
@@ -461,6 +499,30 @@
                 "type": "core::starknet::class_hash::ClassHash"
               }
             ],
+            "state_mutability": "external"
+          },
+          {
+            "type": "function",
+            "name": "upgrade_external_contract",
+            "inputs": [
+              {
+                "name": "namespace",
+                "type": "core::byte_array::ByteArray"
+              },
+              {
+                "name": "instance_name",
+                "type": "core::byte_array::ByteArray"
+              },
+              {
+                "name": "contract_address",
+                "type": "core::starknet::contract_address::ContractAddress"
+              },
+              {
+                "name": "block_number",
+                "type": "core::integer::u64"
+              }
+            ],
+            "outputs": [],
             "state_mutability": "external"
           },
           {
@@ -928,6 +990,85 @@
       },
       {
         "type": "event",
+        "name": "dojo::world::world_contract::world::ExternalContractRegistered",
+        "kind": "struct",
+        "members": [
+          {
+            "name": "namespace",
+            "type": "core::byte_array::ByteArray",
+            "kind": "key"
+          },
+          {
+            "name": "contract_name",
+            "type": "core::byte_array::ByteArray",
+            "kind": "key"
+          },
+          {
+            "name": "instance_name",
+            "type": "core::byte_array::ByteArray",
+            "kind": "key"
+          },
+          {
+            "name": "contract_selector",
+            "type": "core::felt252",
+            "kind": "key"
+          },
+          {
+            "name": "class_hash",
+            "type": "core::starknet::class_hash::ClassHash",
+            "kind": "data"
+          },
+          {
+            "name": "contract_address",
+            "type": "core::starknet::contract_address::ContractAddress",
+            "kind": "data"
+          },
+          {
+            "name": "block_number",
+            "type": "core::integer::u64",
+            "kind": "data"
+          }
+        ]
+      },
+      {
+        "type": "event",
+        "name": "dojo::world::world_contract::world::ExternalContractUpgraded",
+        "kind": "struct",
+        "members": [
+          {
+            "name": "namespace",
+            "type": "core::byte_array::ByteArray",
+            "kind": "key"
+          },
+          {
+            "name": "instance_name",
+            "type": "core::byte_array::ByteArray",
+            "kind": "key"
+          },
+          {
+            "name": "contract_selector",
+            "type": "core::felt252",
+            "kind": "key"
+          },
+          {
+            "name": "class_hash",
+            "type": "core::starknet::class_hash::ClassHash",
+            "kind": "data"
+          },
+          {
+            "name": "contract_address",
+            "type": "core::starknet::contract_address::ContractAddress",
+            "kind": "data"
+          },
+          {
+            "name": "block_number",
+            "type": "core::integer::u64",
+            "kind": "data"
+          }
+        ]
+      },
+      {
+        "type": "event",
         "name": "dojo::world::world_contract::world::ModelUpgraded",
         "kind": "struct",
         "members": [
@@ -1258,6 +1399,16 @@
             "kind": "nested"
           },
           {
+            "name": "ExternalContractRegistered",
+            "type": "dojo::world::world_contract::world::ExternalContractRegistered",
+            "kind": "nested"
+          },
+          {
+            "name": "ExternalContractUpgraded",
+            "type": "dojo::world::world_contract::world::ExternalContractUpgraded",
+            "kind": "nested"
+          },
+          {
             "name": "ModelUpgraded",
             "type": "dojo::world::world_contract::world::ModelUpgraded",
             "kind": "nested"
@@ -1328,8 +1479,8 @@
   },
   "contracts": [
     {
-      "address": "0x58af7a80a8a122ebac852adb6f4b3c3e4a8086c75d688109f235fec25fed76",
-      "class_hash": "0x75bba918fd3e9ad35afb1328ebde034b7f67b0c8c9343068d5eab990a45bb6e",
+      "address": "0x50222b92c993ec9a82455404367065f629d23e7ad25673fa417aa8f01260762",
+      "class_hash": "0x6a1de07863da69339343ffa9cefa034efb108e0007f125f8f8c9e09f2fbbf7c",
       "abi": [
         {
           "type": "impl",
@@ -1343,7 +1494,7 @@
         },
         {
           "type": "impl",
-          "name": "card_info__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -1526,8 +1677,8 @@
       ]
     },
     {
-      "address": "0x4b5d4cddda0fecfc08488aa335c93d7c2a773fcf17b7818533f219d1587403c",
-      "class_hash": "0x573a32c541ef008adc0d0b698e51396dabc0bda180b2a62b5967d7b2bde4306",
+      "address": "0x59a2e39e715ea1ad9706a1382f93a9c3232230c1010d88eb92298f46ad6a1e3",
+      "class_hash": "0x55dad95181b7f1beaa194a54b0ed6095a30062bbb392e4e7115b8d58ab733ac",
       "abi": [
         {
           "type": "impl",
@@ -1541,7 +1692,7 @@
         },
         {
           "type": "impl",
-          "name": "game_config__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -1950,8 +2101,8 @@
       ]
     },
     {
-      "address": "0x238f66f6bff9d0fd0543b450bf5e7b255ff02c1274a8fa11590283703b7f939",
-      "class_hash": "0x54aadf0993390fe191ceb5fdb22fb752c11d87d63c03dfa2185faea549465cb",
+      "address": "0x25445f56dbada6385ca7946c7664af4987754d715199ddc16ecee8e6b05e235",
+      "class_hash": "0xf47a0156a269e45a203edff2792be440f305277965c5f380b36009c645b90f",
       "abi": [
         {
           "type": "impl",
@@ -1965,7 +2116,7 @@
         },
         {
           "type": "impl",
-          "name": "loot_boxes_info__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -2229,8 +2380,8 @@
       ]
     },
     {
-      "address": "0x6b561ce49852852e3cbfb9775e3cd34622cd336e9be7fdef73ea10756923d0d",
-      "class_hash": "0x22e52c7077bc8a5095fa7a017cee3a28af58febfa16ab9229271231884796f1",
+      "address": "0x5bc677d0e7731784b78bdc53e29129d1455459ba86b131d75032c4f9a2baac8",
+      "class_hash": "0x68187928698a0e5ab849b7009484f8aff01b0049acc137380b9b90a425ff589",
       "abi": [
         {
           "type": "impl",
@@ -2244,7 +2395,7 @@
         },
         {
           "type": "impl",
-          "name": "poker_hands_info__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -2575,8 +2726,8 @@
       ]
     },
     {
-      "address": "0x75579c2f08823f2fc13fce3db6d5ad696fa8c959f629ba8d4e3b57fc0d8da7e",
-      "class_hash": "0x2b2db2b30ae6ca9f40263ebc0fe2d6b22d88e13a47ca4a78d64de9476f9edc2",
+      "address": "0x62a56fbb8d36136534156cd57b8dc886942b77081c956e8b2c384b00330a51e",
+      "class_hash": "0x5b6e6a922356d4ce31bdcaa3285675f0b0df659faa07d288eb0244c4eb4f43a",
       "abi": [
         {
           "type": "impl",
@@ -2590,7 +2741,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_betraying_the_weak__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -3062,8 +3213,8 @@
       ]
     },
     {
-      "address": "0x726e27214f27b0fb9c866333a172ce5adc9f0696b1bf2c47635d383233f749f",
-      "class_hash": "0x5fb1df097235c91c4fa7ce7f63adb02e36fd137907fb86db51325581af36b18",
+      "address": "0x472effa6a6c843924464384f2fa3aef56b7cc69b1a5fd75f4279c28dc11b29a",
+      "class_hash": "0x36da2ea15478ed5149e5b574b6108b2cdacc710dfe62744f5f7503dd7d3db38",
       "abi": [
         {
           "type": "impl",
@@ -3077,7 +3228,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_chaotic_variance__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -3124,6 +3275,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -3192,6 +3347,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -3996,8 +4155,8 @@
       ]
     },
     {
-      "address": "0x4d1246f1d77e8ffba8798baee579ea9aec337a408b9f190c2af8c5b955cd503",
-      "class_hash": "0x54041d00c31fa3475550c6e42067a429966e9f0aaf4617d871a9d779a1751a9",
+      "address": "0x2670974d1334e5dda4b334eba1a2c8d7dfafcf4a320cdc917ea5d6ba3e87e6c",
+      "class_hash": "0x6d9f9995fe25697c830c69beb3e73dbbf43940a02154ccf634db183b02fe0ea",
       "abi": [
         {
           "type": "impl",
@@ -4011,7 +4170,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_debuff_flush__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -4058,6 +4217,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -4126,6 +4289,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -4930,8 +5097,8 @@
       ]
     },
     {
-      "address": "0x5df6ff2adae0e421989c81cb2566cbd48a6d48df34a345fb029fb202d8ccf49",
-      "class_hash": "0x1ccb228902d8a58dc9bd16112e57973fc885f9be7e6d91ceb28baded4cd1f2f",
+      "address": "0x61bc3a7847994bf59459356a12299b2c16da0546a3b552a583abf7921a1fd04",
+      "class_hash": "0x265b77006c14c5b0f2a7bf4dfb9b7d1942da94c2c5b24767bf54268a2b599b",
       "abi": [
         {
           "type": "impl",
@@ -4945,7 +5112,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_diminished_hold__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -4992,6 +5159,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -5060,6 +5231,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -5878,8 +6053,8 @@
       ]
     },
     {
-      "address": "0xcd66aa6ea60dec00bd2c205c216325ebee58f5fdb113d004373c4c7c660e90",
-      "class_hash": "0x3781251c490e276fe93988351dee3de0e1c1d2af65916348d55116a15394645",
+      "address": "0x4455224aa0f4765cf657dac76b1b14cc847be0c650aaf356365b12c07d1b83c",
+      "class_hash": "0x146f9063ea6c0454c9cd2338d163d6cd7df7e46f25374ef36e39ef00410843b",
       "abi": [
         {
           "type": "impl",
@@ -5893,7 +6068,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_double_trouble__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -5940,6 +6115,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -6008,6 +6187,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -6826,8 +7009,8 @@
       ]
     },
     {
-      "address": "0x7e9bbb1f59aa86041aa8162f8e9db57fd87205b1581a3b022164ebc66fad489",
-      "class_hash": "0x20c02040d1156da48f1a3338d10525512f2302735f9f53428b23b3b104fb919",
+      "address": "0x5ca829a0d5143a31503c944146a9a3ee1116a209a9ba4729feb60d0b7dcb263",
+      "class_hash": "0x3e2e1e13e8c26741b5c3e7ca1401c2806b0671897b540550646f475b2eef3f3",
       "abi": [
         {
           "type": "impl",
@@ -6841,7 +7024,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_favorite_lock__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -6888,6 +7071,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -6956,6 +7143,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -7760,8 +7951,8 @@
       ]
     },
     {
-      "address": "0x55cbcbba3b6aae03e5111f39da50d60a1d364589518b186c857552ce037918a",
-      "class_hash": "0x74e2cfb9c44666471551f2513e8cc745c506806995a3ac417af5396910c0633",
+      "address": "0x4c49ae31dbc6f727ac2480c165570645f4c1d2ec64a861ccf0f80ce9195ffeb",
+      "class_hash": "0x7148a2f5e623eedd55c3150501df89c0021622c52f299d0235bc47d3ddb3b46",
       "abi": [
         {
           "type": "impl",
@@ -7775,7 +7966,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_hand_leech__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -7822,6 +8013,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -7890,6 +8085,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -8708,8 +8907,8 @@
       ]
     },
     {
-      "address": "0x1dd13d2f868bad6cfd5ec4ea7a763270ee36f58dd0dc829ee44e72fbf9c1c4b",
-      "class_hash": "0x7e55524f4a9bf67d79cac133b3309c0e495657c2cb8514be79610f8956a7439",
+      "address": "0x53f917219b2553c9983988d22542972c47822cbf4da4639493474fd0ba9efb0",
+      "class_hash": "0x15cd70a9fd907b21a0249e20e18ceb193f43995c1acebe098371c8ef9004843",
       "abi": [
         {
           "type": "impl",
@@ -8723,7 +8922,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_obsessive_repetition__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -8770,6 +8969,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -8838,6 +9041,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -9642,8 +9849,8 @@
       ]
     },
     {
-      "address": "0x2f3a76f2ed88710351faf66a832dee1bf4c2f63880a806a6c53ec31785e2203",
-      "class_hash": "0x174fbe62b3ea36af83dca9c0ca1ab23027223bf9dbb26d893a6a5252f940496",
+      "address": "0x9cd3fd51bfd3c272ac723d7f317f47f8dde358c8ea04175d6155ead0ab8d81",
+      "class_hash": "0x739d3af8cf4aa468a0cb71d4cd48153adf8777c42458646fb4fc80fff4fc041",
       "abi": [
         {
           "type": "impl",
@@ -9657,7 +9864,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_silent_aces__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -10129,8 +10336,8 @@
       ]
     },
     {
-      "address": "0x28a7e15fe0822b171169f1eb3589a7ceebdac244f72ab1e20abfa8d2c689ed4",
-      "class_hash": "0x17e9d0bc20ff929bd87eed993315ae4a8eb8d934bf0a26fbbe8ab86d086b44c",
+      "address": "0x47e1e7de91dc0e57284e28e14d98621c11f60838d93dff127e66eb0e1167fdf",
+      "class_hash": "0x54411d95de5d6d5d6059937a24527a2b5db0b0e44e7b3ea2d4dd19566a5d426",
       "abi": [
         {
           "type": "impl",
@@ -10144,7 +10351,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_silent_clubs__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -10616,8 +10823,8 @@
       ]
     },
     {
-      "address": "0x57971b580472f64728e101a45b9b37a9b3c8466c10cc128d39b04adb4eab420",
-      "class_hash": "0x3a31a0bd9bb303b172fdd9624e9d22907be51ea5241cdf40fab18819cea2f2d",
+      "address": "0x79bd908919ddce7544250bdfe48c10633530095d5678ed24915702eea51f788",
+      "class_hash": "0x63f5ecec9ff2725bd24961f0cb087c04dbc79f2785c279b8617c5be78c51233",
       "abi": [
         {
           "type": "impl",
@@ -10631,7 +10838,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_silent_diamonds__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -11103,8 +11310,8 @@
       ]
     },
     {
-      "address": "0x594a2fc44603adbf371ce555b374f33aa30411357b9a309ca20f6b14cc56df8",
-      "class_hash": "0x718e840e3633ed08064f8e5bcbb1ab242e5f39eca14a6a1b6a17d5be4d589db",
+      "address": "0x3a9f1330a50db2277bbec57281a306dba42d1cd3273b6027cb60ef641ecab6c",
+      "class_hash": "0x730f6a3c192781807dd023ffbea9f8f8f87b8771c6d49111e3f837f0833482b",
       "abi": [
         {
           "type": "impl",
@@ -11118,7 +11325,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_silent_figures__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -11590,8 +11797,8 @@
       ]
     },
     {
-      "address": "0x45c583e092f23c84366780cbd8428721e74f5f929b11b2271889e205e4c0b2e",
-      "class_hash": "0x702ba914bd46d2713264a8501b0a76dfe9eb7a681cc59625484296d2cd7d4db",
+      "address": "0x7950dd194d755c16c6ea2553950e856ad4969d9fbd297a807f7560c0b4541c6",
+      "class_hash": "0x36b9f21162e451019801cdf76185c3061b1b7cd8979dc7957339c815f6dc0e7",
       "abi": [
         {
           "type": "impl",
@@ -11605,7 +11812,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_silent_hearts__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -12077,8 +12284,8 @@
       ]
     },
     {
-      "address": "0x13615f01ba7016b7feebd971f68a9c04dd35b5ee41442e6c57834600e21b4db",
-      "class_hash": "0x2cc38376e1c10444b5b5240303dc5ec3171862b40d132bcf51edbfcfb17a314",
+      "address": "0x7a9d40cb96c7ba9f42cbe8121e96f689c800c2fd26a299646785ebfa6519092",
+      "class_hash": "0x1c2948b9d6636090b5f0611c231f05e93627c0368e022ac98116a439855743c",
       "abi": [
         {
           "type": "impl",
@@ -12092,7 +12299,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_silent_jokers__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -12564,8 +12771,8 @@
       ]
     },
     {
-      "address": "0x3e47c239af4cba0bb86ad695234d298655a341b75eb5a02dc1987933ef123c0",
-      "class_hash": "0x63f8c7678ed3e0d34d1368722bba9bda4ab870c92cdbcc431d72c453224fac1",
+      "address": "0x18fc748f62e2c9e7913e9fc8ea86832c87f3d031e59834624eb2db76aecafe1",
+      "class_hash": "0x660e892156f3d0dece454d8e678c292c3fee061a59d61887d232c715497d6f2",
       "abi": [
         {
           "type": "impl",
@@ -12579,7 +12786,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_silent_spades__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -13051,8 +13258,8 @@
       ]
     },
     {
-      "address": "0x422ba253d8fd0d6f5141df0787c6ca8ef4de2c4889f95ba7a0518cc54649be9",
-      "class_hash": "0x52bb07bf0dbd08645c25da16a4232009ce2299ca68477baf220195b6cb09d09",
+      "address": "0x67037208abc89c896279b3022117b2c84838b21bde9e25ed6a35479fa25dd6c",
+      "class_hash": "0x25cb5dbc0750d44001346ad899bbce324c4c2e359b0bd9904994241911e8e6c",
       "abi": [
         {
           "type": "impl",
@@ -13066,7 +13273,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_strategic_quarted__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -13113,6 +13320,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -13181,6 +13392,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -13999,8 +14214,8 @@
       ]
     },
     {
-      "address": "0xe30ef6e3250d8d264899b393afc1c9f636783062898465c65f7109b767daa8",
-      "class_hash": "0x5519dbeba69207e85880b84ce986de20ddd7d097c49484b340aa9360ef4ffb4",
+      "address": "0x614241755eb092da59847a9752705c2306244f0a3a862de3203cd7857ff1909",
+      "class_hash": "0x50e9df4450c1e1bf8ba17f44b9f91752b9653c5894e0a52bb97157c7853a1dc",
       "abi": [
         {
           "type": "impl",
@@ -14014,7 +14229,7 @@
         },
         {
           "type": "impl",
-          "name": "rage_zero_waste__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -14061,6 +14276,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -14129,6 +14348,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -14947,8 +15170,8 @@
       ]
     },
     {
-      "address": "0x3e6498c018fe532dc41a4c06f785bfc319160a2dec108763a608dd4689d7819",
-      "class_hash": "0x685a83710bcbd65039b4904ffd8e67ce5b2738cced3044d06b38b8ab009d07a",
+      "address": "0x7964403638aee5f6ec7fe02cc225e6b0e2763d44de1691be19fbdcc5d218752",
+      "class_hash": "0x17c11a491415a63ed4bafc8fe6a7d2f48f28a2652034a161e9068075edabbe2",
       "abi": [
         {
           "type": "impl",
@@ -14962,7 +15185,7 @@
         },
         {
           "type": "impl",
-          "name": "rages_info__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -15176,8 +15399,8 @@
       ]
     },
     {
-      "address": "0x4718e683b28a6accb42ae045b883edac4820ffe620b86db2545db0bdcc577d2",
-      "class_hash": "0x2e4d8223a4900bba2c7019ed62447ca0eea5cd951791cc53cd48b23acabffab",
+      "address": "0x4ed7e936eb2c892ca102f743d7d9285d0e74690f3538ff6df56c7726be2578e",
+      "class_hash": "0x7a58b36a3489568544c0061879c7b7bf7ca67ec02dc4234b2097b601fd43810",
       "abi": [
         {
           "type": "impl",
@@ -15191,7 +15414,7 @@
         },
         {
           "type": "impl",
-          "name": "shop_config__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -15459,8 +15682,8 @@
       ]
     },
     {
-      "address": "0x714e3d633b81e7e13ae2da1e744e1a4e993f27c7164b9a14ef20cc1dfdf7f5c",
-      "class_hash": "0x638bc592af1012b6867292012d9dc8e273bbdfefa8d1d2c6e9e4d72e7baeb15",
+      "address": "0x18a74ab710be03d59ad4daa120cfd844318dbd1b686d0ebea1731cf5a9e131f",
+      "class_hash": "0x4c13c9a33de298793f173cef7a07943bbc1318dcc0f5f4041f948782b8fb17b",
       "abi": [
         {
           "type": "impl",
@@ -15474,7 +15697,7 @@
         },
         {
           "type": "impl",
-          "name": "special_all_cards_to_hearts__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -15521,6 +15744,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -15589,6 +15816,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -16404,8 +16635,8 @@
       ]
     },
     {
-      "address": "0x79be70e00c6aa6f17f199201bd7380bc14a8656ece42c063a22ea0af8cdfe8d",
-      "class_hash": "0x6db138aef451c48dfe5f0b0b153635e0090cb91ab0f1de95d4320b54f13ea5",
+      "address": "0x4d669248a0398484edf8175703332eb746e5cd75145dbb1d4f5fbafb0a9a759",
+      "class_hash": "0x15ac07584d40faccc0c31175dcec2874d655b2a07188219aff1275977f67f65",
       "abi": [
         {
           "type": "impl",
@@ -16419,7 +16650,7 @@
         },
         {
           "type": "impl",
-          "name": "special_arithmomania__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -16466,6 +16697,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -16534,6 +16769,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -17339,8 +17578,8 @@
       ]
     },
     {
-      "address": "0x4879c21d0787f4c9f5d4e871d5726e483a89f31db69bf3ea355de3076d6b52b",
-      "class_hash": "0x64b89d64721a166ff93d37f5ca2b70bb333c819989f5a60225cdfac63296ef2",
+      "address": "0x6d3d159a7e1a1e2eac4ced9b872200b6f3090659be61ee5af80b426c3a69443",
+      "class_hash": "0xd9c5214b054af1f491c9ac504c2205417393291d9d86e2b14caa4d151e41c2",
       "abi": [
         {
           "type": "impl",
@@ -17354,7 +17593,7 @@
         },
         {
           "type": "impl",
-          "name": "special_black_and_red__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -17401,6 +17640,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -17469,6 +17712,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -18305,8 +18552,8 @@
       ]
     },
     {
-      "address": "0x41f9c988b6bb51ce409965441b9406567d1cff6771f87f65a125f53373007d",
-      "class_hash": "0x33675cc70de82111801c333c5e727568eee59b4c660d6d1dedbee2b11c68a9b",
+      "address": "0x1abcd29274e96c54a37ecd127776cc9bd270b0bebee6a12bc1b14a214cfb1e0",
+      "class_hash": "0x63c20ea63a944dadf27e7c453e935fe334af8124fbdf39392bb2aee9869faaa",
       "abi": [
         {
           "type": "impl",
@@ -18320,7 +18567,7 @@
         },
         {
           "type": "impl",
-          "name": "special_blackjack__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -18367,6 +18614,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -18435,6 +18686,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -19240,8 +19495,8 @@
       ]
     },
     {
-      "address": "0x63b8b30d7d01ada8a5cdff401a9a7f6a0954b9f3ce3a4c75874fb18da9325e7",
-      "class_hash": "0x1459d9fe672fd163fbdb0f85dd431a80a73887a537ea56c4c7f2a2c17d6ab41",
+      "address": "0x6683965ce271b3cbd32cc01889302baf448e48014bc7428b509143b817ec801",
+      "class_hash": "0x7c02b18dcc6057e53e74d5f96f23d2b237d666a5ab43b331415bdf855bc8664",
       "abi": [
         {
           "type": "impl",
@@ -19255,7 +19510,7 @@
         },
         {
           "type": "impl",
-          "name": "special_blacks__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -19302,6 +19557,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -19370,6 +19629,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -20175,8 +20438,8 @@
       ]
     },
     {
-      "address": "0x4d427b38657d5464224cf3de825345e47bb184fe940f8506d2f00408da4e518",
-      "class_hash": "0x7244365915a655b59f16ded65379f36f209ba4da888dda0ff982097f41203c2",
+      "address": "0x69a717366256d32048482a40ecfeaeae4dfbd8eed7b76ddc20f311feadaac7f",
+      "class_hash": "0x2f4fccfb5880609b32a619b10245dfca2993165b6ed4f53a00b20a80f3d10c7",
       "abi": [
         {
           "type": "impl",
@@ -20190,7 +20453,7 @@
         },
         {
           "type": "impl",
-          "name": "special_burning_rewards__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -20237,6 +20500,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -20305,6 +20572,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -21137,8 +21408,8 @@
       ]
     },
     {
-      "address": "0x4c9e7a99a4f8fb7a9024a6e1a99915bb677c46aa10a14a20b1169e74bb8c480",
-      "class_hash": "0x7769256994845002f12da2c5aa2ce5816abb6f20a0c0400e2a4c9e56074a39a",
+      "address": "0x39efc1e178d94974c26d6594f8ddfb20f3105e60d7f7a685eeeb9e09ce1af50",
+      "class_hash": "0x58c34b99c31342a40698b831a1e3d10b6b017d0bd24ac8ab335633ee0158263",
       "abi": [
         {
           "type": "impl",
@@ -21152,7 +21423,7 @@
         },
         {
           "type": "impl",
-          "name": "special_cash_catalyst__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -21199,6 +21470,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -21267,6 +21542,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -22072,8 +22351,8 @@
       ]
     },
     {
-      "address": "0x50fea40b7975689c80956e4d996681e7d0a6c492b9c6e1c20599a2d94fc546e",
-      "class_hash": "0x204fefc5b98b79c565f8d05a880cf337783a84f82e4c14c392b7c0b17c13ef",
+      "address": "0x230649d8637a6bf7efc0bf47820b93936c55b611ecc7d02092915bc7c9ae76e",
+      "class_hash": "0x22d48daab34a9b23b469fb25d3fbcbcd7f472158e028d04ebd1303cc1e5ec00",
       "abi": [
         {
           "type": "impl",
@@ -22087,7 +22366,7 @@
         },
         {
           "type": "impl",
-          "name": "special_club_keeper__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -22134,6 +22413,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -22202,6 +22485,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -23007,8 +23294,8 @@
       ]
     },
     {
-      "address": "0x36734796268f0e3bb99de1b4b6779f0379d4a28b2fad22c88ccfbc442805fa",
-      "class_hash": "0x15b0d2a731b0d444aff52ea626e085bc2595e3bc6a3fa1395119c87d9281937",
+      "address": "0xf3550fe13d7b51fb6a194162e0df4008c23ffa10cb7d1bac75d4608def3aab",
+      "class_hash": "0x177eba0fad542a7cbe4c49b12862a0bceb1e10edbff51fcfed43e0ad2daab3c",
       "abi": [
         {
           "type": "impl",
@@ -23022,7 +23309,7 @@
         },
         {
           "type": "impl",
-          "name": "special_deadline__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -23069,6 +23356,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -23137,6 +23428,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -23942,8 +24237,8 @@
       ]
     },
     {
-      "address": "0x7b7f982fb65daa1dd436e7207f8853cd3df16ddbf28fbbe180f5b7b67c906ce",
-      "class_hash": "0x3d1e0f12cce9ee2c9d1a9b03a8df3148f63efba08221210ea91f0671ad15825",
+      "address": "0x10db63700d1fabd1f7d7ddb0253deae3033bf72872b83b0d5fb6c50d01a42d8",
+      "class_hash": "0xfdac2f81f96bd6d9070bea0e548768ae95aa5e7927ad688c55911db5cad712",
       "abi": [
         {
           "type": "impl",
@@ -23957,7 +24252,7 @@
         },
         {
           "type": "impl",
-          "name": "special_deck_collector__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -24004,6 +24299,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -24072,6 +24371,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -24877,8 +25180,8 @@
       ]
     },
     {
-      "address": "0x5b744bce6feb5b2ca4c0086bbc048909f63d0e2666748c5d63bb791f65e1da0",
-      "class_hash": "0x45fe43e16a46dbd03797d5381eab1a7e5d2e94c91dc74fa96e4a8e9f88376d4",
+      "address": "0x7bdd3f3d94b74e090815c42101c536e7b8a0ce4700e38501492fc53080fe7d6",
+      "class_hash": "0x2dc09049d379a04ce390705e8aa312132e1b0a899a4f1724a26e0810cb582f5",
       "abi": [
         {
           "type": "impl",
@@ -24892,7 +25195,7 @@
         },
         {
           "type": "impl",
-          "name": "special_deuces_wild__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -24939,6 +25242,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -25007,6 +25314,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -25822,8 +26133,8 @@
       ]
     },
     {
-      "address": "0x65ac5c2b7605a47d54e4cd79729777c266f49aa13bae842d0754e59d6b4278f",
-      "class_hash": "0x18426b20d4c7a48f8f9eaccb87dd516afbe864abfb10cdceff1c5de8859d850",
+      "address": "0x71e3fb784c32849c06f69acc5e4b4deebe5176e426fb5ddf7dd1d96682f4465",
+      "class_hash": "0x194491fe9dd003de7f74d4fe75c461aa68f88ee5aa5a6809ab8f07c295d2fe1",
       "abi": [
         {
           "type": "impl",
@@ -25837,7 +26148,7 @@
         },
         {
           "type": "impl",
-          "name": "special_discard_mastery__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -25884,6 +26195,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -25952,6 +26267,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -26757,8 +27076,8 @@
       ]
     },
     {
-      "address": "0x5fdb63eae4c05ca839f69d1c4351a3b148a9b597f2bdd8573aa87c493f00b5",
-      "class_hash": "0x16e18ba93c9fb3dcc027bb5dc55c3f1359e3b748401a200c31357d6cabb659",
+      "address": "0x50654acef4fc1b7778623da0899ca516f0516fd7e9bdb52ce94bab64584eaa4",
+      "class_hash": "0x71288d6174aaa2cf68a0a413392c34a94d4e82839344cc2a7b4b671c2343162",
       "abi": [
         {
           "type": "impl",
@@ -26772,7 +27091,7 @@
         },
         {
           "type": "impl",
-          "name": "special_efficient_play__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -26819,6 +27138,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -26887,6 +27210,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -27692,8 +28019,8 @@
       ]
     },
     {
-      "address": "0x4c5acf23461117e478c2f96d51d9bcdb71f0c690c615ccd316b7ac28fd77a5c",
-      "class_hash": "0x1454a29a964a7977117cea3a2ce7348dbe5b0a13e932641b8b50a6745e66e06",
+      "address": "0x7220723eb2e60209b1add061d395cce320adbfd5beddef31629f7026574e238",
+      "class_hash": "0x2480ef7363155277f9c370b93944161e97146c8a1210a9343f3d715b274c149",
       "abi": [
         {
           "type": "impl",
@@ -27707,7 +28034,7 @@
         },
         {
           "type": "impl",
-          "name": "special_extra_help__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -27754,6 +28081,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -27822,6 +28153,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -28640,8 +28975,8 @@
       ]
     },
     {
-      "address": "0x6cf77a0fe4833a0c99a0ece949a0e520ee2dad55daf703c1ef42b63f9c4ff60",
-      "class_hash": "0x6a757e7659af07244be4e45b91e2300c062028a0f8686644b85948db67f9cb",
+      "address": "0x3e1eafdd05c0aec3450fa1ea94ebdec2147fd57d0b3ef2fd6f8f11e82cd3f51",
+      "class_hash": "0x24e6b7cdbde135a25102c4cbe9542e750816b1466877614f3d67d3fc7ef186b",
       "abi": [
         {
           "type": "impl",
@@ -28655,7 +28990,7 @@
         },
         {
           "type": "impl",
-          "name": "special_hand_thief__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -28702,6 +29037,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -28770,6 +29109,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -29588,8 +29931,8 @@
       ]
     },
     {
-      "address": "0x66e380a60e3b55646b0247ec0161f8903352956cd769c3ee95a63d6de1c6730",
-      "class_hash": "0x3de49bc3e7d29665062cf9e5f9972472c06b7c8d281f26cae30a6168caf619e",
+      "address": "0x964b602fcc97013e480c63053544ef2cc33f2e3daced09d43304a7a100d3d0",
+      "class_hash": "0x304efbf689ea0b6ee90c26109ec8660f8008a399efb96d355866e7f2bd8e37e",
       "abi": [
         {
           "type": "impl",
@@ -29603,7 +29946,7 @@
         },
         {
           "type": "impl",
-          "name": "special_high_roller__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -29650,6 +29993,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -29718,6 +30065,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -30550,8 +30901,8 @@
       ]
     },
     {
-      "address": "0x67c9d25c41df2562a3b9c9800d864b3e317ff849a92be0cae80371939839511",
-      "class_hash": "0x5da2c728751b7e2209c293a848d0bc6660f8475c6184caf1d012027587affec",
+      "address": "0x6240f41cdaf13e025894d1d1969509f748de906a340ec81cbc0df713c8c4af1",
+      "class_hash": "0xe1f0141fb98326b0dea260a95ca50cdd4915562b6aca994ffc8c9968c4e95",
       "abi": [
         {
           "type": "impl",
@@ -30565,7 +30916,7 @@
         },
         {
           "type": "impl",
-          "name": "special_increase_level_double_pair__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -30612,6 +30963,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -30680,6 +31035,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -31485,8 +31844,8 @@
       ]
     },
     {
-      "address": "0x76223e4597c5b63cee41180ae9b09dde2cf6854199de72a5508836f15335ea0",
-      "class_hash": "0x3058ae1005f14d32eeb7554019c6bfd2b2a1c99209367892961371ab1dcc581",
+      "address": "0x568191b44c48e6d12b759518a05507b5f1fb91940d2700ec309ecd9d65656e6",
+      "class_hash": "0x1d972908510fa082d0a853b5c6307e9302769b444b8074cdbbe66f25d28feba",
       "abi": [
         {
           "type": "impl",
@@ -31500,7 +31859,7 @@
         },
         {
           "type": "impl",
-          "name": "special_increase_level_five_of_a_kind__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -31547,6 +31906,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -31615,6 +31978,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -32420,8 +32787,8 @@
       ]
     },
     {
-      "address": "0x6e91536a7a4f2a834523e302a79b7c0cc5e6172ac9ca9e5b009efb4fe76480",
-      "class_hash": "0x275563c37ad7898d195ce569020dfd7789ad963631155758ad7ae6802c19a22",
+      "address": "0x6244bcf32e3cb36dc619c80ec747b96879c1beaf828a2a74edd5436bfe83ef1",
+      "class_hash": "0x3f20409aa6da4325dcf813b13c9289b4859b6a589ef64419263aa9945f89bf5",
       "abi": [
         {
           "type": "impl",
@@ -32435,7 +32802,7 @@
         },
         {
           "type": "impl",
-          "name": "special_increase_level_flush__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -32482,6 +32849,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -32550,6 +32921,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -33355,8 +33730,8 @@
       ]
     },
     {
-      "address": "0x4a487dad652a7c27bf84354c317b6ecc70bd683181ffb2bd2ca7f63c55dc570",
-      "class_hash": "0xff8797d4b41a4bc452ea6cb627403d6871ca32ec9c2124eace706de757472d",
+      "address": "0x4de71665da9f4e0cca850018d5996e99e561c3b17c843ae858539ba3c7abb93",
+      "class_hash": "0x7daa1fae67c50b81903e48d75984411ba414cc73589730286f3617c42a0aa28",
       "abi": [
         {
           "type": "impl",
@@ -33370,7 +33745,7 @@
         },
         {
           "type": "impl",
-          "name": "special_increase_level_four_of_a_kind__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -33417,6 +33792,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -33485,6 +33864,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -34290,8 +34673,8 @@
       ]
     },
     {
-      "address": "0x107ae1755cbfdb308910f462dee9317e94b8a2c1823882d70e8d85435dbe924",
-      "class_hash": "0x6f57e2a9bbe39341a34150fd3e70386212b18003dc43589c982bf93be639f40",
+      "address": "0x7d4865abdba628f4ea99d57a8d79462f1cf7a7610cab2fe79d73e3e44e4587f",
+      "class_hash": "0x1b019cd1bb800d91c28854f2f2a0672dcad7d3a104e414196490338a34357e3",
       "abi": [
         {
           "type": "impl",
@@ -34305,7 +34688,7 @@
         },
         {
           "type": "impl",
-          "name": "special_increase_level_full_house__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -34352,6 +34735,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -34420,6 +34807,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -35225,8 +35616,8 @@
       ]
     },
     {
-      "address": "0x404dc68ce158b9f6a1ba5565063c90fa851ba5b751b784a729c9478fbad0133",
-      "class_hash": "0x3f7be18b285fb7026e27b57919fa4e2b9c0f237c3cefad44130eb14cf0d8d44",
+      "address": "0x466e8ff14ed28dfe518d4271393473db0fffacb227a96b8746ab205a88aea74",
+      "class_hash": "0x54b42463eca41cca527ad2cc1737bdddad661fbb75adc0f80874d85c4d2aeb9",
       "abi": [
         {
           "type": "impl",
@@ -35240,7 +35631,7 @@
         },
         {
           "type": "impl",
-          "name": "special_increase_level_high_card__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -35287,6 +35678,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -35355,6 +35750,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -36160,8 +36559,8 @@
       ]
     },
     {
-      "address": "0x39ed3fed3eb9f945c0150654f63a987ab9228319992ea112529fcfdeed5c678",
-      "class_hash": "0x49e2a20f241c7609bd51865da93562bf740b3d1d6d6ef4d4c5dbd96c762484f",
+      "address": "0x3131ccb2c91bfa7fceeca6adaef291a4acff6dda6404e25979d733314fac02b",
+      "class_hash": "0x625c9ed5993d7feca59069b4980084a10c938fc824544191bf7f608b8fa9877",
       "abi": [
         {
           "type": "impl",
@@ -36175,7 +36574,7 @@
         },
         {
           "type": "impl",
-          "name": "special_increase_level_pair__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -36222,6 +36621,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -36290,6 +36693,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -37095,8 +37502,8 @@
       ]
     },
     {
-      "address": "0x7984cb5f3f85fc54f8016370270ca0003c2fcfbc095d566490173e049eadc3b",
-      "class_hash": "0x6b72230a3ea67d75062e2a9ddf7e3e667a528fcc1c7535994405c08386ef8bd",
+      "address": "0x5e3989114f1ad5c1b9228a5ec04c95afd4c9cb9c8eb65ee561c5074bca5d2f7",
+      "class_hash": "0x2dc5a746e9c6741a2f95308d59ad59bb43e0c7ef29f0f01d703fc97e2bb28e",
       "abi": [
         {
           "type": "impl",
@@ -37110,7 +37517,7 @@
         },
         {
           "type": "impl",
-          "name": "special_increase_level_straight__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -37157,6 +37564,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -37225,6 +37636,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -38030,8 +38445,8 @@
       ]
     },
     {
-      "address": "0x23d9f87d029dd970ab72ebdd017ef1fcb35341031852c3548792fa6ab1bc597",
-      "class_hash": "0x3b4a2c588aea287cd585beb962848b70517e18a62f2515ca1c06f51b438eb5e",
+      "address": "0x5a1f413580c236c9920735812cf62f1b655d36a84a5b3ce49cc1185d9586e04",
+      "class_hash": "0x787f04d0de62da1b229f9fcf9b03a5b218c6923d85dbddfbac306ea2b4c3037",
       "abi": [
         {
           "type": "impl",
@@ -38045,7 +38460,7 @@
         },
         {
           "type": "impl",
-          "name": "special_increase_level_three_of_a_kind__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -38092,6 +38507,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -38160,6 +38579,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -38965,8 +39388,8 @@
       ]
     },
     {
-      "address": "0x453ba3d133a307890afea654fc6d45f6c52db4ccc676ce1aaeb1aaa07328f7e",
-      "class_hash": "0x65c7b62f4429150b1b20758ef3578066fbba43f2c467f22a8fe1ea025f7888b",
+      "address": "0x26ab9d7216427bbe0a851b01328a4ce7b89ab84c5f5105615ebc0cae038df95",
+      "class_hash": "0x4245c61fc882ef0edbc62a8eadbc1c175bf58acab5057f132f809e90cfc60f6",
       "abi": [
         {
           "type": "impl",
@@ -38980,7 +39403,7 @@
         },
         {
           "type": "impl",
-          "name": "special_initial_advantage__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -39027,6 +39450,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -39095,6 +39522,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -39900,8 +40331,8 @@
       ]
     },
     {
-      "address": "0x58fc20fd0f2443d8501fb1791e2b37a3d182dbf31bad6025abc52bec85e1416",
-      "class_hash": "0x328a132a2793f5ab4f093eb9cb500fb35f67f457011b61ca9f205b7e48dc92e",
+      "address": "0x45e0b7f8ed954330a7b69c0371dac886121f330d697331453237b1c3943c61b",
+      "class_hash": "0x457acc14784d126cbf43ac004c1f60131a31bf15013fe860feb56027cb9f2d8",
       "abi": [
         {
           "type": "impl",
@@ -39915,7 +40346,7 @@
         },
         {
           "type": "impl",
-          "name": "special_jackpot__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -39962,6 +40393,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -40030,6 +40465,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -40866,8 +41305,8 @@
       ]
     },
     {
-      "address": "0x45b25800c867b62a7c7169edd4fc8eceb912cadb30f0c7a5bc2821f591568",
-      "class_hash": "0x3c44bd44c6c805e7b271cf36a82abe22c7b7a07f5ac587c58457ea374ef29c0",
+      "address": "0x4096b6b098a7ca9de9445d1965de41d60a636ba2a0c4fb8bda98744dde3c376",
+      "class_hash": "0x25462fcfb39b18ef0b676bdeee65e4b2ea67d54af1ae1d8b53904316b520390",
       "abi": [
         {
           "type": "impl",
@@ -40881,7 +41320,7 @@
         },
         {
           "type": "impl",
-          "name": "special_joker_booster__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -40928,6 +41367,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -40996,6 +41439,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -41832,8 +42279,8 @@
       ]
     },
     {
-      "address": "0x12e77c3ccfe4284fb329a5414bfdd0ca91f218c318d5c87ce35af801097d42d",
-      "class_hash": "0x586d3a5b51aafebf4c48ae2db751cd1d64434b4cc6a73f36ae9bc532241ce6c",
+      "address": "0x3be9cca40c45dbd7ee22c9a6727c89ac0984a9ff69f656280b611ed3bdc0904",
+      "class_hash": "0x201683cb94edc62f9e1ae9cfabf26a1bd380e2d45b9e126570577119a25df38",
       "abi": [
         {
           "type": "impl",
@@ -41847,7 +42294,7 @@
         },
         {
           "type": "impl",
-          "name": "special_kings_faith__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -41894,6 +42341,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -41962,6 +42413,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -42798,8 +43253,8 @@
       ]
     },
     {
-      "address": "0x1aea0ad77da19e4c287c1eb3415b617e859ed12f91d95bf375ef576777fd5eb",
-      "class_hash": "0x7ee1e3282cd0899e354cfb0d6a15ee66f1f01c0f3096c152a8686bd7799b96e",
+      "address": "0x183c78b81a4458c163c2b1ac5f80918d765c0c3a6a0ea58d6354b2fd4bd2425",
+      "class_hash": "0xfdd5e471cc9b684aba1b308df5cbd17cd5cf1216fdd979f957be1f0dd58c8d",
       "abi": [
         {
           "type": "impl",
@@ -42813,7 +43268,7 @@
         },
         {
           "type": "impl",
-          "name": "special_lucky_hand__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -42860,6 +43315,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -42928,6 +43387,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -43764,8 +44227,8 @@
       ]
     },
     {
-      "address": "0x6191594fe7d45e77b1e9f37e6cacad7357a516d9e379355e9683699f1a6e0b",
-      "class_hash": "0x77d88fc59a21fa7608f3271131a96bed636f6daa2bdfefaa99b09f3bc19726f",
+      "address": "0x7667edb90f5840576259a8024f227fc7bc7098a7e5ce7819002fd2005406538",
+      "class_hash": "0xf0874258c5b7f1a7a36fdfeec30e4730fc1f7aae0df5f889fd19dfb70086cc",
       "abi": [
         {
           "type": "impl",
@@ -43779,7 +44242,7 @@
         },
         {
           "type": "impl",
-          "name": "special_lucky_seven__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -43826,6 +44289,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -43894,6 +44361,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -44730,8 +45201,8 @@
       ]
     },
     {
-      "address": "0x75007756960c4427bc2b66e2751133f6d719ef8345fad885ef45dcfcc5c580a",
-      "class_hash": "0xe1af72d6cfae9cb7963fb40ff048e132fda8914e267bb704b9458f7509a020",
+      "address": "0x5ea86e36212cf0f0a2c1a7d2a299457853c4540a85b8156e31546db8d492aab",
+      "class_hash": "0x161324b972b5ec86881cdd9460ac4295b9ab6e124c504975f0b698f4595e905",
       "abi": [
         {
           "type": "impl",
@@ -44745,7 +45216,7 @@
         },
         {
           "type": "impl",
-          "name": "special_multi_aces__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -44792,6 +45263,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -44860,6 +45335,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -45696,8 +46175,8 @@
       ]
     },
     {
-      "address": "0x43ce237c6d497d9483af0b9130e5da50cb6e0252d034ed409ec94e1e448d1e7",
-      "class_hash": "0x403b497eab7fd843eb0621c057fcf0ffc0a4d5d32d7b5e0f899e655db80d69f",
+      "address": "0x248de892c7c138881fb4ff96ddbe65889ac2dec130a0cff0cca15719aa6a129",
+      "class_hash": "0x552d7d23b08b23f3797b72ce034bdda53067a5c6aeebf7649fba8eba8ac9e97",
       "abi": [
         {
           "type": "impl",
@@ -45711,7 +46190,7 @@
         },
         {
           "type": "impl",
-          "name": "special_multi_for_club__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -45758,6 +46237,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -45826,6 +46309,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -46662,8 +47149,8 @@
       ]
     },
     {
-      "address": "0x61abcc09214a57ec424e5b61d4836aa2a6e246622c42d885e9be822bac0c854",
-      "class_hash": "0x8498615fddcc1c2cb8d1ea51627e48589dd59a13204cff6eac990d4beaa30f",
+      "address": "0x9cd4de978c1795f6282e52ba3bcf6ac8b39aa15aeeecb8d6c13b03e652c01c",
+      "class_hash": "0x646707aba59668dd57d8f06fa9661fd5dcc1c445447278ff4d0ae15e2d346c4",
       "abi": [
         {
           "type": "impl",
@@ -46677,7 +47164,7 @@
         },
         {
           "type": "impl",
-          "name": "special_multi_for_diamond__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -46724,6 +47211,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -46792,6 +47283,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -47628,8 +48123,8 @@
       ]
     },
     {
-      "address": "0x2d086e8252d21af773d1dcdee44d285a042c84366e23895dc7a0c4298ea38ac",
-      "class_hash": "0x1079457b5ae072620aff1098946f3527f0d5bde68193579551fbef91f4615d",
+      "address": "0x7e6927662b878d56352d8a07111b2532f18bb3d289fd158ce2aac11e187b823",
+      "class_hash": "0x484f338591103b5c61cbac6cc50f4d7b5ecd06539131e0f2824b037edfdaf09",
       "abi": [
         {
           "type": "impl",
@@ -47643,7 +48138,7 @@
         },
         {
           "type": "impl",
-          "name": "special_multi_for_heart__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -47690,6 +48185,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -47758,6 +48257,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -48594,8 +49097,8 @@
       ]
     },
     {
-      "address": "0x70b9f2581ae628da892e957aedfa246c9582fcc1e4e6915fa0649ccf29fa8a",
-      "class_hash": "0x90289f2b442c7b411f6d1cde5075148d92e573649d4a43c5abc54df631f1cb",
+      "address": "0x6a61fe35d449e47e412db756265dd5f98f14ccd86a8a6679a2ce06a867ae396",
+      "class_hash": "0x29e0be42c663e26df8564a9777715cf064706f294a06347f66a9fcc3d55bdc1",
       "abi": [
         {
           "type": "impl",
@@ -48609,7 +49112,7 @@
         },
         {
           "type": "impl",
-          "name": "special_multi_for_spade__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -48656,6 +49159,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -48724,6 +49231,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -49560,8 +50071,8 @@
       ]
     },
     {
-      "address": "0x2cbb2620ae3b4a9e243e482f6e9badbc328b697f56027f6ac5b35e22628649e",
-      "class_hash": "0x6ef81eeecfd6e2b4832c15d1a9db5939a43230800abcc52196ed6de0016cc7b",
+      "address": "0xc3f476470083ae8381c6ae67392c8b27a0a07359e2c0696bd427af540ada8c",
+      "class_hash": "0x7e1af8b4aef731d26d4355bad52417edaa9b4f28d1f1bb112b0cb7200f15d13",
       "abi": [
         {
           "type": "impl",
@@ -49575,7 +50086,7 @@
         },
         {
           "type": "impl",
-          "name": "special_multiplier__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -49622,6 +50133,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -49690,6 +50205,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -50495,8 +51014,8 @@
       ]
     },
     {
-      "address": "0x59e7a930fe2d137edcd39a8ada217889f9e03d5e4f4c12bcbd28608b60d6b44",
-      "class_hash": "0x78a608cf87fca820ea4c57be909db1059e70ee93a38a0667438c78308c1215b",
+      "address": "0x7a3e6ddf3e77e6008829a7ae0ab283e54fad14196b983bc462c7917f02c459f",
+      "class_hash": "0x7704853301fcf2a5f38c996485302cf55e6a2a7d7b3e23f48eb8b46941ff586",
       "abi": [
         {
           "type": "impl",
@@ -50510,7 +51029,7 @@
         },
         {
           "type": "impl",
-          "name": "special_neon_bonus__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -50557,6 +51076,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -50625,6 +51148,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -51461,8 +51988,8 @@
       ]
     },
     {
-      "address": "0x687e1e5bd603fd66469b322c95aff33b32603556975fd877df28be073af898a",
-      "class_hash": "0x1f28c5b4fe246bbcc44bdc2e92594a4dc73c681d66a7f46822ab95558c7009b",
+      "address": "0x34013e28834af7f5c72a1a49195efb69dcbd9709cdfe0a02792a30b317a992c",
+      "class_hash": "0x318db7495a803d80665e47e8046957398a4903c7c70ce61c4ced34750ee0899",
       "abi": [
         {
           "type": "impl",
@@ -51476,7 +52003,7 @@
         },
         {
           "type": "impl",
-          "name": "special_neon_doctrine__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -51523,6 +52050,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -51591,6 +52122,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -52406,8 +52941,8 @@
       ]
     },
     {
-      "address": "0x2e0ce32fefa9a40430e41d9f41e6dce4ac1af407db4f17d520537ebbef44ad3",
-      "class_hash": "0x4879a82659f7f57bedc911e82e24104bb035fb211c2bfb4b165a4bf27b11c96",
+      "address": "0x3b6845716e766f5bf9da3c56400d2dcb4c2664b1b3af9f607e6c85577024294",
+      "class_hash": "0x8425593bd0ae223a8bd865981f6a6cdd0fe13bb2fc9cecc7227ab79e8fc9f9",
       "abi": [
         {
           "type": "impl",
@@ -52421,7 +52956,7 @@
         },
         {
           "type": "impl",
-          "name": "special_plus_discards__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -52468,6 +53003,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -52536,6 +53075,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -53354,8 +53897,8 @@
       ]
     },
     {
-      "address": "0x3f4ea5f37a712ce75f6e5d4ba6513a69c059dfb885c052a2943ad97233a8c27",
-      "class_hash": "0x7ca3daf0e41674c8bad784e89c0dbca4ffd245e27bfbb11f567b6b8272b4fd4",
+      "address": "0x81787d565321bc674a7d3c2a241fa5e069866fc0b1722bb3d2f0ea9b4f91c6",
+      "class_hash": "0x701cce62c4296343de3c92948acdf007210874ca4006ea1f543aa1d55e6ee2f",
       "abi": [
         {
           "type": "impl",
@@ -53369,7 +53912,7 @@
         },
         {
           "type": "impl",
-          "name": "special_plus_plays__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -53416,6 +53959,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -53484,6 +54031,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -54302,8 +54853,8 @@
       ]
     },
     {
-      "address": "0x29ac81ab93232257df2e465ed21634bb7cc319e5161c4efb183915efd237cc7",
-      "class_hash": "0x4efe034567e0e3b538bf430e862292edae2a866f80ef3557a1430113b376f71",
+      "address": "0x103e97d99e919a47e3de6206c7c42544818f8183e55479382000723ed8181c5",
+      "class_hash": "0x42d2ed7ab06e19db58c12ee09fa81135c74a062beb0b063924c7a1e3a9104aa",
       "abi": [
         {
           "type": "impl",
@@ -54317,7 +54868,7 @@
         },
         {
           "type": "impl",
-          "name": "special_points_for_figures__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -54364,6 +54915,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -54432,6 +54987,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -55268,8 +55827,8 @@
       ]
     },
     {
-      "address": "0x723bfe156494b903ba84da877ec0d4c211bde70f55ff9ef726bfd8d0dddc3fe",
-      "class_hash": "0x6c0a7f07e0bfb87d1b64409e8db05ffa12a22abf373641fa349e52c2dd6a2e5",
+      "address": "0x2e7440ed4da694ce91a5e89292b1374a798d7e9cb5c43c9ffe48ba6ca009efd",
+      "class_hash": "0x5b7afd5d93a8110d892ad81d2b8b145d0c6aaf235f5240b1ec248493f79b298",
       "abi": [
         {
           "type": "impl",
@@ -55283,7 +55842,7 @@
         },
         {
           "type": "impl",
-          "name": "special_power_up_booster__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -55330,6 +55889,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -55398,6 +55961,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -56203,8 +56770,8 @@
       ]
     },
     {
-      "address": "0x2004cac321418d7c59ee5a0553f117506588876b05b130217d41f45681f62",
-      "class_hash": "0x7b8c65b211284a22df8a70cab9582d5e8ddeefd5c26678e1f2e3831dc1aab6",
+      "address": "0x7768f75a4592b73a7101b1cff29e3f6e5ee4d0e58ce801cd53dae32ee5d0050",
+      "class_hash": "0x613fd38d3129e8cc7b7716d7a632f818876de2742db81248176690ca44a4fa",
       "abi": [
         {
           "type": "impl",
@@ -56218,7 +56785,7 @@
         },
         {
           "type": "impl",
-          "name": "special_quad_multiplier__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -56265,6 +56832,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -56333,6 +56904,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -57169,8 +57744,8 @@
       ]
     },
     {
-      "address": "0x3785b58468835c8dfb87896de2b3659b03f92585b2d3bde5f6e3aa2b58d2370",
-      "class_hash": "0xaf57b32007f49fe2f8c136a8f68554c586b6c6273c1068abba4486cd14a7ce",
+      "address": "0x7f524355f98dfb1560fbb8b3153fad63b36b990ceb9034a20138135a4b45748",
+      "class_hash": "0x7e0568622192434ede58585f4b3f55113abc18f8df8184357bdceb96b3e3455",
       "abi": [
         {
           "type": "impl",
@@ -57184,7 +57759,7 @@
         },
         {
           "type": "impl",
-          "name": "special_queens_fortune__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -57231,6 +57806,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -57299,6 +57878,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -58135,8 +58718,8 @@
       ]
     },
     {
-      "address": "0x691bfedccf349855fb9bd4bc947e2cc7cc145694d9f1a3343c5b477f0796a7c",
-      "class_hash": "0x1d072850a81a7c51e2a5a273b2148626e888b39f730f10f4eb800e4b6c05a8b",
+      "address": "0xb2ebbabe0f5b503316ea284e31bd782a2b9c4a01e423b7944c7c6188bf9615",
+      "class_hash": "0x1bb131df6c56373e7ad24b96d7a5581d5227fcda4ffcf799203bcd11460670e",
       "abi": [
         {
           "type": "impl",
@@ -58150,7 +58733,7 @@
         },
         {
           "type": "impl",
-          "name": "special_rage_breaker__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -58197,6 +58780,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -58265,6 +58852,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -59097,8 +59688,8 @@
       ]
     },
     {
-      "address": "0x420dfdd27fe4affd1b9f1b8d7d50e6e4663516569de44495d7ab56e583786c3",
-      "class_hash": "0x392ff19814d71631f78f6c3d8b3f37673acc26e12c0d709929029ea36b3a096",
+      "address": "0x4a1a99cb0f178aecdf0b494234bf94071415af530fc1cd0eb091e7336f4b2f6",
+      "class_hash": "0x3debc2d61d654a8b1f6e721d9db53dbcd5b191253323804e80bea4763a840c5",
       "abi": [
         {
           "type": "impl",
@@ -59112,7 +59703,7 @@
         },
         {
           "type": "impl",
-          "name": "special_rainbow__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -59159,6 +59750,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -59227,6 +59822,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -60032,8 +60631,8 @@
       ]
     },
     {
-      "address": "0x7b4c9586933203b664f3fb2652a18e45a9a2289c7aa6a6a95af85201ffadb18",
-      "class_hash": "0x5031f0061f3c8a345017c313cab22c95cc01a9ce87f6c6619b9e08cb5f25f64",
+      "address": "0xe45279198849ec67c61e385ba5c9edd6eecc1504d20d9d0b628e6760e0bed7",
+      "class_hash": "0x7b3013b0571c0d2360f4b4f35187d2ae07f16007ab2034b08c56e4fe405c17c",
       "abi": [
         {
           "type": "impl",
@@ -60047,7 +60646,7 @@
         },
         {
           "type": "impl",
-          "name": "special_random_multi_for_club__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -60094,6 +60693,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -60162,6 +60765,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -60998,8 +61605,8 @@
       ]
     },
     {
-      "address": "0x1cec8111d7834a13e41c53eaf377d75ab2cdbfe6941979505448b685235a942",
-      "class_hash": "0x46d26c5fb74641d3b84b87fa72cc8665535161f74136b7f7e01232b18d7b583",
+      "address": "0x54dc6eca4dbc248f7d5e49952769e9da0c3a7c56c4abdb34498af431045143b",
+      "class_hash": "0x44b7aaf882c5214fedfa23fe177ff0fce561daa2e4e4d0666f5241cfc3ffc93",
       "abi": [
         {
           "type": "impl",
@@ -61013,7 +61620,7 @@
         },
         {
           "type": "impl",
-          "name": "special_random_multi_for_diamond__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -61060,6 +61667,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -61128,6 +61739,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -61964,8 +62579,8 @@
       ]
     },
     {
-      "address": "0x45557c74bc461f4c67b53c2a7de4336c86af25eed39eb47970b7dc2c3dfb5b4",
-      "class_hash": "0x471b43caf382026514f7dffba446e288c32ac62773ea6f09586a3b682362b22",
+      "address": "0x7f615f3490e2906c5418ee95ae68b865b0ef323bcd83b69b251d3c28ebebf83",
+      "class_hash": "0x652f01b34e6ff0f2681c8ddda780b7329581b6959d9a2705812c67e2a7105c5",
       "abi": [
         {
           "type": "impl",
@@ -61979,7 +62594,7 @@
         },
         {
           "type": "impl",
-          "name": "special_random_multi_for_heart__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -62026,6 +62641,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -62094,6 +62713,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -62930,8 +63553,8 @@
       ]
     },
     {
-      "address": "0x3d5e88a5bccc3f6ad0014e69b5b182d33a92bb3aef836c801bba3b0ef6b7363",
-      "class_hash": "0x3ca39f4e5b2f514427c320fc62c7e211916235075a65e431f17276ab0fee11c",
+      "address": "0x40f39af648f715484c1947f1daa323092db38aca13c50d250d699b6231271c1",
+      "class_hash": "0x4f5400a190301b066e6628b00200e7dfc293fc4a1998cd62594a69d7449370d",
       "abi": [
         {
           "type": "impl",
@@ -62945,7 +63568,7 @@
         },
         {
           "type": "impl",
-          "name": "special_random_multi_for_spade__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -62992,6 +63615,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -63060,6 +63687,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -63896,8 +64527,8 @@
       ]
     },
     {
-      "address": "0x3645a2b9cb18e5d8b48a69b39cacef1113993f49ebd844ac3079eae366fec0",
-      "class_hash": "0x48bfac038e2c9eb1bc604c250757ab597e4e8f1abbf63f8c842564602d3d8c3",
+      "address": "0xc6eba9468a078531941fb83b5a8e11c9b1e6e54a74956a1f277fe9698e9218",
+      "class_hash": "0x5a11ba801393e3bb63cdadf541f2d8a3324eed813d03b67ba4a14b0c32c214b",
       "abi": [
         {
           "type": "impl",
@@ -63911,7 +64542,7 @@
         },
         {
           "type": "impl",
-          "name": "special_reds__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -63958,6 +64589,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -64026,6 +64661,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -64831,8 +65470,8 @@
       ]
     },
     {
-      "address": "0x8dfc3e9a60fc965ca9dfd4b5657b3555e8ec7878e9c7c5e7ec761a1ccf0091",
-      "class_hash": "0x565d2e281c56a4e19626754f8ddf303652b2b90d223c2c52e52d2425ba5f336",
+      "address": "0x13534e27024f075961008588da61966958d359983d479bd0899182cd2378c07",
+      "class_hash": "0x64bcac189d514dacfb16add13380ec2c792cb789a67f4d28ae6a795e004d9f5",
       "abi": [
         {
           "type": "impl",
@@ -64846,7 +65485,7 @@
         },
         {
           "type": "impl",
-          "name": "special_relativity__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -64893,6 +65532,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -64961,6 +65604,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -65776,8 +66423,8 @@
       ]
     },
     {
-      "address": "0x4e2aaad125015d5a92f6aeaed1f55a5b465132e8dd805384a076b64142dbdd1",
-      "class_hash": "0xa4e1b41875db11ec3609e97790c42db91b73a8a615127e932b1aa3a5a970c5",
+      "address": "0x3b776af5aebeeb693735a8ee131c598886e09f4c13a75f927dc3d5bfc81d0c8",
+      "class_hash": "0x765f9dabf0290b16e86272af3b6a17f19cc449acfdf6f207ec88fba9bd7ec2a",
       "abi": [
         {
           "type": "impl",
@@ -65791,7 +66438,7 @@
         },
         {
           "type": "impl",
-          "name": "special_rising_ladder__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -65838,6 +66485,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -65906,6 +66557,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -66738,8 +67393,8 @@
       ]
     },
     {
-      "address": "0x612f819b0f159646493d372e15d1c9d3a22e2320f5b9dea449dd042aa4dfd8a",
-      "class_hash": "0x9cc3f97ced5016c5135d970838844508b5d1d13653795a4b2859b86007fca1",
+      "address": "0x59572d055b0f94c9296b969d1d196c21111b62a564c8f26b783267bcf42badf",
+      "class_hash": "0x1ea7e3d58a3b5e164a7a9627e6df3c047fd8216ea2257a145aee3af248c4a1c",
       "abi": [
         {
           "type": "impl",
@@ -66753,7 +67408,7 @@
         },
         {
           "type": "impl",
-          "name": "special_sacrifice__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -66800,6 +67455,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -66868,6 +67527,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -67700,8 +68363,8 @@
       ]
     },
     {
-      "address": "0x101c3321820f0443b80020ab1ce2d6a6f5c9f64afde285cc0b031017eee4519",
-      "class_hash": "0x28577bd2c15366ae6af6481ae794c1713fb6395fbb46fe758481ea7a45eac9f",
+      "address": "0x4f8c56d332c0d7d3a2c85bba49e1af2001de33d3323ae2cbf53b33f69e6330d",
+      "class_hash": "0x6d70a483ea9b07dcddddcef3cca21c3e45c51b0781df53c6324e5e27f6ca495",
       "abi": [
         {
           "type": "impl",
@@ -67715,7 +68378,7 @@
         },
         {
           "type": "impl",
-          "name": "special_scaling_factor__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -67762,6 +68425,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -67830,6 +68497,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -68635,8 +69306,8 @@
       ]
     },
     {
-      "address": "0x3e7fc8051b703c317241c0a29a0f1c653766d5810dadd481fd6da0c1da1da1b",
-      "class_hash": "0x32d834b2b4e764737888edbc99a94028eeb7f7755dc847c55c9ebf0eb627e8d",
+      "address": "0x6bcb4ab4974b25ae9f352bff576c9d34a12d6db2cffd0dc79648aab44976ac2",
+      "class_hash": "0x232d29e0ebad0d0d39f5abc0530be5cd85af2f5c9b7e89ec026178f64a9ed4d",
       "abi": [
         {
           "type": "impl",
@@ -68650,7 +69321,7 @@
         },
         {
           "type": "impl",
-          "name": "special_second_chance__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -68697,6 +69368,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -68765,6 +69440,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -69566,8 +70245,8 @@
       ]
     },
     {
-      "address": "0x4dd59b27a0252300fcf631aa064c84293902e5b84ee9fbd960f0d0a2f97b032",
-      "class_hash": "0x406fc964ef22fa67f58d2c4b4bb6a9280fc18297619b1d5530eab89cdbeb575",
+      "address": "0x3c26d0284207a959f3d2897e0b6e3555284269c2be0103ec2db378eccd99dd8",
+      "class_hash": "0x75ba45bb5ebaa83bdc652b1fe2a17f5b0bfbb333d3550aabd4eee2d17286fd6",
       "abi": [
         {
           "type": "impl",
@@ -69581,7 +70260,7 @@
         },
         {
           "type": "impl",
-          "name": "special_slot_saver__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -69628,6 +70307,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -69696,6 +70379,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -70501,8 +71188,8 @@
       ]
     },
     {
-      "address": "0x3c81bc84b904156cdd84afc7549209bfc3724b0c698e9c2de38d6e9a4e6bb17",
-      "class_hash": "0x538dde1f9c3f7282159d3f75b3d998568d348a71532313783b94ad755060e71",
+      "address": "0x6be133ca60d71f465849283fbc3f7ef16df19ced91db25e065bb1a933470a90",
+      "class_hash": "0x67146681338651729639545b8973a46bce49cbf3bca26029a71f43ce57d47ab",
       "abi": [
         {
           "type": "impl",
@@ -70516,7 +71203,7 @@
         },
         {
           "type": "impl",
-          "name": "special_spade_trio__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -70563,6 +71250,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -70631,6 +71322,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -71436,8 +72131,8 @@
       ]
     },
     {
-      "address": "0x2374f1aa49b3ce082be62caf209f362d15825ae3ab660f3d105ab4eefea209f",
-      "class_hash": "0x29b5e69794972aea75bec004a1a26caecffc46f698272a6c80e0639e1aff7ef",
+      "address": "0x36615985ebe0a2c7bc803792d391b29ae42d486191f9b7f82e5d8ed38a72a08",
+      "class_hash": "0x56a7f6c9fe01226855cfcd7840e3ab42e749f23df8b6e2b571cca061b185a87",
       "abi": [
         {
           "type": "impl",
@@ -71451,7 +72146,7 @@
         },
         {
           "type": "impl",
-          "name": "special_twos_matter__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -71498,6 +72193,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -71566,6 +72265,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -72402,8 +73105,8 @@
       ]
     },
     {
-      "address": "0x14e9455e64bb928772aa362b05aa2d8b74b31d8587fcc40132fab29801e872e",
-      "class_hash": "0x78763d2bcdcc707f8055b9b1d8f90db3f79e870f36ea2daac4d874f261760a9",
+      "address": "0x269645891b4266bd3c98916da7e2620e513c85e9a55c568c5f887914a8aa486",
+      "class_hash": "0x72559687f28a8c35beb8c6892f7736c9ab2b2b8eedf88394343b153f711251b",
       "abi": [
         {
           "type": "impl",
@@ -72417,7 +73120,7 @@
         },
         {
           "type": "impl",
-          "name": "special_wanted_joker__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -72464,6 +73167,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -72532,6 +73239,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -73368,8 +74079,8 @@
       ]
     },
     {
-      "address": "0x3e119ac5839868c0d05905ae0eb70772cebf2e3dccf2b1c18bd168590546948",
-      "class_hash": "0x5dc233c4f9181c8c157ba62b958be8c6baf53e87987945ec5e33233563bfb6c",
+      "address": "0x796bed6a0cd6ebb9a0c091c6772c19a01d872e7ee798aaec0a6367a71b79b6f",
+      "class_hash": "0x37a5020490093cd414d0352698c65833320124c5168792b6df96431a43fcc9b",
       "abi": [
         {
           "type": "impl",
@@ -73383,7 +74094,7 @@
         },
         {
           "type": "impl",
-          "name": "special_wild_booster__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -73430,6 +74141,10 @@
           "type": "enum",
           "name": "jokers_of_neon_lib::models::status::game::game::GameState",
           "variants": [
+            {
+              "name": "None",
+              "type": "()"
+            },
             {
               "name": "Round",
               "type": "()"
@@ -73498,6 +74213,10 @@
             },
             {
               "name": "current_node_id",
+              "type": "core::integer::u32"
+            },
+            {
+              "name": "round",
               "type": "core::integer::u32"
             },
             {
@@ -74334,8 +75053,8 @@
       ]
     },
     {
-      "address": "0x33d250a8a8b20482c6569dc8ad7691fc61f303d2a0b46ab5ed8dfd2156ba8f8",
-      "class_hash": "0x3b5b02bec5b2eb23f316a80f30ad0bde3d437f3b2f3389ebd1a958f2512e494",
+      "address": "0x3320726315ecc6faf7eaba322c1eab34f9e9a42a1b3d51c2a33365d41e0d117",
+      "class_hash": "0x3f3da149cde693d653792637204f809b889614a9fe8f9f9f44b49c9d37ed3d5",
       "abi": [
         {
           "type": "impl",
@@ -74349,7 +75068,7 @@
         },
         {
           "type": "impl",
-          "name": "specials_info__DeployedContractImpl",
+          "name": "DojoDeployedContractImpl",
           "interface_name": "dojo::meta::interface::IDeployedResource"
         },
         {
@@ -74567,13 +75286,13 @@
   "models": [
     {
       "members": [],
-      "class_hash": "0x772fccf02b7abc8a5050dd969c017b3c70505b56774bb710554e36e94a16863",
+      "class_hash": "0x418b8743a546a56e3492b708b8b9fca3f2388a473fafca0e3a2bdcd8c8c7ca6",
       "tag": "jokers_of_neon_classic-Cumulative",
       "selector": "0x29073d110b349e4a8dd622b77dd7332467972b903955555b0f96d194c53de13"
     },
     {
       "members": [],
-      "class_hash": "0x2e91218cc34ef2f24c0be1652c9cf2e7db73bdd18ca8b98a7a3d73300b070c7",
+      "class_hash": "0x7092e81d929a9fa9e032b41f1b1196046b2d1e9d1bda1d5a6819b4724ada8e",
       "tag": "jokers_of_neon_classic-Salt",
       "selector": "0x139be4778ee1cb997450813f8a5a58aa0f613d758f14c861b61f06bc39ac0c5"
     }
