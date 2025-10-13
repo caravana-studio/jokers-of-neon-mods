@@ -11,14 +11,6 @@ pub mod special_circle_of_fortune {
     use crate::utils::random;
 
     #[abi(embed_v0)]
-    impl CircleOfFortuneCondition of ICardCondition<ContractState> {
-        fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
-            let card: Card = raw_data.into();
-            card.value == Value::King
-        }
-    }
-
-    #[abi(embed_v0)]
     impl CircleOfFortuneExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
