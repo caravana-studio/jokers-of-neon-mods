@@ -1,8 +1,10 @@
 #[dojo::contract]
 pub mod special_arithmomania {
     use jokers_of_neon_classic::specials::specials::SPECIAL_ARITHMOMANIA_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Value}, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl ArithmomaniaExecutable of ICardExecutable<ContractState> {
@@ -14,7 +16,7 @@ pub mod special_arithmomania {
                     Option::Some((_, _, card)) => { cards_values_acum += *card.points; },
                     Option::None => { break; },
                 }
-            };
+            }
 
             if cards_values_acum % 2 == 0 {
                 (0, 7, 0)

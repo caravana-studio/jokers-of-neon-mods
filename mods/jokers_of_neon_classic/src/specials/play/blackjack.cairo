@@ -1,10 +1,11 @@
 #[dojo::contract]
 pub mod special_blackjack {
     use jokers_of_neon_classic::specials::specials::SPECIAL_BLACKJACK_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
-    use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, Value}, data::poker_hand::PokerHand, tracker::GameContext,
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::Value;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl BlackjackExecutable of ICardExecutable<ContractState> {
@@ -27,7 +28,7 @@ pub mod special_blackjack {
                     },
                     Option::None => { break; },
                 }
-            };
+            }
 
             if acum_asc == 21 || acum_desc == 21 {
                 (0, 21, 0)

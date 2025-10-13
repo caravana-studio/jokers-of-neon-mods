@@ -1,8 +1,11 @@
 #[dojo::contract]
 pub mod special_increase_level_straight {
     use jokers_of_neon_classic::specials::specials::SPECIAL_INCREASE_LEVEL_STRAIGHT_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::executable::ICardExecutable};
-    use jokers_of_neon_lib::models::{card_type::CardType, data::poker_hand::PokerHand, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl StraightBoostExecutable of ICardExecutable<ContractState> {

@@ -1,131 +1,131 @@
-mod loot_box;
-mod poker_hand;
-mod shop_config;
-mod configs {
-    mod game;
-    mod shop;
+pub mod loot_box;
+pub mod poker_hand;
+pub mod shop_config;
+pub mod configs {
+    pub mod game;
+    pub mod shop;
 }
-mod rages {
-    mod rages;
-    mod debuff {
-        mod chaotic_variance;
-        mod debuff_flush;
-        mod favorite_lock;
-        mod obsessive_repetition;
+pub mod rages {
+    pub mod rages;
+    pub mod debuff {
+        pub mod chaotic_variance;
+        pub mod debuff_flush;
+        pub mod favorite_lock;
+        pub mod obsessive_repetition;
     }
-    mod game {
-        mod diminished_hold;
-        mod hand_leech;
-        mod strategic_quarted;
+    pub mod game {
+        pub mod diminished_hold;
+        pub mod hand_leech;
+        pub mod strategic_quarted;
     }
-    mod round {
-        mod double_trouble;
-        mod zero_waste;
+    pub mod round {
+        pub mod double_trouble;
+        pub mod zero_waste;
     }
-    mod silence {
-        mod aces;
-        mod betraying_the_weak;
-        mod clubs;
-        mod diamonds;
-        mod figures;
-        mod hearts;
-        mod jokers;
-        mod spades;
+    pub mod silence {
+        pub mod aces;
+        pub mod betraying_the_weak;
+        pub mod clubs;
+        pub mod diamonds;
+        pub mod figures;
+        pub mod hearts;
+        pub mod jokers;
+        pub mod spades;
     }
 }
 
-mod specials {
-    mod specials;
-    mod lose {
-        mod second_chance;
+pub mod specials {
+    pub mod specials;
+    pub mod lose {
+        pub mod second_chance;
     }
-    mod game {
-        mod extra_help;
-        mod hand_thief;
-        mod plus_discards;
-        mod plus_plays;
+    pub mod game {
+        pub mod extra_help;
+        pub mod hand_thief;
+        pub mod plus_discards;
+        pub mod plus_plays;
     }
-    mod converter {
-        mod all_cards_to_hearts;
-        mod deuces_wild;
-        mod neon_doctrine;
-        mod relativity;
+    pub mod converter {
+        pub mod all_cards_to_hearts;
+        pub mod deuces_wild;
+        pub mod neon_doctrine;
+        pub mod relativity;
     }
-    mod discard {
+    pub mod discard {
         mod swamp_redemption;
-        mod wanted_joker;
+        pub mod wanted_joker;
     }
-    mod hand {
-        mod jackpot;
-        mod quad_multiplier;
-        mod twos_matter;
+    pub mod hand {
+        pub mod jackpot;
+        pub mod quad_multiplier;
+        pub mod twos_matter;
     }
-    mod hit {
-        mod black_and_red;
-        mod joker_booster;
-        mod kings_faith;
-        mod lucky_hand;
-        mod lucky_seven;
-        mod multi_aces;
-        mod multi_for_club;
-        mod multi_for_diamond;
-        mod multi_for_heart;
-        mod multi_for_spade;
-        mod neon_bonus;
-        mod points_for_figures;
-        mod queens_fortune;
-        mod random_multi_for_club;
-        mod random_multi_for_diamond;
-        mod random_multi_for_heart;
-        mod random_multi_for_spade;
-        mod resonant_multiplier;
-        mod wild_booster;
+    pub mod hit {
+        pub mod black_and_red;
+        pub mod joker_booster;
+        pub mod kings_faith;
+        pub mod lucky_hand;
+        pub mod lucky_seven;
+        pub mod multi_aces;
+        pub mod multi_for_club;
+        pub mod multi_for_diamond;
+        pub mod multi_for_heart;
+        pub mod multi_for_spade;
+        pub mod neon_bonus;
+        pub mod points_for_figures;
+        pub mod queens_fortune;
+        pub mod random_multi_for_club;
+        pub mod random_multi_for_diamond;
+        pub mod random_multi_for_heart;
+        pub mod random_multi_for_spade;
+        pub mod resonant_multiplier;
+        pub mod wild_booster;
     }
-    mod miss {}
-    mod play {
-        mod arithmomania;
-        mod blackjack;
-        mod blacks;
-        mod burning_rewards;
-        mod cash_catalyst;
-        mod club_keeper;
-        mod deadline;
-        mod deck_collector;
-        mod discard_mastery;
-        mod efficient_play;
-        mod high_roller;
-        mod increase_level_double_pair;
-        mod increase_level_five_of_a_kind;
-        mod increase_level_flush;
-        mod increase_level_four_of_a_kind;
-        mod increase_level_full_house;
-        mod increase_level_high_card;
-        mod increase_level_pair;
-        mod increase_level_straight;
-        mod increase_level_three_of_a_kind;
-        mod initial_advantage;
-        mod lucky_cashback;
-        mod multiplier;
-        mod rage_breaker;
-        mod rainbow;
-        mod reds;
-        mod rising_ladder;
-        mod sacrifice;
-        mod scaling_factor;
-        mod slot_saver;
-        mod spade_trio;
+    pub mod miss {}
+    pub mod play {
+        pub mod arithmomania;
+        pub mod blackjack;
+        pub mod blacks;
+        pub mod burning_rewards;
+        pub mod cash_catalyst;
+        pub mod club_keeper;
+        pub mod deadline;
+        pub mod deck_collector;
+        pub mod discard_mastery;
+        pub mod efficient_play;
+        pub mod high_roller;
+        pub mod increase_level_double_pair;
+        pub mod increase_level_five_of_a_kind;
+        pub mod increase_level_flush;
+        pub mod increase_level_four_of_a_kind;
+        pub mod increase_level_full_house;
+        pub mod increase_level_high_card;
+        pub mod increase_level_pair;
+        pub mod increase_level_straight;
+        pub mod increase_level_three_of_a_kind;
+        pub mod initial_advantage;
+        pub mod multiplier;
+        pub mod rage_breaker;
+        pub mod rainbow;
+        pub mod reds;
+        pub mod rising_ladder;
+        pub mod sacrifice;
+        pub mod scaling_factor;
+        pub mod slot_saver;
+        pub mod spade_trio;
     }
-    mod power_up {
-        mod power_up_booster;
+    pub mod power_up {
+        pub mod power_up_booster;
     }
 }
 
-mod utils {
-    mod card_info;
-    mod loot_boxes_info;
-    mod poker_hands_info;
-    mod rages_info;
-    mod specials_info;
+pub mod utils {
+    pub mod card_info;
+    pub mod loot_boxes_info;
+    pub mod poker_hands_info;
+    pub mod rages_info;
+    pub mod random;
+    pub mod specials_info;
 }
 
-mod constants;
+pub mod constants;

@@ -8,18 +8,14 @@ const MODIFIERS_SHOP_CONFIG_ID: u32 = 5;
 const MIX_SHOP_CONFIG_ID: u32 = 6;
 const EMPTY_SHOP_CONFIG_ID: u32 = 999;
 
-fn shop_configs_ids_all() -> Array<u32> {
+pub fn shop_configs_ids_all() -> Array<u32> {
     array![
-        DECK_SHOP_CONFIG_ID,
-        GLOBAL_SHOP_CONFIG_ID,
-        SPECIALS_SHOP_CONFIG_ID,
-        LEVEL_UPS_SHOP_CONFIG_ID,
-        MODIFIERS_SHOP_CONFIG_ID,
-        MIX_SHOP_CONFIG_ID,
+        DECK_SHOP_CONFIG_ID, GLOBAL_SHOP_CONFIG_ID, SPECIALS_SHOP_CONFIG_ID, LEVEL_UPS_SHOP_CONFIG_ID,
+        MODIFIERS_SHOP_CONFIG_ID, MIX_SHOP_CONFIG_ID,
     ]
 }
 
-fn DECK_SHOP_CONFIG() -> ShopConfig {
+pub fn DECK_SHOP_CONFIG() -> ShopConfig {
     ShopConfig {
         id: DECK_SHOP_CONFIG_ID,
         traditional_cards_quantity: 5,
@@ -32,7 +28,7 @@ fn DECK_SHOP_CONFIG() -> ShopConfig {
     }
 }
 
-fn GLOBAL_SHOP_CONFIG() -> ShopConfig {
+pub fn GLOBAL_SHOP_CONFIG() -> ShopConfig {
     ShopConfig {
         id: GLOBAL_SHOP_CONFIG_ID,
         traditional_cards_quantity: 0,
@@ -45,7 +41,7 @@ fn GLOBAL_SHOP_CONFIG() -> ShopConfig {
     }
 }
 
-fn SPECIALS_SHOP_CONFIG() -> ShopConfig {
+pub fn SPECIALS_SHOP_CONFIG() -> ShopConfig {
     ShopConfig {
         id: SPECIALS_SHOP_CONFIG_ID,
         traditional_cards_quantity: 0,
@@ -58,7 +54,7 @@ fn SPECIALS_SHOP_CONFIG() -> ShopConfig {
     }
 }
 
-fn LEVEL_UPS_SHOP_CONFIG() -> ShopConfig {
+pub fn LEVEL_UPS_SHOP_CONFIG() -> ShopConfig {
     ShopConfig {
         id: LEVEL_UPS_SHOP_CONFIG_ID,
         traditional_cards_quantity: 0,
@@ -71,7 +67,7 @@ fn LEVEL_UPS_SHOP_CONFIG() -> ShopConfig {
     }
 }
 
-fn MODIFIERS_SHOP_CONFIG() -> ShopConfig {
+pub fn MODIFIERS_SHOP_CONFIG() -> ShopConfig {
     ShopConfig {
         id: MODIFIERS_SHOP_CONFIG_ID,
         traditional_cards_quantity: 0,
@@ -84,7 +80,7 @@ fn MODIFIERS_SHOP_CONFIG() -> ShopConfig {
     }
 }
 
-fn MIX_SHOP_CONFIG() -> ShopConfig {
+pub fn MIX_SHOP_CONFIG() -> ShopConfig {
     ShopConfig {
         id: MIX_SHOP_CONFIG_ID,
         traditional_cards_quantity: 0,
@@ -97,7 +93,7 @@ fn MIX_SHOP_CONFIG() -> ShopConfig {
     }
 }
 
-fn EMPTY_SHOP_CONFIG() -> ShopConfig {
+pub fn EMPTY_SHOP_CONFIG() -> ShopConfig {
     ShopConfig {
         id: EMPTY_SHOP_CONFIG_ID,
         traditional_cards_quantity: 0,
@@ -111,7 +107,7 @@ fn EMPTY_SHOP_CONFIG() -> ShopConfig {
 }
 
 // Return -> (Shop Configs Group, Probability Group)
-fn shop_configs_info() -> (Span<Span<u32>>, Span<u32>) {
+pub fn shop_configs_info() -> (Span<Span<u32>>, Span<u32>) {
     // D-Grade Group
     let D_SHOP_CONFIG_PROBABILITY = 30;
     let D_SHOP_CONFIG = array![DECK_SHOP_CONFIG_ID].span();
@@ -143,7 +139,7 @@ fn shop_configs_info() -> (Span<Span<u32>>, Span<u32>) {
     )
 }
 
-fn get_shop_config(shop_config_id: u32) -> ShopConfig {
+pub fn get_shop_config(shop_config_id: u32) -> ShopConfig {
     if shop_config_id == DECK_SHOP_CONFIG_ID {
         DECK_SHOP_CONFIG()
     } else if shop_config_id == GLOBAL_SHOP_CONFIG_ID {

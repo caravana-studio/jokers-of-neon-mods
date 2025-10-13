@@ -1,10 +1,11 @@
 #[dojo::contract]
 pub mod rage_debuff_flush {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_DEBUFF_FLUSH;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::condition::ICardCondition};
-    use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, Suit}, data::poker_hand::PokerHand, tracker::GameContext,
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl DebuffFlushCondition of ICardCondition<ContractState> {

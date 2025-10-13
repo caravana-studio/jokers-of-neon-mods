@@ -1,10 +1,10 @@
 #[dojo::contract]
 pub mod rage_silent_jokers {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_SILENT_JOKERS;
-    use jokers_of_neon_lib::{
-        interfaces::{base::ICardBase, rages::silence::IRageSilence},
-        models::{card_type::CardType, data::card::{Suit, Value}, tracker::GameContext},
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::rages::silence::IRageSilence;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Suit, Value};
 
     #[abi(embed_v0)]
     impl SilenceJokersImpl of IRageSilence<ContractState> {

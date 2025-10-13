@@ -1,8 +1,10 @@
 #[dojo::contract]
 pub mod special_extra_help {
     use jokers_of_neon_classic::specials::specials::SPECIAL_EXTRA_HELP_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::equipable::ICardEquipable};
-    use jokers_of_neon_lib::models::{card_type::CardType, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl ExtraHelpExecutable of ICardEquipable<ContractState> {

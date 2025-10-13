@@ -1,14 +1,14 @@
 #[dojo::contract]
 pub mod special_queens_fortune {
-    use dojo::{model::ModelStorage, world::WorldStorage};
+    use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_QUEENS_FORTUNE_ID;
-    use jokers_of_neon_lib::random::{Nonce, RandomTrait};
-    use jokers_of_neon_lib::{
-        interfaces::{base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable}},
-        models::{
-            data::card::{Card, Suit, Value}, data::poker_hand::{PokerHand}, {card_type::CardType, tracker::GameContext},
-        },
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Card, Value};
+    use jokers_of_neon_lib::models::tracker::GameContext;
+    use crate::utils::random;
 
     #[abi(embed_v0)]
     impl QueensFortuneCondition of ICardCondition<ContractState> {
@@ -21,8 +21,8 @@ pub mod special_queens_fortune {
     #[abi(embed_v0)]
     impl QueensFortuneExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut random = RandomTrait::initialize_random('jokers_of_neon_classic', context.game.seed);
-            if random.get_random_number(2) == 1 { // 50% chance
+            let mut world = self.world(DEFAULT_NS());
+            if random::between(ref world, context, (1, 2)) == 1 { // 50% chance
                 (0, 0, 150)
             } else {
                 (0, 0, 0)

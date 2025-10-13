@@ -1,8 +1,11 @@
 #[dojo::contract]
 pub mod special_all_cards_to_hearts {
     use jokers_of_neon_classic::specials::specials::SPECIAL_ALL_CARDS_TO_HEARTS_ID;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::converter::ICardConverter};
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::converter::ICardConverter;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Card, Suit};
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl AllCardsToHeartsConverter of ICardConverter<ContractState> {
@@ -22,7 +25,7 @@ pub mod special_all_cards_to_hearts {
                     },
                     Option::None => { break; },
                 }
-            };
+            }
             result.span()
         }
     }

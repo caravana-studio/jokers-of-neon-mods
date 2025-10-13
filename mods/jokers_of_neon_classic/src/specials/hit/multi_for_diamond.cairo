@@ -1,10 +1,12 @@
 #[dojo::contract]
 pub mod special_multi_for_diamond {
     use jokers_of_neon_classic::specials::specials::SPECIAL_MULTI_FOR_DIAMOND_ID;
-    use jokers_of_neon_lib::interfaces::{
-        base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable},
-    };
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::{Card, Suit}, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Card, Suit};
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl MultiDiamondCondition of ICardCondition<ContractState> {

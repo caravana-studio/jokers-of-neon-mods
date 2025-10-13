@@ -1,11 +1,11 @@
 #[dojo::contract]
 pub mod rage_favorite_lock {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_FAVORITE_LOCK;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::condition::ICardCondition};
-    use jokers_of_neon_lib::models::tracker::PokerHandTracker;
-    use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, Suit}, data::poker_hand::PokerHand, tracker::GameContext,
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::tracker::{GameContext, PokerHandTracker};
 
     #[abi(embed_v0)]
     impl FavoriteLockCondition of ICardCondition<ContractState> {

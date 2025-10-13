@@ -1,10 +1,10 @@
 #[dojo::contract]
 pub mod rage_hand_leech {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_HAND_LEECH;
-    use jokers_of_neon_lib::{
-        interfaces::{base::ICardBase, cards::equipable::ICardEquipable},
-        models::{card_type::CardType, tracker::GameContext},
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl HandLeechEquipable of ICardEquipable<ContractState> {

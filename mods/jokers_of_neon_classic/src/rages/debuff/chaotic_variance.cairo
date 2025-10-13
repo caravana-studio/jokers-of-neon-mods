@@ -1,18 +1,21 @@
 #[dojo::contract]
 pub mod rage_chaotic_variance {
-    use dojo::{model::ModelStorage, world::WorldStorage};
+    use dojo::model::ModelStorage;
     use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_CHAOTIC_VARIANCE;
-    use jokers_of_neon_lib::interfaces::{base::ICardBase, cards::condition::ICardCondition};
-    use jokers_of_neon_lib::models::{
-        card_type::CardType, data::card::{Card, Suit}, data::poker_hand::PokerHand, tracker::GameContext,
-    };
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[dojo::model]
     #[derive(Copy, Drop, Serde)]
     struct Cumulative {
         #[key]
         game_id: u32,
+        level: u32,
+        round: u32,
         poker_hands: Span<PokerHand>,
     }
 
@@ -23,6 +26,15 @@ pub mod rage_chaotic_variance {
 
             let mut world = self.world(DEFAULT_NS());
             let mut cumulative: Cumulative = world.read_model(context.game.id);
+
+            // Reset if level or round changed
+            if cumulative.level != context.game.level || cumulative.round != context.game.round {
+                cumulative.level = context.game.level;
+                cumulative.round = context.game.round;
+                cumulative.poker_hands = array![poker_hand].span();
+                world.write_model(@cumulative);
+                return false;
+            }
 
             let mut temp_poker_hands = cumulative.poker_hands;
             let is_contain = loop {
@@ -43,7 +55,7 @@ pub mod rage_chaotic_variance {
                         Option::Some(temp_poker_hand) => { new_poker_hands.append(*temp_poker_hand); },
                         Option::None => { break; },
                     }
-                };
+                }
                 new_poker_hands.append(poker_hand);
                 cumulative.poker_hands = new_poker_hands.span();
 

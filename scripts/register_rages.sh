@@ -24,7 +24,7 @@ for rage in "${rage_names[@]}"; do
     # Convert special name to uppercase and replace hyphens with underscores
     rage_upper=$(echo "$rage" | tr '[:lower:]' '[:upper:]' | tr '-' '_')
     # Search for the ID in rages.cairo and get only the last number in the line
-    id=$(grep -i "^const RAGE_CARD_${rage_upper}" src/rages/rages.cairo | awk -F'=' '{print $2}' | tr -d ' ;')
+    id=$(grep -i "^pub const RAGE_CARD_${rage_upper}" src/rages/rages.cairo | awk -F'=' '{print $2}' | tr -d ' ;')
     if [ -n "$id" ]; then
         rage_ids+=("$id")
     else

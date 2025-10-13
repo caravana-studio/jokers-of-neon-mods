@@ -1,10 +1,12 @@
 #[dojo::contract]
 pub mod special_neon_bonus {
     use jokers_of_neon_classic::specials::specials::SPECIAL_NEON_BONUS_ID;
-    use jokers_of_neon_lib::interfaces::{
-        base::ICardBase, cards::{condition::ICardCondition, executable::ICardExecutable},
-    };
-    use jokers_of_neon_lib::models::{card_type::CardType, data::card::Card, tracker::GameContext};
+    use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
+    use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::Card;
+    use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
     impl NeonBonusCondition of ICardCondition<ContractState> {
