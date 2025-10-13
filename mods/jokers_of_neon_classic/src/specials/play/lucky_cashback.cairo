@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod special_lucky_cashback {
-    use jokers_of_neon_classic::constants::{DEFAULT_NS_FELT};
+    use jokers_of_neon_classic::constants::DEFAULT_NS_FELT;
     use jokers_of_neon_classic::specials::specials::SPECIAL_LUCKY_CASHBACK_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
