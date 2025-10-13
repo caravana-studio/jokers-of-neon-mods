@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod special_lucky_cashback {
-    use jokers_of_neon_classic::constants::{DEFAULT_FELT_NS, DEFAULT_NS};
+    use jokers_of_neon_classic::constants::{DEFAULT_NS_FELT};
     use jokers_of_neon_classic::specials::specials::SPECIAL_LUCKY_CASHBACK_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
@@ -11,7 +11,7 @@ pub mod special_lucky_cashback {
     #[abi(embed_v0)]
     impl LuckyCashbackExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut random = RandomTrait::initialize_random(*DEFAULT_FELT_NS(), context.game.seed);
+            let mut random = RandomTrait::initialize_random(DEFAULT_NS_FELT(), context.game.seed);
             if random.get_random_number(2) == 1 {
                 (0, 0, 150)
             } else {

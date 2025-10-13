@@ -52,7 +52,9 @@ pub mod specials {
         pub mod relativity;
     }
     pub mod discard {
-        mod swamp_redemption;
+        pub mod swamp_redemption;
+    }
+    pub mod discard_condition {
         pub mod wanted_joker;
     }
     pub mod hand {
@@ -104,6 +106,7 @@ pub mod specials {
         pub mod increase_level_straight;
         pub mod increase_level_three_of_a_kind;
         pub mod initial_advantage;
+        pub mod lucky_cashback;
         pub mod multiplier;
         pub mod rage_breaker;
         pub mod rainbow;
