@@ -28,8 +28,10 @@ pub mod special_swamp_redemption {
             let mut random = RandomTrait::initialize_random(DEFAULT_NS_FELT(), context.game.seed);
 
             let mut cumulative: Cumulative = world.read_model((context.game.id, SWAMP_REDEMPTION_KEY));
-            cumulative.value += random.get_random_number(5).try_into().unwrap();
-            world.write_model(@cumulative);
+            if context.card_type == CardType::Discard {
+                cumulative.value += random.get_random_number(5).try_into().unwrap();
+                world.write_model(@cumulative);
+            }
             (cumulative.value, 0, 0)
         }
     }
@@ -41,7 +43,7 @@ pub mod special_swamp_redemption {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::Discard, CardType::Info].span()
+            array![CardType::Play, CardType::Discard, CardType::Info].span()
         }
     }
 
