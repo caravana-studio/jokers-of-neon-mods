@@ -1,14 +1,14 @@
 #[dojo::contract]
 pub mod special_swamp_redemption {
     use dojo::model::ModelStorage;
-    use jokers_of_neon_classic::constants::{DEFAULT_NS, DEFAULT_NS_FELT};
+    use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_SWAMP_REDEMPTION_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::interfaces::cards::info::ICardInfo;
     use jokers_of_neon_lib::models::card_type::CardType;
     use jokers_of_neon_lib::models::tracker::GameContext;
-    use jokers_of_neon_lib::random::RandomTrait;
+    use crate::utils::random;
 
     #[dojo::model]
     #[derive(Copy, Drop, Serde)]
@@ -25,11 +25,10 @@ pub mod special_swamp_redemption {
     impl SwampRedemptionExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let mut random = RandomTrait::initialize_random(DEFAULT_NS_FELT(), context.game.seed);
 
             let mut cumulative: Cumulative = world.read_model((context.game.id, SWAMP_REDEMPTION_KEY));
             if context.card_type == CardType::Discard {
-                cumulative.value += random.get_random_number(5).try_into().unwrap();
+                cumulative.value += random::between(ref world, context, (1, 5));
                 world.write_model(@cumulative);
             }
             (cumulative.value, 0, 0)
