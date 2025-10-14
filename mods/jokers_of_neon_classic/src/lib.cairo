@@ -52,6 +52,9 @@ pub mod specials {
         pub mod relativity;
     }
     pub mod discard {
+        pub mod swamp_redemption;
+    }
+    pub mod discard_condition {
         pub mod wanted_joker;
     }
     pub mod hand {
@@ -77,6 +80,7 @@ pub mod specials {
         pub mod random_multi_for_diamond;
         pub mod random_multi_for_heart;
         pub mod random_multi_for_spade;
+        pub mod resonant_multiplier;
         pub mod wild_booster;
     }
     pub mod miss {}
@@ -102,6 +106,7 @@ pub mod specials {
         pub mod increase_level_straight;
         pub mod increase_level_three_of_a_kind;
         pub mod initial_advantage;
+        pub mod lucky_cashback;
         pub mod multiplier;
         pub mod rage_breaker;
         pub mod rainbow;
