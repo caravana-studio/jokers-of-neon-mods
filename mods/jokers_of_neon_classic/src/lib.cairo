@@ -117,7 +117,6 @@ pub mod specials {
         pub mod scaling_factor;
         pub mod slot_saver;
         pub mod spade_trio;
-        pub mod suit_roulette;
     }
     pub mod power_up {
         pub mod power_up_booster;

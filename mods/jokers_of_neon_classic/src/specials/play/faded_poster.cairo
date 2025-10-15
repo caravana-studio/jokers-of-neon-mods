@@ -14,7 +14,7 @@ pub mod special_faded_poster {
     #[derive(Copy, Drop, Serde)]
     struct Cumulative {
         #[key]
-        game_id: u32,
+        game_id: u64,
         #[key]
         key: felt252,
         value: i32,

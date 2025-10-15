@@ -28,21 +28,19 @@ pub mod special_hestia_blessing {
     impl HestiaBlessingExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-
             let mut cumulative: Cumulative = world.read_model((context.game.id, HESTIA_BLESSING_KEY));
-            cumulative.value = context.purchase_tracker.special_cards_sold.try_into().unwrap();
-            world.write_model(@cumulative);
             (cumulative.points, cumulative.multi, 0)
         }
     }
 
     #[abi(embed_v0)]
     impl HestiaBlessingBurnable of ICardBurnable<ContractState> {
-        fn execute(ref self: ContractState, game_id: u32, raw_data: felt252) -> GameContext {
+        fn burn(ref self: ContractState, game_id: u64, raw_data: felt252) {
             let mut world = self.world(DEFAULT_NS());
             let card: Card = raw_data.into();
 
-            let mut points = card.value;
+            let mut points: i32 = card.points.try_into().unwrap();
+            let mut multi: i32 = 0;
             if card.id == JOKER_CARD_ID || card.id == NEON_JOKER_CARD_ID {
                 points = 0;
                 multi = 1;
