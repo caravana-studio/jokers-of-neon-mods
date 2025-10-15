@@ -19,7 +19,7 @@ pub mod special_point_juggler {
     impl PointJugglerExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let card: Card = raw_data.into();
-            (card.points * 10, 0, 0)
+            ((card.points * 10).try_into().unwrap(), 0, 0)
         }
     }
 

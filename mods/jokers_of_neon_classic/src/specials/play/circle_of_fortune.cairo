@@ -3,10 +3,8 @@ pub mod special_circle_of_fortune {
     use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_CIRCLE_OF_FORTUNE_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
-    use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::models::card_type::CardType;
-    use jokers_of_neon_lib::models::data::card::{Card, Value};
     use jokers_of_neon_lib::models::tracker::GameContext;
     use crate::utils::random;
 

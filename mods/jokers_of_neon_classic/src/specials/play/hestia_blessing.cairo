@@ -3,11 +3,13 @@ pub mod special_hestia_blessing {
     use dojo::model::ModelStorage;
     use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_HESTIA_BLESSING_ID;
+    use jokers_of_neon_lib::constants::card::{JOKER_CARD_ID, NEON_JOKER_CARD_ID};
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::burnable::ICardBurnable;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::interfaces::cards::info::ICardInfo;
     use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::Card;
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[dojo::model]
@@ -41,7 +43,7 @@ pub mod special_hestia_blessing {
             let card: Card = raw_data.into();
 
             let mut points = card.value;
-            if card.suit == Suit::Joker {
+            if card.id == JOKER_CARD_ID || card.id == NEON_JOKER_CARD_ID {
                 points = 0;
                 multi = 1;
             }

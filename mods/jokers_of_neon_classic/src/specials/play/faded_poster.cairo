@@ -4,6 +4,7 @@ pub mod special_faded_poster {
     use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_FADED_POSTER_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::interfaces::cards::info::ICardInfo;
     use jokers_of_neon_lib::models::card_type::CardType;

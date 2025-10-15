@@ -3,12 +3,13 @@ pub mod special_hanged_joker {
     use dojo::model::ModelStorage;
     use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_HANGED_JOKER_ID;
+    use jokers_of_neon_lib::constants::card::{JOKER_CARD_ID, NEON_JOKER_CARD_ID};
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::interfaces::cards::info::ICardInfo;
     use jokers_of_neon_lib::models::card_type::CardType;
-    use jokers_of_neon_lib::models::data::card::JOKER_CARD_ID;
     use jokers_of_neon_lib::models::tracker::GameContext;
+    use jokers_of_neon_mods::utils::random;
 
     #[dojo::model]
     #[derive(Copy, Drop, Serde)]
@@ -28,7 +29,7 @@ pub mod special_hanged_joker {
             let mut cumulative: Cumulative = world.read_model((context.game.id, HANGED_JOKER_KEY));
 
             // Check if play contains joker
-            let play_contains_joker = false;
+            let mut play_contains_joker = false;
             for (hit, _, card) in context.cards_played {
                 if *hit && (*card.id == JOKER_CARD_ID || *card.id == NEON_JOKER_CARD_ID) {
                     play_contains_joker = true;

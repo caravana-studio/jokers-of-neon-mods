@@ -10,15 +10,15 @@ pub mod game_config {
     impl ClassicGameConfig of IGameConfig<ContractState> {
         fn get_game_config(self: @ContractState) -> GameConfig {
             GameConfig {
-                plays: 5,
-                discards: 5,
+                plays: 10,
+                discards: 10,
                 max_special_slots: 7,
                 power_up_slots: 4,
                 max_power_up_slots: 4,
                 hand_len: 8,
-                start_cash: 0,
-                start_special_slots: 1,
-                start_rerolls: 1,
+                start_cash: 999999,
+                start_special_slots: 7,
+                start_rerolls: 1000,
             }
         }
 
