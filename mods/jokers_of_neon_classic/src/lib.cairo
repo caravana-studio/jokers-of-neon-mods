@@ -96,6 +96,7 @@ pub mod specials {
         pub mod efficient_play;
         pub mod faded_poster;
         pub mod hanged_joker;
+        pub mod hestia_blessing;
         pub mod high_roller;
         pub mod increase_level_double_pair;
         pub mod increase_level_five_of_a_kind;
