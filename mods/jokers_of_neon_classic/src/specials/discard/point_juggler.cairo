@@ -30,7 +30,7 @@ pub mod special_point_juggler {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::Discard].span()
+            array![CardType::DiscardCondition].span()
         }
     }
 }

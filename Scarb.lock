@@ -28,7 +28,7 @@ dependencies = [
 [[package]]
 name = "jokers_of_neon_lib"
 version = "0.19.0"
-source = "git+https://github.com/caravana-studio/jokers-of-neon-lib?branch=card-type-burn#792e4376b602ff583af9277eb06f2fa2bfbf46b8"
+source = "git+https://github.com/caravana-studio/jokers-of-neon-lib?branch=card-type-burn#b5115fc095ad355ef2dc4f0a3a77eacab1a21585"
 dependencies = [
  "dojo",
  "dojo_cairo_macros",
