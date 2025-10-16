@@ -60,7 +60,7 @@ pub mod special_hestia_blessing {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::Play, CardType::Info].span()
+            array![CardType::Play, CardType::Burn, CardType::Info].span()
         }
     }
 
