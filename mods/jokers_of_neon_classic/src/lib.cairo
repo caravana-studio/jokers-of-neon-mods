@@ -56,8 +56,8 @@ pub mod specials {
         pub mod swamp_redemption;
     }
     pub mod discard_condition {
-        pub mod wanted_joker;
         pub mod point_juggler;
+        pub mod wanted_joker;
     }
     pub mod hand {
         pub mod jackpot;
