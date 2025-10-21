@@ -44,7 +44,7 @@ pub fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
     // B-Grade Group
     let B_RAGES_PROBABILITY = 25;
     let B_RAGES = array![
-        RAGE_CARD_SILENT_JOKERS, RAGE_CARD_HAND_LEECH, RAGE_CARD_DOUBLE_TROUBLE, RAGE_CARD_LOCKED_PLAYS
+        RAGE_CARD_SILENT_JOKERS, RAGE_CARD_HAND_LEECH, RAGE_CARD_DOUBLE_TROUBLE, RAGE_CARD_LOCKED_PLAYS,
     ]
         .span();
     let B_RAGES_REWARDS = 750;
