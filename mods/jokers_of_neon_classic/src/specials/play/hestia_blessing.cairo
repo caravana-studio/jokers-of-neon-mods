@@ -39,12 +39,11 @@ pub mod special_hestia_blessing {
             let mut world = self.world(DEFAULT_NS());
             let card: Card = raw_data.into();
 
-            let mut points: i32 = card.points.try_into().unwrap();
-            let mut multi: i32 = 0;
-            if card.id == JOKER_CARD_ID || card.id == NEON_JOKER_CARD_ID {
-                points = 0;
-                multi = 1;
-            }
+            let (points, multi) = if card.id == JOKER_CARD_ID || card.id == NEON_JOKER_CARD_ID {
+                (0, 1)
+            } else {
+                (card.points.try_into().unwrap(), 0)
+            };
 
             let mut cumulative: Cumulative = world.read_model((game_id, HESTIA_BLESSING_KEY));
             cumulative.points += points;
