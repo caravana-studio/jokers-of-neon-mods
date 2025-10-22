@@ -44,6 +44,7 @@ pub mod specials {
         pub mod hand_thief;
         pub mod plus_discards;
         pub mod plus_plays;
+        pub mod tamer_of_chances;
     }
     pub mod converter {
         pub mod all_cards_to_hearts;
@@ -55,6 +56,7 @@ pub mod specials {
         pub mod swamp_redemption;
     }
     pub mod discard_condition {
+        pub mod point_juggler;
         pub mod wanted_joker;
     }
     pub mod hand {
@@ -90,11 +92,15 @@ pub mod specials {
         pub mod blacks;
         pub mod burning_rewards;
         pub mod cash_catalyst;
+        pub mod circle_of_fortune;
         pub mod club_keeper;
         pub mod deadline;
         pub mod deck_collector;
         pub mod discard_mastery;
         pub mod efficient_play;
+        pub mod faded_poster;
+        pub mod hanged_joker;
+        pub mod hestia_blessing;
         pub mod high_roller;
         pub mod increase_level_double_pair;
         pub mod increase_level_five_of_a_kind;
@@ -116,6 +122,7 @@ pub mod specials {
         pub mod scaling_factor;
         pub mod slot_saver;
         pub mod spade_trio;
+        pub mod suit_roulette;
     }
     pub mod power_up {
         pub mod power_up_booster;
