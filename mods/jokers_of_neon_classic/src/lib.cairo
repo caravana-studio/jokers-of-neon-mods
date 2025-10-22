@@ -8,10 +8,10 @@ pub mod configs {
 pub mod rages {
     pub mod rages;
     pub mod debuff {
-        pub mod chaotic_variance;
         pub mod debuff_flush;
         pub mod favorite_lock;
-        pub mod obsessive_repetition;
+        pub mod locked_plays;
+        pub mod punched_ticket;
     }
     pub mod game {
         pub mod diminished_hold;
