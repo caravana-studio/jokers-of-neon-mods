@@ -1,7 +1,7 @@
 {
   "world": {
-    "class_hash": "0x57994b6a75fad550ca18b41ee82e2110e158c59028c4478109a67965a0e5b1e",
-    "address": "0x71d8911d074f6537153a0a35d023984746ac2cdaea23919b3d5bf6681f65d93",
+    "class_hash": "0x691da17eb9ef169b385eaaf3a303972d187479e30be146d3337423eaec6272d",
+    "address": "0x5917c9a45d538df71ea7c11a92b30d14ed525f5c333c39f9085b2ab536809b5",
     "seed": "jokers_of_neon_mods",
     "name": "jokers_of_neon_mods",
     "entrypoints": [
@@ -266,6 +266,17 @@
             "outputs": [
               {
                 "type": "dojo::world::resource::Resource"
+              }
+            ],
+            "state_mutability": "view"
+          },
+          {
+            "type": "function",
+            "name": "world_version",
+            "inputs": [],
+            "outputs": [
+              {
+                "type": "core::felt252"
               }
             ],
             "state_mutability": "view"
@@ -1479,7 +1490,7 @@
   },
   "contracts": [
     {
-      "address": "0x6c8adc9362645aa21ff5133debf2aafb6abe2f54dd4f64293923295f94979c1",
+      "address": "0x1e0d69a33eacd0321fc68d46618248087e6d2464f17921761ce64664fec4c05",
       "class_hash": "0x5ee0129bb49418feec92e101c21693573c0e030174b08b2494badaebb47ed74",
       "abi": [
         {
@@ -1872,7 +1883,7 @@
       ]
     },
     {
-      "address": "0x693482c5584c48b230cdb164add6a820fc9afbcf84a3d6f6bba60f394390821",
+      "address": "0x76710d0743150017497e9ef8b4242043737b949297c7a53619ccbf9a5db9870",
       "class_hash": "0x25d2422994af3c96e2de235aeda2366b8b653520da6a630f2954ba0f4b3de39",
       "abi": [
         {
@@ -2141,7 +2152,7 @@
       ]
     },
     {
-      "address": "0x39802c07993df53ca3dbf8795668dbe858d45d3cbd48ded7b40f8433eeab086",
+      "address": "0x56d6a0ca9705d382cf3bd124cc63a7312acd9ea9f1b9804265707a1c5142a63",
       "class_hash": "0x1a782ac671245da2fbfda835e5a17adfb6f81c1512b7f6ecb07b3089d2e5aa4",
       "abi": [
         {
