@@ -5,6 +5,7 @@ pub mod rage_punched_ticket {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_PUNCHED_TICKET;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::interfaces::cards::str_info::ICardStrInfo;
     use jokers_of_neon_lib::models::card_type::CardType;
     use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
     use jokers_of_neon_lib::models::tracker::GameContext;
@@ -17,6 +18,14 @@ pub mod rage_punched_ticket {
         level: u32,
         round: u32,
         poker_hands: Span<PokerHand>,
+    }
+
+    #[dojo::model]
+    #[derive(Copy, Drop, Serde)]
+    struct Info {
+        #[key]
+        game_id: u64,
+        blocked_hands: Span<ByteArray>,
     }
 
     #[abi(embed_v0)]
@@ -37,7 +46,7 @@ pub mod rage_punched_ticket {
             }
 
             let mut temp_poker_hands = cumulative.poker_hands;
-            let is_contain = loop {
+            let contains_poker_hand = loop {
                 match temp_poker_hands.pop_front() {
                     Option::Some(temp_poker_hand) => { if *temp_poker_hand == poker_hand {
                         break true;
@@ -46,20 +55,19 @@ pub mod rage_punched_ticket {
                 }
             };
 
-            if is_contain {
+            if contains_poker_hand {
                 return true;
             } else {
                 let mut new_poker_hands = array![];
-                loop {
-                    match cumulative.poker_hands.pop_front() {
-                        Option::Some(temp_poker_hand) => { new_poker_hands.append(*temp_poker_hand); },
-                        Option::None => { break; },
-                    }
+                let mut str_poker_hands = array![];
+                for temp_poker_hand in cumulative.poker_hands {
+                    new_poker_hands.append(*temp_poker_hand);
+                    str_poker_hands.append((*temp_poker_hand).into());
                 }
                 new_poker_hands.append(poker_hand);
                 cumulative.poker_hands = new_poker_hands.span();
-
                 world.write_model(@cumulative);
+                world.write_model(@Info { game_id: context.game.id, blocked_hands: str_poker_hands.span() });
 
                 return false;
             }
@@ -74,6 +82,15 @@ pub mod rage_punched_ticket {
 
         fn get_types(self: @ContractState) -> Span<CardType> {
             array![CardType::Debuff].span()
+        }
+    }
+
+    #[abi(embed_v0)]
+    impl PunchedTicketStrInfo of ICardStrInfo<ContractState> {
+        fn info(self: @ContractState, game_id: u64) -> Span<ByteArray> {
+            let mut world = self.world(DEFAULT_NS());
+            let info: Info = world.read_model(game_id);
+            info.blocked_hands
         }
     }
 }

@@ -1,11 +1,22 @@
 #[dojo::contract]
 pub mod rage_favorite_lock {
+    use dojo::model::ModelStorage;
+    use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_FAVORITE_LOCK;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::interfaces::cards::str_info::ICardStrInfo;
     use jokers_of_neon_lib::models::card_type::CardType;
     use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
     use jokers_of_neon_lib::models::tracker::{GameContext, PokerHandTracker};
+
+    #[dojo::model]
+    #[derive(Copy, Drop, Serde)]
+    struct Info {
+        #[key]
+        game_id: u32,
+        blocked_hands: Span<ByteArray>,
+    }
 
     #[abi(embed_v0)]
     impl FavoriteLockCondition of ICardCondition<ContractState> {
@@ -24,6 +35,20 @@ pub mod rage_favorite_lock {
                 return false;
             }
 
+            let mut world = self.world(DEFAULT_NS());
+            let mut info: Info = world.read_model(context.game.id);
+            let mut new_blocked_hands = array![];
+
+            // Add blocked hands ot the array
+            for blocked_hand in info.blocked_hands {
+                let blocked_hand_byte_array = blocked_hand.clone().into();
+                if !contains(new_blocked_hands.clone(), blocked_hand_byte_array.clone()) {
+                    new_blocked_hands.append(blocked_hand_byte_array);
+                }
+            }
+            info.blocked_hands = new_blocked_hands.span();
+            world.write_model(@info);
+
             // Block the current hand if it has the maximum count (most played)
             current_count == max_count
         }
@@ -36,7 +61,16 @@ pub mod rage_favorite_lock {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::Debuff].span()
+            array![CardType::Debuff, CardType::StrInfo].span()
+        }
+    }
+
+    #[abi(embed_v0)]
+    impl FavoriteLockStrInfo of ICardStrInfo<ContractState> {
+        fn info(self: @ContractState, game_id: u64) -> Span<ByteArray> {
+            let mut world = self.world(DEFAULT_NS());
+            let info: Info = world.read_model(game_id);
+            info.blocked_hands
         }
     }
 
@@ -98,5 +132,16 @@ pub mod rage_favorite_lock {
         }
 
         max_count
+    }
+
+    fn contains(array: Array<ByteArray>, item: ByteArray) -> bool {
+        let mut found = false;
+        for i in array {
+            if i == item {
+                found = true;
+                break;
+            }
+        }
+        found
     }
 }

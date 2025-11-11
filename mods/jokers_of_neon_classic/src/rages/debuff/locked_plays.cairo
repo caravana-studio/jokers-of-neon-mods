@@ -5,6 +5,7 @@ pub mod rage_locked_plays {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_LOCKED_PLAYS;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::interfaces::cards::str_info::ICardStrInfo;
     use jokers_of_neon_lib::models::card_type::CardType;
     use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
     use jokers_of_neon_lib::models::tracker::GameContext;
@@ -17,6 +18,14 @@ pub mod rage_locked_plays {
         level: u32,
         round: u32,
         poker_hand: PokerHand,
+    }
+
+    #[dojo::model]
+    #[derive(Copy, Drop, Serde)]
+    struct Info {
+        #[key]
+        game_id: u64,
+        locked_plays: Span<ByteArray>,
     }
 
     #[abi(embed_v0)]
@@ -42,7 +51,12 @@ pub mod rage_locked_plays {
                 return false;
             }
 
-            poker_hand != cumulative.poker_hand
+            let condition = poker_hand != cumulative.poker_hand;
+            if condition {
+                let str_poker_hand = poker_hand.into();
+                world.write_model(@Info { game_id: context.game.id, locked_plays: array![str_poker_hand].span() });
+            }
+            condition
         }
     }
 
@@ -53,7 +67,16 @@ pub mod rage_locked_plays {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::Debuff].span()
+            array![CardType::Debuff, CardType::StrInfo].span()
+        }
+    }
+
+    #[abi(embed_v0)]
+    impl LockedPlaysStrInfo of ICardStrInfo<ContractState> {
+        fn info(self: @ContractState, game_id: u64) -> Span<ByteArray> {
+            let mut world = self.world(DEFAULT_NS());
+            let info: Info = world.read_model(game_id);
+            info.locked_plays
         }
     }
 }
