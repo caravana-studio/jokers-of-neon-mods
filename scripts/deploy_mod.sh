@@ -55,10 +55,8 @@ NAMESPACE_MODS=$(get_env_var "NAMESPACE_MODS")
 # echo "WORLD_ADDRESS=$WORLD_ADDRESS"
 bash ../../scripts/replace_env.sh $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
 
-rm -f Scarb.lock
-
 rm -rf "target"
-rm -f "Scarb.lock"
+# rm -f "Scarb.lock"
 rm -f "manifest_dev.json"
 
 echo "Deploying in ${profile}."
