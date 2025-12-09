@@ -3232,8 +3232,8 @@
       ]
     },
     {
-      "address": "0x3fa70cb7495596d51d61e2ad6056f24257ff0626f811adfbdea7a321de05a63",
-      "class_hash": "0x5d03cc6bf662ca38468f20e6bf160e165989730640f4cea1ca15203ae422c41",
+      "address": "0x7fbc1d3c96aab380cdd2a3a02f90e17287bc3f08ec675d48cbf20b25bd9caa2",
+      "class_hash": "0x4faebfd45011e125e14ac4ea9b8939a731a1d13efa09fd2ebb5805772fcd409",
       "abi": [
         {
           "type": "impl",
@@ -3333,6 +3333,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -3403,6 +3417,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -3590,20 +3608,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -4182,8 +4186,8 @@
       ]
     },
     {
-      "address": "0x6a7f6f11fe8976d9cee97d5fa5eef7e6b14db61bc08a6925d3670b38ba22c0c",
-      "class_hash": "0x28d425f50a10b604523fbc3b77c73bc2d4bb6653b6dcf228e999dac7dc2cf4",
+      "address": "0x479c23c50f91afcccec1c0ff2178fe63ef54089b90a80791941c8cf39edbb25",
+      "class_hash": "0x79505dcf1e284aedbc1f1b3dfd93fc202347027291f7fe9dc288eea54ed3a10",
       "abi": [
         {
           "type": "impl",
@@ -4283,6 +4287,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -4353,6 +4371,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -4540,20 +4562,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -5146,8 +5154,8 @@
       ]
     },
     {
-      "address": "0x61090bfe4abf1eced2fcf128d5aec1f08695f59f4093eb3a4aed13c71ca47a2",
-      "class_hash": "0x7d3f204862b1f27052e6fccda228782cbbeb449b67cffbc922effce363b74f1",
+      "address": "0x2cb464ccb61cd5505a26708638e0e6cf64fad455ef5ab3b51efb2ec3157ef7a",
+      "class_hash": "0x31909ff4fe30b2e80359c44c6892240929e14a62077c8d8d74f0c7e91da6cda",
       "abi": [
         {
           "type": "impl",
@@ -5247,6 +5255,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -5317,6 +5339,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -5504,20 +5530,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -6110,8 +6122,8 @@
       ]
     },
     {
-      "address": "0x5c243509f2f9c905fe448d5e0cda6dd26c77744ec78a612c6088964e782a22c",
-      "class_hash": "0x2c209d439b730daabe5bc3e81d5163f5cb0bc587020cd91122580aff5f3cff5",
+      "address": "0x720b73e46a173bd519918c45cc6c0e68504ae35b113d110dc752d5251974d7c",
+      "class_hash": "0x685dcd35e5ee1936ea0d8ca6014b5c742286d16d2571d5a824c174f54bf3433",
       "abi": [
         {
           "type": "impl",
@@ -6211,6 +6223,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -6281,6 +6307,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -6468,20 +6498,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -7060,8 +7076,8 @@
       ]
     },
     {
-      "address": "0x7add427b200961d102b71aab5e33ea34d19c369993c10da471d6199b27e0cb",
-      "class_hash": "0x75aeab0db1631e498203f9ff090c6be1eff734bb38341f9dc773cd7762fd6fb",
+      "address": "0x788e1835a5a7277488d8c349b449924e9df627050fe81247eafbcdd634a8d2",
+      "class_hash": "0x404b07999ecb850ec952ea3e2eba33e56bae659c316318f4f4981da2da280d5",
       "abi": [
         {
           "type": "impl",
@@ -7161,6 +7177,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -7231,6 +7261,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -7418,20 +7452,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -8024,8 +8044,8 @@
       ]
     },
     {
-      "address": "0xfd6b1009cdf4e0c6ea99c64707b95fb5095adb5ea11f3961c4b16c724ffeab",
-      "class_hash": "0x2e9eeba0d5d291755d3544eee15c50ce924a62e38bc76d801afc5e235bb629a",
+      "address": "0x3667e2c7c66c67b36948678a5ac2536624579a0c593cc305e310bbe60c490d1",
+      "class_hash": "0x6d46ad0f4471719fabfb79bc867642f2c1bb9beaa869aaad2e8974028293896",
       "abi": [
         {
           "type": "impl",
@@ -8125,6 +8145,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -8195,6 +8229,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -8382,20 +8420,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -8974,8 +8998,8 @@
       ]
     },
     {
-      "address": "0x677c35274b1f63a60efd0d517b17b5c122595a3b56e7340ff4d14c0070d930f",
-      "class_hash": "0x65f81da289b1c699ecae4f021a4021e95a875a98707cfc8815a00e0ee167463",
+      "address": "0x13a83a6b495998a04e8708500184501ef66b68aa833b6fecf3e7f3ae3080073",
+      "class_hash": "0x515de1c41d8098106ce71f05b1fbbe3cddb447d1f1cad91f58b310cd299583e",
       "abi": [
         {
           "type": "impl",
@@ -9075,6 +9099,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -9145,6 +9183,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -9332,20 +9374,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -13389,8 +13417,8 @@
       ]
     },
     {
-      "address": "0x780e0a5f662a05ccda0b79951d07f0f2c7bdada1325f7f1e61c19fed0f66f4b",
-      "class_hash": "0x4762f82ddb7e1b9bfc4603b5112527df026a00f7a7fe5a45c67f995cdd16c3e",
+      "address": "0x28bbedb85366784b19496c2a97f8e59590bca33e88a05b2ccc800a7c07da30d",
+      "class_hash": "0x7bad589912f9ad1b656289da6bd49d326315c52dbcf77da29cdba987dd6fce6",
       "abi": [
         {
           "type": "impl",
@@ -13490,6 +13518,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -13560,6 +13602,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -13747,20 +13793,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -14353,8 +14385,8 @@
       ]
     },
     {
-      "address": "0x1a17d634313272097a288d17e3626ccdcec2358dd062f37da1b9e1af62c9f10",
-      "class_hash": "0x1c934345c30208ba2b417bbfc26c3e2d0fcd998f01b8bb7725ea50be68c6876",
+      "address": "0x688b79f9cec4474c9ddfe358b6c5b97c030d1ee1f7709b93e6bc3d86ee47f33",
+      "class_hash": "0x113b22a1ec476de34e02bdbd8ec8dae9ffcc433471042dc878878a3f257eb46",
       "abi": [
         {
           "type": "impl",
@@ -14454,6 +14486,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -14524,6 +14570,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -14711,20 +14761,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -15829,8 +15865,8 @@
       ]
     },
     {
-      "address": "0x1a0a05baf9e95ffc44aa5f0341d5e5484efbd3531f67ebe07be33ad9b08e718",
-      "class_hash": "0x6141838acbd8beac9757ce000125d6d461b4f2d49e4cd70d6310161eaf30f57",
+      "address": "0x20249c047d105a81d8228886efcb72f39b475cce10144f919eb0615a62bb801",
+      "class_hash": "0x68a76c79e2668b5b905ebc002789d60922ee0c405726ab266895850627da4f8",
       "abi": [
         {
           "type": "impl",
@@ -15930,6 +15966,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -16000,6 +16050,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -16187,20 +16241,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -16790,8 +16830,8 @@
       ]
     },
     {
-      "address": "0x42c088beda1a96fcd0443eb9bb0769b1eb23b2e4e52fd043c08c95882d764d1",
-      "class_hash": "0x44b066d062075bbc41f5f6e722b8e592a8b8ce65f9091ecf098eacdd5bb7809",
+      "address": "0x2777c2d9d5eb7c60385e6edd14ecb7074a5019cdb199d455b9d4ac0120a3a38",
+      "class_hash": "0x6b8bdf6b8d803467af7dd9e85ff7a0248338a08b75c1bd4155f984664e4bb48",
       "abi": [
         {
           "type": "impl",
@@ -16891,6 +16931,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -16961,6 +17015,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -17148,20 +17206,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -17741,8 +17785,8 @@
       ]
     },
     {
-      "address": "0x5f306bb120cee9c4467b96bc512372aa3abe560d04b63fec30e9e992b923ce6",
-      "class_hash": "0x2ebcf327aa952709a04360a5b5c526937d1685d53b09cd7afe0d02b542c8ee",
+      "address": "0xf96fd77b8c1a068bae03a1a99ce1c92b54b5f800c442541d64b8ec8e44ff8",
+      "class_hash": "0x4d020bdb39cdac6fc554b8b9d2f17daf6f0a740e39aa516d79160a52f586f80",
       "abi": [
         {
           "type": "impl",
@@ -17842,6 +17886,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -17912,6 +17970,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -18099,20 +18161,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -18723,8 +18771,8 @@
       ]
     },
     {
-      "address": "0x1f9bd95aef809a31c499601de5d56d92201728cf772954801fe13fbf12afb8a",
-      "class_hash": "0x2139a1747620a7c884b1f33c51dc9dc26b5a1a06a1e2f539a89a9bddae93bb0",
+      "address": "0xee7b893d50172e644c4d66662d5fd57639c9b06de964cc0ae6deae92160e84",
+      "class_hash": "0x79c365961c7006f078c4e447e2d8774f93d9cca0e39f45aa56eeecdcca328a5",
       "abi": [
         {
           "type": "impl",
@@ -18824,6 +18872,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -18894,6 +18956,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -19081,20 +19147,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -19674,8 +19726,8 @@
       ]
     },
     {
-      "address": "0x337e00ea6920c8c271a661a48e5636d582ef58d8d3581751a0a3cc6f7584b2b",
-      "class_hash": "0x4c3c1e68e59e37d69eea1ff85e0da50ee4fe722a6f48905f13921c49042a5c8",
+      "address": "0x69623d9626d652a5e0e0829bd7b4ec2e60644311724ed968693ea12844d45ef",
+      "class_hash": "0x5b00b7afe15e898b8fe22b02590d8d22aae32dfb19fbc2ac6d147e94a358986",
       "abi": [
         {
           "type": "impl",
@@ -19775,6 +19827,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -19845,6 +19911,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -20032,20 +20102,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -20625,8 +20681,8 @@
       ]
     },
     {
-      "address": "0x65c87f647b83fd82c19133d8275bb855041720992d3e0e07926d69cf92e61e9",
-      "class_hash": "0x17bf0d7e31d05a6b976b415cb43fe480d9cabf3a37937f6d0bb04db8a7dda03",
+      "address": "0x65af80e68dc127c60647a9ac4a3c62fccfd95cd0363adc6788df89bf40e086b",
+      "class_hash": "0x32ed7a81a9330eb3c7ac679adc4c39d994312d3bd2235f9a52a32da083db182",
       "abi": [
         {
           "type": "impl",
@@ -20726,6 +20782,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -20796,6 +20866,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -20983,20 +21057,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -21603,8 +21663,8 @@
       ]
     },
     {
-      "address": "0x7f5240e1705acca4f358df2d022e2c2ff630a1f186f84799126996d0ee89553",
-      "class_hash": "0x4d08abdb23de827daea9e99315db18684dbec9ef2780c821c64b3d77a01b9ad",
+      "address": "0x6cd640a36fad1c21b04d9837bce4eb2f0746cc685bf8d7c81b92d1224defd17",
+      "class_hash": "0x4c6ff877edb2500d37500de361d33c559c29e867861881df6515acb8a0ce446",
       "abi": [
         {
           "type": "impl",
@@ -21704,6 +21764,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -21774,6 +21848,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -21961,20 +22039,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -22554,8 +22618,8 @@
       ]
     },
     {
-      "address": "0x7f60f0cb5236e12c10c255008e34dcd310ceabf9bfb58e23fdcbaabea14f9f9",
-      "class_hash": "0x7dd0846497ef9125e59958ad9d5f2a4fffce6bf444b28cb34ea83d4e6f5b6a2",
+      "address": "0x56eb16de64149b59a45869e967313f61960f3513c132404334d64325c2e186b",
+      "class_hash": "0x41a8e95271cd9541735eee64bfd505dbf947fafaf54b9c473acf91c3aae0eb0",
       "abi": [
         {
           "type": "impl",
@@ -22655,6 +22719,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -22725,6 +22803,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -22912,20 +22994,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -23505,8 +23573,8 @@
       ]
     },
     {
-      "address": "0x7f1e39b21519b6bba3c3a02adf5700ffff16cf75826183e05620d10be13818b",
-      "class_hash": "0x50e86afff1081ba903fe342fa3f0aa1d2b6006daca9a6cfc6690281bb08a48a",
+      "address": "0x3fb9b9ad5ea3bb5f0897c1312e5076fc85dfb836982c69b854606ff40f0cae4",
+      "class_hash": "0x3c92f8b7b4c0c263cf68bd4db6e0d53e47fab29c65aabcf7b005c14eef9d18a",
       "abi": [
         {
           "type": "impl",
@@ -23606,6 +23674,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -23676,6 +23758,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -23863,20 +23949,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -24456,8 +24528,8 @@
       ]
     },
     {
-      "address": "0x2abb57badb435ec504b9c6e9845ad38f6ea152f974185b2240fe6c6186074f5",
-      "class_hash": "0x31bcc6b1c98c8459e0a529fbc468957ed7ff28d8cf10553b518f2ab2eaad8f1",
+      "address": "0x34a5f74d45d6ae55699a9afdeb1d08e4529bee5f88daff7e7b3d5ac54c3fa59",
+      "class_hash": "0x7464aa6d0c5e025bbca3554b7e112c34130b3c461885c208e7ca8600157e6c6",
       "abi": [
         {
           "type": "impl",
@@ -24557,6 +24629,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -24627,6 +24713,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -24814,20 +24904,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -25407,8 +25483,8 @@
       ]
     },
     {
-      "address": "0xacb14fae439810d6ca9a9216f63c12269399b0f50895c4977ce7ee54ac7a8d",
-      "class_hash": "0x4ebdc2c41625626ddb287e89dafbdf9d8219858d8cb04dd98bc3e6d26f7c79c",
+      "address": "0x699ad841c35cea1d7deea9b80a31b74064df6fb085fa05ad2d9635869ef2ea5",
+      "class_hash": "0x493766263f94be79e89c1958871ef31d25a549399c3c15c130aff2a42f170da",
       "abi": [
         {
           "type": "impl",
@@ -25508,6 +25584,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -25578,6 +25668,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -25765,20 +25859,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -26358,8 +26438,8 @@
       ]
     },
     {
-      "address": "0x6bd2e80b673f5339ed5c735568f3036d1b27c6e6657b56586acec7983067854",
-      "class_hash": "0x17c27605b0c2265f5fc4ac9238ca811d387b2283607d155c0c614a80f58b612",
+      "address": "0x4b3d9986c9774bcd5083041a1b58d96a504b14eb64fa0f97062c208a245d1d1",
+      "class_hash": "0x2d513aab6212ada48348d988450e1012cd48d5ab71443d28dec68e730204fcd",
       "abi": [
         {
           "type": "impl",
@@ -26459,6 +26539,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -26529,6 +26623,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -26716,20 +26814,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -27319,8 +27403,8 @@
       ]
     },
     {
-      "address": "0x4a72445b859501390470805e6e58e6b454ac9e32ca0750ea6e246ff6089b2ba",
-      "class_hash": "0x4a11b3cd6e837a92be44b628d78c1e9db6c926a41e56851ff189565451a8579",
+      "address": "0x34e95642dad146431f4c087f23c8c28f13f69583dff1e9037e51aa1394f7704",
+      "class_hash": "0xecf76effbf16e5ce929494e832df96d46c9afdb47d1be6031e171eb7379e3a",
       "abi": [
         {
           "type": "impl",
@@ -27420,6 +27504,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -27490,6 +27588,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -27677,20 +27779,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -28270,8 +28358,8 @@
       ]
     },
     {
-      "address": "0x2c15edf74fb91369e564cdb2508187e1386bc51f70115262416fe8fc0df86f1",
-      "class_hash": "0x2f97bfceb4cc9f5b96f24441bd9a78b253d8ae436752397fd3b058df410f460",
+      "address": "0x869e8834b41d8e932ac0f1b62f70ec38bd317f8fb19a8f80ee39094c8de047",
+      "class_hash": "0x32b95a62017f40784ad2ac473d0b677c3f40eca4e99c00dbc8d230f97a1a200",
       "abi": [
         {
           "type": "impl",
@@ -28371,6 +28459,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -28441,6 +28543,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -28628,20 +28734,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -29221,8 +29313,8 @@
       ]
     },
     {
-      "address": "0x7a0c9334c44d8e863d1f8d0b7b514ebf2cdc540ba13c562ef06e2cf8a5823d2",
-      "class_hash": "0x16e813c5f30bf532db596bd80690a3602e72be59165d8e970fded3e22a1b87d",
+      "address": "0x3396e2f6046a09093f6b0e9e905374e5802525e2427642ff67c3c74c253dd64",
+      "class_hash": "0xa07258823f9eab9273f647776797235ed222ed8893720f7e59405a77adc772",
       "abi": [
         {
           "type": "impl",
@@ -29322,6 +29414,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -29392,6 +29498,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -29579,20 +29689,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -30185,8 +30281,8 @@
       ]
     },
     {
-      "address": "0x2fbd341b74d8814aa83446ab7413524c403024ed87c00f8c8e77841e80ad1e2",
-      "class_hash": "0x47f5a2a8f1a40e8ef3627139d0588ef437932774ffe1c9983e54eb74d08130d",
+      "address": "0x6c730ffbc623028814889a51e156cbee88ba9d4d33d678a3cb55df3f197f0f0",
+      "class_hash": "0x5de524ee43f7f1abd3c621f4ff7358463e1e72cb109c5d882259d0e8da0dc1c",
       "abi": [
         {
           "type": "impl",
@@ -30286,6 +30382,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -30356,6 +30466,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -30543,20 +30657,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -31208,8 +31308,8 @@
       ]
     },
     {
-      "address": "0x7d8013752cf67d1bf18c4bc04515bcc8f2a80ff4afc950a3d44845aa4b5819f",
-      "class_hash": "0x15b79121c9346b0f7c3bd9e1f0ef43d9fe18b568c9ddb8b369aa6953059a56",
+      "address": "0xbf10f2305d3ddb6c2ae19ade74c27d9a266e8b849bd152248842f2faa5b3eb",
+      "class_hash": "0xa94f861080be7969c4e0f7b0d4c13b563dfbbd17658698675b67fd8085cd48",
       "abi": [
         {
           "type": "impl",
@@ -31309,6 +31409,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -31379,6 +31493,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -31566,20 +31684,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -32172,8 +32276,8 @@
       ]
     },
     {
-      "address": "0x10105e396a489583cf3b733e8f8a2cd1769e2ae4d88e01e1d523f3c55a4c463",
-      "class_hash": "0xc72e22afd4d7523cd0b5a45b855e984ead129c9643ca70714c66be3dc4e739",
+      "address": "0x563cae18d79e1ded9674c7752dc98392c9c7f1bcfd703c58019025a581f51e2",
+      "class_hash": "0xa9b52320f64676394a58e897f852fc21f163bd0208ff1f59fe9ec3550292b5",
       "abi": [
         {
           "type": "impl",
@@ -32273,6 +32377,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -32343,6 +32461,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -32530,20 +32652,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -33150,8 +33258,8 @@
       ]
     },
     {
-      "address": "0x1d802a3543ed51c53cb461d237f8e63317b2ee4b2a55e70a4ff0c7ffdc93766",
-      "class_hash": "0x543406ccc0ae9b19b575ad45578be35efeaf706f4b88429697bcb3c1a93136d",
+      "address": "0x148421db80c7e06df56be068f8765b83a29d6fc689916e691417aa81fbe01ba",
+      "class_hash": "0x29e4a7554317c83adac67fdce92317ad4c7a6bdbbbf64cc754be30a36d37dae",
       "abi": [
         {
           "type": "impl",
@@ -33251,6 +33359,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -33321,6 +33443,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -33508,20 +33634,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -34156,8 +34268,8 @@
       ]
     },
     {
-      "address": "0x374f9fb36fd8ef8d1c3f3d264b2bcfdb76892a6c19c948f0cd123702172470d",
-      "class_hash": "0x2cc0206f20e3b2bfa7d9f4c7b8e8541f638fd82a0fbc81490591bb01e5ebbbf",
+      "address": "0x65db7a1f6a8644faf292174c6a27a75767f7acb9169ec19577640fcc0d197d4",
+      "class_hash": "0x695ade052f9a6495fee84f3f4ea57db33688908c5e6e7deeaad5e3bcd037562",
       "abi": [
         {
           "type": "impl",
@@ -34257,6 +34369,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -34327,6 +34453,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -34514,20 +34644,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -35134,8 +35250,8 @@
       ]
     },
     {
-      "address": "0x4d16d20135d17749f2b8ed6efab3eee1aa58ddb52db6c5262a6d99c7f4a2d92",
-      "class_hash": "0x60b3e6ebf6947e4933e15e0ce031e5e46df714657e359de336b262f2dca9cc9",
+      "address": "0x6b82805de7cef1c512a7d2f857e5b25d32a5c91a63faefb53530d29d2c102fe",
+      "class_hash": "0x258826d18e8503280219290b2827fafa9f470d345b76a23c9c707d89570c7fd",
       "abi": [
         {
           "type": "impl",
@@ -35235,6 +35351,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -35305,6 +35435,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -35492,20 +35626,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -36085,8 +36205,8 @@
       ]
     },
     {
-      "address": "0x5dab25e81f630bafeb2bd485fd15efdf3ec18d2b59d777aab7ff198a6aca388",
-      "class_hash": "0x496bce13646c15d09ac8c8f93afbf082fa7cc9d0d59a39bcc6385769d0ec45a",
+      "address": "0x53b40807eaaa0cfb7895e96c2f257e50b727105e991abe3179bfc2d8dc144d7",
+      "class_hash": "0x1882c4c2aa92709ef520e8141aefbcd44108006c9aa0f2980790156530917e9",
       "abi": [
         {
           "type": "impl",
@@ -36186,6 +36306,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -36256,6 +36390,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -36443,20 +36581,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -37036,8 +37160,8 @@
       ]
     },
     {
-      "address": "0x7c519b602e24bfef7f8437c08853fd7355b3ae8ca7b3c0a63b2fff67809e3a4",
-      "class_hash": "0x6d31aa9294da36e6b2544b389fc7fb70d6807dfd9f39d9394ccc4c8c0caa6bd",
+      "address": "0x4cb75b109cd3e732f9f4807e08f90a77b0963b8c2209adff983b860f2123670",
+      "class_hash": "0x239b7cc90f0a46d27fece8bfeac95d10f68c6f9c01bc3128f399cbed09d08a9",
       "abi": [
         {
           "type": "impl",
@@ -37137,6 +37261,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -37207,6 +37345,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -37394,20 +37536,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -37987,8 +38115,8 @@
       ]
     },
     {
-      "address": "0x29be5290c1f9407e28da4223a5e63b782f774ee2dcdeba51918345b1f10e17a",
-      "class_hash": "0x5237259564388dec8683b393935ce7b4726ed2e6a91e4dd287db96252ad7468",
+      "address": "0x4f075cf0377c1fa59bf6e4bf017a2ce69340d74ee08872af0147954c860a05a",
+      "class_hash": "0x64aacd1d6167372954abec4e998ad492fa5183ef4e8b0043bab38a090712f93",
       "abi": [
         {
           "type": "impl",
@@ -38088,6 +38216,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -38158,6 +38300,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -38345,20 +38491,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -38938,8 +39070,8 @@
       ]
     },
     {
-      "address": "0x4f44130c1f504c39c0ee246e6497657f003a6e9880a818e545a07a02c7c5c",
-      "class_hash": "0x50b87e053c7cc4489b8cd138e500b4dd1d661843831f6978ea7c8124306bc7e",
+      "address": "0x530c2247fcde9070915c9b180ea885e07429f54f534f06a7780c222aac5a8d9",
+      "class_hash": "0x212e65df2be8b938a5489b71a982ea8694d02df5d8171ccfc0d69ff9ccb2d58",
       "abi": [
         {
           "type": "impl",
@@ -39039,6 +39171,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -39109,6 +39255,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -39296,20 +39446,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -39889,8 +40025,8 @@
       ]
     },
     {
-      "address": "0x301145d8451a9c80a8e8cdb94a82f171ffd673f512835a7c26b9ea09d8dc234",
-      "class_hash": "0x47a8aa303308838c9107161c4f240f33ebc9a258c6419ef0f5ef979e081b0f7",
+      "address": "0x4186210c7df75389483ec52e275fd274a04c59051ef4843cd75d97a43e55f02",
+      "class_hash": "0x578e9a18912123ee3c6ce769be6f01b9a47ce67d4a446bf4b327c2f14d65dc3",
       "abi": [
         {
           "type": "impl",
@@ -39990,6 +40126,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -40060,6 +40210,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -40247,20 +40401,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -40840,8 +40980,8 @@
       ]
     },
     {
-      "address": "0xb780ce416014174772a88bb4dce8480a57a8b0de9b0c33672e3d830e49e64a",
-      "class_hash": "0xc93daa7382b2f7436b8ca68306fa9f6ae7ba6dc3a78b38c049283c46ccab1f",
+      "address": "0x367feff0b0453d78e338628f6aa7b9ab13d1eb1052599d0c2afbcbf37d1644d",
+      "class_hash": "0x9430d2838f53cce8865f64ab4dbf6c0eb22877bcc3f8e5c4f23206671448c6",
       "abi": [
         {
           "type": "impl",
@@ -40941,6 +41081,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -41011,6 +41165,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -41198,20 +41356,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -41791,8 +41935,8 @@
       ]
     },
     {
-      "address": "0x29c5f85950f025539f4fd4f8bde699f3594862f4da039a184ccd940d57fefd4",
-      "class_hash": "0x6760df65af5f77c94e9c33b6dcad53fb2d7f8be86b9c6dd8ad8031a07ef9815",
+      "address": "0x6f747852cadea1900999918643cccabb714f804e514a638beaabeaa959e5ebe",
+      "class_hash": "0x78ef3a130b669169043174530c5aa75b85d610ca8617bba344daa4eeda5b681",
       "abi": [
         {
           "type": "impl",
@@ -41892,6 +42036,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -41962,6 +42120,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -42149,20 +42311,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -42742,8 +42890,8 @@
       ]
     },
     {
-      "address": "0x4fa32f7d61f74a21c5bedf36105f3b6752b2704357400aec3afcdecd696321c",
-      "class_hash": "0x63ba615da1f67c6ccbf3e3e5df71ed705908827435ba14c85654bc75d0fe5df",
+      "address": "0x2c1d069aa66a572dd3d1b16a7ecabce0b0c2da12444c1aae08dde818f676758",
+      "class_hash": "0x8100b175cd6cfc982ef936e3c599d25011fd61e5f8453e7f7db1d79d255a2d",
       "abi": [
         {
           "type": "impl",
@@ -42843,6 +42991,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -42913,6 +43075,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -43100,20 +43266,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -43693,8 +43845,8 @@
       ]
     },
     {
-      "address": "0x62da4e376fcda496b4fa3c6013c4587eed18e23d19b3005064a53a833f0ab31",
-      "class_hash": "0x619411039466e1cb7a505a6789e4601146abfbbff7d0f088fd219b5ebe8e45",
+      "address": "0x115f775641924c7868fa30872cf4a016f6cac0cfe0a1cadecce4cbcf8670e2d",
+      "class_hash": "0x6515668509e7a89fc929d4bd5343e6a34d6d2182f52475d2c17bf352bc04f59",
       "abi": [
         {
           "type": "impl",
@@ -43794,6 +43946,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -43864,6 +44030,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -44051,20 +44221,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -44644,8 +44800,8 @@
       ]
     },
     {
-      "address": "0x7fef028cb6b7d9fc54b79d74778a64181aecd5d33f286ae077cfb97f56353e1",
-      "class_hash": "0x159f7bfb86ac550ccc9063257a738e1550d902b8fa67bf3ea10f4b8cdfb4aa8",
+      "address": "0xcf590c99c645a78d64c0b508b5f148840fcd01bcd5a54fee00335581631c2b",
+      "class_hash": "0x41c8a1832e633f06efa871fcaa3de2787a780da3e272956bf7fdd98e4103ba9",
       "abi": [
         {
           "type": "impl",
@@ -44745,6 +44901,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -44815,6 +44985,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -45002,20 +45176,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -45626,8 +45786,8 @@
       ]
     },
     {
-      "address": "0x433acb329b1adedfad03227ce0788397158451eee3935aab8b9c85ca3671548",
-      "class_hash": "0x2eeae045c4ff76303e1e15ea91a152510c3f4f69c9964b752508b27e28b9325",
+      "address": "0x669f3df8b8f0fb6cc274d2d8e62bbdf804721ed8d57c55df7c03481fb096f60",
+      "class_hash": "0x2e820fb6bcd886d40d4fcd6e3dcb1eca8e2969b153563a079c0b04601007364",
       "abi": [
         {
           "type": "impl",
@@ -45727,6 +45887,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -45797,6 +45971,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -45984,20 +46162,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -46608,8 +46772,8 @@
       ]
     },
     {
-      "address": "0x1f5be66563395addc3c40d5edc3957adc2f877b7793180b5ce5b1163188d726",
-      "class_hash": "0x180201ef990fdb54e0ab50c7e10c6276b0884315ea6f98d0b39f5f59bc1d982",
+      "address": "0x69ad074d5f1875f1cbd5643954176b4a514b62374646b1c0db7284e6d46f05c",
+      "class_hash": "0x3779bf952ea98e7b1e1be91fdcd20a4d870226422aaf95d6e68f80aa1e29d4f",
       "abi": [
         {
           "type": "impl",
@@ -46709,6 +46873,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -46779,6 +46957,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -46966,20 +47148,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -47590,8 +47758,8 @@
       ]
     },
     {
-      "address": "0x6523e95da91d376ca9f99ae0fcf118fba6f76cbec9b509e98ec4ff616138453",
-      "class_hash": "0x4c65e8c4dab19b6c29222b0240a4ae20144b5ff76afae8ab2745cc9362a522f",
+      "address": "0x6533db47393cee884ca3462fde1c71bda06e0de981c99aff06de8984414a793",
+      "class_hash": "0x3680a2cb41804ad5040d40e74a01914079b7cacd8b3488cc02f0dba613dd07f",
       "abi": [
         {
           "type": "impl",
@@ -47691,6 +47859,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -47761,6 +47943,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -47948,20 +48134,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -48541,8 +48713,8 @@
       ]
     },
     {
-      "address": "0x30209278eabe3b984af452efe5045f0ae56ca2fab1e867cb37154c462f6dab2",
-      "class_hash": "0x2742ac5514024a9d0775bb6d602ba74c60088f4db26baece965219ac896f0dd",
+      "address": "0x34eba660e4911aed50e65e77e238655ee31b08aecb51f7be1db79beebfae0fc",
+      "class_hash": "0x6aab70503264bcf8ffd201e454c05d0bc8786547498d1b54469db0fe264a52",
       "abi": [
         {
           "type": "impl",
@@ -48642,6 +48814,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -48712,6 +48898,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -48899,20 +49089,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -49523,8 +49699,8 @@
       ]
     },
     {
-      "address": "0x523b9209fc7ec275f8811c017938ad5d1bc9be8fb99bb12768034d06b55a369",
-      "class_hash": "0x52058b02a45bf21829342056fea96e8fbe0d025d882655270252ba32190ec0a",
+      "address": "0x288655d1b5834e97154087633b130c0af070fa2faf5d6078ac581ab076b0e13",
+      "class_hash": "0x258dadfd38044eab1e145a413e2546bdf347f0cfc4f25adf8a80ed0237266c2",
       "abi": [
         {
           "type": "impl",
@@ -49624,6 +49800,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -49694,6 +49884,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -49881,20 +50075,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -50505,8 +50685,8 @@
       ]
     },
     {
-      "address": "0x30ae063cb65187141ec37f6a85c911d6b3917a613b9ece9848d76858f5ee519",
-      "class_hash": "0x3c2b58f399011454124b9bb9282158e8c32f45de94f8bdeb666ace0bb833a5e",
+      "address": "0x1fec115a4a1005822cd7785751abe62ace2347c3edcc47441a48c9638c8a899",
+      "class_hash": "0x1c49c98dbe499aac83807400a875d3a8ff54d43079c6efda37211d93cfeb62e",
       "abi": [
         {
           "type": "impl",
@@ -50606,6 +50786,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -50676,6 +50870,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -50863,20 +51061,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -51487,8 +51671,8 @@
       ]
     },
     {
-      "address": "0x18db2530d81f475e5afee05372c7423db2eb0c414734b15471fc44b9551445b",
-      "class_hash": "0x74c484b5905ecd2942989a94b632813f89b29ed707a82711fdd2dee11d132a3",
+      "address": "0x3ceeab57744737df1dc237cf5f87e6282e5996a6d7488bac1a87f5dded23a05",
+      "class_hash": "0x26258e4f3730cff567ea2c104d1cd305062ba8fa39841aa6ecf0a0a148dfe91",
       "abi": [
         {
           "type": "impl",
@@ -51588,6 +51772,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -51658,6 +51856,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -51845,20 +52047,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -52469,8 +52657,8 @@
       ]
     },
     {
-      "address": "0x121d7b871df82eb5a1c178e43e20c62c795ec480d72cc20e9982ba228e29e5d",
-      "class_hash": "0x3b58ae3c7daaeb781be6a0932c6dafb5778b239c82f5985e09d2fc73024e0d7",
+      "address": "0x308274f23b87685c03b1ecc97e68407cc1fef1b2ffdbbfedbff0d516500ae56",
+      "class_hash": "0x3736e40b4920a86159c528b5c41d19fbb90a21d68484b056328a5ed1c52d5f8",
       "abi": [
         {
           "type": "impl",
@@ -52570,6 +52758,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -52640,6 +52842,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -52827,20 +53033,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -53451,8 +53643,8 @@
       ]
     },
     {
-      "address": "0x6b9133d6e7640d0392784e17e51fb8c6abb1ffb427f72c0e936d16c4753081f",
-      "class_hash": "0x4c571341d92e5302ea6b8e85ffbe33b5d5f7f36c666421065a16420ed262360",
+      "address": "0x6896447facb1ce5011d3a8a6dc76d1ffd531a8ae6a25e3f1e5c7084b6e606d4",
+      "class_hash": "0x3f10cc1df59557fa8b4a0d520366d2718c0dc6ccb7322b16ab02bd1c7de5ff6",
       "abi": [
         {
           "type": "impl",
@@ -53552,6 +53744,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -53622,6 +53828,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -53809,20 +54019,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -54433,8 +54629,8 @@
       ]
     },
     {
-      "address": "0x1f7f9c2ae503e4c34b9c94614757f38db58fb2b1a022f37ab7d2909f588dbf6",
-      "class_hash": "0x444803b317da8b2321f50e61b3f4ea34994ee8d67cda16d5d2da592256e2dbf",
+      "address": "0x7325c862fed0978678515d0370e55cf4ddde4c8ee9b40ff47958a3ff5cdfb77",
+      "class_hash": "0x772c6cb5ab58188f79b502de39c5ad85305b88a351d7661c2b41f8d7e16f60f",
       "abi": [
         {
           "type": "impl",
@@ -54534,6 +54730,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -54604,6 +54814,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -54791,20 +55005,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -55415,8 +55615,8 @@
       ]
     },
     {
-      "address": "0x3d0204aa47245f0597376bf0839035cd6863fd1fb7ad1044702ff3fc7dec901",
-      "class_hash": "0x6d06b3f9799dab2e312be887676468a6a6480e569665a63b604e34237ff0b39",
+      "address": "0x4219904008f191ecde8871aa73c96e34adf8b470d3f0bf5ad6413508fb19dbc",
+      "class_hash": "0x11fbe5659a2f3c029b13557aff230ff81b566144f3a1186e993329b11029745",
       "abi": [
         {
           "type": "impl",
@@ -55516,6 +55716,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -55586,6 +55800,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -55773,20 +55991,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -56366,8 +56570,8 @@
       ]
     },
     {
-      "address": "0x6d20ada2d56084849691d251c4804b45a1ffbe1eddaafa89fcc789ad9a8e2b6",
-      "class_hash": "0x7475010845305b9b472ff8fafff220b86cd95f5a70d89fdcba8f57d698b8e9",
+      "address": "0x4da41b325d98daa2046b8092ecd6cab4d3bf3597d26778c8ff5a6e485ef07a4",
+      "class_hash": "0x41b14ab8c6047d26245e8c6505e551e895ce2712172226497b08e9c8aeeedad",
       "abi": [
         {
           "type": "impl",
@@ -56467,6 +56671,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -56537,6 +56755,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -56724,20 +56946,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -57348,8 +57556,8 @@
       ]
     },
     {
-      "address": "0x70f017bd2c1813e0618c1911547c0da241a74c460be30e13e435e7915d0eccd",
-      "class_hash": "0x57743538e13872b895c2fec64491513e7beaa32c58892dc1563b26c8dc15148",
+      "address": "0x7e4a2302359a347bf9ff13579eaa4536a1705bfdccde0a55b20faf4a4d20a42",
+      "class_hash": "0x43adb9b08d84a9b862f250f12e812a7ca9061f77377b21cdfe99860c8cfa67e",
       "abi": [
         {
           "type": "impl",
@@ -57449,6 +57657,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -57519,6 +57741,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -57706,20 +57932,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -58309,8 +58521,8 @@
       ]
     },
     {
-      "address": "0x5eb5222f80ccc02ce36890285fa32b8794c91fb10d7592a8ae138afa638a2a9",
-      "class_hash": "0xb3f05403250e7257122b4dc47d56caa5b4c15c89dc600e9f4586e750ac406",
+      "address": "0x176300d48216b05b388e1a562b17ce14b9fa14b56fe9d6e886dbcbc799a711c",
+      "class_hash": "0x480a5397d6a88e7049a35c5593a39c840ebd164a3b862b48d5978728acc7b65",
       "abi": [
         {
           "type": "impl",
@@ -58410,6 +58622,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -58480,6 +58706,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -58667,20 +58897,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -59273,8 +59489,8 @@
       ]
     },
     {
-      "address": "0x75871ac4726704318c45a4b6d3160abb2e28e9fd99f3ad18c3e41863180aec0",
-      "class_hash": "0x6725cb0041c22d645f9c3f4a44231f708d5174d62de50cbc0b2e0ed4a45d656",
+      "address": "0x6fb69c29e0c3f29a95bbc61d39c29a9984d81541078eb3edcf51cde8e8659af",
+      "class_hash": "0x5a8345f2ddf39f5a7ef1a656c56732403265a33a68c392b24aaceff08bdacd6",
       "abi": [
         {
           "type": "impl",
@@ -59374,6 +59590,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -59444,6 +59674,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -59631,20 +59865,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -60237,8 +60457,8 @@
       ]
     },
     {
-      "address": "0x7bdf102fb6c890ceb4cdc43e2c4914dd36ec06a3adf223ef3dafee7d3df8f54",
-      "class_hash": "0x2dcbbb5444aad60a9007d9b266ca89d389aeab74663c8c044be38c21443c601",
+      "address": "0x3681819f5f155edcd63a53436054be9095cc84315ac5fcbe9d3452f1f93ece1",
+      "class_hash": "0x725383a048742f8980eb0a34d92299cdb1290ebd2f36ae28f6d30a4e254b9d6",
       "abi": [
         {
           "type": "impl",
@@ -60338,6 +60558,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -60408,6 +60642,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -60595,20 +60833,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -61219,8 +61443,8 @@
       ]
     },
     {
-      "address": "0x3ec29dde280ccc58c8d73d2bf882ff4bc1b685d96f9e0fd1a724e247f416b0b",
-      "class_hash": "0x1dd0081e3956a04931cbc54e5dc19f933e9533167c546d7b1c91317a8fe3d0e",
+      "address": "0x60e1423a4854fd4b626f8d111e7b0eec6bc9983f9f6e498bf58244e2f488eb6",
+      "class_hash": "0x330abf7fc5b451a7c55da359e92a445a66772fe12f79c7abf154c49b43a21e2",
       "abi": [
         {
           "type": "impl",
@@ -61320,6 +61544,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -61390,6 +61628,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -61577,20 +61819,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -62201,8 +62429,8 @@
       ]
     },
     {
-      "address": "0x275bb6807022e1a0d03995f7a33bdd0723b33ff4d26575259d29014ec3ef974",
-      "class_hash": "0xf03a91e9780b5a6d86efe24517e9ee5bdf674a87fa3bd131f50e1cf9b010ae",
+      "address": "0x21b95d17652a0bfe34aed7d05ec944fbc72a09dfa0b99c64f8c2abb76c61c04",
+      "class_hash": "0x4bd5fbda086074549f6865a427856a49e5e38532368d5bf5de92fc54dce8bb9",
       "abi": [
         {
           "type": "impl",
@@ -62302,6 +62530,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -62372,6 +62614,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -62559,20 +62805,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -63152,8 +63384,8 @@
       ]
     },
     {
-      "address": "0x7526247cb278458a4e990c6baad7bcd7d5b7a2ca6ca4d04e8ef648a65257926",
-      "class_hash": "0x337abc3d04ad5d725e16d71e49c86fab2b8e51b078c22228f6ffdd96935174e",
+      "address": "0x6ffd827404a4942becd964bce85a817ab67ab9772dc072d6516064b60745946",
+      "class_hash": "0x74762b6e9660f6e261c0107a9851397155ac07ccdb4c0054997b8ab179fc51b",
       "abi": [
         {
           "type": "impl",
@@ -63253,6 +63485,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -63323,6 +63569,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -63510,20 +63760,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -64134,8 +64370,8 @@
       ]
     },
     {
-      "address": "0x4f2020b8330a72cac361d583d985e3a4504fd8173d091af92a5ea6c75a362a5",
-      "class_hash": "0x73a28e10dc30c156555794bb755f4dca325d38c436d3d00e966e0e2e1d3531",
+      "address": "0x5dadaf1850fb1fcdbf64994062342c92fa31476b27be62d560ef5c9df96bcab",
+      "class_hash": "0x58b509031315313aa9651c36e81174c4b04593fee2adaa47ff1f6fa86c78dde",
       "abi": [
         {
           "type": "impl",
@@ -64235,6 +64471,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -64305,6 +64555,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -64492,20 +64746,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -65116,8 +65356,8 @@
       ]
     },
     {
-      "address": "0x615fe861a0666b8d05fa37530738fcefd74d74dd48b2e6621d54b64295a37d3",
-      "class_hash": "0x54c289edb7b5ecb62367766bf68c5e1586fa0656954b79feb3d64bc7efb2856",
+      "address": "0x173152ef06ffba2cedaf09b79c9c6b44041149fe145e39a7ab83acb435fa395",
+      "class_hash": "0x310085f08e8d8b6c5918f8754912853f844cc677b9e90565a00c87ea605cafb",
       "abi": [
         {
           "type": "impl",
@@ -65217,6 +65457,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -65287,6 +65541,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -65474,20 +65732,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -66094,8 +66338,8 @@
       ]
     },
     {
-      "address": "0x13857fe97ce9bef4746166d8f217499147a1e9e1990ed5a0eef1886a8c0c9af",
-      "class_hash": "0x2a8929249afcf73ac3ff104b4a8de74349edf51ef05af86196f2483f6d96c8e",
+      "address": "0x699a1be0303b16692beca8cb426831ee397d44c18d7152a0d2e5f16037a71cd",
+      "class_hash": "0x3a4eac0a2fa458f92a139601ae54011c1127cae2ad3cd70222c99c60d6505de",
       "abi": [
         {
           "type": "impl",
@@ -66195,6 +66439,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -66265,6 +66523,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -66452,20 +66714,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -67045,8 +67293,8 @@
       ]
     },
     {
-      "address": "0x698c26b1173f43636dfbade7753329330c1aaaf182d565ffcf1060ccc61e2ff",
-      "class_hash": "0x3dc1d38bee1247b29c0bfd380f396bed73cf47f4965bbc50074bd957a8b9529",
+      "address": "0x4b538de2e8fc63f119ec4aff52e4686e80c1edcd7dcd28e4616440bcff2b6a5",
+      "class_hash": "0x13f054c8b4a12962151c3bf8ddf276d52a456318168447a179c33ee544ff22b",
       "abi": [
         {
           "type": "impl",
@@ -67146,6 +67394,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -67216,6 +67478,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -67403,20 +67669,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -68027,8 +68279,8 @@
       ]
     },
     {
-      "address": "0xc365950eb9f68dd17209618d9e8e52ae92c1c65069c93aeea7e2ed16cc0600",
-      "class_hash": "0x5e2e1a60dae0f5a45353fb9d806611766af49848f5e831ac3fa9110abe80993",
+      "address": "0x256c34e3279caf9fca18cf5f844c8078c88b4ef14452012db867f8b4b68ed51",
+      "class_hash": "0x73a337c463b5cd5aed58f59e7794f8b4cd53ee44fc709355293f7df5b494dd4",
       "abi": [
         {
           "type": "impl",
@@ -68128,6 +68380,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -68198,6 +68464,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -68385,20 +68655,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -69009,8 +69265,8 @@
       ]
     },
     {
-      "address": "0x2bb79549f95e39f2a8aba42c47fec9918cd45fed45af6b4dc659e599ebaec0",
-      "class_hash": "0x3fd659b268046a4c5edeca78256e6339a37033c18c78cabd26c7c49a0441c24",
+      "address": "0x62287a1c66cfdd35b5f74f0f33bf6468839aa691197005544e5ecd6b43cdc25",
+      "class_hash": "0x5d3b8100a7069ec003919b4aa040052f84c553d455f28f4d0b53b0a2590f4b8",
       "abi": [
         {
           "type": "impl",
@@ -69110,6 +69366,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -69180,6 +69450,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -69367,20 +69641,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -69991,8 +70251,8 @@
       ]
     },
     {
-      "address": "0xc2435e0213aeee72efbb19297e0aaa37f0bc2011bc780069516147ef9ece2b",
-      "class_hash": "0x39dbef7b19c019b01c6173fd0c3d002139695e89139deba2ae427f43c96f802",
+      "address": "0x41e8dc111089785e26c7abdaf5e9c200c6b518a258833a1ca6d30f1ef7fd3e2",
+      "class_hash": "0x7b32c10358a5cff870f2e70dde83b6ff548151c0bb9e5edd43e81f8be8d0c24",
       "abi": [
         {
           "type": "impl",
@@ -70092,6 +70352,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -70162,6 +70436,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -70349,20 +70627,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -70973,8 +71237,8 @@
       ]
     },
     {
-      "address": "0x53ce5144b4447651983ba791e01e60452ceddb9d38a197e8bc118722f3e0929",
-      "class_hash": "0x6badf565ce41b5177d7dffda2c682739db29003bff34956cdac5d9f665d6671",
+      "address": "0x32c4479dc1c4e22f664a1982f6cdd5784cb2bf41019fa8798841f572c36b4f0",
+      "class_hash": "0x70e8f8735c37c8b4b0bbdd55b258d4ebcac1565484ca87c4759b0f5c6b564e7",
       "abi": [
         {
           "type": "impl",
@@ -71074,6 +71338,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -71144,6 +71422,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -71331,20 +71613,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -71924,8 +72192,8 @@
       ]
     },
     {
-      "address": "0x40cf9d0e00ff2062fe83911448916fc513324b8056da819599fa4230fa0d85",
-      "class_hash": "0x2085f8118a7bb760a8f5aa7e95f3125758d66e001ea4756bd6f0280c740707f",
+      "address": "0xe34648bae824af31febf48a9161118fea20092e11387da81e8512734fe4b2a",
+      "class_hash": "0x505c48419987a71210776dea460f5497357d98b097d66795f66d163c6d1af71",
       "abi": [
         {
           "type": "impl",
@@ -72025,6 +72293,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -72095,6 +72377,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -72282,20 +72568,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -72885,8 +73157,8 @@
       ]
     },
     {
-      "address": "0x5d2dd1f89058fba390638ad4a9613589b42c901692c6c4feb651a26a9698a5b",
-      "class_hash": "0x3b42ec14c5a7aa2d187aa095eab89dad0f8a90d0a1ff6d2b2c2021d7c257785",
+      "address": "0x2878caad132619f3d56e25b3c251cd9c229c0b0ef4146a8a9ebbf7dffcb9a4f",
+      "class_hash": "0x73a9a4912139cd4aef2b9691b5d86c650253f80cf142dca34a026e2ed40d5fe",
       "abi": [
         {
           "type": "impl",
@@ -72986,6 +73258,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -73056,6 +73342,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -73243,20 +73533,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -73867,8 +74143,8 @@
       ]
     },
     {
-      "address": "0x49c8edb608dc9c363a52733e07f18105ab7833a8712df76ac1e1256180d9d1a",
-      "class_hash": "0x295784a5594e09813ca9c4e53988f1bbbf81f6f57d51efa4ac35f0b9d562d7e",
+      "address": "0x688d550e70f2c676d5e7bc3caaa6c06c4c1935b1524adbab9844cb05d30d600",
+      "class_hash": "0x176e952950b460fd95fa5d3af078ce41a32a6f408397dda175680f4f8ffd00b",
       "abi": [
         {
           "type": "impl",
@@ -73968,6 +74244,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -74038,6 +74328,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -74225,20 +74519,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -74845,8 +75125,8 @@
       ]
     },
     {
-      "address": "0x5706c5fa79bf06e27d326f9f483ece154ac4c0bfff6e6dc738187647ed61c77",
-      "class_hash": "0x5004844da0ae3ddf21910afd74f17ae6eb88f17d891dfce27e61415d4a27d75",
+      "address": "0x29b2d9930a45714b820a2ef2711c938400fe7151bab3d7b5c2e71097c171d8b",
+      "class_hash": "0x6c46131fd0f479cce36fe561f52da1d63408244e65dae7d4c04f1cf94880653",
       "abi": [
         {
           "type": "impl",
@@ -74946,6 +75226,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -75016,6 +75310,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -75203,20 +75501,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -75823,8 +76107,8 @@
       ]
     },
     {
-      "address": "0x73f2e37afb5a31a9a919e8b6301d891c3aec0a24473ce83953f7ccdc673b589",
-      "class_hash": "0x2aead76bb7a6df06598f9812b815f5f996a10d491b2acc2307657ed96997b85",
+      "address": "0x7c915f337cd417bb9eed8b670b429f84b6c2dcce3bfd3fcea5dc7efc130d7f9",
+      "class_hash": "0x7f49b3640c3d8526b26027a878b256bcdf86f5f57f6076c52f0157e7cb8b7",
       "abi": [
         {
           "type": "impl",
@@ -75924,6 +76208,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -75994,6 +76292,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -76181,20 +76483,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -76774,8 +77062,8 @@
       ]
     },
     {
-      "address": "0x7759e260d013b28563ae9ca4ae6060a3136d3703946f0cac6e9e30ed2bf1c53",
-      "class_hash": "0x79ea95e3130af703787eaac460b8982fa200bdaf121ea8c9e9725b1473006e1",
+      "address": "0x5886120d09f7bd59a63dc1a829396ef56344d525371806aa0498782346c40f1",
+      "class_hash": "0x611894bf7ab511716c4546199963d94371740674d7088a30f9ac1deaf875c13",
       "abi": [
         {
           "type": "impl",
@@ -76875,6 +77163,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -76945,6 +77247,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -77132,20 +77438,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -77721,8 +78013,8 @@
       ]
     },
     {
-      "address": "0x7abd8e7fa85b8f7f127d340a5c56bfabd3547ce3be390fb054c8d844e20a6b8",
-      "class_hash": "0x6cb3961a4978f0aeebf65cdf6db430746d060ff4b9049d1c52340446c437cdd",
+      "address": "0x1df3202b417ef5f275f34f2a0ed6e5134e9a848daa4f33fca20ac393fe7344a",
+      "class_hash": "0x6b74682c3c25b21eb1ffd2f49281a7527df68a1f7c71f92f4903731b1ecbe1d",
       "abi": [
         {
           "type": "impl",
@@ -77822,6 +78114,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -77892,6 +78198,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -78079,20 +78389,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -78672,8 +78968,8 @@
       ]
     },
     {
-      "address": "0x66964963ccce2f2ecbd5e42895a9d922558773707923701e30f8189f6c612ec",
-      "class_hash": "0x44b3f0f5542b9ec0e7adff6ce3bf3b14345f30253fae4166573e6daea69db6",
+      "address": "0x1f12060839d321c08e66dc6aa7270c4e98467da26d478e60f15240f90a6825c",
+      "class_hash": "0x6e1f4953e2e5dbe2da9e67443220b92c6231c582e15adf75bdd3d27d025d1c3",
       "abi": [
         {
           "type": "impl",
@@ -78773,6 +79069,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -78843,6 +79153,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -79030,20 +79344,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -79623,8 +79923,8 @@
       ]
     },
     {
-      "address": "0x66f7b186e2d6b595783d7270313bbfd70fe0e424192b1c3290aa872ffb3ae23",
-      "class_hash": "0x43e14f69b7ef3e12c2eb551a2a691aaac71c6fe224a04c8d2d9e7acafede8d9",
+      "address": "0x7a0d8d7273f29589014c55608546136a83e23d461c41fed8c0915e01f076c2b",
+      "class_hash": "0x50f710f061bdae1aaa4aeefd9493b735c4f30b86bb5e4397d0a4f10f4612169",
       "abi": [
         {
           "type": "impl",
@@ -79724,6 +80024,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -79794,6 +80108,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -79981,20 +80299,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -80574,8 +80878,8 @@
       ]
     },
     {
-      "address": "0x1b4d16eafa2579528acc13815a6fc1c86f1e63a8d934a097e5a78906300cd66",
-      "class_hash": "0x784f512dfc1f1bb4f1fcd62f169399500dcaeacae44235a29d2c458f5400cdd",
+      "address": "0x1b7dac98b13864d1eaaa3ac62f46657dcddfb5c3b741c445d5e9f4fb14d641b",
+      "class_hash": "0x3d114c5afa057cb8d290854028d2ede5481e5b6d380748eda8d72777453f939",
       "abi": [
         {
           "type": "impl",
@@ -80675,6 +80979,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -80745,6 +81063,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -80932,20 +81254,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -81552,8 +81860,8 @@
       ]
     },
     {
-      "address": "0x7317ac79d5e630e003c02ba7235b9adc4a6e2039f0e433f1a6a625e803390cb",
-      "class_hash": "0x11a68b455dab08974b16c0bbe923b9ef1ce292e91cf0faf990ccb77451ee015",
+      "address": "0x3b2948c6d2532e6ab5dfeddee10482f8b5800fd24f325d77bf650e9e3a2867",
+      "class_hash": "0x2e803bc47add5768613fc30abef1b6fbe47640b2351f8da4370f4f10d524453",
       "abi": [
         {
           "type": "impl",
@@ -81653,6 +81961,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -81723,6 +82045,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -81910,20 +82236,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -82516,8 +82828,8 @@
       ]
     },
     {
-      "address": "0x757368b20222ea359acf66546fb804b73f76ef42ed8035460ba0ac88bade34",
-      "class_hash": "0x604b85589230d672bebffcb4cdef151943a270ef407f42339de46bd382cbcd5",
+      "address": "0x76d77ab4576bc9f790dce93930aa776b02eadb1af2a6d26a17454dbebda666c",
+      "class_hash": "0x3cead126fbf201d81638b1bd379be3dcbcf38f6bcf61e36cc87b0733888bc69",
       "abi": [
         {
           "type": "impl",
@@ -82617,6 +82929,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -82687,6 +83013,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -82874,20 +83204,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -83498,8 +83814,8 @@
       ]
     },
     {
-      "address": "0x4db835159ff5de0956d06b173ab4513568f06afa539aba0ca6640775b39985d",
-      "class_hash": "0x5611a9ef70df0c1557f78729c2727fbfe9174a0c1c4d85dbe2fc47784a8785c",
+      "address": "0x3586b81d713e53ff39d72ef2d44293f270a04ac634e3a388f1a6c1b90192af2",
+      "class_hash": "0x66ce94b0d6e59ee351112c9aaca7472b964897ec77d97047699c0f7dec40ad4",
       "abi": [
         {
           "type": "impl",
@@ -83599,6 +83915,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -83669,6 +83999,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -83856,20 +84190,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
@@ -84480,8 +84800,8 @@
       ]
     },
     {
-      "address": "0x6fed2799cc7ec9e5a7cec2f24ec96874a0dd6e09442682e15d0f506c5f5f8d3",
-      "class_hash": "0x7b0d7d543196cf36b342b6e1a68fbfadc3a4546d8612309430add1cd24eeea6",
+      "address": "0x3ac8a322ee3e46efd955aa3a4cdd82e8e2c4d63b1e96ef5c5c5b87fb184ee90",
+      "class_hash": "0x7d3090f66621994dcbbcd87bd79a14954c4a32ad7851b894ea25640c7b959f2",
       "abi": [
         {
           "type": "impl",
@@ -84581,6 +84901,20 @@
           ]
         },
         {
+          "type": "enum",
+          "name": "core::bool",
+          "variants": [
+            {
+              "name": "False",
+              "type": "()"
+            },
+            {
+              "name": "True",
+              "type": "()"
+            }
+          ]
+        },
+        {
           "type": "struct",
           "name": "jokers_of_neon_lib::models::status::game::game::Game",
           "members": [
@@ -84651,6 +84985,10 @@
             {
               "name": "seed",
               "type": "core::integer::u128"
+            },
+            {
+              "name": "is_tournament",
+              "type": "core::bool"
             }
           ]
         },
@@ -84838,20 +85176,6 @@
             },
             {
               "name": "None",
-              "type": "()"
-            }
-          ]
-        },
-        {
-          "type": "enum",
-          "name": "core::bool",
-          "variants": [
-            {
-              "name": "False",
-              "type": "()"
-            },
-            {
-              "name": "True",
               "type": "()"
             }
           ]
