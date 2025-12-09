@@ -20,32 +20,32 @@ fi
 # Change to mod directory
 cd "mods/$mod_name"
 
-ENV_FILE="../../.env"
+TOML_FILE="../../dojo_${profile}.toml"
 
-# Check if .env exists
-if [ ! -f "$ENV_FILE" ]; then
-    echo "Error: .env file not found"
+# Check if TOML file exists
+if [ ! -f "$TOML_FILE" ]; then
+    echo "Error: Configuration file $TOML_FILE not found"
     exit 1
 fi
 
-# Function to get and validate env variable
-get_env_var() {
-    local var_name=$1
-    local value=$(grep "^$var_name=" "$ENV_FILE" | cut -d '=' -f2)
-    
+# Function to get value from TOML file
+get_toml_value() {
+    local key=$1
+    local value=$(grep "^${key} =" "$TOML_FILE" | sed 's/.*= *"\(.*\)".*/\1/')
+
     if [ -z "$value" ]; then
-        echo "Error: $var_name not found in .env file"
+        echo "Error: $key not found in $TOML_FILE"
         exit 1
     fi
     echo "$value"
 }
 
-# Store variables
-ACCOUNT_ADDRESS=$(get_env_var "ACCOUNT_ADDRESS")
-PRIVATE_KEY=$(get_env_var "PRIVATE_KEY")
-RPC_URL=$(get_env_var "RPC_URL")
-WORLD_ADDRESS=$(get_env_var "WORLD_ADDRESS")
-NAMESPACE_MODS=$(get_env_var "NAMESPACE_MODS")
+# Store variables from TOML
+ACCOUNT_ADDRESS=$(get_toml_value "account_address")
+PRIVATE_KEY=$(get_toml_value "private_key")
+RPC_URL=$(get_toml_value "rpc_url")
+NAMESPACE_MODS=$(get_toml_value "default")
+WORLD_ADDRESS=$(sozo -P ${profile} inspect | awk '/World/ {getline; getline; print $3}')
 
 # Print the stored variables
 # echo "Variables loaded:"
