@@ -5,7 +5,9 @@ pub mod rage_punched_ticket {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_PUNCHED_TICKET;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::interfaces::rages::debuff::IRageDebuff;
     use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Suit, Value};
     use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
     use jokers_of_neon_lib::models::tracker::GameContext;
 
@@ -74,6 +76,38 @@ pub mod rage_punched_ticket {
 
         fn get_types(self: @ContractState) -> Span<CardType> {
             array![CardType::Debuff].span()
+        }
+    }
+
+    #[abi(embed_v0)]
+    impl PunchedTicketDebuff of IRageDebuff<ContractState> {
+        fn debuffed_suits(self: @ContractState) -> Span<Suit> {
+            array![].span()
+        }
+
+        fn debuffed_values(self: @ContractState) -> Span<Value> {
+            array![].span()
+        }
+
+        fn debuffed_ids(self: @ContractState) -> Span<u32> {
+            array![].span()
+        }
+
+        fn debuff_percentage(self: @ContractState) -> u32 {
+            0
+        }
+
+        fn debuff_poker_hands(self: @ContractState, context: GameContext) -> Span<PokerHand> {
+            let world = self.world(DEFAULT_NS());
+            let cumulative: Cumulative = world.read_model(context.game.id);
+
+            // If this is a new round/level, no hands are debuffed yet
+            if cumulative.level != context.game.level || cumulative.round != context.game.round {
+                return array![].span();
+            }
+
+            // Return all previously played poker hands (they are all debuffed)
+            cumulative.poker_hands
         }
     }
 }
