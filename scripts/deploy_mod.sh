@@ -45,8 +45,9 @@ ACCOUNT_ADDRESS=$(get_toml_value "account_address")
 PRIVATE_KEY=$(get_toml_value "private_key")
 RPC_URL=$(get_toml_value "rpc_url")
 NAMESPACE_MODS=$(get_toml_value "default")
-WORLD_ADDRESS=$(sozo -P ${profile} inspect | awk '/World/ {getline; getline; print $3}')
 
+# Get WORLD_ADDRESS using sozo inspect from the parent directory
+WORLD_ADDRESS=$(cd ../.. && sozo -P ${profile} inspect | awk '/World/ {getline; getline; print $3}')
 
 # Print the stored variables
 # echo "Variables loaded:"
