@@ -3,7 +3,9 @@ pub mod rage_favorite_lock {
     use jokers_of_neon_classic::rages::rages::RAGE_CARD_FAVORITE_LOCK;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
+    use jokers_of_neon_lib::interfaces::rages::debuff::IRageDebuff;
     use jokers_of_neon_lib::models::card_type::CardType;
+    use jokers_of_neon_lib::models::data::card::{Suit, Value};
     use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
     use jokers_of_neon_lib::models::tracker::{GameContext, PokerHandTracker};
 
@@ -37,6 +39,76 @@ pub mod rage_favorite_lock {
 
         fn get_types(self: @ContractState) -> Span<CardType> {
             array![CardType::Debuff].span()
+        }
+    }
+
+    #[abi(embed_v0)]
+    impl FavoriteLockDebuff of IRageDebuff<ContractState> {
+        fn debuffed_suits(self: @ContractState) -> Span<Suit> {
+            array![].span()
+        }
+
+        fn debuffed_values(self: @ContractState) -> Span<Value> {
+            array![].span()
+        }
+
+        fn debuffed_ids(self: @ContractState) -> Span<u32> {
+            array![].span()
+        }
+
+        fn debuff_percentage(self: @ContractState) -> u32 {
+            0
+        }
+
+        fn debuff_poker_hands(self: @ContractState, context: GameContext) -> Span<PokerHand> {
+            let poker_hand_tracker = context.poker_hand_tracker;
+
+            // Find the maximum count among all hands
+            let max_count = get_max_hand_count(poker_hand_tracker);
+
+            // If no hands have been played yet, return empty
+            if max_count == 0 {
+                return array![].span();
+            }
+
+            // Collect all poker hands that have the maximum count (most played)
+            let mut debuffed_hands: Array<PokerHand> = array![];
+
+            if poker_hand_tracker.royal_flush == max_count {
+                debuffed_hands.append(PokerHand::RoyalFlush);
+            }
+            if poker_hand_tracker.straight_flush == max_count {
+                debuffed_hands.append(PokerHand::StraightFlush);
+            }
+            if poker_hand_tracker.five_of_a_kind == max_count {
+                debuffed_hands.append(PokerHand::FiveOfAKind);
+            }
+            if poker_hand_tracker.four_of_a_kind == max_count {
+                debuffed_hands.append(PokerHand::FourOfAKind);
+            }
+            if poker_hand_tracker.full_house == max_count {
+                debuffed_hands.append(PokerHand::FullHouse);
+            }
+            if poker_hand_tracker.flush == max_count {
+                debuffed_hands.append(PokerHand::Flush);
+            }
+            if poker_hand_tracker.straight == max_count {
+                debuffed_hands.append(PokerHand::Straight);
+            }
+            if poker_hand_tracker.three_of_a_kind == max_count {
+                debuffed_hands.append(PokerHand::ThreeOfAKind);
+            }
+            if poker_hand_tracker.two_pair == max_count {
+                debuffed_hands.append(PokerHand::TwoPair);
+            }
+            if poker_hand_tracker.one_pair == max_count {
+                debuffed_hands.append(PokerHand::OnePair);
+            }
+            if poker_hand_tracker.high_card == max_count {
+                debuffed_hands.append(PokerHand::HighCard);
+            }
+
+            debuffed_hands.span()
         }
     }
 
