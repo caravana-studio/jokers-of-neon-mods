@@ -56,8 +56,8 @@ WORLD_ADDRESS=$(sozo -P ${profile} inspect | awk '/World/ {getline; getline; pri
 bash ../../scripts/replace_env.sh $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
 
 rm -rf "target"
-# rm -f "Scarb.lock"
 rm -f "manifest_dev.json"
+[ -f "./Scarb.lock" ] && rm "./Scarb.lock"
 
 echo "Deploying in ${profile}."
 echo "Deploying mod: ${mod_name}"
