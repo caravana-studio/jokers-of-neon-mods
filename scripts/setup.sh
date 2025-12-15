@@ -15,7 +15,7 @@ echo "Deploying in ${profile}."
 # Clean up build artifacts
 echo "Cleaning up build artifacts..."
 rm -rf "target"
-# rm -f "Scarb.lock"
+[ -f "./Scarb.lock" ] && rm "./Scarb.lock"
 
 # Remove corresponding manifest file
 manifest_file="manifest_${profile}.json"

@@ -47,6 +47,7 @@ RPC_URL=$(get_toml_value "rpc_url")
 NAMESPACE_MODS=$(get_toml_value "default")
 WORLD_ADDRESS=$(sozo -P ${profile} inspect | awk '/World/ {getline; getline; print $3}')
 
+
 # Print the stored variables
 # echo "Variables loaded:"
 # echo "ACCOUNT_ADDRESS=$ACCOUNT_ADDRESS"
@@ -56,8 +57,8 @@ WORLD_ADDRESS=$(sozo -P ${profile} inspect | awk '/World/ {getline; getline; pri
 bash ../../scripts/replace_env.sh $ACCOUNT_ADDRESS $PRIVATE_KEY $RPC_URL
 
 rm -rf "target"
-# rm -f "Scarb.lock"
 rm -f "manifest_dev.json"
+[ -f "./Scarb.lock" ] && rm "./Scarb.lock"
 
 echo "Deploying in ${profile}."
 echo "Deploying mod: ${mod_name}"

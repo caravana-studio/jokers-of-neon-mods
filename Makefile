@@ -1,8 +1,8 @@
 setup:
-	@./scripts/setup.sh $(PROFILE)
+	@./scripts/setup.sh ${PROFILE}
 
 deploy-mod:
-	@./scripts/deploy_mod.sh $(PROFILE) $(MOD_NAME)
+	@./scripts/deploy_mod.sh ${PROFILE} ${MOD_NAME}
 
 # Define tasks that are not real files
 .PHONY: setup deploy-mod
