@@ -1,0 +1,38 @@
+[world]
+description = "jokers_of_neon_classic"
+name = "jokers_of_neon_classic"
+seed = "jokers_of_neon_classic"
+
+[namespace]
+default = "jokers_of_neon_classic"
+
+[env]
+rpc_url = "https://api.cartridge.gg/x/jokers-test-season/katana"
+account_address = "0x6677fe62ee39c7b07401f754138502bab7fac99d2d3c5d37df7d1c6fab10819"
+private_key = "0x3e3979c1ed728490308054fe357a9f49cf67f80f9721f44cc57235129e090f4"
+
+[writers]
+"jokers_of_neon_classic" = [
+    "jokers_of_neon_classic-special_high_roller",
+    "jokers_of_neon_classic-special_neon_doctrine",
+    "jokers_of_neon_classic-special_sacrifice",
+    "jokers_of_neon_classic-special_rage_breaker",
+    "jokers_of_neon_classic-special_burning_rewards",
+    "jokers_of_neon_classic-special_kings_faith",
+    "jokers_of_neon_classic-special_rising_ladder",
+    "jokers_of_neon_classic-rage_punched_ticket",
+    "jokers_of_neon_classic-rage_locked_plays",
+    "jokers_of_neon_classic-special_random_multi_for_diamond",
+    "jokers_of_neon_classic-special_random_multi_for_spade",
+    "jokers_of_neon_classic-special_random_multi_for_heart",
+    "jokers_of_neon_classic-special_random_multi_for_club",
+    "jokers_of_neon_classic-special_queens_fortune",
+    "jokers_of_neon_classic-special_kings_faith",
+    "jokers_of_neon_classic-special_faded_poster",
+    "jokers_of_neon_classic-special_hestia_blessing",
+    "jokers_of_neon_classic-special_hanged_joker",
+    "jokers_of_neon_classic-special_circle_of_fortune",
+    "jokers_of_neon_classic-special_suit_roulette",
+    "jokers_of_neon_classic-special_swamp_redemption",
+    "jokers_of_neon_classic-special_lucky_cashback",
+]

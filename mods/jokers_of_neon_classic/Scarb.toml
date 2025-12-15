@@ -26,3 +26,5 @@ build-external-contracts = [
 [dev-dependencies]
 cairo_test = "2.13.1"
 dojo_cairo_test = "1.8.0"
+
+[profile.slot]
