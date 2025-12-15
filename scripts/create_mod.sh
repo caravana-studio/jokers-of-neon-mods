@@ -6,7 +6,7 @@ mod_name=$1
 owner=$2
 world_address=$3
 mod_id=$4
-namespace_mods=$5
+namespace_mods="${5:-jokers_of_neon_mods}"
 
 # Store sozo inspect result once
 inspect_result=$(sozo inspect)
