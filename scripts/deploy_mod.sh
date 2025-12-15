@@ -74,11 +74,6 @@ hex_value=$(echo -n "$mod_name" | xxd -p | tr -d '\n')
 mod_id=$(python3 -c "print(int('$hex_value', 16))")
 
 echo -e "\nCreating mod..."
-echo "mod_name: $mod_name"
-echo "ACCOUNT_ADDRESS: $ACCOUNT_ADDRESS"
-echo "WORLD_ADDRESS: $WORLD_ADDRESS"
-echo "mod_id: $mod_id"
-echo "NAMESPACE_MODS: $NAMESPACE_MODS"
 bash ../../scripts/create_mod.sh $mod_name $ACCOUNT_ADDRESS $WORLD_ADDRESS $mod_id $NAMESPACE_MODS
 
 echo -e "\nRegistering specials..."
