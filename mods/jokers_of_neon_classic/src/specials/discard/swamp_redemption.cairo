@@ -27,11 +27,15 @@ pub mod special_swamp_redemption {
             let mut world = self.world(DEFAULT_NS());
 
             let mut cumulative: Cumulative = world.read_model((context.game.id, SWAMP_REDEMPTION_KEY));
-            if context.card_type == CardType::Discard {
-                cumulative.value += random::between(ref world, context, (1, 5));
-                world.write_model(@cumulative);
+            match context.card_type {
+                CardType::Discard => {
+                    cumulative.value += random::between(ref world, context, (1, 5));
+                    world.write_model(@cumulative);
+                    (0, 0, 0)
+                },
+                CardType::Play => { (cumulative.value, 0, 0) },
+                _ => { (0, 0, 0) },
             }
-            (cumulative.value, 0, 0)
         }
     }
 
