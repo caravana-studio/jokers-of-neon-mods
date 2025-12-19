@@ -8,7 +8,7 @@ pub mod rage_locked_plays {
     use jokers_of_neon_lib::interfaces::rages::debuff::IRageDebuff;
     use jokers_of_neon_lib::models::card_type::CardType;
     use jokers_of_neon_lib::models::data::card::{Suit, Value};
-    use jokers_of_neon_lib::models::data::poker_hand::PokerHand;
+    use jokers_of_neon_lib::models::data::poker_hand::{PokerHand, PokerHandImpl};
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[dojo::model]
@@ -85,11 +85,16 @@ pub mod rage_locked_plays {
             if cumulative.level != context.game.level
                 || cumulative.round != context.game.round
                 || cumulative.poker_hand == PokerHand::None {
-                return array![].span();
+                return PokerHandImpl::all();
             }
 
-            // Only the last played poker hand is locked (debuffed)
-            array![cumulative.poker_hand].span()
+            let mut debuffed_hands = array![];
+            for poker_hand in PokerHandImpl::all() {
+                if *poker_hand != cumulative.poker_hand {
+                    debuffed_hands.append(*poker_hand);
+                }
+            }
+            debuffed_hands.span()
         }
     }
 }
