@@ -85,7 +85,7 @@ pub mod rage_locked_plays {
             if cumulative.level != context.game.level
                 || cumulative.round != context.game.round
                 || cumulative.poker_hand == PokerHand::None {
-                return PokerHandImpl::all();
+                return array![].span();
             }
 
             let mut debuffed_hands = array![];
