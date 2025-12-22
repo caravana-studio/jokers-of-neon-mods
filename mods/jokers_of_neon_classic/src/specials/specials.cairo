@@ -168,3 +168,47 @@ pub fn specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
         array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST].span(),
     )
 }
+
+pub fn specials_season_1_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
+    // C-Grade Group
+    let C_SPECIALS_PROBABILITY = 45;
+    let C_SPECIALS_COST = 1000;
+    let C_SPECIALS = array![
+        SPECIAL_FADED_POSTER_ID, SPECIAL_TAMER_OF_CHANCES_ID, SPECIAL_BLACKJACK_ID, SPECIAL_POINT_JUGGLER_ID,
+    ]
+        .span();
+
+    // B-Grade Group
+    let B_SPECIALS_PROBABILITY = 25;
+    let B_SPECIALS_COST = 1750;
+    let B_SPECIALS = array![
+        SPECIAL_DECK_COLLECTOR_ID, SPECIAL_CIRCLE_OF_FORTUNE_ID, SPECIAL_SUIT_ROULETTE_ID, SPECIAL_HIGH_ROLLER_ID,
+    ]
+        .span();
+
+    // A-Grade Group
+    let A_SPECIALS_PROBABILITY = 15;
+    let A_SPECIALS_COST = 3500;
+    let A_SPECIALS = array![
+        SPECIAL_HANGED_JOKER_ID, SPECIAL_SACRIFICE_ID, SPECIAL_EFFICIENT_PLAY_ID, SPECIAL_HESTIA_BLESSING_ID,
+    ]
+        .span();
+
+    // S-Grade Group
+    let S_SPECIALS_PROBABILITY = 15;
+    let S_SPECIALS_COST = 5000;
+    let S_SPECIALS = array![
+        SPECIAL_RAGE_BREAKER_ID, SPECIAL_BURNING_REWARDS_ID,
+    ]
+        .span();
+
+    assert(
+        C_SPECIALS_PROBABILITY + B_SPECIALS_PROBABILITY + A_SPECIALS_PROBABILITY + S_SPECIALS_PROBABILITY == 100,
+        'wrong probability sum',
+    );
+    (
+        array![C_SPECIALS, B_SPECIALS, A_SPECIALS, S_SPECIALS].span(),
+        array![C_SPECIALS_PROBABILITY, B_SPECIALS_PROBABILITY, A_SPECIALS_PROBABILITY, S_SPECIALS_PROBABILITY].span(),
+        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST].span(),
+    )
+}
