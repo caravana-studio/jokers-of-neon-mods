@@ -79,7 +79,7 @@ pub mod game_config {
 
         fn calculate_price_of_burn(self: @ContractState, count_burns: u32) -> u32 {
             let shop_prices_config = self.get_shop_prices_config();
-            shop_prices_config.initial_price_of_burn + (count_burns * 200)
+            shop_prices_config.initial_price_of_burn + (count_burns * 100)
         }
     }
 }
