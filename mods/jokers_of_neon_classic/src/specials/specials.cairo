@@ -197,10 +197,7 @@ pub fn specials_season_1_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) 
     // S-Grade Group
     let S_SPECIALS_PROBABILITY = 15;
     let S_SPECIALS_COST = 5000;
-    let S_SPECIALS = array![
-        SPECIAL_RAGE_BREAKER_ID, SPECIAL_BURNING_REWARDS_ID,
-    ]
-        .span();
+    let S_SPECIALS = array![SPECIAL_RAGE_BREAKER_ID, SPECIAL_BURNING_REWARDS_ID].span();
 
     assert(
         C_SPECIALS_PROBABILITY + B_SPECIALS_PROBABILITY + A_SPECIALS_PROBABILITY + S_SPECIALS_PROBABILITY == 100,

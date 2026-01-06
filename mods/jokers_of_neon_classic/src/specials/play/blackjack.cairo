@@ -19,11 +19,23 @@ pub mod special_blackjack {
                 }
             }
 
-            if acum_asc < 21 || acum_desc < 21 {
-                (21, 0, 0)
-            } else if acum_asc == 21 || acum_desc == 21 {
+            // Calculate the best blackjack value using both accumulations:
+            // - `acum_desc`: counting Ace as 11
+            // - `acum_asc`: counting Ace as 1
+            // Prefer the highest value that doesn't exceed 21.
+            let mut total = acum_desc;
+            if total > 21 && acum_asc <= 21 {
+                total = acum_asc;
+            }
+
+            if total == 21 {
+                // If the total value is exactly 21 -> 21 multiplier.
                 (0, 21, 0)
+            } else if total < 21 {
+                // If the value is less than 21 -> 21 points.
+                (21, 0, 0)
             } else {
+                // In any other case (exceeded 21) -> no reward.
                 (0, 0, 0)
             }
         }
