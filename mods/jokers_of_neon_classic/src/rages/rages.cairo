@@ -39,7 +39,7 @@ pub fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
     ]
         .span();
     let C_RAGES_REWARDS = 500;
-    let C_RAGES_LEVEL = 1;
+    let C_RAGES_LEVEL = 0;
 
     // B-Grade Group
     let B_RAGES_PROBABILITY = 25;
@@ -48,13 +48,13 @@ pub fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
     ]
         .span();
     let B_RAGES_REWARDS = 750;
-    let B_RAGES_LEVEL = 2;
+    let B_RAGES_LEVEL = 1;
 
     // A-Grade Group
     let A_RAGES_PROBABILITY = 20;
     let A_RAGES = array![RAGE_CARD_DIMINISHED_HOLD].span();
     let A_RAGES_REWARDS = 1000;
-    let A_RAGES_LEVEL = 3;
+    let A_RAGES_LEVEL = 2;
 
     // S-Grade Group
     let S_RAGES_PROBABILITY = 10;
@@ -63,7 +63,7 @@ pub fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
     ]
         .span();
     let S_RAGES_REWARDS = 1500;
-    let S_RAGES_LEVEL = 4;
+    let S_RAGES_LEVEL = 3;
 
     assert(
         C_RAGES_PROBABILITY + B_RAGES_PROBABILITY + A_RAGES_PROBABILITY + S_RAGES_PROBABILITY == 100,
