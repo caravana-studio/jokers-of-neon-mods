@@ -12,7 +12,7 @@ pub mod special_lucky_cashback {
     impl LuckyCashbackExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            if random::between(ref world, context, (1, 2)) == 1 { // 50% chance
+            if random::between(ref world, context, (1, 10)) > 5 {
                 (0, 0, 150)
             } else {
                 (0, 0, 0)
