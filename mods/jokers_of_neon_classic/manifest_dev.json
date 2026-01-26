@@ -43,8 +43,8 @@
       ]
     },
     {
-      "address": "0x233b7fa1ebd5e55abc25aa33b92aaddef2543e87ed1b3ba37b07b0798f7fe95",
-      "class_hash": "0x445acf4c6b3292558df735385050deb92d4d3b25c1f83f4b37760cb04f534bc",
+      "address": "0x4dbd08a58a9db6cff9b41d69ef0667c6c80e242ef33e4b967c06fc9fe4e5824",
+      "class_hash": "0x3c1ea9c4bfbfcf13044b2ad570f3a8472f3627008fe5e3d1215506997b04cf0",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-game_config",
       "selector": "0x4ced4ea116bc7edd29dcd5387f683c4672f5099d326a13288a2d27e7896ec04",
@@ -53,8 +53,8 @@
       ]
     },
     {
-      "address": "0x65afd28f957dbb89444fd763b1710531012e8bdf6df732136219229784de083",
-      "class_hash": "0x17be4541bd3c5130f5e1f4a122b3b313e1d570ec2aa0056abdfb0a35e76f873",
+      "address": "0x2ba1affae599db774d4c0f11a603c0efbfee3f44041a41ab7cf514b97d50898",
+      "class_hash": "0x8cc20b41c86a00f7a6fb37eb67109a3129f1e652a6a2a49f24983dcff7c525",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-loot_boxes_info",
       "selector": "0x2634e0fd32b7d5f7de96fbe208a2cefecc75064dcbe911f6b4fb60f6cfb4b8a",
@@ -139,8 +139,8 @@
       ]
     },
     {
-      "address": "0x605cedc2be2da6b5f0efd0358b672ce449c36f7bef1c2e2890cf9d3f110f770",
-      "class_hash": "0x35df13d2df2f6b78bfa3524caaf43ce8ed826c695af36baa551384befc6f676",
+      "address": "0x3f0202a296f8afd2df94fb51d3f0d52a90e036909c216d82525c24d1bcca215",
+      "class_hash": "0x7431f5fba0bf337712b0f5fd38aaf273b024dee62ac07fc129c04ec6fde3d11",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_locked_plays",
       "selector": "0x543a1d57e532210da609faf7cc4d9aefb1b5b32f728380340dfc4c0fa28f68d",
@@ -306,8 +306,8 @@
       ]
     },
     {
-      "address": "0x3d8e0346ecdbd364505c2bc226d4bb5836183ec26cd553f26581f1f540cbe21",
-      "class_hash": "0x110ca264f888ccfad3261d5bd10eef2faffcec1f67e25469438e01bc7461132",
+      "address": "0x78af5d2e2eec3681428ebb17c524e8b20277918797cea636566b8f78300c768",
+      "class_hash": "0x46f205ec9057ac3cb0670ee9a4a0f3722593df0c1b5206996bed36997dbd8c5",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_blackjack",
       "selector": "0x66df2c16fc2b5a2e3c802fc27a5751d39b80f0909a40326d31f7204b7bf5083",
@@ -641,8 +641,8 @@
       ]
     },
     {
-      "address": "0x782b06ff6ded03a428a8f1f988888b897c409eef1cc0cdf2a4a85cd6b3ad48d",
-      "class_hash": "0x4949bd415b358acbdf36f20aa5ab1989df810d368d20b54b328d10863c6e4ba",
+      "address": "0x620f128a104ccd1ca20a48b13e8e2218a515879b5ab9e3e82704c7db7abb993",
+      "class_hash": "0x464d637affcc5c5df28c70ef9c537a5cdea19258615579c33ac4414637c9dfe",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_lucky_cashback",
       "selector": "0x216fd31aa0af01bb1dc4ccbc64184fb042d2ef3d1a835004cd031a1f9cd92d4",
@@ -841,8 +841,8 @@
       ]
     },
     {
-      "address": "0x6562ca783e3905d6569ca38c9cfad5bff8d4de5a6240274e874926206987d44",
-      "class_hash": "0x295f4127191b0947840959ed95ac717672674dc07a448df30fedbe2afc7116b",
+      "address": "0x5f4d435ec27d80fb412142f1c7183dcbd6e80b7a946183b49810edbf1860d89",
+      "class_hash": "0x54ed035e50aba262c7f7adcfd051a561ee41ce264a466c625e89db2eb98ff6c",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_rage_breaker",
       "selector": "0x2f0e0a417ada96cd7431a84134760c6e37c28dda9c87d42297d75768ae17204",
@@ -1017,8 +1017,8 @@
       ]
     },
     {
-      "address": "0x4e38d98e245776a5ce1b9d70ef443304fabc935a4e2ad7dcef07f9275be6ad9",
-      "class_hash": "0x3eeb2577bda42e07800de0c07d23684c5b182726294cb3bba649f1ad5060915",
+      "address": "0x5ca5d2c8d8df7409e48c03dc5cd33f99f7613dd9bd00811ac233c1924ff067b",
+      "class_hash": "0x296d0ebb2052e047b88f38e017d2ba63fe6a88c0d212b8ce2e3efd838c5333f",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_swamp_redemption",
       "selector": "0x57518aeebbeb2fa69de08c5795c95472c450737ceb463aa2ef063d30494905e",
@@ -1073,8 +1073,8 @@
       ]
     },
     {
-      "address": "0x396e21439b91d9eb7f9953130d7c6fbc93da03090562088aa1e21529ab00",
-      "class_hash": "0x323d036e48a99cefeae35b64a6ada61e7244c0fc8e29838f75bb7e2a47c4bb6",
+      "address": "0x2d9acaf7526c8e2abe8ea3d25bb1e882797c0ecd9a9842a10156077a3b71bae",
+      "class_hash": "0x469a3bad61a53d43e123c9eefceaa75d5ff86eb0fbc602bca8ce5e669b253fd",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-specials_info",
       "selector": "0x875ca83c8d03a2c3343d75b29956e56b251703cb2509466968e3fbda4cf646",
@@ -5382,6 +5382,33 @@
           "outputs": [
             {
               "type": "(core::array::Span::<core::array::Span::<core::integer::u32>>, core::array::Span::<core::integer::u32>, core::array::Span::<core::integer::u32>)"
+            }
+          ],
+          "state_mutability": "view"
+        },
+        {
+          "type": "function",
+          "name": "get_season_1_specials_shop_info",
+          "inputs": [],
+          "outputs": [
+            {
+              "type": "(core::array::Span::<core::array::Span::<core::integer::u32>>, core::array::Span::<core::integer::u32>, core::array::Span::<core::integer::u32>)"
+            }
+          ],
+          "state_mutability": "view"
+        },
+        {
+          "type": "function",
+          "name": "get_special_info",
+          "inputs": [
+            {
+              "name": "special_id",
+              "type": "core::integer::u32"
+            }
+          ],
+          "outputs": [
+            {
+              "type": "(core::integer::u32, core::integer::u32, core::integer::u32)"
             }
           ],
           "state_mutability": "view"
