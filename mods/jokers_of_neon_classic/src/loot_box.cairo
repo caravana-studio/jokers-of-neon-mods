@@ -1,8 +1,12 @@
 use jokers_of_neon_classic::specials::specials::{SPECIAL_ALL_CARDS_TO_HEARTS_ID, specials_ids_all, specials_shop_info};
 use jokers_of_neon_lib::constants::card::{
-    JOKER_CARD_ID, NEON_JOKER_CARD_ID, all_hearts_cards, neon_cards_all, neon_hearts_cards, traditional_cards_all,
+    JOKER_CARD_ID, NEON_JOKER_CARD_ID, all_clubs_cards, all_diamonds_cards, all_hearts_cards, all_spades_cards,
+    neon_cards_all, neon_clubs_cards, neon_diamonds_cards, neon_hearts_cards, neon_spades_cards, traditional_cards_all,
 };
-use jokers_of_neon_lib::constants::modifiers::{SUIT_HEARTS_MODIFIER_ID, modifiers_ids_all, modifiers_shop_info};
+use jokers_of_neon_lib::constants::modifiers::{
+    SUIT_CLUB_MODIFIER_ID, SUIT_DIAMONDS_MODIFIER_ID, SUIT_HEARTS_MODIFIER_ID, SUIT_SPADES_MODIFIER_ID,
+    modifiers_ids_all, modifiers_shop_info,
+};
 use jokers_of_neon_lib::models::data::card::{CardTrait, Suit, Value};
 use jokers_of_neon_lib::models::data::loot_box::LootBox;
 
@@ -13,21 +17,24 @@ const SPECIALS_LOOT_BOX_ID: u32 = 4;
 const MODIFIER_LOOT_BOX_ID: u32 = 5;
 const FIGURES_LOOT_BOX_ID: u32 = 6;
 const DECEITFUL_JOKER_LOOT_BOX_ID: u32 = 7;
-const LOVERS_LOOT_BOX_ID: u32 = 8;
+const HEARTS_LOOT_BOX_ID: u32 = 8;
 const SPECIAL_BET_LOOT_BOX_ID: u32 = 9;
 const NEON_LOOT_BOX_ID: u32 = 10;
+const SPADES_LOOT_BOX_ID: u32 = 11;
+const DIAMONDS_LOOT_BOX_ID: u32 = 12;
+const CLUBS_LOOT_BOX_ID: u32 = 13;
 const EMPTY_PACK_ID: u32 = 999;
 
 pub fn loot_boxes_ids_all() -> Array<u32> {
     array![
         BASIC_LOOT_BOX_ID, ADVANCED_LOOT_BOX_ID, JOKER_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID,
-        FIGURES_LOOT_BOX_ID, DECEITFUL_JOKER_LOOT_BOX_ID, LOVERS_LOOT_BOX_ID, SPECIAL_BET_LOOT_BOX_ID, NEON_LOOT_BOX_ID,
+        FIGURES_LOOT_BOX_ID, DECEITFUL_JOKER_LOOT_BOX_ID, HEARTS_LOOT_BOX_ID, SPECIAL_BET_LOOT_BOX_ID, NEON_LOOT_BOX_ID,
     ]
 }
 
 pub fn loot_boxes_ids_all_without_jokers() -> Array<u32> {
     array![
-        BASIC_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, LOVERS_LOOT_BOX_ID,
+        BASIC_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, HEARTS_LOOT_BOX_ID,
         SPECIAL_BET_LOOT_BOX_ID,
     ]
 }
@@ -166,7 +173,7 @@ pub fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 4,
         cards: array![
-            array![JOKER_CARD_ID.into()].span(), array![JOKER_CARD_ID].span(), array![NEON_JOKER_CARD_ID].span(),
+            array![JOKER_CARD_ID].span(), array![JOKER_CARD_ID].span(), array![NEON_JOKER_CARD_ID].span(),
             traditional_cards_all().span(),
         ]
             .span(),
@@ -174,9 +181,9 @@ pub fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
     }
 }
 
-pub fn LOVERS_LOOT_BOX() -> LootBox {
+pub fn HEARTS_LOOT_BOX() -> LootBox {
     LootBox {
-        id: LOVERS_LOOT_BOX_ID,
+        id: HEARTS_LOOT_BOX_ID,
         cost: 1500,
         name: 'lovers_pack',
         probability: 50,
@@ -188,6 +195,54 @@ pub fn LOVERS_LOOT_BOX() -> LootBox {
         ]
             .span(),
         probs: array![100, 5, 30, 10, 55].span(),
+    }
+}
+
+pub fn SPADES_LOOT_BOX() -> LootBox {
+    LootBox {
+        id: SPADES_LOOT_BOX_ID,
+        cost: 1500,
+        name: 'spades_pack',
+        probability: 50,
+        size: 5,
+        cards: array![
+            array![CardTrait::generate_id(Value::Ace, Suit::Spades)].span(), neon_spades_cards().span(),
+            array![SUIT_SPADES_MODIFIER_ID].span(), all_spades_cards().span(),
+        ]
+            .span(),
+        probs: array![100, 30, 10, 60].span(),
+    }
+}
+
+pub fn DIAMONDS_LOOT_BOX() -> LootBox {
+    LootBox {
+        id: DIAMONDS_LOOT_BOX_ID,
+        cost: 1500,
+        name: 'diamonds_pack',
+        probability: 50,
+        size: 5,
+        cards: array![
+            array![CardTrait::generate_id(Value::Ace, Suit::Diamonds)].span(), neon_diamonds_cards().span(),
+            array![SUIT_DIAMONDS_MODIFIER_ID].span(), all_diamonds_cards().span(),
+        ]
+            .span(),
+        probs: array![100, 30, 10, 60].span(),
+    }
+}
+
+pub fn CLUBS_LOOT_BOX() -> LootBox {
+    LootBox {
+        id: CLUBS_LOOT_BOX_ID,
+        cost: 1500,
+        name: 'clubs_pack',
+        probability: 50,
+        size: 5,
+        cards: array![
+            array![CardTrait::generate_id(Value::Ace, Suit::Clubs)].span(), neon_clubs_cards().span(),
+            array![SUIT_CLUB_MODIFIER_ID].span(), all_clubs_cards().span(),
+        ]
+            .span(),
+        probs: array![100, 30, 10, 60].span(),
     }
 }
 
@@ -234,7 +289,7 @@ pub fn loot_boxes_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // C-Grade Group
     let C_LOOT_BOX_PROBABILITY = 30;
     let C_LOOT_BOX_COST = 750;
-    let C_LOOT_BOX = array![BASIC_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, LOVERS_LOOT_BOX_ID].span();
+    let C_LOOT_BOX = array![BASIC_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, HEARTS_LOOT_BOX_ID].span();
     // B-Grade Group
     let B_LOOT_BOX_PROBABILITY = 20;
     let B_LOOT_BOX_COST = 1500;
@@ -269,12 +324,18 @@ pub fn get_loot_box(loot_box_id: u32) -> LootBox {
         FIGURES_LOOT_BOX()
     } else if loot_box_id == DECEITFUL_JOKER_LOOT_BOX_ID {
         DECEITFUL_JOKER_LOOT_BOX()
-    } else if loot_box_id == LOVERS_LOOT_BOX_ID {
-        LOVERS_LOOT_BOX()
+    } else if loot_box_id == HEARTS_LOOT_BOX_ID {
+        HEARTS_LOOT_BOX()
     } else if loot_box_id == SPECIAL_BET_LOOT_BOX_ID {
         SPECIAL_BET_LOOT_BOX()
     } else if loot_box_id == NEON_LOOT_BOX_ID {
         NEON_LOOT_BOX()
+    } else if loot_box_id == SPADES_LOOT_BOX_ID {
+        SPADES_LOOT_BOX()
+    } else if loot_box_id == DIAMONDS_LOOT_BOX_ID {
+        DIAMONDS_LOOT_BOX()
+    } else if loot_box_id == CLUBS_LOOT_BOX_ID {
+        CLUBS_LOOT_BOX()
     } else {
         EMPTY_LOOT_BOX()
     }
