@@ -14,4 +14,6 @@ pub mod systems {
     pub mod special_manager;
 }
 
+pub mod missions;
+
 pub mod constants;
