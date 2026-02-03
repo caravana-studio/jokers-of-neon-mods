@@ -2,7 +2,8 @@
 pub mod special_neon_doctrine_s2 {
     use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_NEON_DOCTRINE_S2_ID;
-    use jokers_of_neon_lib::constants::card::{JOKER_CARD_ID, WILD_CARD_ID, get_card};
+    use jokers_of_neon_lib::constants::card::get_card;
+    use jokers_of_neon_lib::constants::utils::is_common_card;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::converter::ICardConverter;
     use jokers_of_neon_lib::models::card_type::CardType;
@@ -14,24 +15,14 @@ pub mod special_neon_doctrine_s2 {
     impl NeonDoctrineS2Converter of ICardConverter<ContractState> {
         fn apply(ref self: ContractState, context: GameContext, cards: Span<Card>) -> Span<Card> {
             let mut world = self.world(DEFAULT_NS());
-            let mut cards = cards;
             let mut result = array![];
-            loop {
-                match cards.pop_front() {
-                    Option::Some(card) => {
-                        let mut new_card = *card;
-                        if (new_card.id >= 0 && new_card.id <= 53)
-                            || new_card.id == JOKER_CARD_ID
-                            || new_card.id == WILD_CARD_ID {
-                            // 30% chance (3 out of 10)
-                            if random::between(ref world, context, (1, 10)) <= 3 {
-                                new_card = get_card(CardTrait::generate_neon_id(new_card.id));
-                            }
-                        }
-                        result.append(new_card);
-                    },
-                    Option::None => { break; },
+            for card in cards {
+                let mut new_card = *card;
+                // 30% chance (3 out of 10) for common cards
+                if is_common_card(new_card.id) && random::between(ref world, context, (1, 10)) <= 3 {
+                    new_card = get_card(CardTrait::generate_neon_id(new_card.id));
                 }
+                result.append(new_card);
             }
             result.span()
         }

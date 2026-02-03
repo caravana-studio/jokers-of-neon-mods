@@ -14,31 +14,25 @@ pub mod special_relativity_s2 {
         fn apply(ref self: ContractState, context: GameContext, cards: Span<Card>) -> Span<Card> {
             let (poker_hand, _) = context.hand;
             if poker_hand == PokerHand::Straight || poker_hand == PokerHand::StraightFlush {
-                let mut cards = cards;
                 let mut result = array![];
                 let mut count = 0;
-                loop {
-                    match cards.pop_front() {
-                        Option::Some(card) => {
-                            let mut new_card = *card;
-                            if new_card.suit != Suit::Joker && new_card.suit != Suit::Wild {
-                                if count == 0 {
-                                    new_card = get_card(CardTrait::generate_id(Value::Ten, new_card.suit));
-                                } else if count == 1 {
-                                    new_card = get_card(CardTrait::generate_id(Value::Jack, new_card.suit));
-                                } else if count == 2 {
-                                    new_card = get_card(CardTrait::generate_id(Value::Queen, new_card.suit));
-                                } else if count == 3 {
-                                    new_card = get_card(CardTrait::generate_id(Value::King, new_card.suit));
-                                } else {
-                                    new_card = get_card(CardTrait::generate_id(Value::Ace, new_card.suit));
-                                }
-                            }
-                            count = count + 1;
-                            result.append(new_card);
-                        },
-                        Option::None => { break; },
+                for card in cards {
+                    let mut new_card = *card;
+                    if new_card.suit != Suit::Joker && new_card.suit != Suit::Wild {
+                        if count == 0 {
+                            new_card = get_card(CardTrait::generate_id(Value::Ten, new_card.suit));
+                        } else if count == 1 {
+                            new_card = get_card(CardTrait::generate_id(Value::Jack, new_card.suit));
+                        } else if count == 2 {
+                            new_card = get_card(CardTrait::generate_id(Value::Queen, new_card.suit));
+                        } else if count == 3 {
+                            new_card = get_card(CardTrait::generate_id(Value::King, new_card.suit));
+                        } else {
+                            new_card = get_card(CardTrait::generate_id(Value::Ace, new_card.suit));
+                        }
                     }
+                    count = count + 1;
+                    result.append(new_card);
                 }
                 result.span()
             } else {
