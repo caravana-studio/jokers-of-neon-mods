@@ -92,6 +92,23 @@ pub const SPECIAL_HESTIA_BLESSING_ID: u32 = 10107;
 pub const SPECIAL_RAGE_BREAKER_ID: u32 = 10113;
 pub const SPECIAL_BURNING_REWARDS_ID: u32 = 10114;
 
+// [SEASON 2]
+// [A]
+pub const SPECIAL_SEASON2_1_ID: u32 = 10201; // Cumulative +5 pts for ≤3 cards
+pub const SPECIAL_NEON_SYNERGY_S2_ID: u32 = 10202; // Convert to neon if 50%+ neon
+pub const SPECIAL_SHORTCUT_ID: u32 = 10203; // -25% target each round
+// [B]
+pub const SPECIAL_ACCIDENTAL_VALUE_ID: u32 = 10204; // +25 pts +1 multi per miss
+pub const SPECIAL_SEASON2_3_ID: u32 = 10205; // +300 pts if ≤2 cards
+pub const SPECIAL_NEON_DOCTRINE_S2_ID: u32 = 10206; // 30% neon chance
+// [C]
+pub const SPECIAL_RELATIVITY_S2_ID: u32 = 10207; // Straight→High Straight
+pub const SPECIAL_CASH_CATALYST_S2_ID: u32 = 10208; // +1 multi per 1000 cash
+pub const SPECIAL_LIFEFLAME_ID: u32 = 10209; // +15 pts per remaining plays/discards
+pub const SPECIAL_SEASON2_4_ID: u32 = 10210; // +5 hand size decreasing by round
+// [S]
+pub const SPECIAL_SEASON2_5_ID: u32 = 10211; // 25% power-up accumulator
+
 pub fn specials_ids_all() -> Array<u32> {
     array![
         SPECIAL_MULTI_FOR_HEART_ID, SPECIAL_MULTI_FOR_CLUB_ID, SPECIAL_MULTI_FOR_DIAMOND_ID, SPECIAL_MULTI_FOR_SPADE_ID,
@@ -209,6 +226,41 @@ pub fn specials_season_1_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) 
     )
 }
 
+pub fn specials_season_2_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
+    // C-Grade Group
+    let C_SPECIALS_PROBABILITY = 45;
+    let C_SPECIALS_COST = 1000;
+    let C_SPECIALS = array![
+        SPECIAL_RELATIVITY_S2_ID, SPECIAL_CASH_CATALYST_S2_ID, SPECIAL_LIFEFLAME_ID, SPECIAL_SEASON2_4_ID,
+    ]
+        .span();
+
+    // B-Grade Group
+    let B_SPECIALS_PROBABILITY = 25;
+    let B_SPECIALS_COST = 1750;
+    let B_SPECIALS = array![SPECIAL_ACCIDENTAL_VALUE_ID, SPECIAL_SEASON2_3_ID, SPECIAL_NEON_DOCTRINE_S2_ID].span();
+
+    // A-Grade Group
+    let A_SPECIALS_PROBABILITY = 15;
+    let A_SPECIALS_COST = 3500;
+    let A_SPECIALS = array![SPECIAL_SEASON2_1_ID, SPECIAL_NEON_SYNERGY_S2_ID, SPECIAL_SHORTCUT_ID].span();
+
+    // S-Grade Group
+    let S_SPECIALS_PROBABILITY = 15;
+    let S_SPECIALS_COST = 5000;
+    let S_SPECIALS = array![SPECIAL_SEASON2_5_ID].span();
+
+    assert(
+        C_SPECIALS_PROBABILITY + B_SPECIALS_PROBABILITY + A_SPECIALS_PROBABILITY + S_SPECIALS_PROBABILITY == 100,
+        'wrong probability sum',
+    );
+    (
+        array![C_SPECIALS, B_SPECIALS, A_SPECIALS, S_SPECIALS].span(),
+        array![C_SPECIALS_PROBABILITY, B_SPECIALS_PROBABILITY, A_SPECIALS_PROBABILITY, S_SPECIALS_PROBABILITY].span(),
+        array![C_SPECIALS_COST, B_SPECIALS_COST, A_SPECIALS_COST, S_SPECIALS_COST].span(),
+    )
+}
+
 pub fn get_special_info(special_id: u32) -> (u32, u32, u32) {
     if contains(SPECIALS_C_IDS(), special_id) {
         (0, 1000, 45)
@@ -231,6 +283,8 @@ fn SPECIALS_C_IDS() -> Array<u32> {
         SPECIAL_WANTED_JOKER_ID, SPECIAL_TWOS_MATTER_ID, // GG
         SPECIAL_LUCKY_CASHBACK_ID, // SEASON 1
         SPECIAL_FADED_POSTER_ID, SPECIAL_TAMER_OF_CHANCES_ID, SPECIAL_BLACKJACK_ID, SPECIAL_POINT_JUGGLER_ID,
+        // SEASON 2
+        SPECIAL_RELATIVITY_S2_ID, SPECIAL_CASH_CATALYST_S2_ID, SPECIAL_LIFEFLAME_ID, SPECIAL_SEASON2_4_ID,
     ]
 }
 
@@ -245,7 +299,9 @@ fn SPECIALS_B_IDS() -> Array<u32> {
         // GG
         SPECIAL_RESONANT_MULTIPLIER_ID, // SEASON 1
         SPECIAL_DECK_COLLECTOR_ID, SPECIAL_CIRCLE_OF_FORTUNE_ID,
-        SPECIAL_SUIT_ROULETTE_ID, SPECIAL_HIGH_ROLLER_ID,
+        SPECIAL_SUIT_ROULETTE_ID, SPECIAL_HIGH_ROLLER_ID, // SEASON 2
+        SPECIAL_ACCIDENTAL_VALUE_ID, SPECIAL_SEASON2_3_ID,
+        SPECIAL_NEON_DOCTRINE_S2_ID,
     ]
 }
 
@@ -257,6 +313,8 @@ fn SPECIALS_A_IDS() -> Array<u32> {
         SPECIAL_RAINBOW_ID, SPECIAL_SLOT_SAVER_ID, SPECIAL_MULTIPLIER_ID, SPECIAL_INITIAL_ADVANTAGE_ID,
         // SEASON 1
         SPECIAL_HANGED_JOKER_ID, SPECIAL_SACRIFICE_ID, SPECIAL_EFFICIENT_PLAY_ID, SPECIAL_HESTIA_BLESSING_ID,
+        // SEASON 2
+        SPECIAL_SEASON2_1_ID, SPECIAL_NEON_SYNERGY_S2_ID, SPECIAL_SHORTCUT_ID,
     ]
 }
 
@@ -266,7 +324,8 @@ fn SPECIALS_S_IDS() -> Array<u32> {
         SPECIAL_RISING_LADDER_ID, // GG
         SPECIAL_SWAMP_REDEMPTION_ID, // SEASON 1
         SPECIAL_RAGE_BREAKER_ID,
-        SPECIAL_BURNING_REWARDS_ID,
+        SPECIAL_BURNING_REWARDS_ID, // SEASON 2
+        SPECIAL_SEASON2_5_ID,
     ]
 }
 

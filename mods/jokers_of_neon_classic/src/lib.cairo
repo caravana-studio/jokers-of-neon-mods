@@ -44,13 +44,20 @@ pub mod specials {
         pub mod hand_thief;
         pub mod plus_discards;
         pub mod plus_plays;
+        // SEASON 2
+        pub mod season2_4;
+        pub mod shortcut;
         pub mod tamer_of_chances;
     }
     pub mod converter {
         pub mod all_cards_to_hearts;
         pub mod deuces_wild;
         pub mod neon_doctrine;
+        // SEASON 2
+        pub mod neon_doctrine_s2;
+        pub mod neon_synergy;
         pub mod relativity;
+        pub mod relativity_s2;
     }
     pub mod discard {
         pub mod swamp_redemption;
@@ -87,11 +94,14 @@ pub mod specials {
     }
     pub mod miss {}
     pub mod play {
+        // SEASON 2
+        pub mod accidental_value;
         pub mod arithmomania;
         pub mod blackjack;
         pub mod blacks;
         pub mod burning_rewards;
         pub mod cash_catalyst;
+        pub mod cash_catalyst_s2;
         pub mod circle_of_fortune;
         pub mod club_keeper;
         pub mod deadline;
@@ -112,6 +122,7 @@ pub mod specials {
         pub mod increase_level_straight;
         pub mod increase_level_three_of_a_kind;
         pub mod initial_advantage;
+        pub mod lifeflame;
         pub mod lucky_cashback;
         pub mod multiplier;
         pub mod rage_breaker;
@@ -120,6 +131,9 @@ pub mod specials {
         pub mod rising_ladder;
         pub mod sacrifice;
         pub mod scaling_factor;
+        pub mod season2_1;
+        pub mod season2_3;
+        pub mod season2_5;
         pub mod slot_saver;
         pub mod spade_trio;
         pub mod suit_roulette;
