@@ -109,6 +109,8 @@ pub const SPECIAL_SEASON2_4_ID: u32 = 10210; // +5 hand size decreasing by round
 // [S]
 pub const SPECIAL_SEASON2_5_ID: u32 = 10211; // 25% power-up accumulator
 pub const SPECIAL_UNDYING_DRAW_ID: u32 = 10212; // +1 multi after first discard
+// [A]
+pub const SPECIAL_SEASON2_2_ID: u32 = 10213; // 30% chance items cost 0
 
 pub fn specials_ids_all() -> Array<u32> {
     array![
@@ -244,7 +246,8 @@ pub fn specials_season_2_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) 
     // A-Grade Group
     let A_SPECIALS_PROBABILITY = 15;
     let A_SPECIALS_COST = 3500;
-    let A_SPECIALS = array![SPECIAL_SEASON2_1_ID, SPECIAL_NEON_SYNERGY_S2_ID, SPECIAL_SHORTCUT_ID].span();
+    let A_SPECIALS = array![SPECIAL_SEASON2_1_ID, SPECIAL_NEON_SYNERGY_S2_ID, SPECIAL_SHORTCUT_ID, SPECIAL_SEASON2_2_ID]
+        .span();
 
     // S-Grade Group
     let S_SPECIALS_PROBABILITY = 15;
@@ -315,7 +318,7 @@ fn SPECIALS_A_IDS() -> Array<u32> {
         // SEASON 1
         SPECIAL_HANGED_JOKER_ID, SPECIAL_SACRIFICE_ID, SPECIAL_EFFICIENT_PLAY_ID, SPECIAL_HESTIA_BLESSING_ID,
         // SEASON 2
-        SPECIAL_SEASON2_1_ID, SPECIAL_NEON_SYNERGY_S2_ID, SPECIAL_SHORTCUT_ID,
+        SPECIAL_SEASON2_1_ID, SPECIAL_NEON_SYNERGY_S2_ID, SPECIAL_SHORTCUT_ID, SPECIAL_SEASON2_2_ID,
     ]
 }
 

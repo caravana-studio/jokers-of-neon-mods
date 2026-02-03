@@ -49,6 +49,9 @@ pub mod specials {
         pub mod shortcut;
         pub mod tamer_of_chances;
     }
+    pub mod shop {
+        pub mod season2_2;
+    }
     pub mod converter {
         pub mod all_cards_to_hearts;
         pub mod deuces_wild;
