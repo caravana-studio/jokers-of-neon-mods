@@ -108,6 +108,7 @@ pub const SPECIAL_LIFEFLAME_ID: u32 = 10209; // +15 pts per remaining plays/disc
 pub const SPECIAL_SEASON2_4_ID: u32 = 10210; // +5 hand size decreasing by round
 // [S]
 pub const SPECIAL_SEASON2_5_ID: u32 = 10211; // 25% power-up accumulator
+pub const SPECIAL_UNDYING_DRAW_ID: u32 = 10212; // +1 multi after first discard
 
 pub fn specials_ids_all() -> Array<u32> {
     array![
@@ -248,7 +249,7 @@ pub fn specials_season_2_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) 
     // S-Grade Group
     let S_SPECIALS_PROBABILITY = 15;
     let S_SPECIALS_COST = 5000;
-    let S_SPECIALS = array![SPECIAL_SEASON2_5_ID].span();
+    let S_SPECIALS = array![SPECIAL_SEASON2_5_ID, SPECIAL_UNDYING_DRAW_ID].span();
 
     assert(
         C_SPECIALS_PROBABILITY + B_SPECIALS_PROBABILITY + A_SPECIALS_PROBABILITY + S_SPECIALS_PROBABILITY == 100,
@@ -325,7 +326,7 @@ fn SPECIALS_S_IDS() -> Array<u32> {
         SPECIAL_SWAMP_REDEMPTION_ID, // SEASON 1
         SPECIAL_RAGE_BREAKER_ID,
         SPECIAL_BURNING_REWARDS_ID, // SEASON 2
-        SPECIAL_SEASON2_5_ID,
+        SPECIAL_SEASON2_5_ID, SPECIAL_UNDYING_DRAW_ID,
     ]
 }
 

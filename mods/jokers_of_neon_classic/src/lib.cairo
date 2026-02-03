@@ -137,6 +137,7 @@ pub mod specials {
         pub mod slot_saver;
         pub mod spade_trio;
         pub mod suit_roulette;
+        pub mod undying_draw;
     }
     pub mod power_up {
         pub mod power_up_booster;
