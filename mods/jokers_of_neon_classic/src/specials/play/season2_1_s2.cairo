@@ -1,8 +1,8 @@
 #[dojo::contract]
-pub mod special_season2_1 {
+pub mod special_season2_1_s2 {
     use dojo::model::ModelStorage;
     use jokers_of_neon_classic::constants::DEFAULT_NS;
-    use jokers_of_neon_classic::specials::specials::SPECIAL_SEASON2_1_ID;
+    use jokers_of_neon_classic::specials::specials::SPECIAL_SEASON2_1_S2_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::interfaces::cards::info::ICardInfo;
@@ -18,13 +18,13 @@ pub mod special_season2_1 {
         key: felt252,
         value: i32,
     }
-    const SEASON2_1_KEY: felt252 = 'SEASON2_1_KEY';
+    const SEASON2_1_S2_KEY: felt252 = 'SEASON2_1_S2_KEY';
 
     #[abi(embed_v0)]
-    impl Season2_1Executable of ICardExecutable<ContractState> {
+    impl Season2_1S2Executable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let mut cumulative: Cumulative = world.read_model((context.game.id, SEASON2_1_KEY));
+            let mut cumulative: Cumulative = world.read_model((context.game.id, SEASON2_1_S2_KEY));
 
             // If 3 or fewer cards played, add +5 to cumulative
             if context.cards_played.len() <= 3 {
@@ -37,9 +37,9 @@ pub mod special_season2_1 {
     }
 
     #[abi(embed_v0)]
-    impl Season2_1Base of ICardBase<ContractState> {
+    impl Season2_1S2Base of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            SPECIAL_SEASON2_1_ID
+            SPECIAL_SEASON2_1_S2_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
@@ -48,10 +48,10 @@ pub mod special_season2_1 {
     }
 
     #[abi(embed_v0)]
-    impl Season2_1Info of ICardInfo<ContractState> {
+    impl Season2_1S2Info of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let cumulative: Cumulative = world.read_model((game_id, SEASON2_1_KEY));
+            let cumulative: Cumulative = world.read_model((game_id, SEASON2_1_S2_KEY));
             (cumulative.value, 0, 0)
         }
     }

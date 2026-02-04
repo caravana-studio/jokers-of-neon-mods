@@ -1,21 +1,21 @@
 #[dojo::contract]
-pub mod special_season2_2 {
+pub mod special_season2_2_s2 {
     use jokers_of_neon_classic::constants::DEFAULT_NS;
-    use jokers_of_neon_classic::specials::specials::SPECIAL_SEASON2_2_ID;
+    use jokers_of_neon_classic::specials::specials::SPECIAL_SEASON2_2_S2_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::shop_discount::IShopDiscount;
     use jokers_of_neon_lib::models::card_type::CardType;
-    use jokers_of_neon_lib::models::status::game::game::Game;
+    use jokers_of_neon_lib::models::tracker::GameContext;
     use jokers_of_neon_lib::models::status::shop::shop::{
         BlisterPackItem, BurnItem, CardItem, PokerHandItem, PowerUpItem, SlotSpecialCardsItem, SpecialCardItem,
     };
     use crate::utils::random;
 
     #[abi(embed_v0)]
-    impl Season2_2ShopDiscount of IShopDiscount<ContractState> {
+    impl Season2_2S2ShopDiscount of IShopDiscount<ContractState> {
         fn apply_discount(
             ref self: ContractState,
-            game: Game,
+            context: GameContext,
             card_items: Span<CardItem>,
             special_card_items: Span<SpecialCardItem>,
             blister_pack_items: Span<BlisterPackItem>,
@@ -33,7 +33,6 @@ pub mod special_season2_2 {
             BurnItem,
         ) {
             let mut world = self.world(DEFAULT_NS());
-            let context = game.into();
 
             let mut new_card_items = array![];
             let mut new_special_items = array![];
@@ -112,9 +111,9 @@ pub mod special_season2_2 {
     }
 
     #[abi(embed_v0)]
-    impl Season2_2Base of ICardBase<ContractState> {
+    impl Season2_2S2Base of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            SPECIAL_SEASON2_2_ID
+            SPECIAL_SEASON2_2_S2_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {

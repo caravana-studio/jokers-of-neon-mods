@@ -1,13 +1,13 @@
 #[dojo::contract]
-pub mod special_shortcut {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_SHORTCUT_ID;
+pub mod special_efficient_hunter_s2 {
+    use jokers_of_neon_classic::specials::specials::SPECIAL_EFFICIENT_HUNTER_S2_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::IContextExecutable;
     use jokers_of_neon_lib::models::card_type::CardType;
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
-    impl ShortcutExecutable of IContextExecutable<ContractState> {
+    impl EfficientHunterS2Executable of IContextExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext) -> GameContext {
             // Reduce target score by 25% each round
             let mut context = context;
@@ -17,9 +17,9 @@ pub mod special_shortcut {
     }
 
     #[abi(embed_v0)]
-    impl ShortcutBase of ICardBase<ContractState> {
+    impl EfficientHunterS2Base of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            SPECIAL_SHORTCUT_ID
+            SPECIAL_EFFICIENT_HUNTER_S2_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {

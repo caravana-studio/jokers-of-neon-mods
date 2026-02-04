@@ -1,5 +1,5 @@
 #[dojo::contract]
-pub mod special_neon_synergy {
+pub mod special_neon_synergy_s2 {
     use jokers_of_neon_classic::specials::specials::SPECIAL_NEON_SYNERGY_S2_ID;
     use jokers_of_neon_lib::constants::card::get_card;
     use jokers_of_neon_lib::constants::utils::{is_common_card, is_neon_card};
@@ -10,7 +10,7 @@ pub mod special_neon_synergy {
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
-    impl NeonSynergyConverter of ICardConverter<ContractState> {
+    impl NeonSynergyS2Converter of ICardConverter<ContractState> {
         fn apply(ref self: ContractState, context: GameContext, cards: Span<Card>) -> Span<Card> {
             // Count neon cards
             let mut neon_count: u32 = 0;
@@ -41,7 +41,7 @@ pub mod special_neon_synergy {
     }
 
     #[abi(embed_v0)]
-    impl NeonSynergyBase of ICardBase<ContractState> {
+    impl NeonSynergyS2Base of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_NEON_SYNERGY_S2_ID
         }

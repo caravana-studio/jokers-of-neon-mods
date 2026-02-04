@@ -14,7 +14,7 @@ max-line-length = 120
 [dependencies]
 dojo = "1.8.0"
 dojo_cairo_macros = "1.8.0"
-jokers_of_neon_lib = { git = "https://github.com/caravana-studio/jokers-of-neon-lib", branch="develop" }
+jokers_of_neon_lib = { git = "https://github.com/caravana-studio/jokers-of-neon-lib", branch="add-special-cards-season-2" }
 starknet = "2.13.1"
 
 [[target.starknet-contract]]
