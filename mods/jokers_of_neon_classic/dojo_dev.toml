@@ -27,7 +27,6 @@ private_key = "0x3e3979c1ed728490308054fe357a9f49cf67f80f9721f44cc57235129e090f4
     "jokers_of_neon_classic-special_random_multi_for_heart",
     "jokers_of_neon_classic-special_random_multi_for_club",
     "jokers_of_neon_classic-special_queens_fortune",
-    "jokers_of_neon_classic-special_kings_faith",
     "jokers_of_neon_classic-special_faded_poster",
     "jokers_of_neon_classic-special_hestia_blessing",
     "jokers_of_neon_classic-special_hanged_joker",
@@ -35,4 +34,10 @@ private_key = "0x3e3979c1ed728490308054fe357a9f49cf67f80f9721f44cc57235129e090f4
     "jokers_of_neon_classic-special_suit_roulette",
     "jokers_of_neon_classic-special_swamp_redemption",
     "jokers_of_neon_classic-special_lucky_cashback",
+    # Season 2
+    "jokers_of_neon_classic-special_season2_1_s2",
+    "jokers_of_neon_classic-special_season2_2_s2",
+    "jokers_of_neon_classic-special_season2_4_s2",
+    "jokers_of_neon_classic-special_season2_5_s2",
+    "jokers_of_neon_classic-special_neon_doctrine_s2",
 ]
