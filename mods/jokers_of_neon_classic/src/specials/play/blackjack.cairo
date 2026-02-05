@@ -13,9 +13,9 @@ pub mod special_blackjack {
             let mut acum_asc = 0;
             let mut acum_desc = 0;
 
-            for (hit, _, card) in context.cards_played {
-                if *hit {
-                    add_card_value(*card, ref acum_asc, ref acum_desc);
+            for played_card in context.cards_played {
+                if *played_card.hit && !*played_card.silenced {
+                    add_card_value(*played_card.card, ref acum_asc, ref acum_desc);
                 }
             }
 

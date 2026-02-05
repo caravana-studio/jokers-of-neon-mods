@@ -11,13 +11,9 @@ pub mod special_spade_trio {
     impl SpadeTrioExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut count_spades: u32 = 0;
-            let mut cards = context.cards_played;
-            loop {
-                match cards.pop_front() {
-                    Option::Some((hit, _, card)) => { if *hit && *card.suit == Suit::Spades {
-                        count_spades += 1;
-                    } },
-                    Option::None => { break; },
+            for played_card in context.cards_played {
+                if *played_card.hit && !*played_card.silenced && *played_card.card.suit == Suit::Spades {
+                    count_spades += 1;
                 }
             }
 

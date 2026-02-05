@@ -18,15 +18,15 @@ pub mod special_suit_roulette {
             let mut hearts = 0;
             let mut diamonds = 0;
 
-            for (hit, _, card) in context.cards_played {
-                if *hit {
-                    if *card.suit == Suit::Spades {
+            for played_card in context.cards_played {
+                if *played_card.hit && !*played_card.silenced {
+                    if *played_card.card.suit == Suit::Spades {
                         spades += 1;
-                    } else if *card.suit == Suit::Clubs {
+                    } else if *played_card.card.suit == Suit::Clubs {
                         clubs += 1;
-                    } else if *card.suit == Suit::Hearts {
+                    } else if *played_card.card.suit == Suit::Hearts {
                         hearts += 1;
-                    } else if *card.suit == Suit::Diamonds {
+                    } else if *played_card.card.suit == Suit::Diamonds {
                         diamonds += 1;
                     }
                 }

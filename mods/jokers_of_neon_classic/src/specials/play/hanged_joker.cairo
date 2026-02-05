@@ -30,8 +30,10 @@ pub mod special_hanged_joker {
 
             // Check if play contains joker
             let mut play_contains_joker = false;
-            for (hit, _, card) in context.cards_played {
-                if *hit && (*card.id == JOKER_CARD_ID || *card.id == NEON_JOKER_CARD_ID) {
+            for played_card in context.cards_played {
+                if *played_card.hit
+                    && !*played_card.silenced
+                    && (*played_card.card.id == JOKER_CARD_ID || *played_card.card.id == NEON_JOKER_CARD_ID) {
                     play_contains_joker = true;
                     break;
                 }

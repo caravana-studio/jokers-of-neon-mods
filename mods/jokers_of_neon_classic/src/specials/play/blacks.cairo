@@ -13,22 +13,14 @@ pub mod special_blacks {
             let mut count: u8 = 0;
             let mut count_spades: u8 = 0;
             let mut count_clubs: u8 = 0;
-            let mut cards = context.cards_played;
-            loop {
-                match cards.pop_front() {
-                    Option::Some((
-                        hit, _, card,
-                    )) => {
-                        if *hit {
-                            if *card.suit == Suit::Spades {
-                                count_spades = count_spades + 1;
-                            } else if *card.suit == Suit::Clubs {
-                                count_clubs = count_clubs + 1;
-                            }
-                            count = count + 1;
-                        }
-                    },
-                    Option::None => { break; },
+            for played_card in context.cards_played {
+                if *played_card.hit && !*played_card.silenced {
+                    if *played_card.card.suit == Suit::Spades {
+                        count_spades = count_spades + 1;
+                    } else if *played_card.card.suit == Suit::Clubs {
+                        count_clubs = count_clubs + 1;
+                    }
+                    count = count + 1;
                 }
             }
 
