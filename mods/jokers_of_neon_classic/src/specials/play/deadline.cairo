@@ -1,5 +1,6 @@
 #[dojo::contract]
 mod special_deadline {
+    use jokers_of_neon_classic::poker_hand::get_poker_hand_data;
     use jokers_of_neon_classic::specials::specials::SPECIAL_DEADLINE_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
@@ -9,8 +10,16 @@ mod special_deadline {
     #[abi(embed_v0)]
     impl DeadlineExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
+            let (poker_hand, level) = context.hand;
+            let (leveled_points, leveled_multi) = get_poker_hand_data(poker_hand, level + 10);
+            let (current_points, current_multi) = get_poker_hand_data(poker_hand, level);
+
             if context.round.remaining_plays == 1 {
-                (80, 8, 0)
+                (
+                    (leveled_points - current_points).try_into().unwrap(),
+                    (leveled_multi - current_multi).try_into().unwrap(),
+                    0,
+                )
             } else {
                 (0, 0, 0)
             }
