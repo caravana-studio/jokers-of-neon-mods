@@ -1,4 +1,6 @@
-use jokers_of_neon_classic::specials::specials::{SPECIAL_ALL_CARDS_TO_HEARTS_ID, specials_ids_all, specials_shop_info};
+use jokers_of_neon_classic::specials::specials::{
+    SPECIAL_ALL_CARDS_TO_HEARTS_ID, get_base_specials_shop_info, specials_ids_all,
+};
 use jokers_of_neon_lib::constants::card::{
     JOKER_CARD_ID, NEON_JOKER_CARD_ID, all_clubs_cards, all_diamonds_cards, all_hearts_cards, all_spades_cards,
     neon_cards_all, neon_clubs_cards, neon_diamonds_cards, neon_hearts_cards, neon_spades_cards, traditional_cards_all,
@@ -88,7 +90,7 @@ pub fn JOKER_LOOT_BOX() -> LootBox {
 }
 
 pub fn SPECIALS_LOOT_BOX() -> LootBox {
-    let (specials_group, specials_probs, _) = specials_shop_info();
+    let (specials_group, specials_probs, _) = get_base_specials_shop_info();
     let (modifiers_group, modifiers_probs, _) = modifiers_shop_info();
     LootBox {
         id: SPECIALS_LOOT_BOX_ID,

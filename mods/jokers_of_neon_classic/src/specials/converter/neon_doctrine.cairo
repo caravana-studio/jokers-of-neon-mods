@@ -1,5 +1,5 @@
 #[dojo::contract]
-pub mod special_neon_doctrine_s2 {
+pub mod special_neon_doctrine {
     use jokers_of_neon_classic::constants::DEFAULT_NS;
     use jokers_of_neon_classic::specials::specials::SPECIAL_NEON_DOCTRINE_ID;
     use jokers_of_neon_lib::constants::card::get_card;
