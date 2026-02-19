@@ -11,8 +11,8 @@ pub mod special_accidental_value {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             // Count miss cards (cards where hit == false)
             let mut miss_count: i32 = 0;
-            for (hit, _, _) in context.cards_played {
-                if !*hit {
+            for played_card in context.cards_played {
+                if !*played_card.hit {
                     miss_count += 1;
                 }
             }

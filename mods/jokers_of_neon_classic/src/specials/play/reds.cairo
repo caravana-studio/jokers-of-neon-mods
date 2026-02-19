@@ -13,22 +13,14 @@ pub mod special_reds {
             let mut count: u8 = 0;
             let mut count_hearts: u8 = 0;
             let mut count_diamonds: u8 = 0;
-            let mut cards = context.cards_played;
-            loop {
-                match cards.pop_front() {
-                    Option::Some((
-                        hit, _, card,
-                    )) => {
-                        if *hit {
-                            if *card.suit == Suit::Hearts {
-                                count_hearts = count_hearts + 1;
-                            } else if *card.suit == Suit::Diamonds {
-                                count_diamonds = count_diamonds + 1;
-                            }
-                            count = count + 1;
-                        }
-                    },
-                    Option::None => { break; },
+            for played_card in context.cards_played {
+                if *played_card.hit {
+                    if *played_card.card.suit == Suit::Hearts {
+                        count_hearts = count_hearts + 1;
+                    } else if *played_card.card.suit == Suit::Diamonds {
+                        count_diamonds = count_diamonds + 1;
+                    }
+                    count = count + 1;
                 }
             }
 

@@ -10,12 +10,8 @@ pub mod special_arithmomania {
     impl ArithmomaniaExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut cards_values_acum: u32 = 0;
-            let mut cards = context.cards_played;
-            loop {
-                match cards.pop_front() {
-                    Option::Some((_, _, card)) => { cards_values_acum += *card.points; },
-                    Option::None => { break; },
-                }
+            for played_card in context.cards_played {
+                cards_values_acum += *played_card.card.points;
             }
 
             if cards_values_acum % 2 == 0 {
