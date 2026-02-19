@@ -1,8 +1,8 @@
 #[dojo::contract]
-pub mod special_season2_4_s2 {
+pub mod special_impermanence {
     use dojo::model::ModelStorage;
     use jokers_of_neon_classic::constants::DEFAULT_NS;
-    use jokers_of_neon_classic::specials::specials::SPECIAL_SEASON2_4_S2_ID;
+    use jokers_of_neon_classic::specials::specials::SPECIAL_IMPERMANENCE_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable;
     use jokers_of_neon_lib::interfaces::cards::executable::IContextExecutable;
@@ -19,13 +19,13 @@ pub mod special_season2_4_s2 {
         key: felt252,
         value: u32,
     }
-    const SEASON2_4_S2_KEY: felt252 = 'SEASON2_4_S2_KEY';
+    const SEASON2_4_KEY: felt252 = 'SEASON2_4_KEY';
 
     #[abi(embed_v0)]
     impl Season2_4S2Equipable of ICardEquipable<ContractState> {
         fn equip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
-            world.write_model(@Cumulative { game_id: context.game.id, key: SEASON2_4_S2_KEY, value: 5 });
+            world.write_model(@Cumulative { game_id: context.game.id, key: SEASON2_4_KEY, value: 5 });
             context
         }
 
@@ -39,7 +39,7 @@ pub mod special_season2_4_s2 {
         fn execute(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
             let mut context = context;
-            let mut cumulative: Cumulative = world.read_model((context.game.id, SEASON2_4_S2_KEY));
+            let mut cumulative: Cumulative = world.read_model((context.game.id, SEASON2_4_KEY));
 
             let hand_bonus = cumulative.value;
             if cumulative.value > 0 {
@@ -55,7 +55,7 @@ pub mod special_season2_4_s2 {
     #[abi(embed_v0)]
     impl Season2_4S2Base of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            SPECIAL_SEASON2_4_S2_ID
+            SPECIAL_IMPERMANENCE_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
@@ -67,7 +67,7 @@ pub mod special_season2_4_s2 {
     impl Season2_4S2Info of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let cumulative: Cumulative = world.read_model((game_id, SEASON2_4_S2_KEY));
+            let cumulative: Cumulative = world.read_model((game_id, SEASON2_4_KEY));
             (cumulative.value.try_into().unwrap(), 0, 0)
         }
     }

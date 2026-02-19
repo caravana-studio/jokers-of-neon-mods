@@ -40,26 +40,24 @@ pub mod specials {
         pub mod second_chance;
     }
     pub mod game {
+        pub mod efficient_hunter;
         pub mod extra_help;
         pub mod hand_thief;
+        // SEASON 2
+        pub mod impermanence;
         pub mod plus_discards;
         pub mod plus_plays;
-        // SEASON 2
-        pub mod season2_4_s2;
-        pub mod efficient_hunter_s2;
         pub mod tamer_of_chances;
     }
     pub mod shop {
-        pub mod season2_2_s2;
+        pub mod providence;
     }
     pub mod converter {
         pub mod all_cards_to_hearts;
         pub mod deuces_wild;
         pub mod neon_doctrine;
-        // SEASON 2
-        pub mod neon_doctrine_s2;
-        pub mod neon_synergy_s2;
-        pub mod relativity_s2;
+        pub mod neon_synergy;
+        pub mod relativity;
     }
     pub mod discard {
         pub mod swamp_redemption;
@@ -97,17 +95,18 @@ pub mod specials {
     pub mod miss {}
     pub mod play {
         // SEASON 2
-        pub mod accidental_value_s2;
+        pub mod accidental_value;
         pub mod arithmomania;
         pub mod blackjack;
         pub mod blacks;
         pub mod burning_rewards;
-        pub mod cash_catalyst_s2;
+        pub mod cash_catalyst;
         pub mod circle_of_fortune;
         pub mod club_keeper;
         pub mod deadline;
         pub mod deck_collector;
         pub mod discard_mastery;
+        pub mod duality;
         pub mod efficient_play;
         pub mod faded_poster;
         pub mod hanged_joker;
@@ -123,22 +122,21 @@ pub mod specials {
         pub mod increase_level_straight;
         pub mod increase_level_three_of_a_kind;
         pub mod initial_advantage;
-        pub mod lifeflame_s2;
+        pub mod lifeflame;
         pub mod lucky_cashback;
+        pub mod minimalism;
         pub mod multiplier;
         pub mod rage_breaker;
         pub mod rainbow;
         pub mod reds;
+        pub mod residual_charge;
         pub mod rising_ladder;
         pub mod sacrifice;
         pub mod scaling_factor;
-        pub mod season2_1_s2;
-        pub mod season2_3_s2;
-        pub mod season2_5_s2;
         pub mod slot_saver;
         pub mod spade_trio;
         pub mod suit_roulette;
-        pub mod undying_draw_s2;
+        pub mod undying_draw;
     }
     pub mod power_up {
         pub mod power_up_booster;

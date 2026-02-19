@@ -1,6 +1,6 @@
 #[dojo::contract]
-pub mod special_relativity_s2 {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_RELATIVITY_S2_ID;
+pub mod special_relativity {
+    use jokers_of_neon_classic::specials::specials::SPECIAL_RELATIVITY_ID;
     use jokers_of_neon_lib::constants::card::get_card;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::converter::ICardConverter;
@@ -44,7 +44,7 @@ pub mod special_relativity_s2 {
     #[abi(embed_v0)]
     impl RelativityS2Base of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            SPECIAL_RELATIVITY_S2_ID
+            SPECIAL_RELATIVITY_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {

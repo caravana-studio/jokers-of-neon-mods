@@ -1,6 +1,6 @@
 #[dojo::contract]
-pub mod special_lifeflame_s2 {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_LIFEFLAME_S2_ID;
+pub mod special_lifeflame {
+    use jokers_of_neon_classic::specials::specials::SPECIAL_LIFEFLAME_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::models::card_type::CardType;
@@ -18,7 +18,7 @@ pub mod special_lifeflame_s2 {
     #[abi(embed_v0)]
     impl LifeflameS2Base of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            SPECIAL_LIFEFLAME_S2_ID
+            SPECIAL_LIFEFLAME_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {

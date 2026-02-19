@@ -1,6 +1,6 @@
 #[dojo::contract]
-pub mod special_neon_synergy_s2 {
-    use jokers_of_neon_classic::specials::specials::SPECIAL_NEON_SYNERGY_S2_ID;
+pub mod special_neon_synergy {
+    use jokers_of_neon_classic::specials::specials::SPECIAL_NEON_SYNERGY_ID;
     use jokers_of_neon_lib::constants::card::get_card;
     use jokers_of_neon_lib::constants::utils::{is_common_card, is_neon_card};
     use jokers_of_neon_lib::interfaces::base::ICardBase;
@@ -43,7 +43,7 @@ pub mod special_neon_synergy_s2 {
     #[abi(embed_v0)]
     impl NeonSynergyS2Base of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            SPECIAL_NEON_SYNERGY_S2_ID
+            SPECIAL_NEON_SYNERGY_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {

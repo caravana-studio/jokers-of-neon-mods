@@ -1,7 +1,7 @@
 #[dojo::contract]
-pub mod special_undying_draw_s2 {
+pub mod special_undying_draw {
     use jokers_of_neon_classic::poker_hand::get_poker_hand_data;
-    use jokers_of_neon_classic::specials::specials::SPECIAL_UNDYING_DRAW_S2_ID;
+    use jokers_of_neon_classic::specials::specials::SPECIAL_UNDYING_DRAW_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::level_up::ILevelUp;
     use jokers_of_neon_lib::models::card_type::CardType;
@@ -42,7 +42,7 @@ pub mod special_undying_draw_s2 {
     #[abi(embed_v0)]
     impl UndyingDrawS2Base of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            SPECIAL_UNDYING_DRAW_S2_ID
+            SPECIAL_UNDYING_DRAW_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {

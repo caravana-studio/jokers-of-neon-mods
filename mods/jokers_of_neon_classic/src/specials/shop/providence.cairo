@@ -1,14 +1,14 @@
 #[dojo::contract]
-pub mod special_season2_2_s2 {
+pub mod special_providence {
     use jokers_of_neon_classic::constants::DEFAULT_NS;
-    use jokers_of_neon_classic::specials::specials::SPECIAL_SEASON2_2_S2_ID;
+    use jokers_of_neon_classic::specials::specials::SPECIAL_PROVIDENCE_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::shop_discount::IShopDiscount;
     use jokers_of_neon_lib::models::card_type::CardType;
-    use jokers_of_neon_lib::models::tracker::GameContext;
     use jokers_of_neon_lib::models::status::shop::shop::{
         BlisterPackItem, BurnItem, CardItem, PokerHandItem, PowerUpItem, SlotSpecialCardsItem, SpecialCardItem,
     };
+    use jokers_of_neon_lib::models::tracker::GameContext;
     use crate::utils::random;
 
     #[abi(embed_v0)]
@@ -50,7 +50,7 @@ pub mod special_season2_2_s2 {
                     new_item.discount_cost = 0;
                 }
                 new_card_items.append(new_item);
-            };
+            }
 
             // 30% chance for special card items
             for item in special_card_items {
@@ -62,7 +62,7 @@ pub mod special_season2_2_s2 {
                     new_item.temporary_discount_cost = 0;
                 }
                 new_special_items.append(new_item);
-            };
+            }
 
             // 30% chance for blister pack items
             for item in blister_pack_items {
@@ -72,7 +72,7 @@ pub mod special_season2_2_s2 {
                     new_item.discount_cost = 0;
                 }
                 new_blister_items.append(new_item);
-            };
+            }
 
             // 30% chance for poker hand items
             for item in poker_hand_items {
@@ -82,7 +82,7 @@ pub mod special_season2_2_s2 {
                     new_item.discount_cost = 0;
                 }
                 new_poker_items.append(new_item);
-            };
+            }
 
             // 30% chance for power up items
             for item in power_up_items {
@@ -92,7 +92,7 @@ pub mod special_season2_2_s2 {
                     new_item.discount_cost = 0;
                 }
                 new_power_items.append(new_item);
-            };
+            }
 
             // 30% chance for slot item
             if random::between(ref world, context, (1, 10)) <= 3 {
@@ -106,14 +106,22 @@ pub mod special_season2_2_s2 {
                 new_burn_item.discount_cost = 0;
             }
 
-            (new_card_items, new_special_items, new_blister_items, new_poker_items, new_power_items, new_slot_item, new_burn_item)
+            (
+                new_card_items,
+                new_special_items,
+                new_blister_items,
+                new_poker_items,
+                new_power_items,
+                new_slot_item,
+                new_burn_item,
+            )
         }
     }
 
     #[abi(embed_v0)]
     impl Season2_2S2Base of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            SPECIAL_SEASON2_2_S2_ID
+            SPECIAL_PROVIDENCE_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
