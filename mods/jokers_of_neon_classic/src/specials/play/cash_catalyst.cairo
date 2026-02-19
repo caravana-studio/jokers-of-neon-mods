@@ -7,7 +7,7 @@ pub mod special_cash_catalyst {
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
-    impl CashCatalystS2Executable of ICardExecutable<ContractState> {
+    impl CashCatalystExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             // +1 multi per 1000 cash
             (0, (context.game.cash / 1000).try_into().unwrap(), 0)
@@ -15,7 +15,7 @@ pub mod special_cash_catalyst {
     }
 
     #[abi(embed_v0)]
-    impl CashCatalystS2Base of ICardBase<ContractState> {
+    impl CashCatalystBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_CASH_CATALYST_ID
         }

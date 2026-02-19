@@ -19,13 +19,13 @@ pub mod special_impermanence {
         key: felt252,
         value: u32,
     }
-    const SEASON2_4_KEY: felt252 = 'SEASON2_4_KEY';
+    const IMPERMANENCE_KEY: felt252 = 'IMPERMANENCE_KEY';
 
     #[abi(embed_v0)]
-    impl Season2_4S2Equipable of ICardEquipable<ContractState> {
+    impl ImpermanenceEquipable of ICardEquipable<ContractState> {
         fn equip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
-            world.write_model(@Cumulative { game_id: context.game.id, key: SEASON2_4_KEY, value: 5 });
+            world.write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_KEY, value: 5 });
             context
         }
 
@@ -35,11 +35,11 @@ pub mod special_impermanence {
     }
 
     #[abi(embed_v0)]
-    impl Season2_4S2Executable of IContextExecutable<ContractState> {
+    impl ImpermanenceExecutable of IContextExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
             let mut context = context;
-            let mut cumulative: Cumulative = world.read_model((context.game.id, SEASON2_4_KEY));
+            let mut cumulative: Cumulative = world.read_model((context.game.id, IMPERMANENCE_KEY));
 
             let hand_bonus = cumulative.value;
             if cumulative.value > 0 {
@@ -53,7 +53,7 @@ pub mod special_impermanence {
     }
 
     #[abi(embed_v0)]
-    impl Season2_4S2Base of ICardBase<ContractState> {
+    impl ImpermanenceBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_IMPERMANENCE_ID
         }
@@ -64,10 +64,10 @@ pub mod special_impermanence {
     }
 
     #[abi(embed_v0)]
-    impl Season2_4S2Info of ICardInfo<ContractState> {
+    impl ImpermanenceInfo of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let cumulative: Cumulative = world.read_model((game_id, SEASON2_4_KEY));
+            let cumulative: Cumulative = world.read_model((game_id, IMPERMANENCE_KEY));
             (cumulative.value.try_into().unwrap(), 0, 0)
         }
     }

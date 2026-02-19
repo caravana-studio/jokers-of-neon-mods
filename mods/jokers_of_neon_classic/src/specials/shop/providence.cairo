@@ -12,7 +12,7 @@ pub mod special_providence {
     use crate::utils::random;
 
     #[abi(embed_v0)]
-    impl Season2_2S2ShopDiscount of IShopDiscount<ContractState> {
+    impl ProvidenceShopDiscount of IShopDiscount<ContractState> {
         fn apply_discount(
             ref self: ContractState,
             context: GameContext,
@@ -119,7 +119,7 @@ pub mod special_providence {
     }
 
     #[abi(embed_v0)]
-    impl Season2_2S2Base of ICardBase<ContractState> {
+    impl ProvidenceBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_PROVIDENCE_ID
         }

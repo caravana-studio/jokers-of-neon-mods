@@ -7,7 +7,7 @@ pub mod special_duality {
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
-    impl Season2_3S2Executable of ICardExecutable<ContractState> {
+    impl DualityExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             // +300 points if 2 or fewer cards played
             if context.cards_played.len() <= 2 {
@@ -19,7 +19,7 @@ pub mod special_duality {
     }
 
     #[abi(embed_v0)]
-    impl Season2_3S2Base of ICardBase<ContractState> {
+    impl DualityBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_DUALITY_ID
         }

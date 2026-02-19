@@ -18,13 +18,13 @@ pub mod special_minimalism {
         key: felt252,
         value: i32,
     }
-    const SEASON2_1_KEY: felt252 = 'SEASON2_1_KEY';
+    const MINIMALISM_KEY: felt252 = 'MINIMALISM_KEY';
 
     #[abi(embed_v0)]
-    impl Season2_1S2Executable of ICardExecutable<ContractState> {
+    impl MinimalismExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let mut cumulative: Cumulative = world.read_model((context.game.id, SEASON2_1_KEY));
+            let mut cumulative: Cumulative = world.read_model((context.game.id, MINIMALISM_KEY));
 
             // If 3 or fewer cards played, add +5 to cumulative
             if context.cards_played.len() <= 3 {
@@ -37,7 +37,7 @@ pub mod special_minimalism {
     }
 
     #[abi(embed_v0)]
-    impl Season2_1S2Base of ICardBase<ContractState> {
+    impl MinimalismBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_MINIMALISM_ID
         }
@@ -48,10 +48,10 @@ pub mod special_minimalism {
     }
 
     #[abi(embed_v0)]
-    impl Season2_1S2Info of ICardInfo<ContractState> {
+    impl MinimalismInfo of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let cumulative: Cumulative = world.read_model((game_id, SEASON2_1_KEY));
+            let cumulative: Cumulative = world.read_model((game_id, MINIMALISM_KEY));
             (cumulative.value, 0, 0)
         }
     }
