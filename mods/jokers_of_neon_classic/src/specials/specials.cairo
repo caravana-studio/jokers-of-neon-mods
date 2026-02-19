@@ -23,8 +23,6 @@ pub const SPECIAL_LUCKY_HAND_ID: u32 = 10021;
 pub const SPECIAL_DISCARD_MASTERY_ID: u32 = 10022;
 pub const SPECIAL_SECOND_CHANCE_ID: u32 = 10023;
 pub const SPECIAL_GUARDIAN_SHIELD_ID: u32 = 10024;
-pub const SPECIAL_NEON_SYNERGY_ID: u32 = 10025;
-pub const SPECIAL_NEON_DOCTRINE_ID: u32 = 10026;
 pub const SPECIAL_LIFE_SAVER_ID: u32 = 10031;
 
 pub const SPECIAL_WANTED_JOKER_ID: u32 = 10036;
@@ -91,24 +89,27 @@ pub const SPECIAL_RAGE_BREAKER_ID: u32 = 10113;
 pub const SPECIAL_BURNING_REWARDS_ID: u32 = 10114;
 
 // [SEASON 2]
-// [A]
-pub const SPECIAL_SEASON2_1_S2_ID: u32 = 10201; // Cumulative +5 pts for ≤3 cards
-pub const SPECIAL_NEON_SYNERGY_S2_ID: u32 = 10202; // Convert to neon if 50%+ neon
-pub const SPECIAL_EFFICIENT_HUNTER_S2_ID: u32 = 10203; // -25% target each round
-// [B]
-pub const SPECIAL_ACCIDENTAL_VALUE_S2_ID: u32 = 10204; // +25 pts +1 multi per miss
-pub const SPECIAL_SEASON2_3_S2_ID: u32 = 10205; // +300 pts if ≤2 cards
-pub const SPECIAL_NEON_DOCTRINE_S2_ID: u32 = 10206; // 30% neon chance
 // [C]
-pub const SPECIAL_RELATIVITY_S2_ID: u32 = 10207; // Straight→High Straight
-pub const SPECIAL_CASH_CATALYST_S2_ID: u32 = 10208; // +1 multi per 1000 cash
-pub const SPECIAL_LIFEFLAME_S2_ID: u32 = 10209; // +15 pts per remaining plays/discards
-pub const SPECIAL_SEASON2_4_S2_ID: u32 = 10210; // +5 hand size decreasing by round
-// [S]
-pub const SPECIAL_SEASON2_5_S2_ID: u32 = 10211; // 25% power-up accumulator
-pub const SPECIAL_UNDYING_DRAW_S2_ID: u32 = 10212; // +1 multi after first discard
+pub const SPECIAL_RELATIVITY_ID: u32 = 10201;
+pub const SPECIAL_CASH_CATALYST_ID: u32 = 10202;
+pub const SPECIAL_LIFEFLAME_ID: u32 = 10203;
+pub const SPECIAL_IMPERMANENCE_ID: u32 = 10204;
+
+// [B]
+pub const SPECIAL_CASH_LOOP_ID: u32 = 10205;
+pub const SPECIAL_ACCIDENTAL_VALUE_ID: u32 = 10206;
+pub const SPECIAL_DUALITY_ID: u32 = 10207;
+pub const SPECIAL_NEON_DOCTRINE_ID: u32 = 10208;
+
 // [A]
-pub const SPECIAL_SEASON2_2_S2_ID: u32 = 10213; // 30% chance items cost 0
+pub const SPECIAL_MINIMALISM_ID: u32 = 10209;
+pub const SPECIAL_NEON_SYNERGY_ID: u32 = 10210;
+pub const SPECIAL_PROVIDENCE_ID: u32 = 10211;
+pub const SPECIAL_EFFICIENT_HUNTER_ID: u32 = 10212;
+
+// [S]
+pub const SPECIAL_RESIDUAL_CHARGE_ID: u32 = 10213;
+pub const SPECIAL_UNDYING_DRAW_ID: u32 = 10214;
 
 pub fn specials_ids_all() -> Array<u32> {
     array![
