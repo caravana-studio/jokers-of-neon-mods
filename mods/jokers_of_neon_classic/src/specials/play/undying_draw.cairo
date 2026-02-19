@@ -9,7 +9,7 @@ pub mod special_undying_draw {
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
-    impl UndyingDrawS2LevelUp of ILevelUp<ContractState> {
+    impl UndyingDrawLevelUp of ILevelUp<ContractState> {
         fn level_up(
             ref self: ContractState, context: GameContext, player_level_poker_hands: Span<PlayerLevelPokerHand>,
         ) -> Array<PlayerLevelPokerHand> {
@@ -40,7 +40,7 @@ pub mod special_undying_draw {
     }
 
     #[abi(embed_v0)]
-    impl UndyingDrawS2Base of ICardBase<ContractState> {
+    impl UndyingDrawse of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_UNDYING_DRAW_ID
         }

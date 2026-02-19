@@ -10,7 +10,7 @@ pub mod special_neon_synergy {
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
-    impl NeonSynergyS2Converter of ICardConverter<ContractState> {
+    impl NeonSynergyConverter of ICardConverter<ContractState> {
         fn apply(ref self: ContractState, context: GameContext, cards: Span<Card>) -> Span<Card> {
             // Count neon cards
             let mut neon_count: u32 = 0;
@@ -41,7 +41,7 @@ pub mod special_neon_synergy {
     }
 
     #[abi(embed_v0)]
-    impl NeonSynergyS2Base of ICardBase<ContractState> {
+    impl NeonSynergyse of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_NEON_SYNERGY_ID
         }

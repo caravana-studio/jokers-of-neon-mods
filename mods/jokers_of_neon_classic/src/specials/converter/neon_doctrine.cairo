@@ -12,7 +12,7 @@ pub mod special_neon_doctrine_s2 {
     use crate::utils::random;
 
     #[abi(embed_v0)]
-    impl NeonDoctrineS2Converter of ICardConverter<ContractState> {
+    impl NeonDoctrineConverter of ICardConverter<ContractState> {
         fn apply(ref self: ContractState, context: GameContext, cards: Span<Card>) -> Span<Card> {
             let mut world = self.world(DEFAULT_NS());
             let mut result = array![];
@@ -29,7 +29,7 @@ pub mod special_neon_doctrine_s2 {
     }
 
     #[abi(embed_v0)]
-    impl NeonDoctrineS2Base of ICardBase<ContractState> {
+    impl NeonDoctrinese of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_NEON_DOCTRINE_ID
         }

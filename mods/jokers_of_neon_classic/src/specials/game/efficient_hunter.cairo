@@ -7,7 +7,7 @@ pub mod special_efficient_hunter {
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
-    impl EfficientHunterS2Executable of IContextExecutable<ContractState> {
+    impl EfficientHunterExecutable of IContextExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext) -> GameContext {
             // Reduce target score by 25% each round
             let mut context = context;
@@ -17,7 +17,7 @@ pub mod special_efficient_hunter {
     }
 
     #[abi(embed_v0)]
-    impl EfficientHunterS2Base of ICardBase<ContractState> {
+    impl EfficientHunterse of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_EFFICIENT_HUNTER_ID
         }

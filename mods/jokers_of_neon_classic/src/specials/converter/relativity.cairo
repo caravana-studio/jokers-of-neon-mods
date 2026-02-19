@@ -10,7 +10,7 @@ pub mod special_relativity {
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
-    impl RelativityS2Converter of ICardConverter<ContractState> {
+    impl RelativityConverter of ICardConverter<ContractState> {
         fn apply(ref self: ContractState, context: GameContext, cards: Span<Card>) -> Span<Card> {
             let (poker_hand, _) = context.hand;
             if poker_hand == PokerHand::Straight || poker_hand == PokerHand::StraightFlush {
@@ -42,7 +42,7 @@ pub mod special_relativity {
     }
 
     #[abi(embed_v0)]
-    impl RelativityS2Base of ICardBase<ContractState> {
+    impl Relativityse of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_RELATIVITY_ID
         }
