@@ -30,20 +30,20 @@ pub mod special_residual_charge {
         value: i32,
     }
 
-    const SEASON2_5_PTS_KEY: felt252 = 'SEASON2_5_PTS_KEY';
-    const SEASON2_5_MULTI_KEY: felt252 = 'SEASON2_5_MULTI_KEY';
+    const RESIDUAL_CHARGE_PTS_KEY: felt252 = 'RESIDUAL_CHARGE_PTS';
+    const RESIDUAL_CHARGE_MULTI_KEY: felt252 = 'RESIDUAL_CHARGE_MULTI';
 
     #[abi(embed_v0)]
-    impl Season2_5S2Executable of ICardExecutable<ContractState> {
+    impl ResidualChargeExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
 
-            // If raw_data is non-zero, it's a PowerUp trigger - accumulate 25% of values
             if raw_data != 0 {
                 let power_up: PowerUp = raw_data.into();
 
-                let mut cumulative_pts: CumulativePoints = world.read_model((context.game.id, SEASON2_5_PTS_KEY));
-                let mut cumulative_multi: CumulativeMulti = world.read_model((context.game.id, SEASON2_5_MULTI_KEY));
+                let mut cumulative_pts: CumulativePoints = world.read_model((context.game.id, RESIDUAL_CHARGE_PTS_KEY));
+                let mut cumulative_multi: CumulativeMulti = world
+                    .read_model((context.game.id, RESIDUAL_CHARGE_MULTI_KEY));
 
                 cumulative_pts.value += (power_up.points * 25 / 100).try_into().unwrap();
                 cumulative_multi.value += (power_up.multi * 25 / 100).try_into().unwrap();
@@ -51,19 +51,17 @@ pub mod special_residual_charge {
                 world.write_model(@cumulative_pts);
                 world.write_model(@cumulative_multi);
 
-                // PowerUp trigger returns 0, accumulation happens silently
                 (0, 0, 0)
             } else {
-                // Play trigger - return accumulated values
-                let cumulative_pts: CumulativePoints = world.read_model((context.game.id, SEASON2_5_PTS_KEY));
-                let cumulative_multi: CumulativeMulti = world.read_model((context.game.id, SEASON2_5_MULTI_KEY));
+                let cumulative_pts: CumulativePoints = world.read_model((context.game.id, RESIDUAL_CHARGE_PTS_KEY));
+                let cumulative_multi: CumulativeMulti = world.read_model((context.game.id, RESIDUAL_CHARGE_MULTI_KEY));
                 (cumulative_pts.value, cumulative_multi.value, 0)
             }
         }
     }
 
     #[abi(embed_v0)]
-    impl Season2_5S2Base of ICardBase<ContractState> {
+    impl ResidualChargeBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_RESIDUAL_CHARGE_ID
         }
@@ -74,11 +72,11 @@ pub mod special_residual_charge {
     }
 
     #[abi(embed_v0)]
-    impl Season2_5S2Info of ICardInfo<ContractState> {
+    impl ResidualChargeInfo of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let cumulative_pts: CumulativePoints = world.read_model((game_id, SEASON2_5_PTS_KEY));
-            let cumulative_multi: CumulativeMulti = world.read_model((game_id, SEASON2_5_MULTI_KEY));
+            let cumulative_pts: CumulativePoints = world.read_model((game_id, RESIDUAL_CHARGE_PTS_KEY));
+            let cumulative_multi: CumulativeMulti = world.read_model((game_id, RESIDUAL_CHARGE_MULTI_KEY));
             (cumulative_pts.value, cumulative_multi.value, 0)
         }
     }

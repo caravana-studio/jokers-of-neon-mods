@@ -7,7 +7,7 @@ pub mod special_accidental_value {
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
-    impl AccidentalValueS2Executable of ICardExecutable<ContractState> {
+    impl AccidentalValueExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             // Count miss cards (cards where hit == false)
             let mut miss_count: i32 = 0;
@@ -23,7 +23,7 @@ pub mod special_accidental_value {
     }
 
     #[abi(embed_v0)]
-    impl AccidentalValueS2Base of ICardBase<ContractState> {
+    impl AccidentalValueBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
             SPECIAL_ACCIDENTAL_VALUE_ID
         }
