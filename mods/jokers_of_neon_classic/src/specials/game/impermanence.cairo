@@ -20,16 +20,23 @@ pub mod special_impermanence {
         value: u32,
     }
     const IMPERMANENCE_KEY: felt252 = 'IMPERMANENCE_KEY';
+    const IMPERMANENCE_LAST_BONUS: felt252 = 'IMPERMANENCE_LAST_BONUS';
 
     #[abi(embed_v0)]
     impl ImpermanenceEquipable of ICardEquipable<ContractState> {
         fn equip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
             world.write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_KEY, value: 5 });
+            world
+                .write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_LAST_BONUS, value: 0 });
             context
         }
 
         fn unequip(ref self: ContractState, context: GameContext) -> GameContext {
+            let mut world = self.world(DEFAULT_NS());
+            let last_bonus: Cumulative = world.read_model((context.game.id, IMPERMANENCE_LAST_BONUS));
+            let mut context = context;
+            context.game.hand_len -= last_bonus.value;
             context
         }
     }
@@ -39,15 +46,24 @@ pub mod special_impermanence {
         fn execute(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
             let mut context = context;
-            let mut cumulative: Cumulative = world.read_model((context.game.id, IMPERMANENCE_KEY));
+            let mut counter: Cumulative = world.read_model((context.game.id, IMPERMANENCE_KEY));
+            let mut last_bonus: Cumulative = world.read_model((context.game.id, IMPERMANENCE_LAST_BONUS));
 
-            let hand_bonus = cumulative.value;
-            if cumulative.value > 0 {
-                cumulative.value -= 1;
-                world.write_model(@cumulative);
+            let new_bonus = counter.value;
+
+            // Adjust hand_len: remove previous bonus, apply current bonus
+            context.game.hand_len = context.game.hand_len - last_bonus.value + new_bonus;
+
+            // Update last applied bonus
+            last_bonus.value = new_bonus;
+            world.write_model(@last_bonus);
+
+            // Decrement counter for next round
+            if counter.value > 0 {
+                counter.value -= 1;
+                world.write_model(@counter);
             }
 
-            context.game.hand_len += hand_bonus;
             context
         }
     }
@@ -67,8 +83,9 @@ pub mod special_impermanence {
     impl ImpermanenceInfo of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let cumulative: Cumulative = world.read_model((game_id, IMPERMANENCE_KEY));
-            (cumulative.value.try_into().unwrap(), 0, 0)
+            let counter: Cumulative = world.read_model((game_id, IMPERMANENCE_KEY));
+            // Show the bonus that will be applied next round (counter value)
+            (counter.value.try_into().unwrap(), 0, 0)
         }
     }
 }

@@ -14,7 +14,7 @@ pub mod special_residual_charge {
     #[derive(Copy, Drop, Serde)]
     struct CumulativePoints {
         #[key]
-        game_id: u32,
+        game_id: u64,
         #[key]
         key: felt252,
         value: i32,
@@ -24,7 +24,7 @@ pub mod special_residual_charge {
     #[derive(Copy, Drop, Serde)]
     struct CumulativeMulti {
         #[key]
-        game_id: u32,
+        game_id: u64,
         #[key]
         key: felt252,
         value: i32,
