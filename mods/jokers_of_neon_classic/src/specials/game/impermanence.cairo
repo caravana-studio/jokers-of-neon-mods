@@ -27,8 +27,7 @@ pub mod special_impermanence {
         fn equip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
             world.write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_KEY, value: 5 });
-            world
-                .write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_LAST_BONUS, value: 0 });
+            world.write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_LAST_BONUS, value: 0 });
             context
         }
 

@@ -15,8 +15,7 @@ pub mod special_undying_draw {
         ) -> Array<PlayerLevelPokerHand> {
             let mut result: Array<PlayerLevelPokerHand> = array![];
 
-            let discards_used: u32 = context.game.discards
-                - context.round.remaining_discards.into();
+            let discards_used: u32 = context.game.discards - context.round.remaining_discards.into();
             let first_discard_used = discards_used == 1;
 
             if first_discard_used {
