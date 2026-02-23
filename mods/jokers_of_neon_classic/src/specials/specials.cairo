@@ -201,8 +201,9 @@ pub fn get_base_specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) 
     let C_SPECIALS_PROBABILITY = 40;
     let C_SPECIALS_COST = 1000;
     let C_SPECIALS = array![ // Season 2
-    // SPECIAL_RELATIVITY_ID, SPECIAL_CASH_CATALYST_ID, SPECIAL_LIFEFLAME_ID,
-    SPECIAL_IMPERMANENCE_ID].span();
+        SPECIAL_RELATIVITY_ID, SPECIAL_CASH_CATALYST_ID, SPECIAL_LIFEFLAME_ID, SPECIAL_IMPERMANENCE_ID,
+    ]
+        .span();
 
     // B-Grade Group
     let B_SPECIALS_PROBABILITY = 10;
