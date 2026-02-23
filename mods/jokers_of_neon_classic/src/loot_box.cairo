@@ -203,7 +203,7 @@ pub fn HEARTS_LOOT_BOX() -> LootBox {
             all_hearts_cards().span(),
         ]
             .span(),
-        probs: array![100, 5, 5, 5, 30, 10, 45].span(),
+        probs: array![100, 2, 2, 2, 30, 10, 54].span(),
     }
 }
 
@@ -224,7 +224,7 @@ pub fn SPADES_LOOT_BOX() -> LootBox {
             all_spades_cards().span(),
         ]
             .span(),
-        probs: array![100, 5, 5, 5, 30, 10, 45].span(),
+        probs: array![100, 2, 2, 2, 30, 10, 54].span(),
     }
 }
 
@@ -245,7 +245,7 @@ pub fn DIAMONDS_LOOT_BOX() -> LootBox {
             all_diamonds_cards().span(),
         ]
             .span(),
-        probs: array![100, 5, 5, 5, 30, 10, 45].span(),
+        probs: array![100, 2, 2, 2, 30, 10, 54].span(),
     }
 }
 
@@ -265,7 +265,7 @@ pub fn CLUBS_LOOT_BOX() -> LootBox {
             all_clubs_cards().span(),
         ]
             .span(),
-        probs: array![100, 5, 5, 30, 10, 50].span(),
+        probs: array![100, 2, 2, 30, 10, 56].span(),
     }
 }
 
