@@ -17,7 +17,7 @@ pub mod special_impermanence {
         game_id: u64,
         #[key]
         key: felt252,
-        value: u32,
+        value: i32,
     }
     const IMPERMANENCE_KEY: felt252 = 'IMPERMANENCE_KEY';
 
@@ -25,17 +25,11 @@ pub mod special_impermanence {
     impl ImpermanenceEquipable of ICardEquipable<ContractState> {
         fn equip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
-            world.write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_KEY, value: 6 });
-            let mut context = context;
-            context.game.hand_len += 6;
+            world.write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_KEY, value: 5 });
             context
         }
 
         fn unequip(ref self: ContractState, context: GameContext) -> GameContext {
-            let mut world = self.world(DEFAULT_NS());
-            let cumulative: Cumulative = world.read_model((context.game.id, IMPERMANENCE_KEY));
-            let mut context = context;
-            context.game.hand_len -= cumulative.value;
             context
         }
     }
@@ -47,10 +41,23 @@ pub mod special_impermanence {
             let mut cumulative: Cumulative = world.read_model((context.game.id, IMPERMANENCE_KEY));
             let mut context = context;
 
+            println!(
+                "[IMPERMANENCE_EXECUTE] value_before: {}, hand_len_before: {}", cumulative.value, context.game.hand_len,
+            );
+
             if cumulative.value > 0 {
+                let bonus: u32 = cumulative.value.try_into().unwrap();
+                context.game.hand_len += bonus;
                 cumulative.value -= 1;
                 world.write_model(@cumulative);
-                context.game.hand_len -= 1;
+                println!(
+                    "[IMPERMANENCE_EXECUTE] bonus: {}, value_after: {}, hand_len_after: {}",
+                    bonus,
+                    cumulative.value,
+                    context.game.hand_len,
+                );
+            } else {
+                println!("[IMPERMANENCE_EXECUTE] value is 0, no bonus applied");
             }
 
             context
@@ -73,8 +80,7 @@ pub mod special_impermanence {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
             let counter: Cumulative = world.read_model((game_id, IMPERMANENCE_KEY));
-            // Show the bonus that will be applied next round (counter value)
-            (counter.value.try_into().unwrap(), 0, 0)
+            (counter.value, 0, 0)
         }
     }
 }
