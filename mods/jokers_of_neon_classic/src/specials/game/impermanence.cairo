@@ -20,22 +20,22 @@ pub mod special_impermanence {
         value: u32,
     }
     const IMPERMANENCE_KEY: felt252 = 'IMPERMANENCE_KEY';
-    const IMPERMANENCE_LAST_BONUS: felt252 = 'IMPERMANENCE_LAST_BONUS';
 
     #[abi(embed_v0)]
     impl ImpermanenceEquipable of ICardEquipable<ContractState> {
         fn equip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
-            world.write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_KEY, value: 5 });
-            world.write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_LAST_BONUS, value: 0 });
+            world.write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_KEY, value: 6 });
+            let mut context = context;
+            context.game.hand_len += 6;
             context
         }
 
         fn unequip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
-            let last_bonus: Cumulative = world.read_model((context.game.id, IMPERMANENCE_LAST_BONUS));
+            let cumulative: Cumulative = world.read_model((context.game.id, IMPERMANENCE_KEY));
             let mut context = context;
-            context.game.hand_len -= last_bonus.value;
+            context.game.hand_len -= cumulative.value;
             context
         }
     }
@@ -44,23 +44,13 @@ pub mod special_impermanence {
     impl ImpermanenceExecutable of IContextExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
+            let mut cumulative: Cumulative = world.read_model((context.game.id, IMPERMANENCE_KEY));
             let mut context = context;
-            let mut counter: Cumulative = world.read_model((context.game.id, IMPERMANENCE_KEY));
-            let mut last_bonus: Cumulative = world.read_model((context.game.id, IMPERMANENCE_LAST_BONUS));
 
-            let new_bonus = counter.value;
-
-            // Adjust hand_len: remove previous bonus, apply current bonus
-            context.game.hand_len = context.game.hand_len - last_bonus.value + new_bonus;
-
-            // Update last applied bonus
-            last_bonus.value = new_bonus;
-            world.write_model(@last_bonus);
-
-            // Decrement counter for next round
-            if counter.value > 0 {
-                counter.value -= 1;
-                world.write_model(@counter);
+            if cumulative.value > 0 {
+                cumulative.value -= 1;
+                world.write_model(@cumulative);
+                context.game.hand_len -= 1;
             }
 
             context
