@@ -16,16 +16,16 @@ pub mod special_undying_draw {
             let mut result: Array<PlayerLevelPokerHand> = array![];
 
             let discards_used: u32 = context.game.discards - context.round.remaining_discards.into();
-            let first_discard_used = discards_used == 1;
+            let first_discard_used = discards_used == 0;
+
+            let (played_poker_hand, _) = context.hand;
 
             if first_discard_used {
-                let (played_poker_hand, _) = context.hand;
-
                 for player_level_poker_hand in player_level_poker_hands {
                     let mut hand = *player_level_poker_hand;
                     if hand.poker_hand == played_poker_hand {
-                        hand.level += 1;
                         let (extra_points, extra_multi) = get_poker_hand_data(hand.poker_hand, 1);
+                        hand.level += 1;
                         hand.points += extra_points;
                         hand.multi += extra_multi;
                     }
@@ -47,7 +47,7 @@ pub mod special_undying_draw {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::LevelUpPlay].span()
+            array![CardType::LevelUpDiscard].span()
         }
     }
 }
