@@ -61,6 +61,7 @@ pub fn rages_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>, Span<u32>) {
     let S_RAGES_PROBABILITY = 10;
     let S_RAGES = array![
         RAGE_CARD_ZERO_WASTE, RAGE_CARD_STRATEGIC_QUARTED, RAGE_CARD_PUNCHED_TICKET, RAGE_CARD_FAVORITE_LOCK,
+        RAGE_CARD_SILENCE_SPECIALS,
     ]
         .span();
     let S_RAGES_REWARDS = 1500;

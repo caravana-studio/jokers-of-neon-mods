@@ -198,33 +198,30 @@ pub fn specials_ids_all() -> Array<u32> {
 
 pub fn get_base_specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // C-Grade Group
-    let C_SPECIALS_PROBABILITY = 40;
+    let C_SPECIALS_PROBABILITY = 25;
     let C_SPECIALS_COST = 1000;
     let C_SPECIALS = array![ // Season 2
-        SPECIAL_RELATIVITY_ID, SPECIAL_CASH_CATALYST_ID, SPECIAL_LIFEFLAME_ID, SPECIAL_IMPERMANENCE_ID,
+        SPECIAL_CASH_CATALYST_ID, SPECIAL_LIFEFLAME_ID, SPECIAL_RELATIVITY_ID, SPECIAL_IMPERMANENCE_ID,
     ]
         .span();
 
     // B-Grade Group
-    let B_SPECIALS_PROBABILITY = 10;
+    let B_SPECIALS_PROBABILITY = 25;
     let B_SPECIALS_COST = 1750;
-    let B_SPECIALS = array![
-        // Season 2
-        SPECIAL_CASH_LOOP_ID, SPECIAL_ACCIDENTAL_VALUE_ID, SPECIAL_DUALITY_ID, SPECIAL_NEON_DOCTRINE_ID,
-    ]
-        .span();
+    let B_SPECIALS = array![ // Season 2
+    // SPECIAL_CASH_LOOP_ID, SPECIAL_ACCIDENTAL_VALUE_ID, SPECIAL_DUALITY_ID,
+    SPECIAL_NEON_DOCTRINE_ID].span();
 
     // A-Grade Group
-    let A_SPECIALS_PROBABILITY = 10;
+    let A_SPECIALS_PROBABILITY = 25;
     let A_SPECIALS_COST = 3500;
-    let A_SPECIALS = array![
-        // Season 2
-        SPECIAL_MINIMALISM_ID, SPECIAL_NEON_SYNERGY_ID, SPECIAL_EFFICIENT_HUNTER_ID, SPECIAL_PROVIDENCE_ID,
-    ]
+    let A_SPECIALS = array![ // Season 2
+    // SPECIAL_MINIMALISM_ID,
+    SPECIAL_NEON_SYNERGY_ID, SPECIAL_EFFICIENT_HUNTER_ID, SPECIAL_PROVIDENCE_ID]
         .span();
 
     // S-Grade Group
-    let S_SPECIALS_PROBABILITY = 40;
+    let S_SPECIALS_PROBABILITY = 25;
     let S_SPECIALS_COST = 5000;
     let S_SPECIALS = array![ // Season 2
     SPECIAL_RESIDUAL_CHARGE_ID, SPECIAL_UNDYING_DRAW_ID].span();

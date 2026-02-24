@@ -10,9 +10,12 @@ pub fn between(ref world: WorldStorage, context: GameContext, range: (i32, i32))
     let wrapped_salt = salt.value.wrapping_add(context.game.seed);
 
     let mut random = RandomTrait::initialize_random(DEFAULT_NS_FELT(), wrapped_salt);
+
+    let (min, max) = range;
+    let result = random.between(min, max);
+
     salt.value = salt.value.wrapping_add(random.seed);
     world.write_model(@salt);
 
-    let (min, max) = range;
-    random.between(min, max)
+    result
 }
