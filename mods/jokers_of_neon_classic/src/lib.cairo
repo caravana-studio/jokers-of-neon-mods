@@ -102,6 +102,7 @@ pub mod specials {
         pub mod blacks;
         pub mod burning_rewards;
         pub mod cash_catalyst;
+        pub mod cash_loop;
         pub mod circle_of_fortune;
         pub mod club_keeper;
         pub mod deadline;
