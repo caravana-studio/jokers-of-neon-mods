@@ -1,5 +1,10 @@
 use jokers_of_neon_classic::specials::specials::{
-    SPECIAL_ALL_CARDS_TO_HEARTS_ID, get_base_specials_shop_info, specials_ids_all,
+    
+    SPECIAL_ALL_CARDS_TO_HEARTS_ID, SPECIAL_LUCKY_HAND_ID, SPECIAL_MULTI_FOR_CLUB_ID, SPECIAL_MULTI_FOR_DIAMOND_ID,
+    SPECIAL_MULTI_FOR_HEART_ID, SPECIAL_MULTI_FOR_SPADE_ID, SPECIAL_RANDOM_MULTI_FOR_CLUB_ID,
+    SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID, SPECIAL_RANDOM_MULTI_FOR_HEART_ID, SPECIAL_RANDOM_MULTI_FOR_SPADE_ID,
+    SPECIAL_SPADE_TRIO_ID, get_base_specials_shop_info,
+, specials_ids_all,
 };
 use jokers_of_neon_lib::constants::card::{
     JOKER_CARD_ID, NEON_JOKER_CARD_ID, all_clubs_cards, all_diamonds_cards, all_hearts_cards, all_spades_cards,
@@ -192,11 +197,12 @@ pub fn HEARTS_LOOT_BOX() -> LootBox {
         size: 5,
         cards: array![
             array![CardTrait::generate_id(Value::Ace, Suit::Hearts)].span(),
-            array![SPECIAL_ALL_CARDS_TO_HEARTS_ID].span(), neon_hearts_cards().span(),
+            array![SPECIAL_ALL_CARDS_TO_HEARTS_ID].span(), array![SPECIAL_RANDOM_MULTI_FOR_HEART_ID].span(),
+            array![SPECIAL_MULTI_FOR_HEART_ID].span(), neon_hearts_cards().span(),
             array![SUIT_HEARTS_MODIFIER_ID].span(), all_hearts_cards().span(),
         ]
             .span(),
-        probs: array![100, 5, 30, 10, 55].span(),
+        probs: array![100, 2, 2, 2, 30, 10, 54].span(),
     }
 }
 
@@ -208,11 +214,12 @@ pub fn SPADES_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 5,
         cards: array![
-            array![CardTrait::generate_id(Value::Ace, Suit::Spades)].span(), neon_spades_cards().span(),
-            array![SUIT_SPADES_MODIFIER_ID].span(), all_spades_cards().span(),
+            array![CardTrait::generate_id(Value::Ace, Suit::Spades)].span(), array![SPECIAL_SPADE_TRIO_ID].span(),
+            array![SPECIAL_MULTI_FOR_SPADE_ID].span(), array![SPECIAL_RANDOM_MULTI_FOR_SPADE_ID].span(),
+            neon_spades_cards().span(), array![SUIT_SPADES_MODIFIER_ID].span(), all_spades_cards().span(),
         ]
             .span(),
-        probs: array![100, 30, 10, 60].span(),
+        probs: array![100, 2, 2, 2, 30, 10, 54].span(),
     }
 }
 
@@ -224,11 +231,12 @@ pub fn DIAMONDS_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 5,
         cards: array![
-            array![CardTrait::generate_id(Value::Ace, Suit::Diamonds)].span(), neon_diamonds_cards().span(),
-            array![SUIT_DIAMONDS_MODIFIER_ID].span(), all_diamonds_cards().span(),
+            array![CardTrait::generate_id(Value::Ace, Suit::Diamonds)].span(), array![SPECIAL_LUCKY_HAND_ID].span(),
+            array![SPECIAL_MULTI_FOR_DIAMOND_ID].span(), array![SPECIAL_RANDOM_MULTI_FOR_DIAMOND_ID].span(),
+            neon_diamonds_cards().span(), array![SUIT_DIAMONDS_MODIFIER_ID].span(), all_diamonds_cards().span(),
         ]
             .span(),
-        probs: array![100, 30, 10, 60].span(),
+        probs: array![100, 2, 2, 2, 30, 10, 54].span(),
     }
 }
 
@@ -240,11 +248,12 @@ pub fn CLUBS_LOOT_BOX() -> LootBox {
         probability: 50,
         size: 5,
         cards: array![
-            array![CardTrait::generate_id(Value::Ace, Suit::Clubs)].span(), neon_clubs_cards().span(),
+            array![CardTrait::generate_id(Value::Ace, Suit::Clubs)].span(), array![SPECIAL_MULTI_FOR_CLUB_ID].span(),
+            array![SPECIAL_RANDOM_MULTI_FOR_CLUB_ID].span(), neon_clubs_cards().span(),
             array![SUIT_CLUB_MODIFIER_ID].span(), all_clubs_cards().span(),
         ]
             .span(),
-        probs: array![100, 30, 10, 60].span(),
+        probs: array![100, 2, 2, 30, 10, 56].span(),
     }
 }
 
