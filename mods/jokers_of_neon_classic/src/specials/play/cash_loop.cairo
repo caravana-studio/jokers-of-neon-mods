@@ -8,9 +8,7 @@ pub mod special_cash_loop {
 
     #[abi(embed_v0)]
     impl CashLoopExecutable of ICardExecutable<ContractState> {
-        fn execute(
-            ref self: ContractState, context: GameContext, raw_data: felt252,
-        ) -> (i32, i32, i32) {
+        fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             (0, 0, 0)
         }
     }

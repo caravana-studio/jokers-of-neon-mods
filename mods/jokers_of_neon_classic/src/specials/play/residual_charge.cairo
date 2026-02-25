@@ -32,6 +32,8 @@ pub mod special_residual_charge {
 
     const RESIDUAL_CHARGE_PTS_KEY: felt252 = 'RESIDUAL_CHARGE_PTS';
     const RESIDUAL_CHARGE_MULTI_KEY: felt252 = 'RESIDUAL_CHARGE_MULTI';
+    const SCALAR: u32 = 10; // 10 / 100 = 0.10x
+    const SCALE_BASE: u32 = 100;
 
     #[abi(embed_v0)]
     impl ResidualChargeExecutable of ICardExecutable<ContractState> {
@@ -45,8 +47,8 @@ pub mod special_residual_charge {
                 let mut cumulative_multi: CumulativeMulti = world
                     .read_model((context.game.id, RESIDUAL_CHARGE_MULTI_KEY));
 
-                cumulative_pts.value += (power_up.points * 25 / 100).try_into().unwrap();
-                cumulative_multi.value += (power_up.multi * 25 / 100).try_into().unwrap();
+                cumulative_pts.value += (power_up.points * SCALAR).try_into().unwrap();
+                cumulative_multi.value += (power_up.multi * SCALAR).try_into().unwrap();
 
                 world.write_model(@cumulative_pts);
                 world.write_model(@cumulative_multi);
@@ -55,7 +57,11 @@ pub mod special_residual_charge {
             } else {
                 let cumulative_pts: CumulativePoints = world.read_model((context.game.id, RESIDUAL_CHARGE_PTS_KEY));
                 let cumulative_multi: CumulativeMulti = world.read_model((context.game.id, RESIDUAL_CHARGE_MULTI_KEY));
-                (cumulative_pts.value, cumulative_multi.value, 0)
+                (
+                    cumulative_pts.value / SCALE_BASE.try_into().unwrap(),
+                    cumulative_multi.value / SCALE_BASE.try_into().unwrap(),
+                    0,
+                )
             }
         }
     }
@@ -77,7 +83,11 @@ pub mod special_residual_charge {
             let mut world = self.world(DEFAULT_NS());
             let cumulative_pts: CumulativePoints = world.read_model((game_id, RESIDUAL_CHARGE_PTS_KEY));
             let cumulative_multi: CumulativeMulti = world.read_model((game_id, RESIDUAL_CHARGE_MULTI_KEY));
-            (cumulative_pts.value, cumulative_multi.value, 0)
+            (
+                cumulative_pts.value / SCALE_BASE.try_into().unwrap(),
+                cumulative_multi.value / SCALE_BASE.try_into().unwrap(),
+                0,
+            )
         }
     }
 }
