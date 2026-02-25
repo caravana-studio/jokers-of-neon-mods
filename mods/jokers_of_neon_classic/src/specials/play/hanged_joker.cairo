@@ -28,17 +28,18 @@ pub mod special_hanged_joker {
             let mut world = self.world(DEFAULT_NS());
             let mut cumulative: Cumulative = world.read_model((context.game.id, HANGED_JOKER_KEY));
 
-            // Check if play contains joker
-            let mut play_contains_joker = false;
+            // Count jokers in played cards
+            let mut joker_count: i32 = 0;
             for played_card in context.cards_played {
                 if *played_card.hit
                     && (*played_card.card.id == JOKER_CARD_ID || *played_card.card.id == NEON_JOKER_CARD_ID) {
-                    play_contains_joker = true;
-                    break;
+                    joker_count += 1;
                 }
             }
 
-            if play_contains_joker && random::between(ref world, context, (1, 4)) == 1 {
+            // Each joker adds 20% chance (1/5) to accumulate +10
+            // 1 joker = 20%, 2 jokers = 40%, etc.
+            if joker_count > 0 && random::between(ref world, context, (1, 5)) <= joker_count {
                 cumulative.value += 10;
                 world.write_model(@cumulative);
             }

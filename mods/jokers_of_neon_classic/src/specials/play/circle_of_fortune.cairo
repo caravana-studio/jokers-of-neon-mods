@@ -17,9 +17,9 @@ pub mod special_circle_of_fortune {
             if random == 0 {
                 (300, 0, 0)
             } else if random % 2 == 0 {
-                (random * 2, 0, 0)
+                (random * 5, 0, 0)
             } else {
-                (0, 0, random * 2)
+                (0, 0, random * 10)
             }
         }
     }
