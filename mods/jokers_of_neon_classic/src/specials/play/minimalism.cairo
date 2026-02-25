@@ -1,15 +1,13 @@
 #[dojo::contract]
-pub mod special_hanged_joker {
+pub mod special_minimalism {
     use dojo::model::ModelStorage;
     use jokers_of_neon_classic::constants::DEFAULT_NS;
-    use jokers_of_neon_classic::specials::specials::SPECIAL_HANGED_JOKER_ID;
-    use jokers_of_neon_lib::constants::card::{JOKER_CARD_ID, NEON_JOKER_CARD_ID};
+    use jokers_of_neon_classic::specials::specials::SPECIAL_MINIMALISM_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::interfaces::cards::info::ICardInfo;
     use jokers_of_neon_lib::models::card_type::CardType;
     use jokers_of_neon_lib::models::tracker::GameContext;
-    use crate::utils::random;
 
     #[dojo::model]
     #[derive(Copy, Drop, Serde)]
@@ -20,36 +18,28 @@ pub mod special_hanged_joker {
         key: felt252,
         value: i32,
     }
-    const HANGED_JOKER_KEY: felt252 = 'HANGED_JOKER_KEY';
+    const MINIMALISM_KEY: felt252 = 'MINIMALISM_KEY';
 
     #[abi(embed_v0)]
-    impl HangedJokerExecutable of ICardExecutable<ContractState> {
+    impl MinimalismExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let mut cumulative: Cumulative = world.read_model((context.game.id, HANGED_JOKER_KEY));
+            let mut cumulative: Cumulative = world.read_model((context.game.id, MINIMALISM_KEY));
 
-            // Check if play contains joker
-            let mut play_contains_joker = false;
-            for played_card in context.cards_played {
-                if *played_card.hit
-                    && (*played_card.card.id == JOKER_CARD_ID || *played_card.card.id == NEON_JOKER_CARD_ID) {
-                    play_contains_joker = true;
-                    break;
-                }
-            }
-
-            if play_contains_joker && random::between(ref world, context, (1, 4)) == 1 {
-                cumulative.value += 10;
+            // If 3 or fewer cards played, add +5 to cumulative
+            if context.cards_played.len() <= 3 {
+                cumulative.value += 5;
                 world.write_model(@cumulative);
             }
+
             (cumulative.value, 0, 0)
         }
     }
 
     #[abi(embed_v0)]
-    impl HangedJokerBase of ICardBase<ContractState> {
+    impl MinimalismBase of ICardBase<ContractState> {
         fn get_id(self: @ContractState) -> u32 {
-            SPECIAL_HANGED_JOKER_ID
+            SPECIAL_MINIMALISM_ID
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
@@ -58,10 +48,10 @@ pub mod special_hanged_joker {
     }
 
     #[abi(embed_v0)]
-    impl HangedJokerInfo of ICardInfo<ContractState> {
+    impl MinimalismInfo of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let cumulative: Cumulative = world.read_model((game_id, HANGED_JOKER_KEY));
+            let cumulative: Cumulative = world.read_model((game_id, MINIMALISM_KEY));
             (cumulative.value, 0, 0)
         }
     }

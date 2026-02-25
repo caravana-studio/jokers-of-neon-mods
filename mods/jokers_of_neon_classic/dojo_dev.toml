@@ -7,7 +7,7 @@ seed = "jokers_of_neon_classic"
 default = "jokers_of_neon_classic"
 
 [env]
-rpc_url = "https://api.cartridge.gg/x/jokers-season-1/katana"
+rpc_url = "https://api.cartridge.gg/x/jokers-core-season2/katana"
 account_address = "0x6677fe62ee39c7b07401f754138502bab7fac99d2d3c5d37df7d1c6fab10819"
 private_key = "0x3e3979c1ed728490308054fe357a9f49cf67f80f9721f44cc57235129e090f4"
 
@@ -27,7 +27,6 @@ private_key = "0x3e3979c1ed728490308054fe357a9f49cf67f80f9721f44cc57235129e090f4
     "jokers_of_neon_classic-special_random_multi_for_heart",
     "jokers_of_neon_classic-special_random_multi_for_club",
     "jokers_of_neon_classic-special_queens_fortune",
-    "jokers_of_neon_classic-special_kings_faith",
     "jokers_of_neon_classic-special_faded_poster",
     "jokers_of_neon_classic-special_hestia_blessing",
     "jokers_of_neon_classic-special_hanged_joker",
@@ -35,4 +34,10 @@ private_key = "0x3e3979c1ed728490308054fe357a9f49cf67f80f9721f44cc57235129e090f4
     "jokers_of_neon_classic-special_suit_roulette",
     "jokers_of_neon_classic-special_swamp_redemption",
     "jokers_of_neon_classic-special_lucky_cashback",
+    "jokers_of_neon_classic-special_minimalism",
+    "jokers_of_neon_classic-special_providence",
+    "jokers_of_neon_classic-special_impermanence",
+    "jokers_of_neon_classic-special_residual_charge",
+    "jokers_of_neon_classic-special_neon_doctrine",
+    "jokers_of_neon_classic-rage_silence_specials",
 ]
