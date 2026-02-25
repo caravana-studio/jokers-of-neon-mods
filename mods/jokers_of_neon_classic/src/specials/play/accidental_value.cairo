@@ -9,10 +9,10 @@ pub mod special_accidental_value {
     #[abi(embed_v0)]
     impl AccidentalValueExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            // Count miss cards (cards where hit == false)
+            // Count miss cards (cards where hit == false and not silenced)
             let mut miss_count: i32 = 0;
             for played_card in context.cards_played {
-                if !*played_card.hit {
+                if !*played_card.hit && !*played_card.silenced {
                     miss_count += 1;
                 }
             }

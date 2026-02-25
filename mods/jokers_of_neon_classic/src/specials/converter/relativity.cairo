@@ -39,8 +39,8 @@ pub mod special_relativity {
                             } else {
                                 get_card(new_id)
                             };
+                        count = count + 1;
                     }
-                    count = count + 1;
                     result.append(new_card);
                 }
                 result.span()
