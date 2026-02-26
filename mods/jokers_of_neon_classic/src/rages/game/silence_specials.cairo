@@ -25,14 +25,22 @@ pub mod rage_silence_specials {
             };
 
             // Pick first random index
-            let idx1: u32 = random::between(ref world, context, (0, (len - 1).try_into().unwrap())).try_into().unwrap();
+            let idx1: u32 = if len == 1 {
+                0
+            } else {
+                random::between(ref world, context, (0, (len - 1).try_into().unwrap())).try_into().unwrap()
+            };
 
             let mut idx2 = idx1;
             if count == 2 {
-                // Pick second unique index
-                let idx2_raw: u32 = random::between(ref world, context, (0, (len - 2).try_into().unwrap()))
-                    .try_into()
-                    .unwrap();
+                // Pick second unique index (len >= 2 guaranteed here)
+                let idx2_raw: u32 = if len == 2 {
+                    0
+                } else {
+                    random::between(ref world, context, (0, (len - 2).try_into().unwrap()))
+                        .try_into()
+                        .unwrap()
+                };
                 idx2 = if idx2_raw >= idx1 {
                     idx2_raw + 1
                 } else {
