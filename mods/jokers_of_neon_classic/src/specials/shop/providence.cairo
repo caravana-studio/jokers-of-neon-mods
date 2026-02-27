@@ -56,20 +56,20 @@ pub mod special_providence {
             let base_seed = salt.value.wrapping_add(context.game.seed).wrapping_add(timestamp);
             let mut random = RandomTrait::initialize_random(DEFAULT_NS_FELT(), base_seed);
 
-            // 30% chance (3 out of 10) to make each card item cost 0
+            // 15% chance (3 out of 20) to make each card item cost 0
             for item in card_items {
                 let mut new_item = *item;
-                if random.between(1, 10) <= 2 {
+                if random.between(1, 20) <= 3 {
                     new_item.cost = 0;
                     new_item.discount_cost = 0;
                 }
                 new_card_items.append(new_item);
             }
 
-            // 30% chance for special card items
+            // 10% chance for special card items
             for item in special_card_items {
                 let mut new_item = *item;
-                if random.between(1, 10) <= 2 {
+                if random.between(1, 10) <= 1 {
                     new_item.cost = 0;
                     new_item.discount_cost = 0;
                     new_item.temporary_cost = 0;
@@ -78,44 +78,44 @@ pub mod special_providence {
                 new_special_items.append(new_item);
             }
 
-            // 30% chance for blister pack items
+            // 15% chance for blister pack items
             for item in blister_pack_items {
                 let mut new_item = *item;
-                if random.between(1, 10) <= 2 {
+                if random.between(1, 20) <= 3 {
                     new_item.cost = 0;
                     new_item.discount_cost = 0;
                 }
                 new_blister_items.append(new_item);
             }
 
-            // 30% chance for poker hand items
+            // 15% chance for poker hand items
             for item in poker_hand_items {
                 let mut new_item = *item;
-                if random.between(1, 10) <= 2 {
+                if random.between(1, 20) <= 3 {
                     new_item.cost = 0;
                     new_item.discount_cost = 0;
                 }
                 new_poker_items.append(new_item);
             }
 
-            // 30% chance for power up items
+            // 15% chance for power up items
             for item in power_up_items {
                 let mut new_item = *item;
-                if random.between(1, 10) <= 2 {
+                if random.between(1, 20) <= 3 {
                     new_item.cost = 0;
                     new_item.discount_cost = 0;
                 }
                 new_power_items.append(new_item);
             }
 
-            // 30% chance for slot item
-            if random.between(1, 10) <= 2 {
+            // 10% chance for slot item
+            if random.between(1, 10) <= 1 {
                 new_slot_item.cost = 0;
                 new_slot_item.discount_cost = 0;
             }
 
-            // 30% chance for burn item
-            if random.between(1, 10) <= 2 {
+            // 15% chance for burn item
+            if random.between(1, 20) <= 3 {
                 new_burn_item.cost = 0;
                 new_burn_item.discount_cost = 0;
             }

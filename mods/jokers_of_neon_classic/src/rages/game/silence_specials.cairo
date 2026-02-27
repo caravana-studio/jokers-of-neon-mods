@@ -37,9 +37,7 @@ pub mod rage_silence_specials {
                 let idx2_raw: u32 = if len == 2 {
                     0
                 } else {
-                    random::between(ref world, context, (0, (len - 2).try_into().unwrap()))
-                        .try_into()
-                        .unwrap()
+                    random::between(ref world, context, (0, (len - 2).try_into().unwrap())).try_into().unwrap()
                 };
                 idx2 = if idx2_raw >= idx1 {
                     idx2_raw + 1

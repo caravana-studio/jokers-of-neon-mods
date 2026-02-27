@@ -34,13 +34,14 @@ pub fn loot_boxes_ids_all() -> Array<u32> {
     array![
         BASIC_LOOT_BOX_ID, ADVANCED_LOOT_BOX_ID, JOKER_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID,
         FIGURES_LOOT_BOX_ID, DECEITFUL_JOKER_LOOT_BOX_ID, HEARTS_LOOT_BOX_ID, SPECIAL_BET_LOOT_BOX_ID, NEON_LOOT_BOX_ID,
+        SPADES_LOOT_BOX_ID, DIAMONDS_LOOT_BOX_ID, CLUBS_LOOT_BOX_ID,
     ]
 }
 
 pub fn loot_boxes_ids_all_without_jokers() -> Array<u32> {
     array![
         BASIC_LOOT_BOX_ID, SPECIALS_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, HEARTS_LOOT_BOX_ID,
-        SPECIAL_BET_LOOT_BOX_ID,
+        SPECIAL_BET_LOOT_BOX_ID, SPADES_LOOT_BOX_ID, DIAMONDS_LOOT_BOX_ID, CLUBS_LOOT_BOX_ID,
     ]
 }
 
@@ -293,20 +294,23 @@ pub fn loot_boxes_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>) {
     // D-Grade Group
     let D_LOOT_BOX_PROBABILITY = 30;
     let D_LOOT_BOX_COST = 500;
-    let D_LOOT_BOX = array![SPECIAL_BET_LOOT_BOX_ID].span();
+    let D_LOOT_BOX = array![SPECIAL_BET_LOOT_BOX_ID, BASIC_LOOT_BOX_ID].span();
 
     // C-Grade Group
     let C_LOOT_BOX_PROBABILITY = 30;
-    let C_LOOT_BOX_COST = 750;
-    let C_LOOT_BOX = array![BASIC_LOOT_BOX_ID, FIGURES_LOOT_BOX_ID, HEARTS_LOOT_BOX_ID].span();
+    let C_LOOT_BOX_COST = 1000;
+    let C_LOOT_BOX = array![
+        FIGURES_LOOT_BOX_ID, HEARTS_LOOT_BOX_ID, SPADES_LOOT_BOX_ID, CLUBS_LOOT_BOX_ID, DIAMONDS_LOOT_BOX_ID,
+    ]
+        .span();
     // B-Grade Group
     let B_LOOT_BOX_PROBABILITY = 20;
     let B_LOOT_BOX_COST = 1500;
-    let B_LOOT_BOX = array![ADVANCED_LOOT_BOX_ID, JOKER_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID].span();
+    let B_LOOT_BOX = array![ADVANCED_LOOT_BOX_ID, DECEITFUL_JOKER_LOOT_BOX_ID, MODIFIER_LOOT_BOX_ID].span();
     // A-Grade Group
     let A_LOOT_BOX_PROBABILITY = 20;
     let A_LOOT_BOX_COST = 2000;
-    let A_LOOT_BOX = array![SPECIALS_LOOT_BOX_ID, DECEITFUL_JOKER_LOOT_BOX_ID, NEON_LOOT_BOX_ID].span();
+    let A_LOOT_BOX = array![SPECIALS_LOOT_BOX_ID, JOKER_LOOT_BOX_ID, NEON_LOOT_BOX_ID].span();
     assert(
         D_LOOT_BOX_PROBABILITY + C_LOOT_BOX_PROBABILITY + B_LOOT_BOX_PROBABILITY + A_LOOT_BOX_PROBABILITY == 100,
         'wrong probability sum',
