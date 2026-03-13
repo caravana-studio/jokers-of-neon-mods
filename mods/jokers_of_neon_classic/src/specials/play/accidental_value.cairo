@@ -2,23 +2,22 @@
 pub mod special_accidental_value {
     use jokers_of_neon_classic::specials::specials::SPECIAL_ACCIDENTAL_VALUE_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
+    use jokers_of_neon_lib::interfaces::cards::condition::ICardCondition;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::models::card_type::CardType;
     use jokers_of_neon_lib::models::tracker::GameContext;
 
     #[abi(embed_v0)]
+    impl AccidentalValueCondition of ICardCondition<ContractState> {
+        fn condition(self: @ContractState, context: GameContext, raw_data: felt252) -> bool {
+            true
+        }
+    }
+
+    #[abi(embed_v0)]
     impl AccidentalValueExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            // Count miss cards (cards where hit == false and not silenced)
-            let mut miss_count: i32 = 0;
-            for played_card in context.cards_played {
-                if !*played_card.hit && !*played_card.silenced {
-                    miss_count += 1;
-                }
-            }
-
-            // +25 points and +1 multi per miss card
-            (25 * miss_count, miss_count, 0)
+            (25, 1, 0)
         }
     }
 
@@ -29,7 +28,7 @@ pub mod special_accidental_value {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::Play].span()
+            array![CardType::Miss].span()
         }
     }
 }
