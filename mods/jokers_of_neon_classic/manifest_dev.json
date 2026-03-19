@@ -43,8 +43,8 @@
       ]
     },
     {
-      "address": "0x4dbd08a58a9db6cff9b41d69ef0667c6c80e242ef33e4b967c06fc9fe4e5824",
-      "class_hash": "0x3c1ea9c4bfbfcf13044b2ad570f3a8472f3627008fe5e3d1215506997b04cf0",
+      "address": "0x51867a530ca7363b77311a043345614bd8442afd753a49ce6e559fe6b573e7c",
+      "class_hash": "0x76347c5e25baf3101cc0250ab1ad0916cec021d773a664b160386d0d08896f3",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-game_config",
       "selector": "0x4ced4ea116bc7edd29dcd5387f683c4672f5099d326a13288a2d27e7896ec04",
@@ -5652,8 +5652,13 @@
       "items": [
         {
           "type": "function",
-          "name": "get_game_config",
-          "inputs": [],
+          "name": "get_game_config_for_tier",
+          "inputs": [
+            {
+              "name": "tier",
+              "type": "core::integer::u8"
+            }
+          ],
           "outputs": [
             {
               "type": "jokers_of_neon_lib::configs::game::GameConfig"
