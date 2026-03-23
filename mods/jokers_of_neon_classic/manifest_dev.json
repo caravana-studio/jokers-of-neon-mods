@@ -275,8 +275,8 @@
       ]
     },
     {
-      "address": "0x5b28ce4a97005cc1d51fd7da6290c65b5d10e5ee474113a9baaf8cbaafa19b7",
-      "class_hash": "0x766de24d91889d20a78246d3b44c2c677abf4b3795c12db9a6bff8688a68d06",
+      "address": "0x663e9e7eab88fcd83e726641c07474e21dc4ee2aed3b80f0d83d7e5916ed532",
+      "class_hash": "0x577e537cd50d5bf81bb958403ac41f88d26b4b6e45428835fde05f5a9548b6a",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-shop_config",
       "selector": "0x3f1e66e3be7840da3d2846dacbb087ac476aa474bd1afcb23d4b104dbe4776",
