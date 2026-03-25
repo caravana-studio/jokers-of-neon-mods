@@ -43,7 +43,7 @@
       ]
     },
     {
-      "address": "0x4dbd08a58a9db6cff9b41d69ef0667c6c80e242ef33e4b967c06fc9fe4e5824",
+      "address": "0x49202ba41b05279247ef83827908678bf54f2a2edc10262ab5871effd9e461d",
       "class_hash": "0x3c1ea9c4bfbfcf13044b2ad570f3a8472f3627008fe5e3d1215506997b04cf0",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-game_config",
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "address": "0x25c60fd8785fd5956022b82a5ee71466350cce2cc60053765487027a22cbb1f",
+      "address": "0x2cda5a664e8face8ec1065f3bc4d93139baca85118892e59556e8cdc7214dda",
       "class_hash": "0x7f2554cf93cb3a4c47b19d28f6c73558e043ae9f6dacccb59ac7484e2cfe3bb",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-loot_boxes_info",
@@ -159,7 +159,7 @@
       ]
     },
     {
-      "address": "0x787f5cac67402c9e22da470b270d2ee7226539ae2e38eadb42d9dfaa4c1a161",
+      "address": "0x2df501eaae53f874e0d837969659dcd68077196a1ef89ddb59926beef7d0c4d",
       "class_hash": "0x5166ea62df9f0a0596eeb711f0f599d2c2cbd8fe95e5475ea75b14b1c65df3b",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_silence_specials",
@@ -286,7 +286,7 @@
     },
     {
       "address": "0x56068fdf4af6420bc951d00116044948cb00db1eb8ee70c814906eeec0b1d42",
-      "class_hash": "0x21ff2996044582a69b640de8508ee9ced7f2ac64bf261b37e4ad68723cbb593",
+      "class_hash": "0xe8aee2ef9f24b329ffefae6d212218e14a36ded66bd93cbb4de833cbbc3f6a",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_accidental_value",
       "selector": "0x3161576efc0f77a3fabf5542614ae9700ad8c744da67d11ff7eeccc31d7b793",
@@ -297,7 +297,7 @@
     },
     {
       "address": "0x17430c55cb234bccad5b10ccd7f27119e65fc6bb46d8f25f14cd22f7a20b41c",
-      "class_hash": "0x27e08cc9056b629a2fc7c326ee432139a2701dac0ebe42f7ec0acda3b12cd77",
+      "class_hash": "0x3cc1d4852aeabf6358f02bd44d46739aaefc3387b2f304343d68045d5e357fc",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_all_cards_to_hearts",
       "selector": "0x23535550682ae625e60fa91efcde1ef07f4c5edd1790ce0cfb988ef3780a74",
@@ -832,7 +832,7 @@
     },
     {
       "address": "0x5953f84a5f5376a0dd615aeae81942b1e532d984061c0e732571742b35dbfdb",
-      "class_hash": "0x41c92e72a9694292fbdd873f8f803c6aeb9c21c0bc20d5947df01f6de800c3b",
+      "class_hash": "0x2d2547040fcca61948d5d6b2a510240d5235f2355e123a823a0dd99a19357c9",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_neon_bonus",
       "selector": "0x2e36fb7233ea9d0f3901deece4f051aef7722fda70a60757a1c643498c07016",
@@ -921,7 +921,7 @@
       ]
     },
     {
-      "address": "0x67cdac95f13da8ecd716bc88185a500d6d9bbc28f69c1d7394011163c9087ac",
+      "address": "0x820149a627e33a417cd1d1e0cdce6d156a989214e9bc89c6b0757ab5f3983",
       "class_hash": "0x5a1d393569d2159b7eb875f046db92f275303f02212bc795a8869a62cc3035d",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_providence",
@@ -1208,7 +1208,7 @@
       ]
     },
     {
-      "address": "0x21d2d78b504c59a17834c3b0a48797b14ba7390c2025d536a580b3c4dc25a23",
+      "address": "0x7c80f806491440a02cba8a085e508ec75e6b144477daee9323a01f3e187cb54",
       "class_hash": "0x29e03d41d854863c87dcd0a462e1183ab4870386cc93075ee595af09bc748a3",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-specials_info",
