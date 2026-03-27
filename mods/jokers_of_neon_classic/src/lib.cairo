@@ -59,6 +59,8 @@ pub mod specials {
         pub mod neon_doctrine;
         pub mod neon_synergy;
         pub mod relativity;
+        // SEASON 3
+        pub mod wild_deuces;
     }
     pub mod discard {
         pub mod swamp_redemption;
@@ -139,6 +141,15 @@ pub mod specials {
         pub mod spade_trio;
         pub mod suit_roulette;
         pub mod undying_draw;
+        // SEASON 3
+        pub mod midas_hand;
+        pub mod discard_charge;
+        pub mod club_keeper_s3;
+        pub mod adrenaline;
+        pub mod extreme_attachment;
+        pub mod double_down;
+        pub mod royal_blessing;
+        pub mod disposophobia;
     }
     pub mod power_up {
         pub mod power_up_booster;
