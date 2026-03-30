@@ -48,6 +48,7 @@ pub mod specials {
         pub mod impermanence;
         pub mod plus_discards;
         pub mod plus_plays;
+        pub mod pocket_joker;
         pub mod tamer_of_chances;
     }
     pub mod shop {
@@ -99,6 +100,7 @@ pub mod specials {
     pub mod play {
         // SEASON 2
         pub mod accidental_value;
+        pub mod adrenaline;
         pub mod arithmomania;
         pub mod blackjack;
         pub mod blacks;
@@ -107,11 +109,16 @@ pub mod specials {
         pub mod cash_loop;
         pub mod circle_of_fortune;
         pub mod club_keeper;
+        pub mod club_keeper_s3;
         pub mod deadline;
         pub mod deck_collector;
+        pub mod discard_charge;
         pub mod discard_mastery;
+        pub mod disposophobia;
+        pub mod double_down;
         pub mod duality;
         pub mod efficient_play;
+        pub mod extreme_attachment;
         pub mod faded_poster;
         pub mod hanged_joker;
         pub mod hestia_blessing;
@@ -128,6 +135,8 @@ pub mod specials {
         pub mod initial_advantage;
         pub mod lifeflame;
         pub mod lucky_cashback;
+        // SEASON 3
+        pub mod midas_hand;
         pub mod minimalism;
         pub mod multiplier;
         pub mod rage_breaker;
@@ -135,21 +144,13 @@ pub mod specials {
         pub mod reds;
         pub mod residual_charge;
         pub mod rising_ladder;
+        pub mod royal_blessing;
         pub mod sacrifice;
         pub mod scaling_factor;
         pub mod slot_saver;
         pub mod spade_trio;
         pub mod suit_roulette;
         pub mod undying_draw;
-        // SEASON 3
-        pub mod midas_hand;
-        pub mod discard_charge;
-        pub mod club_keeper_s3;
-        pub mod adrenaline;
-        pub mod extreme_attachment;
-        pub mod double_down;
-        pub mod royal_blessing;
-        pub mod disposophobia;
     }
     pub mod power_up {
         pub mod power_up_booster;
