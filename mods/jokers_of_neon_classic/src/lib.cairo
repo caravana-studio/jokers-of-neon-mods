@@ -41,6 +41,7 @@ pub mod specials {
         pub mod second_chance;
     }
     pub mod game {
+        pub mod aftershock;
         pub mod efficient_hunter;
         pub mod extra_help;
         pub mod hand_thief;
