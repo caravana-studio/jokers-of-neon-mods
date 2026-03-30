@@ -50,6 +50,7 @@ pub mod specials {
         pub mod plus_discards;
         pub mod plus_plays;
         pub mod pocket_joker;
+        pub mod practice_shoot;
         pub mod tamer_of_chances;
     }
     pub mod shop {
