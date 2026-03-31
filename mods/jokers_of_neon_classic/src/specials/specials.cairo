@@ -116,24 +116,23 @@ pub const SPECIAL_UNDYING_DRAW_ID: u32 = 10214;
 pub const SPECIAL_WILD_DEUCES_ID: u32 = 10301;
 pub const SPECIAL_MIDAS_HAND_ID: u32 = 10302;
 pub const SPECIAL_DISCARD_CHARGE_ID: u32 = 10303;
+pub const SPECIAL_POCKET_JOKER_ID: u32 = 10304;
 
 // [B]
 pub const SPECIAL_CLUB_KEEPER_S3_ID: u32 = 10305;
 pub const SPECIAL_ADRENALINE_ID: u32 = 10306;
+pub const SPECIAL_LOOT_RUSH_ID: u32 = 10307;
+pub const SPECIAL_PRACTICE_SHOOT_ID: u32 = 10308;
 
 // [A]
+pub const SPECIAL_AFTERSHOCK_ID: u32 = 10309;
 pub const SPECIAL_EXTREME_ATTACHMENT_ID: u32 = 10310;
 pub const SPECIAL_DOUBLE_DOWN_ID: u32 = 10311;
 pub const SPECIAL_ROYAL_BLESSING_ID: u32 = 10312;
 
-// [A]
-pub const SPECIAL_POCKET_JOKER_ID: u32 = 10314;
-pub const SPECIAL_LOOT_RUSH_ID: u32 = 10315;
-pub const SPECIAL_PRACTICE_SHOOT_ID: u32 = 10317;
-
 // [S]
-pub const SPECIAL_AFTERSHOCK_ID: u32 = 10316;
 pub const SPECIAL_DISPOSOPHOBIA_ID: u32 = 10313;
+pub const SPECIAL_OUROBOROS_ID: u32 = 10314; // TODO: Check if we can implement this
 
 pub fn specials_ids_all() -> Array<u32> {
     array![
