@@ -54,7 +54,7 @@
     },
     {
       "address": "0x28cde2ef542cbbaa1d41281f5c3a9601fa64cf0b6114f24b10d1d6585fb2ecf",
-      "class_hash": "0x7e78851c9bf91213299c32b5a32b5d989df5797fce2d251a1647ff64b6eaa1f",
+      "class_hash": "0x7962022e558905857905da6ab8cebae52f8917c31999f577aa96fd53fffdc71",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-loot_boxes_info",
       "selector": "0x2634e0fd32b7d5f7de96fbe208a2cefecc75064dcbe911f6b4fb60f6cfb4b8a",
@@ -145,6 +145,17 @@
       "tag": "jokers_of_neon_classic-rage_locked_plays",
       "selector": "0x543a1d57e532210da609faf7cc4d9aefb1b5b32f728380340dfc4c0fa28f68d",
       "systems": [
+        "upgrade"
+      ]
+    },
+    {
+      "address": "0x5ff781bc2cf9db14de65ba952d1cd786f3f6135ee6eb90a6b34b780769939b7",
+      "class_hash": "0x57b0f08afeb9a6a6f21b3d1b44f9c56b989246db6a78723cd54f91eff37b4a4",
+      "init_calldata": [],
+      "tag": "jokers_of_neon_classic-rage_pharaohs_mandate",
+      "selector": "0x2be312f8673354ff9286aa5e99e72b0f044ec29634751e00547847146264595",
+      "systems": [
+        "level_up",
         "upgrade"
       ]
     },
@@ -266,7 +277,7 @@
     },
     {
       "address": "0x6bd8ed0310c8044ad7122ec4c7ef9a6948f37738f8703b6d2857a6098e770f",
-      "class_hash": "0x56777c3dc19ee51d8a5b1254552f5d61a188fe6bab1ec222fa6a8ee50c7cc55",
+      "class_hash": "0x4af56ec74bda3c378ae87fa6b6c09ff83d4bc45d108136125d2029a2a1592db",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rages_info",
       "selector": "0xf3a3b6b482e4142708c08118683156b9e290a98e20698f751bce2a15b1d6d9",
@@ -1341,7 +1352,7 @@
     },
     {
       "address": "0x6b5429b6c4bd305b57a85451c816b4e34034355397bc0acc1576293331d2972",
-      "class_hash": "0x5d7306ac3352fda08a6bf2092c506188314044c8134ca97941edbefd66e15b3",
+      "class_hash": "0x7f4960e64003f929fecaa9afb62f5e0334b28ab5f7cd2a7443ee78a2f96f0e7",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-specials_info",
       "selector": "0x875ca83c8d03a2c3343d75b29956e56b251703cb2509466968e3fbda4cf646",
@@ -3564,6 +3575,23 @@
     {
       "type": "event",
       "name": "jokers_of_neon_classic::rages::game::hand_leech::rage_hand_leech::Event",
+      "kind": "enum",
+      "variants": [
+        {
+          "name": "UpgradeableEvent",
+          "type": "dojo::contract::components::upgradeable::upgradeable_cpt::Event",
+          "kind": "nested"
+        },
+        {
+          "name": "WorldProviderEvent",
+          "type": "dojo::contract::components::world_provider::world_provider_cpt::Event",
+          "kind": "nested"
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "name": "jokers_of_neon_classic::rages::game::pharaohs_mandate::rage_pharaohs_mandate::Event",
       "kind": "enum",
       "variants": [
         {
