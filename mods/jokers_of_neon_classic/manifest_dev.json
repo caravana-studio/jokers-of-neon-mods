@@ -308,7 +308,7 @@
     },
     {
       "address": "0x20ae15303e1b9b42544d99e0dcc681f489907fc4a131abbc87d28c1570c6e4d",
-      "class_hash": "0x28ddb8711affad38f6bd9c340ca8a8878dbf47fdf8fbccacc84a01aedd79b48",
+      "class_hash": "0x76080248798489dcb9e7881777e1716dae9b274abd93785e882ef8d8e68dc3f",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_aftershock",
       "selector": "0x636432c9a072f0356a584c6a795570b3633b22da7ac37b9f40ba03676a345dc",
