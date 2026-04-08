@@ -55,6 +55,8 @@ pub mod special_disposophobia {
 
             let (poker_hand, _) = context.hand;
 
+            let bonus = (cum_pts.value, cum_multi.value, cum_cash.value);
+
             // 50% chance to accumulate
             let roll: i32 = random::between(ref world, context, (1, 100));
             if roll <= 50 {
@@ -75,7 +77,7 @@ pub mod special_disposophobia {
                 }
             }
 
-            (cum_pts.value, cum_multi.value, cum_cash.value)
+            bonus
         }
     }
 

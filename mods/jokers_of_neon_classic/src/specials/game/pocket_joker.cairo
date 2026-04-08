@@ -16,7 +16,9 @@ pub mod special_pocket_joker {
                 let (idx, card) = *item;
                 new_hand.append((idx, card));
             }
-            new_hand.append((0, JOKER_CARD()));
+            // idx starts at 0 and increments for each HandSetup card to avoid collisions
+            let next_idx: u32 = new_hand.len();
+            new_hand.append((next_idx, JOKER_CARD()));
             context.cards_in_hand = new_hand.span();
             context
         }
@@ -29,7 +31,7 @@ pub mod special_pocket_joker {
         }
 
         fn get_types(self: @ContractState) -> Span<CardType> {
-            array![CardType::PostDeal].span()
+            array![CardType::HandSetup].span()
         }
     }
 }

@@ -1,6 +1,6 @@
 #[dojo::contract]
 pub mod special_double_down {
-    use jokers_of_neon_classic::poker_hand::get_poker_hand_data;
+    use jokers_of_neon_classic::poker_hand::{initial_poker_hands, poker_hands_info};
     use jokers_of_neon_classic::specials::specials::SPECIAL_DOUBLE_DOWN_ID;
     use jokers_of_neon_lib::interfaces::base::ICardBase;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
@@ -10,10 +10,35 @@ pub mod special_double_down {
     #[abi(embed_v0)]
     impl DoubleDownExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            // Doubles the base points of the played hand
             let (poker_hand, level) = context.hand;
-            let (base_points, _) = get_poker_hand_data(poker_hand, level);
-            let bonus: i32 = (base_points).try_into().unwrap();
+
+            // Get initial base points (level 1)
+            let hands = initial_poker_hands();
+            let mut base_points: u32 = 0;
+            for hand in hands {
+                if hand.poker_hand == poker_hand {
+                    base_points = hand.points;
+                    break;
+                }
+            };
+
+            // Get level-up points per level for this hand's category
+            let (all_hands, _, _, points_per_level, _) = poker_hands_info();
+            let mut level_up_points: u32 = 0;
+            let mut category_idx: u32 = 0;
+            for category in all_hands {
+                for hand in *category {
+                    if *hand == poker_hand {
+                        level_up_points = *points_per_level.at(category_idx);
+                        break;
+                    }
+                };
+                category_idx += 1;
+            };
+
+            // Total points at current level = base + level_up * (level - 1)
+            let total_points = base_points + level_up_points * (level - 1);
+            let bonus: i32 = total_points.try_into().unwrap();
             (bonus, 0, 0)
         }
     }

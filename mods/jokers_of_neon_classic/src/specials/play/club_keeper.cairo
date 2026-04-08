@@ -10,14 +10,15 @@ pub mod special_club_keeper {
     #[abi(embed_v0)]
     impl ClubKeeperExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
-            let mut points = 0;
+            let mut points: i32 = 0;
             let mut cards_in_deck = context.cards_in_deck;
             loop {
                 match cards_in_deck.pop_front() {
                     Option::Some(card_id) => {
+                        // Check if card is a club (traditional or neon)
                         if (*card_id >= TWO_CLUBS_ID && *card_id <= ACE_CLUBS_ID)
-                            || (*card_id == NEON_TWO_CLUBS_ID && *card_id == NEON_ACE_CLUBS_ID) {
-                            points += 10;
+                            || (*card_id >= NEON_TWO_CLUBS_ID && *card_id <= NEON_ACE_CLUBS_ID) {
+                            points += 5;
                         }
                     },
                     Option::None => { break; },

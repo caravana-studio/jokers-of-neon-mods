@@ -112,7 +112,6 @@ pub mod specials {
         pub mod cash_loop;
         pub mod circle_of_fortune;
         pub mod club_keeper;
-        pub mod club_keeper_s3;
         pub mod deadline;
         pub mod deck_collector;
         pub mod discard_charge;

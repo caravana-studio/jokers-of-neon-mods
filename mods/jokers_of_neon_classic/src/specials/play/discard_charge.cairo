@@ -19,12 +19,24 @@ pub mod special_discard_charge {
         value: i32,
     }
     const DISCARD_CHARGE_KEY: felt252 = 'DISCARD_CHARGE_KEY';
+    const DISCARD_CHARGE_ROUND_KEY: felt252 = 'DISCARD_CHARGE_RND';
 
     #[abi(embed_v0)]
     impl DiscardChargeExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
             let mut cumulative: Cumulative = world.read_model((context.game.id, DISCARD_CHARGE_KEY));
+            let last_round: Cumulative = world.read_model((context.game.id, DISCARD_CHARGE_ROUND_KEY));
+
+            let current_round: i32 = context.game.round.try_into().unwrap();
+            if last_round.value != current_round {
+                cumulative.value = 0;
+                let gid: u32 = context.game.id.try_into().unwrap();
+                world
+                    .write_model(
+                        @Cumulative { game_id: gid, key: DISCARD_CHARGE_ROUND_KEY, value: current_round },
+                    );
+            }
 
             match context.card_type {
                 CardType::Discard => {
