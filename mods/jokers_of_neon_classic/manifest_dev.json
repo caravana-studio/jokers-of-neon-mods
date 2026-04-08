@@ -44,7 +44,7 @@
     },
     {
       "address": "0x7acd7a12056ac56230462e87e3e58bad8aa8ad6c5480d35e125fc2c57da3c4f",
-      "class_hash": "0x3027f3324b882633414b8fe3c5295a585df25fcf513d3ea978f6247b70d0515",
+      "class_hash": "0x5cecec074de97b8b82a7dfb8bfe0e3a750f98769d607ef3a8863800360ae4c9",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-game_config",
       "selector": "0x4ced4ea116bc7edd29dcd5387f683c4672f5099d326a13288a2d27e7896ec04",
