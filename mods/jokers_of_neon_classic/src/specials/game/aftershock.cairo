@@ -11,7 +11,7 @@ pub mod special_aftershock {
         fn on_end_round(ref self: ContractState, context: GameContext) -> SpecialGenerationRequest {
             // Only trigger after rage rounds
             if context.round.rages.len() > 0 {
-                SpecialGenerationRequest { quantity: 1, remaining: 3 }
+                SpecialGenerationRequest { quantity: 1, remaining: 4 }
             } else {
                 SpecialGenerationRequest { quantity: 0, remaining: 0 }
             }
