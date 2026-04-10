@@ -15,6 +15,8 @@ pub mod special_impermanence {
         #[key]
         game_id: u64,
         #[key]
+        special_instance_id: u64,
+        #[key]
         key: felt252,
         value: u32,
     }
@@ -30,19 +32,34 @@ pub mod special_impermanence {
             context.game.hand_len += IMPERMANENCE_BONUS;
             world
                 .write_model(
-                    @Cumulative { game_id: context.game.id, key: IMPERMANENCE_KEY, value: IMPERMANENCE_BONUS },
+                    @Cumulative {
+                        game_id: context.game.id,
+                        special_instance_id: context.special_instance_id,
+                        key: IMPERMANENCE_KEY,
+                        value: IMPERMANENCE_BONUS,
+                    },
                 );
             context
         }
 
         fn unequip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
-            let cumulative: Cumulative = world.read_model((context.game.id, IMPERMANENCE_KEY));
+            let cumulative: Cumulative = world.read_model(
+                (context.game.id, context.special_instance_id, IMPERMANENCE_KEY),
+            );
             let mut context = context;
             if cumulative.value > 0 {
                 context.game.hand_len -= cumulative.value;
             }
-            world.write_model(@Cumulative { game_id: context.game.id, key: IMPERMANENCE_KEY, value: 0 });
+            world
+                .write_model(
+                    @Cumulative {
+                        game_id: context.game.id,
+                        special_instance_id: context.special_instance_id,
+                        key: IMPERMANENCE_KEY,
+                        value: 0,
+                    },
+                );
             context
         }
     }
@@ -51,7 +68,9 @@ pub mod special_impermanence {
     impl ImpermanenceExecutable of IContextExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
-            let mut cumulative: Cumulative = world.read_model((context.game.id, IMPERMANENCE_KEY));
+            let mut cumulative: Cumulative = world.read_model(
+                (context.game.id, context.special_instance_id, IMPERMANENCE_KEY),
+            );
             let mut context = context;
             if cumulative.value > 0 {
                 context.game.hand_len -= 1;

@@ -158,6 +158,9 @@ pub mod specials {
     pub mod power_up {
         pub mod power_up_booster;
     }
+    pub mod pre_round {
+        pub mod ouroboros;
+    }
 }
 
 pub mod utils {
