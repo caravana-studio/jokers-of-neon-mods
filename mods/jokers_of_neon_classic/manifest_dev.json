@@ -799,12 +799,13 @@
     },
     {
       "address": "0x19fa2a038d8f0d3c48fc6b999abc1e06c8480c675e82abebd6079e889ae32cd",
-      "class_hash": "0x6d59edb1c6e6f56f2ec5984e8d904bda0d3d8994cd4513b1ddf1cca0c9e014e",
+      "class_hash": "0x1a19523e1b5f582589f96e1d72260a752280c2a4dae85e0b33f1d3f8532c629",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_loot_rush",
       "selector": "0xe42d07067fa00db2ae5080c26907fcec9f27106ab260164b2d9dd77370c83d",
       "systems": [
         "modify_shop_config",
+        "apply_discount",
         "upgrade"
       ]
     },
