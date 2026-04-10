@@ -11,7 +11,9 @@ pub mod special_loot_rush {
     impl LootRushShopModifier of IShopModifier<ContractState> {
         fn modify_shop_config(ref self: ContractState, context: GameContext, shop_config: ShopConfig) -> ShopConfig {
             let mut config = shop_config;
-            config.loot_boxes_quantity += 1;
+            if config.loot_boxes_quantity > 0 {
+                config.loot_boxes_quantity += 1;
+            }
             config
         }
     }
