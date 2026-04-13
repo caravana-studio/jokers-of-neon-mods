@@ -73,7 +73,7 @@ pub fn MODIFIERS_SHOP_CONFIG() -> ShopConfig {
         traditional_cards_quantity: 0,
         modifiers_cards_quantity: 4,
         specials_cards_quantity: 0,
-        loot_boxes_quantity: 0,
+        loot_boxes_quantity: 2,
         power_ups_quantity: 0,
         poker_hands_quantity: 0,
         burn_quantity: 0,
