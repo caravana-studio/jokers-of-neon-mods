@@ -21,7 +21,6 @@ pub mod special_extreme_attachment {
     }
     const EXTREME_POINTS_KEY: felt252 = 'EXTREME_PTS_KEY';
     const EXTREME_LAST_HAND_KEY: felt252 = 'EXTREME_HAND_KEY';
-    const EXTREME_ROUND_KEY: felt252 = 'EXTREME_ROUND_KEY';
 
     #[abi(embed_v0)]
     impl ExtremeAttachmentExecutable of ICardExecutable<ContractState> {
@@ -29,31 +28,21 @@ pub mod special_extreme_attachment {
             let mut world = self.world(DEFAULT_NS());
             let mut pts: Cumulative = world.read_model((context.game.id, EXTREME_POINTS_KEY));
             let mut last_hand: Cumulative = world.read_model((context.game.id, EXTREME_LAST_HAND_KEY));
-            let last_round: Cumulative = world.read_model((context.game.id, EXTREME_ROUND_KEY));
-
-            let current_round: i32 = context.game.round.try_into().unwrap();
-            if last_round.value != current_round {
-                pts.value = 0;
-                last_hand.value = 0;
-                let gid: u32 = context.game.id.try_into().unwrap();
-                world.write_model(@Cumulative { game_id: gid, key: EXTREME_ROUND_KEY, value: current_round });
-            }
 
             let (poker_hand, _) = context.hand;
             let current_hand_id: i32 = poker_hand_to_id(poker_hand);
 
-            let bonus = pts.value;
-
             if last_hand.value != current_hand_id {
-                pts.value = 25;
+                pts.value = 0;
                 last_hand.value = current_hand_id;
+                world.write_model(@pts);
                 world.write_model(@last_hand);
-            } else {
-                pts.value += 25;
+                return (0, 0, 0);
             }
 
+            pts.value += 25;
             world.write_model(@pts);
-            (bonus, 0, 0)
+            (pts.value, 0, 0)
         }
     }
 
