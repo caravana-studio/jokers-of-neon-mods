@@ -16,7 +16,6 @@ pub mod special_neon_doctrine {
         fn apply(ref self: ContractState, context: GameContext, cards: Span<Card>) -> Span<Card> {
             let mut world = self.world(DEFAULT_NS());
             let mut result = array![];
-            println!("[NEON_DOCTRINE] cards_len: {}", cards.len());
             for card in cards {
                 let mut new_card = *card;
                 let is_common = is_common_card(new_card.id);
@@ -25,13 +24,8 @@ pub mod special_neon_doctrine {
                     let roll = random::between(ref world, context, (1, 10));
                     if roll <= 3 {
                         let neon_id = CardTrait::generate_neon_id(new_card.id);
-                        println!("[NEON_DOCTRINE] CONVERT id:{} -> neon_id:{} roll:{}", new_card.id, neon_id, roll);
                         new_card = get_card(neon_id);
-                    } else {
-                        println!("[NEON_DOCTRINE] MISS id:{} roll:{}", new_card.id, roll);
                     }
-                } else {
-                    println!("[NEON_DOCTRINE] SKIP id:{} (not common)", new_card.id);
                 }
                 result.append(new_card);
             }

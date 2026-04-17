@@ -10,7 +10,6 @@ pub mod special_pocket_joker {
     #[abi(embed_v0)]
     impl PocketJokerExecutable of IContextExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext) -> GameContext {
-            println!("[pocket_joker] execute called, cards_in_hand len before: {}", context.cards_in_hand.len());
             let mut context = context;
             let mut new_hand: Array<(u32, jokers_of_neon_lib::models::data::card::Card)> = array![];
             for item in context.cards_in_hand {
@@ -21,7 +20,6 @@ pub mod special_pocket_joker {
             let next_idx: u32 = new_hand.len();
             new_hand.append((next_idx, JOKER_CARD()));
             context.cards_in_hand = new_hand.span();
-            println!("[pocket_joker] cards_in_hand len after: {}", context.cards_in_hand.len());
             context
         }
     }

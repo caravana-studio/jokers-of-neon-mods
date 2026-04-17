@@ -20,7 +20,7 @@ pub mod special_double_down {
                     base_points = hand.points;
                     break;
                 }
-            };
+            }
 
             // Get level-up points per level for this hand's category
             let (all_hands, _, _, points_per_level, _) = poker_hands_info();
@@ -32,9 +32,9 @@ pub mod special_double_down {
                         level_up_points = *points_per_level.at(category_idx);
                         break;
                     }
-                };
+                }
                 category_idx += 1;
-            };
+            }
 
             // Total points at current level = base + level_up * (level - 1)
             let total_points = base_points + level_up_points * (level - 1);

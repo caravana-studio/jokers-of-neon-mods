@@ -54,24 +54,24 @@ pub mod special_loot_rush {
                     new_item.discount_cost = discounted;
                 }
                 new_blister_items.append(new_item);
-            };
+            }
 
             let mut pass_card_items = array![];
             for item in card_items {
                 pass_card_items.append(*item);
-            };
+            }
             let mut pass_special_items = array![];
             for item in special_card_items {
                 pass_special_items.append(*item);
-            };
+            }
             let mut pass_poker_items = array![];
             for item in poker_hand_items {
                 pass_poker_items.append(*item);
-            };
+            }
             let mut pass_power_items = array![];
             for item in power_up_items {
                 pass_power_items.append(*item);
-            };
+            }
 
             (
                 pass_card_items,

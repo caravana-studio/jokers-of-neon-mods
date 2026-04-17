@@ -30,7 +30,7 @@ pub mod rage_pharaohs_mandate {
                     };
                 }
                 result.append(hand);
-            };
+            }
             result
         }
     }

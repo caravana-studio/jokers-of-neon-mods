@@ -44,9 +44,8 @@ pub mod special_impermanence {
 
         fn unequip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
-            let cumulative: Cumulative = world.read_model(
-                (context.game.id, context.special_instance_id, IMPERMANENCE_KEY),
-            );
+            let cumulative: Cumulative = world
+                .read_model((context.game.id, context.special_instance_id, IMPERMANENCE_KEY));
             let mut context = context;
             if cumulative.value > 0 {
                 context.game.hand_len -= cumulative.value;
@@ -68,9 +67,8 @@ pub mod special_impermanence {
     impl ImpermanenceExecutable of IContextExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
-            let mut cumulative: Cumulative = world.read_model(
-                (context.game.id, context.special_instance_id, IMPERMANENCE_KEY),
-            );
+            let mut cumulative: Cumulative = world
+                .read_model((context.game.id, context.special_instance_id, IMPERMANENCE_KEY));
             let mut context = context;
             if cumulative.value > 0 {
                 context.game.hand_len -= 1;

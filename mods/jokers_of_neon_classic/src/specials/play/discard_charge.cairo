@@ -32,10 +32,7 @@ pub mod special_discard_charge {
             if last_round.value != current_round {
                 cumulative.value = 0;
                 let gid: u32 = context.game.id.try_into().unwrap();
-                world
-                    .write_model(
-                        @Cumulative { game_id: gid, key: DISCARD_CHARGE_ROUND_KEY, value: current_round },
-                    );
+                world.write_model(@Cumulative { game_id: gid, key: DISCARD_CHARGE_ROUND_KEY, value: current_round });
             }
 
             match context.card_type {

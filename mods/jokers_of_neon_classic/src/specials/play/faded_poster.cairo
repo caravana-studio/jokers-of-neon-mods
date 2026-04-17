@@ -28,9 +28,8 @@ pub mod special_faded_poster {
     impl FadedPosterExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let mut cumulative: Cumulative = world.read_model(
-                (context.game.id, context.special_instance_id, FADED_POSTER_KEY),
-            );
+            let mut cumulative: Cumulative = world
+                .read_model((context.game.id, context.special_instance_id, FADED_POSTER_KEY));
 
             let points = if cumulative.value == 10 {
                 cumulative.value

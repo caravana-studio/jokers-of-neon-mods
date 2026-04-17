@@ -18,7 +18,9 @@ pub mod special_ouroboros {
             candidates: Span<CurrentSpecialCards>,
         ) -> PreRoundResult {
             if candidates.len() == 0 {
-                return PreRoundResult { apply: false, copied_from_idx: source.idx, copied_effect_card_id: source.effect_card_id };
+                return PreRoundResult {
+                    apply: false, copied_from_idx: source.idx, copied_effect_card_id: source.effect_card_id,
+                };
             }
 
             let chosen_index: u32 = if candidates.len() == 1 {
@@ -29,9 +31,7 @@ pub mod special_ouroboros {
                 random::between(ref world, context, (0, max)).try_into().unwrap()
             };
             let copied = *candidates.at(chosen_index);
-            PreRoundResult {
-                apply: true, copied_from_idx: copied.idx, copied_effect_card_id: copied.effect_card_id,
-            }
+            PreRoundResult { apply: true, copied_from_idx: copied.idx, copied_effect_card_id: copied.effect_card_id }
         }
     }
 
