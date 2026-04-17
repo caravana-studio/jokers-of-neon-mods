@@ -16,6 +16,7 @@ pub mod rages {
     pub mod game {
         pub mod diminished_hold;
         pub mod hand_leech;
+        pub mod pharaohs_mandate;
         pub mod silence_specials;
         pub mod strategic_quarted;
     }
@@ -41,6 +42,7 @@ pub mod specials {
         pub mod second_chance;
     }
     pub mod game {
+        pub mod aftershock;
         pub mod efficient_hunter;
         pub mod extra_help;
         pub mod hand_thief;
@@ -48,9 +50,12 @@ pub mod specials {
         pub mod impermanence;
         pub mod plus_discards;
         pub mod plus_plays;
+        pub mod pocket_joker;
+        pub mod practice_shoot;
         pub mod tamer_of_chances;
     }
     pub mod shop {
+        pub mod loot_rush;
         pub mod providence;
     }
     pub mod converter {
@@ -59,6 +64,8 @@ pub mod specials {
         pub mod neon_doctrine;
         pub mod neon_synergy;
         pub mod relativity;
+        // SEASON 3
+        pub mod wild_deuces;
     }
     pub mod discard {
         pub mod swamp_redemption;
@@ -97,6 +104,7 @@ pub mod specials {
     pub mod play {
         // SEASON 2
         pub mod accidental_value;
+        pub mod adrenaline;
         pub mod arithmomania;
         pub mod blackjack;
         pub mod blacks;
@@ -107,9 +115,13 @@ pub mod specials {
         pub mod club_keeper;
         pub mod deadline;
         pub mod deck_collector;
+        pub mod discard_charge;
         pub mod discard_mastery;
+        pub mod disposophobia;
+        pub mod double_down;
         pub mod duality;
         pub mod efficient_play;
+        pub mod extreme_attachment;
         pub mod faded_poster;
         pub mod hanged_joker;
         pub mod hestia_blessing;
@@ -126,6 +138,8 @@ pub mod specials {
         pub mod initial_advantage;
         pub mod lifeflame;
         pub mod lucky_cashback;
+        // SEASON 3
+        pub mod midas_hand;
         pub mod minimalism;
         pub mod multiplier;
         pub mod rage_breaker;
@@ -133,6 +147,7 @@ pub mod specials {
         pub mod reds;
         pub mod residual_charge;
         pub mod rising_ladder;
+        pub mod royal_blessing;
         pub mod sacrifice;
         pub mod scaling_factor;
         pub mod slot_saver;
@@ -142,6 +157,9 @@ pub mod specials {
     }
     pub mod power_up {
         pub mod power_up_booster;
+    }
+    pub mod pre_round {
+        pub mod ouroboros;
     }
 }
 

@@ -7,6 +7,7 @@ pub mod special_faded_poster {
     use jokers_of_neon_lib::interfaces::cards::equipable::ICardEquipable;
     use jokers_of_neon_lib::interfaces::cards::executable::ICardExecutable;
     use jokers_of_neon_lib::interfaces::cards::info::ICardInfo;
+    use jokers_of_neon_lib::interfaces::cards::info_instance::ICardInfoInstance;
     use jokers_of_neon_lib::models::card_type::CardType;
     use jokers_of_neon_lib::models::tracker::GameContext;
 
@@ -15,6 +16,8 @@ pub mod special_faded_poster {
     struct Cumulative {
         #[key]
         game_id: u64,
+        #[key]
+        special_instance_id: u64,
         #[key]
         key: felt252,
         value: i32,
@@ -25,7 +28,8 @@ pub mod special_faded_poster {
     impl FadedPosterExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let mut cumulative: Cumulative = world.read_model((context.game.id, FADED_POSTER_KEY));
+            let mut cumulative: Cumulative = world
+                .read_model((context.game.id, context.special_instance_id, FADED_POSTER_KEY));
 
             let points = if cumulative.value == 10 {
                 cumulative.value
@@ -43,7 +47,15 @@ pub mod special_faded_poster {
     impl FadedPosterEquipable of ICardEquipable<ContractState> {
         fn equip(ref self: ContractState, context: GameContext) -> GameContext {
             let mut world = self.world(DEFAULT_NS());
-            world.write_model(@Cumulative { game_id: context.game.id, key: FADED_POSTER_KEY, value: 100 });
+            world
+                .write_model(
+                    @Cumulative {
+                        game_id: context.game.id,
+                        special_instance_id: context.special_instance_id,
+                        key: FADED_POSTER_KEY,
+                        value: 100,
+                    },
+                );
             context
         }
 
@@ -67,7 +79,16 @@ pub mod special_faded_poster {
     impl FadedPosterInfo of ICardInfo<ContractState> {
         fn values(self: @ContractState, game_id: u64) -> (i32, i32, i32) {
             let mut world = self.world(DEFAULT_NS());
-            let cumulative: Cumulative = world.read_model((game_id, FADED_POSTER_KEY));
+            let cumulative: Cumulative = world.read_model((game_id, 0, FADED_POSTER_KEY));
+            (cumulative.value, 0, 0)
+        }
+    }
+
+    #[abi(embed_v0)]
+    impl FadedPosterInfoInstance of ICardInfoInstance<ContractState> {
+        fn values_for_instance(self: @ContractState, game_id: u64, special_instance_id: u64) -> (i32, i32, i32) {
+            let mut world = self.world(DEFAULT_NS());
+            let cumulative: Cumulative = world.read_model((game_id, special_instance_id, FADED_POSTER_KEY));
             (cumulative.value, 0, 0)
         }
     }
