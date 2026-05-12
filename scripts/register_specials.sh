@@ -46,15 +46,6 @@ sozo execute $namespace_mods-special_manager register_specials $mod_id arr:$spec
 echo -e "\n✅ Register specials finish!"
 
 if [ -n "$profile" ] && [ -n "$special_ids_str" ] && [ -d "$core_repo_path" ]; then
-    core_world_address=$(cd "$core_repo_path" && sozo -P "$profile" inspect | awk '/World/ {getline; getline; print $3}' || true)
-    if [ -n "$core_world_address" ]; then
-        echo -e "\nRefreshing core special metadata cache..."
-        (
-            cd "$core_repo_path" &&
-            sozo -P "$profile" execute mod_manager_registrator refresh_specials_metadata \
-                $mod_id arr:$special_ids_str \
-                --wait \
-                --world $core_world_address
-        ) || echo "⚠️  Skipped core special metadata refresh. Core managers may not be registered yet."
-    fi
+    ../../scripts/refresh_core_metadata.sh "$profile" "$mod_name" "$core_repo_path" specials \
+        || echo "⚠️  Skipped core special metadata refresh. Core managers may not be registered yet."
 fi

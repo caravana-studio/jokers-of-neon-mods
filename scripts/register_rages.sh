@@ -46,15 +46,6 @@ sozo execute $namespace_mods-rage_manager register_rages $mod_id arr:$rage_ids_s
 echo -e "\n✅ Register rages finish!"
 
 if [ -n "$profile" ] && [ -n "$rage_ids_str" ] && [ -d "$core_repo_path" ]; then
-    core_world_address=$(cd "$core_repo_path" && sozo -P "$profile" inspect | awk '/World/ {getline; getline; print $3}' || true)
-    if [ -n "$core_world_address" ]; then
-        echo -e "\nRefreshing core rage metadata cache..."
-        (
-            cd "$core_repo_path" &&
-            sozo -P "$profile" execute mod_manager_registrator refresh_rages_metadata \
-                $mod_id arr:$rage_ids_str \
-                --wait \
-                --world $core_world_address
-        ) || echo "⚠️  Skipped core rage metadata refresh. Core managers may not be registered yet."
-    fi
+    ../../scripts/refresh_core_metadata.sh "$profile" "$mod_name" "$core_repo_path" rages \
+        || echo "⚠️  Skipped core rage metadata refresh. Core managers may not be registered yet."
 fi
