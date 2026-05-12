@@ -4,6 +4,8 @@ mod_name="$1"
 mod_id="$2"
 world_address="$3"
 namespace_mods="$4"
+profile="$5"
+core_repo_path="${6:-../../../jokers-of-neon-core}"
 
 # Check if rages.cairo exists
 if [ ! -f "src/rages/rages.cairo" ]; then
@@ -42,3 +44,8 @@ world_address=$(sozo inspect | awk '/World/ {getline; getline; print $3}')
 # echo -e "\nExecuting sozo command..."
 sozo execute $namespace_mods-rage_manager register_rages $mod_id arr:$rage_ids_str arr:$contract_addresses_str --wait --world $world_address
 echo -e "\n✅ Register rages finish!"
+
+if [ -n "$profile" ] && [ -n "$rage_ids_str" ] && [ -d "$core_repo_path" ]; then
+    ../../scripts/refresh_core_metadata.sh "$profile" "$mod_name" "$core_repo_path" rages \
+        || echo "⚠️  Skipped core rage metadata refresh. Core managers may not be registered yet."
+fi

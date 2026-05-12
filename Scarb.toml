@@ -26,5 +26,6 @@ dojo_cairo_test = "1.8.0"
 
 [profile.prod]
 [profile.testing]
+[profile.season3dev]
 
 [lib]

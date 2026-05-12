@@ -6,8 +6,8 @@ profile="${1:-dev}"
 mod_name="${2:-jokers_of_neon_classic}"
 
 # Validate profile parameter
-if [ "$profile" != "dev" ] && [ "$profile" != "testing" ] && [ "$profile" != "prod" ]; then
-    echo "Error: Invalid profile. Please use 'dev', 'testing', or 'prod'."
+if [ "$profile" != "dev" ] && [ "$profile" != "testing" ] && [ "$profile" != "prod" ] && [ "$profile" != "season3dev" ]; then
+    echo "Error: Invalid profile. Please use 'dev', 'testing', 'prod', or 'season3dev'."
     exit 1
 fi
 
@@ -45,6 +45,7 @@ ACCOUNT_ADDRESS=$(get_toml_value "account_address")
 PRIVATE_KEY=$(get_toml_value "private_key")
 RPC_URL=$(get_toml_value "rpc_url")
 NAMESPACE_MODS=$(get_toml_value "default")
+CORE_REPO_PATH="${CORE_REPO_PATH:-../../../jokers-of-neon-core}"
 
 # Get WORLD_ADDRESS using sozo inspect from the parent directory
 WORLD_ADDRESS=$(cd ../.. && sozo -P ${profile} inspect | awk '/World/ {getline; getline; print $3}')
@@ -78,10 +79,10 @@ echo -e "\nCreating mod..."
 bash ../../scripts/create_mod.sh $mod_name $ACCOUNT_ADDRESS $WORLD_ADDRESS $mod_id $NAMESPACE_MODS
 
 echo -e "\nRegistering specials..."
-bash ../../scripts/register_specials.sh $mod_name $mod_id $WORLD_ADDRESS $NAMESPACE_MODS
+bash ../../scripts/register_specials.sh $mod_name $mod_id $WORLD_ADDRESS $NAMESPACE_MODS $profile "$CORE_REPO_PATH"
 
 echo -e "\nRegistering rages..."
-bash ../../scripts/register_rages.sh $mod_name $mod_id $WORLD_ADDRESS $NAMESPACE_MODS
+bash ../../scripts/register_rages.sh $mod_name $mod_id $WORLD_ADDRESS $NAMESPACE_MODS $profile "$CORE_REPO_PATH"
 
 echo -e "\n✅ All registrations completed!"
 

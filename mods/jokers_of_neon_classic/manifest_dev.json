@@ -43,8 +43,8 @@
       ]
     },
     {
-      "address": "0x7acd7a12056ac56230462e87e3e58bad8aa8ad6c5480d35e125fc2c57da3c4f",
-      "class_hash": "0x79f524888fe6d77aa1a88b8fed5ea910ba7d926309a290e87cdbb23f4a5c00d",
+      "address": "0x478fb3518986f2e78ae43e56281790fdf41f78774b2eef0dc41ba06453b5dd8",
+      "class_hash": "0x3027f3324b882633414b8fe3c5295a585df25fcf513d3ea978f6247b70d0515",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-game_config",
       "selector": "0x4ced4ea116bc7edd29dcd5387f683c4672f5099d326a13288a2d27e7896ec04",
@@ -53,8 +53,8 @@
       ]
     },
     {
-      "address": "0x28cde2ef542cbbaa1d41281f5c3a9601fa64cf0b6114f24b10d1d6585fb2ecf",
-      "class_hash": "0x20de9b0cdccc0605e0dc6fcfbed37630d61ff083758bb04ff04b072987094f1",
+      "address": "0x111c64a1ebdc7820e4d6a30d1bafa4de281069cdeb5568abaaedbf7681377b6",
+      "class_hash": "0x17716e15f64da2b011892cc9e4ec4be787c50db1bc4b26b78e9bb260d06576b",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-loot_boxes_info",
       "selector": "0x2634e0fd32b7d5f7de96fbe208a2cefecc75064dcbe911f6b4fb60f6cfb4b8a",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "address": "0x76aa8692294f2fde54b55804d39df5b14e1225bea094bfedb363a58d24df4fd",
+      "address": "0xe0fa1bd4ba7ac2b2ad531d6722e8b5f4376bcb973bfbd22fd68e844a3fa834",
       "class_hash": "0x4171beb5b0771258d5df54b99d0b2f040478ef5783795747d8de06794598e46",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_betraying_the_weak",
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "address": "0x509c82a7e493e9d8fe9b7c94a6135eb22089d533199cacacc034504739384b0",
+      "address": "0x6b146ca8fa66eb6ccc4bed6d1b52710607b7a3c6f7d66847fcdea3f917fa01",
       "class_hash": "0x5ca8a367a220342071dc1224c7830a9860e62926b082b29a8b276fbfda8a42d",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_debuff_flush",
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "address": "0xe5c430a1d180de80d94d9038bd1607dfd52934ee60a47ccc18fb38802c1efc",
+      "address": "0x12c95f6f82053d8052c399cfc435ffba519cf6807a62270d78a6ae9dc8567fc",
       "class_hash": "0x7f4cb1458697506b03d0c301b454aaa786f43a27fa599a9e08f11d768139675",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_diminished_hold",
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "address": "0x5ad665e1b5e7e90d3c4e127eed891bc0715458f8dcb58726a4c6115790977ed",
+      "address": "0x477c0caa4c570ad7792f428398b23c10612f98f2f77666135cfcd2df47be368",
       "class_hash": "0x533fe0e6fcd1de065cfc95d5565adad0486c3e8f64703b879a4e3e46f358bd0",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_double_trouble",
@@ -117,7 +117,7 @@
       ]
     },
     {
-      "address": "0x799cde657fd68a6262104dd3f627b1343516272a619bfc1940a79c7539d7a5b",
+      "address": "0x33e3c6f1560086941d7504eb2124d3285e7366f580df91a469726f350691765",
       "class_hash": "0x604e67d7d0ab1f29904387c5ce3f603737242b556723edd70120372e656d90c",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_favorite_lock",
@@ -127,7 +127,7 @@
       ]
     },
     {
-      "address": "0x4e02de77626fdd629b383406132e1c112befe78658f33fe112661e78e2e6136",
+      "address": "0x47511a2f15e4ead3cc156331099f776930569643e39505dfd87b35b39877494",
       "class_hash": "0x46c104873e557f9c05bedd87a2e3b5f841438f2b9d49ddca46c193d6e352304",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_hand_leech",
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "address": "0x746c7bb34dccaac9860d8bbe5aa161968214e9b4178f080658454df9637e187",
+      "address": "0x4f48b4c850e0cccc0be172d3e39fcc0fe2a7b9e39f021042f96c5d286cd3869",
       "class_hash": "0x7ef1b9a310b944521d729db269089fba5677db9a3c1556f6622058b8477e821",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_locked_plays",
@@ -149,7 +149,7 @@
       ]
     },
     {
-      "address": "0x5ff781bc2cf9db14de65ba952d1cd786f3f6135ee6eb90a6b34b780769939b7",
+      "address": "0x1c3bc6cd1dd54989a49fb80fba0bc71213c98a91a6ad78b7e5432d265598b3",
       "class_hash": "0x736ff8e6a88057dd06d8aa332ae32d97ba16ff2642fac99ce2e0178e10f1f45",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_pharaohs_mandate",
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "address": "0x72b9237092d32ed38a50f4847b1486bafbde1f3f45e9cdd9b81303ce2f48cbe",
+      "address": "0x3477d0ef3bf1875fcdb43b9c72b4b58577dd9dedc7d65e944767e1f9423db64",
       "class_hash": "0x74725e5689e895faab76402284d81dd4644dc7df2e4ab243f2e9c0e09adeaac",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_punched_ticket",
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "address": "0x60393188591cde004eb9c949815b3e5f922853bbbd2182881047afe4f8240c4",
+      "address": "0x29499263b78f83b7a66188586b7d409738095ce1420b716e12113af466a2ad1",
       "class_hash": "0x27ef7b5bd9fd56b2896ab57d304209495b5abec41f7fba588252b6e4cf64a77",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_silence_specials",
@@ -182,7 +182,7 @@
       ]
     },
     {
-      "address": "0x50f5be2c2febf730e0d8396e338a91f372ce99598fdbd2f58100eb64f23d128",
+      "address": "0x62c00a0bd6442f5e6d7f99d1ac7647dbffc0121488b92f03f8e35171cb2b418",
       "class_hash": "0x46df9189cc84cf856cde201bc3e3ecd77df00bc04e12617fd1558b5a72436a2",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_silent_aces",
@@ -192,7 +192,7 @@
       ]
     },
     {
-      "address": "0x31154c7f198359fe973236bee88f68517a5ba01d5ba04db1fe9ddc73030f6e1",
+      "address": "0x47e3783c014d03bda2a29c716b454526a2ceae4e6dafc9d95ab34c2bab8ab4b",
       "class_hash": "0x63a26f38c1420b53089683864a5cb38662677d9cfdf3e0ffa273eacd27869af",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_silent_clubs",
@@ -202,7 +202,7 @@
       ]
     },
     {
-      "address": "0x3c351d0c56d9148a9b4135b89566e68c3bf22c599f7c18dd0b3fc84ed5aaeaa",
+      "address": "0x16e6750a19cd8c0a89a0ab5e52b6927f9ade944a8ef8d4c16c90929b8fb0765",
       "class_hash": "0x56f36054710c5e45ec25784c96a31435706293120182d4fed61d936c0cee5f2",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_silent_diamonds",
@@ -212,7 +212,7 @@
       ]
     },
     {
-      "address": "0x56440a5437dbaf5714f07ad3bb45a0fc1f306b68d361227612f88e0dea85175",
+      "address": "0x4a72e8110b6f3ee36f0a51e285afa6d7dcc45bb554839010020daaa621cd3f7",
       "class_hash": "0x43c4bb6c5ab552b145297e5e6b0b866a8d28d35b805a7ba627a2e5562533452",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_silent_figures",
@@ -222,7 +222,7 @@
       ]
     },
     {
-      "address": "0x777d2f3d77940dea146e07816d1394bb95da8b985abd7b800232868ce2b7ac",
+      "address": "0x1dfed3412d38be45a4e6bc654a9e6f8a2554cba9571fd8d5364319429f0b95b",
       "class_hash": "0x297bbd53f25a9f566c8101cc08c96d434ab27434647caafad0c2aec4850e263",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_silent_hearts",
@@ -232,7 +232,7 @@
       ]
     },
     {
-      "address": "0x55d7b312a6d60185d4d84e6a3304c9741f4532f66b9299a8f00c8acb42f4249",
+      "address": "0x55b644a6b66598e474ec6b38050a54b08fde1926a26dac17f177621b184895b",
       "class_hash": "0x79bb06bfd3686b568c298671c4c6f3a39d9435861d0d167106b10ab70d1befe",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_silent_jokers",
@@ -242,7 +242,7 @@
       ]
     },
     {
-      "address": "0x472bebba2e856a1a5dd9a74fc59fe59622157137fd7bf25dd9f8a0d3d4b18ba",
+      "address": "0x96d2f655c8d940a259c32d3402a5ca53f1d32c1f3ad8130bc0ab6f2e1c2ac8",
       "class_hash": "0x5cd2b5f99f95da7910b6dc4f6b79a1a2a0dbdd0e3cb102c27c0d485ca155fec",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_silent_spades",
@@ -252,7 +252,7 @@
       ]
     },
     {
-      "address": "0x22ac083553f999203db9d58946bbb610e8b171b77e9557234880fd74427516e",
+      "address": "0x22ac28ed0bad0311e6afd52fa92e63a2b0168fedf79db89721f381e1b64113b",
       "class_hash": "0x6e1e6302c09e16513dda2b0050e1a6cc72648918b056430baf0b25e21cda936",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_strategic_quarted",
@@ -264,7 +264,7 @@
       ]
     },
     {
-      "address": "0x467bac2ac7ad8f71c11f49ea045e847f17328e09d0769f79192bd2ab38fc5f",
+      "address": "0x271af6679288d4b08c9dc3ad58f7181be870ff1ddc77c6285d920f1f5c8ab62",
       "class_hash": "0x590fb4f1d324683abf480c3b14dd7b52b482cffedd4832159d80f833a03be63",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rage_zero_waste",
@@ -276,8 +276,8 @@
       ]
     },
     {
-      "address": "0x6bd8ed0310c8044ad7122ec4c7ef9a6948f37738f8703b6d2857a6098e770f",
-      "class_hash": "0x4af56ec74bda3c378ae87fa6b6c09ff83d4bc45d108136125d2029a2a1592db",
+      "address": "0x10b048f7b7d739119d197d06a49a7d04d2b829270b9bab4d710d41cd865b568",
+      "class_hash": "0x227969dad7e47bed56883aa1eb0abbd39cd4699ed41d9b76c90216dbf314149",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-rages_info",
       "selector": "0xf3a3b6b482e4142708c08118683156b9e290a98e20698f751bce2a15b1d6d9",
@@ -286,7 +286,7 @@
       ]
     },
     {
-      "address": "0x663e9e7eab88fcd83e726641c07474e21dc4ee2aed3b80f0d83d7e5916ed532",
+      "address": "0x5b28ce4a97005cc1d51fd7da6290c65b5d10e5ee474113a9baaf8cbaafa19b7",
       "class_hash": "0x766de24d91889d20a78246d3b44c2c677abf4b3795c12db9a6bff8688a68d06",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-shop_config",
@@ -296,7 +296,7 @@
       ]
     },
     {
-      "address": "0x5fa139b0060b6f48b8a059f3b5f146eedd2d5ea97b1b013fdc7a62c4f643b75",
+      "address": "0x1c4e4939865619bd493d5aa907957fcdda93878834767e1065ecdcffe577ca7",
       "class_hash": "0x799c016a9356764f04f890b66fd8781d702692c40368414bc9f3e4bd69380a3",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_accidental_value",
@@ -307,7 +307,7 @@
       ]
     },
     {
-      "address": "0x174012c7ac4dddca306a5ff9a1377b3280c67e180ce662ebb5b08a5124e4e07",
+      "address": "0x51ebbeb9673f30e3a6d707b5d5c6456f14e00b92758eebfe455d0cce40cb5ab",
       "class_hash": "0xb077f39968292475f9b6033e0b1c968cad17b946fcbc1308841da55d9009cc",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_adrenaline",
@@ -318,7 +318,7 @@
       ]
     },
     {
-      "address": "0x20ae15303e1b9b42544d99e0dcc681f489907fc4a131abbc87d28c1570c6e4d",
+      "address": "0x5154723b3dfcd8f8035bb163463f6b7df2b37809228a6a1b03be2e8ac056c33",
       "class_hash": "0x57d0c71c3a9b8b95a1c1b87d264ec2279412ac0a7c29513e7b0e5f866c329b1",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_aftershock",
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "address": "0x234d055e26947375ef4e5e6815cc2cbadabfb3ab515f3e1bbe57a002bf7988f",
+      "address": "0x2fb9fb05abcca0d0d441b6585e2e3b5e2c4fbafd69e7efb9d6eacfb4a62caa3",
       "class_hash": "0x16bc3bd79d30d7ac36a29a1f46b01c8ebdc669903e22d90d1572486f6a3c529",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_all_cards_to_hearts",
@@ -340,7 +340,7 @@
       ]
     },
     {
-      "address": "0x39bb8ecbe5166327b92282037a8d62f9b0a01713d08cc98f7612002df722d22",
+      "address": "0x61c6d42c8ec8302908de0935f66e0db495e0ea4720831d9a29dbe19bf495235",
       "class_hash": "0x3f9251b8d1cfadd05b2e8496217a123f10259651910c4460af65da30c3cbe2e",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_arithmomania",
@@ -351,7 +351,7 @@
       ]
     },
     {
-      "address": "0x608ebc736d6b4f7f4d6e885951c7ff2804011f1beaa6a02c215f654b5a648a1",
+      "address": "0x4a3d483ffdcdec2adbc3f0346a95bbf440f84d6ba3b708afbca37f84567c280",
       "class_hash": "0x2d0e2247b9953681c7b87cf92a43f02a5f71becbf105aa18b67e457400811ed",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_black_and_red",
@@ -362,7 +362,7 @@
       ]
     },
     {
-      "address": "0x7ddf75e326b30d1e2cb8f76ac7592d542384771aab744b9ff98094d16ac66a2",
+      "address": "0x61273729fe1b8ce3d648ffae0a32600cc85dc4525ad7115cd352f43ee4a4e7a",
       "class_hash": "0x5f98e226872e920c77289b6fcbc9fff28fe2bbdcdee9e8f06406bb1bac4ed85",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_blackjack",
@@ -373,7 +373,7 @@
       ]
     },
     {
-      "address": "0x373d04fdb00bd65bee62671f1b4a3dd72e619ee34bff51e3848f3302586adf9",
+      "address": "0x241bf2f254a58e47ccfa5ce752275188d48abecc3529f344b070975dd48c5f1",
       "class_hash": "0x2ada3323e00173379627ace2c5a418a30dc59782a0b7bb2179fc9780fe58695",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_blacks",
@@ -384,7 +384,7 @@
       ]
     },
     {
-      "address": "0xb41c186d5ee576a3636738de0c193dc881f1bd351e2eb2e19a4ce0ae29ce13",
+      "address": "0x6801ef7cee36ebf833cc35fa7a75593537b0cd5a0e7d80e487d8e85e08a3690",
       "class_hash": "0x4d59d32349456c95f49df833619e6bb342f1132a36ff4a331cb82fb6f0f5d00",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_burning_rewards",
@@ -395,7 +395,7 @@
       ]
     },
     {
-      "address": "0x771824048246652a193fc504c37de76b8898669cd7bb513623455cf4d6c3d8",
+      "address": "0x7a34e63ffd69c81caef3c402efe59e64d6777e2e9ef4f821c7e08c1f84a3fba",
       "class_hash": "0x4e143ab9e59cec5d5746bdf638421886fcf6435fbb1b8d6f04b087cf208243b",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_cash_catalyst",
@@ -406,7 +406,7 @@
       ]
     },
     {
-      "address": "0x2b1db8776a690d6bb292563cf26b71edb8b25dcbdc4f50a54a8e9ee036e926f",
+      "address": "0x33fbe8a4d38b0eb9da2baef6bf771b47a417dc50ebd443e3d3c98966efc40aa",
       "class_hash": "0x583b4d55758655c8981395d37ec1d89cfc881e34498a71d9c30959eab4b6764",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_cash_loop",
@@ -417,7 +417,7 @@
       ]
     },
     {
-      "address": "0x3d69102c7a438a4902a72b73569f68738b0fa9c4fd7d43a2307ed091174ad41",
+      "address": "0x2f4ae81041d57ed64e13480e352964abda766a893cf6d6fa11bf2dfb5315dc9",
       "class_hash": "0x3be667bb3bc8bdfe05879d3dd13108a60ebfd696a8e4cd96ec4b73e1754c9f7",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_circle_of_fortune",
@@ -428,7 +428,7 @@
       ]
     },
     {
-      "address": "0x2397d3b1bdf7654051fbd10900fccda799ae0dff872f8ccff882fb98e446aae",
+      "address": "0x77dff0bb2885f8661784a8876b241cde77837f1874ef2c3a34422759c219d65",
       "class_hash": "0x57be7b549800357d0f3bb7ed9cb332da531ac6d43272582c0e6d814db1abbc3",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_club_keeper",
@@ -439,7 +439,7 @@
       ]
     },
     {
-      "address": "0x360cc92e90da524b587e95e5d61d24fe642c1f3e5799eee90a0cc40d18abc09",
+      "address": "0x2243676485239f4bb43c7b0d1860055556d6ae51c72f8883dfb2f0fe98e4e4f",
       "class_hash": "0x7951894b76f2ed523acfdf642bdc98e7376fdf4a3e7a6723b76e567687e1be2",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_deadline",
@@ -450,7 +450,7 @@
       ]
     },
     {
-      "address": "0x7a2df9dbba6a062a6f342e3809b47fc846aeb213dbf13d1d9da84fd5bfb2103",
+      "address": "0x64f2631fcf530400603b7b13c1bfccb2e9048517e2accb8f5aca6641cf02288",
       "class_hash": "0x3476c157131b2a696718685f3cc49c58f6a4adac3488903ca5a460733bd76e3",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_deck_collector",
@@ -461,7 +461,7 @@
       ]
     },
     {
-      "address": "0x5dd426e747cc75751a3596117d8d824019ee353d211bee7dbc11f3e07f5beb1",
+      "address": "0xcf922de356f909cb6066620888feb6a2641cfb14d94711b16fa01731560a88",
       "class_hash": "0x55b436ae3006e1ff1c9f2ca1241311ed6c4ae4baedeb162be58210befab10ad",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_deuces_wild",
@@ -472,7 +472,7 @@
       ]
     },
     {
-      "address": "0x474d3cb5fe92be1972762b71f9206a2d4486f9a0a0f4f87bd4ae81d949e4da4",
+      "address": "0x5a77ade347c68aed87d7a92c6da61afd353819c7d9be7afc0113ac154ef33b8",
       "class_hash": "0x99f067f53d89d33e47e286feb143929031c5f6bb715a1fea7372413178f99a",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_discard_charge",
@@ -483,7 +483,7 @@
       ]
     },
     {
-      "address": "0x5f3cea613594bcd2be1e48e7123cbf6351592f0cb6cf5acf14df352ff0dce64",
+      "address": "0x30a1b200b437129422a0019b06b048d46f37b2ef84ecc9beba50fff5cbcf261",
       "class_hash": "0x2d5b3f870fcb07fedeb7acf63ee52d5ee040ecfb602d75f11c3a5dcea69123c",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_discard_mastery",
@@ -494,7 +494,7 @@
       ]
     },
     {
-      "address": "0x689242524a581c81ab7e9eb215ed0a7d47626fb16a2634a558f7002d596e16",
+      "address": "0x52b16240b945ba5cdcce80553b50492e9a31857b17e34f48ddde0c18f8e2eb2",
       "class_hash": "0x46000ef25fbd4ea1d6e22ddc69aa1e1b06b203046ead469d0e525dc60ffd36b",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_disposophobia",
@@ -505,7 +505,7 @@
       ]
     },
     {
-      "address": "0x4d68757d725cea7e4c18e5e1b1cdc3fc6f88c4b42ea3c6814d0e4e1dccb740a",
+      "address": "0x5e09000d1f3ce7895f1e3020e8f22a60b8adb2d0d73d38a98315af99e8c1e8b",
       "class_hash": "0x1c16f6091d88b9a7d419768e1e3454a1776853ba6d3ccc39d5feca63263a609",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_double_down",
@@ -516,7 +516,7 @@
       ]
     },
     {
-      "address": "0x5f731e4a7696dc3ff95208d90a06bfc8add271c0578c672bb040ed32751154b",
+      "address": "0x6ed3c49b6bc41a6a71068de06e26e3f4485ed3814ec26b447f755f1f2fdac8d",
       "class_hash": "0x71e43efc345feab5e3f16ac7e5179ab37876212c0aaf7f4c3b0e42dfa0ab8a8",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_duality",
@@ -527,7 +527,7 @@
       ]
     },
     {
-      "address": "0x244afcb46e6ddae455fec419e3c1efa5a5e1bb5d84d4c5b413a1044e7d20dab",
+      "address": "0x6c631c4cbb4d941ded476b8dbfabb1aa09753aa1f6da6052411e4bcf75a704",
       "class_hash": "0x663cf2c7248aef27f44454fd1b3356e601769ac9f871daac76110e836ef572d",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_efficient_hunter",
@@ -538,7 +538,7 @@
       ]
     },
     {
-      "address": "0x5de0bc31463e9d39014fe83d4689b55d3903400a6ee35fecf0df6f01172264a",
+      "address": "0x53bb941b726c5feaa9f20d292e75984dc46019e8cb0656bcbc09534fd748ee9",
       "class_hash": "0x1113061612179e75efd3bbce9e93152779dfc3d8bd5c2d99e5dfffbf2814f22",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_efficient_play",
@@ -549,7 +549,7 @@
       ]
     },
     {
-      "address": "0x35309021e326268c7c831d04064eb8d8ab2602021da961f02bd95924804d45",
+      "address": "0xf9f6747e99def91a2bb3a50f9a70ca895374bf5fda13f13aac662f1b422717",
       "class_hash": "0x2943da14e15052aa44c4a6c99ea4a8f659c43b50747b4e34ff8ffb66f45e989",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_extra_help",
@@ -561,8 +561,8 @@
       ]
     },
     {
-      "address": "0x205cacb7e8eade932d72074ed524bafb11c2c5dd0a6ff065970001377fbcc7c",
-      "class_hash": "0x3a02b54c126a1d02537dac4908d0431ac1cb38db22f1af15960c64f10921a58",
+      "address": "0x362dee68de2594ac07557d40f935d94cc6ef17ca206eeffcf2d379fa8d93ebe",
+      "class_hash": "0x2afdc4f7e802b24973ecd97baa4aad66d703d852388da5406e75fdbf23397c8",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_extreme_attachment",
       "selector": "0x7a05fee0d0de273609666066ccf226f35efbf7322671a995fed5f50ce281817",
@@ -572,7 +572,7 @@
       ]
     },
     {
-      "address": "0x71dae09109ef2d3dd9f3e0c57a55c239485420746152cc6e1e2c806cd85c6ba",
+      "address": "0x223e2b72dc00fd394b425d1b619086227a78592789fcd1311f63a918b4e52f5",
       "class_hash": "0x72516d312271b6f0db7edaf1436d882440e7b7d3e70f4a3163b791d117152ff",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_faded_poster",
@@ -585,7 +585,7 @@
       ]
     },
     {
-      "address": "0x21bb9b45308d80f7cacca072d14ad9e6ab23aaf3f156b4445f5defc1c07cc9e",
+      "address": "0x1f706ebc19dfc484eb6dee38b4b8377726dc79fe4d5f32a6b05d76df337e336",
       "class_hash": "0x7bc7517886f7be14537f6ddccf27a2bd780c88321017c47df4291f39daa3bf",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_hand_thief",
@@ -597,7 +597,7 @@
       ]
     },
     {
-      "address": "0x2a58082d64085071f1abfad73b947033c763b18c1ba91ed60733d786d821176",
+      "address": "0x6d02eabbdada8840e7a8cc8747803741bf162c1c1dc6924ccda13f97eb4df7c",
       "class_hash": "0x29daaaca913d7976c448ed49dcde0728327e08c57c396285d02677f6e1ccd40",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_hanged_joker",
@@ -608,7 +608,7 @@
       ]
     },
     {
-      "address": "0x48fa11575b2264f3f9345d89eff54a1afc4fce8ac607da8c51fd776d692e908",
+      "address": "0x2163cf34d955a9279139e4dcd541792e7adf346c66339bf678335f899193b66",
       "class_hash": "0x48c9a584c13b5ad38f33f1c05eb4898f9a0d99445503989272d132239326737",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_hestia_blessing",
@@ -620,7 +620,7 @@
       ]
     },
     {
-      "address": "0x2eb5558a911fdb000ce7ece816a37dcd23f6e8867eeaf408720376b9df7d1b6",
+      "address": "0x1dcc8682d2b68967a39f6ccac60a3506482d9474bc3ddcbf3a22230c2018ea4",
       "class_hash": "0x66c577a4a112b396237552838023a9a5692a2a5b1da12d05c6c52f10be11dab",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_high_roller",
@@ -631,7 +631,7 @@
       ]
     },
     {
-      "address": "0x1de2feff185f76baba51c25876847c7368e369969447f58afa36a7bec43389d",
+      "address": "0x273434ae39ae271be2b7f0714908ce31c87f1e5031c851da742292c34dc78e7",
       "class_hash": "0x542261507dc7dc5f7c7562cb6d0faed0727fce5964487bf5cb471f2735f70d1",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_impermanence",
@@ -644,7 +644,7 @@
       ]
     },
     {
-      "address": "0x26f42798b68bfcd19c72df1bfab2df283178e52d826a98cc60102eabd27f14e",
+      "address": "0x1aac6307e964bcc5d24dd0fa23c0478314279d525bfb6584589654d23c76898",
       "class_hash": "0x6474e7cfea1e9e45fcb3fea8b30c237683e880568deca3e8e8b5e11ad970818",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_increase_level_double_pair",
@@ -655,7 +655,7 @@
       ]
     },
     {
-      "address": "0x20315d7de9a1b9632b726666caf02f5ea7d3b8f458567710614dc82b99d3c2c",
+      "address": "0x3610178f93b7719ac568788d993d18f0786dfcdb656f29481ca205b4f966c7d",
       "class_hash": "0x6bae196a096cbb1af911d1dff62bfbb1a9ba515f321e97b5eafbebe978ce477",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_increase_level_five_of_a_kind",
@@ -666,7 +666,7 @@
       ]
     },
     {
-      "address": "0x6ab5ab1c6a880d86068467ab058c47b1811b884b0294fba057e181d85ada670",
+      "address": "0x537e87281195a7fdfa2e42cbfc8cca807e1e950cdd6244b5fc908b54046e3bc",
       "class_hash": "0x6c797481b02d3c191e3e42362f981c9d1752c7bb86a441dc453510b796b625b",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_increase_level_flush",
@@ -677,7 +677,7 @@
       ]
     },
     {
-      "address": "0x3417293cc462e8a3d8b775af012644afae17119dedacfcb2cd38a440639fa97",
+      "address": "0x5f77221ec4c41d8d59d757960e230ac805f4557f4074734ddb1a9694512e667",
       "class_hash": "0x50d5cb2e540c586ce81b9870f24eb61ea67f1b5db56f97a436f2a923814f4d8",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_increase_level_four_of_a_kind",
@@ -688,7 +688,7 @@
       ]
     },
     {
-      "address": "0x2a311881565323a7550980f5da7e37e3d51b8175acf30ffc7473a2501360e3b",
+      "address": "0x68c78fdb74d7775bc69b2a50940ee9ec8e211cea52881bbf8ca91aff03cf8d1",
       "class_hash": "0x484af86669bc9a6e5b100794dbe42e1c629f1e0b2435315d0ab11f343b69faa",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_increase_level_full_house",
@@ -699,7 +699,7 @@
       ]
     },
     {
-      "address": "0x24d737cd20ae33cf671627c81704fbf02f7349dc3c9f2fe498bbd36c75226fa",
+      "address": "0x5ad994230a09408be6d445f051fa68512efd0902301953b202d43c9a10c6ad",
       "class_hash": "0x487017e2790f4463af1121ed18e39839433838bc560f57b0ba16ac020e8363a",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_increase_level_high_card",
@@ -710,7 +710,7 @@
       ]
     },
     {
-      "address": "0x668ba1f082d5829a66eb402f87df7e1e8e9f3c8a7c60c07fd08027d6630410d",
+      "address": "0x6a0961a4a401c93b8a4d0256dcb427ae12fba5e41d7eb728d34f63bb2f9c30f",
       "class_hash": "0x21dfd354fa25a672367d6d45a432df74b36fbb782596010d83917ebd1f9363",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_increase_level_pair",
@@ -721,7 +721,7 @@
       ]
     },
     {
-      "address": "0x656e58de0795e40dbbce145922efa6033be4c1aefa2be9b3b5ad711ba93a528",
+      "address": "0x3d33a6880e3f12a1d38fdb3f7ead23d8787dc23a75ffb42c6cc81d1f5adbf0d",
       "class_hash": "0x29dabd37f9c11d91070a601473e64f87618ee2e8fdc79226eb8c250df8f6686",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_increase_level_straight",
@@ -732,7 +732,7 @@
       ]
     },
     {
-      "address": "0x5658ce90fb2616bd13cb5fc6fb915c00a327a62da9dd77559d12da471be4d26",
+      "address": "0x5f08a4bff065cee717e5601240c4468d8540c378ac8f339517b4c98efbc6c0f",
       "class_hash": "0x7a8b9780d951847cc92693923143edd74d6fb0691c92b73e70f85b383a59f2c",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_increase_level_three_of_a_kind",
@@ -743,7 +743,7 @@
       ]
     },
     {
-      "address": "0x16248464e2495f5dc810e47af1281f10cf96836dfae3f35868b8bd7de80cecb",
+      "address": "0x519a4d1c9873793e5b33f69b4531de4977c1642cb79e8fb24ef3462ffb2be15",
       "class_hash": "0x22c4accf55455966e62da9291ead31c64314c684ea46aadcc710e376adeeae5",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_initial_advantage",
@@ -754,7 +754,7 @@
       ]
     },
     {
-      "address": "0x18bf24869f445c5531c4361e1ed6727a2b6b3468179e526694bab8f42125ede",
+      "address": "0x281babe94a313a49780356aeaea65b67db12522db883e10d5bbb500ac70a10c",
       "class_hash": "0x4ec50499a81e12fdd0094d0edc42bdbdc8874f469b96c855255af453e5e059c",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_jackpot",
@@ -765,7 +765,7 @@
       ]
     },
     {
-      "address": "0x726257a643671a91590dff76f9faf4c74d7f6ff0b65bfbf753ec4c70020b1e1",
+      "address": "0x3754e3d14835c92f34a8a0256ddefb262d018ae9cfa92e0f3769ddedd5e9738",
       "class_hash": "0x4c11a271985f9f6b56a6137cc5a85189ddff4237267bbd42ebfe931230b0d54",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_joker_booster",
@@ -776,7 +776,7 @@
       ]
     },
     {
-      "address": "0x2153351aaa386e57bd0619b0c23fe0b981fb7ec1bccc086102f02d954785df4",
+      "address": "0x72c4ff647f619e7d2c924ef459335f1b47cd5af84a6888d326b1ae49ab5cb12",
       "class_hash": "0x4a50ab7064e9d667791de6da4fe6ad9f8e445f1a2bf412d401341bde9f8a06e",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_kings_faith",
@@ -787,7 +787,7 @@
       ]
     },
     {
-      "address": "0x45e5dc1495af9286c58ef713781d4b02bcc791d819c28ed22f20adddaa6a03",
+      "address": "0x190a923c4ddcd16d5fdae9add528c3f3cee3fdb1846cb2f51c7dab74ea7a5f3",
       "class_hash": "0x451fcb035875eb98df269b16b6c532dd0ce244e9cee6b19fcd8fd18699193f5",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_lifeflame",
@@ -798,7 +798,7 @@
       ]
     },
     {
-      "address": "0x19fa2a038d8f0d3c48fc6b999abc1e06c8480c675e82abebd6079e889ae32cd",
+      "address": "0x1d059a001f3b5d598c33fe6a502a95a858fda8317a2816de841ad87f8781ae4",
       "class_hash": "0x360912110246fa7b4df9628382cadd04676f5081c1bed865ff917613cbd2086",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_loot_rush",
@@ -810,7 +810,7 @@
       ]
     },
     {
-      "address": "0x14d9243abea2ca2942afcdd6ca05f7d81a570e49dfe819c845ae31d3e84942f",
+      "address": "0x527f5a832850b90897874affe71f46f25d6cf5fcf5da1309a63d749056d065",
       "class_hash": "0x4a7d611e8579633e6a1dd6557eed4f164a02f541af1c0c5e37a507ea58ea29f",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_lucky_cashback",
@@ -821,7 +821,7 @@
       ]
     },
     {
-      "address": "0x2cb857400a40df5936f2409a82147bce956876aad468deb4448814965a3e17c",
+      "address": "0x5239e716fcd940708543b3a0a94813b955ca2521666e107ee803fe8bc0106cb",
       "class_hash": "0x20980847f9897857d35e4a0fc6bb1b576ee34059db9155e8780d1534b8d1733",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_lucky_hand",
@@ -832,7 +832,7 @@
       ]
     },
     {
-      "address": "0x3de71b83f1c85626dcf56469e11430be004f9f55231048a033cc6a285e0deba",
+      "address": "0x7dbc2e7c881d4416e2d227b1a87911d49b52f8fc39f998271f3ca391766039e",
       "class_hash": "0x6215d1940fec252f6e3682338df552083b841fff16ba3e2c22853de5bfa3c0c",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_lucky_seven",
@@ -843,7 +843,7 @@
       ]
     },
     {
-      "address": "0x61481fffcec3ed545595eb788184ec30fce887276c1ad8189b978149e580806",
+      "address": "0x166e361725e869c44d863d5f460cc6a5d9c65ee0fdbbbc94a6862406d5f7b14",
       "class_hash": "0x647350fe7008d4ce0e18d07129b4b570b6cfa394cf07ccc8013e4611fb4f476",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_midas_hand",
@@ -854,7 +854,7 @@
       ]
     },
     {
-      "address": "0x391bc4c607988c559300a678c3ecb753e7b49b9a9779b042847f4cc4f235eea",
+      "address": "0x64e365a5fae544c68f5a273ff4a7d80efa29303efd7dc4638178f31e64b537",
       "class_hash": "0xdc26a85c61c6caf69c5e8689dc437066dc7b0a1f0ff0f5a673f58e7c23a907",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_minimalism",
@@ -865,7 +865,7 @@
       ]
     },
     {
-      "address": "0x4ab97711ced5f4dee5f0ae6954bd926d47cfb0f8116e6f6da7c406376cebb0a",
+      "address": "0x609b3f1210755e61fd0d71af91e8a115d4544fccfaf9fcd5ccb7e686d3563c4",
       "class_hash": "0x2c8bdaf24eac05fee4b3502c54bff7f083e50f9ea8366262e79674ce911695b",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_multi_aces",
@@ -876,7 +876,7 @@
       ]
     },
     {
-      "address": "0x67c47268e51fa4baac1326da6ecbb5bc46c2baef0e9d85fd170d3df410369d2",
+      "address": "0x7b5824e9ea5451c838e8ebdf4ee175992b7141434cd3a872ae98540a0b1333b",
       "class_hash": "0x51e91bdff4f36ee40452cbd7c7caf169f3bd55c942acc9fd0da87695f31e62d",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_multi_for_club",
@@ -887,7 +887,7 @@
       ]
     },
     {
-      "address": "0xc69a28650aa3b995b199715074c7e5785ffd9829232e3408115eb6dc0b3f77",
+      "address": "0x54ebcc5d4fd4c55c9eb5fa78910fcb867d30ceec118a921790326cb9435d0a0",
       "class_hash": "0x55ad18bf5c89faa759850165ca3ac563fc0dd33c6ed45e9978f373c27d9b05c",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_multi_for_diamond",
@@ -898,7 +898,7 @@
       ]
     },
     {
-      "address": "0x327f23cb2ff4ac2ad64d6cf0940321459db2f0103e6aeeb6da467574d2d2288",
+      "address": "0x4232c5b906bd3ce2f250822209211b8e6e06a831c4c95b760bdd6f74cb5847",
       "class_hash": "0xcd13d4c8df27ab2f2cde301b767d4829743c8c483dde55d4e4e9cc206d5739",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_multi_for_heart",
@@ -909,7 +909,7 @@
       ]
     },
     {
-      "address": "0x31f1b923b650ad10b5e8652e347f45776953d2cfa1ab35567584095fd84c4f8",
+      "address": "0xa80af3b51d1250f9ee7ad5a30e07c88ecadd020584dee7bfebc5e6997f0c78",
       "class_hash": "0x52764982bc64a936fe29be3cb7f5b5345f871e161b9dfe20cb423c190f5c856",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_multi_for_spade",
@@ -920,7 +920,7 @@
       ]
     },
     {
-      "address": "0x3ae4ab64d6e2b1615ca544fb8ca18dc07e8e06d44c4a37bc54dac6f9bec67ce",
+      "address": "0x5c79d7c328b21680c27b6dbb115fcb54465541bc8eaecd3246a082c289964a4",
       "class_hash": "0x50005f0ce4de1a7bdce0fde07d57b74abefe7522e409dee771680ac9d481e52",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_multiplier",
@@ -931,7 +931,7 @@
       ]
     },
     {
-      "address": "0x1fa9e36a5f771cbb767170d9dae2f7251eac554cbd145ba870ef550e4c9516c",
+      "address": "0x2f283824aa8a499a8bd433c6fba64f628e64c828f49e5fa8ef63ab0bdbfff9a",
       "class_hash": "0x33e448af48d407e9dd0d777eaf3674e41b313a578e9aaca8bf08bd78926e13a",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_neon_bonus",
@@ -942,8 +942,8 @@
       ]
     },
     {
-      "address": "0x9f992006e3ee43ef95c531abf580a79d1332e6a971e82feb84986e2d9ea1c8",
-      "class_hash": "0x3dbccbc864cf9e84b0054a6ee504beeb91aa33d5e38833049da2bd045fc02b6",
+      "address": "0x21dbb0bbd88c37f4c933e7d2d3f273885708269cc3dfbaf454debccc489850d",
+      "class_hash": "0x14c13915df49456ffcf962ea114c694d4a0db1882cb2bdc41dd28e9e8ab6648",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_neon_doctrine",
       "selector": "0x326a36fed5f4809ac620adada8d681f40cecd75603e41a6f46fc9ca36cd7a7a",
@@ -953,7 +953,7 @@
       ]
     },
     {
-      "address": "0x2a6c743f35258fba96f207aee4a56f0b2bcdb4a4768527fd4d271bd56fe7827",
+      "address": "0x71682dd66106b999ea49d81b46d936dbe32d2eb2b32c11be4288dd74b903b27",
       "class_hash": "0xc181f1836cc6161ebcd0afa58e6fd5fcaf79d0e087baf0947070ff5fda13a8",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_neon_synergy",
@@ -975,7 +975,7 @@
       ]
     },
     {
-      "address": "0x376dc1216bd249eb094e4181944d8b4ac4d82a04550071f0b9e29ff7e0106ed",
+      "address": "0x77cc13f142388f1f02fccc4fbc2f6008ffa3e8311abb24c16999a3b1a41e81b",
       "class_hash": "0x6fca9972d6e863c4be30454c6213a5fca7aa23e602e838e0e6c9b03af26d02b",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_plus_discards",
@@ -987,7 +987,7 @@
       ]
     },
     {
-      "address": "0xe62ccb47afa9f64749d0b0ee941453f925a0ca580a0027fbaa06d4dc9fa55d",
+      "address": "0x75cb8a3ce6daaa30ecfdfc4807090840be6e2432e91cbdfbcb383dc603572a5",
       "class_hash": "0x47978d94e6464c03647b9a726cfd990ab15a23924ce056dc947956154d24c8",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_plus_plays",
@@ -999,8 +999,8 @@
       ]
     },
     {
-      "address": "0x7a6c3298909dd8d6d8145a59ab233c40f0ca8cd73951078426e383093ea57b1",
-      "class_hash": "0x3bd4a399ef80dbb264f4c4d3139be36c5bed62a0f3ee2f9e6c469db78b5e67b",
+      "address": "0x7ebff4ccb559807a73dc324238f57b49b6491f80e6b2c887096d693508d8d5b",
+      "class_hash": "0x6a08a2c8c55590f57cb5ebf96ba348b29cd3b2de95855895ab58f1be4b8c429",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_pocket_joker",
       "selector": "0x19b64487459bc2464be108d99f42e0f43744e1b5761d8424fb15340f72fb11c",
@@ -1010,7 +1010,7 @@
       ]
     },
     {
-      "address": "0x5a95bb909ae232eaae610916ad5359533af5dba7519879e8dc919e1433d2284",
+      "address": "0x6b702ea07efa418b71f5fd1d65db430751fc0db4ce71acaf287fb84cc36f2f7",
       "class_hash": "0x453a45ab8944bb2395f0af10b7cd9f3a9072e817cf1be2e77a506fb43458476",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_point_juggler",
@@ -1021,7 +1021,7 @@
       ]
     },
     {
-      "address": "0x7544ce71bb198cc088ca24e14d1e5299ce32d8636a0353e50ef9c74c5066b65",
+      "address": "0x210f66ff9cd71fbd05f7eb5548e3239f622f98ccfffbb41fd100b2f0613d301",
       "class_hash": "0x55c6a2ca9e7b90768fe4c97c444f19d61c842da73a72326e8466ffb4bb06035",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_points_for_figures",
@@ -1032,7 +1032,7 @@
       ]
     },
     {
-      "address": "0x557c7c047bcedde9dbf28728287653e0178d37bdc261be88291f7872aad729d",
+      "address": "0x3d67689541cf467f0d28c361f34fd2d364970b9b5560d0f7f897051f48ecde",
       "class_hash": "0x92b116ce7e96c43b108761a36ebe46b293156a4f9d6e1693f5856e13560328",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_power_up_booster",
@@ -1043,7 +1043,7 @@
       ]
     },
     {
-      "address": "0x1b3fe4e3f32a5de705eedbc6cbebc08fe0b256aef8e87453c986fed97fb3270",
+      "address": "0x1f664addd70372837df0f7f95cb7a56387518d79d70586e8730878242705d10",
       "class_hash": "0x298501f7c391a3f68b481eebff95fe1f1d7417eb25a48f472aedb2fa6bfb4b0",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_practice_shoot",
@@ -1054,7 +1054,7 @@
       ]
     },
     {
-      "address": "0xf490042c9b72bb56b65d78809abb59c8b60fcbcef81d8c26c0f49aff679142",
+      "address": "0x88205f938c941163b56d41e6154d0b00145d269e2e058ed1584766ee92ccd5",
       "class_hash": "0x5a63becc1219489aea615530a7d951f3df427bc1ca2e52158763d114797f670",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_providence",
@@ -1065,7 +1065,7 @@
       ]
     },
     {
-      "address": "0x26f416fbee92d154e177417adbe81a2f291dce164863808691c4e279f186e00",
+      "address": "0x28f83c6398ec2f05cbd3b90ffb801bccdc077335cc852c7c5838529a4bc50c7",
       "class_hash": "0x1ad4c673e1b475924dbd4a136b4c77f2a405e3a36e59c1ffe673e3e5484f7ab",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_quad_multiplier",
@@ -1076,7 +1076,7 @@
       ]
     },
     {
-      "address": "0x56ef8dce3e12aae71c25b9c7d4b1b70ec9b9965ef0efe98593e6e7772bb2b2b",
+      "address": "0x5dd29f8c11637061c0fb97c49da9b98f730f3cb619f43e69ec03bc47cdc3688",
       "class_hash": "0x3bb90918e3817db1a1b07be5f9e9782e8b3be6703c6e8eb730d83782185b1a8",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_queens_fortune",
@@ -1087,7 +1087,7 @@
       ]
     },
     {
-      "address": "0x7edd55dcf32aaebc224c6e27a4f77ddbd65f6808ea5db92f3c5b7ca10918f4e",
+      "address": "0x1d68cbf1f0c0d7ea2ed360056af8fccebafa22b2ab54af4c38b5c05d489d10d",
       "class_hash": "0x5270d0e849dbc0222390785e9b904b5be5bc3944a27d17cebfc267e134cafb9",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_rage_breaker",
@@ -1098,7 +1098,7 @@
       ]
     },
     {
-      "address": "0x6c758ccdbc87eba1c8af2d5e6ca22ba4fdde2427b7e15f54eeba3d7e15c2618",
+      "address": "0x13d8670ca9d3d4ce8e475b213433ef0430cda27dd63a54ad5b96ebc9322a3d7",
       "class_hash": "0xbbdd4580a448403090292097620b6e50aa4dd42b3132ebae90108de0749708",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_rainbow",
@@ -1109,7 +1109,7 @@
       ]
     },
     {
-      "address": "0x4ff11a6760186dce5ed7f0fcf3f4c4608ea9f0e7fe073a1262deb159ea06557",
+      "address": "0x117e73439e0c0cdb636413d796d98f956273d1a72bcb0ce55b117556d46820e",
       "class_hash": "0x3315b2e4ed5edd174f673c7cd28f0d7237ad584d02bf0e8af72daf0ff445b88",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_random_multi_for_club",
@@ -1120,7 +1120,7 @@
       ]
     },
     {
-      "address": "0x6fad3a29814a8283e23070df46e08500df08c7a09ab5eadd526f1961bb3bdd7",
+      "address": "0xd3720792052b5ff8d3f612f1d9147a13bda81e1cbf1989c8386a9fda15412a",
       "class_hash": "0x3ad186027f84eaf838d5dcda12454a8f01472d90c91bf1ba726a38badbcd715",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_random_multi_for_diamond",
@@ -1131,7 +1131,7 @@
       ]
     },
     {
-      "address": "0x113a87da4516c87c37521541227309df53dadbca566e811904d5addd01ad268",
+      "address": "0x1c99d4ee2c3a076148566da97c5264b94dedf4c1bd8af6ee4bf271b06fb3d42",
       "class_hash": "0x73f7121a0dea22b8abf2afe0f4c854c4dcb24a4bc70ad9ec435717f3d1f3024",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_random_multi_for_heart",
@@ -1142,7 +1142,7 @@
       ]
     },
     {
-      "address": "0x7382b2197c93bcc238fbbd3e4a952dec010314bcc49d89c16b2716d028675bf",
+      "address": "0x1ce49841c6535002677b5d05c060d850230c3a957d8d1c5e13187f62369cb4",
       "class_hash": "0x28005c966a3b3078ebbccdc6512cbfb5e1ad2b9816ac979a93220c19cd2b30a",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_random_multi_for_spade",
@@ -1153,7 +1153,7 @@
       ]
     },
     {
-      "address": "0x5c4a19ab77ec29091a7742166430ad1a1c0fa8b1c2064e1a2748a19e10993dc",
+      "address": "0x519ec6ea0cd3ff0b214ff0dfc06a2853cd53fd16ed3546488d2d7ec7e25b3c5",
       "class_hash": "0x509ed90c09245de93253c45abea23eed3ca0e998a819549ade85cb684b04927",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_reds",
@@ -1164,7 +1164,7 @@
       ]
     },
     {
-      "address": "0x3635aa5d098bf5e6814b76b8b2588f0f80ebfcc2749984b3ce3e9c29578a7fe",
+      "address": "0x64f11df3b3349323a6ab838ec6bf710c26c84dda10cd982986d43911ea4216b",
       "class_hash": "0x7bfe8cead92812ece677e7c1a86c25d72f091032afe5dd64d7c2a3233d61595",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_relativity",
@@ -1175,7 +1175,7 @@
       ]
     },
     {
-      "address": "0x48276e354712cc2ea0f2d2eba88770e58006da136d12b96d634983eb91685c2",
+      "address": "0x45610b447b556867afb4af2de8049364f20aa4f9131e5279d1f235075df8b55",
       "class_hash": "0x4798d5a6595cdfc51765149edc3776a1cd2f03f0da6fd22ee4338c536324368",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_residual_charge",
@@ -1186,7 +1186,7 @@
       ]
     },
     {
-      "address": "0x4caa7aaaf2c0ce911a6477407b4b80f65ae9867c0089bd9e526889bae44132f",
+      "address": "0x6b8ee6b4de0c0ab594db9395f8d2dc40baef62fb60f4f040a3edbc8a7ab3fb2",
       "class_hash": "0x16f732844cac275f75d99ee007d0b236b998c07688c712289a2129c2c729ab7",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_resonant_multiplier",
@@ -1197,7 +1197,7 @@
       ]
     },
     {
-      "address": "0x47beb556b73c4be8a2d2c5e901ead5d18dec7c34e5a5146302b3f889054e10",
+      "address": "0x593d57cc8c7a60f8fb7084281d17cef02d83e0e7813a32a407257af3a21980e",
       "class_hash": "0x576d177c124f33c27bcb6309b39f7268b959c3b72edd7403dcdc594a1e33562",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_rising_ladder",
@@ -1208,7 +1208,7 @@
       ]
     },
     {
-      "address": "0x4404104d682e9b1e1ba5b7913154222eae65c3aa908bf82f67f9b77490a38e",
+      "address": "0x1f641fe81997ef477d8e1031e4018b65219547f7cb10198ca4432404920ea54",
       "class_hash": "0x326dac37c76427aa0c80aa02304f805c2c146dee6b92e72cedfe22e445c466d",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_royal_blessing",
@@ -1219,7 +1219,7 @@
       ]
     },
     {
-      "address": "0x3502c3ba98b3a3b9b38afa06a84c6b04f202a7a15433ecb1c984ef7245419e4",
+      "address": "0x61a028b48679c0034cc2468815a259610b37147f97f62ceb65d98662a397376",
       "class_hash": "0x53c7852430c5157d6a3226a0134a467de47df89ec9361dce722d8862f83fc20",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_sacrifice",
@@ -1230,7 +1230,7 @@
       ]
     },
     {
-      "address": "0x7d42b933424f1a70442571065881b338ddc07e51524c860899d368b0e6aec40",
+      "address": "0x69d2b6b17764e74fd35540d8e05a82b6a579da143e996f137e0703ed8a8883a",
       "class_hash": "0x7c72b5bd199fa96011445964911ae052ad9c585608bbd9b3b192c19da8c3558",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_scaling_factor",
@@ -1241,7 +1241,7 @@
       ]
     },
     {
-      "address": "0x263c7a99d08ef0074bd9f802534152ca0d3b29469aa8d0b44be57ac81508c42",
+      "address": "0x25ceb296cc03f07bd238891eb5227214d0de4673a8b934c28b216896bf45237",
       "class_hash": "0x6142cdcf0816ae8eda16dc64d8ef57757b42e3f2f0152cb2d06d3827c788587",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_second_chance",
@@ -1252,7 +1252,7 @@
       ]
     },
     {
-      "address": "0x33a595ac574bdb4b0db2fd98415d4d1ff70865220103f08906fad9e696112f5",
+      "address": "0x9453ae4e7a5eb86271cc410aec23229528fac068e4c15530f10cfe9f8a50ed",
       "class_hash": "0x2ce2d82f466ca1daf0b5fe32c07f7b18601b44805344bf7681075e9d49aab66",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_slot_saver",
@@ -1263,7 +1263,7 @@
       ]
     },
     {
-      "address": "0x4b78ace5433f264e89acb08f5537ae03678b934da2f827b00c7845d1503196e",
+      "address": "0x693022db56eb9d5f0281a41d1bc1f833a5c81f41112cdee4825257cbcc66287",
       "class_hash": "0x2b83fb68d326aa172a4841a76f86ed3fc2a803c1d389f9d2eb51fd9b27d3d87",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_spade_trio",
@@ -1274,7 +1274,7 @@
       ]
     },
     {
-      "address": "0x5cee48997188cde3dd625d69b136638e2a0b768396bb8726c7385b09352f8a3",
+      "address": "0x56795f2ec99fd18584ce96533fda3878cfeaccabbb356aa6203a23dfa6a6e79",
       "class_hash": "0x4a113a5c7640f84e7a20732c338648c02073c759b8ff0256ff3dcb3a9d309fe",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_suit_roulette",
@@ -1285,7 +1285,7 @@
       ]
     },
     {
-      "address": "0x3705de01787b96e7323db8807c27d51de2cd7cdf3c2a0af6e15f06d8aac0858",
+      "address": "0x588a28feb1d5612835e8df80bf5f8b763feee20b4d3eed1985c325750c30547",
       "class_hash": "0x59ca78ed4eec7c2d7ed91f0b88fe7e37a4b47463577d99076a603a93ab779aa",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_swamp_redemption",
@@ -1296,7 +1296,7 @@
       ]
     },
     {
-      "address": "0x6c59634b2921ad94d87b5bae558780bc400bd24954dcb2b04165a0b77e742d0",
+      "address": "0x4872be0fda665408c291772fa76a15170fe8f2515d601f248de0ebfdecce0bf",
       "class_hash": "0x634309d6b55d5583ecfc1dc6b9ffce0cf1eba66a3d91847b717cbd8948e607",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_tamer_of_chances",
@@ -1308,7 +1308,7 @@
       ]
     },
     {
-      "address": "0x1fcad4395323bf00193906cd453e0ecfca9de09f578add4e620c0a6231f5dd1",
+      "address": "0x729f80574450ae42bc479f0ecfc242ff7c069f98944499b6f0c2b9fe929506",
       "class_hash": "0x155b7393c55c055e6eedf78573a0c4c5dfcfbf1b667ffaa2cc4f9da1ba10d65",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_twos_matter",
@@ -1319,7 +1319,7 @@
       ]
     },
     {
-      "address": "0x765c1e92c1bd94b57e82bcf2a91c0cad8ce032219edbbeb48432c60ab25b5ff",
+      "address": "0x2d8294702dea49028d8a81f37251d929bdfb39e28b0867aa96bbdc581511cde",
       "class_hash": "0x8bc7088f2b745390b85c89fffebe1e33d7f762b473e61256e63a9cdcabcf7d",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_undying_draw",
@@ -1330,7 +1330,7 @@
       ]
     },
     {
-      "address": "0x6e725d3c71ed7d0e4ed294301bee9e07ba815a58c465eac18755f059a273718",
+      "address": "0xfa4c9b95536444a56b19babca75b0ddd4d212809584d4626e3284ca9980bf7",
       "class_hash": "0x4aed987a9040fcb2315014926ec81969cc6354dc342322b6d2bdf27fe1bc1e9",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_wanted_joker",
@@ -1341,7 +1341,7 @@
       ]
     },
     {
-      "address": "0x1a6f5923cd66a526ceec3a39d7fbe2cd9b8c1838edac4945121e5e1c4595046",
+      "address": "0x7934717397fb861c92329a46191d626f7f6e07903e72bb04f1c951221d5d9c3",
       "class_hash": "0x50f487212171e20a8870fbad7e928d527b04a7350098e42caa16db33c6cd162",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_wild_booster",
@@ -1352,7 +1352,7 @@
       ]
     },
     {
-      "address": "0x6ca164fe14d1f2910c404038c4ab136ed4106deb5aabeea00b60504a0748883",
+      "address": "0x68c3f79f2b9a07f0fcaa42cf5fd312f99b7a1eea8ec82b1805f8992a6999d12",
       "class_hash": "0x71f19c848d22b3a47989b4246e27752e31257ede3d04cff8cc293d6b4668cb6",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-special_wild_deuces",
@@ -1363,8 +1363,8 @@
       ]
     },
     {
-      "address": "0x6b5429b6c4bd305b57a85451c816b4e34034355397bc0acc1576293331d2972",
-      "class_hash": "0x4427e9692ba3f0717c5d2b6d8b8b21c2f0966bac9d9ca6324778bd5a349fb0b",
+      "address": "0x22fc192e722ff388002a522ef7cd94dc9706c2d0918a8b40bff41dbb0318ff1",
+      "class_hash": "0x581ede6a6cf3f4570053db7d36655f2e789e0a79b82b7c284192670c77d9560",
       "init_calldata": [],
       "tag": "jokers_of_neon_classic-specials_info",
       "selector": "0x875ca83c8d03a2c3343d75b29956e56b251703cb2509466968e3fbda4cf646",
