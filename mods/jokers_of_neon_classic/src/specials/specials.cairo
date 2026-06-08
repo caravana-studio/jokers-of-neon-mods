@@ -269,7 +269,7 @@ pub fn get_season_specials_shop_info() -> (Span<Span<u32>>, Span<u32>, Span<u32>
         // Season 3
         SPECIAL_CLUB_KEEPER_ID, SPECIAL_ADRENALINE_ID, SPECIAL_LOOT_RUSH_ID, SPECIAL_PRACTICE_SHOOT_ID,
         // Season 4
-        SPECIAL_INVERTED_HIERARCHY_ID,
+        SPECIAL_INVERTED_HIERARCHY_ID, SPECIAL_POWER_UP_BOOSTER_ID,
     ]
         .span();
 
@@ -359,6 +359,7 @@ fn SPECIALS_B_IDS() -> Array<u32> {
         // SEASON 3
         SPECIAL_CLUB_KEEPER_ID, SPECIAL_ADRENALINE_ID, // SEASON 4
         SPECIAL_INVERTED_HIERARCHY_ID,
+        SPECIAL_POWER_UP_BOOSTER_ID,
     ]
 }
 
