@@ -112,6 +112,7 @@ pub mod specials {
         pub mod cash_catalyst;
         pub mod cash_loop;
         pub mod circle_of_fortune;
+        pub mod clone_chain;
         pub mod club_keeper;
         pub mod critical_charge;
         pub mod deadline;
@@ -124,6 +125,7 @@ pub mod specials {
         pub mod echo_upgrade;
         pub mod efficient_play;
         pub mod extreme_attachment;
+        pub mod faceless_hand;
         pub mod faded_poster;
         pub mod hanged_joker;
         pub mod hestia_blessing;
@@ -138,6 +140,7 @@ pub mod specials {
         pub mod increase_level_straight;
         pub mod increase_level_three_of_a_kind;
         pub mod initial_advantage;
+        pub mod inverted_hierarchy;
         pub mod lifeflame;
         pub mod liquidator;
         pub mod lucky_cashback;
@@ -156,6 +159,7 @@ pub mod specials {
         pub mod scaling_factor;
         pub mod slot_saver;
         pub mod spade_trio;
+        pub mod suit_circuit;
         pub mod suit_roulette;
         pub mod undying_draw;
     }
