@@ -55,6 +55,7 @@ pub mod specials {
         pub mod tamer_of_chances;
     }
     pub mod shop {
+        pub mod black_market;
         pub mod loot_rush;
         pub mod providence;
     }
