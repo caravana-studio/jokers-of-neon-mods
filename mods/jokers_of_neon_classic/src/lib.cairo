@@ -113,6 +113,7 @@ pub mod specials {
         pub mod cash_loop;
         pub mod circle_of_fortune;
         pub mod club_keeper;
+        pub mod critical_charge;
         pub mod deadline;
         pub mod deck_collector;
         pub mod discard_charge;
@@ -120,6 +121,7 @@ pub mod specials {
         pub mod disposophobia;
         pub mod double_down;
         pub mod duality;
+        pub mod echo_upgrade;
         pub mod efficient_play;
         pub mod extreme_attachment;
         pub mod faded_poster;
@@ -137,6 +139,7 @@ pub mod specials {
         pub mod increase_level_three_of_a_kind;
         pub mod initial_advantage;
         pub mod lifeflame;
+        pub mod liquidator;
         pub mod lucky_cashback;
         // SEASON 3
         pub mod midas_hand;
@@ -145,6 +148,7 @@ pub mod specials {
         pub mod rage_breaker;
         pub mod rainbow;
         pub mod reds;
+        pub mod reroll_reactor;
         pub mod residual_charge;
         pub mod rising_ladder;
         pub mod royal_blessing;
