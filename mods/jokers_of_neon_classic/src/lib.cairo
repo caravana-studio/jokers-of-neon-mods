@@ -125,6 +125,7 @@ pub mod specials {
         pub mod duality;
         pub mod echo_upgrade;
         pub mod efficient_play;
+        pub mod empty_slot_rent;
         pub mod extreme_attachment;
         pub mod faceless_hand;
         pub mod faded_poster;
