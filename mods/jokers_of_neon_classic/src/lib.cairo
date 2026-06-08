@@ -169,6 +169,7 @@ pub mod specials {
     }
     pub mod pre_round {
         pub mod ouroboros;
+        pub mod supreme_chameleon;
     }
 }
 
