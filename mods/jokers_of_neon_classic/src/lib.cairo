@@ -150,6 +150,7 @@ pub mod specials {
         pub mod midas_hand;
         pub mod minimalism;
         pub mod multiplier;
+        pub mod perfect_rounding;
         pub mod rage_breaker;
         pub mod rainbow;
         pub mod reds;
