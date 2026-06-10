@@ -49,6 +49,7 @@ pub mod specials {
         pub mod hand_thief;
         // SEASON 2
         pub mod impermanence;
+        pub mod neon_opening;
         pub mod plus_discards;
         pub mod plus_plays;
         pub mod pocket_joker;
