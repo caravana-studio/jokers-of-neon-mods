@@ -15,6 +15,7 @@ pub mod rages {
     }
     pub mod game {
         pub mod diminished_hold;
+        pub mod full_discharge;
         pub mod hand_leech;
         pub mod pharaohs_mandate;
         pub mod silence_specials;
