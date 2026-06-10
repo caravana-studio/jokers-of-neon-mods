@@ -17,12 +17,11 @@ pub mod special_neon_opening {
 
             for item in context.cards_in_hand {
                 let (idx, card) = *item;
-                let updated_card =
-                    if card.id == INVALID_CARD_ID || is_neon_card(card.id) || !is_common_card(card.id) {
-                        card
-                    } else {
-                        get_card(CardTrait::generate_neon_id(card.id))
-                    };
+                let updated_card = if card.id == INVALID_CARD_ID || is_neon_card(card.id) || !is_common_card(card.id) {
+                    card
+                } else {
+                    get_card(CardTrait::generate_neon_id(card.id))
+                };
                 new_hand.append((idx, updated_card));
             }
 
