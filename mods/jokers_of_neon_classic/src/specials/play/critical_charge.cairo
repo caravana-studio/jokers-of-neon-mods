@@ -38,7 +38,7 @@ pub mod special_critical_charge {
 
             let ret = cumulative.value;
 
-            if cards_points_total >= 30 {
+            if cards_points_total < 30 {
                 cumulative.value += 5;
                 world.write_model(@cumulative);
             }
