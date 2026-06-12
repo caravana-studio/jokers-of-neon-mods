@@ -6,8 +6,8 @@ profile="${1:-dev}"
 mod_name="${2:-jokers_of_neon_classic}"
 
 # Validate profile parameter
-if [ "$profile" != "dev" ] && [ "$profile" != "testing" ] && [ "$profile" != "prod" ] && [ "$profile" != "season3dev" ]; then
-    echo "Error: Invalid profile. Please use 'dev', 'testing', 'prod', or 'season3dev'."
+if [ "$profile" != "dev" ] && [ "$profile" != "testing" ] && [ "$profile" != "prod" ] && [ "$profile" != "aws-testnet" ]; then
+    echo "Error: Invalid profile. Please use 'dev', 'testing', 'prod', or 'aws-testnet'."
     exit 1
 fi
 
