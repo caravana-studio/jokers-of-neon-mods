@@ -5,8 +5,9 @@ use jokers_of_neon_classic::specials::specials::{
     SPECIAL_SPADE_TRIO_ID, get_base_specials_shop_info, specials_ids_all,
 };
 use jokers_of_neon_lib::constants::card::{
-    JOKER_CARD_ID, NEON_JOKER_CARD_ID, all_clubs_cards, all_diamonds_cards, all_hearts_cards, all_spades_cards,
-    neon_cards_all, neon_clubs_cards, neon_diamonds_cards, neon_hearts_cards, neon_spades_cards, traditional_cards_all,
+    JOKER_CARD_ID, NEON_JOKER_CARD_ID, NEON_WILD_CARD_ID, WILD_CARD_ID, all_clubs_cards, all_diamonds_cards,
+    all_hearts_cards, all_spades_cards, neon_cards_all, neon_clubs_cards, neon_diamonds_cards, neon_hearts_cards,
+    neon_spades_cards, traditional_cards_all,
 };
 use jokers_of_neon_lib::constants::modifiers::{
     SUIT_CLUB_MODIFIER_ID, SUIT_DIAMONDS_MODIFIER_ID, SUIT_HEARTS_MODIFIER_ID, SUIT_SPADES_MODIFIER_ID,
@@ -54,10 +55,11 @@ pub fn BASIC_LOOT_BOX() -> LootBox {
         size: 5,
         cards: array![
             array![].span(), specials_ids_all().span(), modifiers_ids_all().span(), array![JOKER_CARD_ID].span(),
-            array![NEON_JOKER_CARD_ID].span(), traditional_cards_all().span(),
+            array![NEON_JOKER_CARD_ID].span(), array![WILD_CARD_ID].span(), array![NEON_WILD_CARD_ID].span(),
+            traditional_cards_all().span(),
         ]
             .span(),
-        probs: array![100, 2, 5, 4, 1, 88].span(),
+        probs: array![100, 2, 5, 4, 1, 8, 2, 78].span(),
     }
 }
 
@@ -70,10 +72,11 @@ pub fn ADVANCED_LOOT_BOX() -> LootBox {
         size: 5,
         cards: array![
             array![].span(), specials_ids_all().span(), modifiers_ids_all().span(), array![JOKER_CARD_ID].span(),
-            array![NEON_JOKER_CARD_ID].span(), traditional_cards_all().span(),
+            array![NEON_JOKER_CARD_ID].span(), array![WILD_CARD_ID].span(), array![NEON_WILD_CARD_ID].span(),
+            traditional_cards_all().span(),
         ]
             .span(),
-        probs: array![100, 4, 10, 8, 2, 76].span(),
+        probs: array![100, 4, 10, 8, 2, 16, 4, 56].span(),
     }
 }
 
@@ -86,10 +89,10 @@ pub fn JOKER_LOOT_BOX() -> LootBox {
         size: 5,
         cards: array![
             array![].span(), array![JOKER_CARD_ID].span(), array![NEON_JOKER_CARD_ID].span(),
-            traditional_cards_all().span(),
+            array![WILD_CARD_ID].span(), array![NEON_WILD_CARD_ID].span(), traditional_cards_all().span(),
         ]
             .span(),
-        probs: array![100, 29, 1, 70].span(),
+        probs: array![100, 29, 1, 58, 2, 10].span(),
     }
 }
 
@@ -180,10 +183,10 @@ pub fn DECEITFUL_JOKER_LOOT_BOX() -> LootBox {
         size: 4,
         cards: array![
             array![JOKER_CARD_ID].span(), array![JOKER_CARD_ID].span(), array![NEON_JOKER_CARD_ID].span(),
-            traditional_cards_all().span(),
+            array![WILD_CARD_ID].span(), array![NEON_WILD_CARD_ID].span(), traditional_cards_all().span(),
         ]
             .span(),
-        probs: array![100, 9, 1, 90].span(),
+        probs: array![100, 9, 1, 18, 2, 70].span(),
     }
 }
 
@@ -278,8 +281,12 @@ pub fn NEON_LOOT_BOX() -> LootBox {
         name: 'neon_loot_box',
         probability: 50,
         size: 5,
-        cards: array![array![].span(), neon_cards_all().span(), array![NEON_JOKER_CARD_ID].span()].span(),
-        probs: array![100, 97, 3].span(),
+        cards: array![
+            array![].span(), neon_cards_all().span(), array![NEON_JOKER_CARD_ID].span(),
+            array![NEON_WILD_CARD_ID].span(),
+        ]
+            .span(),
+        probs: array![100, 91, 3, 6].span(),
     }
 }
 
