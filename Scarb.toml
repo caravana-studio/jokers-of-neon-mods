@@ -28,5 +28,6 @@ dojo_cairo_test = "1.8.0"
 [profile.testing]
 [profile.season3dev]
 [profile.aws-testnet]
+[profile.aws-mainnet]
 
 [lib]
