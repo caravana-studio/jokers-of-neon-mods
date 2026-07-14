@@ -5,8 +5,8 @@ set -e
 profile="${1:-dev}"
 
 # Validate profile parameter
-if [ "$profile" != "dev" ] && [ "$profile" != "testing" ] && [ "$profile" != "prod" ] && [ "$profile" != "aws-testnet" ]; then
-    echo "Error: Invalid profile. Please use 'dev', 'testing', 'prod', or 'aws-testnet'."
+if [ "$profile" != "dev" ] && [ "$profile" != "aws-testnet" ] && [ "$profile" != "aws-mainnet" ]; then
+    echo "Error: Invalid profile. Please use 'dev', 'aws-testnet', or 'aws-mainnet'."
     exit 1
 fi
 
