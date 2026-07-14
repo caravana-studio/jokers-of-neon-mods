@@ -38,7 +38,7 @@ dependencies = [
 [[package]]
 name = "jokers_of_neon_lib"
 version = "0.20.0"
-source = "git+https://github.com/caravana-studio/jokers-of-neon-lib?branch=develop#bf3a58957f0ed98dbfaac50b9114573750851281"
+source = "git+https://github.com/caravana-studio/jokers-of-neon-lib?branch=special-cards-season-4#8b3aba363ace1670c4025924ddc051bbbc4390f8"
 dependencies = [
  "dojo",
  "dojo_cairo_macros",

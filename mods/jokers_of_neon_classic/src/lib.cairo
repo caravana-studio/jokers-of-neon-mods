@@ -15,6 +15,7 @@ pub mod rages {
     }
     pub mod game {
         pub mod diminished_hold;
+        pub mod full_discharge;
         pub mod hand_leech;
         pub mod pharaohs_mandate;
         pub mod silence_specials;
@@ -48,6 +49,7 @@ pub mod specials {
         pub mod hand_thief;
         // SEASON 2
         pub mod impermanence;
+        pub mod neon_opening;
         pub mod plus_discards;
         pub mod plus_plays;
         pub mod pocket_joker;
@@ -55,6 +57,7 @@ pub mod specials {
         pub mod tamer_of_chances;
     }
     pub mod shop {
+        pub mod black_market;
         pub mod loot_rush;
         pub mod providence;
     }
@@ -112,7 +115,9 @@ pub mod specials {
         pub mod cash_catalyst;
         pub mod cash_loop;
         pub mod circle_of_fortune;
+        pub mod clone_chain;
         pub mod club_keeper;
+        pub mod critical_charge;
         pub mod deadline;
         pub mod deck_collector;
         pub mod discard_charge;
@@ -120,8 +125,11 @@ pub mod specials {
         pub mod disposophobia;
         pub mod double_down;
         pub mod duality;
+        pub mod echo_upgrade;
         pub mod efficient_play;
+        pub mod empty_slot_rent;
         pub mod extreme_attachment;
+        pub mod faceless_hand;
         pub mod faded_poster;
         pub mod hanged_joker;
         pub mod hestia_blessing;
@@ -136,15 +144,19 @@ pub mod specials {
         pub mod increase_level_straight;
         pub mod increase_level_three_of_a_kind;
         pub mod initial_advantage;
+        pub mod inverted_hierarchy;
         pub mod lifeflame;
+        pub mod liquidator;
         pub mod lucky_cashback;
         // SEASON 3
         pub mod midas_hand;
         pub mod minimalism;
         pub mod multiplier;
+        pub mod perfect_rounding;
         pub mod rage_breaker;
         pub mod rainbow;
         pub mod reds;
+        pub mod reroll_reactor;
         pub mod residual_charge;
         pub mod rising_ladder;
         pub mod royal_blessing;
@@ -152,6 +164,7 @@ pub mod specials {
         pub mod scaling_factor;
         pub mod slot_saver;
         pub mod spade_trio;
+        pub mod suit_circuit;
         pub mod suit_roulette;
         pub mod undying_draw;
     }
@@ -160,6 +173,7 @@ pub mod specials {
     }
     pub mod pre_round {
         pub mod ouroboros;
+        pub mod supreme_chameleon;
     }
 }
 

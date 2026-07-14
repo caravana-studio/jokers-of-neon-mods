@@ -11,7 +11,24 @@ mod special_power_up_booster {
     impl PowerUpBoosterExecutable of ICardExecutable<ContractState> {
         fn execute(ref self: ContractState, context: GameContext, raw_data: felt252) -> (i32, i32, i32) {
             let power_up: PowerUp = raw_data.into();
-            ((power_up.points * 2).try_into().unwrap(), (power_up.points * 2).try_into().unwrap(), 0)
+            let points: i32 = (power_up.points).try_into().unwrap();
+            let multi: i32 = (power_up.multi).try_into().unwrap();
+            let cash: i32 = 0;
+
+            println!(
+                "[special_power_up_booster] execute game_id={} special_idx={} effect_card_id={} power_up_id={} power_up_points={} power_up_multi={} -> values=({}, {}, {})",
+                context.game.id,
+                context.special_idx,
+                context.special_effect_card_id,
+                power_up.id,
+                power_up.points,
+                power_up.multi,
+                points,
+                multi,
+                cash,
+            );
+
+            (points, multi, cash)
         }
     }
 
