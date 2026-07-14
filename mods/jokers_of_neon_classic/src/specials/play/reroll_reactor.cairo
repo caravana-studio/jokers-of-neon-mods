@@ -33,9 +33,10 @@ pub mod special_reroll_reactor {
         ) -> PreRoundResult {
             let mut world = self.world(DEFAULT_NS());
             let multi: i32 = (context.game.available_rerolls * 2).try_into().unwrap();
-            world.write_model(
-                @CumulativeMulti { game_id: context.game.id, key: REROLL_REACTOR_MULTI_KEY, value: multi },
-            );
+            world
+                .write_model(
+                    @CumulativeMulti { game_id: context.game.id, key: REROLL_REACTOR_MULTI_KEY, value: multi },
+                );
             PreRoundResult { apply: false, copied_from_idx: source.idx, copied_effect_card_id: source.effect_card_id }
         }
     }
