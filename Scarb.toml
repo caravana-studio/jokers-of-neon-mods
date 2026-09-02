@@ -7,6 +7,9 @@ edition = "2024_07"
 [cairo]
 sierra-replace-ids = true
 
+[tool.scarb]
+allow-prebuilt-plugins = ["dojo_cairo_macros"]
+
 [tool.fmt]
 sort-module-level-items = true
 max-line-length = 120

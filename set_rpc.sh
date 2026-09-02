@@ -19,7 +19,11 @@ if [ -z "$RPC_URL" ]; then
     exit 1
 fi
 
-# Replace rpc_url in target toml
-sed -i '' "s|^rpc_url = .*|rpc_url = \"$RPC_URL\"|" "$TARGET_TOML"
+# Replace rpc_url in target toml (GNU sed on Linux, BSD sed on macOS).
+if sed --version >/dev/null 2>&1; then
+    sed -i "s|^rpc_url = .*|rpc_url = \"$RPC_URL\"|" "$TARGET_TOML"
+else
+    sed -i '' "s|^rpc_url = .*|rpc_url = \"$RPC_URL\"|" "$TARGET_TOML"
+fi
 
 echo "Updated rpc_url in $TARGET_TOML to: $RPC_URL"

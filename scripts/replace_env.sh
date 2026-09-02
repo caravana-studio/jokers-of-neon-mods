@@ -14,9 +14,17 @@ if [ ! -f "$DOJO_DEV_FILE" ]; then
     exit 1
 fi
 
-# Replace the values using sed
-sed -i '' "s|rpc_url = .*|rpc_url = \"$RPC_URL\"|" "$DOJO_DEV_FILE"
-sed -i '' "s|account_address = .*|account_address = \"$ACCOUNT_ADDRESS\"|" "$DOJO_DEV_FILE"
-sed -i '' "s|private_key = .*|private_key = \"$PRIVATE_KEY\"|" "$DOJO_DEV_FILE"
+# GNU sed (Linux) and BSD sed (macOS) use different -i syntax.
+sed_in_place() {
+    if sed --version >/dev/null 2>&1; then
+        sed -i "$1" "$DOJO_DEV_FILE"
+    else
+        sed -i '' "$1" "$DOJO_DEV_FILE"
+    fi
+}
+
+sed_in_place "s|rpc_url = .*|rpc_url = \"$RPC_URL\"|"
+sed_in_place "s|account_address = .*|account_address = \"$ACCOUNT_ADDRESS\"|"
+sed_in_place "s|private_key = .*|private_key = \"$PRIVATE_KEY\"|"
 
 # echo "Values replaced successfully in $DOJO_DEV_FILE"
